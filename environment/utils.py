@@ -1,6 +1,12 @@
 import gtk.gdk
 import PIL.Image as Image
 from subprocess import call
+import cv2
+import numpy
+""" 
+uinput module; pip install python-uinput; link: http://tjjr.fi/sw/python-uinput/ 
+For uinput, you need to add permissions to the current user to write to /dev/uinput 
+ """
 import uinput
 
 NUM_ACTIONS = 3
@@ -21,7 +27,7 @@ device = uinput.Device([
 	uinput.KEY_RIGHT
 	])
 
-""" uinput module; pip install python-uinput; link: http://tjjr.fi/sw/python-uinput/ """
+
 
 def crop_center(img):
 	width,height = img.size
@@ -58,5 +64,35 @@ def send_keystroke(action):
 	device.emit_click(num_to_act[action])
 
 
-def time_function(function):
-	current_milli_time = lambda: int(round(time.time() * 1000))
+def crop_upper(img, percent):
+	width,height = img.size
+	#print x,y
+	side = min(width,height)
+	#print side
+
+	new_width = int(side*MAGIC_RATIO)
+	new_height = side
+
+	right = width*0.95
+	bottom = int(height*percent)
+
+	return img.crop((0,0, right, bottom))
+
+
+def get_all_bb(img):
+
+	#im = cv2.imread('c:/data/ph.jpg')
+	img = numpy.array(img)
+	gray=cv2.cvtColor(img,cv2.COLOR_BGR2GRAY)
+	im2, contours, hierarchy = cv2.findContours(gray,cv2.RETR_EXTERNAL ,cv2.CHAIN_APPROX_SIMPLE)
+	idx =0
+	print hierarchy 
+	for cnt in contours:
+	     
+	    idx += 1
+	    x,y,w,h = cv2.boundingRect(cnt)
+	    roi=img[y:y+h,x:x+w]
+	    #cv2.imwrite(str(idx) + '.jpg', roi)
+	    cv2.rectangle(img,(x,y),(x+w,y+h),(200,0,0),2)
+	cv2.imwrite('cnts.png',img)   
+	print idx 
