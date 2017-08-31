@@ -1,18 +1,27 @@
-#include <stdio.h>
+#include <iostream>
+#include <cstdio> 
+#include <string>
+#include <sstream>
+
 #include <unistd.h>
-#include <sys/stat.h>
 #include <fcntl.h>
 #include <semaphore.h>
 #include <sys/mman.h>
 #include <string.h>
 #include <assert.h>
 
+
+// #include <sys/stat.h>
+
+// g++ shared_memory.cpp -lpthread -lrt
+
+
 #define SEM_NAME "/sem_deeprl"
 #define SHM_NAME "/shm_deeprl"
-#define SHM_SIZE 51
+#define SHM_SIZE 100
 #define MODE (S_IRUSR | S_IWUSR | S_IWGRP | S_IRGRP | S_IWOTH | S_IROTH)
 
-int shm_send_message(char* msg)
+int shm_send_message(const char* msg)
 {
 	sem_t* sem;
 	sem = sem_open(SEM_NAME, O_CREAT, S_IWUSR | S_IRUSR, 1);
@@ -24,7 +33,7 @@ int shm_send_message(char* msg)
 
 	if(sem == SEM_FAILED)
 	{
-		printf("failure semaphore\n");
+		perror("failure semaphore");
 		return -1;
 	}
 	sem_wait(sem);
@@ -48,10 +57,9 @@ int shm_send_message(char* msg)
 		return -1;
 	}
 
-	strcpy(addr, msg);
+	strcpy((char*)addr, msg);
 
 	close(fd);
-	sleep(5);
 	sem_post(sem);
 
 
@@ -60,10 +68,23 @@ int shm_send_message(char* msg)
 	return 0;
 }
 
+int shm_send_score(int in_lvl, int score, int lives)
+{
+	std::stringstream stream;
+    stream << in_lvl << "," << score << "," << lives;
+	std::cout << stream.str() << std::endl;
+	return shm_send_message(stream.str().c_str());
+}
+
 int main(int argc, char* argv[])
 {
-	assert(argc == 2);
-	shm_send_message(argv[1]);
+	shm_send_score(1,2,3);
+	// int i;
+	// for(i = 0; i < 1000; i++)
+	// {
+	// 	shm_send_message(argv[1]);
+	// 	sleep(1);
+	// }
 
 	
 
