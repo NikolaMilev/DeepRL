@@ -2,6 +2,7 @@
 #include <cstdio> 
 #include <string>
 #include <sstream>
+#include <cstdlib>
 
 #include <unistd.h>
 #include <fcntl.h>
@@ -76,17 +77,18 @@ int shm_send_score(int in_lvl, int score, int lives)
 	return shm_send_message(stream.str().c_str());
 }
 
-int main(int argc, char* argv[])
-{
-	shm_send_score(1,2,3);
-	// int i;
-	// for(i = 0; i < 1000; i++)
-	// {
-	// 	shm_send_message(argv[1]);
-	// 	sleep(1);
-	// }
+// int main(int argc, char* argv[])
+// {
+// 	assert(argc == 4);
+// 	shm_send_score(atoi(argv[1]), atoi(argv[2]), atoi(argv[3]));
+// 	// int i;
+// 	// for(i = 0; i < 1000; i++)
+// 	// {
+// 	// 	shm_send_message(argv[1]);
+// 	// 	sleep(1);
+// 	// }
 
 	
 
-	return 0;
-}
+// 	return 0;
+// }
