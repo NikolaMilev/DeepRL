@@ -22,11 +22,24 @@
 #define SHM_SIZE 100
 #define MODE (S_IRUSR | S_IWUSR | S_IWGRP | S_IRGRP | S_IWOTH | S_IROTH)
 
+void close_all(sem_t* sem, int fd, const char* msg)
+{
+	if(sem != NULL)
+	{
+		sem_close(sem);
+	}
+	if(fd >= 0)
+	{
+		close(fd);
+	}
+	perror(msg);
+}
+
 int shm_send_message(const char* msg)
 {
 	sem_t* sem;
 	sem = sem_open(SEM_NAME, O_CREAT, S_IWUSR | S_IRUSR, 1);
-	int fd;
+	int fd = -1;
 		
 	void *addr;
 
@@ -34,7 +47,7 @@ int shm_send_message(const char* msg)
 
 	if(sem == SEM_FAILED)
 	{
-		perror("failure semaphore");
+		close_all(sem, fd, "failure semaphore");
 		return -1;
 	}
 	sem_wait(sem);
@@ -42,19 +55,19 @@ int shm_send_message(const char* msg)
 	fd = shm_open(SHM_NAME, O_CREAT | O_RDWR | O_TRUNC, S_IRUSR | S_IWUSR);
 	if (fd == -1)
 	{
-		perror("shm_open");
+		close_all(sem, fd, "shm_open");
 		return -1;
 	}
 	if (ftruncate(fd, SHM_SIZE) == -1)
 	{
-		perror("ftruncate");
+		close_all(sem, fd, "ftruncate");
 		return -1;
 	}
 
 	addr = mmap(NULL, SHM_SIZE, PROT_READ | PROT_WRITE, MAP_SHARED, fd, 0);
 	if (addr == MAP_FAILED)
 	{
-		perror("mmap");
+		close_all(sem, fd, "mmap");
 		return -1;
 	}
 
@@ -73,7 +86,7 @@ int shm_send_score(int in_lvl, int score, int lives)
 {
 	std::stringstream stream;
     stream << in_lvl << "," << score << "," << lives;
-	std::cout << stream.str() << std::endl;
+	//std::cout << stream.str() << std::endl;
 	return shm_send_message(stream.str().c_str());
 }
 
@@ -82,10 +95,10 @@ int shm_send_score(int in_lvl, int score, int lives)
 // 	assert(argc == 4);
 // 	shm_send_score(atoi(argv[1]), atoi(argv[2]), atoi(argv[3]));
 // 	// int i;
-// 	// for(i = 0; i < 1000; i++)
+// 	// for(i = 0; i < 10000; i++)
 // 	// {
 // 	// 	shm_send_message(argv[1]);
-// 	// 	sleep(1);
+// 	// 	//sleep(1);
 // 	// }
 
 	

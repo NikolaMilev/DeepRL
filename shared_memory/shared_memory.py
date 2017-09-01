@@ -3,9 +3,6 @@ import time
 import os
 import timeit
 
-# todo: check for all possible errors!
-# for instance, if a semaphore doesn't exist, that means the process has not written to the shared memory or sth
-
 SEM_NAME="/sem_deeprl"
 SHR_MEM=123321
 SHM_NAME="/shm_deeprl"
@@ -18,29 +15,32 @@ def obtain_data(repeat=0):
 		We wait for TIMEOUT (can be float) seconds at most twice before giving up.
 	"""
 	sem = pi.Semaphore(SEM_NAME)
+	sem.release()
 	retval=None
 	try:
 		#print "Successfully opened semaphore!\n"
 		#print "Waiting: "
-		sem.acquire(TIMEOUT)
+		sem.acquire()
 		retval=read_shm()
 		#print "Posting: "
 		sem.release()
 		sem.close()
 		#print "Closed!\n"
-		if retval != "" and retval != None:
+		if retval:
 			return retval
 		else:
 			return None
-	except pi.BusyError:
+	except pi.BusyError as e1:
 		#print "BUSY"
+		print e1
 		if repeat == 1:
 			return None
 		else:
 			return obtain_data(repeat=1)
-	except:
+	except Error as e:
 		sem.release()
 		sem.close()
+		print e
 		return None
 
 def read_shm():
@@ -57,6 +57,10 @@ def read_shm():
 	os.close(shm.fd)
 	return a[0], a[1], a[2]
 
-#print obtain_data()
-num = 100000
-print timeit.timeit('print shared_memory.obtain_data()', number=num, setup="import shared_memory")/num
+
+time.sleep(10)
+for i in range(1000):
+	print obtain_data()
+	time.sleep(0.1)
+#num = 100000
+#print timeit.timeit('print shared_memory.obtain_data()', number=num, setup="import shared_memory")/num
