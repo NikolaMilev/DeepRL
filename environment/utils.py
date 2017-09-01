@@ -59,40 +59,7 @@ def get_ss():
 	im.transpose(Image.FLIP_TOP_BOTTOM)
 	return im
 
+# needs to be redone with evdev
 def send_keystroke(action):
 	""" Sends the signal corresponding to je action value """
 	device.emit_click(num_to_act[action])
-
-
-def crop_upper(img, percent):
-	width,height = img.size
-	#print x,y
-	side = min(width,height)
-	#print side
-
-	new_width = int(side*MAGIC_RATIO)
-	new_height = side
-
-	right = width*0.95
-	bottom = int(height*percent)
-
-	return img.crop((0,0, right, bottom))
-
-
-def get_all_bb(img):
-
-	#im = cv2.imread('c:/data/ph.jpg')
-	img = numpy.array(img)
-	gray=cv2.cvtColor(img,cv2.COLOR_BGR2GRAY)
-	im2, contours, hierarchy = cv2.findContours(gray,cv2.RETR_EXTERNAL ,cv2.CHAIN_APPROX_SIMPLE)
-	idx =0
-	print hierarchy 
-	for cnt in contours:
-	     
-	    idx += 1
-	    x,y,w,h = cv2.boundingRect(cnt)
-	    roi=img[y:y+h,x:x+w]
-	    #cv2.imwrite(str(idx) + '.jpg', roi)
-	    cv2.rectangle(img,(x,y),(x+w,y+h),(200,0,0),2)
-	cv2.imwrite('cnts.png',img)   
-	print idx 
