@@ -3,30 +3,36 @@ import PIL.Image as Image
 from subprocess import call
 import cv2
 import numpy
-""" 
-uinput module; pip install python-uinput; link: http://tjjr.fi/sw/python-uinput/ 
-For uinput, you need to add permissions to the current user to write to /dev/uinput 
- """
-import uinput
+import os
+
 
 NUM_ACTIONS = 3
 ACTION_LEFT = 0
 ACTION_RIGHT = 1
 ACTION_UP = 2
-MAGIC_RATIO = 1.3
+MAGIC_RATIO = 1.3 # or just 4.0/3 ~= 1.33333
 
-num_to_act = {ACTION_LEFT:uinput.KEY_LEFT, ACTION_RIGHT:uinput.KEY_RIGHT, ACTION_UP:uinput.KEY_UP}
 
+""" 
+uinput module; pip install python-uinput; link: http://tjjr.fi/sw/python-uinput/ 
+For uinput, you need to add permissions to the current user to write to /dev/uinput 
+Can I find an alternative? xte perhaps?
+after some testing with xte, remove it
+ """
+#import uinput
+#num_to_act = {ACTION_LEFT:uinput.KEY_LEFT, ACTION_RIGHT:uinput.KEY_RIGHT, ACTION_UP:uinput.KEY_UP}
 # perhaps add sudo?
-call(['modprobe', 'uinput'])
+#call(['modprobe', 'uinput'])
 
 # after the creation, there must be a small delay; if there is any trouble, have this in mind
-device = uinput.Device([
-	uinput.KEY_UP, 
-	uinput.KEY_LEFT, 
-	uinput.KEY_RIGHT
-	])
-
+# device = uinput.Device([
+# 	uinput.KEY_UP, 
+# 	uinput.KEY_LEFT, 
+# 	uinput.KEY_RIGHT
+# 	])
+# def send_keystroke(action):
+# 	""" Sends the signal corresponding to je action value """
+# 	device.emit_click(num_to_act[action])
 
 
 def crop_center(img):
@@ -59,7 +65,15 @@ def get_ss():
 	im.transpose(Image.FLIP_TOP_BOTTOM)
 	return im
 
-# needs to be redone with evdev
-def send_keystroke(action):
-	""" Sends the signal corresponding to je action value """
-	device.emit_click(num_to_act[action])
+
+
+# current version uses a call to xte. used timeit on it and it's not slow. The only thing that could be a problem is the wait time
+# but the process is in the background so no worries
+
+keystrokes = {"up":"Up", "left":"Left", "right":"Right", "enter":"Enter"}
+
+def send_keystroke(key=None, wait=50000):
+	if key in keystrokes:
+		os.system("xte 'keydown {}' 'usleep {}' 'keyup {}' &".format(keystrokes[key], wait, keystrokes[key]))
+	else:
+		print "{}: keystroke not found".format(key)

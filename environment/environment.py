@@ -14,8 +14,8 @@ class Environment:
 
 
 		 Requirements (thus far collected):
-		  - python-xlib (apt)
-		  - pymouse (pip)
+		  - python-xlib (apt) : to be deleted
+		  - pymouse (pip) : to be deleted
 		  - everything needed to install SDL-Ball (link: http://sdl-ball.sourceforge.net/ )
 		  - uinput (see utils module)
 		 The purpose of this list is making a script to set up everything later on
