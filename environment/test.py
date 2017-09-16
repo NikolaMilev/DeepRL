@@ -4,7 +4,21 @@ import timeit
 
 import time
 import shared_memory as shm
+
+
+"""
+	TODO:
+		Check if in menu or if game has finished;
+		Menu checking can be done with var.menu, as far as I see.
+		Finished-checking can be done just before the return from the main function
+		Perhaps high score to write the name?
+		Anything else?
+		Perhaps, for the best results, find ONE place to write the number indicating the stage of the game, the score and the number of lives
+"""
+
+
 # from PIL import Image
+
 
 
 #a = env.GetSS()
@@ -21,11 +35,18 @@ num_stmt = 1000
 
 #utils.crop_center(utils.get_ss()).show()
 
+
+
+
 time.sleep(10)
 while True:
-	ss = env.GetSS()
+	#ss = env.GetSS()
 	print shm.read_shm()
-	utils.send_random_keystroke()
+	time.sleep(1)
+	#utils.send_random_keystroke()
+
+
+
 
 
 # s = timeit.timeit(stmt="a=utils.get_ss() ; b=utils.crop_center(a)", number=num_stmt, setup="import utils")
