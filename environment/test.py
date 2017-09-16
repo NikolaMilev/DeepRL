@@ -1,8 +1,9 @@
-# from environment import Environment as env
+from environment import Environment as env
 import utils
 import timeit
-# import random
+
 import time
+import shared_memory as shm
 # from PIL import Image
 
 
@@ -17,6 +18,16 @@ import time
 
 # timeti returns number of seconds needed for the whole thing so we divide the result by the number of executions to get the average 
 num_stmt = 1000
+
+#utils.crop_center(utils.get_ss()).show()
+
+time.sleep(10)
+while True:
+	ss = env.GetSS()
+	print shm.read_shm()
+	utils.send_random_keystroke()
+
+
 # s = timeit.timeit(stmt="a=utils.get_ss() ; b=utils.crop_center(a)", number=num_stmt, setup="import utils")
 # print s/num_stmt
 

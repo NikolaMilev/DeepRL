@@ -41,7 +41,7 @@ class Environment:
 		ss = utils.get_ss()
 		#global SS_COPY
 		cls.SS_COPY = ss.copy()
-		return ss#.resize((cls.SS_SIZE, cls.SS_SIZE), Image.ANTIALIAS).convert('LA')
+		return utils.crop_center(ss)
 
 
 	@classmethod

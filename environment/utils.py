@@ -4,13 +4,13 @@ from subprocess import call
 import cv2
 import numpy
 import os
-
+import random
 
 NUM_ACTIONS = 3
 ACTION_LEFT = 0
 ACTION_RIGHT = 1
 ACTION_UP = 2
-MAGIC_RATIO = 1.3 # or just 4.0/3 ~= 1.33333
+MAGIC_RATIO = 4.0/3 # or just 4.0/3 ~= 1.33333
 
 
 """ 
@@ -70,10 +70,13 @@ def get_ss():
 # current version uses a call to xte. used timeit on it and it's not slow. The only thing that could be a problem is the wait time
 # but the process is in the background so no worries
 
-keystrokes = {"up":"Up", "left":"Left", "right":"Right", "enter":"Enter"}
+keystrokes = {"up":"Up", "left":"Left", "right":"Right", "enter":"Return"}
 
 def send_keystroke(key=None, wait=50000):
 	if key in keystrokes:
 		os.system("xte 'keydown {}' 'usleep {}' 'keyup {}' &".format(keystrokes[key], wait, keystrokes[key]))
 	else:
 		print "{}: keystroke not found".format(key)
+
+def send_random_keystroke():
+	send_keystroke(key=random.choice(keystrokes.keys()))
