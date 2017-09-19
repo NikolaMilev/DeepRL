@@ -47,7 +47,21 @@ while True:
 	#ss = env.GetSS()
 	a = shm.read_shm()
 	if a:
+		print "---------------------------------"
 		print a
+		b = int(a[0])
+		if b & DRL_PAUSED:
+			print "paused"
+		if b & DRL_LVL_TRANS:
+			print "lvl trans"
+		if b & DRL_HIGHSCORE:
+			print "highscore!"
+		if b & DRL_TITLE_SCREEN:
+			print "title screen"
+		if b & DRL_QUIT:
+			print "end"
+			break
+
 
 	time.sleep(0.2)
 	#utils.send_random_keystroke()
