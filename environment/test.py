@@ -35,14 +35,21 @@ num_stmt = 1000
 
 #utils.crop_center(utils.get_ss()).show()
 
-
+DRL_PAUSED = 1
+DRL_LVL_TRANS = 2
+DRL_HIGHSCORE = 4
+DRL_TITLE_SCREEN = 8
+DRL_QUIT = 16
 
 
 time.sleep(10)
 while True:
 	#ss = env.GetSS()
-	print shm.read_shm()
-	time.sleep(1)
+	a = shm.read_shm()
+	if a:
+		print a
+
+	time.sleep(0.2)
 	#utils.send_random_keystroke()
 
 
