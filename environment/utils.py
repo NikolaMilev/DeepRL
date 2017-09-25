@@ -5,13 +5,12 @@ import cv2
 import numpy
 import os
 import random
-
+import time
 NUM_ACTIONS = 3
-ACTION_LEFT = 0
-ACTION_RIGHT = 1
-ACTION_UP = 2
 MAGIC_RATIO = 4.0/3 # or just 4.0/3 ~= 1.33333
 
+keystrokes = {"up":"Up", "left":"Left", "right":"Right", "enter":"Return", "menu":"F1", "esc":"Escape"}
+NUM_ACTIONS = len(keystrokes)
 
 """ 
 uinput module; pip install python-uinput; link: http://tjjr.fi/sw/python-uinput/ 
@@ -70,7 +69,7 @@ def get_ss():
 # current version uses a call to xte. used timeit on it and it's not slow. The only thing that could be a problem is the wait time
 # but the process is in the background so no worries
 
-keystrokes = {"up":"Up", "left":"Left", "right":"Right", "enter":"Return"}
+keystrokes = {"up":"Up", "left":"Left", "right":"Right", "enter":"Return", "menu":"F1", "esc":"Escape"}
 
 def send_keystroke(key=None, wait=50000):
 	if key in keystrokes:
@@ -80,3 +79,8 @@ def send_keystroke(key=None, wait=50000):
 
 def send_random_keystroke():
 	send_keystroke(key=random.choice(keystrokes.keys()))
+
+def send_name():
+	os.system("xte 'keydown D' 'keyup D' 'keydown R' 'keyup R' 'keydown L' 'keyup L'")
+	time.sleep(1)
+	os.system("xte 'keydown Return' 'keyup Return'")

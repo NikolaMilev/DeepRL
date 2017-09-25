@@ -2902,7 +2902,9 @@ void initNewGame()
   }
   DRL_PAUSED = 0; // if the game is paused 1
   DRL_TITLE_SCREEN = 0; // if the game is in the title screen 8
-  DRL_DEAD=0;
+
+
+  DRL_LVL_TRANS = 0; // if the game is in the state of level transition 2
   DRL_HIGHSCORE = 0; // when the game enters the high score table 4
   resetPlayerPowerups();
 }
@@ -4127,7 +4129,6 @@ int main (int argc, char *argv[]) {
     #ifdef performanceTimer
     gettimeofday(&timeStart, NULL);
     #endif
-    
     // DEEPRL DEEP REINFORCEMENT LEARNING
     if(var.titleScreenShow)
       DRL_TITLE_SCREEN = 1;
@@ -4137,12 +4138,7 @@ int main (int argc, char *argv[]) {
       DRL_HIGHSCORE = 1;
     else
       DRL_HIGHSCORE = 0;
-    if(gVar.gameOver)
-      DRL_DEAD=1;
-    else
-      DRL_DEAD=0;
-
-    shm_send_game_data(player.score, player.lives, player.level);
+    shm_send_game_data(player.score, player.lives);
     ///////////////////////////////////////
 
     nonpausingGlobalTicks = SDL_GetTicks() - nonpausingLastTick;
@@ -4511,9 +4507,18 @@ int main (int argc, char *argv[]) {
           }
           menu.doMenu();
         }
-        
+
+        // DEEPRL DEEP REINFORCEMENT LEARNING
+        DRL_LVL_TRANS=1;
+        shm_send_game_data(player.score, player.lives);
+        ///////////////////////////////////////
         announce.draw();
-                
+        
+        // DEEPRL DEEP REINFORCEMENT LEARNING
+        DRL_LVL_TRANS=0;
+        shm_send_game_data(player.score, player.lives);
+        ///////////////////////////////////////
+
 
         SDL_GL_SwapBuffers( );
 
@@ -4727,7 +4732,7 @@ int main (int argc, char *argv[]) {
 #endif
   // DEEP REINFORCEMENT LEARNING DEEPRL
   DRL_QUIT = 1;
-  shm_send_game_data(player.score, player.lives, player.level);
+  shm_send_game_data(player.score, player.lives);
   ///////////////////////////////////
 
   SDL_ShowCursor(SDL_ENABLE);

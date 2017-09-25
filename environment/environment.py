@@ -1,5 +1,6 @@
 import utils
 import PIL.Image as Image
+import shared_memory as shm
 
 class Environment:
 
@@ -9,7 +10,8 @@ class Environment:
 		 1) collect the screenshot DONE
 		 2) preprocess it
 		 3) send the signal to the game - TODO: keep it pressed for a short period of time?
-		 4) collect the current score
+		 4) collect the current score, lives, lvl (level transition is not always or ever rewarded)
+		 	Dead information
 		    something more?
 
 
@@ -20,15 +22,31 @@ class Environment:
 		  - uinput (see utils module)
 		 The purpose of this list is making a script to set up everything later on
 	"""
-
 	SS_SIZE = 80
-	SS_COPY = None
-	
-	""" Although it's repeating inside the utils module, I find it a semantic part of the class. """
-	ACTION_MOVE_LEFT = utils.ACTION_LEFT
-	ACTION_MOVE_RIGHT = utils.ACTION_RIGHT
-	ACTION_UP = utils.ACTION_UP
+	DRL_PAUSED = 1
+	DRL_DEAD = 2
+	DRL_HIGHSCORE = 4
+	DRL_TITLE_SCREEN = 8
+	DRL_QUIT = 16
 
+	
+	SCR = None
+	LIVES=0
+	DLIVES=0
+	SCORE=0
+	DSCORE=0
+	LEVEL=0
+	DLEVEL=0
+	GAME_INFO=0
+	
+	
+
+	@classmethod
+	def reset(cls):
+		SCR = None
+		LIVES=0
+		SCORE=0
+		GAME_INFO=0
 
 	@classmethod
 	def GetSS(cls):
@@ -50,3 +68,21 @@ class Environment:
 			raise ValueError('Action value must be 0, 1 or 2. See module environment.')
 		
 		utils.send_keystroke(action)
+
+	@classmethod
+	def update(cls):
+		data = shm.read_shm()
+		print data
+		if(data):
+
+
+			cls.GAME_INFO=int(data[0])
+
+			cls.DSCORE=int(data[1])-cls.SCORE
+			cls.SCORE=int(data[1])
+
+			cls.DLIVES=int(data[2])-cls.LIVES
+			cls.LIVES=int(data[2])
+
+			cls.DLEVEL=int(data[3])-cls.LEVEL
+			cls.LEVEL=int(data[3])

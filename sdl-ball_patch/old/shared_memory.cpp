@@ -25,13 +25,11 @@
 
 // resolved, to be tested
 unsigned DRL_PAUSED = 0; // if the game is paused 1
+unsigned DRL_LVL_TRANS = 0; // if the game is in the state of level transition 2
 unsigned DRL_HIGHSCORE = 0; // when the game enters the high score table 4
 unsigned DRL_TITLE_SCREEN = 0; // if the game is in the title screen 8 
 unsigned DRL_QUIT = 0; // if we quit the game  16
 
-// unresolved
-// Perhaps will not be needed
-unsigned DRL_DEAD = 0; // if you're dead
 
 void close_all(sem_t* sem, int fd, const char* msg)
 {
@@ -87,11 +85,6 @@ int shm_send_message(const char* msg)
 	}
 
 	strcpy((char*)addr, msg);
-	
-	if (munmap(addr, SHM_SIZE) == -1)
-	{
-		close_all(sem, fd, "Error un-mmapping the file");
-    }
 
 	close(fd);
 	sem_post(sem);
@@ -102,17 +95,17 @@ int shm_send_message(const char* msg)
 	return 0;
 }
 
-int shm_send_score(unsigned ind, int score, int lives, int level)
+int shm_send_score(unsigned ind, int score, int lives)
 {
 	std::stringstream stream;
-    stream << ind << "," << score << "," << lives << "," << level;
+    stream << ind << "," << score << "," << lives;
 	//std::cout << stream.str() << std::endl;
 	return shm_send_message(stream.str().c_str());
 }
 
-int shm_send_game_data(int score, int lives, int level)
+int shm_send_game_data(int score, int lives)
 {
-	return shm_send_score(DRL_PAUSED | (DRL_DEAD << 1) | (DRL_HIGHSCORE << 2) | (DRL_TITLE_SCREEN << 3) | (DRL_QUIT << 4), score, lives, level);
+	return shm_send_score(DRL_PAUSED | (DRL_LVL_TRANS << 1) | (DRL_HIGHSCORE << 2) | (DRL_TITLE_SCREEN << 3) | (DRL_QUIT << 4), score, lives);
 }
 
 // int main(int argc, char* argv[])

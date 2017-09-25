@@ -35,35 +35,38 @@ num_stmt = 1000
 
 #utils.crop_center(utils.get_ss()).show()
 
-DRL_PAUSED = 1
-DRL_LVL_TRANS = 2
-DRL_HIGHSCORE = 4
-DRL_TITLE_SCREEN = 8
-DRL_QUIT = 16
 
+#utils.send_name()
 
-time.sleep(10)
-while True:
+time.sleep(5)
+for i in xrange(100):
 	#ss = env.GetSS()
-	a = shm.read_shm()
-	if a:
-		print "---------------------------------"
-		print a
-		b = int(a[0])
-		if b & DRL_PAUSED:
-			print "paused"
-		if b & DRL_LVL_TRANS:
-			print "lvl trans"
-		if b & DRL_HIGHSCORE:
-			print "highscore!"
-		if b & DRL_TITLE_SCREEN:
-			print "title screen"
-		if b & DRL_QUIT:
-			print "end"
-			break
+	print '---------------------------------------'
+	env.update()
 
+	b=env.GAME_INFO
+	
 
-	time.sleep(0.2)
+	if not b:
+		print "in game"
+	if b & env.DRL_PAUSED:
+		print "paused"
+		#utils.send_keystroke("esc")
+	if b & env.DRL_DEAD:
+		print "MUERTO"
+	if b & env.DRL_HIGHSCORE:
+		print "highscore!"
+		time.sleep(3)
+		utils.send_name()
+	if b & env.DRL_TITLE_SCREEN:
+		print "title screen"
+		#utils.send_keystroke("menu")
+	if b & env.DRL_QUIT:
+		print "end"
+		break
+
+	#print env.DSCORE, env.DLIVES
+	time.sleep(1)
 	#utils.send_random_keystroke()
 
 

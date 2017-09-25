@@ -9,6 +9,8 @@ SHM_NAME="/shm_deeprl"
 SHM_SIZE=100
 TIMEOUT=0.1
 
+# 
+
 def obtain_data(repeat=0):
 	"""
 		Try to set the semaphore, read the data from the shared memory and return the read byte array.
@@ -52,10 +54,10 @@ def read_shm():
 	r = os.read(shm.fd, SHM_SIZE).partition(b'\0')[0]
 	a = [x.strip() for x in r.split(',')]
 	#print a
-	if len(a) != 3:
+	if len(a) != 4:
 		return None
 	os.close(shm.fd)
-	return a[0], a[1], a[2]
+	return a[0], a[1], a[2], a[3]
 
 
 # time.sleep(10)
