@@ -81,6 +81,7 @@ def send_random_keystroke():
 	send_keystroke(key=random.choice(keystrokes.keys()))
 
 def send_name():
-	os.system("xte 'keydown D' 'keyup D' 'keydown R' 'keyup R' 'keydown L' 'keyup L'")
+	time.sleep(1)
+	os.system("xte 'keydown Shift_L' 'keydown D' 'keyup D' 'keydown R' 'keyup R' 'keydown L' 'keyup L' 'keyup Shift_L' ")
 	time.sleep(1)
 	os.system("xte 'keydown Return' 'keyup Return'")

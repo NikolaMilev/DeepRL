@@ -1,7 +1,11 @@
 import utils
 import PIL.Image as Image
 import shared_memory as shm
+import random
 
+"""
+	I shall be using the class as a singleton
+"""
 class Environment:
 
 	"""
@@ -22,32 +26,178 @@ class Environment:
 		  - uinput (see utils module)
 		 The purpose of this list is making a script to set up everything later on
 	"""
+	
+	# all the constants
 	SS_SIZE = 80
+		# the game info constants
 	DRL_PAUSED = 1
 	DRL_DEAD = 2
 	DRL_HIGHSCORE = 4
 	DRL_TITLE_SCREEN = 8
 	DRL_QUIT = 16
 
-	
+	# highscore screen variable; 1 if we have sent the player name before, 0 otherwise
+	REACHED_TITLESCREEN = 0
+
+	# variables
 	SCR = None
+	# number of lives
 	LIVES=0
+	# life count change
 	DLIVES=0
+	#score count
 	SCORE=0
+	#score change
 	DSCORE=0
+	# current level (goes from 0)
 	LEVEL=0
+	# level change
 	DLEVEL=0
+	#game info variable; bitwise conjunction with one of the DRL_ constans indicates
+	# a certain game stage
 	GAME_INFO=0
-	
-	
+
+	"""
+		One of the methods to check if a certain game stage has been reached.
+		This one checks if the game is paused.
+	"""
+	@classmethod
+	def paused(cls):
+		if cls.GAME_INFO & cls.DRL_PAUSED:
+			return True
+		else:
+			return False
+
+	"""
+		One of the methods to check if a certain game stage has been reached.
+		If the player is dead (no more lives).  
+	"""
+	@classmethod
+	def dead(cls):
+		if cls.GAME_INFO & cls.DRL_DEAD:
+			return True
+		else:
+			return False
+
+	"""
+		One of the methods to check if a certain game stage has been reached.
+		This one checks if the highscore screen is shown. 
+	"""
+	@classmethod
+	def highscore(cls):
+		if cls.GAME_INFO & cls.DRL_HIGHSCORE:
+			return True
+		else:
+			return False
+
+	"""
+		One of the methods to check if a certain game stage has been reached.
+		This one checks if the title screen is shown. 
+	"""
+	@classmethod
+	def title_screen(cls):
+		if cls.GAME_INFO & cls.DRL_TITLE_SCREEN:
+			return True
+		else:
+			return False
+
+
+	"""
+		One of the methods to check if a certain game stage has been reached.
+		This one checks if the game is quit (not likely to happen but still.) 
+	"""
+	@classmethod
+	def quit(cls):
+		if cls.GAME_INFO & cls.DRL_QUIT:
+			return True
+		else:
+			return False
+
+
+	"""
+		One of the methods to check if a certain game stage has been reached.
+		This one checks if we are in game. This is the only stage where we take action
+		and take screenshots.
+	"""
+	@classmethod
+	def in_game(cls):
+		return not cls.GAME_INFO
 
 	@classmethod
-	def reset(cls):
-		SCR = None
-		LIVES=0
-		SCORE=0
-		GAME_INFO=0
+	def send_name(cls):
+		if not cls.REACHED_TITLESCREEN:
+			utils.send_name()
+			cls.REACHED_TITLESCREEN = 1
+		else:
+			utils.send_keystroke("enter")
+	@classmethod
+	def unpause(cls):
+		utils.send_keystroke("esc")
+	
+	@classmethod
+	def exit_title_screen(cls):
+		utils.send_keystroke("menu")
 
+
+
+	@classmethod
+	def get_back_in_game(cls):
+		if cls.highscore():
+			cls.send_name()
+		if cls.title_screen():
+			cls.exit_title_screen()
+		if cls.paused():
+			#cls.unpause()
+			pass
+		
+
+	@classmethod
+	def get_info(cls):
+		return str(cls.GAME_INFO) + " " + str(cls.SCORE) + " " + str(cls.LIVES) + " " + str(cls.LEVEL) 
+
+	"""
+		The interface for action sending
+	"""
+	@classmethod
+	def receive_action(cls, action):
+		utils.send_keystroke(action)
+
+
+	rewards = {"game":-0.1, "score_increased":0.1, "lives_increased":0.3, "lives_decreased":-0.3, "level_increased":0.5, "dead":-0.5}
+
+	@classmethod
+	def get_reward(cls):
+		if cls.dead():
+			return cls.rewards["dead"]
+		if cls.DLIVES < 0:
+			return cls.rewards["lives_decreased"]
+		if cls.DLEVEL > 0:
+			return cls.rewards["level_increased"]
+		if cls.DLIVES > 0:
+			return cls.rewards["lives_increased"]
+		if cls.DSCORE > 0:
+			return cls.rewards["score_increased"]
+		return cls.rewards["game"]
+	
+
+
+	"""
+		Reset the environment variables
+	"""
+	@classmethod
+	def reset(cls):
+		cls.SCR = None
+		cls.LIVES=0
+		cls.DLIVES=0
+		cls.SCORE=0
+		cls.DSCORE=0
+		cls.LEVEL=0
+		cls.DLEVEL=0
+		#cls.GAME_INFO=0
+
+	"""
+		This one has to be redone.
+	"""
 	@classmethod
 	def GetSS(cls):
 		""" 
@@ -61,28 +211,28 @@ class Environment:
 		cls.SS_COPY = ss.copy()
 		return utils.crop_center(ss)
 
-
-	@classmethod
-	def Action(cls, action):
-		if(action < 0 or action >= utils.NUM_ACTIONS):
-			raise ValueError('Action value must be 0, 1 or 2. See module environment.')
-		
-		utils.send_keystroke(action)
-
 	@classmethod
 	def update(cls):
+		# read shared memory
 		data = shm.read_shm()
-		print data
 		if(data):
-
-
+			# obtain the game info (see DRL_ constants)
 			cls.GAME_INFO=int(data[0])
+			# if we are dead, we reset the variables
+			if cls.dead():
+				cls.reset()
+				return
 
+			#obtain new score count but first save the change in DSCORE
 			cls.DSCORE=int(data[1])-cls.SCORE
 			cls.SCORE=int(data[1])
 
+			#obtain new life count but first save the change in DLIVES
 			cls.DLIVES=int(data[2])-cls.LIVES
 			cls.LIVES=int(data[2])
 
+			#obtain new level count but first save the change in DLEVEL
 			cls.DLEVEL=int(data[3])-cls.LEVEL
 			cls.LEVEL=int(data[3])
+
+	
