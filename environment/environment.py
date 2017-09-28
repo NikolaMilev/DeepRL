@@ -26,7 +26,9 @@ class Environment:
 		  - uinput (see utils module)
 		 The purpose of this list is making a script to set up everything later on
 	"""
-	
+	# the default game values for normal mode
+	DEFAULT_VALUES = (0, 3, 0)
+
 	# all the constants
 	SS_SIZE = 80
 		# the game info constants
@@ -163,7 +165,7 @@ class Environment:
 		utils.send_keystroke(action)
 
 
-	rewards = {"game":-0.1, "score_increased":0.1, "lives_increased":0.3, "lives_decreased":-0.3, "level_increased":0.5, "dead":-0.5}
+	rewards = {"game":-0.01, "score_increased":0.1, "lives_increased":0.3, "lives_decreased":-0.3, "level_increased":0.5, "dead":-0.5}
 
 	@classmethod
 	def get_reward(cls):
@@ -187,11 +189,11 @@ class Environment:
 	@classmethod
 	def reset(cls):
 		cls.SCR = None
-		cls.LIVES=0
+		cls.LIVES=cls.DEFAULT_VALUES[1]
 		cls.DLIVES=0
-		cls.SCORE=0
+		cls.SCORE=cls.DEFAULT_VALUES[0]
 		cls.DSCORE=0
-		cls.LEVEL=0
+		cls.LEVEL=cls.DEFAULT_VALUES[2]
 		cls.DLEVEL=0
 		#cls.GAME_INFO=0
 
