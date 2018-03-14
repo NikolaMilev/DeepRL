@@ -41,6 +41,8 @@ class Environment:
 	# highscore screen variable; 1 if we have sent the player name before, 0 otherwise
 	REACHED_TITLESCREEN = 0
 
+	IMAGE=None
+
 	# variables
 	SCR = None
 	# number of lives
@@ -157,6 +159,10 @@ class Environment:
 	def get_info(cls):
 		return str(cls.GAME_INFO) + " " + str(cls.SCORE) + " " + str(cls.LIVES) + " " + str(cls.LEVEL) 
 
+	@classmethod
+	def get_img(cls):
+		return cls.IMAGE
+
 	"""
 		The interface for action sending
 	"""
@@ -196,45 +202,31 @@ class Environment:
 		cls.LEVEL=cls.DEFAULT_VALUES[2]
 		cls.DLEVEL=0
 		#cls.GAME_INFO=0
-
-	"""
-		This one has to be redone.
-	"""
-	@classmethod
-	def GetSS(cls):
-		""" 
-			Obtain a screenshot, return a SS_SIZE x SS_SIZE grayscale representation of it; also saves it internally for further use, non-resized; 
-			whether to always use it as grayscale is perhaps to be modified.
-			Seems to work fine when the VM is minimized.
-		
-		"""
-		ss = utils.get_ss()
-		#global SS_COPY
-		cls.SS_COPY = ss.copy()
-		return utils.crop_center(ss)
+		cls.IMAGE=None
 
 	@classmethod
 	def update(cls):
 		# read shared memory
-		data = shm.read_shm()
+		data = shm.obtain_data()
 		if(data):
+			cls.IMAGE=data[1]
 			# obtain the game info (see DRL_ constants)
-			cls.GAME_INFO=int(data[0])
+			cls.GAME_INFO=int(data[0][0])
 			# if we are dead, we reset the variables
 			if cls.dead():
 				cls.reset()
 				return
 
 			#obtain new score count but first save the change in DSCORE
-			cls.DSCORE=int(data[1])-cls.SCORE
-			cls.SCORE=int(data[1])
+			cls.DSCORE=int(data[0][1])-cls.SCORE
+			cls.SCORE=int(data[0][1])
 
 			#obtain new life count but first save the change in DLIVES
-			cls.DLIVES=int(data[2])-cls.LIVES
-			cls.LIVES=int(data[2])
+			cls.DLIVES=int(data[0][2])-cls.LIVES
+			cls.LIVES=int(data[0][2])
 
 			#obtain new level count but first save the change in DLEVEL
-			cls.DLEVEL=int(data[3])-cls.LEVEL
-			cls.LEVEL=int(data[3])
+			cls.DLEVEL=int(data[0][3])-cls.LEVEL
+			cls.LEVEL=int(data[0][3])
 
 	

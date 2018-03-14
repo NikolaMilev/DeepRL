@@ -4,6 +4,8 @@ import utils
 import random
 import time
 import shared_memory as shm
+from PIL import Image
+import io
 
 
 """
@@ -41,17 +43,34 @@ def send_random():
 
 #utils.send_name()
 
+
+img=None
 time.sleep(5)
 while not env.quit():
 	#ss = env.GetSS()
 	print '---------------------------------------'
+	before = int(round(time.time() * 1000))
 	env.update()
 	env.get_back_in_game()
 	print env.get_reward()
 	print env.get_info()
-	#print env.DSCORE, env.DLIVES
-	send_random()
-	time.sleep(0.2)
-	#utils.send_random_keystroke()
+	img=env.get_img()
+	after = int(round(time.time() * 1000))
+	print "Time: ", (after-before)
 
+	if img:
+		print "Ima slike"
+		try:
+			pass
+			#img.save("/home/nmilev/Desktop/screenshot.tga")
+		except:
+			print "Img not saved, jbgy"
+	else:
+		print "Image None"
+	
+	#print env.DSCORE, env.DLIVES
+	#send_random()
+	time.sleep(0.1)
+	#utils.send_random_keystroke()
+img.save("/home/nmilev/Desktop/screenshot.tga")
 

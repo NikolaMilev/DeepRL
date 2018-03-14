@@ -3700,9 +3700,59 @@ bool screenShot()
   delete [] px;
   cout << "Wrote screenshot to '" << cName << "'" <<endl;
   return 1;
-
-
 }
+
+/* Sredi da radi!!! */
+int ctr=0;
+
+bool prepare_and_send(int score, int lives, int level)
+{
+  int nS = setting.resx * setting.resy * 3;
+  size_t buffer_size = sizeof(screenshot_buffer);
+  GLubyte *px = new GLubyte[nS];
+  if(px == NULL)
+  {
+    cout << "Alloc err, screenshot failed." <<endl;
+    return 0;
+  }
+
+
+  glPixelStorei(GL_PACK_ALIGNMENT,1);
+  glReadPixels(0, 0, setting.resx, setting.resy, GL_BGR, GL_UNSIGNED_BYTE, px);
+
+  unsigned char TGAheader[12]={0,0,2,0,0,0,0,0,0,0,0,0};
+  unsigned char header[6] = { (unsigned char)(setting.resx%256), (unsigned char)(setting.resx/256),(unsigned char)(setting.resy%256),(unsigned char)(setting.resy/256),24,0};
+  // fwrite(TGAheader, sizeof(unsigned char), 12, fscreen);
+  // fwrite(header, sizeof(unsigned char), 6, fscreen);
+
+  // fwrite(px, sizeof(GLubyte), nS, fscreen);
+  memcpy(screenshot_buffer, TGAheader, 12);
+  memcpy(screenshot_buffer+12, header, 6);
+  memcpy(screenshot_buffer+18, px, nS);
+  if(shm_send_game_data(score, lives, level, screenshot_buffer, buffer_size) < 0)
+  {
+    close_all("Failed sending!");
+  }
+  delete [] px;
+  cout << "PENIS Wrote screenshot" <<endl;
+  return 1;
+}
+
+// we need this wrapper so that we only send every 10th time
+// but I also need the final info if the game ends, perhaps
+bool maybe_prepare_and_send(int score, int lives, int level)
+{
+    // we don't want to send every rendered frame
+  // I suppose every 10th is ok
+  ctr++;
+  if(ctr % 10 !=0)
+  {
+    return false;
+  }
+
+  return prepare_and_send(score, lives, level);
+}
+
 
 int main (int argc, char *argv[]) {
   
@@ -4142,7 +4192,7 @@ int main (int argc, char *argv[]) {
     else
       DRL_DEAD=0;
 
-    shm_send_game_data(player.score, player.lives, player.level);
+    maybe_prepare_and_send(player.score, player.lives, player.level);
     ///////////////////////////////////////
 
     nonpausingGlobalTicks = SDL_GetTicks() - nonpausingLastTick;
@@ -4727,7 +4777,7 @@ int main (int argc, char *argv[]) {
 #endif
   // DEEP REINFORCEMENT LEARNING DEEPRL
   DRL_QUIT = 1;
-  shm_send_game_data(player.score, player.lives, player.level);
+  prepare_and_send(player.score, player.lives, player.level);
   ///////////////////////////////////
 
   SDL_ShowCursor(SDL_ENABLE);
