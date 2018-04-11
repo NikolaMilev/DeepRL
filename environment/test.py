@@ -47,7 +47,6 @@ def send_random():
 img=None
 time.sleep(5)
 while not env.quit():
-	#ss = env.GetSS()
 	print '---------------------------------------'
 	before = int(round(time.time() * 1000))
 	env.update()
@@ -56,21 +55,21 @@ while not env.quit():
 	print env.get_info()
 	img=env.get_img()
 	after = int(round(time.time() * 1000))
-	print "Time: ", (after-before)
+	# print "Time: ", (after-before)
 
-	if img:
-		print "Ima slike"
-		try:
-			pass
-			#img.save("/home/nmilev/Desktop/screenshot.tga")
-		except:
-			print "Img not saved, jbgy"
-	else:
-		print "Image None"
+	# if img:
+	# 	print "Ima slike"
+	# 	try:
+	# 		pass
+	# 		#img.save("/home/nmilev/Desktop/screenshot.tga")
+	# 	except:
+	# 		print "Img not saved, jbgy"
+	# else:
+	# 	print "Image None"
 	
 	#print env.DSCORE, env.DLIVES
-	#send_random()
-	time.sleep(0.1)
+	send_random()
+	time.sleep(0.05)
 	#utils.send_random_keystroke()
 img.save("/home/nmilev/Desktop/screenshot.tga")
 

@@ -4,33 +4,40 @@ import os
 import io
 import timeit
 from PIL import Image
+import configuration as conf
 
-SEM_NAME="/sem_deeprl"
+SEM_NAME=conf.SEM_NAME
 
-SHM_NAME="/shm_deeprl"
-SHM_SIZE=100
-TIMEOUT=0.1
+SHM_NAME=conf.SHM_NAME
+SHM_SIZE=conf.SHM_SIZE
+TIMEOUT=conf.TIMEOUT
 
-SS_SHM_NAME="/ss_shm_deeprl"
-SS_SHM_SIZE=800*600*3+18 # change, magic
+SS_SHM_NAME=conf.SS_SHM_NAME
+SS_W=conf.SS_W
+SS_H=conf.SS_H
+# 18 is the header, 3 is for R, G and B channels
+SS_SHM_SIZE=conf.SS_SHM_SIZE
 
-# 
 
-def obtain_data(repeat=0):
+def obtain_data():
 	"""
 		Try to set the semaphore, read the data from the shared memory and return the read byte array.
-		We wait for TIMEOUT (can be float) seconds at most twice before giving up.
+		We wait for [default timeout] seconds before giving up.
 	"""
-	sem = pi.Semaphore(SEM_NAME)
-	sem.release()
+	try:
+		sem = pi.Semaphore(SEM_NAME)
+	except pi.ExistentialError as piee:
+		print "Semaphore does not exist!"
+		return None
+	
 	retval=None
 	retimg=None
 	try:
 		print "Successfully opened semaphore!\n"
 		print "Waiting: "
 		sem.acquire()
-		retval=read_shm()
-		retimg=read_shm_img()
+		retval=read_shm_game_info()
+		retimg=read_shm_screenshot()
 		print "Posting: "
 		sem.release()
 		sem.close()
@@ -41,21 +48,13 @@ def obtain_data(repeat=0):
 			if retimg:
 				retimg.close()
 			return None
-	except pi.BusyError as e1:
-		#print "BUSY"
-		print e1
-		if repeat == 1:
-			return None
-		else:
-			sem.release()
-			sem.close()
-			return obtain_data(repeat=1)
 	except:
+		print "Error reading from shared memory!"
 		sem.release()
 		sem.close()
 		return None
 
-def read_shm():
+def read_shm_game_info():
 	"""
 		Reads from the shared memory, without the semaphores. 
 		Don't call this function without the semaphore, I haven't been playing around with file locks in python. 
@@ -76,7 +75,7 @@ def read_shm():
 		return None
 
 
-def read_shm_img():
+def read_shm_screenshot():
 	"""
 		Reads image from the shared memory, without the semaphores. 
 		Don't call this function without the semaphore, I haven't been playing around with file locks in python. 

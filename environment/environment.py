@@ -2,7 +2,8 @@ import utils
 import PIL.Image as Image
 import shared_memory as shm
 import random
-
+import RewardResolver
+import ImagePreprocessor
 """
 	I shall be using the class as a singleton
 """
@@ -49,10 +50,7 @@ class Environment:
 	LIVES=0
 	# life count change
 	DLIVES=0
-	#score count
-	SCORE=0
-	#score change
-	DSCORE=0
+	
 	# current level (goes from 0)
 	LEVEL=0
 	# level change
@@ -157,7 +155,7 @@ class Environment:
 
 	@classmethod
 	def get_info(cls):
-		return str(cls.GAME_INFO) + " " + str(cls.SCORE) + " " + str(cls.LIVES) + " " + str(cls.LEVEL) 
+		return str(cls.GAME_INFO) + " " + str(RewardResolver.getReward()) + " " + str(cls.LIVES) + " " + str(cls.LEVEL) 
 
 	@classmethod
 	def get_img(cls):
@@ -170,22 +168,9 @@ class Environment:
 	def receive_action(cls, action):
 		utils.send_keystroke(action)
 
-
-	rewards = {"game":-0.01, "score_increased":0.1, "lives_increased":0.3, "lives_decreased":-0.3, "level_increased":0.5, "dead":-0.5}
-
 	@classmethod
 	def get_reward(cls):
-		if cls.dead():
-			return cls.rewards["dead"]
-		if cls.DLIVES < 0:
-			return cls.rewards["lives_decreased"]
-		if cls.DLEVEL > 0:
-			return cls.rewards["level_increased"]
-		if cls.DLIVES > 0:
-			return cls.rewards["lives_increased"]
-		if cls.DSCORE > 0:
-			return cls.rewards["score_increased"]
-		return cls.rewards["game"]
+		return RewardResolver.getReward()
 	
 
 
@@ -197,8 +182,7 @@ class Environment:
 		cls.SCR = None
 		cls.LIVES=cls.DEFAULT_VALUES[1]
 		cls.DLIVES=0
-		cls.SCORE=cls.DEFAULT_VALUES[0]
-		cls.DSCORE=0
+		RewardResolver.reset()
 		cls.LEVEL=cls.DEFAULT_VALUES[2]
 		cls.DLEVEL=0
 		#cls.GAME_INFO=0
@@ -209,7 +193,7 @@ class Environment:
 		# read shared memory
 		data = shm.obtain_data()
 		if(data):
-			cls.IMAGE=data[1]
+			cls.IMAGE=ImagePreprocessor.process(data[1])
 			# obtain the game info (see DRL_ constants)
 			cls.GAME_INFO=int(data[0][0])
 			# if we are dead, we reset the variables
@@ -217,9 +201,8 @@ class Environment:
 				cls.reset()
 				return
 
-			#obtain new score count but first save the change in DSCORE
-			cls.DSCORE=int(data[0][1])-cls.SCORE
-			cls.SCORE=int(data[0][1])
+			# obtain new score and give it to the RewardResolver
+			RewardResolver.updateScore(data[0][1])
 
 			#obtain new life count but first save the change in DLIVES
 			cls.DLIVES=int(data[0][2])-cls.LIVES
