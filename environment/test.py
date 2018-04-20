@@ -22,19 +22,6 @@ import io
 # from PIL import Image
 
 
-
-#a = env.GetSS()
-#a.save("1.png")
-# time.sleep(1)
-# env.Action(2)
-
-#a=Image.open('1.png')
-#b=utils.crop_center(a)
-#utils.get_all_bb(utils.crop_upper(b, 0.1))
-
-# timeti returns number of seconds needed for the whole thing so we divide the result by the number of executions to get the average 
-num_stmt = 1000
-
 #utils.crop_center(utils.get_ss()).show()
 
 def send_random():
