@@ -1,7 +1,7 @@
 # name of the semaphore used for interprocess communication
 SEM_NAME="/sem_deeprl"
 # timeout for waiting on the semaphore -- currently unused
-TIMEOUT=0.1
+TIMEOUT=None
 
 # name of the shared memory segment used for sharing game info (everything except for the screenshot)
 SHM_NAME="/shm_deeprl"

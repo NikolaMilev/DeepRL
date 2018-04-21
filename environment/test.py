@@ -3,9 +3,13 @@ import utils
 #import timeit
 import random
 import time
-import shared_memory as shm
+#from shared_memory import SemShm
 from PIL import Image
 import io
+import os
+import posix_ipc as pi
+MY_PATH=os.path.dirname(os.path.realpath(__file__))
+GAME_PATH=os.path.join("/home", "nmilev", "Desktop", "master", "SDLBall", "SDL-Ball_source_build_0006_src")
 
 
 """
@@ -32,31 +36,36 @@ def send_random():
 
 
 img=None
-time.sleep(5)
-while not env.quit():
-	print '---------------------------------------'
-	before = int(round(time.time() * 1000))
-	env.update()
-	env.get_back_in_game()
-	print env.get_reward()
-	print env.get_info()
-	img=env.get_img()
-	after = int(round(time.time() * 1000))
-	# print "Time: ", (after-before)
+env.startGame()
+# while not env.quit():
+# 	print '---------------------------------------'
+# 	before = int(round(time.time() * 1000))
+# 	env.update()
+# 	env.get_back_in_game()
+# 	print env.get_reward()
+# 	print env.get_info()
+# 	img=env.get_img()
+# 	after = int(round(time.time() * 1000))
+# 	# print "Time: ", (after-before)
 
-	# if img:
-	# 	print "Ima slike"
-	# 	try:
-	# 		pass
-	# 		#img.save("/home/nmilev/Desktop/screenshot.tga")
-	# 	except:
-	# 		print "Img not saved, jbgy"
-	# else:
-	# 	print "Image None"
+# 	# if img:
+# 	# 	print "Ima slike"
+# 	# 	try:
+# 	# 		pass
+# 	# 		#img.save("/home/nmilev/Desktop/screenshot.tga")
+# 	# 	except:
+# 	# 		print "Img not saved, jbgy"
+# 	# else:
+# 	# 	print "Image None"
 	
-	#print env.DSCORE, env.DLIVES
-	send_random()
-	time.sleep(0.05)
-	#utils.send_random_keystroke()
-img.save("/home/nmilev/Desktop/screenshot.tga")
+# 	#print env.DSCORE, env.DLIVES
+# 	send_random()
+# 	time.sleep(0.05)
+# 	#utils.send_random_keystroke()
+# img.save("/home/nmilev/Desktop/screenshot.tga")
+# print "Saved the image!"
 
+while(True):
+	x_t, r_t, t_t = env.step()
+	print r_t, t_t
+	time.sleep(0.05)

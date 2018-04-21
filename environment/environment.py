@@ -1,9 +1,10 @@
 import utils
 import PIL.Image as Image
-import shared_memory as shm
+from shared_memory import SemShm
 import random
+import time
 import RewardResolver
-import ImagePreprocessor
+import os
 """
 	I shall be using the class as a singleton
 """
@@ -58,6 +59,8 @@ class Environment:
 	#game info variable; bitwise conjunction with one of the DRL_ constans indicates
 	# a certain game stage
 	GAME_INFO=0
+
+	semshm = SemShm()
 
 	"""
 		One of the methods to check if a certain game stage has been reached.
@@ -151,7 +154,13 @@ class Environment:
 		if cls.paused():
 			#cls.unpause()
 			pass
-		
+
+	@classmethod	
+	def isTerminal(cls):
+		# if cls.LIVES == 0:
+		# 	return 1
+		# return 0
+		return cls.LIVES
 
 	@classmethod
 	def get_info(cls):
@@ -172,8 +181,6 @@ class Environment:
 	def get_reward(cls):
 		return RewardResolver.getReward()
 	
-
-
 	"""
 		Reset the environment variables
 	"""
@@ -191,9 +198,9 @@ class Environment:
 	@classmethod
 	def update(cls):
 		# read shared memory
-		data = shm.obtain_data()
+		data = cls.semshm.obtain_data()
 		if(data):
-			cls.IMAGE=ImagePreprocessor.process(data[1])
+			cls.IMAGE=data[1]
 			# obtain the game info (see DRL_ constants)
 			cls.GAME_INFO=int(data[0][0])
 			# if we are dead, we reset the variables
@@ -212,4 +219,22 @@ class Environment:
 			cls.DLEVEL=int(data[0][3])-cls.LEVEL
 			cls.LEVEL=int(data[0][3])
 
-	
+	# IDEJA: dohvati info iz igre i pauziraj je
+	@classmethod
+	def step(cls):
+		if cls.semshm.getValue() == 0:
+			cls.semshm.unlock()
+		time.sleep(0.0005)
+		cls.update()
+		cls.semshm.lock()
+		return cls.IMAGE, cls.get_reward(), cls.isTerminal()
+		
+
+	@classmethod
+	def startGame(cls):
+		MY_PATH=os.path.dirname(os.path.realpath(__file__))
+		GAME_PATH=os.path.join("/home", "nmilev", "Desktop", "master", "SDLBall", "SDL-Ball_source_build_0006_src")
+		os.chdir(GAME_PATH)
+		os.system("./sdl-ball > /dev/null &")
+		os.chdir(MY_PATH)
+		time.sleep(1)
