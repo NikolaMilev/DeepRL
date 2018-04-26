@@ -23,10 +23,11 @@ TRAIN_FREQ=4
 TARGET_UPDATE_FREQ=10000
 INITIAL_EPSILON=1.0
 FINAL_EPSILON=0.1
-EPSILON_EXPLORATION=1000000
+EPSILON_EXPLORATION=100000
 NUM_EPISODES = 12000
 INITIAL_REPLAY_MEMORY_SIZE=5000
-MAX_REPLAY_MEMORY_SIZE=80000
+MAX_REPLAY_MEMORY_SIZE=30000
+LOAD_NETWORK=True
 
 
 def resolveReward(reward):
@@ -44,6 +45,8 @@ class ExperienceReplay:
 
 	def add(self, item):
 		self.memory.append(item)
+		#if len(self.memory) % 1000 == 0:
+		#	print("ExperienceReplay size: {}".format(len(self.memory)))
 	
 	def randomSample(self, numitems):
 		return random.sample(self.memory, numitems)
@@ -199,6 +202,10 @@ class DRLAgent():
 
 	def learn(self, numEpisodes=NUM_EPISODES, observationSteps=OBSERVE_MAX):
 		self.timestep = 0
+		if(LOAD_NETWORK):
+			self.loadWeights(self.targetNetwork)
+			self.loadWeights(self.qNetwork)
+			
 		for _ in range(numEpisodes):
 			terminal = False
 			observation = self.env.reset()
