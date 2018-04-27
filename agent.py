@@ -12,8 +12,8 @@ import datetime
 import os
 
 GAME="MsPacman-v0"
-NET_W = 80
-NET_H = 80
+NET_W = 70
+NET_H = 70
 NET_D = 4
 
 MINIBATCH_SIZE=32
@@ -29,7 +29,7 @@ NUM_EPISODES = 12000
 INITIAL_REPLAY_MEMORY_SIZE=5000
 MAX_REPLAY_MEMORY_SIZE=30000
 
-LOAD_NETWORK='models/MsPacman-v0/MsPacman-v02018-04-26 22_04_02.299535.h5'
+LOAD_NETWORK=None
 
 LEARNING_RATE = 0.00025  
 MOMENTUM = 0.95  
@@ -240,6 +240,8 @@ class DRLAgent():
 				prev_obs = observation
 				act = self.chooseAction(state)
 				observation, reward, terminal, _ = self.env.step(act)
+				if terminal:
+					reward -= 1
 				self.env.render()
 				state = self.run(state, act, reward, terminal, self.prepState(prev_obs, observation))
 			print("Total reward: {}, Total loss: {}".format(self.totalReward, self.totalLoss))
@@ -277,8 +279,8 @@ class DRLAgent():
 
 def main():
 	agent = DRLAgent(GAME)
-	#agent.learn()
-	agent.runTest(3)
+	agent.learn()
+	#agent.runTest(3)
 
 main()
 
