@@ -1,6 +1,6 @@
 from keras.models import Model
 from keras.layers import Input, Convolution2D, Dense, Flatten
-from keras.optimizers import Adam
+from keras.optimizers import RMSprop
 import numpy as np
 from keras.models import model_from_json
 from skimage import transform, color, io
@@ -8,13 +8,14 @@ import scipy.misc as sm
 from collections import deque
 import random
 import gym
-
+import datetime
+import os
 
 GAME="MsPacman-v0"
-NET_W = 70
-NET_H = 70
+NET_W = 80
+NET_H = 80
 NET_D = 4
-LEARNING_RATE = 0.00025
+
 MINIBATCH_SIZE=32
 GAMMA=0.99 # discount factor
 OBSERVE_MAX=30
@@ -27,9 +28,20 @@ EPSILON_EXPLORATION=100000
 NUM_EPISODES = 12000
 INITIAL_REPLAY_MEMORY_SIZE=5000
 MAX_REPLAY_MEMORY_SIZE=30000
-LOAD_NETWORK=True
+
+LOAD_NETWORK='models/MsPacman-v0/MsPacman-v02018-04-26 22_04_02.299535.h5'
+
+LEARNING_RATE = 0.00025  
+MOMENTUM = 0.95  
+MIN_GRAD = 0.01 
+
+MODEL_NAME_APPEND=str(datetime.datetime.now())
+MODEL_FILENAME=MODEL_NAME_APPEND
+DIRECTORY="models"
+SUBDIR=GAME
 
 
+# succ code: 4/AABL3-AVXnaoSgYSPx5B4XedKpyCH1jwr8BxQGBXEVjrkqMXgx3TKkg
 def resolveReward(reward):
 	return np.clip(reward, -1, 1)
 
@@ -66,6 +78,14 @@ class DRLAgent():
 		self.epsilonStep = (INITIAL_EPSILON - FINAL_EPSILON) / EPSILON_EXPLORATION
 		self.totalReward = 0
 		self.totalLoss = 0
+
+		if(LOAD_NETWORK):
+			self.loadWeights(self.targetNetwork, LOAD_NETWORK)
+			self.loadWeights(self.qNetwork, LOAD_NETWORK)
+
+		if not os.path.exists(os.path.join(DIRECTORY, SUBDIR)):
+			os.makedirs(os.path.join(DIRECTORY, SUBDIR))
+
 	def __del__(self):
 		self.env.reset()
 		self.env.close()
@@ -87,8 +107,8 @@ class DRLAgent():
 		out = Dense(numOutput, activation='softmax')(hidden) # the output layer
 
 		model = Model(inputs=inp, outputs=out)
-		adam = Adam(lr=LEARNING_RATE) # we specify the learning rate
-		model.compile(loss='mse', optimizer=adam)
+		optimizer = RMSprop(LEARNING_RATE)
+		model.compile(loss='mse', optimizer=optimizer)
 		
 		print("Compiled the network!")
 		return model
@@ -96,7 +116,7 @@ class DRLAgent():
 	@staticmethod
 	def saveNetwork(model):
 		model_json = model.to_json()
-		with open("model.json", "w") as json_file:
+		with open(os.path.join(DIRECTORY, SUBDIR, MODEL_NAME_APPEND)+".json", "w") as json_file:
 			json_file.write(model_json)
 		# serialize weights to HDF5
 		saveWeights(model)
@@ -104,7 +124,7 @@ class DRLAgent():
 	
 	@staticmethod
 	def saveWeights(model):
-		model.save_weights("model.h5")
+		model.save_weights(os.path.join(DIRECTORY, SUBDIR, MODEL_NAME_APPEND)+".h5")
 		print("Saved weights to disk")
 
 
@@ -120,8 +140,8 @@ class DRLAgent():
 		return loaded_model
 
 	@staticmethod
-	def loadWeights(model):
-		model.load_weights("model.h5")
+	def loadWeights(model, path):
+		model.load_weights(path)
 
 
 	# TODO: check contrast/luminosity changing
@@ -154,6 +174,7 @@ class DRLAgent():
 			s_t = np.expand_dims(s_t, axis=0)
 			y = self.targetNetwork.predict(s_t)
 			state, reward, done, info = self.env.step(np.argmax(y, axis=1))
+			print(info)
 
 		
 	def updateWeights(self):
@@ -202,10 +223,7 @@ class DRLAgent():
 
 	def learn(self, numEpisodes=NUM_EPISODES, observationSteps=OBSERVE_MAX):
 		self.timestep = 0
-		if(LOAD_NETWORK):
-			self.loadWeights(self.targetNetwork)
-			self.loadWeights(self.qNetwork)
-			
+		
 		for _ in range(numEpisodes):
 			terminal = False
 			observation = self.env.reset()
@@ -259,8 +277,8 @@ class DRLAgent():
 
 def main():
 	agent = DRLAgent(GAME)
-	agent.learn()
-	#agent.runTest(3)
+	#agent.learn()
+	agent.runTest(3)
 
 main()
 
