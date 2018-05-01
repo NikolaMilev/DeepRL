@@ -1,5 +1,5 @@
 from keras.models import Model
-from keras.layers import Input, Convolution2D, Dense, Flatten
+from keras.layers import Input, Convolution2D, Dense, Flatten, Lambda
 from keras.optimizers import RMSprop
 import numpy as np
 from keras.models import model_from_json
@@ -12,8 +12,8 @@ import datetime
 import os
 
 GAME="Breakout-v0"
-NET_W = 70
-NET_H = 70
+NET_W = 105
+NET_H = 80
 NET_D = 4
 
 MINIBATCH_SIZE=32
@@ -26,8 +26,8 @@ INITIAL_EPSILON=1.0
 FINAL_EPSILON=0.1
 EPSILON_EXPLORATION=100000
 NUM_EPISODES = 12000
-INITIAL_REPLAY_MEMORY_SIZE=5000
-MAX_REPLAY_MEMORY_SIZE=30000
+INITIAL_REPLAY_MEMORY_SIZE=20000
+MAX_REPLAY_MEMORY_SIZE=200000
 
 LOAD_NETWORK=None
 
@@ -60,8 +60,8 @@ class ExperienceReplay:
 		#	print("ExperienceReplay size: {}".format(len(self.memory)))
 	
 	def randomSample(self, numitems):
-		return random.sample(self.memory, numitems)
-
+		a =  random.sample(self.memory, numitems)
+		return a
 
 # frame skipping is already done inside OpenAI Gym
 # it's stochastic, 2-4 frames are skipped (both bounds included) 
@@ -100,9 +100,9 @@ class DRLAgent():
 		The network receives the state (stacked screenshots) and produces a vector that contains a 
 		Q value for each possible action from that state 
 		"""
-
 		inp = Input(shape=inputShape) # the input layer
-		conv_1 = Convolution2D(32, (8, 8), padding='same', activation='relu', strides=4)(inp) # the first convolutional layer
+		normalizer = Lambda(lambda x: x / 255.0)(inp)
+		conv_1 = Convolution2D(32, (8, 8), padding='same', activation='relu', strides=4)(normalizer) # the first convolutional layer
 		conv_2 = Convolution2D(64, (4, 4), padding='same', activation='relu', strides=2)(conv_1) # the second convolutional layer
 		conv_3 = Convolution2D(64, (3, 3), padding='same', activation='relu', strides=1)(conv_2) # the third convolutional layer
 		flat = Flatten()(conv_3) 
@@ -110,7 +110,7 @@ class DRLAgent():
 		out = Dense(numOutput, activation='softmax')(hidden) # the output layer
 
 		model = Model(inputs=inp, outputs=out)
-		optimizer = RMSprop(LEARNING_RATE)
+		optimizer = RMSprop(lr=LEARNING_RATE, rho=MOMENTUM, epsilon=MIN_GRAD)
 		model.compile(loss='mse', optimizer=optimizer)
 		
 		print("Compiled the network!")
@@ -118,6 +118,9 @@ class DRLAgent():
 
 	@staticmethod
 	def saveNetwork(model):
+		"""
+		Saves the network to a .json file.
+		"""
 		model_json = model.to_json()
 		with open(os.path.join(DIRECTORY, SUBDIR, MODEL_NAME_APPEND)+".json", "w") as json_file:
 			json_file.write(model_json)
@@ -127,12 +130,18 @@ class DRLAgent():
 	
 	@staticmethod
 	def saveWeights(model):
+		"""
+		Saves the network weights to a .h5 file
+		"""
 		model.save_weights(os.path.join(DIRECTORY, SUBDIR, MODEL_NAME_APPEND)+".h5")
 		print("Saved weights to disk")
 
 
 	@staticmethod
 	def loadNetwork():
+		"""
+		Loads the network from a .json file.
+		"""
 		json_file = open('model.json', 'r')
 		loaded_model_json = json_file.read()
 		json_file.close()
@@ -144,19 +153,32 @@ class DRLAgent():
 
 	@staticmethod
 	def loadWeights(model, path):
+		"""
+		Loads the network weights from a .h5 file.
+		"""
 		model.load_weights(path)
 
 
 	# TODO: check contrast/luminosity changing
 	@staticmethod
 	def preprocessImage(img):
-		x = img.astype(np.float64)
-		x = x / 255.0
-		x = color.rgb2gray(x)
-		#x = exposure.equalize_adapthist(x, clip_limit=0.2) # adjust the image so that the tiles are not blended into the background
-		x =  transform.resize(x,(NET_W, NET_H))
-		return np.reshape(x, (NET_W, NET_H))
+		# x = img.astype(np.float64)
+		# x = x / 255.0
 
+		# to grayscale
+		x = np.mean(img, axis=2).astype(np.uint8)
+
+		#print(x.dtype)
+		#sm.toimage(x).save("/home/nmilev/Desktop/jtzm.png")
+		#x = exposure.equalize_adapthist(x, clip_limit=0.2) # adjust the image so that the tiles are not blended into the background
+		#x =  transform.resize(x,(NET_W, NET_H))
+		
+		# downsampling to 105x80
+		x =  x[::2, ::2]
+		#print(x.shape)
+		x= np.reshape(x, (NET_W, NET_H))
+		sm.toimage(x).save("/home/nmilev/Desktop/jtzm.png")
+		return x
 
 	def runTest(self, numEpisodes):
 		for i in range(numEpisodes):
@@ -180,7 +202,11 @@ class DRLAgent():
 			print(info)
 
 		
+	
 	def updateWeights(self):
+		"""
+		Copy the weights from the online network to the target network.
+		"""
 		# print(np.array_equal(self.targetNetwork.get_weights(), self.qNetwork.get_weights()))
 		self.targetNetwork.set_weights(self.qNetwork.get_weights())
 		#print("Updated weights!")
@@ -203,9 +229,12 @@ class DRLAgent():
 	# not sure if this is needed!
 	@staticmethod
 	def prepState(prev_obs, observation):
-		x = np.maximum(DRLAgent.preprocessImage(prev_obs), DRLAgent.preprocessImage(observation))
+		#x = np.maximum(DRLAgent.preprocessImage(prev_obs), DRLAgent.preprocessImage(observation))
+		#or
+		x = DRLAgent.preprocessImage(observation)
 		#sm.toimage(x).save("/home/nmilev/Desktop/jtzm.png")
 		#print("Saved")
+		#return DRLAgent.preprocessImage(observation)
 		return x
 
 	@staticmethod
@@ -238,7 +267,6 @@ class DRLAgent():
 			# inital 4 screen state
 			# the first 4 screens are the same but it will be updated over time
 			state = np.stack([statep for _ in range(NET_D)], axis=0)
-			episode_len=0.0
 			while not terminal:
 				#print("New choice!")
 				prev_obs = observation
@@ -248,8 +276,7 @@ class DRLAgent():
 					reward -= 100.0
 				self.env.render()
 				state = self.run(state, act, reward, terminal, self.prepState(prev_obs, observation))
-				episode_len += 1.0
-			print("Avg reward: {}, Avg loss: {}".format(self.totalReward/episode_len, self.totalLoss/episode_len))
+			print("Episode reward: {}, Episode loss: {} Mem size: {}".format(self.totalReward, self.totalLoss, len(self.er.memory)))
 			self.totalLoss = 0.0
 			self.totalReward = 0.0
 
