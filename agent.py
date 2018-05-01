@@ -1,6 +1,7 @@
 from keras.models import Model
-from keras.layers import Input, Convolution2D, Dense, Flatten, Lambda
+from keras.layers import Input, Convolution2D, Dense, Flatten, Lambda, Multiply
 from keras.optimizers import RMSprop
+from keras.utils import to_categorical
 import numpy as np
 from keras.models import model_from_json
 from skimage import transform, color, io
@@ -9,6 +10,7 @@ from collections import deque
 import random
 import gym
 import datetime
+import time
 import os
 
 GAME="Breakout-v0"
@@ -25,9 +27,9 @@ TARGET_UPDATE_FREQ=10000
 INITIAL_EPSILON=1.0
 FINAL_EPSILON=0.1
 EPSILON_EXPLORATION=100000
-NUM_EPISODES = 12000
-INITIAL_REPLAY_MEMORY_SIZE=20000
-MAX_REPLAY_MEMORY_SIZE=200000
+NUM_EPISODES = 15000
+INITIAL_REPLAY_MEMORY_SIZE=10000
+MAX_REPLAY_MEMORY_SIZE=80000
 
 LOAD_NETWORK=None
 
@@ -42,7 +44,7 @@ SUBDIR=GAME
 
 # succ code: 4/AABL3-AVXnaoSgYSPx5B4XedKpyCH1jwr8BxQGBXEVjrkqMXgx3TKkg
 def resolveReward(reward):
-	return np.clip(reward/100.0, -1, 1)
+	return np.clip(reward, -1, 1)
 
 class ExperienceReplay:
 	"""
@@ -72,8 +74,8 @@ class DRLAgent():
 		self.env = gym.make(envName)
 		self.numActions = self.env.action_space.n
 		self.er = ExperienceReplay()
-		self.targetNetwork = DRLAgent.buildNetwork(numOutput=self.numActions)
-		self.qNetwork = DRLAgent.buildNetwork(numOutput=self.numActions)
+		self.targetNetwork = DRLAgent.buildNetwork(numActions=self.numActions)
+		self.qNetwork = DRLAgent.buildNetwork(numActions=self.numActions)
 		self.timestep = 0
 		self.episode = 0
 		self.epsilon = INITIAL_EPSILON
@@ -94,22 +96,25 @@ class DRLAgent():
 
 
 	@staticmethod
-	def buildNetwork(numOutput, inputShape=(NET_D, NET_W, NET_H)):
+	def buildNetwork(numActions, inputShape=(NET_D, NET_W, NET_H)):
 
 		"""
 		The network receives the state (stacked screenshots) and produces a vector that contains a 
 		Q value for each possible action from that state 
 		"""
-		inp = Input(shape=inputShape) # the input layer
-		normalizer = Lambda(lambda x: x / 255.0)(inp)
+		state_inp = Input(shape=inputShape) # the input layer
+		action_inp = Input(shape=(numActions,)) # the action mask layer
+		normalizer = Lambda(lambda x: x / 255.0)(state_inp) # the layer that divides all the input by 255 thus setting the values in [0,1]
 		conv_1 = Convolution2D(32, (8, 8), padding='same', activation='relu', strides=4)(normalizer) # the first convolutional layer
 		conv_2 = Convolution2D(64, (4, 4), padding='same', activation='relu', strides=2)(conv_1) # the second convolutional layer
 		conv_3 = Convolution2D(64, (3, 3), padding='same', activation='relu', strides=1)(conv_2) # the third convolutional layer
 		flat = Flatten()(conv_3) 
 		hidden = Dense(512, activation='relu')(flat) # the fully connected layer
-		out = Dense(numOutput, activation='softmax')(hidden) # the output layer
+		out = Dense(numActions, activation='softmax')(hidden) # the output layer
+		filtered_out = Multiply()([out, action_inp])
+		
 
-		model = Model(inputs=inp, outputs=out)
+		model = Model(inputs=[state_inp, action_inp], outputs=filtered_out)
 		optimizer = RMSprop(lr=LEARNING_RATE, rho=MOMENTUM, epsilon=MIN_GRAD)
 		model.compile(loss='mse', optimizer=optimizer)
 		
@@ -170,14 +175,14 @@ class DRLAgent():
 
 		#print(x.dtype)
 		#sm.toimage(x).save("/home/nmilev/Desktop/jtzm.png")
-		#x = exposure.equalize_adapthist(x, clip_limit=0.2) # adjust the image so that the tiles are not blended into the background
+
 		#x =  transform.resize(x,(NET_W, NET_H))
 		
-		# downsampling to 105x80
+		# downsampling to 105x80 (half the size on both dimensions)
 		x =  x[::2, ::2]
 		#print(x.shape)
 		x= np.reshape(x, (NET_W, NET_H))
-		sm.toimage(x).save("/home/nmilev/Desktop/jtzm.png")
+		#sm.toimage(x).save("/home/nmilev/Desktop/jtzm.png")
 		return x
 
 	def runTest(self, numEpisodes):
@@ -214,17 +219,22 @@ class DRLAgent():
 	def train(self):
 		mb = self.er.randomSample(MINIBATCH_SIZE)
 		states = np.array([x[0] for x in mb])
-		actions = np.array([x[1] for x in mb])
+		#actions = np.array([x[1] for x in mb])
+		actions = to_categorical(np.array([x[1] for x in mb]), num_classes=self.numActions)
 		rewards = np.array([x[2] for x in mb])
 		next_states = np.array([x[3] for x in mb])
-		not_terminals = np.array([0 if a else 1 for a in [x[4] for x in mb]]) # 0 if the state is terminal and 1 otherwise
+		terminals = np.array([1 if a else 0 for a in [x[4] for x in mb]]) # 1 if the state is terminal and 0 otherwise
 		#print("STATES SHAPE:")
 		#print(states.shape)
-		targets = self.targetNetwork.predict(next_states, batch_size=MINIBATCH_SIZE)
-		expected_q = self.targetNetwork.predict(next_states, batch_size=MINIBATCH_SIZE)
-		targets[range(MINIBATCH_SIZE), actions] = rewards + not_terminals * GAMMA * np.max(expected_q, axis=1)
-		#print("Training on batch")
-		self.totalLoss += self.qNetwork.train_on_batch(states, targets)
+		targets = self.targetNetwork.predict([next_states, np.ones(actions.shape)], batch_size=MINIBATCH_SIZE)
+		targets[terminals] = 0
+		q_values = rewards + GAMMA * np.max(targets, axis=1)
+		q_values = np.expand_dims(q_values, axis=1)  * actions
+		# sm.toimage(states[0][0]).save("/home/nmilev/Desktop/jtzm.png")
+		# print("SAVED")
+
+		# TODO TRAIN
+		self.totalLoss += self.qNetwork.train_on_batch([states, actions], q_values)
 
 	# not sure if this is needed!
 	@staticmethod
@@ -245,9 +255,10 @@ class DRLAgent():
 		if self.epsilon >= random.random() or self.timestep < INITIAL_REPLAY_MEMORY_SIZE:
 			retval = random.randrange(self.numActions)
 		else:
-			y = self.targetNetwork.predict(np.expand_dims(state, axis=0))
+			#print(np.expand_dims(np.ones(self.numActions), axis=0).shape)
+			y = self.targetNetwork.predict([np.expand_dims(state, axis=0), np.expand_dims(np.ones(self.numActions), axis=0)])
 			retval = np.argmax(y[0], axis=0)
-
+			#print(y, retval)
 		if self.epsilon > FINAL_EPSILON and self.timestep >= INITIAL_REPLAY_MEMORY_SIZE:
 			self.epsilon -= self.epsilonStep
 
@@ -256,7 +267,7 @@ class DRLAgent():
 	def learn(self, numEpisodes=NUM_EPISODES, observationSteps=OBSERVE_MAX):
 		self.timestep = 0
 		
-		for _ in range(numEpisodes):
+		for ep_count in range(numEpisodes):
 			terminal = False
 			observation = self.env.reset()
 			for i in range(random.randint(1, observationSteps)):
@@ -270,13 +281,15 @@ class DRLAgent():
 			while not terminal:
 				#print("New choice!")
 				prev_obs = observation
+				#print(state.shape)
 				act = self.chooseAction(state)
 				observation, reward, terminal, _ = self.env.step(act)
-				if terminal:
-					reward -= 100.0
+				# if terminal:
+				# 	reward -= 100.0
 				self.env.render()
 				state = self.run(state, act, reward, terminal, self.prepState(prev_obs, observation))
-			print("Episode reward: {}, Episode loss: {} Mem size: {}".format(self.totalReward, self.totalLoss, len(self.er.memory)))
+			if ep_count % 50 == 0:
+				print("Episode {} reward: {}, Episode loss: {} Mem size: {} Time: {} Frame: {}".format(ep_count, self.totalReward, self.totalLoss, len(self.er.memory), time.strftime("%d/%m/%Y--%H:%M"), self.timestep))
 			self.totalLoss = 0.0
 			self.totalReward = 0.0
 
