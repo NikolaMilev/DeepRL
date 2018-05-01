@@ -8,14 +8,20 @@ import scipy.misc as sm
 from collections import deque
 import random
 import gym
-import datetime
 import os
+
+import datetime
+MODEL_NAME_APPEND=str(datetime.datetime.now())
+
+
+from tensorflow.python.client import device_lib
+print(device_lib.list_local_devices())
 
 GAME="Breakout-v0"
 NET_W = 70
 NET_H = 70
 NET_D = 4
-
+LEARNING_RATE = 0.00025
 MINIBATCH_SIZE=32
 GAMMA=0.99 # discount factor
 OBSERVE_MAX=30
@@ -24,23 +30,15 @@ TRAIN_FREQ=4
 TARGET_UPDATE_FREQ=10000
 INITIAL_EPSILON=1.0
 FINAL_EPSILON=0.1
-EPSILON_EXPLORATION=100000
+EPSILON_EXPLORATION=1000000
 NUM_EPISODES = 12000
 INITIAL_REPLAY_MEMORY_SIZE=5000
-MAX_REPLAY_MEMORY_SIZE=30000
-
+MAX_REPLAY_MEMORY_SIZE=50000
 LOAD_NETWORK=None
+MODEL_FILENAME=GAME+MODEL_NAME_APPEND
+DIRECTORY="colaboratory_models"
 
-LEARNING_RATE = 0.00025  
-MOMENTUM = 0.95  
-MIN_GRAD = 0.01 
 
-MODEL_NAME_APPEND=str(datetime.datetime.now())
-MODEL_FILENAME=MODEL_NAME_APPEND
-DIRECTORY="models"
-SUBDIR=GAME
-
-# succ code: 4/AABL3-AVXnaoSgYSPx5B4XedKpyCH1jwr8BxQGBXEVjrkqMXgx3TKkg
 def resolveReward(reward):
 	return np.clip(reward/100.0, -1, 1)
 
@@ -57,14 +55,11 @@ class ExperienceReplay:
 	def add(self, item):
 		self.memory.append(item)
 		#if len(self.memory) % 1000 == 0:
-		#	print("ExperienceReplay size: {}".format(len(self.memory)))
+		#  print("ExperienceReplay size: {}".format(len(self.memory)))
 	
 	def randomSample(self, numitems):
 		return random.sample(self.memory, numitems)
 
-
-# frame skipping is already done inside OpenAI Gym
-# it's stochastic, 2-4 frames are skipped (both bounds included) 
 
 class DRLAgent():
 
@@ -80,18 +75,9 @@ class DRLAgent():
 		self.epsilonStep = (INITIAL_EPSILON - FINAL_EPSILON) / EPSILON_EXPLORATION
 		self.totalReward = 0
 		self.totalLoss = 0
-
-		if(LOAD_NETWORK):
-			self.loadWeights(self.targetNetwork, LOAD_NETWORK)
-			self.loadWeights(self.qNetwork, LOAD_NETWORK)
-
-		if not os.path.exists(os.path.join(DIRECTORY, SUBDIR)):
-			os.makedirs(os.path.join(DIRECTORY, SUBDIR))
-
 	def __del__(self):
 		self.env.reset()
 		self.env.close()
-
 
 	@staticmethod
 	def buildNetwork(numOutput, inputShape=(NET_D, NET_W, NET_H)):
@@ -110,7 +96,7 @@ class DRLAgent():
 		out = Dense(numOutput, activation='softmax')(hidden) # the output layer
 
 		model = Model(inputs=inp, outputs=out)
-		optimizer = RMSprop(LEARNING_RATE)
+		optimizer = RMSprop(LEARNING_RATE) # we specify the learning rate
 		model.compile(loss='mse', optimizer=optimizer)
 		
 		print("Compiled the network!")
@@ -119,7 +105,7 @@ class DRLAgent():
 	@staticmethod
 	def saveNetwork(model):
 		model_json = model.to_json()
-		with open(os.path.join(DIRECTORY, SUBDIR, MODEL_NAME_APPEND)+".json", "w") as json_file:
+		with open(os.path.join(DIRECTORY, MODEL_FILENAME + ".json"), "w") as json_file:
 			json_file.write(model_json)
 		# serialize weights to HDF5
 		saveWeights(model)
@@ -127,7 +113,7 @@ class DRLAgent():
 	
 	@staticmethod
 	def saveWeights(model):
-		model.save_weights(os.path.join(DIRECTORY, SUBDIR, MODEL_NAME_APPEND)+".h5")
+		model.save_weights(os.path.join(DIRECTORY, MODEL_FILENAME + ".h5"))
 		print("Saved weights to disk")
 
 
@@ -170,14 +156,13 @@ class DRLAgent():
 		state = self.env.reset()
 		done=None
 		while done != True:
-			self.env.render()
+			#self.env.render()
 			x_t = self.preprocessImage(state)
 			s_t = np.stack([x_t for _ in range(NET_D)], axis=0)
 			#print(s_t.shape)
 			s_t = np.expand_dims(s_t, axis=0)
 			y = self.targetNetwork.predict(s_t)
 			state, reward, done, info = self.env.step(np.argmax(y, axis=1))
-			print(info)
 
 		
 	def updateWeights(self):
@@ -226,32 +211,35 @@ class DRLAgent():
 
 	def learn(self, numEpisodes=NUM_EPISODES, observationSteps=OBSERVE_MAX):
 		self.timestep = 0
-		
-		for _ in range(numEpisodes):
+		if(LOAD_NETWORK):
+			self.loadWeights(self.targetNetwork, LOAD_NETWORK)
+			self.loadWeights(self.qNetwork, LOAD_NETWORK)
+			
+		for ep in range(numEpisodes):
 			terminal = False
 			observation = self.env.reset()
 			for i in range(random.randint(1, observationSteps)):
 				prev_obs = observation
 				observation, _, _, _ = self.env.step(0)
-				self.env.render()
+				#self.env.render()
 			statep = self.prepState(prev_obs, observation)
 			# inital 4 screen state
 			# the first 4 screens are the same but it will be updated over time
 			state = np.stack([statep for _ in range(NET_D)], axis=0)
-			episode_len=0.0
+			episode_len = 0
 			while not terminal:
+				episode_len += 1
 				#print("New choice!")
 				prev_obs = observation
 				act = self.chooseAction(state)
 				observation, reward, terminal, _ = self.env.step(act)
+				#self.env.render()
 				if terminal:
 					reward -= 100.0
-				self.env.render()
 				state = self.run(state, act, reward, terminal, self.prepState(prev_obs, observation))
-				episode_len += 1.0
-			print("Avg reward: {}, Avg loss: {}".format(self.totalReward/episode_len, self.totalLoss/episode_len))
-			self.totalLoss = 0.0
-			self.totalReward = 0.0
+			print("Episode: {} Timestep: {}, Avg reward: {}, Avg loss: {}".format(ep, self.timestep, self.totalReward/episode_len, self.totalLoss/episode_len))
+			self.totalReward=0.0
+			self.totalLoss=0.0
 
 
 
@@ -283,11 +271,3 @@ class DRLAgent():
 		self.timestep = self.timestep + 1
 
 		return next_state
-
-def main():
-	agent = DRLAgent(GAME)
-	agent.learn()
-	#agent.runTest(3)
-
-main()
-
