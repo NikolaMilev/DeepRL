@@ -12,6 +12,7 @@ import gym
 import datetime
 import time
 import os
+import sys
 
 GAME="Breakout-v0"
 NET_W = 105
@@ -27,9 +28,9 @@ TARGET_UPDATE_FREQ=10000
 INITIAL_EPSILON=1.0
 FINAL_EPSILON=0.1
 EPSILON_EXPLORATION=100000
-NUM_EPISODES = 15000
+NUM_EPISODES = 20000
 INITIAL_REPLAY_MEMORY_SIZE=10000
-MAX_REPLAY_MEMORY_SIZE=80000
+MAX_REPLAY_MEMORY_SIZE=100000
 
 LOAD_NETWORK=None
 
@@ -290,6 +291,7 @@ class DRLAgent():
 				state = self.run(state, act, reward, terminal, self.prepState(prev_obs, observation))
 			if ep_count % 50 == 0:
 				print("Episode {} reward: {}, Episode loss: {} Mem size: {} Time: {} Frame: {}".format(ep_count, self.totalReward, self.totalLoss, len(self.er.memory), time.strftime("%d/%m/%Y--%H:%M"), self.timestep))
+				sys.stdout.flush()
 			self.totalLoss = 0.0
 			self.totalReward = 0.0
 

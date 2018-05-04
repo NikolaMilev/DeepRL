@@ -1,0 +1,2113 @@
+Compiled the network!
+Compiled the network!
+Episode 0 reward: 0.0, Episode loss: 0 Mem size: 178 Time: 02/05/2018--11:41 Frame: 178
+Episode 50 reward: 1.0, Episode loss: 0.07438991536037065 Mem size: 12707 Time: 02/05/2018--11:43 Frame: 12707
+Copying!
+Saving!
+Saved weights to disk
+Episode 100 reward: 0.0, Episode loss: 0.06232135693426244 Mem size: 24406 Time: 02/05/2018--11:48 Frame: 24406
+Copying!
+Saving!
+Saved weights to disk
+Episode 150 reward: 2.0, Episode loss: 0.11708336797892116 Mem size: 37173 Time: 02/05/2018--11:54 Frame: 37173
+Copying!
+Saving!
+Saved weights to disk
+Copying!
+Saving!
+Saved weights to disk
+Episode 200 reward: 1.0, Episode loss: 0.087311018636683 Mem size: 51752 Time: 02/05/2018--12:01 Frame: 51752
+Copying!
+Saving!
+Saved weights to disk
+Episode 250 reward: 1.0, Episode loss: 0.11015347632928751 Mem size: 63963 Time: 02/05/2018--12:06 Frame: 63963
+Copying!
+Saving!
+Saved weights to disk
+Episode 300 reward: 0.0, Episode loss: 0.06190167026943527 Mem size: 75940 Time: 02/05/2018--12:12 Frame: 75940
+Copying!
+Saving!
+Saved weights to disk
+Copying!
+Saving!
+Saved weights to disk
+Episode 350 reward: 3.0, Episode loss: 0.17665798522648402 Mem size: 90419 Time: 02/05/2018--12:19 Frame: 90419
+Copying!
+Saving!
+Saved weights to disk
+Episode 400 reward: 3.0, Episode loss: 0.1169214773690328 Mem size: 100000 Time: 02/05/2018--12:26 Frame: 105760
+Copying!
+Saving!
+Saved weights to disk
+Copying!
+Saving!
+Saved weights to disk
+Episode 450 reward: 1.0, Episode loss: 0.25324529901263304 Mem size: 100000 Time: 02/05/2018--12:35 Frame: 124468
+Copying!
+Saving!
+Saved weights to disk
+Episode 500 reward: 1.0, Episode loss: 0.15796904562739655 Mem size: 100000 Time: 02/05/2018--12:43 Frame: 139178
+Copying!
+Saving!
+Saved weights to disk
+Copying!
+Saving!
+Saved weights to disk
+Episode 550 reward: 4.0, Episode loss: 0.24322141968877986 Mem size: 100000 Time: 02/05/2018--12:50 Frame: 154754
+Copying!
+Saving!
+Saved weights to disk
+Copying!
+Saving!
+Saved weights to disk
+Episode 600 reward: 0.0, Episode loss: 0.13852486308314838 Mem size: 100000 Time: 02/05/2018--13:01 Frame: 176733
+Copying!
+Saving!
+Saved weights to disk
+Episode 650 reward: 3.0, Episode loss: 0.08397063714801334 Mem size: 100000 Time: 02/05/2018--13:07 Frame: 188705
+Copying!
+Saving!
+Saved weights to disk
+Copying!
+Saving!
+Saved weights to disk
+Episode 700 reward: 3.0, Episode loss: 0.13502574258018285 Mem size: 100000 Time: 02/05/2018--13:17 Frame: 208230
+Copying!
+Saving!
+Saved weights to disk
+Copying!
+Saving!
+Saved weights to disk
+Episode 750 reward: 0.0, Episode loss: 0.057510984217515215 Mem size: 100000 Time: 02/05/2018--13:24 Frame: 221858
+Copying!
+Saving!
+Saved weights to disk
+Copying!
+Saving!
+Saved weights to disk
+Episode 800 reward: 0.0, Episode loss: 0.216047130379593 Mem size: 100000 Time: 02/05/2018--13:33 Frame: 240086
+Copying!
+Saving!
+Saved weights to disk
+Episode 850 reward: 0.0, Episode loss: 0.052200561709469184 Mem size: 100000 Time: 02/05/2018--13:41 Frame: 257114
+Copying!
+Saving!
+Saved weights to disk
+Episode 900 reward: 1.0, Episode loss: 0.034662641352042556 Mem size: 100000 Time: 02/05/2018--13:47 Frame: 268480
+Copying!
+Saving!
+Saved weights to disk
+Copying!
+Saving!
+Saved weights to disk
+Episode 950 reward: 3.0, Episode loss: 0.26762722895364277 Mem size: 100000 Time: 02/05/2018--13:57 Frame: 288681
+Copying!
+Saving!
+Saved weights to disk
+Copying!
+Saving!
+Saved weights to disk
+Episode 1000 reward: 2.0, Episode loss: 0.11940131688606925 Mem size: 100000 Time: 02/05/2018--14:05 Frame: 304086
+Copying!
+Saving!
+Saved weights to disk
+Episode 1050 reward: 1.0, Episode loss: 0.03320668337983079 Mem size: 100000 Time: 02/05/2018--14:10 Frame: 315043
+Copying!
+Saving!
+Saved weights to disk
+Copying!
+Saving!
+Saved weights to disk
+Episode 1100 reward: 3.0, Episode loss: 0.20078014768660069 Mem size: 100000 Time: 02/05/2018--14:19 Frame: 331854
+Copying!
+Saving!
+Saved weights to disk
+Copying!
+Saving!
+Saved weights to disk
+Episode 1150 reward: 3.0, Episode loss: 0.12918613993679173 Mem size: 100000 Time: 02/05/2018--14:29 Frame: 352499
+Copying!
+Saving!
+Saved weights to disk
+Copying!
+Saving!
+Saved weights to disk
+Episode 1200 reward: 4.0, Episode loss: 0.3202309373009484 Mem size: 100000 Time: 02/05/2018--14:38 Frame: 370091
+Copying!
+Saving!
+Saved weights to disk
+Episode 1250 reward: 2.0, Episode loss: 0.1056373244500719 Mem size: 100000 Time: 02/05/2018--14:45 Frame: 383270
+Copying!
+Saving!
+Saved weights to disk
+Copying!
+Saving!
+Saved weights to disk
+Episode 1300 reward: 2.0, Episode loss: 0.2316415792738553 Mem size: 100000 Time: 02/05/2018--14:55 Frame: 402916
+Copying!
+Saving!
+Saved weights to disk
+Copying!
+Saving!
+Saved weights to disk
+Episode 1350 reward: 0.0, Episode loss: 0.059065036417450756 Mem size: 100000 Time: 02/05/2018--15:04 Frame: 422328
+Copying!
+Saving!
+Saved weights to disk
+Episode 1400 reward: 1.0, Episode loss: 0.2599766743078362 Mem size: 100000 Time: 02/05/2018--15:11 Frame: 436236
+Copying!
+Saving!
+Saved weights to disk
+Copying!
+Saving!
+Saved weights to disk
+Episode 1450 reward: 2.0, Episode loss: 0.12067711493000388 Mem size: 100000 Time: 02/05/2018--15:19 Frame: 452117
+Copying!
+Saving!
+Saved weights to disk
+Copying!
+Saving!
+Saved weights to disk
+Episode 1500 reward: 1.0, Episode loss: 0.15929088459233753 Mem size: 100000 Time: 02/05/2018--15:29 Frame: 472489
+Copying!
+Saving!
+Saved weights to disk
+Episode 1550 reward: 1.0, Episode loss: 0.21203077596146613 Mem size: 100000 Time: 02/05/2018--15:37 Frame: 487828
+Copying!
+Saving!
+Saved weights to disk
+Episode 1600 reward: 2.0, Episode loss: 0.11688411081559025 Mem size: 100000 Time: 02/05/2018--15:43 Frame: 499866
+Copying!
+Saving!
+Saved weights to disk
+Copying!
+Saving!
+Saved weights to disk
+Episode 1650 reward: 5.0, Episode loss: 0.2267045368498657 Mem size: 100000 Time: 02/05/2018--15:53 Frame: 519126
+Copying!
+Saving!
+Saved weights to disk
+Copying!
+Saving!
+Saved weights to disk
+Episode 1700 reward: 2.0, Episode loss: 0.08247806728468277 Mem size: 100000 Time: 02/05/2018--16:01 Frame: 535546
+Copying!
+Saving!
+Saved weights to disk
+Episode 1750 reward: 0.0, Episode loss: 0.07552623172523454 Mem size: 100000 Time: 02/05/2018--16:07 Frame: 547402
+Copying!
+Saving!
+Saved weights to disk
+Copying!
+Saving!
+Saved weights to disk
+Episode 1800 reward: 3.0, Episode loss: 0.16573997476371005 Mem size: 100000 Time: 02/05/2018--16:17 Frame: 567410
+Copying!
+Saving!
+Saved weights to disk
+Copying!
+Saving!
+Saved weights to disk
+Copying!
+Saving!
+Saved weights to disk
+Episode 1850 reward: 2.0, Episode loss: 0.12002837448380888 Mem size: 100000 Time: 02/05/2018--16:29 Frame: 590235
+Copying!
+Saving!
+Saved weights to disk
+Episode 1900 reward: 2.0, Episode loss: 0.20202690750011243 Mem size: 100000 Time: 02/05/2018--16:34 Frame: 601388
+Copying!
+Saving!
+Saved weights to disk
+Copying!
+Saving!
+Saved weights to disk
+Episode 1950 reward: 3.0, Episode loss: 0.16123903819243424 Mem size: 100000 Time: 02/05/2018--16:45 Frame: 622592
+Copying!
+Saving!
+Saved weights to disk
+Copying!
+Saving!
+Saved weights to disk
+Episode 2000 reward: 1.0, Episode loss: 0.08145484694978222 Mem size: 100000 Time: 02/05/2018--16:54 Frame: 640953
+Copying!
+Saving!
+Saved weights to disk
+Episode 2050 reward: 2.0, Episode loss: 0.1404281238792464 Mem size: 100000 Time: 02/05/2018--17:00 Frame: 652781
+Copying!
+Saving!
+Saved weights to disk
+Episode 2100 reward: 1.0, Episode loss: 0.10621585589251481 Mem size: 100000 Time: 02/05/2018--17:07 Frame: 666574
+Copying!
+Saving!
+Saved weights to disk
+Episode 2150 reward: 2.0, Episode loss: 0.09253929828992113 Mem size: 100000 Time: 02/05/2018--17:13 Frame: 679086
+Copying!
+Saving!
+Saved weights to disk
+Copying!
+Saving!
+Saved weights to disk
+Copying!
+Saving!
+Saved weights to disk
+Episode 2200 reward: 2.0, Episode loss: 0.10779141023522243 Mem size: 100000 Time: 02/05/2018--17:24 Frame: 701033
+Copying!
+Saving!
+Saved weights to disk
+Episode 2250 reward: 3.0, Episode loss: 0.1325362138741184 Mem size: 100000 Time: 02/05/2018--17:32 Frame: 715293
+Copying!
+Saving!
+Saved weights to disk
+Copying!
+Saving!
+Saved weights to disk
+Episode 2300 reward: 3.0, Episode loss: 0.1223992578452453 Mem size: 100000 Time: 02/05/2018--17:40 Frame: 731828
+Copying!
+Saving!
+Saved weights to disk
+Episode 2350 reward: 3.0, Episode loss: 0.22044018682208844 Mem size: 100000 Time: 02/05/2018--17:49 Frame: 749339
+Copying!
+Saving!
+Saved weights to disk
+Copying!
+Saving!
+Saved weights to disk
+Episode 2400 reward: 2.0, Episode loss: 0.1344779004866723 Mem size: 100000 Time: 02/05/2018--17:58 Frame: 766991
+Copying!
+Saving!
+Saved weights to disk
+Episode 2450 reward: 0.0, Episode loss: 0.06089958586380817 Mem size: 100000 Time: 02/05/2018--18:03 Frame: 778332
+Copying!
+Saving!
+Saved weights to disk
+Episode 2500 reward: 0.0, Episode loss: 0.052696845261380076 Mem size: 100000 Time: 02/05/2018--18:09 Frame: 789587
+Copying!
+Saving!
+Saved weights to disk
+Copying!
+Saving!
+Saved weights to disk
+Episode 2550 reward: 1.0, Episode loss: 0.11834271062980406 Mem size: 100000 Time: 02/05/2018--18:17 Frame: 805004
+Copying!
+Saving!
+Saved weights to disk
+Copying!
+Saving!
+Saved weights to disk
+Episode 2600 reward: 3.0, Episode loss: 0.18431786994915456 Mem size: 100000 Time: 02/05/2018--18:27 Frame: 824737
+Copying!
+Saving!
+Saved weights to disk
+Copying!
+Saving!
+Saved weights to disk
+Episode 2650 reward: 0.0, Episode loss: 0.044307336007477716 Mem size: 100000 Time: 02/05/2018--18:36 Frame: 842946
+Copying!
+Saving!
+Saved weights to disk
+Episode 2700 reward: 3.0, Episode loss: 0.14872965903487056 Mem size: 100000 Time: 02/05/2018--18:42 Frame: 854427
+Copying!
+Saving!
+Saved weights to disk
+Copying!
+Saving!
+Saved weights to disk
+Episode 2750 reward: 2.0, Episode loss: 0.19740020186873153 Mem size: 100000 Time: 02/05/2018--18:52 Frame: 874602
+Copying!
+Saving!
+Saved weights to disk
+Copying!
+Saving!
+Saved weights to disk
+Episode 2800 reward: 0.0, Episode loss: 0.12602802383480594 Mem size: 100000 Time: 02/05/2018--19:02 Frame: 893600
+Copying!
+Saving!
+Saved weights to disk
+Episode 2850 reward: 2.0, Episode loss: 0.1586134989920538 Mem size: 100000 Time: 02/05/2018--19:09 Frame: 908024
+Copying!
+Saving!
+Saved weights to disk
+Copying!
+Saving!
+Saved weights to disk
+Episode 2900 reward: 0.0, Episode loss: 0.12221342360135168 Mem size: 100000 Time: 02/05/2018--19:19 Frame: 926831
+Copying!
+Saving!
+Saved weights to disk
+Copying!
+Saving!
+Saved weights to disk
+Episode 2950 reward: 3.0, Episode loss: 0.21111183977336623 Mem size: 100000 Time: 02/05/2018--19:28 Frame: 945671
+Copying!
+Saving!
+Saved weights to disk
+Episode 3000 reward: 0.0, Episode loss: 0.06922350719105452 Mem size: 100000 Time: 02/05/2018--19:34 Frame: 957374
+Copying!
+Saving!
+Saved weights to disk
+Episode 3050 reward: 2.0, Episode loss: 0.14595070062205195 Mem size: 100000 Time: 02/05/2018--19:39 Frame: 967682
+Copying!
+Saving!
+Saved weights to disk
+Copying!
+Saving!
+Saved weights to disk
+Episode 3100 reward: 0.0, Episode loss: 0.14134015672607347 Mem size: 100000 Time: 02/05/2018--19:46 Frame: 980962
+Copying!
+Saving!
+Saved weights to disk
+Copying!
+Saving!
+Saved weights to disk
+Episode 3150 reward: 0.0, Episode loss: 0.14960701658856124 Mem size: 100000 Time: 02/05/2018--19:57 Frame: 1001699
+Copying!
+Saving!
+Saved weights to disk
+Episode 3200 reward: 3.0, Episode loss: 0.17298147911787964 Mem size: 100000 Time: 02/05/2018--20:05 Frame: 1018346
+Copying!
+Saving!
+Saved weights to disk
+Copying!
+Saving!
+Saved weights to disk
+Episode 3250 reward: 2.0, Episode loss: 0.14699806933640502 Mem size: 100000 Time: 02/05/2018--20:13 Frame: 1033135
+Copying!
+Saving!
+Saved weights to disk
+Episode 3300 reward: 3.0, Episode loss: 0.3001227067725267 Mem size: 100000 Time: 02/05/2018--20:21 Frame: 1048826
+Copying!
+Saving!
+Saved weights to disk
+Copying!
+Saving!
+Saved weights to disk
+Episode 3350 reward: 1.0, Episode loss: 0.09794080321444198 Mem size: 100000 Time: 02/05/2018--20:29 Frame: 1066433
+Copying!
+Saving!
+Saved weights to disk
+Episode 3400 reward: 0.0, Episode loss: 0.06784841523040086 Mem size: 100000 Time: 02/05/2018--20:35 Frame: 1077890
+Copying!
+Saving!
+Saved weights to disk
+Episode 3450 reward: 1.0, Episode loss: 0.0912960683053825 Mem size: 100000 Time: 02/05/2018--20:41 Frame: 1089386
+Copying!
+Saving!
+Saved weights to disk
+Copying!
+Saving!
+Saved weights to disk
+Episode 3500 reward: 2.0, Episode loss: 0.2018403633555863 Mem size: 100000 Time: 02/05/2018--20:48 Frame: 1103991
+Copying!
+Saving!
+Saved weights to disk
+Episode 3550 reward: 3.0, Episode loss: 0.1948822435515467 Mem size: 100000 Time: 02/05/2018--20:56 Frame: 1119704
+Copying!
+Saving!
+Saved weights to disk
+Copying!
+Saving!
+Saved weights to disk
+Copying!
+Saving!
+Saved weights to disk
+Episode 3600 reward: 2.0, Episode loss: 0.2258869489596691 Mem size: 100000 Time: 02/05/2018--21:07 Frame: 1141457
+Copying!
+Saving!
+Saved weights to disk
+Copying!
+Saving!
+Saved weights to disk
+Episode 3650 reward: 0.0, Episode loss: 0.10184783075237647 Mem size: 100000 Time: 02/05/2018--21:19 Frame: 1164091
+Copying!
+Saving!
+Saved weights to disk
+Copying!
+Saving!
+Saved weights to disk
+Episode 3700 reward: 2.0, Episode loss: 0.15007324900943786 Mem size: 100000 Time: 02/05/2018--21:29 Frame: 1183385
+Copying!
+Saving!
+Saved weights to disk
+Episode 3750 reward: 0.0, Episode loss: 0.112465074256761 Mem size: 100000 Time: 02/05/2018--21:36 Frame: 1197486
+Copying!
+Saving!
+Saved weights to disk
+Episode 3800 reward: 0.0, Episode loss: 0.07616864558076486 Mem size: 100000 Time: 02/05/2018--21:41 Frame: 1208311
+Copying!
+Saving!
+Saved weights to disk
+Copying!
+Saving!
+Saved weights to disk
+Episode 3850 reward: 0.0, Episode loss: 0.0648031079035718 Mem size: 100000 Time: 02/05/2018--21:48 Frame: 1221968
+Copying!
+Saving!
+Saved weights to disk
+Copying!
+Saving!
+Saved weights to disk
+Episode 3900 reward: 4.0, Episode loss: 0.23908488018787466 Mem size: 100000 Time: 02/05/2018--21:59 Frame: 1242610
+Copying!
+Saving!
+Saved weights to disk
+Copying!
+Saving!
+Saved weights to disk
+Episode 3950 reward: 2.0, Episode loss: 0.163666629785439 Mem size: 100000 Time: 02/05/2018--22:09 Frame: 1262649
+Copying!
+Saving!
+Saved weights to disk
+Episode 4000 reward: 1.0, Episode loss: 0.10817373089957982 Mem size: 100000 Time: 02/05/2018--22:18 Frame: 1279778
+Copying!
+Saving!
+Saved weights to disk
+Copying!
+Saving!
+Saved weights to disk
+Copying!
+Saving!
+Saved weights to disk
+Episode 4050 reward: 0.0, Episode loss: 0.030770018056500703 Mem size: 100000 Time: 02/05/2018--22:28 Frame: 1300271
+Copying!
+Saving!
+Saved weights to disk
+Episode 4100 reward: 3.0, Episode loss: 0.1362834568717517 Mem size: 100000 Time: 02/05/2018--22:34 Frame: 1312013
+Copying!
+Saving!
+Saved weights to disk
+Episode 4150 reward: 0.0, Episode loss: 0.05985480549861677 Mem size: 100000 Time: 02/05/2018--22:39 Frame: 1321866
+Copying!
+Saving!
+Saved weights to disk
+Episode 4200 reward: 2.0, Episode loss: 0.0912036184745375 Mem size: 100000 Time: 02/05/2018--22:45 Frame: 1332883
+Copying!
+Saving!
+Saved weights to disk
+Episode 4250 reward: 0.0, Episode loss: 0.12680676221498288 Mem size: 100000 Time: 02/05/2018--22:52 Frame: 1346396
+Copying!
+Saving!
+Saved weights to disk
+Copying!
+Saving!
+Saved weights to disk
+Episode 4300 reward: 3.0, Episode loss: 0.17117226321715862 Mem size: 100000 Time: 02/05/2018--22:59 Frame: 1361103
+Copying!
+Saving!
+Saved weights to disk
+Copying!
+Saving!
+Saved weights to disk
+Episode 4350 reward: 2.0, Episode loss: 0.13994711567647755 Mem size: 100000 Time: 02/05/2018--23:10 Frame: 1381932
+Copying!
+Saving!
+Saved weights to disk
+Copying!
+Saving!
+Saved weights to disk
+Episode 4400 reward: 3.0, Episode loss: 0.18003494865843095 Mem size: 100000 Time: 02/05/2018--23:20 Frame: 1402747
+Copying!
+Saving!
+Saved weights to disk
+Copying!
+Saving!
+Saved weights to disk
+Episode 4450 reward: 1.0, Episode loss: 0.06283470001653768 Mem size: 100000 Time: 02/05/2018--23:31 Frame: 1423186
+Copying!
+Saving!
+Saved weights to disk
+Episode 4500 reward: 2.0, Episode loss: 0.11559851124184206 Mem size: 100000 Time: 02/05/2018--23:37 Frame: 1436172
+Copying!
+Saving!
+Saved weights to disk
+Episode 4550 reward: 2.0, Episode loss: 0.08111980697140098 Mem size: 100000 Time: 02/05/2018--23:43 Frame: 1446617
+Copying!
+Saving!
+Saved weights to disk
+Episode 4600 reward: 0.0, Episode loss: 0.0775203971134033 Mem size: 100000 Time: 02/05/2018--23:48 Frame: 1457335
+Copying!
+Saving!
+Saved weights to disk
+Copying!
+Saving!
+Saved weights to disk
+Episode 4650 reward: 2.0, Episode loss: 0.13161423744168133 Mem size: 100000 Time: 02/05/2018--23:55 Frame: 1471013
+Copying!
+Saving!
+Saved weights to disk
+Episode 4700 reward: 0.0, Episode loss: 0.1384382318065036 Mem size: 100000 Time: 03/05/2018--00:04 Frame: 1489577
+Copying!
+Saving!
+Saved weights to disk
+Copying!
+Saving!
+Saved weights to disk
+Copying!
+Saving!
+Saved weights to disk
+Episode 4750 reward: 2.0, Episode loss: 0.13402073411270976 Mem size: 100000 Time: 03/05/2018--00:16 Frame: 1512727
+Copying!
+Saving!
+Saved weights to disk
+Copying!
+Saving!
+Saved weights to disk
+Episode 4800 reward: 0.0, Episode loss: 0.41607367107644677 Mem size: 100000 Time: 03/05/2018--00:28 Frame: 1534930
+Copying!
+Saving!
+Saved weights to disk
+Copying!
+Saving!
+Saved weights to disk
+Episode 4850 reward: 0.0, Episode loss: 0.08094014317612164 Mem size: 100000 Time: 03/05/2018--00:37 Frame: 1553705
+Copying!
+Saving!
+Saved weights to disk
+Episode 4900 reward: 0.0, Episode loss: 0.05950745000154711 Mem size: 100000 Time: 03/05/2018--00:43 Frame: 1565934
+Copying!
+Saving!
+Saved weights to disk
+Episode 4950 reward: 1.0, Episode loss: 0.10232203485793434 Mem size: 100000 Time: 03/05/2018--00:49 Frame: 1577184
+Copying!
+Saving!
+Saved weights to disk
+Episode 5000 reward: 2.0, Episode loss: 0.13595957306097262 Mem size: 100000 Time: 03/05/2018--00:56 Frame: 1589913
+Copying!
+Saving!
+Saved weights to disk
+Copying!
+Saving!
+Saved weights to disk
+Episode 5050 reward: 2.0, Episode loss: 0.27534618612844497 Mem size: 100000 Time: 03/05/2018--01:04 Frame: 1606196
+Copying!
+Saving!
+Saved weights to disk
+Copying!
+Saving!
+Saved weights to disk
+Episode 5100 reward: 4.0, Episode loss: 0.2891583116725087 Mem size: 100000 Time: 03/05/2018--01:16 Frame: 1629221
+Copying!
+Saving!
+Saved weights to disk
+Copying!
+Saving!
+Saved weights to disk
+Copying!
+Saving!
+Saved weights to disk
+Episode 5150 reward: 1.0, Episode loss: 0.1728939486492891 Mem size: 100000 Time: 03/05/2018--01:27 Frame: 1650718
+Copying!
+Saving!
+Saved weights to disk
+Copying!
+Saving!
+Saved weights to disk
+Episode 5200 reward: 0.0, Episode loss: 0.14132912867353298 Mem size: 100000 Time: 03/05/2018--01:38 Frame: 1673015
+Copying!
+Saving!
+Saved weights to disk
+Episode 5250 reward: 3.0, Episode loss: 0.16556943228351884 Mem size: 100000 Time: 03/05/2018--01:46 Frame: 1688837
+Copying!
+Saving!
+Saved weights to disk
+Episode 5300 reward: 0.0, Episode loss: 0.08233447634847835 Mem size: 100000 Time: 03/05/2018--01:51 Frame: 1699524
+Copying!
+Saving!
+Saved weights to disk
+Episode 5350 reward: 2.0, Episode loss: 0.14836264826590195 Mem size: 100000 Time: 03/05/2018--01:57 Frame: 1709970
+Copying!
+Saving!
+Saved weights to disk
+Copying!
+Saving!
+Saved weights to disk
+Episode 5400 reward: 1.0, Episode loss: 0.1871682655182667 Mem size: 100000 Time: 03/05/2018--02:04 Frame: 1724333
+Copying!
+Saving!
+Saved weights to disk
+Copying!
+Saving!
+Saved weights to disk
+Episode 5450 reward: 1.0, Episode loss: 0.07011112867621705 Mem size: 100000 Time: 03/05/2018--02:13 Frame: 1741757
+Copying!
+Saving!
+Saved weights to disk
+Episode 5500 reward: 1.0, Episode loss: 0.07901025857427157 Mem size: 100000 Time: 03/05/2018--02:19 Frame: 1754099
+Copying!
+Saving!
+Saved weights to disk
+Episode 5550 reward: 2.0, Episode loss: 0.15557168671512045 Mem size: 100000 Time: 03/05/2018--02:27 Frame: 1769188
+Copying!
+Saving!
+Saved weights to disk
+Copying!
+Saving!
+Saved weights to disk
+Copying!
+Saving!
+Saved weights to disk
+Episode 5600 reward: 2.0, Episode loss: 0.26038277556654066 Mem size: 100000 Time: 03/05/2018--02:38 Frame: 1791170
+Copying!
+Saving!
+Saved weights to disk
+Episode 5650 reward: 1.0, Episode loss: 0.08045778443920426 Mem size: 100000 Time: 03/05/2018--02:46 Frame: 1807717
+Copying!
+Saving!
+Saved weights to disk
+Episode 5700 reward: 1.0, Episode loss: 0.0703371599665843 Mem size: 100000 Time: 03/05/2018--02:53 Frame: 1819926
+Copying!
+Saving!
+Saved weights to disk
+Copying!
+Saving!
+Saved weights to disk
+Episode 5750 reward: 2.0, Episode loss: 0.1292787005950231 Mem size: 100000 Time: 03/05/2018--02:59 Frame: 1832607
+Copying!
+Saving!
+Saved weights to disk
+Episode 5800 reward: 4.0, Episode loss: 0.22602865751832724 Mem size: 100000 Time: 03/05/2018--03:05 Frame: 1844901
+Copying!
+Saving!
+Saved weights to disk
+Episode 5850 reward: 4.0, Episode loss: 0.1822837218933273 Mem size: 100000 Time: 03/05/2018--03:13 Frame: 1859716
+Copying!
+Saving!
+Saved weights to disk
+Copying!
+Saving!
+Saved weights to disk
+Episode 5900 reward: 0.0, Episode loss: 0.1363650603161659 Mem size: 100000 Time: 03/05/2018--03:22 Frame: 1878312
+Copying!
+Saving!
+Saved weights to disk
+Copying!
+Saving!
+Saved weights to disk
+Episode 5950 reward: 0.0, Episode loss: 0.0697706368227955 Mem size: 100000 Time: 03/05/2018--03:31 Frame: 1895203
+Copying!
+Saving!
+Saved weights to disk
+Copying!
+Saving!
+Saved weights to disk
+Episode 6000 reward: 5.0, Episode loss: 0.2816745942691341 Mem size: 100000 Time: 03/05/2018--03:41 Frame: 1914541
+Copying!
+Saving!
+Saved weights to disk
+Copying!
+Saving!
+Saved weights to disk
+Episode 6050 reward: 1.0, Episode loss: 0.12480053160106763 Mem size: 100000 Time: 03/05/2018--03:51 Frame: 1933960
+Copying!
+Saving!
+Saved weights to disk
+Episode 6100 reward: 1.0, Episode loss: 0.0829037133953534 Mem size: 100000 Time: 03/05/2018--03:57 Frame: 1946977
+Copying!
+Saving!
+Saved weights to disk
+Episode 6150 reward: 3.0, Episode loss: 0.11120993801159784 Mem size: 100000 Time: 03/05/2018--04:03 Frame: 1958057
+Copying!
+Saving!
+Saved weights to disk
+Episode 6200 reward: 2.0, Episode loss: 0.11788282846100628 Mem size: 100000 Time: 03/05/2018--04:08 Frame: 1968890
+Copying!
+Saving!
+Saved weights to disk
+Copying!
+Saving!
+Saved weights to disk
+Episode 6250 reward: 1.0, Episode loss: 0.17100195365492254 Mem size: 100000 Time: 03/05/2018--04:18 Frame: 1988128
+Copying!
+Saving!
+Saved weights to disk
+Copying!
+Saving!
+Saved weights to disk
+Episode 6300 reward: 4.0, Episode loss: 0.24918653522036038 Mem size: 100000 Time: 03/05/2018--04:28 Frame: 2008759
+Copying!
+Saving!
+Saved weights to disk
+Copying!
+Saving!
+Saved weights to disk
+Episode 6350 reward: 3.0, Episode loss: 0.11692773524555378 Mem size: 100000 Time: 03/05/2018--04:38 Frame: 2027249
+Copying!
+Saving!
+Saved weights to disk
+Copying!
+Saving!
+Saved weights to disk
+Episode 6400 reward: 2.0, Episode loss: 0.11997631206759252 Mem size: 100000 Time: 03/05/2018--04:47 Frame: 2045340
+Copying!
+Saving!
+Saved weights to disk
+Copying!
+Saving!
+Saved weights to disk
+Episode 6450 reward: 2.0, Episode loss: 0.10912776866462082 Mem size: 100000 Time: 03/05/2018--04:56 Frame: 2063023
+Copying!
+Saving!
+Saved weights to disk
+Episode 6500 reward: 0.0, Episode loss: 0.0951986198197119 Mem size: 100000 Time: 03/05/2018--05:02 Frame: 2075346
+Copying!
+Saving!
+Saved weights to disk
+Episode 6550 reward: 3.0, Episode loss: 0.09358229936333373 Mem size: 100000 Time: 03/05/2018--05:08 Frame: 2088097
+Copying!
+Saving!
+Saved weights to disk
+Copying!
+Saving!
+Saved weights to disk
+Episode 6600 reward: 1.0, Episode loss: 0.1307201363670174 Mem size: 100000 Time: 03/05/2018--05:17 Frame: 2105727
+Copying!
+Saving!
+Saved weights to disk
+Copying!
+Saving!
+Saved weights to disk
+Episode 6650 reward: 1.0, Episode loss: 0.2503526090295054 Mem size: 100000 Time: 03/05/2018--05:25 Frame: 2120743
+Copying!
+Saving!
+Saved weights to disk
+Copying!
+Saving!
+Saved weights to disk
+Episode 6700 reward: 2.0, Episode loss: 0.18082147621316835 Mem size: 100000 Time: 03/05/2018--05:36 Frame: 2142132
+Copying!
+Saving!
+Saved weights to disk
+Episode 6750 reward: 3.0, Episode loss: 0.13454174375510775 Mem size: 100000 Time: 03/05/2018--05:44 Frame: 2159094
+Copying!
+Saving!
+Saved weights to disk
+Copying!
+Saving!
+Saved weights to disk
+Episode 6800 reward: 4.0, Episode loss: 0.1327555868192576 Mem size: 100000 Time: 03/05/2018--05:50 Frame: 2170608
+Copying!
+Saving!
+Saved weights to disk
+Episode 6850 reward: 0.0, Episode loss: 0.06433875797665678 Mem size: 100000 Time: 03/05/2018--05:57 Frame: 2184866
+Copying!
+Saving!
+Saved weights to disk
+Episode 6900 reward: 2.0, Episode loss: 0.11410723009612411 Mem size: 100000 Time: 03/05/2018--06:04 Frame: 2198909
+Copying!
+Saving!
+Saved weights to disk
+Copying!
+Saving!
+Saved weights to disk
+Copying!
+Saving!
+Saved weights to disk
+Episode 6950 reward: 3.0, Episode loss: 0.2207693561213091 Mem size: 100000 Time: 03/05/2018--06:16 Frame: 2221741
+Copying!
+Saving!
+Saved weights to disk
+Copying!
+Saving!
+Saved weights to disk
+Episode 7000 reward: 0.0, Episode loss: 0.08911703134072013 Mem size: 100000 Time: 03/05/2018--06:26 Frame: 2243162
+Copying!
+Saving!
+Saved weights to disk
+Copying!
+Saving!
+Saved weights to disk
+Episode 7050 reward: 3.0, Episode loss: 0.24354507881798781 Mem size: 100000 Time: 03/05/2018--06:36 Frame: 2261749
+Copying!
+Saving!
+Saved weights to disk
+Episode 7100 reward: 2.0, Episode loss: 0.11412568422383629 Mem size: 100000 Time: 03/05/2018--06:44 Frame: 2277904
+Copying!
+Saving!
+Saved weights to disk
+Copying!
+Saving!
+Saved weights to disk
+Episode 7150 reward: 3.0, Episode loss: 0.12383713849703781 Mem size: 100000 Time: 03/05/2018--06:51 Frame: 2292799
+Copying!
+Saving!
+Saved weights to disk
+Episode 7200 reward: 2.0, Episode loss: 0.14903438102919608 Mem size: 100000 Time: 03/05/2018--06:57 Frame: 2303950
+Copying!
+Saving!
+Saved weights to disk
+Episode 7250 reward: 3.0, Episode loss: 0.18459513774723746 Mem size: 100000 Time: 03/05/2018--07:03 Frame: 2314963
+Copying!
+Saving!
+Saved weights to disk
+Copying!
+Saving!
+Saved weights to disk
+Episode 7300 reward: 3.0, Episode loss: 0.18036211363505572 Mem size: 100000 Time: 03/05/2018--07:12 Frame: 2332319
+Copying!
+Saving!
+Saved weights to disk
+Copying!
+Saving!
+Saved weights to disk
+Episode 7350 reward: 2.0, Episode loss: 0.2658320904010907 Mem size: 100000 Time: 03/05/2018--07:24 Frame: 2356509
+Copying!
+Saving!
+Saved weights to disk
+Copying!
+Saving!
+Saved weights to disk
+Episode 7400 reward: 0.0, Episode loss: 0.16998318914556876 Mem size: 100000 Time: 03/05/2018--07:34 Frame: 2375811
+Copying!
+Saving!
+Saved weights to disk
+Copying!
+Saving!
+Saved weights to disk
+Episode 7450 reward: 2.0, Episode loss: 0.19584049019613303 Mem size: 100000 Time: 03/05/2018--07:44 Frame: 2395075
+Copying!
+Saving!
+Saved weights to disk
+Episode 7500 reward: 3.0, Episode loss: 0.09177038498455659 Mem size: 100000 Time: 03/05/2018--07:51 Frame: 2408626
+Copying!
+Saving!
+Saved weights to disk
+Episode 7550 reward: 2.0, Episode loss: 0.15129465877544135 Mem size: 100000 Time: 03/05/2018--07:57 Frame: 2419854
+Copying!
+Saving!
+Saved weights to disk
+Copying!
+Saving!
+Saved weights to disk
+Episode 7600 reward: 1.0, Episode loss: 0.08929574643843807 Mem size: 100000 Time: 03/05/2018--08:02 Frame: 2430867
+Copying!
+Saving!
+Saved weights to disk
+Episode 7650 reward: 1.0, Episode loss: 0.16342208537389524 Mem size: 100000 Time: 03/05/2018--08:09 Frame: 2444445
+Copying!
+Saving!
+Saved weights to disk
+Copying!
+Saving!
+Saved weights to disk
+Episode 7700 reward: 3.0, Episode loss: 0.14314754438237287 Mem size: 100000 Time: 03/05/2018--08:17 Frame: 2460113
+Copying!
+Saving!
+Saved weights to disk
+Episode 7750 reward: 0.0, Episode loss: 0.06682949935202487 Mem size: 100000 Time: 03/05/2018--08:26 Frame: 2478185
+Copying!
+Saving!
+Saved weights to disk
+Copying!
+Saving!
+Saved weights to disk
+Episode 7800 reward: 1.0, Episode loss: 0.10484386616735719 Mem size: 100000 Time: 03/05/2018--08:36 Frame: 2497230
+Copying!
+Saving!
+Saved weights to disk
+Copying!
+Saving!
+Saved weights to disk
+Copying!
+Saving!
+Saved weights to disk
+Episode 7850 reward: 2.0, Episode loss: 0.10665652187890373 Mem size: 100000 Time: 03/05/2018--08:47 Frame: 2520371
+Copying!
+Saving!
+Saved weights to disk
+Episode 7900 reward: 3.0, Episode loss: 0.1738468667899724 Mem size: 100000 Time: 03/05/2018--08:53 Frame: 2533687
+Copying!
+Saving!
+Saved weights to disk
+Episode 7950 reward: 2.0, Episode loss: 0.20488567967549898 Mem size: 100000 Time: 03/05/2018--08:59 Frame: 2546215
+Copying!
+Saving!
+Saved weights to disk
+Episode 8000 reward: 1.0, Episode loss: 0.09005976785556413 Mem size: 100000 Time: 03/05/2018--09:05 Frame: 2559986
+Copying!
+Saving!
+Saved weights to disk
+Copying!
+Saving!
+Saved weights to disk
+Episode 8050 reward: 1.0, Episode loss: 0.08575748704606667 Mem size: 100000 Time: 03/05/2018--09:13 Frame: 2576637
+Copying!
+Saving!
+Saved weights to disk
+Copying!
+Saving!
+Saved weights to disk
+Episode 8100 reward: 3.0, Episode loss: 0.1390125259931665 Mem size: 100000 Time: 03/05/2018--09:20 Frame: 2590491
+Copying!
+Saving!
+Saved weights to disk
+Episode 8150 reward: 3.0, Episode loss: 0.2094443619134836 Mem size: 100000 Time: 03/05/2018--09:25 Frame: 2602467
+Copying!
+Saving!
+Saved weights to disk
+Copying!
+Saving!
+Saved weights to disk
+Episode 8200 reward: 1.0, Episode loss: 0.27154526850790717 Mem size: 100000 Time: 03/05/2018--09:33 Frame: 2620298
+Copying!
+Saving!
+Saved weights to disk
+Episode 8250 reward: 0.0, Episode loss: 0.1070184042036999 Mem size: 100000 Time: 03/05/2018--09:42 Frame: 2638777
+Copying!
+Saving!
+Saved weights to disk
+Copying!
+Saving!
+Saved weights to disk
+Episode 8300 reward: 3.0, Episode loss: 0.12280592994648032 Mem size: 100000 Time: 03/05/2018--09:49 Frame: 2654021
+Copying!
+Saving!
+Saved weights to disk
+Episode 8350 reward: 0.0, Episode loss: 0.06047327324631624 Mem size: 100000 Time: 03/05/2018--09:54 Frame: 2665450
+Copying!
+Saving!
+Saved weights to disk
+Episode 8400 reward: 1.0, Episode loss: 0.0790031774668023 Mem size: 100000 Time: 03/05/2018--10:00 Frame: 2678050
+Copying!
+Saving!
+Saved weights to disk
+Copying!
+Saving!
+Saved weights to disk
+Episode 8450 reward: 1.0, Episode loss: 0.06693154582171701 Mem size: 100000 Time: 03/05/2018--10:06 Frame: 2691577
+Copying!
+Saving!
+Saved weights to disk
+Episode 8500 reward: 1.0, Episode loss: 0.15147872749366798 Mem size: 100000 Time: 03/05/2018--10:12 Frame: 2703964
+Copying!
+Saving!
+Saved weights to disk
+Episode 8550 reward: 0.0, Episode loss: 0.10878340038470924 Mem size: 100000 Time: 03/05/2018--10:19 Frame: 2718298
+Copying!
+Saving!
+Saved weights to disk
+Copying!
+Saving!
+Saved weights to disk
+Episode 8600 reward: 1.0, Episode loss: 0.18419807267491706 Mem size: 100000 Time: 03/05/2018--10:27 Frame: 2737148
+Copying!
+Saving!
+Saved weights to disk
+Copying!
+Saving!
+Saved weights to disk
+Episode 8650 reward: 0.0, Episode loss: 0.09940291006932966 Mem size: 100000 Time: 03/05/2018--10:37 Frame: 2758011
+Copying!
+Saving!
+Saved weights to disk
+Copying!
+Saving!
+Saved weights to disk
+Episode 8700 reward: 1.0, Episode loss: 0.09718823729781434 Mem size: 100000 Time: 03/05/2018--10:43 Frame: 2771285
+Copying!
+Saving!
+Saved weights to disk
+Episode 8750 reward: 2.0, Episode loss: 0.10349749989109114 Mem size: 100000 Time: 03/05/2018--10:48 Frame: 2782809
+Copying!
+Saving!
+Saved weights to disk
+Episode 8800 reward: 1.0, Episode loss: 0.06683091461309232 Mem size: 100000 Time: 03/05/2018--10:54 Frame: 2794342
+Copying!
+Saving!
+Saved weights to disk
+Episode 8850 reward: 0.0, Episode loss: 0.0926175121567212 Mem size: 100000 Time: 03/05/2018--11:00 Frame: 2807717
+Copying!
+Saving!
+Saved weights to disk
+Copying!
+Saving!
+Saved weights to disk
+Episode 8900 reward: 0.0, Episode loss: 0.16229125644895248 Mem size: 100000 Time: 03/05/2018--11:06 Frame: 2820468
+Copying!
+Saving!
+Saved weights to disk
+Episode 8950 reward: 3.0, Episode loss: 0.0722571975493338 Mem size: 100000 Time: 03/05/2018--11:14 Frame: 2837365
+Copying!
+Saving!
+Saved weights to disk
+Copying!
+Saving!
+Saved weights to disk
+Episode 9000 reward: 2.0, Episode loss: 0.2543862196034752 Mem size: 100000 Time: 03/05/2018--11:22 Frame: 2856240
+Copying!
+Saving!
+Saved weights to disk
+Copying!
+Saving!
+Saved weights to disk
+Copying!
+Saving!
+Saved weights to disk
+Episode 9050 reward: 4.0, Episode loss: 0.23199380966252647 Mem size: 100000 Time: 03/05/2018--11:34 Frame: 2880249
+Copying!
+Saving!
+Saved weights to disk
+Episode 9100 reward: 2.0, Episode loss: 0.11209357687039301 Mem size: 100000 Time: 03/05/2018--11:40 Frame: 2893854
+Copying!
+Saving!
+Saved weights to disk
+Copying!
+Saving!
+Saved weights to disk
+Episode 9150 reward: 2.0, Episode loss: 0.0998279262566939 Mem size: 100000 Time: 03/05/2018--11:48 Frame: 2910488
+Copying!
+Saving!
+Saved weights to disk
+Episode 9200 reward: 3.0, Episode loss: 0.14136282086838037 Mem size: 100000 Time: 03/05/2018--11:53 Frame: 2922764
+Copying!
+Saving!
+Saved weights to disk
+Copying!
+Saving!
+Saved weights to disk
+Episode 9250 reward: 4.0, Episode loss: 0.2545866020373069 Mem size: 100000 Time: 03/05/2018--12:02 Frame: 2941179
+Copying!
+Saving!
+Saved weights to disk
+Episode 9300 reward: 0.0, Episode loss: 0.09696599372546189 Mem size: 100000 Time: 03/05/2018--12:10 Frame: 2958203
+Copying!
+Saving!
+Saved weights to disk
+Copying!
+Saving!
+Saved weights to disk
+Episode 9350 reward: 0.0, Episode loss: 0.24771107503329404 Mem size: 100000 Time: 03/05/2018--12:19 Frame: 2979190
+Copying!
+Saving!
+Saved weights to disk
+Copying!
+Saving!
+Saved weights to disk
+Copying!
+Saving!
+Saved weights to disk
+Episode 9400 reward: 0.0, Episode loss: 0.13127947103930637 Mem size: 100000 Time: 03/05/2018--12:29 Frame: 3000038
+Copying!
+Saving!
+Saved weights to disk
+Episode 9450 reward: 4.0, Episode loss: 0.11494481898262165 Mem size: 100000 Time: 03/05/2018--12:35 Frame: 3013714
+Copying!
+Saving!
+Saved weights to disk
+Episode 9500 reward: 1.0, Episode loss: 0.11595988122280687 Mem size: 100000 Time: 03/05/2018--12:41 Frame: 3025929
+Copying!
+Saving!
+Saved weights to disk
+Copying!
+Saving!
+Saved weights to disk
+Episode 9550 reward: 0.0, Episode loss: 0.08382908903877251 Mem size: 100000 Time: 03/05/2018--12:48 Frame: 3042211
+Copying!
+Saving!
+Saved weights to disk
+Episode 9600 reward: 2.0, Episode loss: 0.08916734924423508 Mem size: 100000 Time: 03/05/2018--12:55 Frame: 3056443
+Copying!
+Saving!
+Saved weights to disk
+Copying!
+Saving!
+Saved weights to disk
+Episode 9650 reward: 0.0, Episode loss: 0.14940879464847967 Mem size: 100000 Time: 03/05/2018--13:05 Frame: 3076784
+Copying!
+Saving!
+Saved weights to disk
+Copying!
+Saving!
+Saved weights to disk
+Episode 9700 reward: 2.0, Episode loss: 0.1391238252108451 Mem size: 100000 Time: 03/05/2018--13:13 Frame: 3096123
+Copying!
+Saving!
+Saved weights to disk
+Copying!
+Saving!
+Saved weights to disk
+Episode 9750 reward: 4.0, Episode loss: 0.16712736542103812 Mem size: 100000 Time: 03/05/2018--13:23 Frame: 3116235
+Copying!
+Saving!
+Saved weights to disk
+Episode 9800 reward: 4.0, Episode loss: 0.16579074505716562 Mem size: 100000 Time: 03/05/2018--13:29 Frame: 3129173
+Copying!
+Saving!
+Saved weights to disk
+Episode 9850 reward: 0.0, Episode loss: 0.053724829806014895 Mem size: 100000 Time: 03/05/2018--13:33 Frame: 3138918
+Copying!
+Saving!
+Saved weights to disk
+Copying!
+Saving!
+Saved weights to disk
+Episode 9900 reward: 5.0, Episode loss: 0.2483562522684224 Mem size: 100000 Time: 03/05/2018--13:39 Frame: 3151676
+Copying!
+Saving!
+Saved weights to disk
+Episode 9950 reward: 3.0, Episode loss: 0.17757924503530376 Mem size: 100000 Time: 03/05/2018--13:46 Frame: 3167271
+Copying!
+Saving!
+Saved weights to disk
+Copying!
+Saving!
+Saved weights to disk
+Episode 10000 reward: 2.0, Episode loss: 0.09393698308849707 Mem size: 100000 Time: 03/05/2018--13:54 Frame: 3184748
+Copying!
+Saving!
+Saved weights to disk
+Copying!
+Saving!
+Saved weights to disk
+Episode 10050 reward: 2.0, Episode loss: 0.10812555387383327 Mem size: 100000 Time: 03/05/2018--14:03 Frame: 3203529
+Copying!
+Saving!
+Saved weights to disk
+Copying!
+Saving!
+Saved weights to disk
+Episode 10100 reward: 0.0, Episode loss: 0.16148075557430275 Mem size: 100000 Time: 03/05/2018--14:11 Frame: 3220357
+Copying!
+Saving!
+Saved weights to disk
+Episode 10150 reward: 2.0, Episode loss: 0.1417008423304651 Mem size: 100000 Time: 03/05/2018--14:19 Frame: 3237839
+Copying!
+Saving!
+Saved weights to disk
+Copying!
+Saving!
+Saved weights to disk
+Episode 10200 reward: 5.0, Episode loss: 0.2551584312459454 Mem size: 100000 Time: 03/05/2018--14:26 Frame: 3253928
+Copying!
+Saving!
+Saved weights to disk
+Copying!
+Saving!
+Saved weights to disk
+Episode 10250 reward: 5.0, Episode loss: 0.3156795012182556 Mem size: 100000 Time: 03/05/2018--14:36 Frame: 3275345
+Copying!
+Saving!
+Saved weights to disk
+Copying!
+Saving!
+Saved weights to disk
+Episode 10300 reward: 2.0, Episode loss: 0.14091218970133923 Mem size: 100000 Time: 03/05/2018--14:44 Frame: 3292950
+Copying!
+Saving!
+Saved weights to disk
+Episode 10350 reward: 0.0, Episode loss: 0.07598461312591098 Mem size: 100000 Time: 03/05/2018--14:50 Frame: 3305605
+Copying!
+Saving!
+Saved weights to disk
+Episode 10400 reward: 2.0, Episode loss: 0.20123632517061196 Mem size: 100000 Time: 03/05/2018--14:56 Frame: 3318290
+Copying!
+Saving!
+Saved weights to disk
+Copying!
+Saving!
+Saved weights to disk
+Episode 10450 reward: 1.0, Episode loss: 0.32959980200394057 Mem size: 100000 Time: 03/05/2018--15:03 Frame: 3331946
+Copying!
+Saving!
+Saved weights to disk
+Episode 10500 reward: 2.0, Episode loss: 0.13276060280622914 Mem size: 100000 Time: 03/05/2018--15:11 Frame: 3349091
+Copying!
+Saving!
+Saved weights to disk
+Copying!
+Saving!
+Saved weights to disk
+Episode 10550 reward: 1.0, Episode loss: 0.06821247938205488 Mem size: 100000 Time: 03/05/2018--15:16 Frame: 3361142
+Copying!
+Saving!
+Saved weights to disk
+Episode 10600 reward: 1.0, Episode loss: 0.18815975135657936 Mem size: 100000 Time: 03/05/2018--15:24 Frame: 3377234
+Copying!
+Saving!
+Saved weights to disk
+Copying!
+Saving!
+Saved weights to disk
+Episode 10650 reward: 1.0, Episode loss: 0.12786382526974194 Mem size: 100000 Time: 03/05/2018--15:34 Frame: 3399046
+Copying!
+Saving!
+Saved weights to disk
+Copying!
+Saving!
+Saved weights to disk
+Episode 10700 reward: 2.0, Episode loss: 0.07470480594201945 Mem size: 100000 Time: 03/05/2018--15:41 Frame: 3414318
+Copying!
+Saving!
+Saved weights to disk
+Episode 10750 reward: 0.0, Episode loss: 0.07791743462439626 Mem size: 100000 Time: 03/05/2018--15:46 Frame: 3426631
+Copying!
+Saving!
+Saved weights to disk
+Copying!
+Saving!
+Saved weights to disk
+Episode 10800 reward: 3.0, Episode loss: 0.1606157086789608 Mem size: 100000 Time: 03/05/2018--15:53 Frame: 3440044
+Copying!
+Saving!
+Saved weights to disk
+Copying!
+Saving!
+Saved weights to disk
+Episode 10850 reward: 2.0, Episode loss: 0.09073917704517953 Mem size: 100000 Time: 03/05/2018--16:03 Frame: 3462226
+Copying!
+Saving!
+Saved weights to disk
+Copying!
+Saving!
+Saved weights to disk
+Episode 10900 reward: 2.0, Episode loss: 0.27567559576709755 Mem size: 100000 Time: 03/05/2018--16:13 Frame: 3483305
+Copying!
+Saving!
+Saved weights to disk
+Copying!
+Saving!
+Saved weights to disk
+Episode 10950 reward: 5.0, Episode loss: 0.13386271079070866 Mem size: 100000 Time: 03/05/2018--16:21 Frame: 3501632
+Copying!
+Saving!
+Saved weights to disk
+Episode 11000 reward: 1.0, Episode loss: 0.08530265270383097 Mem size: 100000 Time: 03/05/2018--16:29 Frame: 3517716
+Copying!
+Saving!
+Saved weights to disk
+Episode 11050 reward: 1.0, Episode loss: 0.08430391139700077 Mem size: 100000 Time: 03/05/2018--16:34 Frame: 3528891
+Copying!
+Saving!
+Saved weights to disk
+Copying!
+Saving!
+Saved weights to disk
+Episode 11100 reward: 2.0, Episode loss: 0.17350246690330096 Mem size: 100000 Time: 03/05/2018--16:40 Frame: 3541203
+Copying!
+Saving!
+Saved weights to disk
+Episode 11150 reward: 3.0, Episode loss: 0.14140262070577592 Mem size: 100000 Time: 03/05/2018--16:46 Frame: 3555459
+Copying!
+Saving!
+Saved weights to disk
+Copying!
+Saving!
+Saved weights to disk
+Episode 11200 reward: 1.0, Episode loss: 0.09022063502925448 Mem size: 100000 Time: 03/05/2018--16:53 Frame: 3570036
+Copying!
+Saving!
+Saved weights to disk
+Episode 11250 reward: 2.0, Episode loss: 0.1267738104215823 Mem size: 100000 Time: 03/05/2018--17:00 Frame: 3585109
+Copying!
+Saving!
+Saved weights to disk
+Episode 11300 reward: 0.0, Episode loss: 0.07216784477350302 Mem size: 100000 Time: 03/05/2018--17:06 Frame: 3598043
+Copying!
+Saving!
+Saved weights to disk
+Copying!
+Saving!
+Saved weights to disk
+Episode 11350 reward: 0.0, Episode loss: 0.09446771832881495 Mem size: 100000 Time: 03/05/2018--17:14 Frame: 3614724
+Copying!
+Saving!
+Saved weights to disk
+Copying!
+Saving!
+Saved weights to disk
+Episode 11400 reward: 0.0, Episode loss: 0.10040777880931273 Mem size: 100000 Time: 03/05/2018--17:21 Frame: 3630122
+Copying!
+Saving!
+Saved weights to disk
+Episode 11450 reward: 2.0, Episode loss: 0.09171296382555738 Mem size: 100000 Time: 03/05/2018--17:29 Frame: 3646842
+Copying!
+Saving!
+Saved weights to disk
+Episode 11500 reward: 0.0, Episode loss: 0.049307063745800406 Mem size: 100000 Time: 03/05/2018--17:34 Frame: 3657549
+Copying!
+Saving!
+Saved weights to disk
+Copying!
+Saving!
+Saved weights to disk
+Episode 11550 reward: 4.0, Episode loss: 0.1784706040052697 Mem size: 100000 Time: 03/05/2018--17:40 Frame: 3671101
+Copying!
+Saving!
+Saved weights to disk
+Episode 11600 reward: 0.0, Episode loss: 0.1666728864365723 Mem size: 100000 Time: 03/05/2018--17:46 Frame: 3684680
+Copying!
+Saving!
+Saved weights to disk
+Copying!
+Saving!
+Saved weights to disk
+Episode 11650 reward: 2.0, Episode loss: 0.12130889104446396 Mem size: 100000 Time: 03/05/2018--17:54 Frame: 3701399
+Copying!
+Saving!
+Saved weights to disk
+Episode 11700 reward: 3.0, Episode loss: 0.23869404089055024 Mem size: 100000 Time: 03/05/2018--18:01 Frame: 3716833
+Copying!
+Saving!
+Saved weights to disk
+Copying!
+Saving!
+Saved weights to disk
+Episode 11750 reward: 0.0, Episode loss: 0.09034910899936222 Mem size: 100000 Time: 03/05/2018--18:10 Frame: 3735096
+Copying!
+Saving!
+Saved weights to disk
+Copying!
+Saving!
+Saved weights to disk
+Episode 11800 reward: 1.0, Episode loss: 0.2052279029157944 Mem size: 100000 Time: 03/05/2018--18:18 Frame: 3751780
+Copying!
+Saving!
+Saved weights to disk
+Episode 11850 reward: 1.0, Episode loss: 0.09314962089410983 Mem size: 100000 Time: 03/05/2018--18:25 Frame: 3767902
+Copying!
+Saving!
+Saved weights to disk
+Copying!
+Saving!
+Saved weights to disk
+Episode 11900 reward: 2.0, Episode loss: 0.12328085061744787 Mem size: 100000 Time: 03/05/2018--18:31 Frame: 3780647
+Copying!
+Saving!
+Saved weights to disk
+Episode 11950 reward: 2.0, Episode loss: 0.15361098770517856 Mem size: 100000 Time: 03/05/2018--18:39 Frame: 3797056
+Copying!
+Saving!
+Saved weights to disk
+Copying!
+Saving!
+Saved weights to disk
+Episode 12000 reward: 3.0, Episode loss: 0.2463835307280533 Mem size: 100000 Time: 03/05/2018--18:48 Frame: 3817984
+Copying!
+Saving!
+Saved weights to disk
+Copying!
+Saving!
+Saved weights to disk
+Episode 12050 reward: 0.0, Episode loss: 0.11679825745522976 Mem size: 100000 Time: 03/05/2018--18:58 Frame: 3838987
+Copying!
+Saving!
+Saved weights to disk
+Copying!
+Saving!
+Saved weights to disk
+Episode 12100 reward: 1.0, Episode loss: 0.08915990716195665 Mem size: 100000 Time: 03/05/2018--19:06 Frame: 3856803
+Copying!
+Saving!
+Saved weights to disk
+Episode 12150 reward: 0.0, Episode loss: 0.07611654669744894 Mem size: 100000 Time: 03/05/2018--19:11 Frame: 3868731
+Copying!
+Saving!
+Saved weights to disk
+Copying!
+Saving!
+Saved weights to disk
+Episode 12200 reward: 1.0, Episode loss: 0.1145092683727853 Mem size: 100000 Time: 03/05/2018--19:17 Frame: 3881167
+Copying!
+Saving!
+Saved weights to disk
+Episode 12250 reward: 2.0, Episode loss: 0.12914403667673469 Mem size: 100000 Time: 03/05/2018--19:22 Frame: 3892519
+Copying!
+Saving!
+Saved weights to disk
+Episode 12300 reward: 0.0, Episode loss: 0.11709249170962721 Mem size: 100000 Time: 03/05/2018--19:28 Frame: 3904717
+Copying!
+Saving!
+Saved weights to disk
+Episode 12350 reward: 0.0, Episode loss: 0.10529995043179952 Mem size: 100000 Time: 03/05/2018--19:35 Frame: 3918999
+Copying!
+Saving!
+Saved weights to disk
+Copying!
+Saving!
+Saved weights to disk
+Episode 12400 reward: 2.0, Episode loss: 0.18895676024840213 Mem size: 100000 Time: 03/05/2018--19:43 Frame: 3936318
+Copying!
+Saving!
+Saved weights to disk
+Copying!
+Saving!
+Saved weights to disk
+Episode 12450 reward: 0.0, Episode loss: 0.09237286212737672 Mem size: 100000 Time: 03/05/2018--19:52 Frame: 3956069
+Copying!
+Saving!
+Saved weights to disk
+Copying!
+Saving!
+Saved weights to disk
+Episode 12500 reward: 3.0, Episode loss: 0.23484603082761168 Mem size: 100000 Time: 03/05/2018--20:00 Frame: 3973209
+Copying!
+Saving!
+Saved weights to disk
+Episode 12550 reward: 2.0, Episode loss: 0.20867958659073338 Mem size: 100000 Time: 03/05/2018--20:07 Frame: 3988442
+Copying!
+Saving!
+Saved weights to disk
+Copying!
+Saving!
+Saved weights to disk
+Episode 12600 reward: 2.0, Episode loss: 0.11580281218630262 Mem size: 100000 Time: 03/05/2018--20:14 Frame: 4003117
+Copying!
+Saving!
+Saved weights to disk
+Episode 12650 reward: 3.0, Episode loss: 0.1803473488544114 Mem size: 100000 Time: 03/05/2018--20:19 Frame: 4014178
+Copying!
+Saving!
+Saved weights to disk
+Episode 12700 reward: 1.0, Episode loss: 0.11312820258899592 Mem size: 100000 Time: 03/05/2018--20:24 Frame: 4025355
+Copying!
+Saving!
+Saved weights to disk
+Episode 12750 reward: 4.0, Episode loss: 0.2361660256574396 Mem size: 100000 Time: 03/05/2018--20:31 Frame: 4039816
+Copying!
+Saving!
+Saved weights to disk
+Copying!
+Saving!
+Saved weights to disk
+Copying!
+Saving!
+Saved weights to disk
+Episode 12800 reward: 2.0, Episode loss: 0.2019594955490902 Mem size: 100000 Time: 03/05/2018--20:41 Frame: 4060087
+Copying!
+Saving!
+Saved weights to disk
+Episode 12850 reward: 3.0, Episode loss: 0.14427588679245673 Mem size: 100000 Time: 03/05/2018--20:51 Frame: 4077623
+Copying!
+Saving!
+Saved weights to disk
+Copying!
+Saving!
+Saved weights to disk
+Copying!
+Saving!
+Saved weights to disk
+Episode 12900 reward: 2.0, Episode loss: 0.28597574765444733 Mem size: 100000 Time: 03/05/2018--21:03 Frame: 4100760
+Copying!
+Saving!
+Saved weights to disk
+Copying!
+Saving!
+Saved weights to disk
+Episode 12950 reward: 2.0, Episode loss: 0.15037899458548054 Mem size: 100000 Time: 03/05/2018--21:14 Frame: 4121898
+Copying!
+Saving!
+Saved weights to disk
+Episode 13000 reward: 2.0, Episode loss: 0.11750381512683816 Mem size: 100000 Time: 03/05/2018--21:20 Frame: 4134354
+Copying!
+Saving!
+Saved weights to disk
+Episode 13050 reward: 2.0, Episode loss: 0.14398951511248015 Mem size: 100000 Time: 03/05/2018--21:26 Frame: 4145565
+Copying!
+Saving!
+Saved weights to disk
+Episode 13100 reward: 4.0, Episode loss: 0.1523902349290438 Mem size: 100000 Time: 03/05/2018--21:32 Frame: 4158505
+Copying!
+Saving!
+Saved weights to disk
+Copying!
+Saving!
+Saved weights to disk
+Copying!
+Saving!
+Saved weights to disk
+Episode 13150 reward: 1.0, Episode loss: 0.10476216080132872 Mem size: 100000 Time: 03/05/2018--21:43 Frame: 4180219
+Copying!
+Saving!
+Saved weights to disk
+Episode 13200 reward: 0.0, Episode loss: 0.041071706044021994 Mem size: 100000 Time: 03/05/2018--21:50 Frame: 4195789
+Copying!
+Saving!
+Saved weights to disk
+Copying!
+Saving!
+Saved weights to disk
+Episode 13250 reward: 2.0, Episode loss: 0.1929240292229224 Mem size: 100000 Time: 03/05/2018--21:58 Frame: 4210415
+Copying!
+Saving!
+Saved weights to disk
+Episode 13300 reward: 3.0, Episode loss: 0.20601667603477836 Mem size: 100000 Time: 03/05/2018--22:05 Frame: 4225133
+Copying!
+Saving!
+Saved weights to disk
+Copying!
+Saving!
+Saved weights to disk
+Episode 13350 reward: 3.0, Episode loss: 0.14972796369693242 Mem size: 100000 Time: 03/05/2018--22:13 Frame: 4241810
+Copying!
+Saving!
+Saved weights to disk
+Episode 13400 reward: 2.0, Episode loss: 0.10263502108864486 Mem size: 100000 Time: 03/05/2018--22:21 Frame: 4256780
+Copying!
+Saving!
+Saved weights to disk
+Copying!
+Saving!
+Saved weights to disk
+Episode 13450 reward: 4.0, Episode loss: 0.2157374419621192 Mem size: 100000 Time: 03/05/2018--22:28 Frame: 4271491
+Copying!
+Saving!
+Saved weights to disk
+Episode 13500 reward: 1.0, Episode loss: 0.0990559680503793 Mem size: 100000 Time: 03/05/2018--22:34 Frame: 4283261
+Copying!
+Saving!
+Saved weights to disk
+Copying!
+Saving!
+Saved weights to disk
+Episode 13550 reward: 3.0, Episode loss: 0.32366928897681646 Mem size: 100000 Time: 03/05/2018--22:43 Frame: 4300309
+Copying!
+Saving!
+Saved weights to disk
+Copying!
+Saving!
+Saved weights to disk
+Episode 13600 reward: 0.0, Episode loss: 0.17884951393352821 Mem size: 100000 Time: 03/05/2018--22:54 Frame: 4320099
+Copying!
+Saving!
+Saved weights to disk
+Episode 13650 reward: 1.0, Episode loss: 0.15350510066491552 Mem size: 100000 Time: 03/05/2018--23:04 Frame: 4338553
+Copying!
+Saving!
+Saved weights to disk
+Copying!
+Saving!
+Saved weights to disk
+Episode 13700 reward: 0.0, Episode loss: 0.06042153510497883 Mem size: 100000 Time: 03/05/2018--23:12 Frame: 4351809
+Copying!
+Saving!
+Saved weights to disk
+Episode 13750 reward: 5.0, Episode loss: 0.16586748213740066 Mem size: 100000 Time: 03/05/2018--23:18 Frame: 4363285
+Copying!
+Saving!
+Saved weights to disk
+Episode 13800 reward: 1.0, Episode loss: 0.0536786887969356 Mem size: 100000 Time: 03/05/2018--23:26 Frame: 4376689
+Copying!
+Saving!
+Saved weights to disk
+Copying!
+Saving!
+Saved weights to disk
+Episode 13850 reward: 1.0, Episode loss: 0.1320610929687973 Mem size: 100000 Time: 03/05/2018--23:34 Frame: 4392072
+Copying!
+Saving!
+Saved weights to disk
+Episode 13900 reward: 2.0, Episode loss: 0.09527729786350392 Mem size: 100000 Time: 03/05/2018--23:42 Frame: 4406168
+Copying!
+Saving!
+Saved weights to disk
+Episode 13950 reward: 0.0, Episode loss: 0.07766529126092792 Mem size: 100000 Time: 03/05/2018--23:49 Frame: 4418260
+Copying!
+Saving!
+Saved weights to disk
+Copying!
+Saving!
+Saved weights to disk
+Episode 14000 reward: 3.0, Episode loss: 0.276656389265554 Mem size: 100000 Time: 03/05/2018--23:59 Frame: 4436971
+Copying!
+Saving!
+Saved weights to disk
+Copying!
+Saving!
+Saved weights to disk
+Copying!
+Saving!
+Saved weights to disk
+Episode 14050 reward: 1.0, Episode loss: 0.17797430357313715 Mem size: 100000 Time: 04/05/2018--00:11 Frame: 4460089
+Copying!
+Saving!
+Saved weights to disk
+Episode 14100 reward: 3.0, Episode loss: 0.16813972895033658 Mem size: 100000 Time: 04/05/2018--00:19 Frame: 4472975
+Copying!
+Saving!
+Saved weights to disk
+Episode 14150 reward: 3.0, Episode loss: 0.17222311726072803 Mem size: 100000 Time: 04/05/2018--00:25 Frame: 4484531
+Copying!
+Saving!
+Saved weights to disk
+Episode 14200 reward: 2.0, Episode loss: 0.12981597450561821 Mem size: 100000 Time: 04/05/2018--00:33 Frame: 4497573
+Copying!
+Saving!
+Saved weights to disk
+Copying!
+Saving!
+Saved weights to disk
+Episode 14250 reward: 1.0, Episode loss: 0.17920022943872027 Mem size: 100000 Time: 04/05/2018--00:44 Frame: 4518463
+Copying!
+Saving!
+Saved weights to disk
+Copying!
+Saving!
+Saved weights to disk
+Episode 14300 reward: 1.0, Episode loss: 0.18796787349856459 Mem size: 100000 Time: 04/05/2018--00:50 Frame: 4531059
+Copying!
+Saving!
+Saved weights to disk
+Episode 14350 reward: 2.0, Episode loss: 0.24349777674069628 Mem size: 100000 Time: 04/05/2018--00:59 Frame: 4548293
+Copying!
+Saving!
+Saved weights to disk
+Copying!
+Saving!
+Saved weights to disk
+Episode 14400 reward: 3.0, Episode loss: 0.21335015870863572 Mem size: 100000 Time: 04/05/2018--01:10 Frame: 4568736
+Copying!
+Saving!
+Saved weights to disk
+Copying!
+Saving!
+Saved weights to disk
+Episode 14450 reward: 0.0, Episode loss: 0.06877052437630482 Mem size: 100000 Time: 04/05/2018--01:19 Frame: 4586553
+Copying!
+Saving!
+Saved weights to disk
+Episode 14500 reward: 2.0, Episode loss: 0.10044032850419171 Mem size: 100000 Time: 04/05/2018--01:26 Frame: 4598626
+Copying!
+Saving!
+Saved weights to disk
+Copying!
+Saving!
+Saved weights to disk
+Episode 14550 reward: 3.0, Episode loss: 0.13794632046483457 Mem size: 100000 Time: 04/05/2018--01:32 Frame: 4611186
+Copying!
+Saving!
+Saved weights to disk
+Episode 14600 reward: 2.0, Episode loss: 0.15663414122536778 Mem size: 100000 Time: 04/05/2018--01:39 Frame: 4624008
+Copying!
+Saving!
+Saved weights to disk
+Episode 14650 reward: 2.0, Episode loss: 0.15967068448662758 Mem size: 100000 Time: 04/05/2018--01:46 Frame: 4638312
+Copying!
+Saving!
+Saved weights to disk
+Copying!
+Saving!
+Saved weights to disk
+Episode 14700 reward: 0.0, Episode loss: 0.09407323901541531 Mem size: 100000 Time: 04/05/2018--01:56 Frame: 4657657
+Copying!
+Saving!
+Saved weights to disk
+Copying!
+Saving!
+Saved weights to disk
+Episode 14750 reward: 2.0, Episode loss: 0.0863289161643479 Mem size: 100000 Time: 04/05/2018--02:05 Frame: 4674004
+Copying!
+Saving!
+Saved weights to disk
+Copying!
+Saving!
+Saved weights to disk
+Episode 14800 reward: 0.0, Episode loss: 0.1222227668040432 Mem size: 100000 Time: 04/05/2018--02:14 Frame: 4692459
+Copying!
+Saving!
+Saved weights to disk
+Episode 14850 reward: 1.0, Episode loss: 0.11489649742725305 Mem size: 100000 Time: 04/05/2018--02:21 Frame: 4705432
+Copying!
+Saving!
+Saved weights to disk
+Episode 14900 reward: 5.0, Episode loss: 0.21818837636965327 Mem size: 100000 Time: 04/05/2018--02:28 Frame: 4719004
+Copying!
+Saving!
+Saved weights to disk
+Episode 14950 reward: 0.0, Episode loss: 0.07600248820381239 Mem size: 100000 Time: 04/05/2018--02:34 Frame: 4729832
+Copying!
+Saving!
+Saved weights to disk
+Copying!
+Saving!
+Saved weights to disk
+Episode 15000 reward: 2.0, Episode loss: 0.17453657175065018 Mem size: 100000 Time: 04/05/2018--02:41 Frame: 4743910
+Copying!
+Saving!
+Saved weights to disk
+Episode 15050 reward: 1.0, Episode loss: 0.12334928254131228 Mem size: 100000 Time: 04/05/2018--02:48 Frame: 4756616
+Copying!
+Saving!
+Saved weights to disk
+Copying!
+Saving!
+Saved weights to disk
+Episode 15100 reward: 5.0, Episode loss: 0.24597515878849663 Mem size: 100000 Time: 04/05/2018--02:57 Frame: 4775222
+Copying!
+Saving!
+Saved weights to disk
+Copying!
+Saving!
+Saved weights to disk
+Episode 15150 reward: 2.0, Episode loss: 0.2683865099970717 Mem size: 100000 Time: 04/05/2018--03:05 Frame: 4790455
+Copying!
+Saving!
+Saved weights to disk
+Episode 15200 reward: 2.0, Episode loss: 0.13737166675855406 Mem size: 100000 Time: 04/05/2018--03:14 Frame: 4807094
+Copying!
+Saving!
+Saved weights to disk
+Copying!
+Saving!
+Saved weights to disk
+Episode 15250 reward: 3.0, Episode loss: 0.16679151344578713 Mem size: 100000 Time: 04/05/2018--03:24 Frame: 4826461
+Copying!
+Saving!
+Saved weights to disk
+Copying!
+Saving!
+Saved weights to disk
+Episode 15300 reward: 0.0, Episode loss: 0.07026410740218125 Mem size: 100000 Time: 04/05/2018--03:33 Frame: 4844252
+Copying!
+Saving!
+Saved weights to disk
+Copying!
+Saving!
+Saved weights to disk
+Episode 15350 reward: 2.0, Episode loss: 0.105837341863662 Mem size: 100000 Time: 04/05/2018--03:42 Frame: 4861430
+Copying!
+Saving!
+Saved weights to disk
+Episode 15400 reward: 0.0, Episode loss: 0.09274060247116722 Mem size: 100000 Time: 04/05/2018--03:47 Frame: 4872124
+Copying!
+Saving!
+Saved weights to disk
+Episode 15450 reward: 1.0, Episode loss: 0.385618749569403 Mem size: 100000 Time: 04/05/2018--03:55 Frame: 4886677
+Copying!
+Saving!
+Saved weights to disk
+Copying!
+Saving!
+Saved weights to disk
+Episode 15500 reward: 3.0, Episode loss: 0.24761547200614586 Mem size: 100000 Time: 04/05/2018--04:05 Frame: 4907031
+Copying!
+Saving!
+Saved weights to disk
+Copying!
+Saving!
+Saved weights to disk
+Episode 15550 reward: 2.0, Episode loss: 0.09710065348190255 Mem size: 100000 Time: 04/05/2018--04:15 Frame: 4925063
+Copying!
+Saving!
+Saved weights to disk
+Copying!
+Saving!
+Saved weights to disk
+Episode 15600 reward: 0.0, Episode loss: 0.13104055495932698 Mem size: 100000 Time: 04/05/2018--04:26 Frame: 4946862
+Copying!
+Saving!
+Saved weights to disk
+Copying!
+Saving!
+Saved weights to disk
+Episode 15650 reward: 1.0, Episode loss: 0.12850527736009099 Mem size: 100000 Time: 04/05/2018--04:38 Frame: 4969893
+Copying!
+Saving!
+Saved weights to disk
+Copying!
+Saving!
+Saved weights to disk
+Episode 15700 reward: 0.0, Episode loss: 0.09204084414523095 Mem size: 100000 Time: 04/05/2018--04:44 Frame: 4982348
+Copying!
+Saving!
+Saved weights to disk
+Episode 15750 reward: 0.0, Episode loss: 0.07833758206106722 Mem size: 100000 Time: 04/05/2018--04:50 Frame: 4993525
+Copying!
+Saving!
+Saved weights to disk
+Episode 15800 reward: 3.0, Episode loss: 0.12322082903119735 Mem size: 100000 Time: 04/05/2018--04:57 Frame: 5006377
+Copying!
+Saving!
+Saved weights to disk
+Copying!
+Saving!
+Saved weights to disk
+Episode 15850 reward: 1.0, Episode loss: 0.14337853869074024 Mem size: 100000 Time: 04/05/2018--05:07 Frame: 5026555
+Copying!
+Saving!
+Saved weights to disk
+Copying!
+Saving!
+Saved weights to disk
+Episode 15900 reward: 1.0, Episode loss: 0.1619377960159909 Mem size: 100000 Time: 04/05/2018--05:16 Frame: 5043874
+Copying!
+Saving!
+Saved weights to disk
+Episode 15950 reward: 3.0, Episode loss: 0.1421670738782268 Mem size: 100000 Time: 04/05/2018--05:23 Frame: 5057497
+Copying!
+Saving!
+Saved weights to disk
+Copying!
+Saving!
+Saved weights to disk
+Episode 16000 reward: 3.0, Episode loss: 0.2657436743902508 Mem size: 100000 Time: 04/05/2018--05:34 Frame: 5078424
+Copying!
+Saving!
+Saved weights to disk
+Copying!
+Saving!
+Saved weights to disk
+Episode 16050 reward: 3.0, Episode loss: 0.18221368893864565 Mem size: 100000 Time: 04/05/2018--05:43 Frame: 5096357
+Copying!
+Saving!
+Saved weights to disk
+Episode 16100 reward: 2.0, Episode loss: 0.10638104862300679 Mem size: 100000 Time: 04/05/2018--05:49 Frame: 5107877
+Copying!
+Saving!
+Saved weights to disk
+Episode 16150 reward: 0.0, Episode loss: 0.05582567126839422 Mem size: 100000 Time: 04/05/2018--05:55 Frame: 5119205
+Copying!
+Saving!
+Saved weights to disk
+Copying!
+Saving!
+Saved weights to disk
+Episode 16200 reward: 2.0, Episode loss: 0.1607355387241114 Mem size: 100000 Time: 04/05/2018--06:02 Frame: 5132593
+Copying!
+Saving!
+Saved weights to disk
+Copying!
+Saving!
+Saved weights to disk
+Episode 16250 reward: 0.0, Episode loss: 0.12144595000427216 Mem size: 100000 Time: 04/05/2018--06:13 Frame: 5153490
+Copying!
+Saving!
+Saved weights to disk
+Copying!
+Saving!
+Saved weights to disk
+Episode 16300 reward: 0.0, Episode loss: 0.16765985937672667 Mem size: 100000 Time: 04/05/2018--06:23 Frame: 5173880
+Copying!
+Saving!
+Saved weights to disk
+Copying!
+Saving!
+Saved weights to disk
+Episode 16350 reward: 0.0, Episode loss: 0.12644125462975353 Mem size: 100000 Time: 04/05/2018--06:35 Frame: 5196688
+Copying!
+Saving!
+Saved weights to disk
+Copying!
+Saving!
+Saved weights to disk
+Episode 16400 reward: 1.0, Episode loss: 0.11600870313122869 Mem size: 100000 Time: 04/05/2018--06:45 Frame: 5214208
+Copying!
+Saving!
+Saved weights to disk
+Episode 16450 reward: 2.0, Episode loss: 0.14120727143017575 Mem size: 100000 Time: 04/05/2018--06:51 Frame: 5226609
+Copying!
+Saving!
+Saved weights to disk
+Episode 16500 reward: 0.0, Episode loss: 0.06791301962221041 Mem size: 100000 Time: 04/05/2018--06:56 Frame: 5237120
+Copying!
+Saving!
+Saved weights to disk
+Episode 16550 reward: 4.0, Episode loss: 0.19178980475408025 Mem size: 100000 Time: 04/05/2018--07:02 Frame: 5248612
+Copying!
+Saving!
+Saved weights to disk
+Copying!
+Saving!
+Saved weights to disk
+Episode 16600 reward: 0.0, Episode loss: 0.14631509254104458 Mem size: 100000 Time: 04/05/2018--07:10 Frame: 5262574
+Copying!
+Saving!
+Saved weights to disk
+Copying!
+Saving!
+Saved weights to disk
+Episode 16650 reward: 0.0, Episode loss: 0.13886210267082788 Mem size: 100000 Time: 04/05/2018--07:20 Frame: 5283084
+Copying!
+Saving!
+Saved weights to disk
+Copying!
+Saving!
+Saved weights to disk
+Episode 16700 reward: 1.0, Episode loss: 0.21841468202183023 Mem size: 100000 Time: 04/05/2018--07:31 Frame: 5304154
+Copying!
+Saving!
+Saved weights to disk
+Copying!
+Saving!
+Saved weights to disk
+Episode 16750 reward: 3.0, Episode loss: 0.173377305327449 Mem size: 100000 Time: 04/05/2018--07:44 Frame: 5327825
+Copying!
+Saving!
+Saved weights to disk
+Copying!
+Saving!
+Saved weights to disk
+Episode 16800 reward: 0.0, Episode loss: 0.035629121703095734 Mem size: 100000 Time: 04/05/2018--07:51 Frame: 5340994
+Copying!
+Saving!
+Saved weights to disk
+Episode 16850 reward: 1.0, Episode loss: 0.07280880885082297 Mem size: 100000 Time: 04/05/2018--07:57 Frame: 5352380
+Copying!
+Saving!
+Saved weights to disk
+Episode 16900 reward: 0.0, Episode loss: 0.09210681312833913 Mem size: 100000 Time: 04/05/2018--08:03 Frame: 5363581
+Copying!
+Saving!
+Saved weights to disk
+Episode 16950 reward: 2.0, Episode loss: 0.17192399597843178 Mem size: 100000 Time: 04/05/2018--08:09 Frame: 5376531
+Copying!
+Saving!
+Saved weights to disk
+Copying!
+Saving!
+Saved weights to disk
+Episode 17000 reward: 2.0, Episode loss: 0.18106516255647875 Mem size: 100000 Time: 04/05/2018--08:20 Frame: 5396714
+Copying!
+Saving!
+Saved weights to disk
+Copying!
+Saving!
+Saved weights to disk
+Episode 17050 reward: 1.0, Episode loss: 0.05074906366644427 Mem size: 100000 Time: 04/05/2018--08:29 Frame: 5414044
+Copying!
+Saving!
+Saved weights to disk
+Episode 17100 reward: 4.0, Episode loss: 0.1739517489040736 Mem size: 100000 Time: 04/05/2018--08:36 Frame: 5428631
+Copying!
+Saving!
+Saved weights to disk
+Copying!
+Saving!
+Saved weights to disk
+Episode 17150 reward: 0.0, Episode loss: 0.20524362818105146 Mem size: 100000 Time: 04/05/2018--08:47 Frame: 5448439
+Copying!
+Saving!
+Saved weights to disk
+Copying!
+Saving!
+Saved weights to disk
+Episode 17200 reward: 0.0, Episode loss: 0.09297956532100216 Mem size: 100000 Time: 04/05/2018--08:53 Frame: 5461181
+Copying!
+Saving!
+Saved weights to disk
+Episode 17250 reward: 0.0, Episode loss: 0.05179250749642961 Mem size: 100000 Time: 04/05/2018--08:58 Frame: 5472358
+Copying!
+Saving!
+Saved weights to disk
+Episode 17300 reward: 2.0, Episode loss: 0.10467202638392337 Mem size: 100000 Time: 04/05/2018--09:03 Frame: 5482664
+Copying!
+Saving!
+Saved weights to disk
+Episode 17350 reward: 0.0, Episode loss: 0.11540182877797633 Mem size: 100000 Time: 04/05/2018--09:09 Frame: 5494426
+Copying!
+Saving!
+Saved weights to disk
+Copying!
+Saving!
+Saved weights to disk
+Episode 17400 reward: 2.0, Episode loss: 0.3265388931322377 Mem size: 100000 Time: 04/05/2018--09:18 Frame: 5513087
+Copying!
+Saving!
+Saved weights to disk
+Copying!
+Saving!
+Saved weights to disk
+Episode 17450 reward: 1.0, Episode loss: 0.1204407739569433 Mem size: 100000 Time: 04/05/2018--09:27 Frame: 5532624
+Copying!
+Saving!
+Saved weights to disk
+Episode 17500 reward: 2.0, Episode loss: 0.11969157983548939 Mem size: 100000 Time: 04/05/2018--09:34 Frame: 5547307
+Copying!
+Saving!
+Saved weights to disk
+Copying!
+Saving!
+Saved weights to disk
+Episode 17550 reward: 1.0, Episode loss: 0.04536132383509539 Mem size: 100000 Time: 04/05/2018--09:43 Frame: 5565661
+Copying!
+Saving!
+Saved weights to disk
+Copying!
+Saving!
+Saved weights to disk
+Episode 17600 reward: 2.0, Episode loss: 0.12134319377946667 Mem size: 100000 Time: 04/05/2018--09:50 Frame: 5580094
+Copying!
+Saving!
+Saved weights to disk
+Episode 17650 reward: 3.0, Episode loss: 0.12091858536587097 Mem size: 100000 Time: 04/05/2018--09:56 Frame: 5593812
+Copying!
+Saving!
+Saved weights to disk
+Copying!
+Saving!
+Saved weights to disk
+Episode 17700 reward: 2.0, Episode loss: 0.17890374892158434 Mem size: 100000 Time: 04/05/2018--10:04 Frame: 5610214
+Copying!
+Saving!
+Saved weights to disk
+Episode 17750 reward: 0.0, Episode loss: 0.23987295347615145 Mem size: 100000 Time: 04/05/2018--10:14 Frame: 5629614
+Copying!
+Saving!
+Saved weights to disk
+Copying!
+Saving!
+Saved weights to disk
+Episode 17800 reward: 3.0, Episode loss: 0.24479768797755241 Mem size: 100000 Time: 04/05/2018--10:22 Frame: 5647351
+Copying!
+Saving!
+Saved weights to disk
+Copying!
+Saving!
+Saved weights to disk
+Episode 17850 reward: 4.0, Episode loss: 0.3430395611212589 Mem size: 100000 Time: 04/05/2018--10:34 Frame: 5669758
+Copying!
+Saving!
+Saved weights to disk
+Copying!
+Saving!
+Saved weights to disk
+Episode 17900 reward: 2.0, Episode loss: 0.10229914210503921 Mem size: 100000 Time: 04/05/2018--10:41 Frame: 5682307
+Copying!
+Saving!
+Saved weights to disk
+Episode 17950 reward: 0.0, Episode loss: 0.08273952288436703 Mem size: 100000 Time: 04/05/2018--10:48 Frame: 5695218
+Copying!
+Saving!
+Saved weights to disk
+Episode 18000 reward: 0.0, Episode loss: 0.0855104319343809 Mem size: 100000 Time: 04/05/2018--10:55 Frame: 5706924
+Copying!
+Saving!
+Saved weights to disk
+Episode 18050 reward: 1.0, Episode loss: 0.11807012508506887 Mem size: 100000 Time: 04/05/2018--11:02 Frame: 5717942
+Copying!
+Saving!
+Saved weights to disk
+Copying!
+Saving!
+Saved weights to disk
+Episode 18100 reward: 1.0, Episode loss: 0.1737418269040063 Mem size: 100000 Time: 04/05/2018--11:10 Frame: 5731423
+Copying!
+Saving!
+Saved weights to disk
+Episode 18150 reward: 1.0, Episode loss: 0.34554296420537867 Mem size: 100000 Time: 04/05/2018--11:20 Frame: 5749625
+Copying!
+Saving!
+Saved weights to disk
+Copying!
+Saving!
+Saved weights to disk
+Episode 18200 reward: 3.0, Episode loss: 0.25204196909908205 Mem size: 100000 Time: 04/05/2018--11:29 Frame: 5765891
+Copying!
+Saving!
+Saved weights to disk
+Copying!
+Saving!
+Saved weights to disk
+Episode 18250 reward: 2.0, Episode loss: 0.18012443726183847 Mem size: 100000 Time: 04/05/2018--11:42 Frame: 5789849
+Copying!
+Saving!
+Saved weights to disk
+Copying!
+Saving!
+Saved weights to disk
+Episode 18300 reward: 0.0, Episode loss: 0.13359266557381488 Mem size: 100000 Time: 04/05/2018--11:51 Frame: 5807311
+Copying!
+Saving!
+Saved weights to disk
+Copying!
+Saving!
+Saved weights to disk
+Episode 18350 reward: 3.0, Episode loss: 0.13319522881647572 Mem size: 100000 Time: 04/05/2018--11:58 Frame: 5820202
