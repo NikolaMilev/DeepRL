@@ -15,9 +15,9 @@ import time
 import os
 import sys
 
-GAME="PongDeterministic-v4"
-NET_W = 105
-NET_H = 80
+GAME="BreakoutDeterministic-v4"
+NET_H = 105
+NET_W = 80
 NET_D = 4
 
 MINIBATCH_SIZE=32
@@ -26,14 +26,14 @@ OBSERVE_MAX=30
 SAVE_FREQ=10000
 TRAIN_FREQ=4
 TARGET_UPDATE_FREQ=10000
-INITIAL_EPSILON=1.0
+INITIAL_EPSILON=0
 FINAL_EPSILON=0.1
 EPSILON_EXPLORATION=100000
 NUM_EPISODES = 20000
-INITIAL_REPLAY_MEMORY_SIZE=10000
+INITIAL_REPLAY_MEMORY_SIZE=32
 MAX_REPLAY_MEMORY_SIZE=100000
 
-LOAD_NETWORK=None
+LOAD_NETWORK="brejk.h5"
 
 LEARNING_RATE = 0.00025  
 MOMENTUM = 0.95  
@@ -43,6 +43,15 @@ MODEL_NAME_APPEND=str(datetime.datetime.now())
 MODEL_FILENAME=MODEL_NAME_APPEND
 DIRECTORY="models"
 SUBDIR=GAME
+
+def check(model):
+	ws = model.get_weights()
+	for x in ws:
+		if not (np.isfinite(x)).all():
+			return True
+		if (np.isnan(x)).any():
+			return True
+	return False
 
 # succ code: 4/AABL3-AVXnaoSgYSPx5B4XedKpyCH1jwr8BxQGBXEVjrkqMXgx3TKkg
 def resolveReward(reward):
@@ -106,7 +115,7 @@ class DRLAgent():
 
 
 	@staticmethod
-	def buildNetwork(numActions, inputShape=(NET_D, NET_W, NET_H)):
+	def buildNetwork(numActions, inputShape=(NET_H, NET_W, NET_D)):
 
 		"""
 		The network receives the state (stacked screenshots) and produces a vector that contains a 
@@ -196,7 +205,7 @@ class DRLAgent():
 		# downsampling to 105x80 (half the size on both dimensions)
 		x =  x[::2, ::2]
 		#print(x.shape)
-		x= np.reshape(x, (NET_W, NET_H))
+		x= np.reshape(x, (NET_H, NET_W))
 		#sm.toimage(x).save("/home/nmilev/Desktop/jtzm.png")
 		return x
 
@@ -213,11 +222,11 @@ class DRLAgent():
 		reward = 0
 		ss = self.preprocessImage(self.env.reset())
 		done=None
-		state = np.stack([ss for _ in range(NET_D)], axis=0)
+		state = np.stack([ss for _ in range(NET_D)], axis=2)
 		while done != True:
 			self.env.render()
 			y = self.targetNetwork.predict([np.expand_dims(state, axis=0), np.expand_dims(np.ones(self.numActions), axis=0)])
-			time.sleep(1/60.0)
+			#time.sleep(1/60.0)
 			ss, rew, done, info = self.env.step(np.argmax(y[0], axis=0))
 			reward += rew
 			state=self.updateState(state, self.preprocessImage(ss))
@@ -228,21 +237,22 @@ class DRLAgent():
 		"""
 		Copy the weights from the online network to the target network.
 		"""
+
 		# print(np.array_equal(self.targetNetwork.get_weights(), self.qNetwork.get_weights()))
 		# since I am not sure if the weights are correctly set with the method below
 		self.saveWeightsPath(self.qNetwork, "tmp.h5")
 		self.loadWeights(self.targetNetwork, "tmp.h5")
 		# self.targetNetwork.set_weights(self.qNetwork.get_weights())
-		# print("Updated weights!")
 		
 	def train(self):
 		mb = self.er.randomSample(MINIBATCH_SIZE)
 		states = np.array([x[0] for x in mb])
+		sm.toimage(states[0][:,:,0]).save("/home/nmilev/Desktop/jtzmp.png")
 		#actions = np.array([x[1] for x in mb])
 		actions = to_categorical(np.array([x[1] for x in mb]), num_classes=self.numActions)
 		rewards = np.array([x[2] for x in mb])
 		next_states = np.array([x[3] for x in mb])
-		terminals = np.array([1 if a else 0 for a in [x[4] for x in mb]]) # 1 if the state is terminal and 0 otherwise
+		terminals = np.array([x[4] for x in mb]).astype(bool) # 1 if the state is terminal and 0 otherwise
 		#print("STATES SHAPE:")
 		#print(states.shape)
 		targets = self.targetNetwork.predict([next_states, np.ones(actions.shape)], batch_size=MINIBATCH_SIZE)
@@ -255,6 +265,9 @@ class DRLAgent():
 
 		# TODO TRAIN
 		self.totalLoss += self.qNetwork.train_on_batch([states, actions], q_values)
+		if check(self.qNetwork) or check(self.targetNetwork):
+			print("SOMETHING IS INFINITY OR NAN")
+
 
 	# not sure if this is needed!
 	@staticmethod
@@ -262,14 +275,12 @@ class DRLAgent():
 		#x = np.maximum(DRLAgent.preprocessImage(prev_obs), DRLAgent.preprocessImage(observation))
 		#or
 		x = DRLAgent.preprocessImage(observation)
-		#sm.toimage(x).save("/home/nmilev/Desktop/jtzm.png")
-		#print("Saved")
-		#return DRLAgent.preprocessImage(observation)
+		sm.toimage(x).save("/home/nmilev/Desktop/jtzm.png")
 		return x
 
 	@staticmethod
 	def updateState(state, newObservation):
-		return np.append(state[1:, :, :], np.reshape(newObservation, (1, NET_W, NET_H)), axis=0)
+		return np.append(state[:, :, 1:], np.reshape(newObservation, (NET_H, NET_W, 1)), axis=2)
 
 	def chooseAction(self, state):
 		if self.epsilon >= random.random() or self.timestep < INITIAL_REPLAY_MEMORY_SIZE:
@@ -290,6 +301,7 @@ class DRLAgent():
 		for ep_count in range(numEpisodes):
 			terminal = False
 			observation = self.env.reset()
+			prev_obs=None
 			for i in range(random.randint(1, observationSteps)):
 				prev_obs = observation
 				observation, _, _, _ = self.env.step(0)
@@ -297,8 +309,7 @@ class DRLAgent():
 			statep = self.prepState(prev_obs, observation)
 			# inital 4 screen state
 			# the first 4 screens are the same but it will be updated over time
-			
-			state = np.stack([statep for _ in range(NET_D)], axis=0)
+			state = np.stack([statep for _ in range(NET_D)], axis=2)
 			while not terminal:
 				#print("New choice!")
 				prev_obs = observation
@@ -322,7 +333,7 @@ class DRLAgent():
 		#sm.toimage(envObservation).save("/home/nmilev/Desktop/jtzm.png")
 		reward = resolveReward(reward)
 		self.totalReward += reward
-		time.sleep(1/60.0)
+		#time.sleep(1/60.0)
 		self.er.add((state, action, reward, next_state, terminal))
 
 		if self.timestep > INITIAL_REPLAY_MEMORY_SIZE:
