@@ -15,8 +15,6 @@ import os
 import time
 import matplotlib.pyplot as plt
 import datetime
-from skimage.transform import resize
-
 MODEL_NAME_APPEND=str(datetime.datetime.now())
 
 
@@ -26,7 +24,7 @@ print(device_lib.list_local_devices())
 COLAB=False
 
 GAME="BreakoutDeterministic-v4"
-NET_H = 80
+NET_H = 105
 NET_W = 80
 NET_D = 4
 LEARNING_RATE = 2.5e-4
@@ -41,11 +39,11 @@ FINAL_EPSILON=0.1
 EPSILON_EXPLORATION=1000000
 NUM_EPISODES = 12000
 INITIAL_REPLAY_MEMORY_SIZE=50000
-MAX_REPLAY_MEMORY_SIZE=260000 if COLAB else 160000
+MAX_REPLAY_MEMORY_SIZE=200000 if COLAB else 160000
 DIRECTORY="colaboratory_models" if COLAB else "."
-LOAD_NETWORK=None #os.path.join(DIRECTORY, "mreza.h5")
+LOAD_NETWORK=None#os.path.join(DIRECTORY, "mreza.h5")
 MODEL_FILENAME=GAME+MODEL_NAME_APPEND
-PADDING="valid" # https://github.com/openai/baselines/issues/41
+PADDING="valid"
 STATS_SAVE_FREQ = 10
 MOMENTUM = 0.95  
 MIN_GRAD = 0.01
@@ -122,13 +120,10 @@ class DRLAgent():
 		self.env = gym.make(envName)
 		self.numActions = self.env.action_space.n
 		self.er = ExperienceReplay()
-		self.targetNetwork = DRLAgent.buildNetwork(numActions=self.numActions)
 		self.qNetwork = DRLAgent.buildNetwork(numActions=self.numActions)
 		if(LOAD_NETWORK):
-			self.loadWeights(self.targetNetwork, LOAD_NETWORK)
 			self.loadWeights(self.qNetwork, LOAD_NETWORK)
-		else:
-			self.updateWeights()
+
 		self.timestep = 0
 		self.previousEpisodeTimestep=0
 		self.episode = 0
@@ -223,33 +218,9 @@ class DRLAgent():
 		x = np.mean(img, axis=2).astype(np.uint8)
 		# downsampling to 105x80 (half the size on both dimensions)
 		x =  x[::2, ::2] # 105x80
-		#print(off)
-		#Y = 0.299 R + 0.587 G + 0.114 B
-		print(img.shape)
-		view = img[::2,::2]
-		view = (view[:,:,0]*0.299 + view[:,:,1]*0.587 + view[:,:,2]*0.114).astype(np.uint8)
-		plt.imshow(view)
-		plt.show()
-		x = x[18:98, :] # getting the center 80x80 with a bit of moving so that the important part is in the image
-
-		#sm.toimage(x[18:98, :]).save("/home/nmilev/Desktop/jtzm.png")
-		#plt.imshow(x)
-		#plt.show()
-		#print("SAVED")
-		#print(x.shape)
 		x= np.reshape(x, (NET_H, NET_W))
 		#sm.toimage(x).save("/home/nmilev/Desktop/jtzm.png")
 		return x		
-	
-	# since I'm not yet sure if set_weights and get_weights work, I'm saving to disk and then reading
-	def updateWeights(self):
-		"""
-		Copy the weights from the online network to the target network.
-		"""
-		# print(np.array_equal(self.targetNetwork.get_weights(), self.qNetwork.get_weights()))
-		#self.targetNetwork.set_weights(self.qNetwork.get_weights())
-		DRLAgent.saveWeightsPath(self.qNetwork, "tmp.h5")
-		DRLAgent.loadWeights(self.targetNetwork, "tmp.h5")
 		
 	def train(self):
 
@@ -260,7 +231,7 @@ class DRLAgent():
 		# obtain a batch (s, a, r, s', t) of MINIBATCH_SIZE elements from the experience replay memory
 		states, actions, rewards, next_states, terminals = self.er.randomSample(MINIBATCH_SIZE, actionsCategorical=True, numCategorical=self.numActions)
 		# we predict the Q values for next states for all actions, using target network
-		qTargetValues = self.targetNetwork.predict([next_states, np.ones(actions.shape)], batch_size=MINIBATCH_SIZE)
+		qTargetValues = self.qNetwork.predict([next_states, np.ones(actions.shape)], batch_size=MINIBATCH_SIZE)
 		# for the terminal states, the Q value is 0 (for all actions)
 		qTargetValues[terminals] = 0
 			
@@ -271,7 +242,7 @@ class DRLAgent():
 		self.episodeLoss += self.qNetwork.train_on_batch([states, actions], y)
 
 		# check if there is infinity/nan weight in the network, a precaution
-		if check(self.qNetwork) or check(self.targetNetwork):
+		if check(self.qNetwork):
 			print("SOMETHING IS NAN/INF")
 
 	# not sure if this is needed!
@@ -281,17 +252,19 @@ class DRLAgent():
 	# TODO
 	@staticmethod
 	def prepState(previousObservation, observation):
-		#x = np.maximum(DRLAgent.preprocessImage(previousObservation), DRLAgent.preprocessImage(observation))
+		x = np.maximum(DRLAgent.preprocessImage(previousObservation), DRLAgent.preprocessImage(observation))
 		#or
-		x = DRLAgent.preprocessImage(observation)
+		#x = DRLAgent.preprocessImage(observation)
+		# plt.imshow(x)
+		# plt.show()
 		#sm.toimage(x).save("/home/nmilev/Desktop/jtzm.png")
 		#print("Saved")
 		#return DRLAgent.preprocessImage(observation)
 		return x
 
 	@staticmethod
-	def updateState(state, newObservation):
-		x=np.append(state[:, :, 1:], np.reshape(newObservation, (NET_H, NET_W, 1)), axis=2)
+	def updateState(state, oldObservation, newObservation):
+		x=np.append(state[:, :, 1:], np.reshape(DRLAgent.prepState(oldObservation, newObservation), (NET_H, NET_W, 1)), axis=2)
 		#print((state[:, :, 0] == state[:, :, 1]).all() and (state[:, :, 0] == state[:, :, 2]).all() and (state[:, :, 0] == state[:, :, 2]).all() and (state[:, :, 0] == state[:, :, 3]).all())
 		return x
 
@@ -301,14 +274,19 @@ class DRLAgent():
 	def chooseAction(self, state):
 		# with epsilon-greedy policy, we pick an action, the first INITIAL_REPLAY_MEMORY_SIZE always being random
 		if self.epsilon >= random.random() or self.timestep < INITIAL_REPLAY_MEMORY_SIZE:
-			return random.randrange(self.numActions)
+			retval = random.randrange(self.numActions)
 		else:
 			# otherwise, we ask the target network to predict the next step and act on it
 			#print(np.expand_dims(np.ones(self.numActions), axis=0).shape)
-			y = self.targetNetwork.predict([np.expand_dims(state, axis=0), np.expand_dims(np.ones(self.numActions), axis=0)])
-			return np.argmax(y[0], axis=0)
+			y = self.qNetwork.predict([np.expand_dims(state, axis=0), np.expand_dims(np.ones(self.numActions), axis=0)])
+			retval = np.argmax(y[0], axis=0)
 			#print(y, retval)
+		# we decrement the epsilon if needed but only after filling the initial
+				# portion of the experience replay
+		if self.epsilon > FINAL_EPSILON and self.timestep >= INITIAL_REPLAY_MEMORY_SIZE:
+			self.epsilon -= self.epsilonStep
 		
+		return retval
 	# learn for numEpisodes episodes
 	def learn(self, numEpisodes=NUM_EPISODES, observationSteps=OBSERVE_MAX):
 		self.timestep = 0
@@ -345,12 +323,12 @@ class DRLAgent():
 				# not using the additional info as it may vary through games
 				observation, reward, terminal, _ = self.env.step(action)
 				# we prepare the state
-				observation=self.prepState(previousObservation, observation)
+				
 				# we transform the reward so it fits the norm
 				reward = resolveReward(reward)
 
 				# we update the screenshot
-				next_state = self.updateState(state, observation)
+				next_state = self.updateState(state, previousObservation, observation)
 				# add the (s,a,r,s',t) 5-tuple to the experience replay
 				self.er.add((state, action, reward, next_state, terminal))
 				state = next_state
@@ -358,10 +336,7 @@ class DRLAgent():
 				self.episodeReward += reward
 				self.timestep += 1
 
-				# we decrement the epsilon if needed but only after filling the initial
-				# portion of the experience replay
-				if self.epsilon > FINAL_EPSILON and self.timestep >= INITIAL_REPLAY_MEMORY_SIZE:
-					self.epsilon -= self.epsilonStep
+				
 
 				self.doPeriodicStuff()
 
@@ -379,36 +354,9 @@ class DRLAgent():
 			if self.timestep % TRAIN_FREQ == 0:
 				#print("Training!")
 				self.train()
-			if self.timestep % TARGET_UPDATE_FREQ == 0:
-				print("Copying!")
-				self.updateWeights()
 			if self.timestep % SAVE_FREQ == 0:
 				print("Saving!")
-				self.saveWeights(self.targetNetwork)
-		
-
-	# TODO
-	def runTest(self, numEpisodes):
-		for i in range(numEpisodes):
-			self.runEpisode()
-
-	def runEpisode(self):
-		"""
-		Just for running an episode, not for anything else!
-		TODO update it
-		"""
-		state = self.env.reset()
-		done=None
-		while done != True:
-			if not COLAB:
-				self.env.render()
-			x_t = self.preprocessImage(state)
-			s_t = np.stack([x_t for _ in range(NET_D)], axis=0)
-			s_t = np.expand_dims(s_t, axis=0)
-			y = self.targetNetwork.predict(s_t)
-			state, reward, done, info = self.env.step(np.argmax(y, axis=1))
-			print(info)
-
+				self.saveWeights(self.qNetwork)
 
 agent=DRLAgent(GAME)
 agent.learn()
