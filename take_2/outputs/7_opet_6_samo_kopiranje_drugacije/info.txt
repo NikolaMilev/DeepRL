@@ -1,0 +1,5 @@
+imam dve mreze
+korisitm huber loss, nema reward clippinga
+kraj epizode je gubitak zivota
+84x84
+target mreza se updatuje na 10000 update-ova q mreze, ne na 10000 timestepova

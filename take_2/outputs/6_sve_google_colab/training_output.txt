@@ -1,0 +1,1840 @@
+{
+    "floatx": "float32",
+    "epsilon": 1e-07,
+    "backend": "tensorflow",
+    "image_data_format": "channels_last"
+}Built and compiled the network!
+Built and compiled the network!
+/usr/local/lib/python3.6/dist-packages/scipy/misc/pilutil.py:482: FutureWarning: Conversion of the second argument of issubdtype from `int` to `np.signedinteger` is deprecated. In future, it will be treated as `np.int64 == np.dtype(int).type`.
+  if issubdtype(ts, int):
+/usr/local/lib/python3.6/dist-packages/scipy/misc/pilutil.py:485: FutureWarning: Conversion of the second argument of issubdtype from `float` to `np.floating` is deprecated. In future, it will be treated as `np.float64 == np.dtype(float).type`.
+  elif issubdtype(type(size), float):
+Ep: 0, Dur: 190, Step: 173, Rew: 1.00, Loss: 0.0000, Eps: 1.0000, Mem.size: 173
+Ep: 10, Dur: 196, Step: 2010, Rew: 1.00, Loss: 0.0000, Eps: 1.0000, Mem.size: 2010
+Ep: 20, Dur: 228, Step: 3682, Rew: 2.00, Loss: 0.0000, Eps: 1.0000, Mem.size: 3682
+Ep: 30, Dur: 143, Step: 5297, Rew: 0.00, Loss: 0.0000, Eps: 1.0000, Mem.size: 5297
+Ep: 40, Dur: 154, Step: 7067, Rew: 0.00, Loss: 0.0000, Eps: 1.0000, Mem.size: 7067
+Ep: 50, Dur: 164, Step: 8849, Rew: 0.00, Loss: 0.0000, Eps: 1.0000, Mem.size: 8849
+Ep: 60, Dur: 130, Step: 10449, Rew: 0.00, Loss: 0.0000, Eps: 1.0000, Mem.size: 10449
+Ep: 70, Dur: 175, Step: 12280, Rew: 0.00, Loss: 0.0000, Eps: 1.0000, Mem.size: 12280
+Ep: 80, Dur: 324, Step: 13982, Rew: 4.00, Loss: 0.0000, Eps: 1.0000, Mem.size: 13982
+Ep: 90, Dur: 154, Step: 15532, Rew: 0.00, Loss: 0.0000, Eps: 1.0000, Mem.size: 15532
+Ep: 100, Dur: 206, Step: 17316, Rew: 1.00, Loss: 0.0000, Eps: 1.0000, Mem.size: 17316
+Ep: 110, Dur: 207, Step: 19263, Rew: 2.00, Loss: 0.0000, Eps: 1.0000, Mem.size: 19263
+Ep: 120, Dur: 243, Step: 20927, Rew: 2.00, Loss: 0.0000, Eps: 1.0000, Mem.size: 20927
+Ep: 130, Dur: 167, Step: 22613, Rew: 1.00, Loss: 0.0000, Eps: 1.0000, Mem.size: 22613
+Ep: 140, Dur: 151, Step: 24316, Rew: 0.00, Loss: 0.0000, Eps: 1.0000, Mem.size: 24316
+Ep: 150, Dur: 149, Step: 25921, Rew: 0.00, Loss: 0.0000, Eps: 1.0000, Mem.size: 25921
+Ep: 160, Dur: 215, Step: 27640, Rew: 1.00, Loss: 0.0000, Eps: 1.0000, Mem.size: 27640
+Ep: 170, Dur: 150, Step: 29356, Rew: 0.00, Loss: 0.0000, Eps: 1.0000, Mem.size: 29356
+Ep: 180, Dur: 140, Step: 31132, Rew: 0.00, Loss: 0.0000, Eps: 1.0000, Mem.size: 31132
+Ep: 190, Dur: 172, Step: 33099, Rew: 1.00, Loss: 0.0000, Eps: 1.0000, Mem.size: 33099
+Ep: 200, Dur: 159, Step: 34727, Rew: 0.00, Loss: 0.0000, Eps: 1.0000, Mem.size: 34727
+Ep: 210, Dur: 142, Step: 36670, Rew: 0.00, Loss: 0.0000, Eps: 1.0000, Mem.size: 36670
+Ep: 220, Dur: 260, Step: 38513, Rew: 2.00, Loss: 0.0000, Eps: 1.0000, Mem.size: 38513
+Ep: 230, Dur: 152, Step: 40238, Rew: 0.00, Loss: 0.0000, Eps: 1.0000, Mem.size: 40238
+Ep: 240, Dur: 179, Step: 42146, Rew: 1.00, Loss: 0.0000, Eps: 1.0000, Mem.size: 42146
+Ep: 250, Dur: 165, Step: 43791, Rew: 0.00, Loss: 0.0000, Eps: 1.0000, Mem.size: 43791
+Ep: 260, Dur: 141, Step: 45703, Rew: 0.00, Loss: 0.0000, Eps: 1.0000, Mem.size: 45703
+Ep: 270, Dur: 237, Step: 47472, Rew: 2.00, Loss: 0.0000, Eps: 1.0000, Mem.size: 47472
+Ep: 280, Dur: 211, Step: 49085, Rew: 2.00, Loss: 0.0000, Eps: 1.0000, Mem.size: 49085
+Saved weights to colaboratory_models/colab_models/BreakoutDeterministic-v42018-05-29 13:45:25.608530.h5
+Ep: 290, Dur: 320, Step: 51073, Rew: 4.00, Loss: 0.0823, Eps: 0.9990, Mem.size: 51073
+Ep: 300, Dur: 154, Step: 52770, Rew: 0.00, Loss: 0.0294, Eps: 0.9975, Mem.size: 52770
+Ep: 310, Dur: 184, Step: 54564, Rew: 0.00, Loss: 0.0285, Eps: 0.9959, Mem.size: 54564
+Ep: 320, Dur: 250, Step: 56257, Rew: 2.00, Loss: 0.0552, Eps: 0.9944, Mem.size: 56257
+Ep: 330, Dur: 166, Step: 57915, Rew: 1.00, Loss: 0.0378, Eps: 0.9929, Mem.size: 57915
+Ep: 340, Dur: 147, Step: 59573, Rew: 0.00, Loss: 0.0418, Eps: 0.9914, Mem.size: 59573
+Saved weights to colaboratory_models/colab_models/BreakoutDeterministic-v42018-05-29 13:45:25.608530.h5
+Ep: 350, Dur: 192, Step: 61537, Rew: 1.00, Loss: 0.0414, Eps: 0.9896, Mem.size: 61537
+Ep: 360, Dur: 141, Step: 63305, Rew: 0.00, Loss: 0.0297, Eps: 0.9880, Mem.size: 63305
+Ep: 370, Dur: 208, Step: 65036, Rew: 2.00, Loss: 0.0368, Eps: 0.9865, Mem.size: 65036
+Ep: 380, Dur: 177, Step: 66859, Rew: 1.00, Loss: 0.0561, Eps: 0.9848, Mem.size: 66859
+Ep: 390, Dur: 290, Step: 68647, Rew: 4.00, Loss: 0.0732, Eps: 0.9832, Mem.size: 68647
+Saved weights to colaboratory_models/colab_models/BreakoutDeterministic-v42018-05-29 13:45:25.608530.h5
+Ep: 400, Dur: 164, Step: 70421, Rew: 1.00, Loss: 0.0396, Eps: 0.9816, Mem.size: 70421
+Ep: 410, Dur: 190, Step: 72428, Rew: 1.00, Loss: 0.0390, Eps: 0.9798, Mem.size: 72428
+Ep: 420, Dur: 223, Step: 74188, Rew: 2.00, Loss: 0.0245, Eps: 0.9782, Mem.size: 74188
+Ep: 430, Dur: 230, Step: 75877, Rew: 2.00, Loss: 0.0516, Eps: 0.9767, Mem.size: 75877
+Ep: 440, Dur: 152, Step: 77706, Rew: 0.00, Loss: 0.0283, Eps: 0.9751, Mem.size: 77706
+Ep: 450, Dur: 138, Step: 79221, Rew: 0.00, Loss: 0.0216, Eps: 0.9737, Mem.size: 79221
+Saved weights to colaboratory_models/colab_models/BreakoutDeterministic-v42018-05-29 13:45:25.608530.h5
+Ep: 460, Dur: 164, Step: 80842, Rew: 0.00, Loss: 0.0233, Eps: 0.9722, Mem.size: 80842
+Ep: 470, Dur: 283, Step: 82801, Rew: 3.00, Loss: 0.0500, Eps: 0.9705, Mem.size: 82801
+Ep: 480, Dur: 201, Step: 84498, Rew: 2.00, Loss: 0.0418, Eps: 0.9690, Mem.size: 84498
+Ep: 490, Dur: 171, Step: 86407, Rew: 0.00, Loss: 0.0362, Eps: 0.9672, Mem.size: 86407
+Ep: 500, Dur: 188, Step: 87995, Rew: 1.00, Loss: 0.0597, Eps: 0.9658, Mem.size: 87995
+Ep: 510, Dur: 311, Step: 89751, Rew: 5.00, Loss: 0.0681, Eps: 0.9642, Mem.size: 89751
+Updated target network!
+Saved weights to colaboratory_models/colab_models/BreakoutDeterministic-v42018-05-29 13:45:25.608530.h5
+Ep: 520, Dur: 139, Step: 91404, Rew: 0.00, Loss: 0.0369, Eps: 0.9627, Mem.size: 91404
+Ep: 530, Dur: 233, Step: 93402, Rew: 3.00, Loss: 0.0751, Eps: 0.9609, Mem.size: 93402
+Ep: 540, Dur: 217, Step: 95160, Rew: 2.00, Loss: 0.0437, Eps: 0.9594, Mem.size: 95160
+Ep: 550, Dur: 170, Step: 96931, Rew: 1.00, Loss: 0.0527, Eps: 0.9578, Mem.size: 96931
+Ep: 560, Dur: 219, Step: 98704, Rew: 1.00, Loss: 0.0559, Eps: 0.9562, Mem.size: 98704
+Saved weights to colaboratory_models/colab_models/BreakoutDeterministic-v42018-05-29 13:45:25.608530.h5
+Ep: 570, Dur: 168, Step: 100260, Rew: 1.00, Loss: 0.0462, Eps: 0.9548, Mem.size: 100260
+Ep: 580, Dur: 186, Step: 102051, Rew: 1.00, Loss: 0.0361, Eps: 0.9532, Mem.size: 102051
+Ep: 590, Dur: 153, Step: 103583, Rew: 0.00, Loss: 0.0399, Eps: 0.9518, Mem.size: 103583
+Ep: 600, Dur: 166, Step: 105530, Rew: 0.00, Loss: 0.0068, Eps: 0.9500, Mem.size: 105530
+Ep: 610, Dur: 196, Step: 107385, Rew: 1.00, Loss: 0.0640, Eps: 0.9484, Mem.size: 107385
+Ep: 620, Dur: 140, Step: 109042, Rew: 0.00, Loss: 0.0205, Eps: 0.9469, Mem.size: 109042
+Saved weights to colaboratory_models/colab_models/BreakoutDeterministic-v42018-05-29 13:45:25.608530.h5
+Ep: 630, Dur: 170, Step: 110593, Rew: 0.00, Loss: 0.0420, Eps: 0.9455, Mem.size: 110593
+Ep: 640, Dur: 171, Step: 112356, Rew: 1.00, Loss: 0.0257, Eps: 0.9439, Mem.size: 112356
+Ep: 650, Dur: 170, Step: 114142, Rew: 0.00, Loss: 0.0406, Eps: 0.9423, Mem.size: 114142
+Ep: 660, Dur: 300, Step: 116160, Rew: 3.00, Loss: 0.0530, Eps: 0.9405, Mem.size: 116160
+Ep: 670, Dur: 257, Step: 118055, Rew: 3.00, Loss: 0.0566, Eps: 0.9388, Mem.size: 118055
+Ep: 680, Dur: 171, Step: 119917, Rew: 0.00, Loss: 0.0456, Eps: 0.9371, Mem.size: 119917
+Saved weights to colaboratory_models/colab_models/BreakoutDeterministic-v42018-05-29 13:45:25.608530.h5
+Ep: 690, Dur: 168, Step: 121785, Rew: 0.00, Loss: 0.0347, Eps: 0.9354, Mem.size: 121785
+Ep: 700, Dur: 188, Step: 123502, Rew: 1.00, Loss: 0.0310, Eps: 0.9338, Mem.size: 123502
+Ep: 710, Dur: 188, Step: 125344, Rew: 1.00, Loss: 0.0227, Eps: 0.9322, Mem.size: 125344
+Ep: 720, Dur: 190, Step: 127256, Rew: 1.00, Loss: 0.0353, Eps: 0.9305, Mem.size: 127256
+Ep: 730, Dur: 159, Step: 128950, Rew: 0.00, Loss: 0.0248, Eps: 0.9289, Mem.size: 128950
+Updated target network!
+Saved weights to colaboratory_models/colab_models/BreakoutDeterministic-v42018-05-29 13:45:25.608530.h5
+Ep: 740, Dur: 289, Step: 130800, Rew: 3.00, Loss: 0.0800, Eps: 0.9273, Mem.size: 130800
+Ep: 750, Dur: 193, Step: 132476, Rew: 1.00, Loss: 0.0339, Eps: 0.9258, Mem.size: 132476
+Ep: 760, Dur: 226, Step: 134594, Rew: 2.00, Loss: 0.0694, Eps: 0.9239, Mem.size: 134594
+Ep: 770, Dur: 192, Step: 136592, Rew: 1.00, Loss: 0.0506, Eps: 0.9221, Mem.size: 136592
+Ep: 780, Dur: 179, Step: 138431, Rew: 1.00, Loss: 0.0380, Eps: 0.9204, Mem.size: 138431
+Saved weights to colaboratory_models/colab_models/BreakoutDeterministic-v42018-05-29 13:45:25.608530.h5
+Ep: 790, Dur: 163, Step: 140455, Rew: 0.00, Loss: 0.0340, Eps: 0.9186, Mem.size: 140455
+Ep: 800, Dur: 181, Step: 142063, Rew: 1.00, Loss: 0.0481, Eps: 0.9171, Mem.size: 142063
+Ep: 810, Dur: 180, Step: 143864, Rew: 1.00, Loss: 0.0312, Eps: 0.9155, Mem.size: 143864
+Ep: 820, Dur: 293, Step: 145737, Rew: 4.00, Loss: 0.0741, Eps: 0.9138, Mem.size: 145737
+Ep: 830, Dur: 303, Step: 147482, Rew: 4.00, Loss: 0.0461, Eps: 0.9123, Mem.size: 147482
+Ep: 840, Dur: 168, Step: 149322, Rew: 1.00, Loss: 0.0263, Eps: 0.9106, Mem.size: 149322
+Saved weights to colaboratory_models/colab_models/BreakoutDeterministic-v42018-05-29 13:45:25.608530.h5
+Ep: 850, Dur: 188, Step: 151229, Rew: 1.00, Loss: 0.0196, Eps: 0.9089, Mem.size: 151229
+Ep: 860, Dur: 161, Step: 152944, Rew: 1.00, Loss: 0.0386, Eps: 0.9074, Mem.size: 152944
+Ep: 870, Dur: 203, Step: 154997, Rew: 2.00, Loss: 0.0504, Eps: 0.9055, Mem.size: 154997
+Ep: 880, Dur: 206, Step: 156879, Rew: 1.00, Loss: 0.0540, Eps: 0.9038, Mem.size: 156879
+Ep: 890, Dur: 220, Step: 158745, Rew: 2.00, Loss: 0.0519, Eps: 0.9021, Mem.size: 158745
+Saved weights to colaboratory_models/colab_models/BreakoutDeterministic-v42018-05-29 13:45:25.608530.h5
+Ep: 900, Dur: 170, Step: 160260, Rew: 1.00, Loss: 0.0419, Eps: 0.9008, Mem.size: 160260
+Ep: 910, Dur: 178, Step: 162164, Rew: 1.00, Loss: 0.0383, Eps: 0.8991, Mem.size: 162164
+Ep: 920, Dur: 192, Step: 164125, Rew: 1.00, Loss: 0.0324, Eps: 0.8973, Mem.size: 164125
+Ep: 930, Dur: 161, Step: 166127, Rew: 1.00, Loss: 0.0474, Eps: 0.8955, Mem.size: 166127
+Ep: 940, Dur: 161, Step: 167783, Rew: 1.00, Loss: 0.0512, Eps: 0.8940, Mem.size: 167783
+Ep: 950, Dur: 227, Step: 169697, Rew: 2.00, Loss: 0.0579, Eps: 0.8923, Mem.size: 169697
+Updated target network!
+Saved weights to colaboratory_models/colab_models/BreakoutDeterministic-v42018-05-29 13:45:25.608530.h5
+Ep: 960, Dur: 159, Step: 171586, Rew: 0.00, Loss: 0.0441, Eps: 0.8906, Mem.size: 171586
+Ep: 970, Dur: 140, Step: 173536, Rew: 0.00, Loss: 0.0392, Eps: 0.8888, Mem.size: 173536
+Ep: 980, Dur: 149, Step: 175226, Rew: 0.00, Loss: 0.0359, Eps: 0.8873, Mem.size: 175226
+Ep: 990, Dur: 220, Step: 176972, Rew: 2.00, Loss: 0.0765, Eps: 0.8857, Mem.size: 176972
+Ep: 1000, Dur: 234, Step: 178652, Rew: 2.00, Loss: 0.0641, Eps: 0.8842, Mem.size: 178652
+Saved weights to colaboratory_models/colab_models/BreakoutDeterministic-v42018-05-29 13:45:25.608530.h5
+Ep: 1010, Dur: 239, Step: 180491, Rew: 2.00, Loss: 0.0420, Eps: 0.8826, Mem.size: 180491
+Ep: 1020, Dur: 238, Step: 182297, Rew: 2.00, Loss: 0.0657, Eps: 0.8809, Mem.size: 182297
+Ep: 1030, Dur: 136, Step: 183984, Rew: 0.00, Loss: 0.0525, Eps: 0.8794, Mem.size: 183984
+Ep: 1040, Dur: 274, Step: 185951, Rew: 3.00, Loss: 0.0787, Eps: 0.8776, Mem.size: 185951
+Ep: 1050, Dur: 246, Step: 187893, Rew: 2.00, Loss: 0.0472, Eps: 0.8759, Mem.size: 187893
+Ep: 1060, Dur: 163, Step: 189990, Rew: 0.00, Loss: 0.0224, Eps: 0.8740, Mem.size: 189990
+Saved weights to colaboratory_models/colab_models/BreakoutDeterministic-v42018-05-29 13:45:25.608530.h5
+Ep: 1070, Dur: 215, Step: 191760, Rew: 1.00, Loss: 0.0413, Eps: 0.8724, Mem.size: 191760
+Ep: 1080, Dur: 147, Step: 193581, Rew: 0.00, Loss: 0.0594, Eps: 0.8708, Mem.size: 193581
+Ep: 1090, Dur: 185, Step: 195171, Rew: 1.00, Loss: 0.0520, Eps: 0.8693, Mem.size: 195171
+Ep: 1100, Dur: 135, Step: 196909, Rew: 0.00, Loss: 0.0336, Eps: 0.8678, Mem.size: 196909
+Ep: 1110, Dur: 208, Step: 198510, Rew: 1.00, Loss: 0.0525, Eps: 0.8663, Mem.size: 198510
+Saved weights to colaboratory_models/colab_models/BreakoutDeterministic-v42018-05-29 13:45:25.608530.h5
+Ep: 1120, Dur: 166, Step: 200220, Rew: 0.00, Loss: 0.0480, Eps: 0.8648, Mem.size: 200220
+Ep: 1130, Dur: 155, Step: 202247, Rew: 0.00, Loss: 0.0699, Eps: 0.8630, Mem.size: 202247
+Ep: 1140, Dur: 151, Step: 203913, Rew: 0.00, Loss: 0.0364, Eps: 0.8615, Mem.size: 203913
+Ep: 1150, Dur: 147, Step: 205723, Rew: 0.00, Loss: 0.0295, Eps: 0.8598, Mem.size: 205723
+Ep: 1160, Dur: 139, Step: 207193, Rew: 0.00, Loss: 0.0411, Eps: 0.8585, Mem.size: 207193
+Ep: 1170, Dur: 212, Step: 209082, Rew: 2.00, Loss: 0.0545, Eps: 0.8568, Mem.size: 209082
+Updated target network!
+Saved weights to colaboratory_models/colab_models/BreakoutDeterministic-v42018-05-29 13:45:25.608530.h5
+Ep: 1180, Dur: 212, Step: 210748, Rew: 1.00, Loss: 0.0750, Eps: 0.8553, Mem.size: 210748
+Ep: 1190, Dur: 258, Step: 212560, Rew: 3.00, Loss: 0.0889, Eps: 0.8537, Mem.size: 212560
+Ep: 1200, Dur: 180, Step: 214697, Rew: 1.00, Loss: 0.0290, Eps: 0.8518, Mem.size: 214697
+Ep: 1210, Dur: 228, Step: 216539, Rew: 2.00, Loss: 0.0624, Eps: 0.8501, Mem.size: 216539
+Ep: 1220, Dur: 197, Step: 218531, Rew: 2.00, Loss: 0.0363, Eps: 0.8483, Mem.size: 218531
+Saved weights to colaboratory_models/colab_models/BreakoutDeterministic-v42018-05-29 13:45:25.608530.h5
+Ep: 1230, Dur: 256, Step: 220481, Rew: 3.00, Loss: 0.0373, Eps: 0.8466, Mem.size: 220481
+Ep: 1240, Dur: 191, Step: 222372, Rew: 1.00, Loss: 0.0514, Eps: 0.8449, Mem.size: 222372
+Ep: 1250, Dur: 193, Step: 224174, Rew: 1.00, Loss: 0.0535, Eps: 0.8432, Mem.size: 224174
+Ep: 1260, Dur: 234, Step: 226146, Rew: 2.00, Loss: 0.0366, Eps: 0.8415, Mem.size: 226146
+Ep: 1270, Dur: 174, Step: 227998, Rew: 1.00, Loss: 0.0416, Eps: 0.8398, Mem.size: 227998
+Ep: 1280, Dur: 244, Step: 229958, Rew: 2.00, Loss: 0.0900, Eps: 0.8380, Mem.size: 229958
+Saved weights to colaboratory_models/colab_models/BreakoutDeterministic-v42018-05-29 13:45:25.608530.h5
+Ep: 1290, Dur: 310, Step: 232200, Rew: 4.00, Loss: 0.0980, Eps: 0.8360, Mem.size: 232200
+Ep: 1300, Dur: 257, Step: 234269, Rew: 3.00, Loss: 0.0595, Eps: 0.8342, Mem.size: 234269
+Ep: 1310, Dur: 245, Step: 236349, Rew: 2.00, Loss: 0.0559, Eps: 0.8323, Mem.size: 236349
+Ep: 1320, Dur: 184, Step: 238128, Rew: 1.00, Loss: 0.0403, Eps: 0.8307, Mem.size: 238128
+Saved weights to colaboratory_models/colab_models/BreakoutDeterministic-v42018-05-29 13:45:25.608530.h5
+Ep: 1330, Dur: 168, Step: 240011, Rew: 1.00, Loss: 0.0386, Eps: 0.8290, Mem.size: 240011
+Ep: 1340, Dur: 167, Step: 241899, Rew: 1.00, Loss: 0.0408, Eps: 0.8273, Mem.size: 241899
+Ep: 1350, Dur: 285, Step: 243848, Rew: 3.00, Loss: 0.0770, Eps: 0.8255, Mem.size: 243848
+Ep: 1360, Dur: 241, Step: 245586, Rew: 2.00, Loss: 0.0637, Eps: 0.8240, Mem.size: 245586
+Ep: 1370, Dur: 179, Step: 247701, Rew: 1.00, Loss: 0.0306, Eps: 0.8221, Mem.size: 247701
+Ep: 1380, Dur: 202, Step: 249784, Rew: 2.00, Loss: 0.0404, Eps: 0.8202, Mem.size: 249784
+Updated target network!
+Saved weights to colaboratory_models/colab_models/BreakoutDeterministic-v42018-05-29 13:45:25.608530.h5
+Ep: 1390, Dur: 201, Step: 251565, Rew: 1.00, Loss: 0.0448, Eps: 0.8186, Mem.size: 251565
+Ep: 1400, Dur: 219, Step: 253370, Rew: 2.00, Loss: 0.0495, Eps: 0.8170, Mem.size: 253370
+Ep: 1410, Dur: 147, Step: 255069, Rew: 0.00, Loss: 0.0428, Eps: 0.8154, Mem.size: 255069
+Ep: 1420, Dur: 141, Step: 257044, Rew: 0.00, Loss: 0.0334, Eps: 0.8137, Mem.size: 257044
+Ep: 1430, Dur: 221, Step: 258894, Rew: 2.00, Loss: 0.0378, Eps: 0.8120, Mem.size: 258894
+Saved weights to colaboratory_models/colab_models/BreakoutDeterministic-v42018-05-29 13:45:25.608530.h5
+Ep: 1440, Dur: 181, Step: 260548, Rew: 1.00, Loss: 0.0612, Eps: 0.8105, Mem.size: 260548
+Ep: 1450, Dur: 214, Step: 262337, Rew: 2.00, Loss: 0.0518, Eps: 0.8089, Mem.size: 262337
+Ep: 1460, Dur: 269, Step: 263982, Rew: 4.00, Loss: 0.0503, Eps: 0.8074, Mem.size: 263982
+Ep: 1470, Dur: 181, Step: 265571, Rew: 1.00, Loss: 0.0390, Eps: 0.8060, Mem.size: 265571
+Ep: 1480, Dur: 142, Step: 267089, Rew: 0.00, Loss: 0.0238, Eps: 0.8046, Mem.size: 267089
+Ep: 1490, Dur: 180, Step: 268816, Rew: 1.00, Loss: 0.0390, Eps: 0.8031, Mem.size: 268816
+Saved weights to colaboratory_models/colab_models/BreakoutDeterministic-v42018-05-29 13:45:25.608530.h5
+Ep: 1500, Dur: 299, Step: 270518, Rew: 3.00, Loss: 0.0702, Eps: 0.8015, Mem.size: 270518
+Ep: 1510, Dur: 214, Step: 272398, Rew: 2.00, Loss: 0.0457, Eps: 0.7998, Mem.size: 272398
+Ep: 1520, Dur: 238, Step: 274040, Rew: 3.00, Loss: 0.0532, Eps: 0.7984, Mem.size: 274040
+Ep: 1530, Dur: 279, Step: 275884, Rew: 3.00, Loss: 0.0575, Eps: 0.7967, Mem.size: 275884
+Ep: 1540, Dur: 148, Step: 277547, Rew: 0.00, Loss: 0.0377, Eps: 0.7952, Mem.size: 277547
+Ep: 1550, Dur: 158, Step: 279552, Rew: 0.00, Loss: 0.0417, Eps: 0.7934, Mem.size: 279552
+Saved weights to colaboratory_models/colab_models/BreakoutDeterministic-v42018-05-29 13:45:25.608530.h5
+Ep: 1560, Dur: 151, Step: 281066, Rew: 0.00, Loss: 0.0468, Eps: 0.7920, Mem.size: 281066
+Ep: 1570, Dur: 179, Step: 282879, Rew: 1.00, Loss: 0.0463, Eps: 0.7904, Mem.size: 282879
+Ep: 1580, Dur: 235, Step: 284481, Rew: 2.00, Loss: 0.0730, Eps: 0.7890, Mem.size: 284481
+Ep: 1590, Dur: 152, Step: 286075, Rew: 0.00, Loss: 0.0229, Eps: 0.7875, Mem.size: 286075
+Ep: 1600, Dur: 152, Step: 287550, Rew: 0.00, Loss: 0.0217, Eps: 0.7862, Mem.size: 287550
+Ep: 1610, Dur: 241, Step: 289303, Rew: 3.00, Loss: 0.0562, Eps: 0.7846, Mem.size: 289303
+Updated target network!
+Saved weights to colaboratory_models/colab_models/BreakoutDeterministic-v42018-05-29 13:45:25.608530.h5
+Ep: 1620, Dur: 197, Step: 291198, Rew: 0.00, Loss: 0.0485, Eps: 0.7829, Mem.size: 291198
+Ep: 1630, Dur: 246, Step: 293543, Rew: 3.00, Loss: 0.0515, Eps: 0.7808, Mem.size: 293543
+Ep: 1640, Dur: 244, Step: 295686, Rew: 3.00, Loss: 0.0411, Eps: 0.7789, Mem.size: 295686
+Ep: 1650, Dur: 222, Step: 297944, Rew: 2.00, Loss: 0.0508, Eps: 0.7769, Mem.size: 297944
+Saved weights to colaboratory_models/colab_models/BreakoutDeterministic-v42018-05-29 13:45:25.608530.h5
+Ep: 1660, Dur: 238, Step: 300162, Rew: 2.00, Loss: 0.0594, Eps: 0.7749, Mem.size: 300162
+Ep: 1670, Dur: 322, Step: 302824, Rew: 4.00, Loss: 0.0761, Eps: 0.7725, Mem.size: 302824
+Ep: 1680, Dur: 195, Step: 304826, Rew: 1.00, Loss: 0.0195, Eps: 0.7707, Mem.size: 304826
+Ep: 1690, Dur: 231, Step: 307281, Rew: 2.00, Loss: 0.0605, Eps: 0.7684, Mem.size: 307281
+Ep: 1700, Dur: 312, Step: 309411, Rew: 4.00, Loss: 0.0564, Eps: 0.7665, Mem.size: 309411
+Saved weights to colaboratory_models/colab_models/BreakoutDeterministic-v42018-05-29 13:45:25.608530.h5
+Ep: 1710, Dur: 262, Step: 311748, Rew: 3.00, Loss: 0.0564, Eps: 0.7644, Mem.size: 311748
+Ep: 1720, Dur: 189, Step: 314040, Rew: 2.00, Loss: 0.0504, Eps: 0.7624, Mem.size: 314040
+Ep: 1730, Dur: 269, Step: 316386, Rew: 4.00, Loss: 0.0735, Eps: 0.7603, Mem.size: 316386
+Ep: 1740, Dur: 293, Step: 318986, Rew: 4.00, Loss: 0.0364, Eps: 0.7579, Mem.size: 318986
+Saved weights to colaboratory_models/colab_models/BreakoutDeterministic-v42018-05-29 13:45:25.608530.h5
+Ep: 1750, Dur: 253, Step: 321328, Rew: 7.00, Loss: 0.0586, Eps: 0.7558, Mem.size: 321328
+Ep: 1760, Dur: 219, Step: 323678, Rew: 2.00, Loss: 0.0723, Eps: 0.7537, Mem.size: 323678
+Ep: 1770, Dur: 220, Step: 325864, Rew: 2.00, Loss: 0.0594, Eps: 0.7517, Mem.size: 325864
+Ep: 1780, Dur: 302, Step: 328322, Rew: 3.00, Loss: 0.0706, Eps: 0.7495, Mem.size: 328322
+Updated target network!
+Saved weights to colaboratory_models/colab_models/BreakoutDeterministic-v42018-05-29 13:45:25.608530.h5
+Ep: 1790, Dur: 177, Step: 330425, Rew: 1.00, Loss: 0.0482, Eps: 0.7476, Mem.size: 330425
+Ep: 1800, Dur: 170, Step: 332372, Rew: 1.00, Loss: 0.0671, Eps: 0.7459, Mem.size: 332372
+Ep: 1810, Dur: 171, Step: 334228, Rew: 1.00, Loss: 0.0240, Eps: 0.7442, Mem.size: 334228
+Ep: 1820, Dur: 266, Step: 336346, Rew: 3.00, Loss: 0.0594, Eps: 0.7423, Mem.size: 336346
+Ep: 1830, Dur: 159, Step: 338113, Rew: 1.00, Loss: 0.0329, Eps: 0.7407, Mem.size: 338113
+Saved weights to colaboratory_models/colab_models/BreakoutDeterministic-v42018-05-29 13:45:25.608530.h5
+Ep: 1840, Dur: 135, Step: 340097, Rew: 0.00, Loss: 0.0681, Eps: 0.7389, Mem.size: 340097
+Ep: 1850, Dur: 334, Step: 341990, Rew: 4.00, Loss: 0.1063, Eps: 0.7372, Mem.size: 341990
+Ep: 1860, Dur: 199, Step: 343965, Rew: 2.00, Loss: 0.0617, Eps: 0.7354, Mem.size: 343965
+Ep: 1870, Dur: 161, Step: 346033, Rew: 1.00, Loss: 0.0414, Eps: 0.7336, Mem.size: 346033
+Ep: 1880, Dur: 185, Step: 348045, Rew: 1.00, Loss: 0.0704, Eps: 0.7318, Mem.size: 348045
+Saved weights to colaboratory_models/colab_models/BreakoutDeterministic-v42018-05-29 13:45:25.608530.h5
+Ep: 1890, Dur: 277, Step: 350103, Rew: 3.00, Loss: 0.0599, Eps: 0.7299, Mem.size: 350103
+Ep: 1900, Dur: 266, Step: 352246, Rew: 3.00, Loss: 0.0945, Eps: 0.7280, Mem.size: 352246
+Ep: 1910, Dur: 176, Step: 354228, Rew: 1.00, Loss: 0.0288, Eps: 0.7262, Mem.size: 354228
+Ep: 1920, Dur: 156, Step: 356352, Rew: 1.00, Loss: 0.0464, Eps: 0.7243, Mem.size: 356352
+Ep: 1930, Dur: 252, Step: 358254, Rew: 3.00, Loss: 0.0752, Eps: 0.7226, Mem.size: 358254
+Saved weights to colaboratory_models/colab_models/BreakoutDeterministic-v42018-05-29 13:45:25.608530.h5
+Ep: 1940, Dur: 275, Step: 360417, Rew: 3.00, Loss: 0.0607, Eps: 0.7206, Mem.size: 360417
+Ep: 1950, Dur: 189, Step: 362261, Rew: 1.00, Loss: 0.0747, Eps: 0.7190, Mem.size: 362261
+Ep: 1960, Dur: 240, Step: 364119, Rew: 3.00, Loss: 0.0494, Eps: 0.7173, Mem.size: 364119
+Ep: 1970, Dur: 177, Step: 365871, Rew: 1.00, Loss: 0.0552, Eps: 0.7157, Mem.size: 365871
+Ep: 1980, Dur: 279, Step: 368007, Rew: 7.00, Loss: 0.0731, Eps: 0.7138, Mem.size: 368007
+Updated target network!
+Saved weights to colaboratory_models/colab_models/BreakoutDeterministic-v42018-05-29 13:45:25.608530.h5
+Ep: 1990, Dur: 292, Step: 370097, Rew: 4.00, Loss: 0.1026, Eps: 0.7119, Mem.size: 370097
+Ep: 2000, Dur: 407, Step: 373309, Rew: 6.00, Loss: 0.1283, Eps: 0.7090, Mem.size: 373309
+Ep: 2010, Dur: 206, Step: 375857, Rew: 2.00, Loss: 0.0668, Eps: 0.7067, Mem.size: 375857
+Ep: 2020, Dur: 222, Step: 378270, Rew: 2.00, Loss: 0.0380, Eps: 0.7046, Mem.size: 378270
+Saved weights to colaboratory_models/colab_models/BreakoutDeterministic-v42018-05-29 13:45:25.608530.h5
+Ep: 2030, Dur: 278, Step: 380653, Rew: 3.00, Loss: 0.0685, Eps: 0.7024, Mem.size: 380653
+Ep: 2040, Dur: 260, Step: 383256, Rew: 3.00, Loss: 0.0917, Eps: 0.7001, Mem.size: 383256
+Ep: 2050, Dur: 287, Step: 386351, Rew: 4.00, Loss: 0.0609, Eps: 0.6973, Mem.size: 386351
+Ep: 2060, Dur: 236, Step: 388749, Rew: 3.00, Loss: 0.0660, Eps: 0.6951, Mem.size: 388749
+Saved weights to colaboratory_models/colab_models/BreakoutDeterministic-v42018-05-29 13:45:25.608530.h5
+Ep: 2070, Dur: 254, Step: 391160, Rew: 3.00, Loss: 0.0684, Eps: 0.6930, Mem.size: 391160
+Ep: 2080, Dur: 196, Step: 394117, Rew: 2.00, Loss: 0.0726, Eps: 0.6903, Mem.size: 394117
+Ep: 2090, Dur: 298, Step: 397000, Rew: 4.00, Loss: 0.0749, Eps: 0.6877, Mem.size: 397000
+Ep: 2100, Dur: 365, Step: 399590, Rew: 6.00, Loss: 0.0986, Eps: 0.6854, Mem.size: 399590
+Saved weights to colaboratory_models/colab_models/BreakoutDeterministic-v42018-05-29 13:45:25.608530.h5
+Ep: 2110, Dur: 272, Step: 401963, Rew: 7.00, Loss: 0.1021, Eps: 0.6832, Mem.size: 401963
+Ep: 2120, Dur: 521, Step: 404861, Rew: 9.00, Loss: 0.1847, Eps: 0.6806, Mem.size: 404861
+Ep: 2130, Dur: 265, Step: 407234, Rew: 3.00, Loss: 0.0852, Eps: 0.6785, Mem.size: 407234
+Updated target network!
+Saved weights to colaboratory_models/colab_models/BreakoutDeterministic-v42018-05-29 13:45:25.608530.h5
+Ep: 2140, Dur: 206, Step: 410011, Rew: 2.00, Loss: 0.0395, Eps: 0.6760, Mem.size: 410011
+Ep: 2150, Dur: 277, Step: 411992, Rew: 3.00, Loss: 0.0969, Eps: 0.6742, Mem.size: 411992
+Ep: 2160, Dur: 158, Step: 413797, Rew: 0.00, Loss: 0.0552, Eps: 0.6726, Mem.size: 413797
+Ep: 2170, Dur: 272, Step: 415719, Rew: 3.00, Loss: 0.0714, Eps: 0.6709, Mem.size: 415719
+Ep: 2180, Dur: 172, Step: 417369, Rew: 1.00, Loss: 0.0402, Eps: 0.6694, Mem.size: 417369
+Ep: 2190, Dur: 284, Step: 419168, Rew: 4.00, Loss: 0.0605, Eps: 0.6677, Mem.size: 419168
+Saved weights to colaboratory_models/colab_models/BreakoutDeterministic-v42018-05-29 13:45:25.608530.h5
+Ep: 2200, Dur: 134, Step: 420960, Rew: 0.00, Loss: 0.0302, Eps: 0.6661, Mem.size: 420960
+Ep: 2210, Dur: 178, Step: 422682, Rew: 0.00, Loss: 0.0684, Eps: 0.6646, Mem.size: 422682
+Ep: 2220, Dur: 176, Step: 424520, Rew: 1.00, Loss: 0.0622, Eps: 0.6629, Mem.size: 424520
+Ep: 2230, Dur: 206, Step: 426454, Rew: 1.00, Loss: 0.0713, Eps: 0.6612, Mem.size: 426454
+Ep: 2240, Dur: 202, Step: 428532, Rew: 2.00, Loss: 0.0614, Eps: 0.6593, Mem.size: 428532
+Saved weights to colaboratory_models/colab_models/BreakoutDeterministic-v42018-05-29 13:45:25.608530.h5
+Ep: 2250, Dur: 239, Step: 430513, Rew: 2.00, Loss: 0.0595, Eps: 0.6575, Mem.size: 430513
+Ep: 2260, Dur: 214, Step: 432384, Rew: 1.00, Loss: 0.0500, Eps: 0.6559, Mem.size: 432384
+Ep: 2270, Dur: 314, Step: 434216, Rew: 4.00, Loss: 0.1110, Eps: 0.6542, Mem.size: 434216
+Ep: 2280, Dur: 160, Step: 435945, Rew: 0.00, Loss: 0.0616, Eps: 0.6526, Mem.size: 435945
+Ep: 2290, Dur: 237, Step: 437633, Rew: 2.00, Loss: 0.0761, Eps: 0.6511, Mem.size: 437633
+Ep: 2300, Dur: 177, Step: 439127, Rew: 1.00, Loss: 0.0515, Eps: 0.6498, Mem.size: 439127
+Saved weights to colaboratory_models/colab_models/BreakoutDeterministic-v42018-05-29 13:45:25.608530.h5
+Ep: 2310, Dur: 210, Step: 440766, Rew: 2.00, Loss: 0.0890, Eps: 0.6483, Mem.size: 440766
+Ep: 2320, Dur: 162, Step: 442362, Rew: 0.00, Loss: 0.0489, Eps: 0.6469, Mem.size: 442362
+Ep: 2330, Dur: 150, Step: 444129, Rew: 0.00, Loss: 0.0150, Eps: 0.6453, Mem.size: 444129
+Ep: 2340, Dur: 159, Step: 445754, Rew: 0.00, Loss: 0.0388, Eps: 0.6438, Mem.size: 445754
+Ep: 2350, Dur: 166, Step: 447535, Rew: 1.00, Loss: 0.0385, Eps: 0.6422, Mem.size: 447535
+Ep: 2360, Dur: 215, Step: 449554, Rew: 2.00, Loss: 0.0578, Eps: 0.6404, Mem.size: 449554
+Updated target network!
+Saved weights to colaboratory_models/colab_models/BreakoutDeterministic-v42018-05-29 13:45:25.608530.h5
+Ep: 2370, Dur: 163, Step: 451150, Rew: 0.00, Loss: 0.0482, Eps: 0.6390, Mem.size: 451150
+Ep: 2380, Dur: 175, Step: 452818, Rew: 0.00, Loss: 0.0775, Eps: 0.6375, Mem.size: 452818
+Ep: 2390, Dur: 158, Step: 454870, Rew: 0.00, Loss: 0.0680, Eps: 0.6356, Mem.size: 454870
+Ep: 2400, Dur: 160, Step: 456641, Rew: 0.00, Loss: 0.0345, Eps: 0.6340, Mem.size: 456641
+Ep: 2410, Dur: 253, Step: 458376, Rew: 2.00, Loss: 0.0997, Eps: 0.6325, Mem.size: 458376
+Saved weights to colaboratory_models/colab_models/BreakoutDeterministic-v42018-05-29 13:45:25.608530.h5
+Ep: 2420, Dur: 280, Step: 460435, Rew: 4.00, Loss: 0.0908, Eps: 0.6306, Mem.size: 460435
+Ep: 2430, Dur: 152, Step: 462225, Rew: 0.00, Loss: 0.0149, Eps: 0.6290, Mem.size: 462225
+Ep: 2440, Dur: 239, Step: 463875, Rew: 2.00, Loss: 0.0508, Eps: 0.6275, Mem.size: 463875
+Ep: 2450, Dur: 211, Step: 465750, Rew: 1.00, Loss: 0.0311, Eps: 0.6258, Mem.size: 465750
+Ep: 2460, Dur: 242, Step: 467557, Rew: 3.00, Loss: 0.0637, Eps: 0.6242, Mem.size: 467557
+Ep: 2470, Dur: 211, Step: 469346, Rew: 1.00, Loss: 0.0465, Eps: 0.6226, Mem.size: 469346
+Saved weights to colaboratory_models/colab_models/BreakoutDeterministic-v42018-05-29 13:45:25.608530.h5
+Ep: 2480, Dur: 179, Step: 471242, Rew: 0.00, Loss: 0.0414, Eps: 0.6209, Mem.size: 471242
+Ep: 2490, Dur: 140, Step: 472851, Rew: 0.00, Loss: 0.0327, Eps: 0.6194, Mem.size: 472851
+Ep: 2500, Dur: 226, Step: 474705, Rew: 2.00, Loss: 0.0517, Eps: 0.6178, Mem.size: 474705
+Ep: 2510, Dur: 185, Step: 476786, Rew: 1.00, Loss: 0.0320, Eps: 0.6159, Mem.size: 476786
+Ep: 2520, Dur: 179, Step: 478590, Rew: 0.00, Loss: 0.0520, Eps: 0.6143, Mem.size: 478590
+Saved weights to colaboratory_models/colab_models/BreakoutDeterministic-v42018-05-29 13:45:25.608530.h5
+Ep: 2530, Dur: 192, Step: 480526, Rew: 1.00, Loss: 0.0730, Eps: 0.6125, Mem.size: 480526
+Ep: 2540, Dur: 238, Step: 482381, Rew: 2.00, Loss: 0.0663, Eps: 0.6109, Mem.size: 482381
+Ep: 2550, Dur: 169, Step: 483983, Rew: 0.00, Loss: 0.0617, Eps: 0.6094, Mem.size: 483983
+Ep: 2560, Dur: 211, Step: 485744, Rew: 2.00, Loss: 0.0494, Eps: 0.6078, Mem.size: 485744
+Ep: 2570, Dur: 267, Step: 487506, Rew: 3.00, Loss: 0.1187, Eps: 0.6062, Mem.size: 487506
+Ep: 2580, Dur: 157, Step: 489447, Rew: 0.00, Loss: 0.0365, Eps: 0.6045, Mem.size: 489447
+Updated target network!
+Saved weights to colaboratory_models/colab_models/BreakoutDeterministic-v42018-05-29 13:45:25.608530.h5
+Ep: 2590, Dur: 217, Step: 491448, Rew: 2.00, Loss: 0.0481, Eps: 0.6027, Mem.size: 491448
+Ep: 2600, Dur: 147, Step: 493281, Rew: 0.00, Loss: 0.0540, Eps: 0.6010, Mem.size: 493281
+Ep: 2610, Dur: 202, Step: 494990, Rew: 2.00, Loss: 0.0744, Eps: 0.5995, Mem.size: 494990
+Ep: 2620, Dur: 155, Step: 496824, Rew: 0.00, Loss: 0.0684, Eps: 0.5979, Mem.size: 496824
+Ep: 2630, Dur: 211, Step: 498972, Rew: 2.00, Loss: 0.0605, Eps: 0.5959, Mem.size: 498972
+Saved weights to colaboratory_models/colab_models/BreakoutDeterministic-v42018-05-29 13:45:25.608530.h5
+Ep: 2640, Dur: 222, Step: 500875, Rew: 2.00, Loss: 0.0539, Eps: 0.5942, Mem.size: 500875
+Ep: 2650, Dur: 204, Step: 502875, Rew: 2.00, Loss: 0.0522, Eps: 0.5924, Mem.size: 502875
+Ep: 2660, Dur: 152, Step: 504783, Rew: 0.00, Loss: 0.0610, Eps: 0.5907, Mem.size: 504783
+Ep: 2670, Dur: 210, Step: 506825, Rew: 2.00, Loss: 0.0692, Eps: 0.5889, Mem.size: 506825
+Ep: 2680, Dur: 210, Step: 508661, Rew: 2.00, Loss: 0.0415, Eps: 0.5872, Mem.size: 508661
+Saved weights to colaboratory_models/colab_models/BreakoutDeterministic-v42018-05-29 13:45:25.608530.h5
+Ep: 2690, Dur: 152, Step: 510673, Rew: 0.00, Loss: 0.0429, Eps: 0.5854, Mem.size: 510673
+Ep: 2700, Dur: 250, Step: 512857, Rew: 2.00, Loss: 0.0867, Eps: 0.5834, Mem.size: 512857
+Ep: 2710, Dur: 207, Step: 514514, Rew: 2.00, Loss: 0.0697, Eps: 0.5819, Mem.size: 514514
+Ep: 2720, Dur: 173, Step: 516450, Rew: 0.00, Loss: 0.0325, Eps: 0.5802, Mem.size: 516450
+Ep: 2730, Dur: 215, Step: 518524, Rew: 2.00, Loss: 0.0543, Eps: 0.5783, Mem.size: 518524
+Saved weights to colaboratory_models/colab_models/BreakoutDeterministic-v42018-05-29 13:45:25.608530.h5
+Ep: 2740, Dur: 203, Step: 520580, Rew: 1.00, Loss: 0.0651, Eps: 0.5765, Mem.size: 520580
+Ep: 2750, Dur: 147, Step: 522437, Rew: 0.00, Loss: 0.0274, Eps: 0.5748, Mem.size: 522437
+Ep: 2760, Dur: 136, Step: 524190, Rew: 0.00, Loss: 0.0297, Eps: 0.5732, Mem.size: 524190
+Ep: 2770, Dur: 260, Step: 525926, Rew: 3.00, Loss: 0.0501, Eps: 0.5717, Mem.size: 525926
+Ep: 2780, Dur: 150, Step: 527955, Rew: 0.00, Loss: 0.0282, Eps: 0.5698, Mem.size: 527955
+Ep: 2790, Dur: 221, Step: 529947, Rew: 2.00, Loss: 0.0597, Eps: 0.5680, Mem.size: 529947
+Updated target network!
+Saved weights to colaboratory_models/colab_models/BreakoutDeterministic-v42018-05-29 13:45:25.608530.h5
+Ep: 2800, Dur: 169, Step: 531663, Rew: 0.00, Loss: 0.0592, Eps: 0.5665, Mem.size: 531663
+Ep: 2810, Dur: 160, Step: 533246, Rew: 0.00, Loss: 0.0532, Eps: 0.5651, Mem.size: 533246
+Ep: 2820, Dur: 172, Step: 535294, Rew: 1.00, Loss: 0.0442, Eps: 0.5632, Mem.size: 535294
+Ep: 2830, Dur: 150, Step: 537004, Rew: 0.00, Loss: 0.0386, Eps: 0.5617, Mem.size: 537004
+Ep: 2840, Dur: 217, Step: 538990, Rew: 2.00, Loss: 0.0879, Eps: 0.5599, Mem.size: 538990
+Saved weights to colaboratory_models/colab_models/BreakoutDeterministic-v42018-05-29 13:45:25.608530.h5
+Ep: 2850, Dur: 287, Step: 540741, Rew: 4.00, Loss: 0.0873, Eps: 0.5583, Mem.size: 540741
+Ep: 2860, Dur: 205, Step: 542970, Rew: 1.00, Loss: 0.0848, Eps: 0.5563, Mem.size: 542970
+Ep: 2870, Dur: 181, Step: 544586, Rew: 1.00, Loss: 0.0534, Eps: 0.5549, Mem.size: 544586
+Ep: 2880, Dur: 157, Step: 546385, Rew: 0.00, Loss: 0.0346, Eps: 0.5533, Mem.size: 546385
+Ep: 2890, Dur: 186, Step: 548125, Rew: 1.00, Loss: 0.0425, Eps: 0.5517, Mem.size: 548125
+Ep: 2900, Dur: 198, Step: 549721, Rew: 0.00, Loss: 0.0608, Eps: 0.5503, Mem.size: 549721
+Saved weights to colaboratory_models/colab_models/BreakoutDeterministic-v42018-05-29 13:45:25.608530.h5
+Ep: 2910, Dur: 174, Step: 551606, Rew: 1.00, Loss: 0.0476, Eps: 0.5486, Mem.size: 551606
+Ep: 2920, Dur: 256, Step: 553397, Rew: 3.00, Loss: 0.0769, Eps: 0.5469, Mem.size: 553397
+Ep: 2930, Dur: 178, Step: 555576, Rew: 0.00, Loss: 0.0379, Eps: 0.5450, Mem.size: 555576
+Ep: 2940, Dur: 203, Step: 557475, Rew: 1.00, Loss: 0.0553, Eps: 0.5433, Mem.size: 557475
+Ep: 2950, Dur: 231, Step: 559173, Rew: 2.00, Loss: 0.0803, Eps: 0.5417, Mem.size: 559173
+Saved weights to colaboratory_models/colab_models/BreakoutDeterministic-v42018-05-29 13:45:25.608530.h5
+Ep: 2960, Dur: 222, Step: 561282, Rew: 2.00, Loss: 0.0621, Eps: 0.5398, Mem.size: 561282
+Ep: 2970, Dur: 231, Step: 563108, Rew: 2.00, Loss: 0.0646, Eps: 0.5382, Mem.size: 563108
+Ep: 2980, Dur: 185, Step: 565061, Rew: 0.00, Loss: 0.0320, Eps: 0.5364, Mem.size: 565061
+Ep: 2990, Dur: 208, Step: 566984, Rew: 1.00, Loss: 0.0417, Eps: 0.5347, Mem.size: 566984
+Ep: 3000, Dur: 184, Step: 568803, Rew: 0.00, Loss: 0.0690, Eps: 0.5331, Mem.size: 568803
+Updated target network!
+Saved weights to colaboratory_models/colab_models/BreakoutDeterministic-v42018-05-29 13:45:25.608530.h5
+Ep: 3010, Dur: 167, Step: 570529, Rew: 1.00, Loss: 0.0683, Eps: 0.5315, Mem.size: 570529
+Ep: 3020, Dur: 143, Step: 572514, Rew: 0.00, Loss: 0.0310, Eps: 0.5297, Mem.size: 572514
+Ep: 3030, Dur: 198, Step: 574156, Rew: 2.00, Loss: 0.0464, Eps: 0.5283, Mem.size: 574156
+Ep: 3040, Dur: 168, Step: 575831, Rew: 1.00, Loss: 0.0466, Eps: 0.5268, Mem.size: 575831
+Ep: 3050, Dur: 204, Step: 577479, Rew: 2.00, Loss: 0.0637, Eps: 0.5253, Mem.size: 577479
+Ep: 3060, Dur: 184, Step: 579354, Rew: 1.00, Loss: 0.0484, Eps: 0.5236, Mem.size: 579354
+Saved weights to colaboratory_models/colab_models/BreakoutDeterministic-v42018-05-29 13:45:25.608530.h5
+Ep: 3070, Dur: 127, Step: 581046, Rew: 0.00, Loss: 0.0546, Eps: 0.5221, Mem.size: 581046
+Ep: 3080, Dur: 174, Step: 582683, Rew: 1.00, Loss: 0.0379, Eps: 0.5206, Mem.size: 582683
+Ep: 3090, Dur: 142, Step: 584918, Rew: 0.00, Loss: 0.0567, Eps: 0.5186, Mem.size: 584918
+Ep: 3100, Dur: 171, Step: 587010, Rew: 1.00, Loss: 0.0638, Eps: 0.5167, Mem.size: 587010
+Ep: 3110, Dur: 268, Step: 588802, Rew: 3.00, Loss: 0.0526, Eps: 0.5151, Mem.size: 588802
+Saved weights to colaboratory_models/colab_models/BreakoutDeterministic-v42018-05-29 13:45:25.608530.h5
+Ep: 3120, Dur: 367, Step: 590848, Rew: 6.00, Loss: 0.1004, Eps: 0.5132, Mem.size: 590848
+Ep: 3130, Dur: 188, Step: 593021, Rew: 1.00, Loss: 0.0429, Eps: 0.5113, Mem.size: 593021
+Ep: 3140, Dur: 209, Step: 594995, Rew: 2.00, Loss: 0.0716, Eps: 0.5095, Mem.size: 594995
+Ep: 3150, Dur: 218, Step: 596841, Rew: 3.00, Loss: 0.0647, Eps: 0.5078, Mem.size: 596841
+Ep: 3160, Dur: 129, Step: 598515, Rew: 0.00, Loss: 0.0383, Eps: 0.5063, Mem.size: 598515
+Saved weights to colaboratory_models/colab_models/BreakoutDeterministic-v42018-05-29 13:45:25.608530.h5
+Ep: 3170, Dur: 199, Step: 600343, Rew: 2.00, Loss: 0.0522, Eps: 0.5047, Mem.size: 600343
+Ep: 3180, Dur: 149, Step: 602358, Rew: 0.00, Loss: 0.0459, Eps: 0.5029, Mem.size: 602358
+Ep: 3190, Dur: 178, Step: 604257, Rew: 1.00, Loss: 0.0312, Eps: 0.5012, Mem.size: 604257
+Ep: 3200, Dur: 223, Step: 606228, Rew: 3.00, Loss: 0.0491, Eps: 0.4994, Mem.size: 606228
+Ep: 3210, Dur: 299, Step: 607964, Rew: 4.00, Loss: 0.0737, Eps: 0.4978, Mem.size: 607964
+Ep: 3220, Dur: 178, Step: 609665, Rew: 1.00, Loss: 0.0681, Eps: 0.4963, Mem.size: 609665
+Updated target network!
+Saved weights to colaboratory_models/colab_models/BreakoutDeterministic-v42018-05-29 13:45:25.608530.h5
+Ep: 3230, Dur: 159, Step: 611618, Rew: 0.00, Loss: 0.0319, Eps: 0.4945, Mem.size: 611618
+Ep: 3240, Dur: 159, Step: 613601, Rew: 0.00, Loss: 0.0376, Eps: 0.4928, Mem.size: 613601
+Ep: 3250, Dur: 169, Step: 615414, Rew: 0.00, Loss: 0.0442, Eps: 0.4911, Mem.size: 615414
+Ep: 3260, Dur: 169, Step: 617078, Rew: 0.00, Loss: 0.0435, Eps: 0.4896, Mem.size: 617078
+Ep: 3270, Dur: 211, Step: 618701, Rew: 0.00, Loss: 0.0758, Eps: 0.4882, Mem.size: 618701
+Saved weights to colaboratory_models/colab_models/BreakoutDeterministic-v42018-05-29 13:45:25.608530.h5
+Ep: 3280, Dur: 162, Step: 620578, Rew: 0.00, Loss: 0.0442, Eps: 0.4865, Mem.size: 620578
+Ep: 3290, Dur: 177, Step: 622380, Rew: 0.00, Loss: 0.0558, Eps: 0.4849, Mem.size: 622380
+Ep: 3300, Dur: 282, Step: 624332, Rew: 2.00, Loss: 0.1402, Eps: 0.4831, Mem.size: 624332
+Ep: 3310, Dur: 250, Step: 626214, Rew: 2.00, Loss: 0.0749, Eps: 0.4814, Mem.size: 626214
+Ep: 3320, Dur: 181, Step: 628305, Rew: 0.00, Loss: 0.0539, Eps: 0.4795, Mem.size: 628305
+Saved weights to colaboratory_models/colab_models/BreakoutDeterministic-v42018-05-29 13:45:25.608530.h5
+Ep: 3330, Dur: 190, Step: 630320, Rew: 0.00, Loss: 0.0664, Eps: 0.4777, Mem.size: 630320
+Ep: 3340, Dur: 258, Step: 632454, Rew: 2.00, Loss: 0.0770, Eps: 0.4758, Mem.size: 632454
+Ep: 3350, Dur: 195, Step: 634133, Rew: 0.00, Loss: 0.0821, Eps: 0.4743, Mem.size: 634133
+Ep: 3360, Dur: 179, Step: 636066, Rew: 0.00, Loss: 0.0450, Eps: 0.4725, Mem.size: 636066
+Ep: 3370, Dur: 200, Step: 638018, Rew: 0.00, Loss: 0.0426, Eps: 0.4708, Mem.size: 638018
+Ep: 3380, Dur: 238, Step: 639746, Rew: 2.00, Loss: 0.0612, Eps: 0.4692, Mem.size: 639746
+Saved weights to colaboratory_models/colab_models/BreakoutDeterministic-v42018-05-29 13:45:25.608530.h5
+Ep: 3390, Dur: 144, Step: 641874, Rew: 0.00, Loss: 0.0426, Eps: 0.4673, Mem.size: 641874
+Ep: 3400, Dur: 244, Step: 643850, Rew: 2.00, Loss: 0.0743, Eps: 0.4655, Mem.size: 643850
+Ep: 3410, Dur: 176, Step: 645634, Rew: 0.00, Loss: 0.0274, Eps: 0.4639, Mem.size: 645634
+Ep: 3420, Dur: 223, Step: 647571, Rew: 2.00, Loss: 0.0783, Eps: 0.4622, Mem.size: 647571
+Ep: 3430, Dur: 301, Step: 649494, Rew: 3.00, Loss: 0.0734, Eps: 0.4605, Mem.size: 649494
+Updated target network!
+Saved weights to colaboratory_models/colab_models/BreakoutDeterministic-v42018-05-29 13:45:25.608530.h5
+Ep: 3440, Dur: 258, Step: 651893, Rew: 3.00, Loss: 0.0529, Eps: 0.4583, Mem.size: 651893
+Ep: 3450, Dur: 301, Step: 654742, Rew: 4.00, Loss: 0.1071, Eps: 0.4557, Mem.size: 654742
+Ep: 3460, Dur: 262, Step: 657100, Rew: 3.00, Loss: 0.0593, Eps: 0.4536, Mem.size: 657100
+Ep: 3470, Dur: 215, Step: 659517, Rew: 1.00, Loss: 0.0535, Eps: 0.4514, Mem.size: 659517
+Saved weights to colaboratory_models/colab_models/BreakoutDeterministic-v42018-05-29 13:45:25.608530.h5
+Ep: 3480, Dur: 277, Step: 661927, Rew: 4.00, Loss: 0.0565, Eps: 0.4493, Mem.size: 661927
+Ep: 3490, Dur: 419, Step: 664550, Rew: 7.00, Loss: 0.1520, Eps: 0.4469, Mem.size: 664550
+Ep: 3500, Dur: 299, Step: 667121, Rew: 7.00, Loss: 0.0870, Eps: 0.4446, Mem.size: 667121
+Saved weights to colaboratory_models/colab_models/BreakoutDeterministic-v42018-05-29 13:45:25.608530.h5
+Ep: 3510, Dur: 360, Step: 670118, Rew: 5.00, Loss: 0.1074, Eps: 0.4419, Mem.size: 670118
+Ep: 3520, Dur: 290, Step: 672843, Rew: 7.00, Loss: 0.0999, Eps: 0.4394, Mem.size: 672843
+Ep: 3530, Dur: 243, Step: 675399, Rew: 3.00, Loss: 0.0543, Eps: 0.4371, Mem.size: 675399
+Ep: 3540, Dur: 269, Step: 678166, Rew: 3.00, Loss: 0.0822, Eps: 0.4347, Mem.size: 678166
+Saved weights to colaboratory_models/colab_models/BreakoutDeterministic-v42018-05-29 13:45:25.608530.h5
+Ep: 3550, Dur: 330, Step: 681052, Rew: 5.00, Loss: 0.1282, Eps: 0.4321, Mem.size: 681052
+Ep: 3560, Dur: 295, Step: 683906, Rew: 4.00, Loss: 0.0611, Eps: 0.4295, Mem.size: 683906
+Ep: 3570, Dur: 355, Step: 687071, Rew: 5.00, Loss: 0.1575, Eps: 0.4266, Mem.size: 687071
+Ep: 3580, Dur: 280, Step: 689700, Rew: 3.00, Loss: 0.1050, Eps: 0.4243, Mem.size: 689700
+Updated target network!
+Saved weights to colaboratory_models/colab_models/BreakoutDeterministic-v42018-05-29 13:45:25.608530.h5
+Ep: 3590, Dur: 326, Step: 691695, Rew: 3.00, Loss: 0.0893, Eps: 0.4225, Mem.size: 691695
+Ep: 3600, Dur: 224, Step: 693498, Rew: 2.00, Loss: 0.1039, Eps: 0.4209, Mem.size: 693498
+Ep: 3610, Dur: 191, Step: 695176, Rew: 0.00, Loss: 0.0363, Eps: 0.4193, Mem.size: 695176
+Ep: 3620, Dur: 237, Step: 697115, Rew: 2.00, Loss: 0.0763, Eps: 0.4176, Mem.size: 697115
+Ep: 3630, Dur: 215, Step: 699058, Rew: 2.00, Loss: 0.0538, Eps: 0.4158, Mem.size: 699058
+Saved weights to colaboratory_models/colab_models/BreakoutDeterministic-v42018-05-29 13:45:25.608530.h5
+Ep: 3640, Dur: 244, Step: 700830, Rew: 2.00, Loss: 0.0843, Eps: 0.4143, Mem.size: 700830
+Ep: 3650, Dur: 178, Step: 702673, Rew: 0.00, Loss: 0.0452, Eps: 0.4126, Mem.size: 702673
+Ep: 3660, Dur: 186, Step: 704716, Rew: 0.00, Loss: 0.0567, Eps: 0.4108, Mem.size: 704716
+Ep: 3670, Dur: 200, Step: 706759, Rew: 0.00, Loss: 0.0394, Eps: 0.4089, Mem.size: 706759
+Ep: 3680, Dur: 183, Step: 708637, Rew: 0.00, Loss: 0.0526, Eps: 0.4072, Mem.size: 708637
+Saved weights to colaboratory_models/colab_models/BreakoutDeterministic-v42018-05-29 13:45:25.608530.h5
+Ep: 3690, Dur: 189, Step: 710520, Rew: 0.00, Loss: 0.0393, Eps: 0.4055, Mem.size: 710520
+Ep: 3700, Dur: 220, Step: 712317, Rew: 0.00, Loss: 0.0415, Eps: 0.4039, Mem.size: 712317
+Ep: 3710, Dur: 216, Step: 714231, Rew: 2.00, Loss: 0.0716, Eps: 0.4022, Mem.size: 714231
+Ep: 3720, Dur: 275, Step: 716220, Rew: 2.00, Loss: 0.0419, Eps: 0.4004, Mem.size: 716220
+Ep: 3730, Dur: 147, Step: 718079, Rew: 0.00, Loss: 0.0461, Eps: 0.3987, Mem.size: 718079
+Saved weights to colaboratory_models/colab_models/BreakoutDeterministic-v42018-05-29 13:45:25.608530.h5
+Ep: 3740, Dur: 177, Step: 720031, Rew: 0.00, Loss: 0.0331, Eps: 0.3970, Mem.size: 720031
+Ep: 3750, Dur: 166, Step: 722012, Rew: 0.00, Loss: 0.0619, Eps: 0.3952, Mem.size: 722012
+Ep: 3760, Dur: 182, Step: 724231, Rew: 0.00, Loss: 0.0419, Eps: 0.3932, Mem.size: 724231
+Ep: 3770, Dur: 179, Step: 726138, Rew: 0.00, Loss: 0.0429, Eps: 0.3915, Mem.size: 726138
+Ep: 3780, Dur: 186, Step: 728108, Rew: 0.00, Loss: 0.0484, Eps: 0.3897, Mem.size: 728108
+Updated target network!
+Saved weights to colaboratory_models/colab_models/BreakoutDeterministic-v42018-05-29 13:45:25.608530.h5
+Ep: 3790, Dur: 253, Step: 730110, Rew: 2.00, Loss: 0.0581, Eps: 0.3879, Mem.size: 730110
+Ep: 3800, Dur: 216, Step: 732047, Rew: 2.00, Loss: 0.0598, Eps: 0.3862, Mem.size: 732047
+Ep: 3810, Dur: 142, Step: 733772, Rew: 0.00, Loss: 0.0409, Eps: 0.3846, Mem.size: 733772
+Ep: 3820, Dur: 127, Step: 735720, Rew: 0.00, Loss: 0.0280, Eps: 0.3829, Mem.size: 735720
+Ep: 3830, Dur: 129, Step: 737595, Rew: 0.00, Loss: 0.0382, Eps: 0.3812, Mem.size: 737595
+Ep: 3840, Dur: 274, Step: 739611, Rew: 3.00, Loss: 0.0693, Eps: 0.3794, Mem.size: 739611
+Saved weights to colaboratory_models/colab_models/BreakoutDeterministic-v42018-05-29 13:45:25.608530.h5
+Ep: 3850, Dur: 312, Step: 741443, Rew: 4.00, Loss: 0.0675, Eps: 0.3777, Mem.size: 741443
+Ep: 3860, Dur: 210, Step: 742925, Rew: 2.00, Loss: 0.0401, Eps: 0.3764, Mem.size: 742925
+Ep: 3870, Dur: 136, Step: 744713, Rew: 0.00, Loss: 0.0268, Eps: 0.3748, Mem.size: 744713
+Ep: 3880, Dur: 170, Step: 746452, Rew: 1.00, Loss: 0.0289, Eps: 0.3732, Mem.size: 746452
+Ep: 3890, Dur: 178, Step: 748152, Rew: 1.00, Loss: 0.0312, Eps: 0.3717, Mem.size: 748152
+Ep: 3900, Dur: 222, Step: 749881, Rew: 2.00, Loss: 0.0630, Eps: 0.3701, Mem.size: 749881
+Saved weights to colaboratory_models/colab_models/BreakoutDeterministic-v42018-05-29 13:45:25.608530.h5
+Ep: 3910, Dur: 152, Step: 751601, Rew: 0.00, Loss: 0.0316, Eps: 0.3686, Mem.size: 751601
+Ep: 3920, Dur: 177, Step: 753237, Rew: 1.00, Loss: 0.0619, Eps: 0.3671, Mem.size: 753237
+Ep: 3930, Dur: 160, Step: 754990, Rew: 1.00, Loss: 0.0603, Eps: 0.3655, Mem.size: 754990
+Ep: 3940, Dur: 216, Step: 756461, Rew: 2.00, Loss: 0.0702, Eps: 0.3642, Mem.size: 756461
+Ep: 3950, Dur: 182, Step: 758302, Rew: 1.00, Loss: 0.0528, Eps: 0.3625, Mem.size: 758302
+Saved weights to colaboratory_models/colab_models/BreakoutDeterministic-v42018-05-29 13:45:25.608530.h5
+Ep: 3960, Dur: 124, Step: 760033, Rew: 0.00, Loss: 0.0243, Eps: 0.3610, Mem.size: 760033
+Ep: 3970, Dur: 129, Step: 761753, Rew: 0.00, Loss: 0.0494, Eps: 0.3594, Mem.size: 761753
+Ep: 3980, Dur: 204, Step: 763426, Rew: 2.00, Loss: 0.0573, Eps: 0.3579, Mem.size: 763426
+Ep: 3990, Dur: 148, Step: 765291, Rew: 0.00, Loss: 0.0446, Eps: 0.3562, Mem.size: 765291
+Ep: 4000, Dur: 153, Step: 766723, Rew: 0.00, Loss: 0.0562, Eps: 0.3549, Mem.size: 766723
+Ep: 4010, Dur: 169, Step: 768300, Rew: 1.00, Loss: 0.0260, Eps: 0.3535, Mem.size: 768300
+Updated target network!
+Saved weights to colaboratory_models/colab_models/BreakoutDeterministic-v42018-05-29 13:45:25.608530.h5
+Ep: 4020, Dur: 177, Step: 770002, Rew: 1.00, Loss: 0.0586, Eps: 0.3520, Mem.size: 770002
+Ep: 4030, Dur: 142, Step: 771796, Rew: 0.00, Loss: 0.0412, Eps: 0.3504, Mem.size: 771796
+Ep: 4040, Dur: 221, Step: 773643, Rew: 2.00, Loss: 0.0709, Eps: 0.3487, Mem.size: 773643
+Ep: 4050, Dur: 205, Step: 775539, Rew: 2.00, Loss: 0.0839, Eps: 0.3470, Mem.size: 775539
+Ep: 4060, Dur: 145, Step: 777163, Rew: 0.00, Loss: 0.0601, Eps: 0.3456, Mem.size: 777163
+Ep: 4070, Dur: 238, Step: 778923, Rew: 2.00, Loss: 0.0598, Eps: 0.3440, Mem.size: 778923
+Saved weights to colaboratory_models/colab_models/BreakoutDeterministic-v42018-05-29 13:45:25.608530.h5
+Ep: 4080, Dur: 162, Step: 780650, Rew: 0.00, Loss: 0.0488, Eps: 0.3424, Mem.size: 780650
+Ep: 4090, Dur: 211, Step: 782234, Rew: 2.00, Loss: 0.0493, Eps: 0.3410, Mem.size: 782234
+Ep: 4100, Dur: 260, Step: 784024, Rew: 2.00, Loss: 0.0735, Eps: 0.3394, Mem.size: 784024
+Ep: 4110, Dur: 147, Step: 785784, Rew: 0.00, Loss: 0.0648, Eps: 0.3378, Mem.size: 785784
+Ep: 4120, Dur: 136, Step: 787487, Rew: 0.00, Loss: 0.0223, Eps: 0.3363, Mem.size: 787487
+Ep: 4130, Dur: 154, Step: 789137, Rew: 0.00, Loss: 0.0312, Eps: 0.3348, Mem.size: 789137
+Saved weights to colaboratory_models/colab_models/BreakoutDeterministic-v42018-05-29 13:45:25.608530.h5
+Ep: 4140, Dur: 164, Step: 790931, Rew: 1.00, Loss: 0.0489, Eps: 0.3332, Mem.size: 790931
+Ep: 4150, Dur: 223, Step: 792754, Rew: 2.00, Loss: 0.0443, Eps: 0.3315, Mem.size: 792754
+Ep: 4160, Dur: 133, Step: 794493, Rew: 0.00, Loss: 0.0478, Eps: 0.3300, Mem.size: 794493
+Ep: 4170, Dur: 169, Step: 796424, Rew: 1.00, Loss: 0.0604, Eps: 0.3282, Mem.size: 796424
+Ep: 4180, Dur: 168, Step: 798134, Rew: 1.00, Loss: 0.0366, Eps: 0.3267, Mem.size: 798134
+Ep: 4190, Dur: 141, Step: 799685, Rew: 0.00, Loss: 0.0441, Eps: 0.3253, Mem.size: 799685
+Saved weights to colaboratory_models/colab_models/BreakoutDeterministic-v42018-05-29 13:45:25.608530.h5
+Ep: 4200, Dur: 135, Step: 801401, Rew: 0.00, Loss: 0.0339, Eps: 0.3237, Mem.size: 801401
+Ep: 4210, Dur: 234, Step: 803231, Rew: 2.00, Loss: 0.0980, Eps: 0.3221, Mem.size: 803231
+Ep: 4220, Dur: 142, Step: 804868, Rew: 0.00, Loss: 0.0334, Eps: 0.3206, Mem.size: 804868
+Ep: 4230, Dur: 168, Step: 806415, Rew: 1.00, Loss: 0.0527, Eps: 0.3192, Mem.size: 806415
+Ep: 4240, Dur: 227, Step: 808057, Rew: 2.00, Loss: 0.0597, Eps: 0.3177, Mem.size: 808057
+Ep: 4250, Dur: 151, Step: 809610, Rew: 0.00, Loss: 0.0432, Eps: 0.3164, Mem.size: 809610
+Updated target network!
+Saved weights to colaboratory_models/colab_models/BreakoutDeterministic-v42018-05-29 13:45:25.608530.h5
+Ep: 4260, Dur: 195, Step: 811684, Rew: 2.00, Loss: 0.0638, Eps: 0.3145, Mem.size: 811684
+Ep: 4270, Dur: 285, Step: 814109, Rew: 4.00, Loss: 0.0864, Eps: 0.3123, Mem.size: 814109
+Ep: 4280, Dur: 300, Step: 816297, Rew: 5.00, Loss: 0.1080, Eps: 0.3103, Mem.size: 816297
+Ep: 4290, Dur: 269, Step: 818847, Rew: 4.00, Loss: 0.0870, Eps: 0.3080, Mem.size: 818847
+Saved weights to colaboratory_models/colab_models/BreakoutDeterministic-v42018-05-29 13:45:25.608530.h5
+Ep: 4300, Dur: 227, Step: 821277, Rew: 3.00, Loss: 0.0869, Eps: 0.3059, Mem.size: 821277
+Ep: 4310, Dur: 293, Step: 823941, Rew: 4.00, Loss: 0.1025, Eps: 0.3035, Mem.size: 823941
+Ep: 4320, Dur: 179, Step: 826363, Rew: 1.00, Loss: 0.0372, Eps: 0.3013, Mem.size: 826363
+Ep: 4330, Dur: 295, Step: 828592, Rew: 4.00, Loss: 0.0679, Eps: 0.2993, Mem.size: 828592
+Saved weights to colaboratory_models/colab_models/BreakoutDeterministic-v42018-05-29 13:45:25.608530.h5
+Ep: 4340, Dur: 256, Step: 830930, Rew: 3.00, Loss: 0.0451, Eps: 0.2972, Mem.size: 830930
+Ep: 4350, Dur: 180, Step: 833568, Rew: 1.00, Loss: 0.0339, Eps: 0.2948, Mem.size: 833568
+Ep: 4360, Dur: 286, Step: 835766, Rew: 7.00, Loss: 0.0809, Eps: 0.2928, Mem.size: 835766
+Ep: 4370, Dur: 280, Step: 838244, Rew: 4.00, Loss: 0.0646, Eps: 0.2906, Mem.size: 838244
+Saved weights to colaboratory_models/colab_models/BreakoutDeterministic-v42018-05-29 13:45:25.608530.h5
+Ep: 4380, Dur: 346, Step: 840556, Rew: 12.00, Loss: 0.1127, Eps: 0.2885, Mem.size: 840556
+Ep: 4390, Dur: 398, Step: 842971, Rew: 7.00, Loss: 0.1207, Eps: 0.2863, Mem.size: 842971
+Ep: 4400, Dur: 302, Step: 845359, Rew: 5.00, Loss: 0.1124, Eps: 0.2842, Mem.size: 845359
+Ep: 4410, Dur: 379, Step: 847643, Rew: 6.00, Loss: 0.0902, Eps: 0.2821, Mem.size: 847643
+Ep: 4420, Dur: 262, Step: 849651, Rew: 4.00, Loss: 0.0803, Eps: 0.2803, Mem.size: 849651
+Updated target network!
+Saved weights to colaboratory_models/colab_models/BreakoutDeterministic-v42018-05-29 13:45:25.608530.h5
+Ep: 4430, Dur: 272, Step: 851980, Rew: 3.00, Loss: 0.0569, Eps: 0.2782, Mem.size: 851980
+Ep: 4440, Dur: 286, Step: 854157, Rew: 4.00, Loss: 0.1036, Eps: 0.2763, Mem.size: 854157
+Ep: 4450, Dur: 273, Step: 856168, Rew: 3.00, Loss: 0.0748, Eps: 0.2744, Mem.size: 856168
+Ep: 4460, Dur: 215, Step: 858384, Rew: 2.00, Loss: 0.0774, Eps: 0.2725, Mem.size: 858384
+Saved weights to colaboratory_models/colab_models/BreakoutDeterministic-v42018-05-29 13:45:25.608530.h5
+Ep: 4470, Dur: 174, Step: 860525, Rew: 1.00, Loss: 0.0637, Eps: 0.2705, Mem.size: 860525
+Ep: 4480, Dur: 216, Step: 862730, Rew: 2.00, Loss: 0.0709, Eps: 0.2685, Mem.size: 862730
+Ep: 4490, Dur: 222, Step: 865017, Rew: 2.00, Loss: 0.0850, Eps: 0.2665, Mem.size: 865017
+Ep: 4500, Dur: 201, Step: 867393, Rew: 2.00, Loss: 0.0750, Eps: 0.2643, Mem.size: 867393
+Ep: 4510, Dur: 304, Step: 869502, Rew: 4.00, Loss: 0.0900, Eps: 0.2624, Mem.size: 869502
+Saved weights to colaboratory_models/colab_models/BreakoutDeterministic-v42018-05-29 13:45:25.608530.h5
+Ep: 4520, Dur: 226, Step: 871670, Rew: 2.00, Loss: 0.0706, Eps: 0.2605, Mem.size: 871670
+Ep: 4530, Dur: 206, Step: 873714, Rew: 2.00, Loss: 0.0752, Eps: 0.2587, Mem.size: 873714
+Ep: 4540, Dur: 220, Step: 875821, Rew: 2.00, Loss: 0.0732, Eps: 0.2568, Mem.size: 875821
+Ep: 4550, Dur: 218, Step: 877867, Rew: 2.00, Loss: 0.0597, Eps: 0.2549, Mem.size: 877867
+Ep: 4560, Dur: 204, Step: 879898, Rew: 2.00, Loss: 0.0942, Eps: 0.2531, Mem.size: 879898
+Saved weights to colaboratory_models/colab_models/BreakoutDeterministic-v42018-05-29 13:45:25.608530.h5
+Ep: 4570, Dur: 198, Step: 882131, Rew: 2.00, Loss: 0.0578, Eps: 0.2511, Mem.size: 882131
+Ep: 4580, Dur: 230, Step: 884370, Rew: 2.00, Loss: 0.0551, Eps: 0.2491, Mem.size: 884370
+Ep: 4590, Dur: 205, Step: 886630, Rew: 2.00, Loss: 0.0625, Eps: 0.2470, Mem.size: 886630
+Ep: 4600, Dur: 223, Step: 888532, Rew: 2.00, Loss: 0.0695, Eps: 0.2453, Mem.size: 888532
+Updated target network!
+Saved weights to colaboratory_models/colab_models/BreakoutDeterministic-v42018-05-29 13:45:25.608530.h5
+Ep: 4610, Dur: 125, Step: 890684, Rew: 0.00, Loss: 0.0579, Eps: 0.2434, Mem.size: 890684
+Ep: 4620, Dur: 180, Step: 892501, Rew: 1.00, Loss: 0.0688, Eps: 0.2417, Mem.size: 892501
+Ep: 4630, Dur: 305, Step: 894258, Rew: 4.00, Loss: 0.1324, Eps: 0.2402, Mem.size: 894258
+Ep: 4640, Dur: 168, Step: 896156, Rew: 1.00, Loss: 0.0636, Eps: 0.2385, Mem.size: 896156
+Ep: 4650, Dur: 233, Step: 897858, Rew: 3.00, Loss: 0.0747, Eps: 0.2369, Mem.size: 897858
+Ep: 4660, Dur: 138, Step: 899964, Rew: 0.00, Loss: 0.0343, Eps: 0.2350, Mem.size: 899964
+Saved weights to colaboratory_models/colab_models/BreakoutDeterministic-v42018-05-29 13:45:25.608530.h5
+Ep: 4670, Dur: 176, Step: 901507, Rew: 1.00, Loss: 0.0386, Eps: 0.2336, Mem.size: 901507
+Ep: 4680, Dur: 155, Step: 903663, Rew: 1.00, Loss: 0.0340, Eps: 0.2317, Mem.size: 903663
+Ep: 4690, Dur: 191, Step: 905382, Rew: 1.00, Loss: 0.0766, Eps: 0.2302, Mem.size: 905382
+Ep: 4700, Dur: 312, Step: 907500, Rew: 4.00, Loss: 0.0972, Eps: 0.2283, Mem.size: 907500
+Ep: 4710, Dur: 389, Step: 909541, Rew: 6.00, Loss: 0.1288, Eps: 0.2264, Mem.size: 909541
+Saved weights to colaboratory_models/colab_models/BreakoutDeterministic-v42018-05-29 13:45:25.608530.h5
+Ep: 4720, Dur: 203, Step: 911223, Rew: 1.00, Loss: 0.0681, Eps: 0.2249, Mem.size: 911223
+Ep: 4730, Dur: 173, Step: 913129, Rew: 1.00, Loss: 0.0856, Eps: 0.2232, Mem.size: 913129
+Ep: 4740, Dur: 277, Step: 914780, Rew: 4.00, Loss: 0.0681, Eps: 0.2217, Mem.size: 914780
+Ep: 4750, Dur: 134, Step: 916813, Rew: 0.00, Loss: 0.0792, Eps: 0.2199, Mem.size: 916813
+Ep: 4760, Dur: 184, Step: 918775, Rew: 1.00, Loss: 0.0600, Eps: 0.2181, Mem.size: 918775
+Saved weights to colaboratory_models/colab_models/BreakoutDeterministic-v42018-05-29 13:45:25.608530.h5
+Ep: 4770, Dur: 186, Step: 920486, Rew: 1.00, Loss: 0.0723, Eps: 0.2166, Mem.size: 920486
+Ep: 4780, Dur: 211, Step: 922334, Rew: 2.00, Loss: 0.0406, Eps: 0.2149, Mem.size: 922334
+Ep: 4790, Dur: 505, Step: 924530, Rew: 9.00, Loss: 0.1803, Eps: 0.2129, Mem.size: 924530
+Ep: 4800, Dur: 153, Step: 926468, Rew: 1.00, Loss: 0.0506, Eps: 0.2112, Mem.size: 926468
+Ep: 4810, Dur: 471, Step: 928361, Rew: 10.00, Loss: 0.1532, Eps: 0.2095, Mem.size: 928361
+Updated target network!
+Saved weights to colaboratory_models/colab_models/BreakoutDeterministic-v42018-05-29 13:45:25.608530.h5
+Ep: 4820, Dur: 192, Step: 930746, Rew: 1.00, Loss: 0.0386, Eps: 0.2073, Mem.size: 930746
+Ep: 4830, Dur: 171, Step: 932787, Rew: 1.00, Loss: 0.0492, Eps: 0.2055, Mem.size: 932787
+Ep: 4840, Dur: 222, Step: 934615, Rew: 1.00, Loss: 0.0533, Eps: 0.2038, Mem.size: 934615
+Ep: 4850, Dur: 245, Step: 936673, Rew: 1.00, Loss: 0.0532, Eps: 0.2020, Mem.size: 936673
+Ep: 4860, Dur: 191, Step: 938326, Rew: 1.00, Loss: 0.0667, Eps: 0.2005, Mem.size: 938326
+Saved weights to colaboratory_models/colab_models/BreakoutDeterministic-v42018-05-29 13:45:25.608530.h5
+Ep: 4870, Dur: 133, Step: 940180, Rew: 0.00, Loss: 0.0285, Eps: 0.1988, Mem.size: 940180
+Ep: 4880, Dur: 204, Step: 942382, Rew: 1.00, Loss: 0.0555, Eps: 0.1969, Mem.size: 942382
+Ep: 4890, Dur: 317, Step: 944437, Rew: 2.00, Loss: 0.1627, Eps: 0.1950, Mem.size: 944437
+Ep: 4900, Dur: 177, Step: 946464, Rew: 1.00, Loss: 0.0752, Eps: 0.1932, Mem.size: 946464
+Ep: 4910, Dur: 267, Step: 948565, Rew: 2.00, Loss: 0.0727, Eps: 0.1913, Mem.size: 948565
+Saved weights to colaboratory_models/colab_models/BreakoutDeterministic-v42018-05-29 13:45:25.608530.h5
+Ep: 4920, Dur: 233, Step: 950605, Rew: 2.00, Loss: 0.0942, Eps: 0.1895, Mem.size: 950605
+Ep: 4930, Dur: 156, Step: 952574, Rew: 0.00, Loss: 0.0248, Eps: 0.1877, Mem.size: 952574
+Ep: 4940, Dur: 217, Step: 954704, Rew: 2.00, Loss: 0.0669, Eps: 0.1858, Mem.size: 954704
+Ep: 4950, Dur: 135, Step: 956151, Rew: 0.00, Loss: 0.0357, Eps: 0.1845, Mem.size: 956151
+Ep: 4960, Dur: 188, Step: 957827, Rew: 1.00, Loss: 0.0442, Eps: 0.1830, Mem.size: 957827
+Saved weights to colaboratory_models/colab_models/BreakoutDeterministic-v42018-05-29 13:45:25.608530.h5
+Ep: 4970, Dur: 286, Step: 960097, Rew: 1.00, Loss: 0.0776, Eps: 0.1809, Mem.size: 960097
+Ep: 4980, Dur: 153, Step: 962139, Rew: 0.00, Loss: 0.0382, Eps: 0.1791, Mem.size: 962139
+Ep: 4990, Dur: 253, Step: 964248, Rew: 1.00, Loss: 0.0746, Eps: 0.1772, Mem.size: 964248
+Ep: 5000, Dur: 270, Step: 966107, Rew: 3.00, Loss: 0.0800, Eps: 0.1755, Mem.size: 966107
+Ep: 5010, Dur: 184, Step: 967894, Rew: 1.00, Loss: 0.0487, Eps: 0.1739, Mem.size: 967894
+Ep: 5020, Dur: 135, Step: 969673, Rew: 0.00, Loss: 0.0551, Eps: 0.1723, Mem.size: 969673
+Updated target network!
+Saved weights to colaboratory_models/colab_models/BreakoutDeterministic-v42018-05-29 13:45:25.608530.h5
+Ep: 5030, Dur: 283, Step: 972558, Rew: 3.00, Loss: 0.1357, Eps: 0.1697, Mem.size: 972558
+Ep: 5040, Dur: 384, Step: 976012, Rew: 2.00, Loss: 0.1382, Eps: 0.1666, Mem.size: 976012
+Ep: 5050, Dur: 285, Step: 979349, Rew: 3.00, Loss: 0.0993, Eps: 0.1636, Mem.size: 979349
+Saved weights to colaboratory_models/colab_models/BreakoutDeterministic-v42018-05-29 13:45:25.608530.h5
+Ep: 5060, Dur: 369, Step: 982785, Rew: 3.00, Loss: 0.1289, Eps: 0.1605, Mem.size: 982785
+Ep: 5070, Dur: 442, Step: 986372, Rew: 4.00, Loss: 0.2231, Eps: 0.1573, Mem.size: 986372
+Saved weights to colaboratory_models/colab_models/BreakoutDeterministic-v42018-05-29 13:45:25.608530.h5
+Ep: 5080, Dur: 492, Step: 990312, Rew: 4.00, Loss: 0.1796, Eps: 0.1537, Mem.size: 990312
+Ep: 5090, Dur: 378, Step: 994652, Rew: 4.00, Loss: 0.0907, Eps: 0.1498, Mem.size: 994652
+Ep: 5100, Dur: 503, Step: 998566, Rew: 3.00, Loss: 0.2050, Eps: 0.1463, Mem.size: 998566
+Saved weights to colaboratory_models/colab_models/BreakoutDeterministic-v42018-05-29 13:45:25.608530.h5
+Ep: 5110, Dur: 505, Step: 1002293, Rew: 3.00, Loss: 0.1856, Eps: 0.1429, Mem.size: 1000000
+Ep: 5120, Dur: 481, Step: 1006039, Rew: 4.00, Loss: 0.2301, Eps: 0.1396, Mem.size: 1000000
+Updated target network!
+Saved weights to colaboratory_models/colab_models/BreakoutDeterministic-v42018-05-29 13:45:25.608530.h5
+Ep: 5130, Dur: 364, Step: 1010246, Rew: 1.00, Loss: 0.1133, Eps: 0.1358, Mem.size: 1000000
+Ep: 5140, Dur: 401, Step: 1013056, Rew: 5.00, Loss: 0.1010, Eps: 0.1332, Mem.size: 1000000
+Ep: 5150, Dur: 174, Step: 1015357, Rew: 1.00, Loss: 0.0554, Eps: 0.1312, Mem.size: 1000000
+Ep: 5160, Dur: 228, Step: 1018240, Rew: 1.00, Loss: 0.0673, Eps: 0.1286, Mem.size: 1000000
+Saved weights to colaboratory_models/colab_models/BreakoutDeterministic-v42018-05-29 13:45:25.608530.h5
+Ep: 5170, Dur: 256, Step: 1020632, Rew: 1.00, Loss: 0.1100, Eps: 0.1264, Mem.size: 1000000
+Ep: 5180, Dur: 162, Step: 1023417, Rew: 1.00, Loss: 0.0746, Eps: 0.1239, Mem.size: 1000000
+Ep: 5190, Dur: 308, Step: 1026001, Rew: 1.00, Loss: 0.0739, Eps: 0.1216, Mem.size: 1000000
+Ep: 5200, Dur: 415, Step: 1028575, Rew: 1.00, Loss: 0.1360, Eps: 0.1193, Mem.size: 1000000
+Saved weights to colaboratory_models/colab_models/BreakoutDeterministic-v42018-05-29 13:45:25.608530.h5
+Ep: 5210, Dur: 319, Step: 1031194, Rew: 1.00, Loss: 0.1048, Eps: 0.1169, Mem.size: 1000000
+Ep: 5220, Dur: 284, Step: 1034086, Rew: 3.00, Loss: 0.1084, Eps: 0.1143, Mem.size: 1000000
+Ep: 5230, Dur: 344, Step: 1036675, Rew: 1.00, Loss: 0.1795, Eps: 0.1120, Mem.size: 1000000
+Ep: 5240, Dur: 256, Step: 1039906, Rew: 1.00, Loss: 0.0831, Eps: 0.1091, Mem.size: 1000000
+Saved weights to colaboratory_models/colab_models/BreakoutDeterministic-v42018-05-29 13:45:25.608530.h5
+Ep: 5250, Dur: 133, Step: 1042403, Rew: 0.00, Loss: 0.0346, Eps: 0.1068, Mem.size: 1000000
+Ep: 5260, Dur: 364, Step: 1045538, Rew: 4.00, Loss: 0.0864, Eps: 0.1040, Mem.size: 1000000
+Ep: 5270, Dur: 262, Step: 1048091, Rew: 1.00, Loss: 0.0695, Eps: 0.1017, Mem.size: 1000000
+Updated target network!
+Saved weights to colaboratory_models/colab_models/BreakoutDeterministic-v42018-05-29 13:45:25.608530.h5
+Ep: 5280, Dur: 225, Step: 1051473, Rew: 0.00, Loss: 0.0652, Eps: 0.1000, Mem.size: 1000000
+Ep: 5290, Dur: 204, Step: 1054116, Rew: 0.00, Loss: 0.0461, Eps: 0.1000, Mem.size: 1000000
+Ep: 5300, Dur: 220, Step: 1056354, Rew: 0.00, Loss: 0.0682, Eps: 0.1000, Mem.size: 1000000
+Ep: 5310, Dur: 298, Step: 1059056, Rew: 1.00, Loss: 0.1058, Eps: 0.1000, Mem.size: 1000000
+Saved weights to colaboratory_models/colab_models/BreakoutDeterministic-v42018-05-29 13:45:25.608530.h5
+Ep: 5320, Dur: 189, Step: 1061184, Rew: 0.00, Loss: 0.0558, Eps: 0.1000, Mem.size: 1000000
+Ep: 5330, Dur: 199, Step: 1063427, Rew: 0.00, Loss: 0.0607, Eps: 0.1000, Mem.size: 1000000
+Ep: 5340, Dur: 202, Step: 1065835, Rew: 1.00, Loss: 0.0962, Eps: 0.1000, Mem.size: 1000000
+Ep: 5350, Dur: 296, Step: 1068580, Rew: 2.00, Loss: 0.1198, Eps: 0.1000, Mem.size: 1000000
+Saved weights to colaboratory_models/colab_models/BreakoutDeterministic-v42018-05-29 13:45:25.608530.h5
+Ep: 5360, Dur: 202, Step: 1070662, Rew: 0.00, Loss: 0.0655, Eps: 0.1000, Mem.size: 1000000
+Ep: 5370, Dur: 186, Step: 1073063, Rew: 0.00, Loss: 0.0522, Eps: 0.1000, Mem.size: 1000000
+Ep: 5380, Dur: 298, Step: 1075363, Rew: 2.00, Loss: 0.0851, Eps: 0.1000, Mem.size: 1000000
+Ep: 5390, Dur: 269, Step: 1077930, Rew: 1.00, Loss: 0.0911, Eps: 0.1000, Mem.size: 1000000
+Saved weights to colaboratory_models/colab_models/BreakoutDeterministic-v42018-05-29 13:45:25.608530.h5
+Ep: 5400, Dur: 254, Step: 1080311, Rew: 0.00, Loss: 0.0849, Eps: 0.1000, Mem.size: 1000000
+Ep: 5410, Dur: 220, Step: 1082893, Rew: 0.00, Loss: 0.0487, Eps: 0.1000, Mem.size: 1000000
+Ep: 5420, Dur: 317, Step: 1085823, Rew: 2.00, Loss: 0.1017, Eps: 0.1000, Mem.size: 1000000
+Ep: 5430, Dur: 210, Step: 1088300, Rew: 0.00, Loss: 0.0527, Eps: 0.1000, Mem.size: 1000000
+Updated target network!
+Saved weights to colaboratory_models/colab_models/BreakoutDeterministic-v42018-05-29 13:45:25.608530.h5
+Ep: 5440, Dur: 312, Step: 1091193, Rew: 3.00, Loss: 0.1123, Eps: 0.1000, Mem.size: 1000000
+Ep: 5450, Dur: 301, Step: 1094032, Rew: 3.00, Loss: 0.0835, Eps: 0.1000, Mem.size: 1000000
+Ep: 5460, Dur: 237, Step: 1096583, Rew: 1.00, Loss: 0.0829, Eps: 0.1000, Mem.size: 1000000
+Ep: 5470, Dur: 232, Step: 1099475, Rew: 1.00, Loss: 0.0939, Eps: 0.1000, Mem.size: 1000000
+Saved weights to colaboratory_models/colab_models/BreakoutDeterministic-v42018-05-29 13:45:25.608530.h5
+Ep: 5480, Dur: 343, Step: 1102278, Rew: 1.00, Loss: 0.0947, Eps: 0.1000, Mem.size: 1000000
+Ep: 5490, Dur: 213, Step: 1104909, Rew: 2.00, Loss: 0.0529, Eps: 0.1000, Mem.size: 1000000
+Ep: 5500, Dur: 251, Step: 1107590, Rew: 1.00, Loss: 0.1051, Eps: 0.1000, Mem.size: 1000000
+Saved weights to colaboratory_models/colab_models/BreakoutDeterministic-v42018-05-29 13:45:25.608530.h5
+Ep: 5510, Dur: 493, Step: 1110154, Rew: 3.00, Loss: 0.1552, Eps: 0.1000, Mem.size: 1000000
+Ep: 5520, Dur: 273, Step: 1113540, Rew: 2.00, Loss: 0.0892, Eps: 0.1000, Mem.size: 1000000
+Ep: 5530, Dur: 309, Step: 1116297, Rew: 2.00, Loss: 0.0981, Eps: 0.1000, Mem.size: 1000000
+Ep: 5540, Dur: 338, Step: 1119310, Rew: 1.00, Loss: 0.0925, Eps: 0.1000, Mem.size: 1000000
+Saved weights to colaboratory_models/colab_models/BreakoutDeterministic-v42018-05-29 13:45:25.608530.h5
+Ep: 5550, Dur: 274, Step: 1121963, Rew: 3.00, Loss: 0.0805, Eps: 0.1000, Mem.size: 1000000
+Ep: 5560, Dur: 456, Step: 1125334, Rew: 2.00, Loss: 0.1783, Eps: 0.1000, Mem.size: 1000000
+Ep: 5570, Dur: 175, Step: 1127600, Rew: 1.00, Loss: 0.0498, Eps: 0.1000, Mem.size: 1000000
+Updated target network!
+Saved weights to colaboratory_models/colab_models/BreakoutDeterministic-v42018-05-29 13:45:25.608530.h5
+Ep: 5580, Dur: 227, Step: 1130042, Rew: 2.00, Loss: 0.0658, Eps: 0.1000, Mem.size: 1000000
+Ep: 5590, Dur: 210, Step: 1132932, Rew: 0.00, Loss: 0.0680, Eps: 0.1000, Mem.size: 1000000
+Ep: 5600, Dur: 329, Step: 1136161, Rew: 2.00, Loss: 0.0921, Eps: 0.1000, Mem.size: 1000000
+Ep: 5610, Dur: 363, Step: 1139605, Rew: 2.00, Loss: 0.1061, Eps: 0.1000, Mem.size: 1000000
+Saved weights to colaboratory_models/colab_models/BreakoutDeterministic-v42018-05-29 13:45:25.608530.h5
+Ep: 5620, Dur: 400, Step: 1142790, Rew: 2.00, Loss: 0.1167, Eps: 0.1000, Mem.size: 1000000
+Ep: 5630, Dur: 281, Step: 1145779, Rew: 2.00, Loss: 0.1220, Eps: 0.1000, Mem.size: 1000000
+Ep: 5640, Dur: 239, Step: 1148796, Rew: 0.00, Loss: 0.0720, Eps: 0.1000, Mem.size: 1000000
+Saved weights to colaboratory_models/colab_models/BreakoutDeterministic-v42018-05-29 13:45:25.608530.h5
+Ep: 5650, Dur: 448, Step: 1151838, Rew: 2.00, Loss: 0.1477, Eps: 0.1000, Mem.size: 1000000
+Ep: 5660, Dur: 247, Step: 1154999, Rew: 2.00, Loss: 0.0562, Eps: 0.1000, Mem.size: 1000000
+Ep: 5670, Dur: 279, Step: 1158173, Rew: 2.00, Loss: 0.0852, Eps: 0.1000, Mem.size: 1000000
+Saved weights to colaboratory_models/colab_models/BreakoutDeterministic-v42018-05-29 13:45:25.608530.h5
+Ep: 5680, Dur: 276, Step: 1160938, Rew: 2.00, Loss: 0.0671, Eps: 0.1000, Mem.size: 1000000
+Ep: 5690, Dur: 335, Step: 1164318, Rew: 2.00, Loss: 0.1095, Eps: 0.1000, Mem.size: 1000000
+Ep: 5700, Dur: 328, Step: 1167564, Rew: 2.00, Loss: 0.1478, Eps: 0.1000, Mem.size: 1000000
+Updated target network!
+Saved weights to colaboratory_models/colab_models/BreakoutDeterministic-v42018-05-29 13:45:25.608530.h5
+Ep: 5710, Dur: 174, Step: 1170477, Rew: 0.00, Loss: 0.0378, Eps: 0.1000, Mem.size: 1000000
+Ep: 5720, Dur: 362, Step: 1173373, Rew: 1.00, Loss: 0.0902, Eps: 0.1000, Mem.size: 1000000
+Ep: 5730, Dur: 218, Step: 1175735, Rew: 1.00, Loss: 0.0383, Eps: 0.1000, Mem.size: 1000000
+Ep: 5740, Dur: 195, Step: 1178067, Rew: 0.00, Loss: 0.0626, Eps: 0.1000, Mem.size: 1000000
+Saved weights to colaboratory_models/colab_models/BreakoutDeterministic-v42018-05-29 13:45:25.608530.h5
+Ep: 5750, Dur: 488, Step: 1180345, Rew: 1.00, Loss: 0.1804, Eps: 0.1000, Mem.size: 1000000
+Ep: 5760, Dur: 249, Step: 1182717, Rew: 2.00, Loss: 0.0961, Eps: 0.1000, Mem.size: 1000000
+Ep: 5770, Dur: 368, Step: 1184699, Rew: 4.00, Loss: 0.1540, Eps: 0.1000, Mem.size: 1000000
+Ep: 5780, Dur: 141, Step: 1186540, Rew: 0.00, Loss: 0.0484, Eps: 0.1000, Mem.size: 1000000
+Ep: 5790, Dur: 345, Step: 1188519, Rew: 4.00, Loss: 0.1077, Eps: 0.1000, Mem.size: 1000000
+Saved weights to colaboratory_models/colab_models/BreakoutDeterministic-v42018-05-29 13:45:25.608530.h5
+Ep: 5800, Dur: 171, Step: 1190566, Rew: 0.00, Loss: 0.0528, Eps: 0.1000, Mem.size: 1000000
+Ep: 5810, Dur: 413, Step: 1193282, Rew: 1.00, Loss: 0.0922, Eps: 0.1000, Mem.size: 1000000
+Ep: 5820, Dur: 479, Step: 1195847, Rew: 3.00, Loss: 0.1575, Eps: 0.1000, Mem.size: 1000000
+Ep: 5830, Dur: 160, Step: 1197605, Rew: 0.00, Loss: 0.0448, Eps: 0.1000, Mem.size: 1000000
+Saved weights to colaboratory_models/colab_models/BreakoutDeterministic-v42018-05-29 13:45:25.608530.h5
+Ep: 5840, Dur: 565, Step: 1200192, Rew: 13.00, Loss: 0.1713, Eps: 0.1000, Mem.size: 1000000
+Ep: 5850, Dur: 390, Step: 1202836, Rew: 1.00, Loss: 0.1248, Eps: 0.1000, Mem.size: 1000000
+Ep: 5860, Dur: 502, Step: 1205024, Rew: 1.00, Loss: 0.1729, Eps: 0.1000, Mem.size: 1000000
+Ep: 5870, Dur: 311, Step: 1207124, Rew: 2.00, Loss: 0.0715, Eps: 0.1000, Mem.size: 1000000
+Ep: 5880, Dur: 238, Step: 1209469, Rew: 2.00, Loss: 0.0487, Eps: 0.1000, Mem.size: 1000000
+Updated target network!
+Saved weights to colaboratory_models/colab_models/BreakoutDeterministic-v42018-05-29 13:45:25.608530.h5
+Ep: 5890, Dur: 291, Step: 1212361, Rew: 2.00, Loss: 0.0812, Eps: 0.1000, Mem.size: 1000000
+Ep: 5900, Dur: 294, Step: 1215378, Rew: 2.00, Loss: 0.1027, Eps: 0.1000, Mem.size: 1000000
+Ep: 5910, Dur: 381, Step: 1218316, Rew: 2.00, Loss: 0.1586, Eps: 0.1000, Mem.size: 1000000
+Saved weights to colaboratory_models/colab_models/BreakoutDeterministic-v42018-05-29 13:45:25.608530.h5
+Ep: 5920, Dur: 393, Step: 1221419, Rew: 2.00, Loss: 0.1181, Eps: 0.1000, Mem.size: 1000000
+Ep: 5930, Dur: 344, Step: 1224611, Rew: 2.00, Loss: 0.1166, Eps: 0.1000, Mem.size: 1000000
+Ep: 5940, Dur: 362, Step: 1227858, Rew: 3.00, Loss: 0.1426, Eps: 0.1000, Mem.size: 1000000
+Saved weights to colaboratory_models/colab_models/BreakoutDeterministic-v42018-05-29 13:45:25.608530.h5
+Ep: 5950, Dur: 318, Step: 1230892, Rew: 2.00, Loss: 0.0748, Eps: 0.1000, Mem.size: 1000000
+Ep: 5960, Dur: 433, Step: 1234006, Rew: 2.00, Loss: 0.1621, Eps: 0.1000, Mem.size: 1000000
+Ep: 5970, Dur: 280, Step: 1236865, Rew: 2.00, Loss: 0.1398, Eps: 0.1000, Mem.size: 1000000
+Ep: 5980, Dur: 340, Step: 1239714, Rew: 2.00, Loss: 0.1091, Eps: 0.1000, Mem.size: 1000000
+Saved weights to colaboratory_models/colab_models/BreakoutDeterministic-v42018-05-29 13:45:25.608530.h5
+Ep: 5990, Dur: 270, Step: 1242663, Rew: 2.00, Loss: 0.0700, Eps: 0.1000, Mem.size: 1000000
+Ep: 6000, Dur: 396, Step: 1245369, Rew: 2.00, Loss: 0.1499, Eps: 0.1000, Mem.size: 1000000
+Ep: 6010, Dur: 231, Step: 1248520, Rew: 2.00, Loss: 0.0812, Eps: 0.1000, Mem.size: 1000000
+Updated target network!
+Saved weights to colaboratory_models/colab_models/BreakoutDeterministic-v42018-05-29 13:45:25.608530.h5
+Ep: 6020, Dur: 231, Step: 1251263, Rew: 0.00, Loss: 0.1186, Eps: 0.1000, Mem.size: 1000000
+Ep: 6030, Dur: 226, Step: 1253635, Rew: 0.00, Loss: 0.1190, Eps: 0.1000, Mem.size: 1000000
+Ep: 6040, Dur: 266, Step: 1256487, Rew: 0.00, Loss: 0.0868, Eps: 0.1000, Mem.size: 1000000
+Ep: 6050, Dur: 324, Step: 1259337, Rew: 0.00, Loss: 0.0929, Eps: 0.1000, Mem.size: 1000000
+Saved weights to colaboratory_models/colab_models/BreakoutDeterministic-v42018-05-29 13:45:25.608530.h5
+Ep: 6060, Dur: 514, Step: 1262656, Rew: 0.00, Loss: 0.1348, Eps: 0.1000, Mem.size: 1000000
+Ep: 6070, Dur: 219, Step: 1265417, Rew: 0.00, Loss: 0.0586, Eps: 0.1000, Mem.size: 1000000
+Ep: 6080, Dur: 344, Step: 1268613, Rew: 0.00, Loss: 0.1353, Eps: 0.1000, Mem.size: 1000000
+Saved weights to colaboratory_models/colab_models/BreakoutDeterministic-v42018-05-29 13:45:25.608530.h5
+Ep: 6090, Dur: 264, Step: 1271546, Rew: 0.00, Loss: 0.0859, Eps: 0.1000, Mem.size: 1000000
+Ep: 6100, Dur: 383, Step: 1274314, Rew: 0.00, Loss: 0.1813, Eps: 0.1000, Mem.size: 1000000
+Ep: 6110, Dur: 358, Step: 1276951, Rew: 0.00, Loss: 0.0890, Eps: 0.1000, Mem.size: 1000000
+Ep: 6120, Dur: 339, Step: 1279909, Rew: 0.00, Loss: 0.1092, Eps: 0.1000, Mem.size: 1000000
+Saved weights to colaboratory_models/colab_models/BreakoutDeterministic-v42018-05-29 13:45:25.608530.h5
+Ep: 6130, Dur: 176, Step: 1282911, Rew: 0.00, Loss: 0.0708, Eps: 0.1000, Mem.size: 1000000
+Ep: 6140, Dur: 278, Step: 1285609, Rew: 0.00, Loss: 0.0779, Eps: 0.1000, Mem.size: 1000000
+Ep: 6150, Dur: 231, Step: 1288478, Rew: 0.00, Loss: 0.0601, Eps: 0.1000, Mem.size: 1000000
+Updated target network!
+Saved weights to colaboratory_models/colab_models/BreakoutDeterministic-v42018-05-29 13:45:25.608530.h5
+Ep: 6160, Dur: 424, Step: 1291750, Rew: 3.00, Loss: 0.1316, Eps: 0.1000, Mem.size: 1000000
+Ep: 6170, Dur: 440, Step: 1295326, Rew: 5.00, Loss: 0.1502, Eps: 0.1000, Mem.size: 1000000
+Ep: 6180, Dur: 421, Step: 1299134, Rew: 1.00, Loss: 0.1468, Eps: 0.1000, Mem.size: 1000000
+Saved weights to colaboratory_models/colab_models/BreakoutDeterministic-v42018-05-29 13:45:25.608530.h5
+Ep: 6190, Dur: 245, Step: 1302174, Rew: 1.00, Loss: 0.0752, Eps: 0.1000, Mem.size: 1000000
+Ep: 6200, Dur: 500, Step: 1306016, Rew: 1.00, Loss: 0.1007, Eps: 0.1000, Mem.size: 1000000
+Saved weights to colaboratory_models/colab_models/BreakoutDeterministic-v42018-05-29 13:45:25.608530.h5
+Ep: 6210, Dur: 336, Step: 1310125, Rew: 1.00, Loss: 0.0860, Eps: 0.1000, Mem.size: 1000000
+Ep: 6220, Dur: 251, Step: 1314230, Rew: 1.00, Loss: 0.0713, Eps: 0.1000, Mem.size: 1000000
+Ep: 6230, Dur: 556, Step: 1317715, Rew: 5.00, Loss: 0.2143, Eps: 0.1000, Mem.size: 1000000
+Saved weights to colaboratory_models/colab_models/BreakoutDeterministic-v42018-05-29 13:45:25.608530.h5
+Ep: 6240, Dur: 341, Step: 1321555, Rew: 1.00, Loss: 0.1121, Eps: 0.1000, Mem.size: 1000000
+Ep: 6250, Dur: 302, Step: 1324679, Rew: 1.00, Loss: 0.0897, Eps: 0.1000, Mem.size: 1000000
+Ep: 6260, Dur: 427, Step: 1328393, Rew: 1.00, Loss: 0.1661, Eps: 0.1000, Mem.size: 1000000
+Updated target network!
+Saved weights to colaboratory_models/colab_models/BreakoutDeterministic-v42018-05-29 13:45:25.608530.h5
+Ep: 6270, Dur: 437, Step: 1332164, Rew: 4.00, Loss: 0.1257, Eps: 0.1000, Mem.size: 1000000
+Ep: 6280, Dur: 292, Step: 1335891, Rew: 3.00, Loss: 0.0771, Eps: 0.1000, Mem.size: 1000000
+Saved weights to colaboratory_models/colab_models/BreakoutDeterministic-v42018-05-29 13:45:25.608530.h5
+Ep: 6290, Dur: 542, Step: 1340209, Rew: 3.00, Loss: 0.1381, Eps: 0.1000, Mem.size: 1000000
+Ep: 6300, Dur: 365, Step: 1344432, Rew: 3.00, Loss: 0.1453, Eps: 0.1000, Mem.size: 1000000
+Ep: 6310, Dur: 387, Step: 1348325, Rew: 4.00, Loss: 0.1033, Eps: 0.1000, Mem.size: 1000000
+Saved weights to colaboratory_models/colab_models/BreakoutDeterministic-v42018-05-29 13:45:25.608530.h5
+Ep: 6320, Dur: 358, Step: 1352759, Rew: 4.00, Loss: 0.0912, Eps: 0.1000, Mem.size: 1000000
+Ep: 6330, Dur: 443, Step: 1357135, Rew: 9.00, Loss: 0.1140, Eps: 0.1000, Mem.size: 1000000
+Saved weights to colaboratory_models/colab_models/BreakoutDeterministic-v42018-05-29 13:45:25.608530.h5
+Ep: 6340, Dur: 390, Step: 1361254, Rew: 4.00, Loss: 0.0762, Eps: 0.1000, Mem.size: 1000000
+Ep: 6350, Dur: 430, Step: 1365383, Rew: 4.00, Loss: 0.1056, Eps: 0.1000, Mem.size: 1000000
+Updated target network!
+Saved weights to colaboratory_models/colab_models/BreakoutDeterministic-v42018-05-29 13:45:25.608530.h5
+Ep: 6360, Dur: 471, Step: 1370022, Rew: 5.00, Loss: 0.1071, Eps: 0.1000, Mem.size: 1000000
+Ep: 6370, Dur: 227, Step: 1372007, Rew: 2.00, Loss: 0.0643, Eps: 0.1000, Mem.size: 1000000
+Ep: 6380, Dur: 215, Step: 1374116, Rew: 2.00, Loss: 0.0479, Eps: 0.1000, Mem.size: 1000000
+Ep: 6390, Dur: 225, Step: 1376260, Rew: 2.00, Loss: 0.0573, Eps: 0.1000, Mem.size: 1000000
+Ep: 6400, Dur: 229, Step: 1378452, Rew: 2.00, Loss: 0.0578, Eps: 0.1000, Mem.size: 1000000
+Saved weights to colaboratory_models/colab_models/BreakoutDeterministic-v42018-05-29 13:45:25.608530.h5
+Ep: 6410, Dur: 237, Step: 1380269, Rew: 2.00, Loss: 0.0384, Eps: 0.1000, Mem.size: 1000000
+Ep: 6420, Dur: 216, Step: 1382460, Rew: 2.00, Loss: 0.0753, Eps: 0.1000, Mem.size: 1000000
+Ep: 6430, Dur: 132, Step: 1384528, Rew: 0.00, Loss: 0.0504, Eps: 0.1000, Mem.size: 1000000
+Ep: 6440, Dur: 327, Step: 1386887, Rew: 4.00, Loss: 0.0726, Eps: 0.1000, Mem.size: 1000000
+Ep: 6450, Dur: 227, Step: 1388844, Rew: 2.00, Loss: 0.0816, Eps: 0.1000, Mem.size: 1000000
+Saved weights to colaboratory_models/colab_models/BreakoutDeterministic-v42018-05-29 13:45:25.608530.h5
+Ep: 6460, Dur: 205, Step: 1390857, Rew: 2.00, Loss: 0.0811, Eps: 0.1000, Mem.size: 1000000
+Ep: 6470, Dur: 239, Step: 1392801, Rew: 2.00, Loss: 0.0731, Eps: 0.1000, Mem.size: 1000000
+Ep: 6480, Dur: 216, Step: 1394954, Rew: 2.00, Loss: 0.0572, Eps: 0.1000, Mem.size: 1000000
+Ep: 6490, Dur: 203, Step: 1396908, Rew: 2.00, Loss: 0.0659, Eps: 0.1000, Mem.size: 1000000
+Ep: 6500, Dur: 213, Step: 1398903, Rew: 2.00, Loss: 0.0648, Eps: 0.1000, Mem.size: 1000000
+Saved weights to colaboratory_models/colab_models/BreakoutDeterministic-v42018-05-29 13:45:25.608530.h5
+Ep: 6510, Dur: 226, Step: 1400895, Rew: 2.00, Loss: 0.0534, Eps: 0.1000, Mem.size: 1000000
+Ep: 6520, Dur: 212, Step: 1403013, Rew: 2.00, Loss: 0.0518, Eps: 0.1000, Mem.size: 1000000
+Ep: 6530, Dur: 206, Step: 1405006, Rew: 2.00, Loss: 0.0711, Eps: 0.1000, Mem.size: 1000000
+Ep: 6540, Dur: 202, Step: 1407244, Rew: 2.00, Loss: 0.0615, Eps: 0.1000, Mem.size: 1000000
+Ep: 6550, Dur: 243, Step: 1409302, Rew: 2.00, Loss: 0.0631, Eps: 0.1000, Mem.size: 1000000
+Updated target network!
+Saved weights to colaboratory_models/colab_models/BreakoutDeterministic-v42018-05-29 13:45:25.608530.h5
+Ep: 6560, Dur: 132, Step: 1411637, Rew: 0.00, Loss: 0.0539, Eps: 0.1000, Mem.size: 1000000
+Ep: 6570, Dur: 226, Step: 1414455, Rew: 3.00, Loss: 0.0718, Eps: 0.1000, Mem.size: 1000000
+Ep: 6580, Dur: 269, Step: 1416787, Rew: 4.00, Loss: 0.1160, Eps: 0.1000, Mem.size: 1000000
+Ep: 6590, Dur: 249, Step: 1419381, Rew: 3.00, Loss: 0.0686, Eps: 0.1000, Mem.size: 1000000
+Saved weights to colaboratory_models/colab_models/BreakoutDeterministic-v42018-05-29 13:45:25.608530.h5
+Ep: 6600, Dur: 295, Step: 1421861, Rew: 4.00, Loss: 0.0701, Eps: 0.1000, Mem.size: 1000000
+Ep: 6610, Dur: 253, Step: 1424295, Rew: 3.00, Loss: 0.0706, Eps: 0.1000, Mem.size: 1000000
+Ep: 6620, Dur: 189, Step: 1426288, Rew: 1.00, Loss: 0.0382, Eps: 0.1000, Mem.size: 1000000
+Ep: 6630, Dur: 277, Step: 1428553, Rew: 4.00, Loss: 0.0736, Eps: 0.1000, Mem.size: 1000000
+Saved weights to colaboratory_models/colab_models/BreakoutDeterministic-v42018-05-29 13:45:25.608530.h5
+Ep: 6640, Dur: 278, Step: 1431351, Rew: 4.00, Loss: 0.0990, Eps: 0.1000, Mem.size: 1000000
+Ep: 6650, Dur: 225, Step: 1433770, Rew: 3.00, Loss: 0.0685, Eps: 0.1000, Mem.size: 1000000
+Ep: 6660, Dur: 266, Step: 1436372, Rew: 3.00, Loss: 0.0447, Eps: 0.1000, Mem.size: 1000000
+Ep: 6670, Dur: 243, Step: 1438565, Rew: 3.00, Loss: 0.0469, Eps: 0.1000, Mem.size: 1000000
+Saved weights to colaboratory_models/colab_models/BreakoutDeterministic-v42018-05-29 13:45:25.608530.h5
+Ep: 6680, Dur: 230, Step: 1441200, Rew: 3.00, Loss: 0.0839, Eps: 0.1000, Mem.size: 1000000
+Ep: 6690, Dur: 230, Step: 1443531, Rew: 3.00, Loss: 0.0508, Eps: 0.1000, Mem.size: 1000000
+Ep: 6700, Dur: 346, Step: 1445950, Rew: 3.00, Loss: 0.1180, Eps: 0.1000, Mem.size: 1000000
+Ep: 6710, Dur: 247, Step: 1448346, Rew: 3.00, Loss: 0.0700, Eps: 0.1000, Mem.size: 1000000
+Updated target network!
+Saved weights to colaboratory_models/colab_models/BreakoutDeterministic-v42018-05-29 13:45:25.608530.h5
+Ep: 6720, Dur: 338, Step: 1450781, Rew: 4.00, Loss: 0.0866, Eps: 0.1000, Mem.size: 1000000
+Ep: 6730, Dur: 319, Step: 1454306, Rew: 4.00, Loss: 0.1014, Eps: 0.1000, Mem.size: 1000000
+Ep: 6740, Dur: 394, Step: 1457599, Rew: 9.00, Loss: 0.1084, Eps: 0.1000, Mem.size: 1000000
+Saved weights to colaboratory_models/colab_models/BreakoutDeterministic-v42018-05-29 13:45:25.608530.h5
+Ep: 6750, Dur: 359, Step: 1461180, Rew: 3.00, Loss: 0.0900, Eps: 0.1000, Mem.size: 1000000
+Ep: 6760, Dur: 349, Step: 1464531, Rew: 3.00, Loss: 0.1162, Eps: 0.1000, Mem.size: 1000000
+Ep: 6770, Dur: 324, Step: 1467958, Rew: 4.00, Loss: 0.1304, Eps: 0.1000, Mem.size: 1000000
+Saved weights to colaboratory_models/colab_models/BreakoutDeterministic-v42018-05-29 13:45:25.608530.h5
+Ep: 6780, Dur: 396, Step: 1471140, Rew: 3.00, Loss: 0.0940, Eps: 0.1000, Mem.size: 1000000
+Ep: 6790, Dur: 338, Step: 1474326, Rew: 3.00, Loss: 0.1074, Eps: 0.1000, Mem.size: 1000000
+Ep: 6800, Dur: 412, Step: 1478149, Rew: 3.00, Loss: 0.1193, Eps: 0.1000, Mem.size: 1000000
+Saved weights to colaboratory_models/colab_models/BreakoutDeterministic-v42018-05-29 13:45:25.608530.h5
+Ep: 6810, Dur: 534, Step: 1482061, Rew: 7.00, Loss: 0.1516, Eps: 0.1000, Mem.size: 1000000
+Ep: 6820, Dur: 460, Step: 1485440, Rew: 3.00, Loss: 0.1847, Eps: 0.1000, Mem.size: 1000000
+Ep: 6830, Dur: 379, Step: 1488511, Rew: 5.00, Loss: 0.1046, Eps: 0.1000, Mem.size: 1000000
+Updated target network!
+Saved weights to colaboratory_models/colab_models/BreakoutDeterministic-v42018-05-29 13:45:25.608530.h5
+Ep: 6840, Dur: 158, Step: 1490804, Rew: 1.00, Loss: 0.0523, Eps: 0.1000, Mem.size: 1000000
+Ep: 6850, Dur: 173, Step: 1492221, Rew: 1.00, Loss: 0.0279, Eps: 0.1000, Mem.size: 1000000
+Ep: 6860, Dur: 164, Step: 1493602, Rew: 1.00, Loss: 0.0382, Eps: 0.1000, Mem.size: 1000000
+Ep: 6870, Dur: 178, Step: 1495029, Rew: 1.00, Loss: 0.0464, Eps: 0.1000, Mem.size: 1000000
+Ep: 6880, Dur: 148, Step: 1496450, Rew: 0.00, Loss: 0.0782, Eps: 0.1000, Mem.size: 1000000
+Ep: 6890, Dur: 131, Step: 1497913, Rew: 0.00, Loss: 0.0326, Eps: 0.1000, Mem.size: 1000000
+Ep: 6900, Dur: 150, Step: 1499341, Rew: 0.00, Loss: 0.0322, Eps: 0.1000, Mem.size: 1000000
+Saved weights to colaboratory_models/colab_models/BreakoutDeterministic-v42018-05-29 13:45:25.608530.h5
+Ep: 6910, Dur: 130, Step: 1500888, Rew: 0.00, Loss: 0.0167, Eps: 0.1000, Mem.size: 1000000
+Ep: 6920, Dur: 174, Step: 1502483, Rew: 1.00, Loss: 0.0421, Eps: 0.1000, Mem.size: 1000000
+Ep: 6930, Dur: 165, Step: 1503975, Rew: 1.00, Loss: 0.0622, Eps: 0.1000, Mem.size: 1000000
+Ep: 6940, Dur: 171, Step: 1505309, Rew: 1.00, Loss: 0.0283, Eps: 0.1000, Mem.size: 1000000
+Ep: 6950, Dur: 142, Step: 1506935, Rew: 0.00, Loss: 0.0287, Eps: 0.1000, Mem.size: 1000000
+Ep: 6960, Dur: 168, Step: 1508408, Rew: 1.00, Loss: 0.0449, Eps: 0.1000, Mem.size: 1000000
+Ep: 6970, Dur: 151, Step: 1509827, Rew: 1.00, Loss: 0.0599, Eps: 0.1000, Mem.size: 1000000
+Saved weights to colaboratory_models/colab_models/BreakoutDeterministic-v42018-05-29 13:45:25.608530.h5
+Ep: 6980, Dur: 164, Step: 1511310, Rew: 1.00, Loss: 0.0445, Eps: 0.1000, Mem.size: 1000000
+Ep: 6990, Dur: 180, Step: 1512866, Rew: 1.00, Loss: 0.0548, Eps: 0.1000, Mem.size: 1000000
+Ep: 7000, Dur: 125, Step: 1514409, Rew: 0.00, Loss: 0.0406, Eps: 0.1000, Mem.size: 1000000
+Ep: 7010, Dur: 155, Step: 1515771, Rew: 1.00, Loss: 0.0325, Eps: 0.1000, Mem.size: 1000000
+Ep: 7020, Dur: 145, Step: 1517281, Rew: 0.00, Loss: 0.0166, Eps: 0.1000, Mem.size: 1000000
+Ep: 7030, Dur: 208, Step: 1518782, Rew: 2.00, Loss: 0.0599, Eps: 0.1000, Mem.size: 1000000
+Saved weights to colaboratory_models/colab_models/BreakoutDeterministic-v42018-05-29 13:45:25.608530.h5
+Ep: 7040, Dur: 172, Step: 1520232, Rew: 1.00, Loss: 0.0433, Eps: 0.1000, Mem.size: 1000000
+Ep: 7050, Dur: 154, Step: 1521696, Rew: 1.00, Loss: 0.0437, Eps: 0.1000, Mem.size: 1000000
+Ep: 7060, Dur: 153, Step: 1523211, Rew: 1.00, Loss: 0.0446, Eps: 0.1000, Mem.size: 1000000
+Ep: 7070, Dur: 192, Step: 1524696, Rew: 1.00, Loss: 0.0509, Eps: 0.1000, Mem.size: 1000000
+Ep: 7080, Dur: 210, Step: 1526119, Rew: 2.00, Loss: 0.0407, Eps: 0.1000, Mem.size: 1000000
+Ep: 7090, Dur: 154, Step: 1527596, Rew: 1.00, Loss: 0.0321, Eps: 0.1000, Mem.size: 1000000
+Ep: 7100, Dur: 168, Step: 1529040, Rew: 1.00, Loss: 0.0522, Eps: 0.1000, Mem.size: 1000000
+Updated target network!
+Saved weights to colaboratory_models/colab_models/BreakoutDeterministic-v42018-05-29 13:45:25.608530.h5
+Ep: 7110, Dur: 156, Step: 1530909, Rew: 1.00, Loss: 0.0546, Eps: 0.1000, Mem.size: 1000000
+Ep: 7120, Dur: 311, Step: 1533917, Rew: 3.00, Loss: 0.0562, Eps: 0.1000, Mem.size: 1000000
+Ep: 7130, Dur: 339, Step: 1536547, Rew: 1.00, Loss: 0.0863, Eps: 0.1000, Mem.size: 1000000
+Ep: 7140, Dur: 181, Step: 1539552, Rew: 1.00, Loss: 0.0668, Eps: 0.1000, Mem.size: 1000000
+Saved weights to colaboratory_models/colab_models/BreakoutDeterministic-v42018-05-29 13:45:25.608530.h5
+Ep: 7150, Dur: 140, Step: 1541791, Rew: 0.00, Loss: 0.0374, Eps: 0.1000, Mem.size: 1000000
+Ep: 7160, Dur: 244, Step: 1544936, Rew: 1.00, Loss: 0.0834, Eps: 0.1000, Mem.size: 1000000
+Ep: 7170, Dur: 348, Step: 1548399, Rew: 1.00, Loss: 0.0888, Eps: 0.1000, Mem.size: 1000000
+Saved weights to colaboratory_models/colab_models/BreakoutDeterministic-v42018-05-29 13:45:25.608530.h5
+Ep: 7180, Dur: 298, Step: 1551615, Rew: 1.00, Loss: 0.0689, Eps: 0.1000, Mem.size: 1000000
+Ep: 7190, Dur: 237, Step: 1554418, Rew: 1.00, Loss: 0.0578, Eps: 0.1000, Mem.size: 1000000
+Ep: 7200, Dur: 230, Step: 1557055, Rew: 1.00, Loss: 0.0726, Eps: 0.1000, Mem.size: 1000000
+Ep: 7210, Dur: 232, Step: 1559649, Rew: 1.00, Loss: 0.0569, Eps: 0.1000, Mem.size: 1000000
+Saved weights to colaboratory_models/colab_models/BreakoutDeterministic-v42018-05-29 13:45:25.608530.h5
+Ep: 7220, Dur: 348, Step: 1562795, Rew: 1.00, Loss: 0.1188, Eps: 0.1000, Mem.size: 1000000
+Ep: 7230, Dur: 266, Step: 1565565, Rew: 1.00, Loss: 0.0769, Eps: 0.1000, Mem.size: 1000000
+Ep: 7240, Dur: 148, Step: 1568200, Rew: 0.00, Loss: 0.0249, Eps: 0.1000, Mem.size: 1000000
+Updated target network!
+Saved weights to colaboratory_models/colab_models/BreakoutDeterministic-v42018-05-29 13:45:25.608530.h5
+Ep: 7250, Dur: 406, Step: 1571313, Rew: 2.00, Loss: 0.0914, Eps: 0.1000, Mem.size: 1000000
+Ep: 7260, Dur: 260, Step: 1574105, Rew: 2.00, Loss: 0.0515, Eps: 0.1000, Mem.size: 1000000
+Ep: 7270, Dur: 203, Step: 1576986, Rew: 0.00, Loss: 0.0464, Eps: 0.1000, Mem.size: 1000000
+Saved weights to colaboratory_models/colab_models/BreakoutDeterministic-v42018-05-29 13:45:25.608530.h5
+Ep: 7280, Dur: 346, Step: 1580276, Rew: 2.00, Loss: 0.0927, Eps: 0.1000, Mem.size: 1000000
+Ep: 7290, Dur: 306, Step: 1583041, Rew: 2.00, Loss: 0.0804, Eps: 0.1000, Mem.size: 1000000
+Ep: 7300, Dur: 241, Step: 1586158, Rew: 2.00, Loss: 0.0662, Eps: 0.1000, Mem.size: 1000000
+Ep: 7310, Dur: 297, Step: 1588965, Rew: 2.00, Loss: 0.0580, Eps: 0.1000, Mem.size: 1000000
+Saved weights to colaboratory_models/colab_models/BreakoutDeterministic-v42018-05-29 13:45:25.608530.h5
+Ep: 7320, Dur: 396, Step: 1591810, Rew: 2.00, Loss: 0.1086, Eps: 0.1000, Mem.size: 1000000
+Ep: 7330, Dur: 414, Step: 1594884, Rew: 2.00, Loss: 0.1288, Eps: 0.1000, Mem.size: 1000000
+Ep: 7340, Dur: 274, Step: 1597769, Rew: 2.00, Loss: 0.0935, Eps: 0.1000, Mem.size: 1000000
+Saved weights to colaboratory_models/colab_models/BreakoutDeterministic-v42018-05-29 13:45:25.608530.h5
+Ep: 7350, Dur: 419, Step: 1601353, Rew: 2.00, Loss: 0.1116, Eps: 0.1000, Mem.size: 1000000
+Ep: 7360, Dur: 199, Step: 1604590, Rew: 0.00, Loss: 0.0594, Eps: 0.1000, Mem.size: 1000000
+Ep: 7370, Dur: 367, Step: 1607981, Rew: 2.00, Loss: 0.1118, Eps: 0.1000, Mem.size: 1000000
+Updated target network!
+Saved weights to colaboratory_models/colab_models/BreakoutDeterministic-v42018-05-29 13:45:25.608530.h5
+Ep: 7380, Dur: 381, Step: 1610651, Rew: 3.00, Loss: 0.1127, Eps: 0.1000, Mem.size: 1000000
+Ep: 7390, Dur: 319, Step: 1613439, Rew: 2.00, Loss: 0.0992, Eps: 0.1000, Mem.size: 1000000
+Ep: 7400, Dur: 311, Step: 1616186, Rew: 2.00, Loss: 0.0898, Eps: 0.1000, Mem.size: 1000000
+Ep: 7410, Dur: 342, Step: 1618945, Rew: 3.00, Loss: 0.1158, Eps: 0.1000, Mem.size: 1000000
+Saved weights to colaboratory_models/colab_models/BreakoutDeterministic-v42018-05-29 13:45:25.608530.h5
+Ep: 7420, Dur: 275, Step: 1621487, Rew: 3.00, Loss: 0.0933, Eps: 0.1000, Mem.size: 1000000
+Ep: 7430, Dur: 374, Step: 1624429, Rew: 1.00, Loss: 0.1166, Eps: 0.1000, Mem.size: 1000000
+Ep: 7440, Dur: 245, Step: 1627304, Rew: 2.00, Loss: 0.0664, Eps: 0.1000, Mem.size: 1000000
+Saved weights to colaboratory_models/colab_models/BreakoutDeterministic-v42018-05-29 13:45:25.608530.h5
+Ep: 7450, Dur: 242, Step: 1630266, Rew: 2.00, Loss: 0.0737, Eps: 0.1000, Mem.size: 1000000
+Ep: 7460, Dur: 189, Step: 1632682, Rew: 1.00, Loss: 0.0461, Eps: 0.1000, Mem.size: 1000000
+Ep: 7470, Dur: 416, Step: 1635571, Rew: 5.00, Loss: 0.1166, Eps: 0.1000, Mem.size: 1000000
+Ep: 7480, Dur: 322, Step: 1637869, Rew: 3.00, Loss: 0.0989, Eps: 0.1000, Mem.size: 1000000
+Saved weights to colaboratory_models/colab_models/BreakoutDeterministic-v42018-05-29 13:45:25.608530.h5
+Ep: 7490, Dur: 242, Step: 1640364, Rew: 2.00, Loss: 0.0599, Eps: 0.1000, Mem.size: 1000000
+Ep: 7500, Dur: 381, Step: 1642848, Rew: 3.00, Loss: 0.0934, Eps: 0.1000, Mem.size: 1000000
+Ep: 7510, Dur: 369, Step: 1645585, Rew: 3.00, Loss: 0.1144, Eps: 0.1000, Mem.size: 1000000
+Ep: 7520, Dur: 221, Step: 1648107, Rew: 1.00, Loss: 0.0870, Eps: 0.1000, Mem.size: 1000000
+Updated target network!
+Saved weights to colaboratory_models/colab_models/BreakoutDeterministic-v42018-05-29 13:45:25.608530.h5
+Ep: 7530, Dur: 705, Step: 1651827, Rew: 7.00, Loss: 0.1531, Eps: 0.1000, Mem.size: 1000000
+Ep: 7540, Dur: 468, Step: 1656358, Rew: 8.00, Loss: 0.1565, Eps: 0.1000, Mem.size: 1000000
+Saved weights to colaboratory_models/colab_models/BreakoutDeterministic-v42018-05-29 13:45:25.608530.h5
+Ep: 7550, Dur: 419, Step: 1660967, Rew: 8.00, Loss: 0.1433, Eps: 0.1000, Mem.size: 1000000
+Ep: 7560, Dur: 387, Step: 1665272, Rew: 3.00, Loss: 0.1008, Eps: 0.1000, Mem.size: 1000000
+Ep: 7570, Dur: 479, Step: 1669791, Rew: 8.00, Loss: 0.1629, Eps: 0.1000, Mem.size: 1000000
+Saved weights to colaboratory_models/colab_models/BreakoutDeterministic-v42018-05-29 13:45:25.608530.h5
+Ep: 7580, Dur: 435, Step: 1674491, Rew: 5.00, Loss: 0.0940, Eps: 0.1000, Mem.size: 1000000
+Ep: 7590, Dur: 448, Step: 1679048, Rew: 8.00, Loss: 0.0883, Eps: 0.1000, Mem.size: 1000000
+Saved weights to colaboratory_models/colab_models/BreakoutDeterministic-v42018-05-29 13:45:25.608530.h5
+Ep: 7600, Dur: 655, Step: 1683580, Rew: 7.00, Loss: 0.2317, Eps: 0.1000, Mem.size: 1000000
+Ep: 7610, Dur: 475, Step: 1688707, Rew: 4.00, Loss: 0.1410, Eps: 0.1000, Mem.size: 1000000
+Updated target network!
+Saved weights to colaboratory_models/colab_models/BreakoutDeterministic-v42018-05-29 13:45:25.608530.h5
+Ep: 7620, Dur: 392, Step: 1692498, Rew: 1.00, Loss: 0.1191, Eps: 0.1000, Mem.size: 1000000
+Ep: 7630, Dur: 263, Step: 1695248, Rew: 0.00, Loss: 0.0591, Eps: 0.1000, Mem.size: 1000000
+Ep: 7640, Dur: 219, Step: 1698235, Rew: 0.00, Loss: 0.0526, Eps: 0.1000, Mem.size: 1000000
+Saved weights to colaboratory_models/colab_models/BreakoutDeterministic-v42018-05-29 13:45:25.608530.h5
+Ep: 7650, Dur: 247, Step: 1701173, Rew: 0.00, Loss: 0.0798, Eps: 0.1000, Mem.size: 1000000
+Ep: 7660, Dur: 338, Step: 1704190, Rew: 1.00, Loss: 0.1084, Eps: 0.1000, Mem.size: 1000000
+Ep: 7670, Dur: 284, Step: 1707652, Rew: 0.00, Loss: 0.0964, Eps: 0.1000, Mem.size: 1000000
+Saved weights to colaboratory_models/colab_models/BreakoutDeterministic-v42018-05-29 13:45:25.608530.h5
+Ep: 7680, Dur: 698, Step: 1710834, Rew: 2.00, Loss: 0.2065, Eps: 0.1000, Mem.size: 1000000
+Ep: 7690, Dur: 287, Step: 1713875, Rew: 2.00, Loss: 0.0545, Eps: 0.1000, Mem.size: 1000000
+Ep: 7700, Dur: 297, Step: 1716723, Rew: 2.00, Loss: 0.0813, Eps: 0.1000, Mem.size: 1000000
+Ep: 7710, Dur: 295, Step: 1719913, Rew: 1.00, Loss: 0.1156, Eps: 0.1000, Mem.size: 1000000
+Saved weights to colaboratory_models/colab_models/BreakoutDeterministic-v42018-05-29 13:45:25.608530.h5
+Ep: 7720, Dur: 455, Step: 1722799, Rew: 3.00, Loss: 0.1668, Eps: 0.1000, Mem.size: 1000000
+Ep: 7730, Dur: 179, Step: 1725607, Rew: 0.00, Loss: 0.0496, Eps: 0.1000, Mem.size: 1000000
+Ep: 7740, Dur: 341, Step: 1728298, Rew: 1.00, Loss: 0.0950, Eps: 0.1000, Mem.size: 1000000
+Updated target network!
+Saved weights to colaboratory_models/colab_models/BreakoutDeterministic-v42018-05-29 13:45:25.608530.h5
+Ep: 7750, Dur: 414, Step: 1731930, Rew: 5.00, Loss: 0.1133, Eps: 0.1000, Mem.size: 1000000
+Ep: 7760, Dur: 324, Step: 1736168, Rew: 3.00, Loss: 0.0750, Eps: 0.1000, Mem.size: 1000000
+Saved weights to colaboratory_models/colab_models/BreakoutDeterministic-v42018-05-29 13:45:25.608530.h5
+Ep: 7770, Dur: 347, Step: 1740138, Rew: 3.00, Loss: 0.0785, Eps: 0.1000, Mem.size: 1000000
+Ep: 7780, Dur: 381, Step: 1744338, Rew: 4.00, Loss: 0.1219, Eps: 0.1000, Mem.size: 1000000
+Ep: 7790, Dur: 398, Step: 1748619, Rew: 5.00, Loss: 0.1070, Eps: 0.1000, Mem.size: 1000000
+Saved weights to colaboratory_models/colab_models/BreakoutDeterministic-v42018-05-29 13:45:25.608530.h5
+Ep: 7800, Dur: 389, Step: 1752873, Rew: 3.00, Loss: 0.1372, Eps: 0.1000, Mem.size: 1000000
+Ep: 7810, Dur: 463, Step: 1757244, Rew: 12.00, Loss: 0.1026, Eps: 0.1000, Mem.size: 1000000
+Saved weights to colaboratory_models/colab_models/BreakoutDeterministic-v42018-05-29 13:45:25.608530.h5
+Ep: 7820, Dur: 334, Step: 1760890, Rew: 2.00, Loss: 0.1123, Eps: 0.1000, Mem.size: 1000000
+Ep: 7830, Dur: 413, Step: 1764161, Rew: 3.00, Loss: 0.1350, Eps: 0.1000, Mem.size: 1000000
+Ep: 7840, Dur: 289, Step: 1768518, Rew: 3.00, Loss: 0.0643, Eps: 0.1000, Mem.size: 1000000
+Updated target network!
+Saved weights to colaboratory_models/colab_models/BreakoutDeterministic-v42018-05-29 13:45:25.608530.h5
+Ep: 7850, Dur: 228, Step: 1771855, Rew: 1.00, Loss: 0.0634, Eps: 0.1000, Mem.size: 1000000
+Ep: 7860, Dur: 202, Step: 1773956, Rew: 1.00, Loss: 0.0608, Eps: 0.1000, Mem.size: 1000000
+Ep: 7870, Dur: 231, Step: 1776860, Rew: 1.00, Loss: 0.0577, Eps: 0.1000, Mem.size: 1000000
+Ep: 7880, Dur: 423, Step: 1779574, Rew: 4.00, Loss: 0.1154, Eps: 0.1000, Mem.size: 1000000
+Saved weights to colaboratory_models/colab_models/BreakoutDeterministic-v42018-05-29 13:45:25.608530.h5
+Ep: 7890, Dur: 232, Step: 1782350, Rew: 1.00, Loss: 0.0645, Eps: 0.1000, Mem.size: 1000000
+Ep: 7900, Dur: 633, Step: 1785436, Rew: 8.00, Loss: 0.1676, Eps: 0.1000, Mem.size: 1000000
+Ep: 7910, Dur: 231, Step: 1787838, Rew: 1.00, Loss: 0.0578, Eps: 0.1000, Mem.size: 1000000
+Saved weights to colaboratory_models/colab_models/BreakoutDeterministic-v42018-05-29 13:45:25.608530.h5
+Ep: 7920, Dur: 398, Step: 1790149, Rew: 3.00, Loss: 0.0938, Eps: 0.1000, Mem.size: 1000000
+Ep: 7930, Dur: 360, Step: 1792847, Rew: 3.00, Loss: 0.1403, Eps: 0.1000, Mem.size: 1000000
+Ep: 7940, Dur: 191, Step: 1795710, Rew: 1.00, Loss: 0.0558, Eps: 0.1000, Mem.size: 1000000
+Ep: 7950, Dur: 230, Step: 1798145, Rew: 1.00, Loss: 0.0804, Eps: 0.1000, Mem.size: 1000000
+Saved weights to colaboratory_models/colab_models/BreakoutDeterministic-v42018-05-29 13:45:25.608530.h5
+Ep: 7960, Dur: 216, Step: 1800383, Rew: 1.00, Loss: 0.0562, Eps: 0.1000, Mem.size: 1000000
+Ep: 7970, Dur: 193, Step: 1802799, Rew: 1.00, Loss: 0.0359, Eps: 0.1000, Mem.size: 1000000
+Ep: 7980, Dur: 365, Step: 1805515, Rew: 1.00, Loss: 0.0897, Eps: 0.1000, Mem.size: 1000000
+Ep: 7990, Dur: 244, Step: 1807866, Rew: 3.00, Loss: 0.0696, Eps: 0.1000, Mem.size: 1000000
+Updated target network!
+Saved weights to colaboratory_models/colab_models/BreakoutDeterministic-v42018-05-29 13:45:25.608530.h5
+Ep: 8000, Dur: 460, Step: 1810621, Rew: 8.00, Loss: 0.1704, Eps: 0.1000, Mem.size: 1000000
+Ep: 8010, Dur: 578, Step: 1815116, Rew: 9.00, Loss: 0.1580, Eps: 0.1000, Mem.size: 1000000
+Ep: 8020, Dur: 493, Step: 1819435, Rew: 9.00, Loss: 0.1669, Eps: 0.1000, Mem.size: 1000000
+Saved weights to colaboratory_models/colab_models/BreakoutDeterministic-v42018-05-29 13:45:25.608530.h5
+Ep: 8030, Dur: 384, Step: 1823577, Rew: 9.00, Loss: 0.1251, Eps: 0.1000, Mem.size: 1000000
+Ep: 8040, Dur: 411, Step: 1827726, Rew: 7.00, Loss: 0.0893, Eps: 0.1000, Mem.size: 1000000
+Saved weights to colaboratory_models/colab_models/BreakoutDeterministic-v42018-05-29 13:45:25.608530.h5
+Ep: 8050, Dur: 410, Step: 1831881, Rew: 8.00, Loss: 0.1255, Eps: 0.1000, Mem.size: 1000000
+Ep: 8060, Dur: 483, Step: 1837035, Rew: 9.00, Loss: 0.1333, Eps: 0.1000, Mem.size: 1000000
+Saved weights to colaboratory_models/colab_models/BreakoutDeterministic-v42018-05-29 13:45:25.608530.h5
+Ep: 8070, Dur: 333, Step: 1841151, Rew: 7.00, Loss: 0.0871, Eps: 0.1000, Mem.size: 1000000
+Ep: 8080, Dur: 290, Step: 1845129, Rew: 7.00, Loss: 0.0736, Eps: 0.1000, Mem.size: 1000000
+Ep: 8090, Dur: 328, Step: 1849165, Rew: 3.00, Loss: 0.0754, Eps: 0.1000, Mem.size: 1000000
+Updated target network!
+Saved weights to colaboratory_models/colab_models/BreakoutDeterministic-v42018-05-29 13:45:25.608530.h5
+Ep: 8100, Dur: 172, Step: 1852020, Rew: 1.00, Loss: 0.0380, Eps: 0.1000, Mem.size: 1000000
+Ep: 8110, Dur: 183, Step: 1854251, Rew: 1.00, Loss: 0.0536, Eps: 0.1000, Mem.size: 1000000
+Ep: 8120, Dur: 293, Step: 1856369, Rew: 3.00, Loss: 0.0572, Eps: 0.1000, Mem.size: 1000000
+Ep: 8130, Dur: 322, Step: 1858746, Rew: 2.00, Loss: 0.0830, Eps: 0.1000, Mem.size: 1000000
+Saved weights to colaboratory_models/colab_models/BreakoutDeterministic-v42018-05-29 13:45:25.608530.h5
+Ep: 8140, Dur: 282, Step: 1860733, Rew: 4.00, Loss: 0.0777, Eps: 0.1000, Mem.size: 1000000
+Ep: 8150, Dur: 171, Step: 1862995, Rew: 1.00, Loss: 0.0421, Eps: 0.1000, Mem.size: 1000000
+Ep: 8160, Dur: 187, Step: 1864742, Rew: 1.00, Loss: 0.0452, Eps: 0.1000, Mem.size: 1000000
+Ep: 8170, Dur: 183, Step: 1867001, Rew: 1.00, Loss: 0.0631, Eps: 0.1000, Mem.size: 1000000
+Ep: 8180, Dur: 293, Step: 1869266, Rew: 2.00, Loss: 0.0621, Eps: 0.1000, Mem.size: 1000000
+Saved weights to colaboratory_models/colab_models/BreakoutDeterministic-v42018-05-29 13:45:25.608530.h5
+Ep: 8190, Dur: 259, Step: 1871500, Rew: 3.00, Loss: 0.0730, Eps: 0.1000, Mem.size: 1000000
+Ep: 8200, Dur: 201, Step: 1873776, Rew: 1.00, Loss: 0.0384, Eps: 0.1000, Mem.size: 1000000
+Ep: 8210, Dur: 423, Step: 1875860, Rew: 2.00, Loss: 0.1100, Eps: 0.1000, Mem.size: 1000000
+Ep: 8220, Dur: 277, Step: 1878033, Rew: 4.00, Loss: 0.0613, Eps: 0.1000, Mem.size: 1000000
+Saved weights to colaboratory_models/colab_models/BreakoutDeterministic-v42018-05-29 13:45:25.608530.h5
+Ep: 8230, Dur: 280, Step: 1880903, Rew: 2.00, Loss: 0.0591, Eps: 0.1000, Mem.size: 1000000
+Ep: 8240, Dur: 347, Step: 1882818, Rew: 2.00, Loss: 0.0749, Eps: 0.1000, Mem.size: 1000000
+Ep: 8250, Dur: 162, Step: 1885146, Rew: 1.00, Loss: 0.0416, Eps: 0.1000, Mem.size: 1000000
+Ep: 8260, Dur: 208, Step: 1887232, Rew: 1.00, Loss: 0.0353, Eps: 0.1000, Mem.size: 1000000
+Ep: 8270, Dur: 174, Step: 1889402, Rew: 1.00, Loss: 0.0710, Eps: 0.1000, Mem.size: 1000000
+Updated target network!
+Saved weights to colaboratory_models/colab_models/BreakoutDeterministic-v42018-05-29 13:45:25.608530.h5
+Ep: 8280, Dur: 225, Step: 1892201, Rew: 2.00, Loss: 0.0779, Eps: 0.1000, Mem.size: 1000000
+Ep: 8290, Dur: 212, Step: 1895957, Rew: 2.00, Loss: 0.0530, Eps: 0.1000, Mem.size: 1000000
+Ep: 8300, Dur: 462, Step: 1899147, Rew: 2.00, Loss: 0.1688, Eps: 0.1000, Mem.size: 1000000
+Saved weights to colaboratory_models/colab_models/BreakoutDeterministic-v42018-05-29 13:45:25.608530.h5
+Ep: 8310, Dur: 258, Step: 1902163, Rew: 3.00, Loss: 0.0857, Eps: 0.1000, Mem.size: 1000000
+Ep: 8320, Dur: 270, Step: 1904999, Rew: 4.00, Loss: 0.0459, Eps: 0.1000, Mem.size: 1000000
+Ep: 8330, Dur: 443, Step: 1907983, Rew: 3.00, Loss: 0.1094, Eps: 0.1000, Mem.size: 1000000
+Saved weights to colaboratory_models/colab_models/BreakoutDeterministic-v42018-05-29 13:45:25.608530.h5
+Ep: 8340, Dur: 210, Step: 1910866, Rew: 2.00, Loss: 0.0654, Eps: 0.1000, Mem.size: 1000000
+Ep: 8350, Dur: 307, Step: 1913774, Rew: 4.00, Loss: 0.0695, Eps: 0.1000, Mem.size: 1000000
+Ep: 8360, Dur: 157, Step: 1917002, Rew: 1.00, Loss: 0.0337, Eps: 0.1000, Mem.size: 1000000
+Ep: 8370, Dur: 272, Step: 1919814, Rew: 3.00, Loss: 0.0709, Eps: 0.1000, Mem.size: 1000000
+Saved weights to colaboratory_models/colab_models/BreakoutDeterministic-v42018-05-29 13:45:25.608530.h5
+Ep: 8380, Dur: 395, Step: 1922961, Rew: 3.00, Loss: 0.1295, Eps: 0.1000, Mem.size: 1000000
+Ep: 8390, Dur: 254, Step: 1925806, Rew: 3.00, Loss: 0.0630, Eps: 0.1000, Mem.size: 1000000
+Ep: 8400, Dur: 364, Step: 1929008, Rew: 4.00, Loss: 0.0898, Eps: 0.1000, Mem.size: 1000000
+Updated target network!
+Saved weights to colaboratory_models/colab_models/BreakoutDeterministic-v42018-05-29 13:45:25.608530.h5
+Ep: 8410, Dur: 542, Step: 1932926, Rew: 7.00, Loss: 0.1640, Eps: 0.1000, Mem.size: 1000000
+Ep: 8420, Dur: 445, Step: 1937110, Rew: 7.00, Loss: 0.1396, Eps: 0.1000, Mem.size: 1000000
+Saved weights to colaboratory_models/colab_models/BreakoutDeterministic-v42018-05-29 13:45:25.608530.h5
+Ep: 8430, Dur: 372, Step: 1941243, Rew: 11.00, Loss: 0.0892, Eps: 0.1000, Mem.size: 1000000
+Ep: 8440, Dur: 429, Step: 1945318, Rew: 7.00, Loss: 0.1179, Eps: 0.1000, Mem.size: 1000000
+Ep: 8450, Dur: 428, Step: 1949499, Rew: 7.00, Loss: 0.1267, Eps: 0.1000, Mem.size: 1000000
+Saved weights to colaboratory_models/colab_models/BreakoutDeterministic-v42018-05-29 13:45:25.608530.h5
+Ep: 8460, Dur: 458, Step: 1953542, Rew: 7.00, Loss: 0.1661, Eps: 0.1000, Mem.size: 1000000
+Ep: 8470, Dur: 490, Step: 1957777, Rew: 7.00, Loss: 0.1393, Eps: 0.1000, Mem.size: 1000000
+Saved weights to colaboratory_models/colab_models/BreakoutDeterministic-v42018-05-29 13:45:25.608530.h5
+Ep: 8480, Dur: 339, Step: 1961689, Rew: 7.00, Loss: 0.1020, Eps: 0.1000, Mem.size: 1000000
+Ep: 8490, Dur: 424, Step: 1965877, Rew: 7.00, Loss: 0.1569, Eps: 0.1000, Mem.size: 1000000
+Updated target network!
+Saved weights to colaboratory_models/colab_models/BreakoutDeterministic-v42018-05-29 13:45:25.608530.h5
+Ep: 8500, Dur: 166, Step: 1970306, Rew: 1.00, Loss: 0.0431, Eps: 0.1000, Mem.size: 1000000
+Ep: 8510, Dur: 273, Step: 1972603, Rew: 4.00, Loss: 0.0653, Eps: 0.1000, Mem.size: 1000000
+Ep: 8520, Dur: 199, Step: 1975267, Rew: 0.00, Loss: 0.0970, Eps: 0.1000, Mem.size: 1000000
+Ep: 8530, Dur: 284, Step: 1977999, Rew: 3.00, Loss: 0.0898, Eps: 0.1000, Mem.size: 1000000
+Saved weights to colaboratory_models/colab_models/BreakoutDeterministic-v42018-05-29 13:45:25.608530.h5
+Ep: 8540, Dur: 337, Step: 1980329, Rew: 2.00, Loss: 0.1350, Eps: 0.1000, Mem.size: 1000000
+Ep: 8550, Dur: 570, Step: 1983430, Rew: 3.00, Loss: 0.2182, Eps: 0.1000, Mem.size: 1000000
+Ep: 8560, Dur: 425, Step: 1986674, Rew: 3.00, Loss: 0.1112, Eps: 0.1000, Mem.size: 1000000
+Ep: 8570, Dur: 168, Step: 1988899, Rew: 1.00, Loss: 0.0635, Eps: 0.1000, Mem.size: 1000000
+Saved weights to colaboratory_models/colab_models/BreakoutDeterministic-v42018-05-29 13:45:25.608530.h5
+Ep: 8580, Dur: 375, Step: 1991720, Rew: 2.00, Loss: 0.1301, Eps: 0.1000, Mem.size: 1000000
+Ep: 8590, Dur: 138, Step: 1994449, Rew: 0.00, Loss: 0.0405, Eps: 0.1000, Mem.size: 1000000
+Ep: 8600, Dur: 287, Step: 1997051, Rew: 2.00, Loss: 0.0790, Eps: 0.1000, Mem.size: 1000000
+Saved weights to colaboratory_models/colab_models/BreakoutDeterministic-v42018-05-29 13:45:25.608530.h5
+Ep: 8610, Dur: 177, Step: 2000165, Rew: 1.00, Loss: 0.0419, Eps: 0.1000, Mem.size: 1000000
+Ep: 8620, Dur: 245, Step: 2002662, Rew: 2.00, Loss: 0.0603, Eps: 0.1000, Mem.size: 1000000
+Ep: 8630, Dur: 252, Step: 2005124, Rew: 3.00, Loss: 0.0666, Eps: 0.1000, Mem.size: 1000000
+Ep: 8640, Dur: 386, Step: 2007573, Rew: 9.00, Loss: 0.1328, Eps: 0.1000, Mem.size: 1000000
+Updated target network!
+Saved weights to colaboratory_models/colab_models/BreakoutDeterministic-v42018-05-29 13:45:25.608530.h5
+Ep: 8650, Dur: 379, Step: 2010449, Rew: 9.00, Loss: 0.0884, Eps: 0.1000, Mem.size: 1000000
+Ep: 8660, Dur: 362, Step: 2014550, Rew: 7.00, Loss: 0.0758, Eps: 0.1000, Mem.size: 1000000
+Ep: 8670, Dur: 475, Step: 2018219, Rew: 9.00, Loss: 0.1229, Eps: 0.1000, Mem.size: 1000000
+Saved weights to colaboratory_models/colab_models/BreakoutDeterministic-v42018-05-29 13:45:25.608530.h5
+Ep: 8680, Dur: 367, Step: 2022158, Rew: 11.00, Loss: 0.1159, Eps: 0.1000, Mem.size: 1000000
+Ep: 8690, Dur: 433, Step: 2026827, Rew: 11.00, Loss: 0.2143, Eps: 0.1000, Mem.size: 1000000
+Saved weights to colaboratory_models/colab_models/BreakoutDeterministic-v42018-05-29 13:45:25.608530.h5
+Ep: 8700, Dur: 404, Step: 2030667, Rew: 5.00, Loss: 0.0758, Eps: 0.1000, Mem.size: 1000000
+Ep: 8710, Dur: 442, Step: 2035143, Rew: 11.00, Loss: 0.1958, Eps: 0.1000, Mem.size: 1000000
+Ep: 8720, Dur: 322, Step: 2039250, Rew: 7.00, Loss: 0.0867, Eps: 0.1000, Mem.size: 1000000
+Saved weights to colaboratory_models/colab_models/BreakoutDeterministic-v42018-05-29 13:45:25.608530.h5
+Ep: 8730, Dur: 423, Step: 2043665, Rew: 7.00, Loss: 0.1304, Eps: 0.1000, Mem.size: 1000000
+Ep: 8740, Dur: 371, Step: 2048242, Rew: 12.00, Loss: 0.1148, Eps: 0.1000, Mem.size: 1000000
+Updated target network!
+Saved weights to colaboratory_models/colab_models/BreakoutDeterministic-v42018-05-29 13:45:25.608530.h5
+Ep: 8750, Dur: 500, Step: 2052373, Rew: 8.00, Loss: 0.1869, Eps: 0.1000, Mem.size: 1000000
+Ep: 8760, Dur: 437, Step: 2057365, Rew: 9.00, Loss: 0.1457, Eps: 0.1000, Mem.size: 1000000
+Saved weights to colaboratory_models/colab_models/BreakoutDeterministic-v42018-05-29 13:45:25.608530.h5
+Ep: 8770, Dur: 510, Step: 2062122, Rew: 8.00, Loss: 0.2592, Eps: 0.1000, Mem.size: 1000000
+Ep: 8780, Dur: 497, Step: 2066629, Rew: 10.00, Loss: 0.1526, Eps: 0.1000, Mem.size: 1000000
+Saved weights to colaboratory_models/colab_models/BreakoutDeterministic-v42018-05-29 13:45:25.608530.h5
+Ep: 8790, Dur: 607, Step: 2071446, Rew: 4.00, Loss: 0.2905, Eps: 0.1000, Mem.size: 1000000
+Ep: 8800, Dur: 469, Step: 2075711, Rew: 8.00, Loss: 0.1254, Eps: 0.1000, Mem.size: 1000000
+Saved weights to colaboratory_models/colab_models/BreakoutDeterministic-v42018-05-29 13:45:25.608530.h5
+Ep: 8810, Dur: 368, Step: 2080153, Rew: 5.00, Loss: 0.1201, Eps: 0.1000, Mem.size: 1000000
+Ep: 8820, Dur: 182, Step: 2084718, Rew: 1.00, Loss: 0.1479, Eps: 0.1000, Mem.size: 1000000
+Ep: 8830, Dur: 457, Step: 2089452, Rew: 8.00, Loss: 0.1198, Eps: 0.1000, Mem.size: 1000000
+Updated target network!
+Saved weights to colaboratory_models/colab_models/BreakoutDeterministic-v42018-05-29 13:45:25.608530.h5
+Ep: 8840, Dur: 629, Step: 2094767, Rew: 7.00, Loss: 0.2532, Eps: 0.1000, Mem.size: 1000000
+Ep: 8850, Dur: 525, Step: 2099701, Rew: 8.00, Loss: 0.1449, Eps: 0.1000, Mem.size: 1000000
+Saved weights to colaboratory_models/colab_models/BreakoutDeterministic-v42018-05-29 13:45:25.608530.h5
+Ep: 8860, Dur: 659, Step: 2104889, Rew: 7.00, Loss: 0.2291, Eps: 0.1000, Mem.size: 1000000
+Ep: 8870, Dur: 538, Step: 2109934, Rew: 8.00, Loss: 0.1731, Eps: 0.1000, Mem.size: 1000000
+Saved weights to colaboratory_models/colab_models/BreakoutDeterministic-v42018-05-29 13:45:25.608530.h5
+Ep: 8880, Dur: 605, Step: 2114688, Rew: 8.00, Loss: 0.2240, Eps: 0.1000, Mem.size: 1000000
+Ep: 8890, Dur: 553, Step: 2119801, Rew: 7.00, Loss: 0.1661, Eps: 0.1000, Mem.size: 1000000
+Saved weights to colaboratory_models/colab_models/BreakoutDeterministic-v42018-05-29 13:45:25.608530.h5
+Ep: 8900, Dur: 755, Step: 2124881, Rew: 9.00, Loss: 0.2109, Eps: 0.1000, Mem.size: 1000000
+Ep: 8910, Dur: 630, Step: 2129918, Rew: 10.00, Loss: 0.2312, Eps: 0.1000, Mem.size: 1000000
+Updated target network!
+Saved weights to colaboratory_models/colab_models/BreakoutDeterministic-v42018-05-29 13:45:25.608530.h5
+Ep: 8920, Dur: 309, Step: 2132622, Rew: 0.00, Loss: 0.0721, Eps: 0.1000, Mem.size: 1000000
+Ep: 8930, Dur: 256, Step: 2135414, Rew: 0.00, Loss: 0.0704, Eps: 0.1000, Mem.size: 1000000
+Ep: 8940, Dur: 292, Step: 2138214, Rew: 0.00, Loss: 0.0744, Eps: 0.1000, Mem.size: 1000000
+Saved weights to colaboratory_models/colab_models/BreakoutDeterministic-v42018-05-29 13:45:25.608530.h5
+Ep: 8950, Dur: 311, Step: 2141415, Rew: 0.00, Loss: 0.1989, Eps: 0.1000, Mem.size: 1000000
+Ep: 8960, Dur: 222, Step: 2144396, Rew: 0.00, Loss: 0.1096, Eps: 0.1000, Mem.size: 1000000
+Ep: 8970, Dur: 364, Step: 2147631, Rew: 0.00, Loss: 0.1271, Eps: 0.1000, Mem.size: 1000000
+Saved weights to colaboratory_models/colab_models/BreakoutDeterministic-v42018-05-29 13:45:25.608530.h5
+Ep: 8980, Dur: 192, Step: 2150496, Rew: 0.00, Loss: 0.0518, Eps: 0.1000, Mem.size: 1000000
+Ep: 8990, Dur: 346, Step: 2153208, Rew: 0.00, Loss: 0.1071, Eps: 0.1000, Mem.size: 1000000
+Ep: 9000, Dur: 327, Step: 2156016, Rew: 0.00, Loss: 0.1215, Eps: 0.1000, Mem.size: 1000000
+Ep: 9010, Dur: 263, Step: 2158560, Rew: 0.00, Loss: 0.0725, Eps: 0.1000, Mem.size: 1000000
+Saved weights to colaboratory_models/colab_models/BreakoutDeterministic-v42018-05-29 13:45:25.608530.h5
+Ep: 9020, Dur: 195, Step: 2161417, Rew: 0.00, Loss: 0.0492, Eps: 0.1000, Mem.size: 1000000
+Ep: 9030, Dur: 437, Step: 2164074, Rew: 0.00, Loss: 0.1114, Eps: 0.1000, Mem.size: 1000000
+Ep: 9040, Dur: 375, Step: 2167073, Rew: 2.00, Loss: 0.1383, Eps: 0.1000, Mem.size: 1000000
+Updated target network!
+Saved weights to colaboratory_models/colab_models/BreakoutDeterministic-v42018-05-29 13:45:25.608530.h5
+Ep: 9050, Dur: 475, Step: 2170729, Rew: 3.00, Loss: 0.2164, Eps: 0.1000, Mem.size: 1000000
+Ep: 9060, Dur: 450, Step: 2174865, Rew: 3.00, Loss: 0.1867, Eps: 0.1000, Mem.size: 1000000
+Ep: 9070, Dur: 430, Step: 2178772, Rew: 3.00, Loss: 0.1659, Eps: 0.1000, Mem.size: 1000000
+Saved weights to colaboratory_models/colab_models/BreakoutDeterministic-v42018-05-29 13:45:25.608530.h5
+Ep: 9080, Dur: 409, Step: 2183278, Rew: 8.00, Loss: 0.1420, Eps: 0.1000, Mem.size: 1000000
+Ep: 9090, Dur: 365, Step: 2187084, Rew: 3.00, Loss: 0.0964, Eps: 0.1000, Mem.size: 1000000
+Saved weights to colaboratory_models/colab_models/BreakoutDeterministic-v42018-05-29 13:45:25.608530.h5
+Ep: 9100, Dur: 401, Step: 2191419, Rew: 3.00, Loss: 0.0988, Eps: 0.1000, Mem.size: 1000000
+Ep: 9110, Dur: 415, Step: 2195421, Rew: 8.00, Loss: 0.1365, Eps: 0.1000, Mem.size: 1000000
+Ep: 9120, Dur: 424, Step: 2199890, Rew: 3.00, Loss: 0.1553, Eps: 0.1000, Mem.size: 1000000
+Saved weights to colaboratory_models/colab_models/BreakoutDeterministic-v42018-05-29 13:45:25.608530.h5
+Ep: 9130, Dur: 517, Step: 2204477, Rew: 12.00, Loss: 0.1554, Eps: 0.1000, Mem.size: 1000000
+Ep: 9140, Dur: 457, Step: 2208486, Rew: 3.00, Loss: 0.1133, Eps: 0.1000, Mem.size: 1000000
+Updated target network!
+Saved weights to colaboratory_models/colab_models/BreakoutDeterministic-v42018-05-29 13:45:25.608530.h5
+Ep: 9150, Dur: 501, Step: 2213021, Rew: 11.00, Loss: 0.2653, Eps: 0.1000, Mem.size: 1000000
+Ep: 9160, Dur: 386, Step: 2216607, Rew: 6.00, Loss: 0.1994, Eps: 0.1000, Mem.size: 1000000
+Saved weights to colaboratory_models/colab_models/BreakoutDeterministic-v42018-05-29 13:45:25.608530.h5
+Ep: 9170, Dur: 463, Step: 2220293, Rew: 5.00, Loss: 0.2509, Eps: 0.1000, Mem.size: 1000000
+Ep: 9180, Dur: 349, Step: 2223882, Rew: 4.00, Loss: 0.1264, Eps: 0.1000, Mem.size: 1000000
+Ep: 9190, Dur: 292, Step: 2227678, Rew: 4.00, Loss: 0.1173, Eps: 0.1000, Mem.size: 1000000
+Saved weights to colaboratory_models/colab_models/BreakoutDeterministic-v42018-05-29 13:45:25.608530.h5
+Ep: 9200, Dur: 280, Step: 2231601, Rew: 4.00, Loss: 0.1301, Eps: 0.1000, Mem.size: 1000000
+Ep: 9210, Dur: 433, Step: 2235406, Rew: 11.00, Loss: 0.1377, Eps: 0.1000, Mem.size: 1000000
+Ep: 9220, Dur: 330, Step: 2239220, Rew: 5.00, Loss: 0.1609, Eps: 0.1000, Mem.size: 1000000
+Saved weights to colaboratory_models/colab_models/BreakoutDeterministic-v42018-05-29 13:45:25.608530.h5
+Ep: 9230, Dur: 404, Step: 2242902, Rew: 6.00, Loss: 0.1637, Eps: 0.1000, Mem.size: 1000000
+Ep: 9240, Dur: 362, Step: 2246823, Rew: 11.00, Loss: 0.1050, Eps: 0.1000, Mem.size: 1000000
+Updated target network!
+Saved weights to colaboratory_models/colab_models/BreakoutDeterministic-v42018-05-29 13:45:25.608530.h5
+Ep: 9250, Dur: 335, Step: 2250697, Rew: 5.00, Loss: 0.1281, Eps: 0.1000, Mem.size: 1000000
+Ep: 9260, Dur: 315, Step: 2254500, Rew: 4.00, Loss: 0.1098, Eps: 0.1000, Mem.size: 1000000
+Ep: 9270, Dur: 473, Step: 2258674, Rew: 5.00, Loss: 0.1713, Eps: 0.1000, Mem.size: 1000000
+Saved weights to colaboratory_models/colab_models/BreakoutDeterministic-v42018-05-29 13:45:25.608530.h5
+Ep: 9280, Dur: 423, Step: 2262322, Rew: 7.00, Loss: 0.1736, Eps: 0.1000, Mem.size: 1000000
+Ep: 9290, Dur: 410, Step: 2266247, Rew: 6.00, Loss: 0.1529, Eps: 0.1000, Mem.size: 1000000
+Saved weights to colaboratory_models/colab_models/BreakoutDeterministic-v42018-05-29 13:45:25.608530.h5
+Ep: 9300, Dur: 239, Step: 2270106, Rew: 3.00, Loss: 0.1055, Eps: 0.1000, Mem.size: 1000000
+Ep: 9310, Dur: 502, Step: 2273753, Rew: 12.00, Loss: 0.1715, Eps: 0.1000, Mem.size: 1000000
+Ep: 9320, Dur: 421, Step: 2277453, Rew: 7.00, Loss: 0.2890, Eps: 0.1000, Mem.size: 1000000
+Saved weights to colaboratory_models/colab_models/BreakoutDeterministic-v42018-05-29 13:45:25.608530.h5
+Ep: 9330, Dur: 458, Step: 2281393, Rew: 4.00, Loss: 0.2534, Eps: 0.1000, Mem.size: 1000000
+Ep: 9340, Dur: 353, Step: 2285415, Rew: 5.00, Loss: 0.1779, Eps: 0.1000, Mem.size: 1000000
+Ep: 9350, Dur: 411, Step: 2289030, Rew: 5.00, Loss: 0.2269, Eps: 0.1000, Mem.size: 1000000
+Updated target network!
+Saved weights to colaboratory_models/colab_models/BreakoutDeterministic-v42018-05-29 13:45:25.608530.h5
+Ep: 9360, Dur: 276, Step: 2291892, Rew: 4.00, Loss: 0.0694, Eps: 0.1000, Mem.size: 1000000
+Ep: 9370, Dur: 241, Step: 2293773, Rew: 3.00, Loss: 0.1659, Eps: 0.1000, Mem.size: 1000000
+Ep: 9380, Dur: 294, Step: 2296311, Rew: 4.00, Loss: 0.1043, Eps: 0.1000, Mem.size: 1000000
+Ep: 9390, Dur: 202, Step: 2298067, Rew: 2.00, Loss: 0.0549, Eps: 0.1000, Mem.size: 1000000
+Saved weights to colaboratory_models/colab_models/BreakoutDeterministic-v42018-05-29 13:45:25.608530.h5
+Ep: 9400, Dur: 232, Step: 2300539, Rew: 2.00, Loss: 0.0474, Eps: 0.1000, Mem.size: 1000000
+Ep: 9410, Dur: 152, Step: 2302853, Rew: 0.00, Loss: 0.0548, Eps: 0.1000, Mem.size: 1000000
+Ep: 9420, Dur: 272, Step: 2305069, Rew: 2.00, Loss: 0.1702, Eps: 0.1000, Mem.size: 1000000
+Ep: 9430, Dur: 251, Step: 2307344, Rew: 3.00, Loss: 0.1311, Eps: 0.1000, Mem.size: 1000000
+Ep: 9440, Dur: 325, Step: 2309336, Rew: 7.00, Loss: 0.1003, Eps: 0.1000, Mem.size: 1000000
+Saved weights to colaboratory_models/colab_models/BreakoutDeterministic-v42018-05-29 13:45:25.608530.h5
+Ep: 9450, Dur: 199, Step: 2311917, Rew: 1.00, Loss: 0.0927, Eps: 0.1000, Mem.size: 1000000
+Ep: 9460, Dur: 220, Step: 2314118, Rew: 3.00, Loss: 0.0930, Eps: 0.1000, Mem.size: 1000000
+Ep: 9470, Dur: 249, Step: 2316235, Rew: 2.00, Loss: 0.0517, Eps: 0.1000, Mem.size: 1000000
+Ep: 9480, Dur: 203, Step: 2318343, Rew: 1.00, Loss: 0.0333, Eps: 0.1000, Mem.size: 1000000
+Saved weights to colaboratory_models/colab_models/BreakoutDeterministic-v42018-05-29 13:45:25.608530.h5
+Ep: 9490, Dur: 511, Step: 2320994, Rew: 1.00, Loss: 0.2279, Eps: 0.1000, Mem.size: 1000000
+Ep: 9500, Dur: 184, Step: 2323428, Rew: 1.00, Loss: 0.0659, Eps: 0.1000, Mem.size: 1000000
+Ep: 9510, Dur: 301, Step: 2325671, Rew: 3.00, Loss: 0.1935, Eps: 0.1000, Mem.size: 1000000
+Ep: 9520, Dur: 340, Step: 2328020, Rew: 4.00, Loss: 0.1551, Eps: 0.1000, Mem.size: 1000000
+Ep: 9530, Dur: 256, Step: 2329759, Rew: 3.00, Loss: 0.0552, Eps: 0.1000, Mem.size: 1000000
+Updated target network!
+Saved weights to colaboratory_models/colab_models/BreakoutDeterministic-v42018-05-29 13:45:25.608530.h5
+Ep: 9540, Dur: 418, Step: 2333596, Rew: 12.00, Loss: 0.1943, Eps: 0.1000, Mem.size: 1000000
+Ep: 9550, Dur: 418, Step: 2337621, Rew: 11.00, Loss: 0.1335, Eps: 0.1000, Mem.size: 1000000
+Saved weights to colaboratory_models/colab_models/BreakoutDeterministic-v42018-05-29 13:45:25.608530.h5
+Ep: 9560, Dur: 348, Step: 2341342, Rew: 7.00, Loss: 0.1254, Eps: 0.1000, Mem.size: 1000000
+Ep: 9570, Dur: 491, Step: 2345363, Rew: 7.00, Loss: 0.2126, Eps: 0.1000, Mem.size: 1000000
+Ep: 9580, Dur: 446, Step: 2349409, Rew: 7.00, Loss: 0.1679, Eps: 0.1000, Mem.size: 1000000
+Saved weights to colaboratory_models/colab_models/BreakoutDeterministic-v42018-05-29 13:45:25.608530.h5
+Ep: 9590, Dur: 347, Step: 2353244, Rew: 7.00, Loss: 0.1537, Eps: 0.1000, Mem.size: 1000000
+Ep: 9600, Dur: 438, Step: 2356798, Rew: 11.00, Loss: 0.1500, Eps: 0.1000, Mem.size: 1000000
+Saved weights to colaboratory_models/colab_models/BreakoutDeterministic-v42018-05-29 13:45:25.608530.h5
+Ep: 9610, Dur: 505, Step: 2360912, Rew: 11.00, Loss: 0.1092, Eps: 0.1000, Mem.size: 1000000
+Ep: 9620, Dur: 357, Step: 2365185, Rew: 11.00, Loss: 0.1087, Eps: 0.1000, Mem.size: 1000000
+Ep: 9630, Dur: 482, Step: 2369276, Rew: 11.00, Loss: 0.2187, Eps: 0.1000, Mem.size: 1000000
+Updated target network!
+Saved weights to colaboratory_models/colab_models/BreakoutDeterministic-v42018-05-29 13:45:25.608530.h5
+Ep: 9640, Dur: 463, Step: 2373915, Rew: 3.00, Loss: 0.1314, Eps: 0.1000, Mem.size: 1000000
+Ep: 9650, Dur: 442, Step: 2378348, Rew: 7.00, Loss: 0.2050, Eps: 0.1000, Mem.size: 1000000
+Saved weights to colaboratory_models/colab_models/BreakoutDeterministic-v42018-05-29 13:45:25.608530.h5
+Ep: 9660, Dur: 543, Step: 2382941, Rew: 4.00, Loss: 0.1796, Eps: 0.1000, Mem.size: 1000000
+Ep: 9670, Dur: 448, Step: 2387472, Rew: 7.00, Loss: 0.1667, Eps: 0.1000, Mem.size: 1000000
+Saved weights to colaboratory_models/colab_models/BreakoutDeterministic-v42018-05-29 13:45:25.608530.h5
+Ep: 9680, Dur: 424, Step: 2391709, Rew: 7.00, Loss: 0.1963, Eps: 0.1000, Mem.size: 1000000
+Ep: 9690, Dur: 466, Step: 2396061, Rew: 3.00, Loss: 0.2895, Eps: 0.1000, Mem.size: 1000000
+Saved weights to colaboratory_models/colab_models/BreakoutDeterministic-v42018-05-29 13:45:25.608530.h5
+Ep: 9700, Dur: 525, Step: 2401131, Rew: 4.00, Loss: 0.1730, Eps: 0.1000, Mem.size: 1000000
+Ep: 9710, Dur: 331, Step: 2405772, Rew: 4.00, Loss: 0.1127, Eps: 0.1000, Mem.size: 1000000
+Updated target network!
+Saved weights to colaboratory_models/colab_models/BreakoutDeterministic-v42018-05-29 13:45:25.608530.h5
+Ep: 9720, Dur: 471, Step: 2410355, Rew: 8.00, Loss: 0.1855, Eps: 0.1000, Mem.size: 1000000
+Ep: 9730, Dur: 418, Step: 2414590, Rew: 11.00, Loss: 0.1856, Eps: 0.1000, Mem.size: 1000000
+Ep: 9740, Dur: 406, Step: 2418407, Rew: 7.00, Loss: 0.2170, Eps: 0.1000, Mem.size: 1000000
+Saved weights to colaboratory_models/colab_models/BreakoutDeterministic-v42018-05-29 13:45:25.608530.h5
+Ep: 9750, Dur: 394, Step: 2422759, Rew: 8.00, Loss: 0.1030, Eps: 0.1000, Mem.size: 1000000
+Ep: 9760, Dur: 523, Step: 2426823, Rew: 8.00, Loss: 0.1696, Eps: 0.1000, Mem.size: 1000000
+Saved weights to colaboratory_models/colab_models/BreakoutDeterministic-v42018-05-29 13:45:25.608530.h5
+Ep: 9770, Dur: 427, Step: 2430918, Rew: 11.00, Loss: 0.1285, Eps: 0.1000, Mem.size: 1000000
+Ep: 9780, Dur: 346, Step: 2435180, Rew: 7.00, Loss: 0.0929, Eps: 0.1000, Mem.size: 1000000
+Ep: 9790, Dur: 504, Step: 2439571, Rew: 11.00, Loss: 0.1325, Eps: 0.1000, Mem.size: 1000000
+Saved weights to colaboratory_models/colab_models/BreakoutDeterministic-v42018-05-29 13:45:25.608530.h5
+Ep: 9800, Dur: 366, Step: 2444416, Rew: 11.00, Loss: 0.1164, Eps: 0.1000, Mem.size: 1000000
+Ep: 9810, Dur: 407, Step: 2448850, Rew: 7.00, Loss: 0.1619, Eps: 0.1000, Mem.size: 1000000
+Updated target network!
+Saved weights to colaboratory_models/colab_models/BreakoutDeterministic-v42018-05-29 13:45:25.608530.h5
+Ep: 9820, Dur: 514, Step: 2453422, Rew: 7.00, Loss: 0.1686, Eps: 0.1000, Mem.size: 1000000
+Ep: 9830, Dur: 298, Step: 2457219, Rew: 7.00, Loss: 0.1468, Eps: 0.1000, Mem.size: 1000000
+Saved weights to colaboratory_models/colab_models/BreakoutDeterministic-v42018-05-29 13:45:25.608530.h5
+Ep: 9840, Dur: 414, Step: 2461331, Rew: 8.00, Loss: 0.1204, Eps: 0.1000, Mem.size: 1000000
+Ep: 9850, Dur: 589, Step: 2465743, Rew: 6.00, Loss: 0.2524, Eps: 0.1000, Mem.size: 1000000
+Ep: 9860, Dur: 524, Step: 2469841, Rew: 9.00, Loss: 0.1413, Eps: 0.1000, Mem.size: 1000000
+Saved weights to colaboratory_models/colab_models/BreakoutDeterministic-v42018-05-29 13:45:25.608530.h5
+Ep: 9870, Dur: 435, Step: 2474053, Rew: 11.00, Loss: 0.2323, Eps: 0.1000, Mem.size: 1000000
+Ep: 9880, Dur: 400, Step: 2478019, Rew: 11.00, Loss: 0.1603, Eps: 0.1000, Mem.size: 1000000
+Saved weights to colaboratory_models/colab_models/BreakoutDeterministic-v42018-05-29 13:45:25.608530.h5
+Ep: 9890, Dur: 432, Step: 2482638, Rew: 7.00, Loss: 0.1573, Eps: 0.1000, Mem.size: 1000000
+Ep: 9900, Dur: 513, Step: 2487181, Rew: 11.00, Loss: 0.2294, Eps: 0.1000, Mem.size: 1000000
+Updated target network!
+Saved weights to colaboratory_models/colab_models/BreakoutDeterministic-v42018-05-29 13:45:25.608530.h5
+Ep: 9910, Dur: 306, Step: 2491227, Rew: 4.00, Loss: 0.1362, Eps: 0.1000, Mem.size: 1000000
+Ep: 9920, Dur: 302, Step: 2494418, Rew: 3.00, Loss: 0.1288, Eps: 0.1000, Mem.size: 1000000
+Ep: 9930, Dur: 429, Step: 2497739, Rew: 2.00, Loss: 0.2099, Eps: 0.1000, Mem.size: 1000000
+Saved weights to colaboratory_models/colab_models/BreakoutDeterministic-v42018-05-29 13:45:25.608530.h5
+Ep: 9940, Dur: 379, Step: 2501350, Rew: 3.00, Loss: 0.1498, Eps: 0.1000, Mem.size: 1000000
+Ep: 9950, Dur: 478, Step: 2504767, Rew: 4.00, Loss: 0.1508, Eps: 0.1000, Mem.size: 1000000
+Ep: 9960, Dur: 317, Step: 2507602, Rew: 4.00, Loss: 0.1608, Eps: 0.1000, Mem.size: 1000000
+Saved weights to colaboratory_models/colab_models/BreakoutDeterministic-v42018-05-29 13:45:25.608530.h5
+Ep: 9970, Dur: 277, Step: 2511127, Rew: 4.00, Loss: 0.0914, Eps: 0.1000, Mem.size: 1000000
+Ep: 9980, Dur: 344, Step: 2514466, Rew: 4.00, Loss: 0.0938, Eps: 0.1000, Mem.size: 1000000
+Ep: 9990, Dur: 352, Step: 2517819, Rew: 5.00, Loss: 0.1413, Eps: 0.1000, Mem.size: 1000000
+Saved weights to colaboratory_models/colab_models/BreakoutDeterministic-v42018-05-29 13:45:25.608530.h5
+Ep: 10000, Dur: 284, Step: 2520840, Rew: 4.00, Loss: 0.0867, Eps: 0.1000, Mem.size: 1000000
+Ep: 10010, Dur: 361, Step: 2524043, Rew: 3.00, Loss: 0.1490, Eps: 0.1000, Mem.size: 1000000
+Ep: 10020, Dur: 250, Step: 2526878, Rew: 3.00, Loss: 0.0892, Eps: 0.1000, Mem.size: 1000000
+Updated target network!
+Saved weights to colaboratory_models/colab_models/BreakoutDeterministic-v42018-05-29 13:45:25.608530.h5
+Ep: 10030, Dur: 333, Step: 2530136, Rew: 3.00, Loss: 0.1608, Eps: 0.1000, Mem.size: 1000000
+Ep: 10040, Dur: 259, Step: 2532564, Rew: 3.00, Loss: 0.1033, Eps: 0.1000, Mem.size: 1000000
+Ep: 10050, Dur: 253, Step: 2535255, Rew: 3.00, Loss: 0.0863, Eps: 0.1000, Mem.size: 1000000
+Ep: 10060, Dur: 283, Step: 2537925, Rew: 3.00, Loss: 0.0522, Eps: 0.1000, Mem.size: 1000000
+Saved weights to colaboratory_models/colab_models/BreakoutDeterministic-v42018-05-29 13:45:25.608530.h5
+Ep: 10070, Dur: 261, Step: 2540497, Rew: 3.00, Loss: 0.0749, Eps: 0.1000, Mem.size: 1000000
+Ep: 10080, Dur: 233, Step: 2543137, Rew: 3.00, Loss: 0.0517, Eps: 0.1000, Mem.size: 1000000
+Ep: 10090, Dur: 318, Step: 2546027, Rew: 4.00, Loss: 0.1031, Eps: 0.1000, Mem.size: 1000000
+Ep: 10100, Dur: 256, Step: 2549029, Rew: 3.00, Loss: 0.0785, Eps: 0.1000, Mem.size: 1000000
+Saved weights to colaboratory_models/colab_models/BreakoutDeterministic-v42018-05-29 13:45:25.608530.h5
+Ep: 10110, Dur: 277, Step: 2551758, Rew: 7.00, Loss: 0.1535, Eps: 0.1000, Mem.size: 1000000
+Ep: 10120, Dur: 294, Step: 2554617, Rew: 7.00, Loss: 0.0443, Eps: 0.1000, Mem.size: 1000000
+Ep: 10130, Dur: 325, Step: 2557436, Rew: 7.00, Loss: 0.1095, Eps: 0.1000, Mem.size: 1000000
+Saved weights to colaboratory_models/colab_models/BreakoutDeterministic-v42018-05-29 13:45:25.608530.h5
+Ep: 10140, Dur: 331, Step: 2560363, Rew: 7.00, Loss: 0.1515, Eps: 0.1000, Mem.size: 1000000
+Ep: 10150, Dur: 267, Step: 2563735, Rew: 7.00, Loss: 0.1773, Eps: 0.1000, Mem.size: 1000000
+Ep: 10160, Dur: 218, Step: 2566205, Rew: 3.00, Loss: 0.0377, Eps: 0.1000, Mem.size: 1000000
+Ep: 10170, Dur: 496, Step: 2568966, Rew: 5.00, Loss: 0.1726, Eps: 0.1000, Mem.size: 1000000
+Updated target network!
+Saved weights to colaboratory_models/colab_models/BreakoutDeterministic-v42018-05-29 13:45:25.608530.h5
+Ep: 10180, Dur: 339, Step: 2572324, Rew: 11.00, Loss: 0.1264, Eps: 0.1000, Mem.size: 1000000
+Ep: 10190, Dur: 394, Step: 2576116, Rew: 11.00, Loss: 0.1705, Eps: 0.1000, Mem.size: 1000000
+Saved weights to colaboratory_models/colab_models/BreakoutDeterministic-v42018-05-29 13:45:25.608530.h5
+Ep: 10200, Dur: 345, Step: 2580044, Rew: 5.00, Loss: 0.1053, Eps: 0.1000, Mem.size: 1000000
+Ep: 10210, Dur: 530, Step: 2583685, Rew: 11.00, Loss: 0.2471, Eps: 0.1000, Mem.size: 1000000
+Ep: 10220, Dur: 372, Step: 2587473, Rew: 11.00, Loss: 0.1343, Eps: 0.1000, Mem.size: 1000000
+Saved weights to colaboratory_models/colab_models/BreakoutDeterministic-v42018-05-29 13:45:25.608530.h5
+Ep: 10230, Dur: 329, Step: 2591141, Rew: 11.00, Loss: 0.0820, Eps: 0.1000, Mem.size: 1000000
+Ep: 10240, Dur: 381, Step: 2594932, Rew: 8.00, Loss: 0.1830, Eps: 0.1000, Mem.size: 1000000
+Ep: 10250, Dur: 341, Step: 2598720, Rew: 11.00, Loss: 0.0871, Eps: 0.1000, Mem.size: 1000000
+Saved weights to colaboratory_models/colab_models/BreakoutDeterministic-v42018-05-29 13:45:25.608530.h5
+Ep: 10260, Dur: 443, Step: 2602336, Rew: 11.00, Loss: 0.2363, Eps: 0.1000, Mem.size: 1000000
+Ep: 10270, Dur: 407, Step: 2605838, Rew: 11.00, Loss: 0.0934, Eps: 0.1000, Mem.size: 1000000
+Ep: 10280, Dur: 363, Step: 2609581, Rew: 8.00, Loss: 0.1206, Eps: 0.1000, Mem.size: 1000000
+Updated target network!
+Saved weights to colaboratory_models/colab_models/BreakoutDeterministic-v42018-05-29 13:45:25.608530.h5
+Ep: 10290, Dur: 225, Step: 2612058, Rew: 3.00, Loss: 0.1410, Eps: 0.1000, Mem.size: 1000000
+Ep: 10300, Dur: 215, Step: 2614216, Rew: 2.00, Loss: 0.0486, Eps: 0.1000, Mem.size: 1000000
+Ep: 10310, Dur: 225, Step: 2616411, Rew: 3.00, Loss: 0.0669, Eps: 0.1000, Mem.size: 1000000
+Ep: 10320, Dur: 238, Step: 2618635, Rew: 3.00, Loss: 0.0991, Eps: 0.1000, Mem.size: 1000000
+Saved weights to colaboratory_models/colab_models/BreakoutDeterministic-v42018-05-29 13:45:25.608530.h5
+Ep: 10330, Dur: 228, Step: 2620769, Rew: 3.00, Loss: 0.1683, Eps: 0.1000, Mem.size: 1000000
+Ep: 10340, Dur: 219, Step: 2622925, Rew: 3.00, Loss: 0.1272, Eps: 0.1000, Mem.size: 1000000
+Ep: 10350, Dur: 245, Step: 2625279, Rew: 3.00, Loss: 0.1221, Eps: 0.1000, Mem.size: 1000000
+Ep: 10360, Dur: 226, Step: 2627505, Rew: 3.00, Loss: 0.0879, Eps: 0.1000, Mem.size: 1000000
+Ep: 10370, Dur: 265, Step: 2629722, Rew: 7.00, Loss: 0.1602, Eps: 0.1000, Mem.size: 1000000
+Saved weights to colaboratory_models/colab_models/BreakoutDeterministic-v42018-05-29 13:45:25.608530.h5
+Ep: 10380, Dur: 244, Step: 2632092, Rew: 3.00, Loss: 0.1134, Eps: 0.1000, Mem.size: 1000000
+Ep: 10390, Dur: 230, Step: 2634334, Rew: 3.00, Loss: 0.0974, Eps: 0.1000, Mem.size: 1000000
+Ep: 10400, Dur: 346, Step: 2636750, Rew: 4.00, Loss: 0.1274, Eps: 0.1000, Mem.size: 1000000
+Ep: 10410, Dur: 260, Step: 2639017, Rew: 7.00, Loss: 0.1051, Eps: 0.1000, Mem.size: 1000000
+Saved weights to colaboratory_models/colab_models/BreakoutDeterministic-v42018-05-29 13:45:25.608530.h5
+Ep: 10420, Dur: 277, Step: 2641307, Rew: 7.00, Loss: 0.0874, Eps: 0.1000, Mem.size: 1000000
+Ep: 10430, Dur: 242, Step: 2643879, Rew: 3.00, Loss: 0.0602, Eps: 0.1000, Mem.size: 1000000
+Ep: 10440, Dur: 243, Step: 2646148, Rew: 3.00, Loss: 0.0480, Eps: 0.1000, Mem.size: 1000000
+Ep: 10450, Dur: 277, Step: 2648606, Rew: 7.00, Loss: 0.0922, Eps: 0.1000, Mem.size: 1000000
+Updated target network!
+Saved weights to colaboratory_models/colab_models/BreakoutDeterministic-v42018-05-29 13:45:25.608530.h5
+Ep: 10460, Dur: 235, Step: 2650754, Rew: 3.00, Loss: 0.1417, Eps: 0.1000, Mem.size: 1000000
+Ep: 10470, Dur: 281, Step: 2653321, Rew: 4.00, Loss: 0.1138, Eps: 0.1000, Mem.size: 1000000
+Ep: 10480, Dur: 217, Step: 2655438, Rew: 3.00, Loss: 0.1825, Eps: 0.1000, Mem.size: 1000000
+Ep: 10490, Dur: 236, Step: 2657629, Rew: 3.00, Loss: 0.1414, Eps: 0.1000, Mem.size: 1000000
+Ep: 10500, Dur: 244, Step: 2659924, Rew: 3.00, Loss: 0.1482, Eps: 0.1000, Mem.size: 1000000
+Saved weights to colaboratory_models/colab_models/BreakoutDeterministic-v42018-05-29 13:45:25.608530.h5
+Ep: 10510, Dur: 289, Step: 2662424, Rew: 3.00, Loss: 0.1231, Eps: 0.1000, Mem.size: 1000000
+Ep: 10520, Dur: 275, Step: 2664720, Rew: 3.00, Loss: 0.1642, Eps: 0.1000, Mem.size: 1000000
+Ep: 10530, Dur: 281, Step: 2666977, Rew: 4.00, Loss: 0.1182, Eps: 0.1000, Mem.size: 1000000
+Ep: 10540, Dur: 280, Step: 2669331, Rew: 4.00, Loss: 0.1529, Eps: 0.1000, Mem.size: 1000000
+Saved weights to colaboratory_models/colab_models/BreakoutDeterministic-v42018-05-29 13:45:25.608530.h5
+Ep: 10550, Dur: 246, Step: 2671711, Rew: 3.00, Loss: 0.0861, Eps: 0.1000, Mem.size: 1000000
+Ep: 10560, Dur: 240, Step: 2673908, Rew: 3.00, Loss: 0.0501, Eps: 0.1000, Mem.size: 1000000
+Ep: 10570, Dur: 270, Step: 2676225, Rew: 3.00, Loss: 0.1064, Eps: 0.1000, Mem.size: 1000000
+Ep: 10580, Dur: 231, Step: 2678528, Rew: 3.00, Loss: 0.0807, Eps: 0.1000, Mem.size: 1000000
+Saved weights to colaboratory_models/colab_models/BreakoutDeterministic-v42018-05-29 13:45:25.608530.h5
+Ep: 10590, Dur: 218, Step: 2681262, Rew: 3.00, Loss: 0.0517, Eps: 0.1000, Mem.size: 1000000
+Ep: 10600, Dur: 337, Step: 2683705, Rew: 5.00, Loss: 0.1065, Eps: 0.1000, Mem.size: 1000000
+Ep: 10610, Dur: 237, Step: 2686015, Rew: 3.00, Loss: 0.0826, Eps: 0.1000, Mem.size: 1000000
+Ep: 10620, Dur: 225, Step: 2688249, Rew: 3.00, Loss: 0.1614, Eps: 0.1000, Mem.size: 1000000
+Updated target network!
+Saved weights to colaboratory_models/colab_models/BreakoutDeterministic-v42018-05-29 13:45:25.608530.h5
+Ep: 10630, Dur: 166, Step: 2690423, Rew: 1.00, Loss: 0.0765, Eps: 0.1000, Mem.size: 1000000
+Ep: 10640, Dur: 275, Step: 2693031, Rew: 1.00, Loss: 0.1667, Eps: 0.1000, Mem.size: 1000000
+Ep: 10650, Dur: 215, Step: 2695525, Rew: 1.00, Loss: 0.0982, Eps: 0.1000, Mem.size: 1000000
+Ep: 10660, Dur: 284, Step: 2697991, Rew: 1.00, Loss: 0.1242, Eps: 0.1000, Mem.size: 1000000
+Saved weights to colaboratory_models/colab_models/BreakoutDeterministic-v42018-05-29 13:45:25.608530.h5
+Ep: 10670, Dur: 243, Step: 2700336, Rew: 1.00, Loss: 0.1102, Eps: 0.1000, Mem.size: 1000000
+Ep: 10680, Dur: 272, Step: 2702618, Rew: 4.00, Loss: 0.1113, Eps: 0.1000, Mem.size: 1000000
+Ep: 10690, Dur: 226, Step: 2705428, Rew: 3.00, Loss: 0.1444, Eps: 0.1000, Mem.size: 1000000
+Ep: 10700, Dur: 145, Step: 2708109, Rew: 0.00, Loss: 0.1304, Eps: 0.1000, Mem.size: 1000000
+Saved weights to colaboratory_models/colab_models/BreakoutDeterministic-v42018-05-29 13:45:25.608530.h5
+Ep: 10710, Dur: 163, Step: 2710706, Rew: 1.00, Loss: 0.0654, Eps: 0.1000, Mem.size: 1000000
+Ep: 10720, Dur: 344, Step: 2713081, Rew: 4.00, Loss: 0.0802, Eps: 0.1000, Mem.size: 1000000
+Ep: 10730, Dur: 192, Step: 2715132, Rew: 1.00, Loss: 0.0510, Eps: 0.1000, Mem.size: 1000000
+Ep: 10740, Dur: 136, Step: 2717557, Rew: 0.00, Loss: 0.0552, Eps: 0.1000, Mem.size: 1000000
+Saved weights to colaboratory_models/colab_models/BreakoutDeterministic-v42018-05-29 13:45:25.608530.h5
+Ep: 10750, Dur: 284, Step: 2720586, Rew: 1.00, Loss: 0.1223, Eps: 0.1000, Mem.size: 1000000
+Ep: 10760, Dur: 177, Step: 2722747, Rew: 1.00, Loss: 0.0751, Eps: 0.1000, Mem.size: 1000000
+Ep: 10770, Dur: 198, Step: 2724974, Rew: 1.00, Loss: 0.0473, Eps: 0.1000, Mem.size: 1000000
+Ep: 10780, Dur: 356, Step: 2727540, Rew: 1.00, Loss: 0.2071, Eps: 0.1000, Mem.size: 1000000
+Ep: 10790, Dur: 230, Step: 2729936, Rew: 3.00, Loss: 0.1794, Eps: 0.1000, Mem.size: 1000000
+Updated target network!
+Saved weights to colaboratory_models/colab_models/BreakoutDeterministic-v42018-05-29 13:45:25.608530.h5
+Ep: 10800, Dur: 583, Step: 2734191, Rew: 3.00, Loss: 0.2784, Eps: 0.1000, Mem.size: 1000000
+Ep: 10810, Dur: 378, Step: 2737654, Rew: 4.00, Loss: 0.1997, Eps: 0.1000, Mem.size: 1000000
+Saved weights to colaboratory_models/colab_models/BreakoutDeterministic-v42018-05-29 13:45:25.608530.h5
+Ep: 10820, Dur: 487, Step: 2741220, Rew: 5.00, Loss: 0.1837, Eps: 0.1000, Mem.size: 1000000
+Ep: 10830, Dur: 307, Step: 2745442, Rew: 1.00, Loss: 0.1629, Eps: 0.1000, Mem.size: 1000000
+Ep: 10840, Dur: 321, Step: 2749650, Rew: 3.00, Loss: 0.1675, Eps: 0.1000, Mem.size: 1000000
+Saved weights to colaboratory_models/colab_models/BreakoutDeterministic-v42018-05-29 13:45:25.608530.h5
+Ep: 10850, Dur: 376, Step: 2753833, Rew: 3.00, Loss: 0.1647, Eps: 0.1000, Mem.size: 1000000
+Ep: 10860, Dur: 476, Step: 2758295, Rew: 4.00, Loss: 0.2549, Eps: 0.1000, Mem.size: 1000000
+Saved weights to colaboratory_models/colab_models/BreakoutDeterministic-v42018-05-29 13:45:25.608530.h5
+Ep: 10870, Dur: 256, Step: 2762070, Rew: 1.00, Loss: 0.1402, Eps: 0.1000, Mem.size: 1000000
+Ep: 10880, Dur: 547, Step: 2766333, Rew: 6.00, Loss: 0.1871, Eps: 0.1000, Mem.size: 1000000
+Updated target network!
+Saved weights to colaboratory_models/colab_models/BreakoutDeterministic-v42018-05-29 13:45:25.608530.h5
+Ep: 10890, Dur: 210, Step: 2770095, Rew: 1.00, Loss: 0.0567, Eps: 0.1000, Mem.size: 1000000
+Ep: 10900, Dur: 174, Step: 2771846, Rew: 1.00, Loss: 0.0560, Eps: 0.1000, Mem.size: 1000000
+Ep: 10910, Dur: 198, Step: 2773528, Rew: 2.00, Loss: 0.0985, Eps: 0.1000, Mem.size: 1000000
+Ep: 10920, Dur: 128, Step: 2775296, Rew: 0.00, Loss: 0.0548, Eps: 0.1000, Mem.size: 1000000
+Ep: 10930, Dur: 155, Step: 2776854, Rew: 0.00, Loss: 0.0574, Eps: 0.1000, Mem.size: 1000000
+Ep: 10940, Dur: 173, Step: 2778441, Rew: 1.00, Loss: 0.1126, Eps: 0.1000, Mem.size: 1000000
+Saved weights to colaboratory_models/colab_models/BreakoutDeterministic-v42018-05-29 13:45:25.608530.h5
+Ep: 10950, Dur: 147, Step: 2780010, Rew: 0.00, Loss: 0.0838, Eps: 0.1000, Mem.size: 1000000
+Ep: 10960, Dur: 174, Step: 2781728, Rew: 1.00, Loss: 0.0617, Eps: 0.1000, Mem.size: 1000000
+Ep: 10970, Dur: 131, Step: 2783686, Rew: 0.00, Loss: 0.0645, Eps: 0.1000, Mem.size: 1000000
+Ep: 10980, Dur: 153, Step: 2785131, Rew: 1.00, Loss: 0.0539, Eps: 0.1000, Mem.size: 1000000
+Ep: 10990, Dur: 167, Step: 2786886, Rew: 1.00, Loss: 0.1197, Eps: 0.1000, Mem.size: 1000000
+Ep: 11000, Dur: 140, Step: 2788307, Rew: 0.00, Loss: 0.0681, Eps: 0.1000, Mem.size: 1000000
+Ep: 11010, Dur: 186, Step: 2789833, Rew: 1.00, Loss: 0.0566, Eps: 0.1000, Mem.size: 1000000
+Saved weights to colaboratory_models/colab_models/BreakoutDeterministic-v42018-05-29 13:45:25.608530.h5
+Ep: 11020, Dur: 154, Step: 2791284, Rew: 0.00, Loss: 0.0344, Eps: 0.1000, Mem.size: 1000000
+Ep: 11030, Dur: 207, Step: 2793050, Rew: 2.00, Loss: 0.0669, Eps: 0.1000, Mem.size: 1000000
+Ep: 11040, Dur: 235, Step: 2794852, Rew: 3.00, Loss: 0.0733, Eps: 0.1000, Mem.size: 1000000
+Ep: 11050, Dur: 139, Step: 2796461, Rew: 0.00, Loss: 0.0888, Eps: 0.1000, Mem.size: 1000000
+Ep: 11060, Dur: 183, Step: 2798190, Rew: 1.00, Loss: 0.0738, Eps: 0.1000, Mem.size: 1000000
+Ep: 11070, Dur: 126, Step: 2799960, Rew: 0.00, Loss: 0.0292, Eps: 0.1000, Mem.size: 1000000
+Saved weights to colaboratory_models/colab_models/BreakoutDeterministic-v42018-05-29 13:45:25.608530.h5
+Ep: 11080, Dur: 143, Step: 2801355, Rew: 0.00, Loss: 0.1473, Eps: 0.1000, Mem.size: 1000000
+Ep: 11090, Dur: 165, Step: 2802862, Rew: 1.00, Loss: 0.0872, Eps: 0.1000, Mem.size: 1000000
+Ep: 11100, Dur: 149, Step: 2804928, Rew: 0.00, Loss: 0.0681, Eps: 0.1000, Mem.size: 1000000
+Ep: 11110, Dur: 183, Step: 2806613, Rew: 1.00, Loss: 0.0614, Eps: 0.1000, Mem.size: 1000000
+Ep: 11120, Dur: 141, Step: 2808875, Rew: 0.00, Loss: 0.0524, Eps: 0.1000, Mem.size: 1000000
+Updated target network!
+Saved weights to colaboratory_models/colab_models/BreakoutDeterministic-v42018-05-29 13:45:25.608530.h5
+Ep: 11130, Dur: 261, Step: 2811101, Rew: 3.00, Loss: 0.1888, Eps: 0.1000, Mem.size: 1000000
+Ep: 11140, Dur: 263, Step: 2813910, Rew: 3.00, Loss: 0.1549, Eps: 0.1000, Mem.size: 1000000
+Ep: 11150, Dur: 244, Step: 2816596, Rew: 3.00, Loss: 0.0904, Eps: 0.1000, Mem.size: 1000000
+Ep: 11160, Dur: 330, Step: 2819310, Rew: 3.00, Loss: 0.2755, Eps: 0.1000, Mem.size: 1000000
+Saved weights to colaboratory_models/colab_models/BreakoutDeterministic-v42018-05-29 13:45:25.608530.h5
+Ep: 11170, Dur: 251, Step: 2821866, Rew: 3.00, Loss: 0.1434, Eps: 0.1000, Mem.size: 1000000
+Ep: 11180, Dur: 225, Step: 2824404, Rew: 3.00, Loss: 0.1204, Eps: 0.1000, Mem.size: 1000000
+Ep: 11190, Dur: 263, Step: 2826935, Rew: 3.00, Loss: 0.1028, Eps: 0.1000, Mem.size: 1000000
+Saved weights to colaboratory_models/colab_models/BreakoutDeterministic-v42018-05-29 13:45:25.608530.h5
+Ep: 11200, Dur: 376, Step: 2830125, Rew: 5.00, Loss: 0.2072, Eps: 0.1000, Mem.size: 1000000
+Ep: 11210, Dur: 237, Step: 2832708, Rew: 3.00, Loss: 0.0625, Eps: 0.1000, Mem.size: 1000000
+Ep: 11220, Dur: 244, Step: 2835315, Rew: 3.00, Loss: 0.1543, Eps: 0.1000, Mem.size: 1000000
+Ep: 11230, Dur: 229, Step: 2837798, Rew: 3.00, Loss: 0.1218, Eps: 0.1000, Mem.size: 1000000
+Saved weights to colaboratory_models/colab_models/BreakoutDeterministic-v42018-05-29 13:45:25.608530.h5
+Ep: 11240, Dur: 235, Step: 2840171, Rew: 3.00, Loss: 0.0906, Eps: 0.1000, Mem.size: 1000000
+Ep: 11250, Dur: 362, Step: 2843188, Rew: 5.00, Loss: 0.1011, Eps: 0.1000, Mem.size: 1000000
+Ep: 11260, Dur: 245, Step: 2845542, Rew: 3.00, Loss: 0.0914, Eps: 0.1000, Mem.size: 1000000
+Ep: 11270, Dur: 281, Step: 2848127, Rew: 3.00, Loss: 0.0889, Eps: 0.1000, Mem.size: 1000000
+Updated target network!
+Saved weights to colaboratory_models/colab_models/BreakoutDeterministic-v42018-05-29 13:45:25.608530.h5
+Ep: 11280, Dur: 276, Step: 2850882, Rew: 3.00, Loss: 0.1357, Eps: 0.1000, Mem.size: 1000000
+Ep: 11290, Dur: 395, Step: 2853749, Rew: 3.00, Loss: 0.2456, Eps: 0.1000, Mem.size: 1000000
+Ep: 11300, Dur: 594, Step: 2857284, Rew: 5.00, Loss: 0.3193, Eps: 0.1000, Mem.size: 1000000
+Saved weights to colaboratory_models/colab_models/BreakoutDeterministic-v42018-05-29 13:45:25.608530.h5
+Ep: 11310, Dur: 274, Step: 2860574, Rew: 4.00, Loss: 0.1710, Eps: 0.1000, Mem.size: 1000000
+Ep: 11320, Dur: 364, Step: 2863447, Rew: 2.00, Loss: 0.2647, Eps: 0.1000, Mem.size: 1000000
+Ep: 11330, Dur: 402, Step: 2866588, Rew: 4.00, Loss: 0.1372, Eps: 0.1000, Mem.size: 1000000
+Ep: 11340, Dur: 301, Step: 2869792, Rew: 4.00, Loss: 0.1020, Eps: 0.1000, Mem.size: 1000000
+Saved weights to colaboratory_models/colab_models/BreakoutDeterministic-v42018-05-29 13:45:25.608530.h5
+Ep: 11350, Dur: 268, Step: 2872854, Rew: 3.00, Loss: 0.1231, Eps: 0.1000, Mem.size: 1000000
+Ep: 11360, Dur: 406, Step: 2875609, Rew: 4.00, Loss: 0.2502, Eps: 0.1000, Mem.size: 1000000
+Ep: 11370, Dur: 320, Step: 2879000, Rew: 4.00, Loss: 0.1886, Eps: 0.1000, Mem.size: 1000000
+Saved weights to colaboratory_models/colab_models/BreakoutDeterministic-v42018-05-29 13:45:25.608530.h5
+Ep: 11380, Dur: 248, Step: 2881726, Rew: 3.00, Loss: 0.1225, Eps: 0.1000, Mem.size: 1000000
+Ep: 11390, Dur: 294, Step: 2884643, Rew: 3.00, Loss: 0.1836, Eps: 0.1000, Mem.size: 1000000
+Ep: 11400, Dur: 254, Step: 2887515, Rew: 3.00, Loss: 0.1112, Eps: 0.1000, Mem.size: 1000000
+Updated target network!
+Saved weights to colaboratory_models/colab_models/BreakoutDeterministic-v42018-05-29 13:45:25.608530.h5
+Ep: 11410, Dur: 297, Step: 2890892, Rew: 0.00, Loss: 0.1769, Eps: 0.1000, Mem.size: 1000000
+Ep: 11420, Dur: 369, Step: 2894046, Rew: 0.00, Loss: 0.1766, Eps: 0.1000, Mem.size: 1000000
+Ep: 11430, Dur: 317, Step: 2897322, Rew: 0.00, Loss: 0.2292, Eps: 0.1000, Mem.size: 1000000
+Saved weights to colaboratory_models/colab_models/BreakoutDeterministic-v42018-05-29 13:45:25.608530.h5
+Ep: 11440, Dur: 314, Step: 2900268, Rew: 0.00, Loss: 0.1416, Eps: 0.1000, Mem.size: 1000000
+Ep: 11450, Dur: 412, Step: 2903287, Rew: 0.00, Loss: 0.1909, Eps: 0.1000, Mem.size: 1000000
+Ep: 11460, Dur: 233, Step: 2906042, Rew: 0.00, Loss: 0.1077, Eps: 0.1000, Mem.size: 1000000
+Ep: 11470, Dur: 463, Step: 2909313, Rew: 0.00, Loss: 0.2385, Eps: 0.1000, Mem.size: 1000000
+Saved weights to colaboratory_models/colab_models/BreakoutDeterministic-v42018-05-29 13:45:25.608530.h5
+Ep: 11480, Dur: 246, Step: 2913025, Rew: 0.00, Loss: 0.1679, Eps: 0.1000, Mem.size: 1000000
+Ep: 11490, Dur: 327, Step: 2916162, Rew: 0.00, Loss: 0.0970, Eps: 0.1000, Mem.size: 1000000
+Ep: 11500, Dur: 257, Step: 2919232, Rew: 0.00, Loss: 0.1299, Eps: 0.1000, Mem.size: 1000000
+Saved weights to colaboratory_models/colab_models/BreakoutDeterministic-v42018-05-29 13:45:25.608530.h5
+Ep: 11510, Dur: 382, Step: 2922236, Rew: 0.00, Loss: 0.2193, Eps: 0.1000, Mem.size: 1000000
+Ep: 11520, Dur: 313, Step: 2925383, Rew: 0.00, Loss: 0.1383, Eps: 0.1000, Mem.size: 1000000
+Ep: 11530, Dur: 399, Step: 2928586, Rew: 0.00, Loss: 0.2310, Eps: 0.1000, Mem.size: 1000000
+Updated target network!
+Saved weights to colaboratory_models/colab_models/BreakoutDeterministic-v42018-05-29 13:45:25.608530.h5
+Ep: 11540, Dur: 380, Step: 2931836, Rew: 8.00, Loss: 0.2040, Eps: 0.1000, Mem.size: 1000000
+Ep: 11550, Dur: 368, Step: 2935694, Rew: 11.00, Loss: 0.1878, Eps: 0.1000, Mem.size: 1000000
+Saved weights to colaboratory_models/colab_models/BreakoutDeterministic-v42018-05-29 13:45:25.608530.h5
+Ep: 11560, Dur: 413, Step: 2940136, Rew: 11.00, Loss: 0.2211, Eps: 0.1000, Mem.size: 1000000
+Ep: 11570, Dur: 520, Step: 2944514, Rew: 11.00, Loss: 0.2982, Eps: 0.1000, Mem.size: 1000000
+Ep: 11580, Dur: 493, Step: 2948839, Rew: 7.00, Loss: 0.2296, Eps: 0.1000, Mem.size: 1000000
+Saved weights to colaboratory_models/colab_models/BreakoutDeterministic-v42018-05-29 13:45:25.608530.h5
+Ep: 11590, Dur: 346, Step: 2953418, Rew: 4.00, Loss: 0.1599, Eps: 0.1000, Mem.size: 1000000
+Ep: 11600, Dur: 427, Step: 2957507, Rew: 6.00, Loss: 0.2148, Eps: 0.1000, Mem.size: 1000000
+Saved weights to colaboratory_models/colab_models/BreakoutDeterministic-v42018-05-29 13:45:25.608530.h5
+Ep: 11610, Dur: 471, Step: 2961808, Rew: 11.00, Loss: 0.1559, Eps: 0.1000, Mem.size: 1000000
+Ep: 11620, Dur: 379, Step: 2965839, Rew: 7.00, Loss: 0.1781, Eps: 0.1000, Mem.size: 1000000
+Updated target network!
+Saved weights to colaboratory_models/colab_models/BreakoutDeterministic-v42018-05-29 13:45:25.608530.h5
+Ep: 11630, Dur: 596, Step: 2970387, Rew: 8.00, Loss: 0.3202, Eps: 0.1000, Mem.size: 1000000
+Ep: 11640, Dur: 602, Step: 2975047, Rew: 7.00, Loss: 0.3492, Eps: 0.1000, Mem.size: 1000000
+Ep: 11650, Dur: 465, Step: 2979409, Rew: 11.00, Loss: 0.2513, Eps: 0.1000, Mem.size: 1000000
+Saved weights to colaboratory_models/colab_models/BreakoutDeterministic-v42018-05-29 13:45:25.608530.h5
+Ep: 11660, Dur: 418, Step: 2983830, Rew: 7.00, Loss: 0.1864, Eps: 0.1000, Mem.size: 1000000
+Ep: 11670, Dur: 493, Step: 2988432, Rew: 7.00, Loss: 0.2326, Eps: 0.1000, Mem.size: 1000000
+Saved weights to colaboratory_models/colab_models/BreakoutDeterministic-v42018-05-29 13:45:25.608530.h5
+Ep: 11680, Dur: 558, Step: 2992720, Rew: 7.00, Loss: 0.2146, Eps: 0.1000, Mem.size: 1000000
+Ep: 11690, Dur: 431, Step: 2997923, Rew: 11.00, Loss: 0.1771, Eps: 0.1000, Mem.size: 1000000
+Saved weights to colaboratory_models/colab_models/BreakoutDeterministic-v42018-05-29 13:45:25.608530.h5
+Ep: 11700, Dur: 483, Step: 3002331, Rew: 11.00, Loss: 0.2383, Eps: 0.1000, Mem.size: 1000000
+Ep: 11710, Dur: 441, Step: 3006826, Rew: 11.00, Loss: 0.1883, Eps: 0.1000, Mem.size: 1000000
+Updated target network!
+Saved weights to colaboratory_models/colab_models/BreakoutDeterministic-v42018-05-29 13:45:25.608530.h5
+Ep: 11720, Dur: 401, Step: 3011342, Rew: 4.00, Loss: 0.1987, Eps: 0.1000, Mem.size: 1000000
+Ep: 11730, Dur: 506, Step: 3015735, Rew: 7.00, Loss: 0.1986, Eps: 0.1000, Mem.size: 1000000
+Saved weights to colaboratory_models/colab_models/BreakoutDeterministic-v42018-05-29 13:45:25.608530.h5
+Ep: 11740, Dur: 540, Step: 3020104, Rew: 7.00, Loss: 0.3160, Eps: 0.1000, Mem.size: 1000000
+Ep: 11750, Dur: 424, Step: 3024586, Rew: 7.00, Loss: 0.2134, Eps: 0.1000, Mem.size: 1000000
+Ep: 11760, Dur: 446, Step: 3028755, Rew: 7.00, Loss: 0.2183, Eps: 0.1000, Mem.size: 1000000
+Saved weights to colaboratory_models/colab_models/BreakoutDeterministic-v42018-05-29 13:45:25.608530.h5
+Ep: 11770, Dur: 561, Step: 3033558, Rew: 6.00, Loss: 0.2935, Eps: 0.1000, Mem.size: 1000000
+Ep: 11780, Dur: 493, Step: 3038606, Rew: 7.00, Loss: 0.2013, Eps: 0.1000, Mem.size: 1000000
+Saved weights to colaboratory_models/colab_models/BreakoutDeterministic-v42018-05-29 13:45:25.608530.h5
+Ep: 11790, Dur: 317, Step: 3042916, Rew: 3.00, Loss: 0.1352, Eps: 0.1000, Mem.size: 1000000
+Ep: 11800, Dur: 533, Step: 3047823, Rew: 7.00, Loss: 0.2129, Eps: 0.1000, Mem.size: 1000000
+Updated target network!
+Saved weights to colaboratory_models/colab_models/BreakoutDeterministic-v42018-05-29 13:45:25.608530.h5
+Ep: 11810, Dur: 498, Step: 3052405, Rew: 11.00, Loss: 0.3028, Eps: 0.1000, Mem.size: 1000000
+Ep: 11820, Dur: 420, Step: 3056752, Rew: 11.00, Loss: 0.2171, Eps: 0.1000, Mem.size: 1000000
+Saved weights to colaboratory_models/colab_models/BreakoutDeterministic-v42018-05-29 13:45:25.608530.h5
+Ep: 11830, Dur: 527, Step: 3060824, Rew: 9.00, Loss: 0.2646, Eps: 0.1000, Mem.size: 1000000
+Ep: 11840, Dur: 386, Step: 3065133, Rew: 11.00, Loss: 0.1500, Eps: 0.1000, Mem.size: 1000000
+Ep: 11850, Dur: 488, Step: 3069897, Rew: 7.00, Loss: 0.1898, Eps: 0.1000, Mem.size: 1000000
+Saved weights to colaboratory_models/colab_models/BreakoutDeterministic-v42018-05-29 13:45:25.608530.h5
+Ep: 11860, Dur: 713, Step: 3074835, Rew: 10.00, Loss: 0.3578, Eps: 0.1000, Mem.size: 1000000
+Ep: 11870, Dur: 396, Step: 3079883, Rew: 7.00, Loss: 0.1996, Eps: 0.1000, Mem.size: 1000000
+Saved weights to colaboratory_models/colab_models/BreakoutDeterministic-v42018-05-29 13:45:25.608530.h5
+Ep: 11880, Dur: 411, Step: 3084535, Rew: 7.00, Loss: 0.1929, Eps: 0.1000, Mem.size: 1000000
+Ep: 11890, Dur: 511, Step: 3089277, Rew: 7.00, Loss: 0.2728, Eps: 0.1000, Mem.size: 1000000
+Updated target network!
+Saved weights to colaboratory_models/colab_models/BreakoutDeterministic-v42018-05-29 13:45:25.608530.h5
+Ep: 11900, Dur: 297, Step: 3092586, Rew: 4.00, Loss: 0.1503, Eps: 0.1000, Mem.size: 1000000
+Ep: 11910, Dur: 323, Step: 3095752, Rew: 3.00, Loss: 0.1978, Eps: 0.1000, Mem.size: 1000000
+Ep: 11920, Dur: 286, Step: 3098577, Rew: 3.00, Loss: 0.1238, Eps: 0.1000, Mem.size: 1000000
+Saved weights to colaboratory_models/colab_models/BreakoutDeterministic-v42018-05-29 13:45:25.608530.h5
+Ep: 11930, Dur: 258, Step: 3101071, Rew: 3.00, Loss: 0.1614, Eps: 0.1000, Mem.size: 1000000
+Ep: 11940, Dur: 280, Step: 3103743, Rew: 4.00, Loss: 0.1728, Eps: 0.1000, Mem.size: 1000000
+Ep: 11950, Dur: 379, Step: 3106820, Rew: 8.00, Loss: 0.1527, Eps: 0.1000, Mem.size: 1000000
+Ep: 11960, Dur: 321, Step: 3109623, Rew: 4.00, Loss: 0.1067, Eps: 0.1000, Mem.size: 1000000
+Saved weights to colaboratory_models/colab_models/BreakoutDeterministic-v42018-05-29 13:45:25.608530.h5
+Ep: 11970, Dur: 363, Step: 3112520, Rew: 3.00, Loss: 0.1443, Eps: 0.1000, Mem.size: 1000000
+Ep: 11980, Dur: 430, Step: 3115791, Rew: 3.00, Loss: 0.1735, Eps: 0.1000, Mem.size: 1000000
+Ep: 11990, Dur: 266, Step: 3118377, Rew: 3.00, Loss: 0.1338, Eps: 0.1000, Mem.size: 1000000
+Saved weights to colaboratory_models/colab_models/BreakoutDeterministic-v42018-05-29 13:45:25.608530.h5
+Ep: 12000, Dur: 255, Step: 3121232, Rew: 3.00, Loss: 0.0890, Eps: 0.1000, Mem.size: 1000000
+Ep: 12010, Dur: 294, Step: 3124133, Rew: 4.00, Loss: 0.1140, Eps: 0.1000, Mem.size: 1000000
+Ep: 12020, Dur: 347, Step: 3127423, Rew: 4.00, Loss: 0.1765, Eps: 0.1000, Mem.size: 1000000
+Updated target network!
+Saved weights to colaboratory_models/colab_models/BreakoutDeterministic-v42018-05-29 13:45:25.608530.h5
+Ep: 12030, Dur: 288, Step: 3130647, Rew: 3.00, Loss: 0.1785, Eps: 0.1000, Mem.size: 1000000
+Ep: 12040, Dur: 273, Step: 3135231, Rew: 3.00, Loss: 0.1525, Eps: 0.1000, Mem.size: 1000000
+Ep: 12050, Dur: 472, Step: 3139537, Rew: 9.00, Loss: 0.2241, Eps: 0.1000, Mem.size: 1000000
+Saved weights to colaboratory_models/colab_models/BreakoutDeterministic-v42018-05-29 13:45:25.608530.h5
+Ep: 12060, Dur: 293, Step: 3143854, Rew: 3.00, Loss: 0.1068, Eps: 0.1000, Mem.size: 1000000
+Ep: 12070, Dur: 459, Step: 3147829, Rew: 6.00, Loss: 0.1852, Eps: 0.1000, Mem.size: 1000000
+Saved weights to colaboratory_models/colab_models/BreakoutDeterministic-v42018-05-29 13:45:25.608530.h5
+Ep: 12080, Dur: 468, Step: 3151590, Rew: 3.00, Loss: 0.1815, Eps: 0.1000, Mem.size: 1000000
+Ep: 12090, Dur: 538, Step: 3155784, Rew: 3.00, Loss: 0.2142, Eps: 0.1000, Mem.size: 1000000
+Ep: 12100, Dur: 551, Step: 3159882, Rew: 3.00, Loss: 0.2798, Eps: 0.1000, Mem.size: 1000000
+Saved weights to colaboratory_models/colab_models/BreakoutDeterministic-v42018-05-29 13:45:25.608530.h5
+Ep: 12110, Dur: 701, Step: 3164082, Rew: 4.00, Loss: 0.2812, Eps: 0.1000, Mem.size: 1000000
+Ep: 12120, Dur: 509, Step: 3167997, Rew: 4.00, Loss: 0.1861, Eps: 0.1000, Mem.size: 1000000
+Updated target network!
+Saved weights to colaboratory_models/colab_models/BreakoutDeterministic-v42018-05-29 13:45:25.608530.h5
+Ep: 12130, Dur: 427, Step: 3172305, Rew: 3.00, Loss: 0.1988, Eps: 0.1000, Mem.size: 1000000
+Ep: 12140, Dur: 365, Step: 3176533, Rew: 3.00, Loss: 0.1386, Eps: 0.1000, Mem.size: 1000000
+Saved weights to colaboratory_models/colab_models/BreakoutDeterministic-v42018-05-29 13:45:25.608530.h5
+Ep: 12150, Dur: 366, Step: 3180748, Rew: 3.00, Loss: 0.1250, Eps: 0.1000, Mem.size: 1000000
+Ep: 12160, Dur: 480, Step: 3185039, Rew: 3.00, Loss: 0.1791, Eps: 0.1000, Mem.size: 1000000
+Ep: 12170, Dur: 450, Step: 3189450, Rew: 3.00, Loss: 0.1787, Eps: 0.1000, Mem.size: 1000000
+Saved weights to colaboratory_models/colab_models/BreakoutDeterministic-v42018-05-29 13:45:25.608530.h5
+Ep: 12180, Dur: 319, Step: 3193709, Rew: 3.00, Loss: 0.1603, Eps: 0.1000, Mem.size: 1000000
+Ep: 12190, Dur: 420, Step: 3197985, Rew: 6.00, Loss: 0.1823, Eps: 0.1000, Mem.size: 1000000
+Saved weights to colaboratory_models/colab_models/BreakoutDeterministic-v42018-05-29 13:45:25.608530.h5
+Ep: 12200, Dur: 562, Step: 3202075, Rew: 4.00, Loss: 0.2209, Eps: 0.1000, Mem.size: 1000000
+Ep: 12210, Dur: 283, Step: 3206292, Rew: 3.00, Loss: 0.0987, Eps: 0.1000, Mem.size: 1000000
+Updated target network!
+Saved weights to colaboratory_models/colab_models/BreakoutDeterministic-v42018-05-29 13:45:25.608530.h5
+Ep: 12220, Dur: 233, Step: 3210261, Rew: 1.00, Loss: 0.1484, Eps: 0.1000, Mem.size: 1000000
+Ep: 12230, Dur: 293, Step: 3213126, Rew: 0.00, Loss: 0.1147, Eps: 0.1000, Mem.size: 1000000
+Ep: 12240, Dur: 307, Step: 3215900, Rew: 1.00, Loss: 0.1342, Eps: 0.1000, Mem.size: 1000000
+Ep: 12250, Dur: 207, Step: 3218476, Rew: 0.00, Loss: 0.0659, Eps: 0.1000, Mem.size: 1000000
+Saved weights to colaboratory_models/colab_models/BreakoutDeterministic-v42018-05-29 13:45:25.608530.h5
+Ep: 12260, Dur: 242, Step: 3221043, Rew: 0.00, Loss: 0.0741, Eps: 0.1000, Mem.size: 1000000
+Ep: 12270, Dur: 339, Step: 3223752, Rew: 4.00, Loss: 0.1160, Eps: 0.1000, Mem.size: 1000000
+Ep: 12280, Dur: 414, Step: 3226226, Rew: 4.00, Loss: 0.1496, Eps: 0.1000, Mem.size: 1000000
+Ep: 12290, Dur: 196, Step: 3229334, Rew: 0.00, Loss: 0.1115, Eps: 0.1000, Mem.size: 1000000
+Saved weights to colaboratory_models/colab_models/BreakoutDeterministic-v42018-05-29 13:45:25.608530.h5
+Ep: 12300, Dur: 306, Step: 3232091, Rew: 1.00, Loss: 0.0803, Eps: 0.1000, Mem.size: 1000000
+Ep: 12310, Dur: 223, Step: 3234836, Rew: 0.00, Loss: 0.0731, Eps: 0.1000, Mem.size: 1000000
+Ep: 12320, Dur: 230, Step: 3237458, Rew: 1.00, Loss: 0.0799, Eps: 0.1000, Mem.size: 1000000
+Saved weights to colaboratory_models/colab_models/BreakoutDeterministic-v42018-05-29 13:45:25.608530.h5
+Ep: 12330, Dur: 376, Step: 3240137, Rew: 1.00, Loss: 0.1154, Eps: 0.1000, Mem.size: 1000000
+Ep: 12340, Dur: 288, Step: 3242758, Rew: 0.00, Loss: 0.1675, Eps: 0.1000, Mem.size: 1000000
+Ep: 12350, Dur: 449, Step: 3245592, Rew: 2.00, Loss: 0.1739, Eps: 0.1000, Mem.size: 1000000
+Ep: 12360, Dur: 190, Step: 3247848, Rew: 1.00, Loss: 0.0757, Eps: 0.1000, Mem.size: 1000000
+Updated target network!
+Saved weights to colaboratory_models/colab_models/BreakoutDeterministic-v42018-05-29 13:45:25.608530.h5
+Ep: 12370, Dur: 226, Step: 3250295, Rew: 1.00, Loss: 0.1215, Eps: 0.1000, Mem.size: 1000000
+Ep: 12380, Dur: 145, Step: 3252310, Rew: 0.00, Loss: 0.0613, Eps: 0.1000, Mem.size: 1000000
+Ep: 12390, Dur: 190, Step: 3254323, Rew: 1.00, Loss: 0.0745, Eps: 0.1000, Mem.size: 1000000
+Ep: 12400, Dur: 139, Step: 3255978, Rew: 0.00, Loss: 0.0585, Eps: 0.1000, Mem.size: 1000000
+Ep: 12410, Dur: 181, Step: 3258170, Rew: 1.00, Loss: 0.0554, Eps: 0.1000, Mem.size: 1000000
+Ep: 12420, Dur: 140, Step: 3259861, Rew: 0.00, Loss: 0.0482, Eps: 0.1000, Mem.size: 1000000
+Saved weights to colaboratory_models/colab_models/BreakoutDeterministic-v42018-05-29 13:45:25.608530.h5
+Ep: 12430, Dur: 262, Step: 3261880, Rew: 3.00, Loss: 0.1445, Eps: 0.1000, Mem.size: 1000000
+Ep: 12440, Dur: 197, Step: 3263359, Rew: 1.00, Loss: 0.0438, Eps: 0.1000, Mem.size: 1000000
+Ep: 12450, Dur: 149, Step: 3265361, Rew: 0.00, Loss: 0.0611, Eps: 0.1000, Mem.size: 1000000
+Ep: 12460, Dur: 213, Step: 3267160, Rew: 2.00, Loss: 0.0904, Eps: 0.1000, Mem.size: 1000000
+Ep: 12470, Dur: 142, Step: 3269140, Rew: 0.00, Loss: 0.0682, Eps: 0.1000, Mem.size: 1000000
+Saved weights to colaboratory_models/colab_models/BreakoutDeterministic-v42018-05-29 13:45:25.608530.h5
+Ep: 12480, Dur: 185, Step: 3270992, Rew: 1.00, Loss: 0.0742, Eps: 0.1000, Mem.size: 1000000
+Ep: 12490, Dur: 135, Step: 3273288, Rew: 0.00, Loss: 0.0480, Eps: 0.1000, Mem.size: 1000000
+Ep: 12500, Dur: 135, Step: 3275458, Rew: 0.00, Loss: 0.0731, Eps: 0.1000, Mem.size: 1000000
+Ep: 12510, Dur: 308, Step: 3278026, Rew: 3.00, Loss: 0.0796, Eps: 0.1000, Mem.size: 1000000
+Ep: 12520, Dur: 136, Step: 3279996, Rew: 0.00, Loss: 0.0926, Eps: 0.1000, Mem.size: 1000000
+Saved weights to colaboratory_models/colab_models/BreakoutDeterministic-v42018-05-29 13:45:25.608530.h5
+Ep: 12530, Dur: 184, Step: 3282439, Rew: 1.00, Loss: 0.0456, Eps: 0.1000, Mem.size: 1000000
+Ep: 12540, Dur: 165, Step: 3284214, Rew: 0.00, Loss: 0.0471, Eps: 0.1000, Mem.size: 1000000
+Ep: 12550, Dur: 442, Step: 3286399, Rew: 3.00, Loss: 0.1399, Eps: 0.1000, Mem.size: 1000000
+Ep: 12560, Dur: 208, Step: 3288544, Rew: 1.00, Loss: 0.1351, Eps: 0.1000, Mem.size: 1000000
+Updated target network!
+Saved weights to colaboratory_models/colab_models/BreakoutDeterministic-v42018-05-29 13:45:25.608530.h5
+Ep: 12570, Dur: 504, Step: 3290913, Rew: 4.00, Loss: 0.2645, Eps: 0.1000, Mem.size: 1000000
+Ep: 12580, Dur: 280, Step: 3294174, Rew: 2.00, Loss: 0.1051, Eps: 0.1000, Mem.size: 1000000
+Ep: 12590, Dur: 488, Step: 3298458, Rew: 3.00, Loss: 0.1686, Eps: 0.1000, Mem.size: 1000000
+Saved weights to colaboratory_models/colab_models/BreakoutDeterministic-v42018-05-29 13:45:25.608530.h5
+Ep: 12600, Dur: 306, Step: 3302080, Rew: 3.00, Loss: 0.1078, Eps: 0.1000, Mem.size: 1000000
+Ep: 12610, Dur: 307, Step: 3305845, Rew: 3.00, Loss: 0.1335, Eps: 0.1000, Mem.size: 1000000
+Ep: 12620, Dur: 367, Step: 3309043, Rew: 3.00, Loss: 0.1509, Eps: 0.1000, Mem.size: 1000000
+Saved weights to colaboratory_models/colab_models/BreakoutDeterministic-v42018-05-29 13:45:25.608530.h5
+Ep: 12630, Dur: 583, Step: 3313125, Rew: 5.00, Loss: 0.2235, Eps: 0.1000, Mem.size: 1000000
+Ep: 12640, Dur: 311, Step: 3316741, Rew: 2.00, Loss: 0.1389, Eps: 0.1000, Mem.size: 1000000
+Saved weights to colaboratory_models/colab_models/BreakoutDeterministic-v42018-05-29 13:45:25.608530.h5
+Ep: 12650, Dur: 374, Step: 3320520, Rew: 3.00, Loss: 0.1313, Eps: 0.1000, Mem.size: 1000000
+Ep: 12660, Dur: 288, Step: 3324620, Rew: 3.00, Loss: 0.0813, Eps: 0.1000, Mem.size: 1000000
+Ep: 12670, Dur: 320, Step: 3327851, Rew: 1.00, Loss: 0.1067, Eps: 0.1000, Mem.size: 1000000
+Updated target network!
+Saved weights to colaboratory_models/colab_models/BreakoutDeterministic-v42018-05-29 13:45:25.608530.h5
+Ep: 12680, Dur: 587, Step: 3331575, Rew: 8.00, Loss: 0.2862, Eps: 0.1000, Mem.size: 1000000
+Ep: 12690, Dur: 322, Step: 3335293, Rew: 3.00, Loss: 0.0997, Eps: 0.1000, Mem.size: 1000000
+Ep: 12700, Dur: 414, Step: 3339302, Rew: 11.00, Loss: 0.1650, Eps: 0.1000, Mem.size: 1000000
+Saved weights to colaboratory_models/colab_models/BreakoutDeterministic-v42018-05-29 13:45:25.608530.h5
+Ep: 12710, Dur: 345, Step: 3342936, Rew: 3.00, Loss: 0.1160, Eps: 0.1000, Mem.size: 1000000
+Ep: 12720, Dur: 480, Step: 3347031, Rew: 8.00, Loss: 0.2079, Eps: 0.1000, Mem.size: 1000000
+Saved weights to colaboratory_models/colab_models/BreakoutDeterministic-v42018-05-29 13:45:25.608530.h5
+Ep: 12730, Dur: 276, Step: 3350484, Rew: 7.00, Loss: 0.1067, Eps: 0.1000, Mem.size: 1000000
+Ep: 12740, Dur: 689, Step: 3354807, Rew: 3.00, Loss: 0.3182, Eps: 0.1000, Mem.size: 1000000
+Ep: 12750, Dur: 362, Step: 3359275, Rew: 5.00, Loss: 0.1261, Eps: 0.1000, Mem.size: 1000000
+Saved weights to colaboratory_models/colab_models/BreakoutDeterministic-v42018-05-29 13:45:25.608530.h5
+Ep: 12760, Dur: 438, Step: 3362936, Rew: 5.00, Loss: 0.1949, Eps: 0.1000, Mem.size: 1000000
+Ep: 12770, Dur: 337, Step: 3367115, Rew: 11.00, Loss: 0.1543, Eps: 0.1000, Mem.size: 1000000
+Updated target network!
+Saved weights to colaboratory_models/colab_models/BreakoutDeterministic-v42018-05-29 13:45:25.608530.h5
+Ep: 12780, Dur: 277, Step: 3370910, Rew: 3.00, Loss: 0.1829, Eps: 0.1000, Mem.size: 1000000
+Ep: 12790, Dur: 257, Step: 3373621, Rew: 3.00, Loss: 0.0975, Eps: 0.1000, Mem.size: 1000000
+Ep: 12800, Dur: 292, Step: 3376365, Rew: 3.00, Loss: 0.1513, Eps: 0.1000, Mem.size: 1000000
+Ep: 12810, Dur: 435, Step: 3379506, Rew: 4.00, Loss: 0.1938, Eps: 0.1000, Mem.size: 1000000
+Saved weights to colaboratory_models/colab_models/BreakoutDeterministic-v42018-05-29 13:45:25.608530.h5
+Ep: 12820, Dur: 268, Step: 3382971, Rew: 1.00, Loss: 0.1308, Eps: 0.1000, Mem.size: 1000000
+Ep: 12830, Dur: 392, Step: 3386118, Rew: 9.00, Loss: 0.1852, Eps: 0.1000, Mem.size: 1000000
+Ep: 12840, Dur: 187, Step: 3389202, Rew: 1.00, Loss: 0.0764, Eps: 0.1000, Mem.size: 1000000
+Saved weights to colaboratory_models/colab_models/BreakoutDeterministic-v42018-05-29 13:45:25.608530.h5
+Ep: 12850, Dur: 336, Step: 3392753, Rew: 3.00, Loss: 0.1906, Eps: 0.1000, Mem.size: 1000000
+Ep: 12860, Dur: 340, Step: 3395664, Rew: 5.00, Loss: 0.1282, Eps: 0.1000, Mem.size: 1000000
+Ep: 12870, Dur: 286, Step: 3398819, Rew: 7.00, Loss: 0.1307, Eps: 0.1000, Mem.size: 1000000
+Saved weights to colaboratory_models/colab_models/BreakoutDeterministic-v42018-05-29 13:45:25.608530.h5
+Ep: 12880, Dur: 357, Step: 3401732, Rew: 2.00, Loss: 0.1373, Eps: 0.1000, Mem.size: 1000000
+Ep: 12890, Dur: 276, Step: 3404746, Rew: 2.00, Loss: 0.0990, Eps: 0.1000, Mem.size: 1000000
+Ep: 12900, Dur: 458, Step: 3407979, Rew: 6.00, Loss: 0.2002, Eps: 0.1000, Mem.size: 1000000
+Updated target network!
+Saved weights to colaboratory_models/colab_models/BreakoutDeterministic-v42018-05-29 13:45:25.608530.h5
+Ep: 12910, Dur: 398, Step: 3410906, Rew: 7.00, Loss: 0.1624, Eps: 0.1000, Mem.size: 1000000
+Ep: 12920, Dur: 356, Step: 3414347, Rew: 7.00, Loss: 0.1196, Eps: 0.1000, Mem.size: 1000000
+Ep: 12930, Dur: 420, Step: 3417770, Rew: 9.00, Loss: 0.1430, Eps: 0.1000, Mem.size: 1000000
+Saved weights to colaboratory_models/colab_models/BreakoutDeterministic-v42018-05-29 13:45:25.608530.h5
+Ep: 12940, Dur: 357, Step: 3421543, Rew: 8.00, Loss: 0.1449, Eps: 0.1000, Mem.size: 1000000
+Ep: 12950, Dur: 374, Step: 3425018, Rew: 7.00, Loss: 0.1647, Eps: 0.1000, Mem.size: 1000000
+Ep: 12960, Dur: 421, Step: 3428664, Rew: 6.00, Loss: 0.1524, Eps: 0.1000, Mem.size: 1000000
+Saved weights to colaboratory_models/colab_models/BreakoutDeterministic-v42018-05-29 13:45:25.608530.h5
+Ep: 12970, Dur: 293, Step: 3431999, Rew: 3.00, Loss: 0.0815, Eps: 0.1000, Mem.size: 1000000
+Ep: 12980, Dur: 360, Step: 3435392, Rew: 7.00, Loss: 0.1406, Eps: 0.1000, Mem.size: 1000000
+Ep: 12990, Dur: 423, Step: 3439426, Rew: 11.00, Loss: 0.1542, Eps: 0.1000, Mem.size: 1000000
+Saved weights to colaboratory_models/colab_models/BreakoutDeterministic-v42018-05-29 13:45:25.608530.h5
+Ep: 13000, Dur: 343, Step: 3442724, Rew: 4.00, Loss: 0.1270, Eps: 0.1000, Mem.size: 1000000
+Ep: 13010, Dur: 340, Step: 3446658, Rew: 7.00, Loss: 0.0948, Eps: 0.1000, Mem.size: 1000000
+Updated target network!
+Saved weights to colaboratory_models/colab_models/BreakoutDeterministic-v42018-05-29 13:45:25.608530.h5
+Ep: 13020, Dur: 303, Step: 3450118, Rew: 4.00, Loss: 0.1233, Eps: 0.1000, Mem.size: 1000000
+Ep: 13030, Dur: 415, Step: 3453350, Rew: 11.00, Loss: 0.2461, Eps: 0.1000, Mem.size: 1000000
+Ep: 13040, Dur: 370, Step: 3456687, Rew: 7.00, Loss: 0.1443, Eps: 0.1000, Mem.size: 1000000
+Saved weights to colaboratory_models/colab_models/BreakoutDeterministic-v42018-05-29 13:45:25.608530.h5
+Ep: 13050, Dur: 401, Step: 3460428, Rew: 11.00, Loss: 0.1805, Eps: 0.1000, Mem.size: 1000000
+Ep: 13060, Dur: 311, Step: 3463769, Rew: 7.00, Loss: 0.1062, Eps: 0.1000, Mem.size: 1000000
+Ep: 13070, Dur: 323, Step: 3467038, Rew: 11.00, Loss: 0.1269, Eps: 0.1000, Mem.size: 1000000
+Saved weights to colaboratory_models/colab_models/BreakoutDeterministic-v42018-05-29 13:45:25.608530.h5
+Ep: 13080, Dur: 271, Step: 3470413, Rew: 4.00, Loss: 0.0942, Eps: 0.1000, Mem.size: 1000000
+Ep: 13090, Dur: 346, Step: 3473986, Rew: 4.00, Loss: 0.1379, Eps: 0.1000, Mem.size: 1000000
+Ep: 13100, Dur: 326, Step: 3477333, Rew: 4.00, Loss: 0.1141, Eps: 0.1000, Mem.size: 1000000
+Saved weights to colaboratory_models/colab_models/BreakoutDeterministic-v42018-05-29 13:45:25.608530.h5
+Ep: 13110, Dur: 350, Step: 3481286, Rew: 5.00, Loss: 0.1333, Eps: 0.1000, Mem.size: 1000000
+Ep: 13120, Dur: 287, Step: 3484546, Rew: 7.00, Loss: 0.1332, Eps: 0.1000, Mem.size: 1000000
+Ep: 13130, Dur: 414, Step: 3488033, Rew: 11.00, Loss: 0.1056, Eps: 0.1000, Mem.size: 1000000
+Updated target network!
+Saved weights to colaboratory_models/colab_models/BreakoutDeterministic-v42018-05-29 13:45:25.608530.h5
+Ep: 13140, Dur: 223, Step: 3490953, Rew: 2.00, Loss: 0.1106, Eps: 0.1000, Mem.size: 1000000
+Ep: 13150, Dur: 226, Step: 3493285, Rew: 3.00, Loss: 0.0932, Eps: 0.1000, Mem.size: 1000000
+Ep: 13160, Dur: 263, Step: 3495843, Rew: 7.00, Loss: 0.1097, Eps: 0.1000, Mem.size: 1000000
+Ep: 13170, Dur: 280, Step: 3498139, Rew: 7.00, Loss: 0.1123, Eps: 0.1000, Mem.size: 1000000
+Saved weights to colaboratory_models/colab_models/BreakoutDeterministic-v42018-05-29 13:45:25.608530.h5
+Ep: 13180, Dur: 235, Step: 3500468, Rew: 3.00, Loss: 0.1228, Eps: 0.1000, Mem.size: 1000000
+Ep: 13190, Dur: 157, Step: 3502658, Rew: 1.00, Loss: 0.0489, Eps: 0.1000, Mem.size: 1000000
+Ep: 13200, Dur: 173, Step: 3504698, Rew: 1.00, Loss: 0.0510, Eps: 0.1000, Mem.size: 1000000
+Ep: 13210, Dur: 232, Step: 3506739, Rew: 3.00, Loss: 0.0635, Eps: 0.1000, Mem.size: 1000000
+Ep: 13220, Dur: 221, Step: 3508967, Rew: 3.00, Loss: 0.0949, Eps: 0.1000, Mem.size: 1000000
+Saved weights to colaboratory_models/colab_models/BreakoutDeterministic-v42018-05-29 13:45:25.608530.h5
+Ep: 13230, Dur: 188, Step: 3510899, Rew: 1.00, Loss: 0.0503, Eps: 0.1000, Mem.size: 1000000
+Ep: 13240, Dur: 192, Step: 3513074, Rew: 2.00, Loss: 0.0798, Eps: 0.1000, Mem.size: 1000000
+Ep: 13250, Dur: 239, Step: 3515451, Rew: 3.00, Loss: 0.0560, Eps: 0.1000, Mem.size: 1000000
+Ep: 13260, Dur: 256, Step: 3517891, Rew: 7.00, Loss: 0.1264, Eps: 0.1000, Mem.size: 1000000
+Saved weights to colaboratory_models/colab_models/BreakoutDeterministic-v42018-05-29 13:45:25.608530.h5
+Ep: 13270, Dur: 262, Step: 3520387, Rew: 4.00, Loss: 0.1208, Eps: 0.1000, Mem.size: 1000000
+Ep: 13280, Dur: 250, Step: 3522926, Rew: 3.00, Loss: 0.0560, Eps: 0.1000, Mem.size: 1000000
+Ep: 13290, Dur: 227, Step: 3525095, Rew: 3.00, Loss: 0.1030, Eps: 0.1000, Mem.size: 1000000
+Ep: 13300, Dur: 319, Step: 3527464, Rew: 5.00, Loss: 0.1279, Eps: 0.1000, Mem.size: 1000000
+Ep: 13310, Dur: 203, Step: 3529740, Rew: 2.00, Loss: 0.0782, Eps: 0.1000, Mem.size: 1000000
+Updated target network!
+Saved weights to colaboratory_models/colab_models/BreakoutDeterministic-v42018-05-29 13:45:25.608530.h5
+Ep: 13320, Dur: 251, Step: 3531949, Rew: 3.00, Loss: 0.0962, Eps: 0.1000, Mem.size: 1000000
+Ep: 13330, Dur: 243, Step: 3534021, Rew: 3.00, Loss: 0.0848, Eps: 0.1000, Mem.size: 1000000
+Ep: 13340, Dur: 219, Step: 3536299, Rew: 2.00, Loss: 0.0720, Eps: 0.1000, Mem.size: 1000000
+Ep: 13350, Dur: 306, Step: 3539171, Rew: 5.00, Loss: 0.1077, Eps: 0.1000, Mem.size: 1000000
+Saved weights to colaboratory_models/colab_models/BreakoutDeterministic-v42018-05-29 13:45:25.608530.h5
+Ep: 13360, Dur: 249, Step: 3541688, Rew: 3.00, Loss: 0.1189, Eps: 0.1000, Mem.size: 1000000
+Ep: 13370, Dur: 282, Step: 3544154, Rew: 5.00, Loss: 0.1162, Eps: 0.1000, Mem.size: 1000000
+Ep: 13380, Dur: 278, Step: 3546553, Rew: 4.00, Loss: 0.1020, Eps: 0.1000, Mem.size: 1000000
+Ep: 13390, Dur: 243, Step: 3548681, Rew: 3.00, Loss: 0.0820, Eps: 0.1000, Mem.size: 1000000
+Saved weights to colaboratory_models/colab_models/BreakoutDeterministic-v42018-05-29 13:45:25.608530.h5
+Ep: 13400, Dur: 181, Step: 3550926, Rew: 1.00, Loss: 0.0872, Eps: 0.1000, Mem.size: 1000000
+Ep: 13410, Dur: 166, Step: 3553266, Rew: 1.00, Loss: 0.0454, Eps: 0.1000, Mem.size: 1000000
+Ep: 13420, Dur: 261, Step: 3555931, Rew: 3.00, Loss: 0.1126, Eps: 0.1000, Mem.size: 1000000
+Ep: 13430, Dur: 205, Step: 3558456, Rew: 2.00, Loss: 0.0846, Eps: 0.1000, Mem.size: 1000000
+Saved weights to colaboratory_models/colab_models/BreakoutDeterministic-v42018-05-29 13:45:25.608530.h5
+Ep: 13440, Dur: 315, Step: 3561305, Rew: 4.00, Loss: 0.1215, Eps: 0.1000, Mem.size: 1000000
+Ep: 13450, Dur: 194, Step: 3563383, Rew: 1.00, Loss: 0.0759, Eps: 0.1000, Mem.size: 1000000
+Ep: 13460, Dur: 228, Step: 3566067, Rew: 3.00, Loss: 0.0877, Eps: 0.1000, Mem.size: 1000000
+Ep: 13470, Dur: 244, Step: 3568380, Rew: 3.00, Loss: 0.0957, Eps: 0.1000, Mem.size: 1000000
+Updated target network!
+Saved weights to colaboratory_models/colab_models/BreakoutDeterministic-v42018-05-29 13:45:25.608530.h5
+Ep: 13480, Dur: 266, Step: 3570737, Rew: 7.00, Loss: 0.1284, Eps: 0.1000, Mem.size: 1000000
+Ep: 13490, Dur: 240, Step: 3573100, Rew: 3.00, Loss: 0.0803, Eps: 0.1000, Mem.size: 1000000
+Ep: 13500, Dur: 264, Step: 3575531, Rew: 4.00, Loss: 0.1132, Eps: 0.1000, Mem.size: 1000000
+Ep: 13510, Dur: 258, Step: 3578184, Rew: 4.00, Loss: 0.0994, Eps: 0.1000, Mem.size: 1000000
+Saved weights to colaboratory_models/colab_models/BreakoutDeterministic-v42018-05-29 13:45:25.608530.h5
+Ep: 13520, Dur: 216, Step: 3580583, Rew: 3.00, Loss: 0.0763, Eps: 0.1000, Mem.size: 1000000
+Ep: 13530, Dur: 260, Step: 3583159, Rew: 4.00, Loss: 0.0804, Eps: 0.1000, Mem.size: 1000000
+Ep: 13540, Dur: 288, Step: 3585657, Rew: 4.00, Loss: 0.0991, Eps: 0.1000, Mem.size: 1000000
+Ep: 13550, Dur: 256, Step: 3588082, Rew: 4.00, Loss: 0.0933, Eps: 0.1000, Mem.size: 1000000
+Saved weights to colaboratory_models/colab_models/BreakoutDeterministic-v42018-05-29 13:45:25.608530.h5
+Ep: 13560, Dur: 241, Step: 3590431, Rew: 3.00, Loss: 0.0807, Eps: 0.1000, Mem.size: 1000000
+Ep: 13570, Dur: 264, Step: 3592844, Rew: 4.00, Loss: 0.1485, Eps: 0.1000, Mem.size: 1000000
+Ep: 13580, Dur: 297, Step: 3595407, Rew: 5.00, Loss: 0.0953, Eps: 0.1000, Mem.size: 1000000
+Ep: 13590, Dur: 266, Step: 3597801, Rew: 4.00, Loss: 0.0955, Eps: 0.1000, Mem.size: 1000000
+Saved weights to colaboratory_models/colab_models/BreakoutDeterministic-v42018-05-29 13:45:25.608530.h5
+Ep: 13600, Dur: 286, Step: 3600366, Rew: 8.00, Loss: 0.1181, Eps: 0.1000, Mem.size: 1000000
+Ep: 13610, Dur: 238, Step: 3602656, Rew: 3.00, Loss: 0.0783, Eps: 0.1000, Mem.size: 1000000
+Ep: 13620, Dur: 255, Step: 3605083, Rew: 4.00, Loss: 0.0979, Eps: 0.1000, Mem.size: 1000000
+Ep: 13630, Dur: 318, Step: 3607585, Rew: 8.00, Loss: 0.1104, Eps: 0.1000, Mem.size: 1000000
+Updated target network!
+Saved weights to colaboratory_models/colab_models/BreakoutDeterministic-v42018-05-29 13:45:25.608530.h5
+Ep: 13640, Dur: 219, Step: 3610033, Rew: 3.00, Loss: 0.1121, Eps: 0.1000, Mem.size: 1000000
+Ep: 13650, Dur: 237, Step: 3611846, Rew: 3.00, Loss: 0.0887, Eps: 0.1000, Mem.size: 1000000
+Ep: 13660, Dur: 235, Step: 3613661, Rew: 3.00, Loss: 0.1155, Eps: 0.1000, Mem.size: 1000000
+Ep: 13670, Dur: 163, Step: 3615475, Rew: 1.00, Loss: 0.0867, Eps: 0.1000, Mem.size: 1000000
+Ep: 13680, Dur: 152, Step: 3617162, Rew: 1.00, Loss: 0.0825, Eps: 0.1000, Mem.size: 1000000
+Ep: 13690, Dur: 161, Step: 3618728, Rew: 1.00, Loss: 0.0736, Eps: 0.1000, Mem.size: 1000000
+Saved weights to colaboratory_models/colab_models/BreakoutDeterministic-v42018-05-29 13:45:25.608530.h5
+Ep: 13700, Dur: 152, Step: 3620812, Rew: 1.00, Loss: 0.0677, Eps: 0.1000, Mem.size: 1000000
+Ep: 13710, Dur: 232, Step: 3622748, Rew: 3.00, Loss: 0.1589, Eps: 0.1000, Mem.size: 1000000
+Ep: 13720, Dur: 267, Step: 3624549, Rew: 4.00, Loss: 0.1404, Eps: 0.1000, Mem.size: 1000000
+Ep: 13730, Dur: 195, Step: 3626491, Rew: 2.00, Loss: 0.0839, Eps: 0.1000, Mem.size: 1000000
+Ep: 13740, Dur: 165, Step: 3628087, Rew: 1.00, Loss: 0.0562, Eps: 0.1000, Mem.size: 1000000
+Ep: 13750, Dur: 157, Step: 3629826, Rew: 1.00, Loss: 0.0615, Eps: 0.1000, Mem.size: 1000000
+Saved weights to colaboratory_models/colab_models/BreakoutDeterministic-v42018-05-29 13:45:25.608530.h5
+Ep: 13760, Dur: 140, Step: 3631424, Rew: 0.00, Loss: 0.0421, Eps: 0.1000, Mem.size: 1000000
+Ep: 13770, Dur: 214, Step: 3633254, Rew: 3.00, Loss: 0.0996, Eps: 0.1000, Mem.size: 1000000
+Ep: 13780, Dur: 228, Step: 3635008, Rew: 3.00, Loss: 0.1046, Eps: 0.1000, Mem.size: 1000000
+Ep: 13790, Dur: 178, Step: 3636837, Rew: 1.00, Loss: 0.0952, Eps: 0.1000, Mem.size: 1000000
+Ep: 13800, Dur: 179, Step: 3638388, Rew: 1.00, Loss: 0.0593, Eps: 0.1000, Mem.size: 1000000

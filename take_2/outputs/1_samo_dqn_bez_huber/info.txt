@@ -1,0 +1,4 @@
+nemam dve mreze
+ne koristim huber
+kraj epizode je isti kao u igri (broj zivota padne na 0)
+105x80

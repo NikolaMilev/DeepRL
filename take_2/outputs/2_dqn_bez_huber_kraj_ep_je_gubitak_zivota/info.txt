@@ -1,0 +1,4 @@
+nemam dve mreze
+ne korisitm huber loss
+kraj epizode je u stvari gubitak zivota (tu stavljam terminal True)
+105x80

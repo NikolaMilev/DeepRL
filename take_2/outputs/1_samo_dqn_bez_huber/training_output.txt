@@ -1,0 +1,2183 @@
+{
+    "floatx": "float32",
+    "epsilon": 1e-07,
+    "backend": "tensorflow",
+    "image_data_format": "channels_last"
+}Built and compiled the network!
+Ep: 0, Dur: 173, Step: 192, Rew: 1.00, Loss: 0.0000, Eps: 1.0000, Mem.size: 173
+Ep: 10, Dur: 183, Step: 2174, Rew: 1.00, Loss: 0.0000, Eps: 1.0000, Mem.size: 2010
+Ep: 20, Dur: 203, Step: 4004, Rew: 2.00, Loss: 0.0000, Eps: 1.0000, Mem.size: 3682
+Ep: 30, Dur: 137, Step: 5771, Rew: 0.00, Loss: 0.0000, Eps: 1.0000, Mem.size: 5297
+Ep: 40, Dur: 134, Step: 7726, Rew: 0.00, Loss: 0.0000, Eps: 1.0000, Mem.size: 7067
+Ep: 50, Dur: 134, Step: 9649, Rew: 0.00, Loss: 0.0000, Eps: 1.0000, Mem.size: 8849
+Ep: 60, Dur: 129, Step: 11401, Rew: 0.00, Loss: 0.0000, Eps: 1.0000, Mem.size: 10449
+Ep: 70, Dur: 148, Step: 13385, Rew: 0.00, Loss: 0.0000, Eps: 1.0000, Mem.size: 12280
+Ep: 80, Dur: 308, Step: 15204, Rew: 4.00, Loss: 0.0000, Eps: 1.0000, Mem.size: 13982
+Ep: 90, Dur: 136, Step: 16930, Rew: 0.00, Loss: 0.0000, Eps: 1.0000, Mem.size: 15532
+Ep: 100, Dur: 176, Step: 18875, Rew: 1.00, Loss: 0.0000, Eps: 1.0000, Mem.size: 17316
+Ep: 110, Dur: 190, Step: 20961, Rew: 2.00, Loss: 0.0000, Eps: 1.0000, Mem.size: 19263
+Ep: 120, Dur: 227, Step: 22781, Rew: 2.00, Loss: 0.0000, Eps: 1.0000, Mem.size: 20927
+Ep: 130, Dur: 155, Step: 24643, Rew: 1.00, Loss: 0.0000, Eps: 1.0000, Mem.size: 22613
+Ep: 140, Dur: 141, Step: 26506, Rew: 0.00, Loss: 0.0000, Eps: 1.0000, Mem.size: 24316
+Ep: 150, Dur: 136, Step: 28236, Rew: 0.00, Loss: 0.0000, Eps: 1.0000, Mem.size: 25921
+Ep: 160, Dur: 186, Step: 30028, Rew: 1.00, Loss: 0.0000, Eps: 1.0000, Mem.size: 27640
+Ep: 170, Dur: 149, Step: 31946, Rew: 0.00, Loss: 0.0000, Eps: 1.0000, Mem.size: 29356
+Ep: 180, Dur: 135, Step: 33863, Rew: 0.00, Loss: 0.0000, Eps: 1.0000, Mem.size: 31132
+Ep: 190, Dur: 158, Step: 35923, Rew: 1.00, Loss: 0.0000, Eps: 1.0000, Mem.size: 33099
+Ep: 200, Dur: 129, Step: 37704, Rew: 0.00, Loss: 0.0000, Eps: 1.0000, Mem.size: 34727
+Ep: 210, Dur: 134, Step: 39794, Rew: 0.00, Loss: 0.0000, Eps: 1.0000, Mem.size: 36670
+Ep: 220, Dur: 231, Step: 41747, Rew: 2.00, Loss: 0.0000, Eps: 1.0000, Mem.size: 38513
+Ep: 230, Dur: 146, Step: 43618, Rew: 0.00, Loss: 0.0000, Eps: 1.0000, Mem.size: 40238
+Ep: 240, Dur: 165, Step: 45652, Rew: 1.00, Loss: 0.0000, Eps: 1.0000, Mem.size: 42146
+Ep: 250, Dur: 155, Step: 47402, Rew: 0.00, Loss: 0.0000, Eps: 1.0000, Mem.size: 43791
+Ep: 260, Dur: 130, Step: 49499, Rew: 0.00, Loss: 0.0000, Eps: 1.0000, Mem.size: 45703
+Ep: 270, Dur: 208, Step: 51424, Rew: 2.00, Loss: 0.0000, Eps: 0.9988, Mem.size: 47473
+Ep: 280, Dur: 200, Step: 53221, Rew: 2.00, Loss: 0.0000, Eps: 0.9974, Mem.size: 49090
+Ep: 290, Dur: 250, Step: 55103, Rew: 3.00, Loss: 0.0635, Eps: 0.9958, Mem.size: 50850
+Ep: 300, Dur: 138, Step: 57181, Rew: 0.00, Loss: 0.0704, Eps: 0.9941, Mem.size: 52766
+Ep: 310, Dur: 237, Step: 59426, Rew: 3.00, Loss: 0.2667, Eps: 0.9922, Mem.size: 54866
+Saved weights to colaboratory_models/BreakoutDeterministic-v42018-05-18 07:14:16.828452.h5
+Ep: 320, Dur: 154, Step: 61239, Rew: 0.00, Loss: 0.5465, Eps: 0.9906, Mem.size: 56560
+Ep: 330, Dur: 131, Step: 62991, Rew: 0.00, Loss: 0.1398, Eps: 0.9892, Mem.size: 58140
+Ep: 340, Dur: 269, Step: 65087, Rew: 3.00, Loss: 0.5104, Eps: 0.9875, Mem.size: 60063
+Ep: 350, Dur: 173, Step: 67247, Rew: 1.00, Loss: 0.1746, Eps: 0.9857, Mem.size: 62028
+Ep: 360, Dur: 182, Step: 69080, Rew: 1.00, Loss: 0.1831, Eps: 0.9842, Mem.size: 63698
+Saved weights to colaboratory_models/BreakoutDeterministic-v42018-05-18 07:14:16.828452.h5
+Ep: 370, Dur: 180, Step: 71041, Rew: 1.00, Loss: 0.2293, Eps: 0.9826, Mem.size: 65458
+Ep: 380, Dur: 130, Step: 73042, Rew: 0.00, Loss: 0.1942, Eps: 0.9810, Mem.size: 67288
+Ep: 390, Dur: 173, Step: 74932, Rew: 1.00, Loss: 0.2486, Eps: 0.9794, Mem.size: 69054
+Ep: 400, Dur: 275, Step: 76980, Rew: 4.00, Loss: 0.2574, Eps: 0.9777, Mem.size: 70986
+Ep: 410, Dur: 178, Step: 78875, Rew: 1.00, Loss: 0.1429, Eps: 0.9761, Mem.size: 72707
+Saved weights to colaboratory_models/BreakoutDeterministic-v42018-05-18 07:14:16.828452.h5
+Ep: 420, Dur: 269, Step: 80984, Rew: 3.00, Loss: 0.4999, Eps: 0.9743, Mem.size: 74686
+Ep: 430, Dur: 142, Step: 82948, Rew: 0.00, Loss: 0.1640, Eps: 0.9727, Mem.size: 76474
+Ep: 440, Dur: 142, Step: 84638, Rew: 0.00, Loss: 0.1353, Eps: 0.9713, Mem.size: 78038
+Ep: 450, Dur: 310, Step: 86935, Rew: 4.00, Loss: 0.3273, Eps: 0.9694, Mem.size: 80141
+Ep: 460, Dur: 263, Step: 89056, Rew: 3.00, Loss: 0.1545, Eps: 0.9677, Mem.size: 82078
+Saved weights to colaboratory_models/BreakoutDeterministic-v42018-05-18 07:14:16.828452.h5
+Ep: 470, Dur: 163, Step: 90915, Rew: 1.00, Loss: 0.1554, Eps: 0.9661, Mem.size: 83811
+Ep: 480, Dur: 134, Step: 92798, Rew: 0.00, Loss: 0.1861, Eps: 0.9645, Mem.size: 85552
+Ep: 490, Dur: 129, Step: 94610, Rew: 0.00, Loss: 0.1568, Eps: 0.9630, Mem.size: 87264
+Ep: 500, Dur: 141, Step: 96534, Rew: 0.00, Loss: 0.0941, Eps: 0.9614, Mem.size: 89028
+Ep: 510, Dur: 178, Step: 98567, Rew: 1.00, Loss: 0.2602, Eps: 0.9598, Mem.size: 90860
+Saved weights to colaboratory_models/BreakoutDeterministic-v42018-05-18 07:14:16.828452.h5
+Ep: 520, Dur: 198, Step: 100467, Rew: 2.00, Loss: 0.0979, Eps: 0.9582, Mem.size: 92600
+Ep: 530, Dur: 135, Step: 102338, Rew: 0.00, Loss: 0.1461, Eps: 0.9566, Mem.size: 94354
+Ep: 540, Dur: 234, Step: 104327, Rew: 2.00, Loss: 0.2645, Eps: 0.9550, Mem.size: 96211
+Ep: 550, Dur: 132, Step: 106207, Rew: 0.00, Loss: 0.1397, Eps: 0.9534, Mem.size: 97902
+Ep: 560, Dur: 147, Step: 108192, Rew: 0.00, Loss: 0.1145, Eps: 0.9518, Mem.size: 99712
+Ep: 570, Dur: 140, Step: 109965, Rew: 0.00, Loss: 0.1666, Eps: 0.9503, Mem.size: 101337
+Saved weights to colaboratory_models/BreakoutDeterministic-v42018-05-18 07:14:16.828452.h5
+Ep: 580, Dur: 175, Step: 111899, Rew: 1.00, Loss: 0.1033, Eps: 0.9488, Mem.size: 103097
+Ep: 590, Dur: 185, Step: 113897, Rew: 1.00, Loss: 0.1528, Eps: 0.9471, Mem.size: 104901
+Ep: 600, Dur: 166, Step: 115778, Rew: 1.00, Loss: 0.1599, Eps: 0.9456, Mem.size: 106655
+Ep: 610, Dur: 143, Step: 117498, Rew: 0.00, Loss: 0.0748, Eps: 0.9441, Mem.size: 108253
+Ep: 620, Dur: 169, Step: 119489, Rew: 1.00, Loss: 0.1377, Eps: 0.9425, Mem.size: 110076
+Saved weights to colaboratory_models/BreakoutDeterministic-v42018-05-18 07:14:16.828452.h5
+Ep: 630, Dur: 276, Step: 121532, Rew: 3.00, Loss: 0.2369, Eps: 0.9408, Mem.size: 111927
+Ep: 640, Dur: 206, Step: 123355, Rew: 2.00, Loss: 0.2217, Eps: 0.9393, Mem.size: 113593
+Ep: 650, Dur: 148, Step: 125246, Rew: 0.00, Loss: 0.1138, Eps: 0.9377, Mem.size: 115351
+Ep: 660, Dur: 157, Step: 127373, Rew: 1.00, Loss: 0.1111, Eps: 0.9360, Mem.size: 117313
+Ep: 670, Dur: 163, Step: 129591, Rew: 1.00, Loss: 0.0876, Eps: 0.9341, Mem.size: 119364
+Saved weights to colaboratory_models/BreakoutDeterministic-v42018-05-18 07:14:16.828452.h5
+Ep: 680, Dur: 133, Step: 131763, Rew: 0.00, Loss: 0.1843, Eps: 0.9322, Mem.size: 121443
+Ep: 690, Dur: 186, Step: 133755, Rew: 1.00, Loss: 0.1793, Eps: 0.9306, Mem.size: 123274
+Ep: 700, Dur: 256, Step: 135769, Rew: 4.00, Loss: 0.1912, Eps: 0.9289, Mem.size: 125145
+Ep: 710, Dur: 181, Step: 137832, Rew: 1.00, Loss: 0.1706, Eps: 0.9271, Mem.size: 127111
+Ep: 720, Dur: 149, Step: 139805, Rew: 0.00, Loss: 0.2246, Eps: 0.9255, Mem.size: 128930
+Saved weights to colaboratory_models/BreakoutDeterministic-v42018-05-18 07:14:16.828452.h5
+Ep: 730, Dur: 150, Step: 141636, Rew: 0.00, Loss: 0.1348, Eps: 0.9240, Mem.size: 130632
+Ep: 740, Dur: 138, Step: 143504, Rew: 0.00, Loss: 0.1313, Eps: 0.9224, Mem.size: 132342
+Ep: 750, Dur: 217, Step: 145424, Rew: 2.00, Loss: 0.1555, Eps: 0.9209, Mem.size: 134067
+Ep: 760, Dur: 174, Step: 147553, Rew: 1.00, Loss: 0.1328, Eps: 0.9191, Mem.size: 136047
+Ep: 770, Dur: 128, Step: 149515, Rew: 0.00, Loss: 0.0936, Eps: 0.9175, Mem.size: 137809
+Ep: 780, Dur: 158, Step: 151161, Rew: 1.00, Loss: 0.1330, Eps: 0.9161, Mem.size: 139335
+Ep: 790, Dur: 135, Step: 153165, Rew: 0.00, Loss: 0.1881, Eps: 0.9144, Mem.size: 141241
+Ep: 800, Dur: 180, Step: 154951, Rew: 1.00, Loss: 0.1281, Eps: 0.9130, Mem.size: 142838
+Ep: 810, Dur: 201, Step: 157142, Rew: 2.00, Loss: 0.2454, Eps: 0.9112, Mem.size: 144876
+Ep: 820, Dur: 210, Step: 159222, Rew: 2.00, Loss: 0.1489, Eps: 0.9094, Mem.size: 146859
+Saved weights to colaboratory_models/BreakoutDeterministic-v42018-05-18 07:14:16.828452.h5
+Ep: 830, Dur: 140, Step: 161265, Rew: 0.00, Loss: 0.0600, Eps: 0.9077, Mem.size: 148728
+Ep: 840, Dur: 180, Step: 163428, Rew: 1.00, Loss: 0.1443, Eps: 0.9059, Mem.size: 150740
+Ep: 850, Dur: 142, Step: 165379, Rew: 0.00, Loss: 0.1269, Eps: 0.9043, Mem.size: 152547
+Ep: 860, Dur: 189, Step: 167476, Rew: 1.00, Loss: 0.0811, Eps: 0.9025, Mem.size: 154476
+Ep: 870, Dur: 190, Step: 169540, Rew: 2.00, Loss: 0.1275, Eps: 0.9008, Mem.size: 156393
+Saved weights to colaboratory_models/BreakoutDeterministic-v42018-05-18 07:14:16.828452.h5
+Ep: 880, Dur: 186, Step: 171539, Rew: 1.00, Loss: 0.1974, Eps: 0.8991, Mem.size: 158227
+Ep: 890, Dur: 130, Step: 173214, Rew: 0.00, Loss: 0.0980, Eps: 0.8978, Mem.size: 159755
+Ep: 900, Dur: 163, Step: 175010, Rew: 1.00, Loss: 0.1251, Eps: 0.8963, Mem.size: 161400
+Ep: 910, Dur: 139, Step: 177117, Rew: 0.00, Loss: 0.1635, Eps: 0.8945, Mem.size: 163394
+Ep: 920, Dur: 205, Step: 179129, Rew: 2.00, Loss: 0.1354, Eps: 0.8928, Mem.size: 165239
+Saved weights to colaboratory_models/BreakoutDeterministic-v42018-05-18 07:14:16.828452.h5
+Ep: 930, Dur: 141, Step: 181001, Rew: 0.00, Loss: 0.1162, Eps: 0.8913, Mem.size: 166913
+Ep: 940, Dur: 137, Step: 183079, Rew: 0.00, Loss: 0.0933, Eps: 0.8896, Mem.size: 168839
+Ep: 950, Dur: 161, Step: 185063, Rew: 1.00, Loss: 0.0699, Eps: 0.8879, Mem.size: 170699
+Ep: 960, Dur: 184, Step: 187359, Rew: 1.00, Loss: 0.1046, Eps: 0.8860, Mem.size: 172798
+Ep: 970, Dur: 140, Step: 189214, Rew: 0.00, Loss: 0.1336, Eps: 0.8845, Mem.size: 174472
+Saved weights to colaboratory_models/BreakoutDeterministic-v42018-05-18 07:14:16.828452.h5
+Ep: 980, Dur: 146, Step: 191092, Rew: 0.00, Loss: 0.1157, Eps: 0.8829, Mem.size: 176218
+Ep: 990, Dur: 178, Step: 192860, Rew: 1.00, Loss: 0.1312, Eps: 0.8815, Mem.size: 177855
+Ep: 1000, Dur: 226, Step: 194806, Rew: 3.00, Loss: 0.2675, Eps: 0.8798, Mem.size: 179710
+Ep: 1010, Dur: 147, Step: 196581, Rew: 0.00, Loss: 0.0906, Eps: 0.8783, Mem.size: 181347
+Ep: 1020, Dur: 220, Step: 198667, Rew: 2.00, Loss: 0.1468, Eps: 0.8766, Mem.size: 183312
+Ep: 1030, Dur: 208, Step: 201038, Rew: 2.00, Loss: 0.1598, Eps: 0.8746, Mem.size: 185475
+Ep: 1040, Dur: 162, Step: 202825, Rew: 1.00, Loss: 0.0965, Eps: 0.8731, Mem.size: 187118
+Ep: 1050, Dur: 215, Step: 204862, Rew: 2.00, Loss: 0.1223, Eps: 0.8715, Mem.size: 188932
+Ep: 1060, Dur: 209, Step: 206820, Rew: 2.00, Loss: 0.1151, Eps: 0.8699, Mem.size: 190761
+Ep: 1070, Dur: 260, Step: 208903, Rew: 3.00, Loss: 0.2079, Eps: 0.8682, Mem.size: 192637
+Ep: 1080, Dur: 186, Step: 210758, Rew: 1.00, Loss: 0.1408, Eps: 0.8667, Mem.size: 194295
+Ep: 1090, Dur: 148, Step: 212582, Rew: 0.00, Loss: 0.0520, Eps: 0.8652, Mem.size: 195963
+Ep: 1100, Dur: 299, Step: 214480, Rew: 5.00, Loss: 0.1845, Eps: 0.8636, Mem.size: 197722
+Ep: 1110, Dur: 176, Step: 216540, Rew: 1.00, Loss: 0.1473, Eps: 0.8619, Mem.size: 199603
+Ep: 1120, Dur: 195, Step: 218664, Rew: 2.00, Loss: 0.1358, Eps: 0.8601, Mem.size: 201594
+Saved weights to colaboratory_models/BreakoutDeterministic-v42018-05-18 07:14:16.828452.h5
+Ep: 1130, Dur: 141, Step: 220320, Rew: 0.00, Loss: 0.0667, Eps: 0.8587, Mem.size: 203139
+Ep: 1140, Dur: 158, Step: 222195, Rew: 1.00, Loss: 0.1112, Eps: 0.8572, Mem.size: 204838
+Ep: 1150, Dur: 138, Step: 224042, Rew: 0.00, Loss: 0.1145, Eps: 0.8556, Mem.size: 206565
+Ep: 1160, Dur: 185, Step: 226254, Rew: 1.00, Loss: 0.1317, Eps: 0.8538, Mem.size: 208591
+Ep: 1170, Dur: 205, Step: 228235, Rew: 2.00, Loss: 0.1398, Eps: 0.8522, Mem.size: 210389
+Saved weights to colaboratory_models/BreakoutDeterministic-v42018-05-18 07:14:16.828452.h5
+Ep: 1180, Dur: 143, Step: 230513, Rew: 0.00, Loss: 0.0958, Eps: 0.8503, Mem.size: 212476
+Ep: 1190, Dur: 123, Step: 232522, Rew: 0.00, Loss: 0.1004, Eps: 0.8487, Mem.size: 214308
+Ep: 1200, Dur: 138, Step: 234391, Rew: 0.00, Loss: 0.1255, Eps: 0.8471, Mem.size: 216033
+Ep: 1210, Dur: 130, Step: 236266, Rew: 0.00, Loss: 0.0556, Eps: 0.8456, Mem.size: 217747
+Ep: 1220, Dur: 281, Step: 238133, Rew: 4.00, Loss: 0.2231, Eps: 0.8440, Mem.size: 219490
+Ep: 1230, Dur: 127, Step: 239880, Rew: 0.00, Loss: 0.1345, Eps: 0.8426, Mem.size: 221072
+Saved weights to colaboratory_models/BreakoutDeterministic-v42018-05-18 07:14:16.828452.h5
+Ep: 1240, Dur: 134, Step: 242164, Rew: 0.00, Loss: 0.1099, Eps: 0.8407, Mem.size: 223213
+Ep: 1250, Dur: 202, Step: 244170, Rew: 2.00, Loss: 0.1527, Eps: 0.8390, Mem.size: 225041
+Ep: 1260, Dur: 143, Step: 246237, Rew: 0.00, Loss: 0.0756, Eps: 0.8373, Mem.size: 226965
+Ep: 1270, Dur: 132, Step: 247979, Rew: 0.00, Loss: 0.1169, Eps: 0.8358, Mem.size: 228579
+Saved weights to colaboratory_models/BreakoutDeterministic-v42018-05-18 07:14:16.828452.h5
+Ep: 1280, Dur: 196, Step: 250115, Rew: 1.00, Loss: 0.2935, Eps: 0.8340, Mem.size: 230552
+Ep: 1290, Dur: 174, Step: 252101, Rew: 1.00, Loss: 0.0920, Eps: 0.8324, Mem.size: 232380
+Ep: 1300, Dur: 130, Step: 253956, Rew: 0.00, Loss: 0.1677, Eps: 0.8309, Mem.size: 234082
+Ep: 1310, Dur: 146, Step: 255972, Rew: 0.00, Loss: 0.1273, Eps: 0.8292, Mem.size: 235953
+Ep: 1320, Dur: 215, Step: 257869, Rew: 2.00, Loss: 0.1394, Eps: 0.8276, Mem.size: 237678
+Ep: 1330, Dur: 223, Step: 259830, Rew: 2.00, Loss: 0.1515, Eps: 0.8260, Mem.size: 239545
+Saved weights to colaboratory_models/BreakoutDeterministic-v42018-05-18 07:14:16.828452.h5
+Ep: 1340, Dur: 231, Step: 261810, Rew: 2.00, Loss: 0.1059, Eps: 0.8243, Mem.size: 241348
+Ep: 1350, Dur: 129, Step: 263649, Rew: 0.00, Loss: 0.0330, Eps: 0.8228, Mem.size: 243062
+Ep: 1360, Dur: 156, Step: 265647, Rew: 1.00, Loss: 0.0523, Eps: 0.8211, Mem.size: 244920
+Ep: 1370, Dur: 248, Step: 267658, Rew: 2.00, Loss: 0.1558, Eps: 0.8194, Mem.size: 246790
+Ep: 1380, Dur: 456, Step: 269841, Rew: 8.00, Loss: 0.2408, Eps: 0.8176, Mem.size: 248800
+Saved weights to colaboratory_models/BreakoutDeterministic-v42018-05-18 07:14:16.828452.h5
+Ep: 1390, Dur: 128, Step: 271703, Rew: 0.00, Loss: 0.1222, Eps: 0.8161, Mem.size: 250528
+Ep: 1400, Dur: 149, Step: 273406, Rew: 0.00, Loss: 0.0865, Eps: 0.8147, Mem.size: 252070
+Ep: 1410, Dur: 312, Step: 275662, Rew: 4.00, Loss: 0.1613, Eps: 0.8128, Mem.size: 254171
+Ep: 1420, Dur: 140, Step: 277917, Rew: 0.00, Loss: 0.1263, Eps: 0.8109, Mem.size: 256256
+Saved weights to colaboratory_models/BreakoutDeterministic-v42018-05-18 07:14:16.828452.h5
+Ep: 1430, Dur: 205, Step: 280088, Rew: 2.00, Loss: 0.1269, Eps: 0.8091, Mem.size: 258302
+Ep: 1440, Dur: 210, Step: 282109, Rew: 2.00, Loss: 0.1412, Eps: 0.8074, Mem.size: 260176
+Ep: 1450, Dur: 160, Step: 284000, Rew: 1.00, Loss: 0.0963, Eps: 0.8058, Mem.size: 261888
+Ep: 1460, Dur: 176, Step: 285939, Rew: 1.00, Loss: 0.1033, Eps: 0.8042, Mem.size: 263663
+Ep: 1470, Dur: 242, Step: 288034, Rew: 2.00, Loss: 0.1571, Eps: 0.8025, Mem.size: 265581
+Saved weights to colaboratory_models/BreakoutDeterministic-v42018-05-18 07:14:16.828452.h5
+Ep: 1480, Dur: 148, Step: 290058, Rew: 0.00, Loss: 0.1475, Eps: 0.8008, Mem.size: 267440
+Ep: 1490, Dur: 133, Step: 291996, Rew: 0.00, Loss: 0.0436, Eps: 0.7992, Mem.size: 269247
+Ep: 1500, Dur: 225, Step: 294169, Rew: 2.00, Loss: 0.1530, Eps: 0.7974, Mem.size: 271250
+Ep: 1510, Dur: 203, Step: 296153, Rew: 2.00, Loss: 0.1520, Eps: 0.7958, Mem.size: 273042
+Ep: 1520, Dur: 142, Step: 298126, Rew: 0.00, Loss: 0.0911, Eps: 0.7942, Mem.size: 274874
+Saved weights to colaboratory_models/BreakoutDeterministic-v42018-05-18 07:14:16.828452.h5
+Ep: 1530, Dur: 224, Step: 300154, Rew: 2.00, Loss: 0.1739, Eps: 0.7925, Mem.size: 276718
+Ep: 1540, Dur: 240, Step: 302197, Rew: 3.00, Loss: 0.1440, Eps: 0.7908, Mem.size: 278578
+Ep: 1550, Dur: 181, Step: 304046, Rew: 1.00, Loss: 0.1265, Eps: 0.7893, Mem.size: 280321
+Ep: 1560, Dur: 169, Step: 305829, Rew: 1.00, Loss: 0.0447, Eps: 0.7878, Mem.size: 281935
+Ep: 1570, Dur: 198, Step: 308016, Rew: 2.00, Loss: 0.0951, Eps: 0.7860, Mem.size: 283951
+Saved weights to colaboratory_models/BreakoutDeterministic-v42018-05-18 07:14:16.828452.h5
+Ep: 1580, Dur: 134, Step: 310066, Rew: 0.00, Loss: 0.0877, Eps: 0.7843, Mem.size: 285868
+Ep: 1590, Dur: 289, Step: 312026, Rew: 3.00, Loss: 0.1198, Eps: 0.7827, Mem.size: 287659
+Ep: 1600, Dur: 235, Step: 314032, Rew: 3.00, Loss: 0.0935, Eps: 0.7810, Mem.size: 289480
+Ep: 1610, Dur: 136, Step: 316005, Rew: 0.00, Loss: 0.1059, Eps: 0.7794, Mem.size: 291326
+Ep: 1620, Dur: 217, Step: 318099, Rew: 2.00, Loss: 0.1243, Eps: 0.7776, Mem.size: 293301
+Ep: 1630, Dur: 130, Step: 319864, Rew: 0.00, Loss: 0.0669, Eps: 0.7761, Mem.size: 294928
+Saved weights to colaboratory_models/BreakoutDeterministic-v42018-05-18 07:14:16.828452.h5
+Ep: 1640, Dur: 145, Step: 321566, Rew: 0.00, Loss: 0.0687, Eps: 0.7747, Mem.size: 296458
+Ep: 1650, Dur: 162, Step: 323808, Rew: 1.00, Loss: 0.1005, Eps: 0.7729, Mem.size: 298503
+Ep: 1660, Dur: 166, Step: 325560, Rew: 1.00, Loss: 0.1531, Eps: 0.7714, Mem.size: 300117
+Ep: 1670, Dur: 162, Step: 327326, Rew: 1.00, Loss: 0.0985, Eps: 0.7700, Mem.size: 301726
+Ep: 1680, Dur: 125, Step: 329410, Rew: 0.00, Loss: 0.0505, Eps: 0.7682, Mem.size: 303682
+Ep: 1690, Dur: 134, Step: 331187, Rew: 0.00, Loss: 0.0627, Eps: 0.7668, Mem.size: 305313
+Ep: 1700, Dur: 283, Step: 333533, Rew: 4.00, Loss: 0.1680, Eps: 0.7648, Mem.size: 307473
+Ep: 1710, Dur: 197, Step: 335741, Rew: 2.00, Loss: 0.1247, Eps: 0.7630, Mem.size: 309514
+Ep: 1720, Dur: 142, Step: 337505, Rew: 0.00, Loss: 0.0537, Eps: 0.7615, Mem.size: 311152
+Ep: 1730, Dur: 127, Step: 339672, Rew: 0.00, Loss: 0.1130, Eps: 0.7597, Mem.size: 313110
+Saved weights to colaboratory_models/BreakoutDeterministic-v42018-05-18 07:14:16.828452.h5
+Ep: 1740, Dur: 158, Step: 341643, Rew: 1.00, Loss: 0.0992, Eps: 0.7581, Mem.size: 314928
+Ep: 1750, Dur: 205, Step: 343494, Rew: 2.00, Loss: 0.0733, Eps: 0.7566, Mem.size: 316617
+Ep: 1760, Dur: 202, Step: 345520, Rew: 2.00, Loss: 0.0414, Eps: 0.7549, Mem.size: 318497
+Ep: 1770, Dur: 325, Step: 347674, Rew: 5.00, Loss: 0.1672, Eps: 0.7531, Mem.size: 320501
+Ep: 1780, Dur: 136, Step: 349679, Rew: 0.00, Loss: 0.0559, Eps: 0.7514, Mem.size: 322330
+Ep: 1790, Dur: 307, Step: 351842, Rew: 4.00, Loss: 0.1585, Eps: 0.7497, Mem.size: 324321
+Ep: 1800, Dur: 258, Step: 353760, Rew: 3.00, Loss: 0.1106, Eps: 0.7481, Mem.size: 326086
+Ep: 1810, Dur: 177, Step: 355797, Rew: 1.00, Loss: 0.1067, Eps: 0.7464, Mem.size: 327965
+Ep: 1820, Dur: 134, Step: 357666, Rew: 0.00, Loss: 0.1151, Eps: 0.7448, Mem.size: 329670
+Ep: 1830, Dur: 169, Step: 359778, Rew: 1.00, Loss: 0.1038, Eps: 0.7431, Mem.size: 331607
+Saved weights to colaboratory_models/BreakoutDeterministic-v42018-05-18 07:14:16.828452.h5
+Ep: 1840, Dur: 132, Step: 361665, Rew: 0.00, Loss: 0.1119, Eps: 0.7415, Mem.size: 333329
+Ep: 1850, Dur: 156, Step: 363713, Rew: 1.00, Loss: 0.0692, Eps: 0.7398, Mem.size: 335219
+Ep: 1860, Dur: 154, Step: 365351, Rew: 0.00, Loss: 0.0603, Eps: 0.7385, Mem.size: 336735
+Ep: 1870, Dur: 139, Step: 367407, Rew: 0.00, Loss: 0.0721, Eps: 0.7368, Mem.size: 338651
+Ep: 1880, Dur: 242, Step: 369385, Rew: 3.00, Loss: 0.1452, Eps: 0.7351, Mem.size: 340442
+Saved weights to colaboratory_models/BreakoutDeterministic-v42018-05-18 07:14:16.828452.h5
+Ep: 1890, Dur: 198, Step: 371512, Rew: 2.00, Loss: 0.1129, Eps: 0.7334, Mem.size: 342378
+Ep: 1900, Dur: 222, Step: 373657, Rew: 2.00, Loss: 0.1724, Eps: 0.7316, Mem.size: 344371
+Ep: 1910, Dur: 140, Step: 375792, Rew: 0.00, Loss: 0.1339, Eps: 0.7298, Mem.size: 346381
+Ep: 1920, Dur: 206, Step: 377627, Rew: 2.00, Loss: 0.1294, Eps: 0.7283, Mem.size: 348101
+Ep: 1930, Dur: 150, Step: 379537, Rew: 0.00, Loss: 0.0343, Eps: 0.7267, Mem.size: 349808
+Saved weights to colaboratory_models/BreakoutDeterministic-v42018-05-18 07:14:16.828452.h5
+Ep: 1940, Dur: 159, Step: 381369, Rew: 1.00, Loss: 0.1296, Eps: 0.7252, Mem.size: 351477
+Ep: 1950, Dur: 215, Step: 383459, Rew: 2.00, Loss: 0.1492, Eps: 0.7235, Mem.size: 353411
+Ep: 1960, Dur: 173, Step: 385354, Rew: 1.00, Loss: 0.0500, Eps: 0.7219, Mem.size: 355121
+Ep: 1970, Dur: 139, Step: 387120, Rew: 0.00, Loss: 0.0972, Eps: 0.7205, Mem.size: 356718
+Ep: 1980, Dur: 181, Step: 389466, Rew: 1.00, Loss: 0.0900, Eps: 0.7185, Mem.size: 358903
+Saved weights to colaboratory_models/BreakoutDeterministic-v42018-05-18 07:14:16.828452.h5
+Ep: 1990, Dur: 132, Step: 391600, Rew: 0.00, Loss: 0.0769, Eps: 0.7168, Mem.size: 360880
+Ep: 2000, Dur: 159, Step: 393710, Rew: 1.00, Loss: 0.0988, Eps: 0.7150, Mem.size: 362821
+Ep: 2010, Dur: 238, Step: 396138, Rew: 2.00, Loss: 0.2317, Eps: 0.7130, Mem.size: 365103
+Ep: 2020, Dur: 172, Step: 398154, Rew: 1.00, Loss: 0.0971, Eps: 0.7113, Mem.size: 366974
+Saved weights to colaboratory_models/BreakoutDeterministic-v42018-05-18 07:14:16.828452.h5
+Ep: 2030, Dur: 193, Step: 400258, Rew: 1.00, Loss: 0.1194, Eps: 0.7096, Mem.size: 368877
+Ep: 2040, Dur: 131, Step: 402294, Rew: 0.00, Loss: 0.0480, Eps: 0.7078, Mem.size: 370788
+Ep: 2050, Dur: 145, Step: 404514, Rew: 0.00, Loss: 0.0714, Eps: 0.7060, Mem.size: 372845
+Ep: 2060, Dur: 161, Step: 406522, Rew: 1.00, Loss: 0.0694, Eps: 0.7043, Mem.size: 374701
+Ep: 2070, Dur: 133, Step: 408452, Rew: 0.00, Loss: 0.0856, Eps: 0.7027, Mem.size: 376454
+Saved weights to colaboratory_models/BreakoutDeterministic-v42018-05-18 07:14:16.828452.h5
+Ep: 2080, Dur: 184, Step: 410313, Rew: 1.00, Loss: 0.0681, Eps: 0.7012, Mem.size: 378146
+Ep: 2090, Dur: 203, Step: 412671, Rew: 2.00, Loss: 0.1013, Eps: 0.6993, Mem.size: 380328
+Ep: 2100, Dur: 171, Step: 414729, Rew: 1.00, Loss: 0.1030, Eps: 0.6975, Mem.size: 382225
+Ep: 2110, Dur: 273, Step: 416803, Rew: 3.00, Loss: 0.1139, Eps: 0.6958, Mem.size: 384157
+Ep: 2120, Dur: 248, Step: 418809, Rew: 3.00, Loss: 0.1098, Eps: 0.6941, Mem.size: 386048
+Saved weights to colaboratory_models/BreakoutDeterministic-v42018-05-18 07:14:16.828452.h5
+Ep: 2130, Dur: 137, Step: 420749, Rew: 0.00, Loss: 0.0692, Eps: 0.6925, Mem.size: 387792
+Ep: 2140, Dur: 169, Step: 422538, Rew: 1.00, Loss: 0.1324, Eps: 0.6910, Mem.size: 389444
+Ep: 2150, Dur: 144, Step: 424645, Rew: 0.00, Loss: 0.0591, Eps: 0.6893, Mem.size: 391391
+Ep: 2160, Dur: 155, Step: 426508, Rew: 1.00, Loss: 0.0664, Eps: 0.6878, Mem.size: 393091
+Ep: 2170, Dur: 250, Step: 428671, Rew: 3.00, Loss: 0.0897, Eps: 0.6860, Mem.size: 395050
+Ep: 2180, Dur: 328, Step: 430709, Rew: 5.00, Loss: 0.1549, Eps: 0.6844, Mem.size: 396862
+Ep: 2190, Dur: 267, Step: 432942, Rew: 4.00, Loss: 0.1131, Eps: 0.6825, Mem.size: 398930
+Ep: 2200, Dur: 226, Step: 435202, Rew: 2.00, Loss: 0.0975, Eps: 0.6806, Mem.size: 401018
+Ep: 2210, Dur: 207, Step: 436945, Rew: 2.00, Loss: 0.1006, Eps: 0.6791, Mem.size: 402669
+Ep: 2220, Dur: 133, Step: 439017, Rew: 0.00, Loss: 0.0563, Eps: 0.6774, Mem.size: 404595
+Saved weights to colaboratory_models/BreakoutDeterministic-v42018-05-18 07:14:16.828452.h5
+Ep: 2230, Dur: 169, Step: 440874, Rew: 1.00, Loss: 0.0653, Eps: 0.6759, Mem.size: 406303
+Ep: 2240, Dur: 155, Step: 442617, Rew: 1.00, Loss: 0.0407, Eps: 0.6744, Mem.size: 407901
+Ep: 2250, Dur: 185, Step: 444508, Rew: 1.00, Loss: 0.0605, Eps: 0.6729, Mem.size: 409624
+Ep: 2260, Dur: 276, Step: 446620, Rew: 3.00, Loss: 0.2044, Eps: 0.6711, Mem.size: 411643
+Ep: 2270, Dur: 155, Step: 448467, Rew: 0.00, Loss: 0.0813, Eps: 0.6695, Mem.size: 413339
+Saved weights to colaboratory_models/BreakoutDeterministic-v42018-05-18 07:14:16.828452.h5
+Ep: 2280, Dur: 191, Step: 450577, Rew: 2.00, Loss: 0.0811, Eps: 0.6678, Mem.size: 415269
+Ep: 2290, Dur: 161, Step: 452620, Rew: 1.00, Loss: 0.0788, Eps: 0.6661, Mem.size: 417170
+Ep: 2300, Dur: 209, Step: 454675, Rew: 2.00, Loss: 0.0935, Eps: 0.6644, Mem.size: 419081
+Ep: 2310, Dur: 266, Step: 456713, Rew: 3.00, Loss: 0.1978, Eps: 0.6627, Mem.size: 420972
+Ep: 2320, Dur: 229, Step: 458635, Rew: 3.00, Loss: 0.0677, Eps: 0.6611, Mem.size: 422695
+Saved weights to colaboratory_models/BreakoutDeterministic-v42018-05-18 07:14:16.828452.h5
+Ep: 2330, Dur: 216, Step: 460879, Rew: 2.00, Loss: 0.0913, Eps: 0.6592, Mem.size: 424812
+Ep: 2340, Dur: 133, Step: 463121, Rew: 0.00, Loss: 0.0387, Eps: 0.6573, Mem.size: 426888
+Ep: 2350, Dur: 211, Step: 465310, Rew: 2.00, Loss: 0.0870, Eps: 0.6555, Mem.size: 428934
+Ep: 2360, Dur: 134, Step: 467391, Rew: 0.00, Loss: 0.0576, Eps: 0.6538, Mem.size: 430808
+Ep: 2370, Dur: 181, Step: 469812, Rew: 2.00, Loss: 0.0550, Eps: 0.6518, Mem.size: 433048
+Saved weights to colaboratory_models/BreakoutDeterministic-v42018-05-18 07:14:16.828452.h5
+Ep: 2380, Dur: 269, Step: 472135, Rew: 3.00, Loss: 0.1717, Eps: 0.6499, Mem.size: 435169
+Ep: 2390, Dur: 229, Step: 474347, Rew: 2.00, Loss: 0.0767, Eps: 0.6481, Mem.size: 437169
+Ep: 2400, Dur: 170, Step: 476376, Rew: 1.00, Loss: 0.0832, Eps: 0.6464, Mem.size: 439031
+Ep: 2410, Dur: 191, Step: 478587, Rew: 1.00, Loss: 0.0953, Eps: 0.6445, Mem.size: 441107
+Saved weights to colaboratory_models/BreakoutDeterministic-v42018-05-18 07:14:16.828452.h5
+Ep: 2420, Dur: 191, Step: 480591, Rew: 1.00, Loss: 0.1111, Eps: 0.6429, Mem.size: 442921
+Ep: 2430, Dur: 155, Step: 482609, Rew: 1.00, Loss: 0.1251, Eps: 0.6413, Mem.size: 444754
+Ep: 2440, Dur: 157, Step: 484500, Rew: 0.00, Loss: 0.0723, Eps: 0.6397, Mem.size: 446482
+Ep: 2450, Dur: 144, Step: 486560, Rew: 0.00, Loss: 0.0332, Eps: 0.6380, Mem.size: 448376
+Ep: 2460, Dur: 215, Step: 488431, Rew: 2.00, Loss: 0.0623, Eps: 0.6364, Mem.size: 450109
+Saved weights to colaboratory_models/BreakoutDeterministic-v42018-05-18 07:14:16.828452.h5
+Ep: 2470, Dur: 141, Step: 490327, Rew: 0.00, Loss: 0.0597, Eps: 0.6349, Mem.size: 451880
+Ep: 2480, Dur: 167, Step: 492505, Rew: 1.00, Loss: 0.0971, Eps: 0.6330, Mem.size: 453953
+Ep: 2490, Dur: 204, Step: 494521, Rew: 2.00, Loss: 0.0861, Eps: 0.6313, Mem.size: 455832
+Ep: 2500, Dur: 178, Step: 496677, Rew: 1.00, Loss: 0.1015, Eps: 0.6295, Mem.size: 457842
+Ep: 2510, Dur: 165, Step: 498718, Rew: 1.00, Loss: 0.0937, Eps: 0.6278, Mem.size: 459664
+Saved weights to colaboratory_models/BreakoutDeterministic-v42018-05-18 07:14:16.828452.h5
+Ep: 2520, Dur: 258, Step: 500900, Rew: 3.00, Loss: 0.0823, Eps: 0.6261, Mem.size: 461657
+Ep: 2530, Dur: 280, Step: 503079, Rew: 3.00, Loss: 0.1387, Eps: 0.6243, Mem.size: 463659
+Ep: 2540, Dur: 243, Step: 505275, Rew: 3.00, Loss: 0.1659, Eps: 0.6224, Mem.size: 465698
+Ep: 2550, Dur: 313, Step: 507606, Rew: 4.00, Loss: 0.1800, Eps: 0.6205, Mem.size: 467813
+Ep: 2560, Dur: 154, Step: 509676, Rew: 1.00, Loss: 0.0559, Eps: 0.6188, Mem.size: 469733
+Saved weights to colaboratory_models/BreakoutDeterministic-v42018-05-18 07:14:16.828452.h5
+Ep: 2570, Dur: 162, Step: 511677, Rew: 0.00, Loss: 0.0837, Eps: 0.6171, Mem.size: 471553
+Ep: 2580, Dur: 201, Step: 513762, Rew: 2.00, Loss: 0.0723, Eps: 0.6154, Mem.size: 473498
+Ep: 2590, Dur: 184, Step: 515632, Rew: 1.00, Loss: 0.0472, Eps: 0.6138, Mem.size: 475236
+Ep: 2600, Dur: 179, Step: 517617, Rew: 1.00, Loss: 0.1044, Eps: 0.6122, Mem.size: 477066
+Ep: 2610, Dur: 230, Step: 519657, Rew: 3.00, Loss: 0.1069, Eps: 0.6105, Mem.size: 478963
+Saved weights to colaboratory_models/BreakoutDeterministic-v42018-05-18 07:14:16.828452.h5
+Ep: 2620, Dur: 155, Step: 521643, Rew: 0.00, Loss: 0.0845, Eps: 0.6088, Mem.size: 480822
+Ep: 2630, Dur: 197, Step: 523575, Rew: 2.00, Loss: 0.0803, Eps: 0.6072, Mem.size: 482619
+Ep: 2640, Dur: 264, Step: 525866, Rew: 4.00, Loss: 0.1695, Eps: 0.6052, Mem.size: 484774
+Ep: 2650, Dur: 232, Step: 527967, Rew: 2.00, Loss: 0.1149, Eps: 0.6035, Mem.size: 486719
+Ep: 2660, Dur: 130, Step: 529856, Rew: 0.00, Loss: 0.0677, Eps: 0.6019, Mem.size: 488444
+Saved weights to colaboratory_models/BreakoutDeterministic-v42018-05-18 07:14:16.828452.h5
+Ep: 2670, Dur: 168, Step: 531850, Rew: 1.00, Loss: 0.0703, Eps: 0.6003, Mem.size: 490304
+Ep: 2680, Dur: 225, Step: 534142, Rew: 2.00, Loss: 0.1349, Eps: 0.5984, Mem.size: 492417
+Ep: 2690, Dur: 135, Step: 536138, Rew: 0.00, Loss: 0.0530, Eps: 0.5967, Mem.size: 494257
+Ep: 2700, Dur: 175, Step: 538410, Rew: 1.00, Loss: 0.0805, Eps: 0.5948, Mem.size: 496403
+Saved weights to colaboratory_models/BreakoutDeterministic-v42018-05-18 07:14:16.828452.h5
+Ep: 2710, Dur: 232, Step: 540768, Rew: 3.00, Loss: 0.1119, Eps: 0.5928, Mem.size: 498618
+Ep: 2720, Dur: 192, Step: 542755, Rew: 0.00, Loss: 0.0815, Eps: 0.5911, Mem.size: 500460
+Ep: 2730, Dur: 165, Step: 545149, Rew: 1.00, Loss: 0.0508, Eps: 0.5891, Mem.size: 502693
+Ep: 2740, Dur: 177, Step: 547404, Rew: 1.00, Loss: 0.1133, Eps: 0.5872, Mem.size: 504798
+Ep: 2750, Dur: 156, Step: 549468, Rew: 1.00, Loss: 0.0948, Eps: 0.5856, Mem.size: 506635
+Saved weights to colaboratory_models/BreakoutDeterministic-v42018-05-18 07:14:16.828452.h5
+Ep: 2760, Dur: 273, Step: 551432, Rew: 3.00, Loss: 0.1515, Eps: 0.5840, Mem.size: 508436
+Ep: 2770, Dur: 188, Step: 553388, Rew: 2.00, Loss: 0.0656, Eps: 0.5823, Mem.size: 510243
+Ep: 2780, Dur: 133, Step: 555336, Rew: 0.00, Loss: 0.0768, Eps: 0.5807, Mem.size: 512006
+Ep: 2790, Dur: 158, Step: 557560, Rew: 1.00, Loss: 0.0804, Eps: 0.5789, Mem.size: 514048
+Ep: 2800, Dur: 141, Step: 559295, Rew: 0.00, Loss: 0.0574, Eps: 0.5775, Mem.size: 515660
+Ep: 2810, Dur: 165, Step: 561437, Rew: 1.00, Loss: 0.0187, Eps: 0.5757, Mem.size: 517645
+Ep: 2820, Dur: 220, Step: 563569, Rew: 3.00, Loss: 0.1555, Eps: 0.5739, Mem.size: 519609
+Ep: 2830, Dur: 177, Step: 565669, Rew: 1.00, Loss: 0.0912, Eps: 0.5721, Mem.size: 521573
+Ep: 2840, Dur: 251, Step: 567587, Rew: 3.00, Loss: 0.1594, Eps: 0.5706, Mem.size: 523327
+Ep: 2850, Dur: 218, Step: 569744, Rew: 2.00, Loss: 0.1318, Eps: 0.5687, Mem.size: 525333
+Saved weights to colaboratory_models/BreakoutDeterministic-v42018-05-18 07:14:16.828452.h5
+Ep: 2860, Dur: 174, Step: 572150, Rew: 1.00, Loss: 0.0903, Eps: 0.5668, Mem.size: 527526
+Ep: 2870, Dur: 136, Step: 574061, Rew: 0.00, Loss: 0.0471, Eps: 0.5652, Mem.size: 529237
+Ep: 2880, Dur: 194, Step: 576115, Rew: 2.00, Loss: 0.1183, Eps: 0.5635, Mem.size: 531152
+Ep: 2890, Dur: 158, Step: 578160, Rew: 1.00, Loss: 0.0625, Eps: 0.5618, Mem.size: 533089
+Saved weights to colaboratory_models/BreakoutDeterministic-v42018-05-18 07:14:16.828452.h5
+Ep: 2900, Dur: 175, Step: 580104, Rew: 1.00, Loss: 0.1115, Eps: 0.5602, Mem.size: 534850
+Ep: 2910, Dur: 172, Step: 582376, Rew: 1.00, Loss: 0.0862, Eps: 0.5582, Mem.size: 537009
+Ep: 2920, Dur: 226, Step: 584508, Rew: 3.00, Loss: 0.0682, Eps: 0.5565, Mem.size: 538958
+Ep: 2930, Dur: 212, Step: 586813, Rew: 2.00, Loss: 0.1240, Eps: 0.5546, Mem.size: 541101
+Ep: 2940, Dur: 147, Step: 589229, Rew: 0.00, Loss: 0.0555, Eps: 0.5525, Mem.size: 543351
+Saved weights to colaboratory_models/BreakoutDeterministic-v42018-05-18 07:14:16.828452.h5
+Ep: 2950, Dur: 232, Step: 591457, Rew: 2.00, Loss: 0.0906, Eps: 0.5507, Mem.size: 545420
+Ep: 2960, Dur: 307, Step: 593636, Rew: 4.00, Loss: 0.1550, Eps: 0.5489, Mem.size: 547397
+Ep: 2970, Dur: 194, Step: 595608, Rew: 2.00, Loss: 0.0968, Eps: 0.5473, Mem.size: 549188
+Ep: 2980, Dur: 175, Step: 597523, Rew: 1.00, Loss: 0.1020, Eps: 0.5457, Mem.size: 550967
+Ep: 2990, Dur: 203, Step: 599662, Rew: 2.00, Loss: 0.1029, Eps: 0.5439, Mem.size: 552943
+Saved weights to colaboratory_models/BreakoutDeterministic-v42018-05-18 07:14:16.828452.h5
+Ep: 3000, Dur: 210, Step: 601705, Rew: 2.00, Loss: 0.0635, Eps: 0.5422, Mem.size: 554828
+Ep: 3010, Dur: 123, Step: 603718, Rew: 0.00, Loss: 0.1035, Eps: 0.5405, Mem.size: 556664
+Ep: 3020, Dur: 184, Step: 605861, Rew: 1.00, Loss: 0.1298, Eps: 0.5387, Mem.size: 558669
+Ep: 3030, Dur: 155, Step: 607967, Rew: 0.00, Loss: 0.0991, Eps: 0.5370, Mem.size: 560620
+Ep: 3040, Dur: 151, Step: 609946, Rew: 0.00, Loss: 0.0683, Eps: 0.5353, Mem.size: 562466
+Saved weights to colaboratory_models/BreakoutDeterministic-v42018-05-18 07:14:16.828452.h5
+Ep: 3050, Dur: 210, Step: 612256, Rew: 2.00, Loss: 0.1405, Eps: 0.5334, Mem.size: 564631
+Ep: 3060, Dur: 152, Step: 614357, Rew: 0.00, Loss: 0.0486, Eps: 0.5316, Mem.size: 566584
+Ep: 3070, Dur: 155, Step: 616490, Rew: 1.00, Loss: 0.0827, Eps: 0.5298, Mem.size: 568567
+Ep: 3080, Dur: 147, Step: 618423, Rew: 0.00, Loss: 0.0485, Eps: 0.5282, Mem.size: 570362
+Saved weights to colaboratory_models/BreakoutDeterministic-v42018-05-18 07:14:16.828452.h5
+Ep: 3090, Dur: 172, Step: 620711, Rew: 1.00, Loss: 0.0388, Eps: 0.5263, Mem.size: 572483
+Ep: 3100, Dur: 299, Step: 623026, Rew: 5.00, Loss: 0.1410, Eps: 0.5244, Mem.size: 574652
+Ep: 3110, Dur: 135, Step: 625074, Rew: 0.00, Loss: 0.0738, Eps: 0.5227, Mem.size: 576549
+Ep: 3120, Dur: 170, Step: 627128, Rew: 1.00, Loss: 0.0942, Eps: 0.5209, Mem.size: 578458
+Ep: 3130, Dur: 216, Step: 629430, Rew: 2.00, Loss: 0.1318, Eps: 0.5190, Mem.size: 580659
+Saved weights to colaboratory_models/BreakoutDeterministic-v42018-05-18 07:14:16.828452.h5
+Ep: 3140, Dur: 206, Step: 631587, Rew: 2.00, Loss: 0.1170, Eps: 0.5172, Mem.size: 582645
+Ep: 3150, Dur: 202, Step: 633844, Rew: 1.00, Loss: 0.0916, Eps: 0.5153, Mem.size: 584758
+Ep: 3160, Dur: 157, Step: 635518, Rew: 1.00, Loss: 0.0662, Eps: 0.5139, Mem.size: 586300
+Ep: 3170, Dur: 141, Step: 637792, Rew: 0.00, Loss: 0.1271, Eps: 0.5120, Mem.size: 588411
+Ep: 3180, Dur: 262, Step: 639963, Rew: 3.00, Loss: 0.1539, Eps: 0.5102, Mem.size: 590414
+Saved weights to colaboratory_models/BreakoutDeterministic-v42018-05-18 07:14:16.828452.h5
+Ep: 3190, Dur: 192, Step: 642277, Rew: 2.00, Loss: 0.0889, Eps: 0.5082, Mem.size: 592551
+Ep: 3200, Dur: 186, Step: 644494, Rew: 1.00, Loss: 0.0964, Eps: 0.5064, Mem.size: 594604
+Ep: 3210, Dur: 135, Step: 646750, Rew: 0.00, Loss: 0.0633, Eps: 0.5045, Mem.size: 596708
+Ep: 3220, Dur: 235, Step: 649006, Rew: 2.00, Loss: 0.0707, Eps: 0.5026, Mem.size: 598825
+Saved weights to colaboratory_models/BreakoutDeterministic-v42018-05-18 07:14:16.828452.h5
+Ep: 3230, Dur: 142, Step: 651126, Rew: 0.00, Loss: 0.0764, Eps: 0.5008, Mem.size: 600822
+Ep: 3240, Dur: 202, Step: 653085, Rew: 2.00, Loss: 0.1067, Eps: 0.4992, Mem.size: 602615
+Ep: 3250, Dur: 162, Step: 655178, Rew: 0.00, Loss: 0.0931, Eps: 0.4975, Mem.size: 604546
+Ep: 3260, Dur: 173, Step: 657266, Rew: 0.00, Loss: 0.0868, Eps: 0.4957, Mem.size: 606451
+Ep: 3270, Dur: 141, Step: 659109, Rew: 0.00, Loss: 0.0928, Eps: 0.4942, Mem.size: 608119
+Saved weights to colaboratory_models/BreakoutDeterministic-v42018-05-18 07:14:16.828452.h5
+Ep: 3280, Dur: 182, Step: 661163, Rew: 1.00, Loss: 0.0800, Eps: 0.4926, Mem.size: 609995
+Ep: 3290, Dur: 158, Step: 663160, Rew: 0.00, Loss: 0.0766, Eps: 0.4909, Mem.size: 611791
+Ep: 3300, Dur: 149, Step: 665552, Rew: 0.00, Loss: 0.0588, Eps: 0.4889, Mem.size: 614045
+Ep: 3310, Dur: 199, Step: 668080, Rew: 1.00, Loss: 0.0939, Eps: 0.4868, Mem.size: 616398
+Saved weights to colaboratory_models/BreakoutDeterministic-v42018-05-18 07:14:16.828452.h5
+Ep: 3320, Dur: 177, Step: 670289, Rew: 1.00, Loss: 0.1041, Eps: 0.4849, Mem.size: 618468
+Ep: 3330, Dur: 127, Step: 672442, Rew: 0.00, Loss: 0.0481, Eps: 0.4831, Mem.size: 620490
+Ep: 3340, Dur: 155, Step: 674470, Rew: 0.00, Loss: 0.0974, Eps: 0.4814, Mem.size: 622333
+Ep: 3350, Dur: 181, Step: 676472, Rew: 1.00, Loss: 0.1361, Eps: 0.4798, Mem.size: 624207
+Ep: 3360, Dur: 276, Step: 678689, Rew: 4.00, Loss: 0.1551, Eps: 0.4779, Mem.size: 626294
+Saved weights to colaboratory_models/BreakoutDeterministic-v42018-05-18 07:14:16.828452.h5
+Ep: 3370, Dur: 178, Step: 680795, Rew: 1.00, Loss: 0.0860, Eps: 0.4761, Mem.size: 628223
+Ep: 3380, Dur: 218, Step: 682915, Rew: 2.00, Loss: 0.1871, Eps: 0.4744, Mem.size: 630181
+Ep: 3390, Dur: 181, Step: 684971, Rew: 0.00, Loss: 0.0663, Eps: 0.4727, Mem.size: 632097
+Ep: 3400, Dur: 240, Step: 687132, Rew: 3.00, Loss: 0.1320, Eps: 0.4708, Mem.size: 634166
+Ep: 3410, Dur: 242, Step: 689096, Rew: 3.00, Loss: 0.1364, Eps: 0.4692, Mem.size: 635985
+Saved weights to colaboratory_models/BreakoutDeterministic-v42018-05-18 07:14:16.828452.h5
+Ep: 3420, Dur: 212, Step: 691146, Rew: 1.00, Loss: 0.1210, Eps: 0.4675, Mem.size: 637879
+Ep: 3430, Dur: 186, Step: 693638, Rew: 1.00, Loss: 0.0298, Eps: 0.4653, Mem.size: 640246
+Ep: 3440, Dur: 165, Step: 695900, Rew: 1.00, Loss: 0.1071, Eps: 0.4635, Mem.size: 642327
+Ep: 3450, Dur: 212, Step: 698052, Rew: 2.00, Loss: 0.1630, Eps: 0.4616, Mem.size: 644335
+Saved weights to colaboratory_models/BreakoutDeterministic-v42018-05-18 07:14:16.828452.h5
+Ep: 3460, Dur: 204, Step: 700132, Rew: 2.00, Loss: 0.0823, Eps: 0.4599, Mem.size: 646218
+Ep: 3470, Dur: 157, Step: 702382, Rew: 1.00, Loss: 0.0904, Eps: 0.4581, Mem.size: 648277
+Ep: 3480, Dur: 169, Step: 704344, Rew: 1.00, Loss: 0.0705, Eps: 0.4565, Mem.size: 650090
+Ep: 3490, Dur: 221, Step: 706360, Rew: 2.00, Loss: 0.0751, Eps: 0.4547, Mem.size: 652002
+Ep: 3500, Dur: 203, Step: 708458, Rew: 2.00, Loss: 0.1077, Eps: 0.4530, Mem.size: 653965
+Saved weights to colaboratory_models/BreakoutDeterministic-v42018-05-18 07:14:16.828452.h5
+Ep: 3510, Dur: 295, Step: 710981, Rew: 5.00, Loss: 0.1271, Eps: 0.4508, Mem.size: 656390
+Ep: 3520, Dur: 146, Step: 713119, Rew: 0.00, Loss: 0.0887, Eps: 0.4490, Mem.size: 658387
+Ep: 3530, Dur: 170, Step: 715133, Rew: 0.00, Loss: 0.0997, Eps: 0.4473, Mem.size: 660260
+Ep: 3540, Dur: 257, Step: 717338, Rew: 4.00, Loss: 0.1662, Eps: 0.4455, Mem.size: 662293
+Ep: 3550, Dur: 157, Step: 719561, Rew: 0.00, Loss: 0.0707, Eps: 0.4436, Mem.size: 664399
+Saved weights to colaboratory_models/BreakoutDeterministic-v42018-05-18 07:14:16.828452.h5
+Ep: 3560, Dur: 259, Step: 721771, Rew: 3.00, Loss: 0.0695, Eps: 0.4417, Mem.size: 666446
+Ep: 3570, Dur: 209, Step: 724004, Rew: 1.00, Loss: 0.0572, Eps: 0.4399, Mem.size: 668532
+Ep: 3580, Dur: 139, Step: 726041, Rew: 0.00, Loss: 0.0537, Eps: 0.4382, Mem.size: 670426
+Ep: 3590, Dur: 174, Step: 728306, Rew: 0.00, Loss: 0.0347, Eps: 0.4363, Mem.size: 672508
+Saved weights to colaboratory_models/BreakoutDeterministic-v42018-05-18 07:14:16.828452.h5
+Ep: 3600, Dur: 214, Step: 730475, Rew: 2.00, Loss: 0.0755, Eps: 0.4344, Mem.size: 674572
+Ep: 3610, Dur: 223, Step: 732646, Rew: 2.00, Loss: 0.0756, Eps: 0.4326, Mem.size: 676582
+Ep: 3620, Dur: 195, Step: 734726, Rew: 1.00, Loss: 0.0921, Eps: 0.4309, Mem.size: 678500
+Ep: 3630, Dur: 225, Step: 736882, Rew: 2.00, Loss: 0.0838, Eps: 0.4291, Mem.size: 680499
+Ep: 3640, Dur: 282, Step: 739109, Rew: 4.00, Loss: 0.1555, Eps: 0.4272, Mem.size: 682606
+Saved weights to colaboratory_models/BreakoutDeterministic-v42018-05-18 07:14:16.828452.h5
+Ep: 3650, Dur: 185, Step: 741394, Rew: 0.00, Loss: 0.0758, Eps: 0.4253, Mem.size: 684748
+Ep: 3660, Dur: 152, Step: 743718, Rew: 0.00, Loss: 0.0838, Eps: 0.4233, Mem.size: 686989
+Ep: 3670, Dur: 195, Step: 746011, Rew: 1.00, Loss: 0.1380, Eps: 0.4213, Mem.size: 689164
+Ep: 3680, Dur: 138, Step: 748116, Rew: 0.00, Loss: 0.0954, Eps: 0.4196, Mem.size: 691103
+Saved weights to colaboratory_models/BreakoutDeterministic-v42018-05-18 07:14:16.828452.h5
+Ep: 3690, Dur: 161, Step: 750454, Rew: 1.00, Loss: 0.0556, Eps: 0.4176, Mem.size: 693276
+Ep: 3700, Dur: 185, Step: 752655, Rew: 1.00, Loss: 0.0963, Eps: 0.4157, Mem.size: 695334
+Ep: 3710, Dur: 238, Step: 754997, Rew: 3.00, Loss: 0.1560, Eps: 0.4138, Mem.size: 697492
+Ep: 3720, Dur: 140, Step: 756960, Rew: 0.00, Loss: 0.0628, Eps: 0.4121, Mem.size: 699356
+Ep: 3730, Dur: 312, Step: 759317, Rew: 4.00, Loss: 0.0965, Eps: 0.4101, Mem.size: 701591
+Saved weights to colaboratory_models/BreakoutDeterministic-v42018-05-18 07:14:16.828452.h5
+Ep: 3740, Dur: 207, Step: 761419, Rew: 2.00, Loss: 0.0658, Eps: 0.4084, Mem.size: 703533
+Ep: 3750, Dur: 339, Step: 763731, Rew: 4.00, Loss: 0.1749, Eps: 0.4064, Mem.size: 705669
+Ep: 3760, Dur: 232, Step: 765884, Rew: 2.00, Loss: 0.1295, Eps: 0.4047, Mem.size: 707651
+Ep: 3770, Dur: 255, Step: 768061, Rew: 3.00, Loss: 0.0980, Eps: 0.4029, Mem.size: 709646
+Saved weights to colaboratory_models/BreakoutDeterministic-v42018-05-18 07:14:16.828452.h5
+Ep: 3780, Dur: 180, Step: 770243, Rew: 0.00, Loss: 0.0948, Eps: 0.4010, Mem.size: 711676
+Ep: 3790, Dur: 302, Step: 772748, Rew: 4.00, Loss: 0.1437, Eps: 0.3990, Mem.size: 713995
+Ep: 3800, Dur: 195, Step: 775164, Rew: 1.00, Loss: 0.0839, Eps: 0.3969, Mem.size: 716227
+Ep: 3810, Dur: 177, Step: 777221, Rew: 1.00, Loss: 0.1037, Eps: 0.3952, Mem.size: 718130
+Ep: 3820, Dur: 185, Step: 779320, Rew: 2.00, Loss: 0.0980, Eps: 0.3934, Mem.size: 720126
+Saved weights to colaboratory_models/BreakoutDeterministic-v42018-05-18 07:14:16.828452.h5
+Ep: 3830, Dur: 213, Step: 781593, Rew: 1.00, Loss: 0.0921, Eps: 0.3915, Mem.size: 722226
+Ep: 3840, Dur: 223, Step: 783798, Rew: 2.00, Loss: 0.0765, Eps: 0.3897, Mem.size: 724300
+Ep: 3850, Dur: 151, Step: 785863, Rew: 1.00, Loss: 0.0701, Eps: 0.3880, Mem.size: 726201
+Ep: 3860, Dur: 237, Step: 788243, Rew: 2.00, Loss: 0.0708, Eps: 0.3860, Mem.size: 728375
+Saved weights to colaboratory_models/BreakoutDeterministic-v42018-05-18 07:14:16.828452.h5
+Ep: 3870, Dur: 184, Step: 790442, Rew: 1.00, Loss: 0.1063, Eps: 0.3842, Mem.size: 730401
+Ep: 3880, Dur: 209, Step: 792649, Rew: 2.00, Loss: 0.1101, Eps: 0.3823, Mem.size: 732444
+Ep: 3890, Dur: 176, Step: 794889, Rew: 1.00, Loss: 0.1270, Eps: 0.3805, Mem.size: 734534
+Ep: 3900, Dur: 285, Step: 797180, Rew: 4.00, Loss: 0.1440, Eps: 0.3786, Mem.size: 736652
+Ep: 3910, Dur: 229, Step: 799497, Rew: 2.00, Loss: 0.1276, Eps: 0.3766, Mem.size: 738801
+Saved weights to colaboratory_models/BreakoutDeterministic-v42018-05-18 07:14:16.828452.h5
+Ep: 3920, Dur: 426, Step: 802258, Rew: 7.00, Loss: 0.2035, Eps: 0.3743, Mem.size: 741373
+Ep: 3930, Dur: 180, Step: 804421, Rew: 1.00, Loss: 0.1123, Eps: 0.3726, Mem.size: 743304
+Ep: 3940, Dur: 138, Step: 806504, Rew: 0.00, Loss: 0.0850, Eps: 0.3708, Mem.size: 745280
+Ep: 3950, Dur: 191, Step: 808745, Rew: 1.00, Loss: 0.1239, Eps: 0.3689, Mem.size: 747430
+Saved weights to colaboratory_models/BreakoutDeterministic-v42018-05-18 07:14:16.828452.h5
+Ep: 3960, Dur: 172, Step: 810755, Rew: 0.00, Loss: 0.0802, Eps: 0.3672, Mem.size: 749294
+Ep: 3970, Dur: 247, Step: 812788, Rew: 3.00, Loss: 0.2090, Eps: 0.3655, Mem.size: 751203
+Ep: 3980, Dur: 167, Step: 815089, Rew: 1.00, Loss: 0.0679, Eps: 0.3635, Mem.size: 753388
+Ep: 3990, Dur: 335, Step: 817520, Rew: 5.00, Loss: 0.1318, Eps: 0.3615, Mem.size: 755632
+Ep: 4000, Dur: 206, Step: 819766, Rew: 2.00, Loss: 0.1039, Eps: 0.3596, Mem.size: 757747
+Saved weights to colaboratory_models/BreakoutDeterministic-v42018-05-18 07:14:16.828452.h5
+Ep: 4010, Dur: 228, Step: 822160, Rew: 1.00, Loss: 0.1017, Eps: 0.3576, Mem.size: 759966
+Ep: 4020, Dur: 236, Step: 824363, Rew: 2.00, Loss: 0.1496, Eps: 0.3557, Mem.size: 762025
+Ep: 4030, Dur: 246, Step: 826775, Rew: 2.00, Loss: 0.1500, Eps: 0.3537, Mem.size: 764305
+Ep: 4040, Dur: 186, Step: 828930, Rew: 1.00, Loss: 0.0668, Eps: 0.3518, Mem.size: 766398
+Saved weights to colaboratory_models/BreakoutDeterministic-v42018-05-18 07:14:16.828452.h5
+Ep: 4050, Dur: 172, Step: 831269, Rew: 0.00, Loss: 0.0767, Eps: 0.3498, Mem.size: 768560
+Ep: 4060, Dur: 192, Step: 833626, Rew: 1.00, Loss: 0.1037, Eps: 0.3478, Mem.size: 770794
+Ep: 4070, Dur: 244, Step: 836108, Rew: 2.00, Loss: 0.1149, Eps: 0.3457, Mem.size: 773113
+Ep: 4080, Dur: 226, Step: 838314, Rew: 3.00, Loss: 0.1021, Eps: 0.3439, Mem.size: 775119
+Saved weights to colaboratory_models/BreakoutDeterministic-v42018-05-18 07:14:16.828452.h5
+Ep: 4090, Dur: 194, Step: 840708, Rew: 1.00, Loss: 0.0902, Eps: 0.3419, Mem.size: 777347
+Ep: 4100, Dur: 142, Step: 842694, Rew: 0.00, Loss: 0.1037, Eps: 0.3403, Mem.size: 779134
+Ep: 4110, Dur: 262, Step: 845029, Rew: 2.00, Loss: 0.1444, Eps: 0.3383, Mem.size: 781358
+Ep: 4120, Dur: 187, Step: 847259, Rew: 1.00, Loss: 0.0723, Eps: 0.3365, Mem.size: 783426
+Ep: 4130, Dur: 152, Step: 849325, Rew: 1.00, Loss: 0.0841, Eps: 0.3347, Mem.size: 785350
+Ep: 4140, Dur: 278, Step: 851694, Rew: 4.00, Loss: 0.1448, Eps: 0.3327, Mem.size: 787601
+Ep: 4150, Dur: 162, Step: 854432, Rew: 0.00, Loss: 0.0572, Eps: 0.3303, Mem.size: 790242
+Ep: 4160, Dur: 221, Step: 856508, Rew: 2.00, Loss: 0.0811, Eps: 0.3286, Mem.size: 792200
+Ep: 4170, Dur: 267, Step: 858762, Rew: 3.00, Loss: 0.0956, Eps: 0.3267, Mem.size: 794291
+Saved weights to colaboratory_models/BreakoutDeterministic-v42018-05-18 07:14:16.828452.h5
+Ep: 4180, Dur: 199, Step: 861320, Rew: 1.00, Loss: 0.0724, Eps: 0.3245, Mem.size: 796717
+Ep: 4190, Dur: 273, Step: 863542, Rew: 2.00, Loss: 0.1522, Eps: 0.3227, Mem.size: 798772
+Ep: 4200, Dur: 171, Step: 865855, Rew: 0.00, Loss: 0.0711, Eps: 0.3208, Mem.size: 800876
+Ep: 4210, Dur: 231, Step: 868207, Rew: 2.00, Loss: 0.0871, Eps: 0.3188, Mem.size: 803065
+Saved weights to colaboratory_models/BreakoutDeterministic-v42018-05-18 07:14:16.828452.h5
+Ep: 4220, Dur: 192, Step: 870237, Rew: 1.00, Loss: 0.0955, Eps: 0.3171, Mem.size: 804979
+Ep: 4230, Dur: 276, Step: 872471, Rew: 4.00, Loss: 0.1295, Eps: 0.3152, Mem.size: 807079
+Ep: 4240, Dur: 174, Step: 874542, Rew: 1.00, Loss: 0.1070, Eps: 0.3135, Mem.size: 808940
+Ep: 4250, Dur: 204, Step: 876961, Rew: 0.00, Loss: 0.1309, Eps: 0.3115, Mem.size: 811181
+Ep: 4260, Dur: 198, Step: 879201, Rew: 2.00, Loss: 0.0546, Eps: 0.3096, Mem.size: 813279
+Saved weights to colaboratory_models/BreakoutDeterministic-v42018-05-18 07:14:16.828452.h5
+Ep: 4270, Dur: 146, Step: 881680, Rew: 0.00, Loss: 0.0707, Eps: 0.3075, Mem.size: 815557
+Ep: 4280, Dur: 230, Step: 884116, Rew: 3.00, Loss: 0.1400, Eps: 0.3055, Mem.size: 817820
+Ep: 4290, Dur: 209, Step: 886650, Rew: 1.00, Loss: 0.1054, Eps: 0.3034, Mem.size: 820213
+Ep: 4300, Dur: 190, Step: 889218, Rew: 2.00, Loss: 0.1033, Eps: 0.3012, Mem.size: 822594
+Saved weights to colaboratory_models/BreakoutDeterministic-v42018-05-18 07:14:16.828452.h5
+Ep: 4310, Dur: 185, Step: 891847, Rew: 1.00, Loss: 0.1071, Eps: 0.2990, Mem.size: 824996
+Ep: 4320, Dur: 207, Step: 894294, Rew: 2.00, Loss: 0.1040, Eps: 0.2970, Mem.size: 827308
+Ep: 4330, Dur: 210, Step: 896579, Rew: 2.00, Loss: 0.0940, Eps: 0.2950, Mem.size: 829465
+Ep: 4340, Dur: 174, Step: 898946, Rew: 0.00, Loss: 0.0728, Eps: 0.2930, Mem.size: 831664
+Saved weights to colaboratory_models/BreakoutDeterministic-v42018-05-18 07:14:16.828452.h5
+Ep: 4350, Dur: 242, Step: 901310, Rew: 2.00, Loss: 0.1375, Eps: 0.2911, Mem.size: 833860
+Ep: 4360, Dur: 194, Step: 903568, Rew: 1.00, Loss: 0.0823, Eps: 0.2892, Mem.size: 835967
+Ep: 4370, Dur: 256, Step: 906231, Rew: 3.00, Loss: 0.0986, Eps: 0.2869, Mem.size: 838466
+Ep: 4380, Dur: 182, Step: 908872, Rew: 0.00, Loss: 0.0717, Eps: 0.2847, Mem.size: 840956
+Saved weights to colaboratory_models/BreakoutDeterministic-v42018-05-18 07:14:16.828452.h5
+Ep: 4390, Dur: 234, Step: 911341, Rew: 2.00, Loss: 0.1732, Eps: 0.2826, Mem.size: 843301
+Ep: 4400, Dur: 297, Step: 913516, Rew: 5.00, Loss: 0.1710, Eps: 0.2808, Mem.size: 845304
+Ep: 4410, Dur: 265, Step: 915846, Rew: 3.00, Loss: 0.1035, Eps: 0.2788, Mem.size: 847479
+Ep: 4420, Dur: 300, Step: 918362, Rew: 3.00, Loss: 0.1676, Eps: 0.2766, Mem.size: 849890
+Saved weights to colaboratory_models/BreakoutDeterministic-v42018-05-18 07:14:16.828452.h5
+Ep: 4430, Dur: 247, Step: 920850, Rew: 2.00, Loss: 0.1101, Eps: 0.2745, Mem.size: 852224
+Ep: 4440, Dur: 160, Step: 923311, Rew: 1.00, Loss: 0.0759, Eps: 0.2724, Mem.size: 854593
+Ep: 4450, Dur: 222, Step: 925869, Rew: 2.00, Loss: 0.1023, Eps: 0.2703, Mem.size: 856963
+Ep: 4460, Dur: 208, Step: 928587, Rew: 2.00, Loss: 0.1519, Eps: 0.2680, Mem.size: 859494
+Saved weights to colaboratory_models/BreakoutDeterministic-v42018-05-18 07:14:16.828452.h5
+Ep: 4470, Dur: 255, Step: 931271, Rew: 3.00, Loss: 0.1371, Eps: 0.2657, Mem.size: 861999
+Ep: 4480, Dur: 384, Step: 933677, Rew: 6.00, Loss: 0.2120, Eps: 0.2637, Mem.size: 864284
+Ep: 4490, Dur: 177, Step: 935839, Rew: 1.00, Loss: 0.1242, Eps: 0.2619, Mem.size: 866319
+Ep: 4500, Dur: 186, Step: 938084, Rew: 1.00, Loss: 0.0838, Eps: 0.2600, Mem.size: 868408
+Saved weights to colaboratory_models/BreakoutDeterministic-v42018-05-18 07:14:16.828452.h5
+Ep: 4510, Dur: 317, Step: 940942, Rew: 3.00, Loss: 0.0979, Eps: 0.2575, Mem.size: 871118
+Ep: 4520, Dur: 281, Step: 943109, Rew: 2.00, Loss: 0.1594, Eps: 0.2557, Mem.size: 873176
+Ep: 4530, Dur: 194, Step: 945253, Rew: 1.00, Loss: 0.1130, Eps: 0.2539, Mem.size: 875203
+Ep: 4540, Dur: 230, Step: 947562, Rew: 1.00, Loss: 0.1421, Eps: 0.2520, Mem.size: 877317
+Saved weights to colaboratory_models/BreakoutDeterministic-v42018-05-18 07:14:16.828452.h5
+Ep: 4550, Dur: 159, Step: 950058, Rew: 1.00, Loss: 0.0885, Eps: 0.2498, Mem.size: 879682
+Ep: 4560, Dur: 189, Step: 952386, Rew: 1.00, Loss: 0.0596, Eps: 0.2479, Mem.size: 881860
+Ep: 4570, Dur: 249, Step: 954998, Rew: 3.00, Loss: 0.1434, Eps: 0.2457, Mem.size: 884296
+Ep: 4580, Dur: 135, Step: 957483, Rew: 0.00, Loss: 0.0745, Eps: 0.2436, Mem.size: 886626
+Saved weights to colaboratory_models/BreakoutDeterministic-v42018-05-18 07:14:16.828452.h5
+Ep: 4590, Dur: 270, Step: 960081, Rew: 4.00, Loss: 0.1339, Eps: 0.2414, Mem.size: 889043
+Ep: 4600, Dur: 193, Step: 962258, Rew: 1.00, Loss: 0.1292, Eps: 0.2396, Mem.size: 891032
+Ep: 4610, Dur: 160, Step: 964682, Rew: 1.00, Loss: 0.0611, Eps: 0.2376, Mem.size: 893310
+Ep: 4620, Dur: 293, Step: 967419, Rew: 5.00, Loss: 0.1732, Eps: 0.2353, Mem.size: 895874
+Ep: 4630, Dur: 170, Step: 969843, Rew: 1.00, Loss: 0.0742, Eps: 0.2332, Mem.size: 898159
+Saved weights to colaboratory_models/BreakoutDeterministic-v42018-05-18 07:14:16.828452.h5
+Ep: 4640, Dur: 221, Step: 972482, Rew: 2.00, Loss: 0.0807, Eps: 0.2310, Mem.size: 900000
+Ep: 4650, Dur: 236, Step: 974965, Rew: 1.00, Loss: 0.1474, Eps: 0.2289, Mem.size: 900000
+Ep: 4660, Dur: 199, Step: 977576, Rew: 1.00, Loss: 0.0672, Eps: 0.2267, Mem.size: 900000
+Saved weights to colaboratory_models/BreakoutDeterministic-v42018-05-18 07:14:16.828452.h5
+Ep: 4670, Dur: 251, Step: 980082, Rew: 3.00, Loss: 0.1195, Eps: 0.2246, Mem.size: 900000
+Ep: 4680, Dur: 233, Step: 982694, Rew: 2.00, Loss: 0.0913, Eps: 0.2224, Mem.size: 900000
+Ep: 4690, Dur: 243, Step: 985265, Rew: 3.00, Loss: 0.1461, Eps: 0.2202, Mem.size: 900000
+Ep: 4700, Dur: 273, Step: 987941, Rew: 3.00, Loss: 0.1694, Eps: 0.2179, Mem.size: 900000
+Saved weights to colaboratory_models/BreakoutDeterministic-v42018-05-18 07:14:16.828452.h5
+Ep: 4710, Dur: 317, Step: 990527, Rew: 4.00, Loss: 0.1465, Eps: 0.2157, Mem.size: 900000
+Ep: 4720, Dur: 279, Step: 992978, Rew: 3.00, Loss: 0.1621, Eps: 0.2136, Mem.size: 900000
+Ep: 4730, Dur: 252, Step: 995354, Rew: 3.00, Loss: 0.1006, Eps: 0.2117, Mem.size: 900000
+Ep: 4740, Dur: 221, Step: 998045, Rew: 1.00, Loss: 0.1401, Eps: 0.2094, Mem.size: 900000
+Saved weights to colaboratory_models/BreakoutDeterministic-v42018-05-18 07:14:16.828452.h5
+Ep: 4750, Dur: 302, Step: 1000963, Rew: 4.00, Loss: 0.1998, Eps: 0.2069, Mem.size: 900000
+Ep: 4760, Dur: 165, Step: 1003251, Rew: 1.00, Loss: 0.0934, Eps: 0.2049, Mem.size: 900000
+Ep: 4770, Dur: 260, Step: 1005743, Rew: 4.00, Loss: 0.1429, Eps: 0.2028, Mem.size: 900000
+Ep: 4780, Dur: 318, Step: 1008782, Rew: 3.00, Loss: 0.1478, Eps: 0.2003, Mem.size: 900000
+Saved weights to colaboratory_models/BreakoutDeterministic-v42018-05-18 07:14:16.828452.h5
+Ep: 4790, Dur: 289, Step: 1011470, Rew: 3.00, Loss: 0.1525, Eps: 0.1980, Mem.size: 900000
+Ep: 4800, Dur: 255, Step: 1013928, Rew: 3.00, Loss: 0.1247, Eps: 0.1958, Mem.size: 900000
+Ep: 4810, Dur: 246, Step: 1016592, Rew: 3.00, Loss: 0.1912, Eps: 0.1936, Mem.size: 900000
+Ep: 4820, Dur: 311, Step: 1019388, Rew: 4.00, Loss: 0.2123, Eps: 0.1912, Mem.size: 900000
+Saved weights to colaboratory_models/BreakoutDeterministic-v42018-05-18 07:14:16.828452.h5
+Ep: 4830, Dur: 234, Step: 1022326, Rew: 3.00, Loss: 0.1303, Eps: 0.1887, Mem.size: 900000
+Ep: 4840, Dur: 281, Step: 1025258, Rew: 3.00, Loss: 0.1688, Eps: 0.1862, Mem.size: 900000
+Ep: 4850, Dur: 406, Step: 1028307, Rew: 5.00, Loss: 0.2608, Eps: 0.1836, Mem.size: 900000
+Saved weights to colaboratory_models/BreakoutDeterministic-v42018-05-18 07:14:16.828452.h5
+Ep: 4860, Dur: 136, Step: 1031212, Rew: 0.00, Loss: 0.0694, Eps: 0.1811, Mem.size: 900000
+Ep: 4870, Dur: 354, Step: 1034389, Rew: 5.00, Loss: 0.1714, Eps: 0.1784, Mem.size: 900000
+Ep: 4880, Dur: 402, Step: 1037673, Rew: 5.00, Loss: 0.2336, Eps: 0.1756, Mem.size: 900000
+Saved weights to colaboratory_models/BreakoutDeterministic-v42018-05-18 07:14:16.828452.h5
+Ep: 4890, Dur: 254, Step: 1040642, Rew: 2.00, Loss: 0.1600, Eps: 0.1731, Mem.size: 900000
+Ep: 4900, Dur: 277, Step: 1043487, Rew: 2.00, Loss: 0.1634, Eps: 0.1706, Mem.size: 900000
+Ep: 4910, Dur: 251, Step: 1046344, Rew: 4.00, Loss: 0.1293, Eps: 0.1682, Mem.size: 900000
+Ep: 4920, Dur: 266, Step: 1049962, Rew: 2.00, Loss: 0.1504, Eps: 0.1651, Mem.size: 900000
+Saved weights to colaboratory_models/BreakoutDeterministic-v42018-05-18 07:14:16.828452.h5
+Ep: 4930, Dur: 312, Step: 1053039, Rew: 3.00, Loss: 0.2363, Eps: 0.1625, Mem.size: 900000
+Ep: 4940, Dur: 469, Step: 1056251, Rew: 7.00, Loss: 0.2483, Eps: 0.1597, Mem.size: 900000
+Ep: 4950, Dur: 309, Step: 1058922, Rew: 4.00, Loss: 0.1644, Eps: 0.1574, Mem.size: 900000
+Saved weights to colaboratory_models/BreakoutDeterministic-v42018-05-18 07:14:16.828452.h5
+Ep: 4960, Dur: 291, Step: 1062070, Rew: 4.00, Loss: 0.1883, Eps: 0.1548, Mem.size: 900000
+Ep: 4970, Dur: 420, Step: 1065436, Rew: 6.00, Loss: 0.2109, Eps: 0.1518, Mem.size: 900000
+Ep: 4980, Dur: 181, Step: 1068751, Rew: 1.00, Loss: 0.1243, Eps: 0.1490, Mem.size: 900000
+Saved weights to colaboratory_models/BreakoutDeterministic-v42018-05-18 07:14:16.828452.h5
+Ep: 4990, Dur: 182, Step: 1071846, Rew: 1.00, Loss: 0.1144, Eps: 0.1464, Mem.size: 900000
+Ep: 5000, Dur: 354, Step: 1074361, Rew: 5.00, Loss: 0.2653, Eps: 0.1442, Mem.size: 900000
+Ep: 5010, Dur: 364, Step: 1077426, Rew: 4.00, Loss: 0.1696, Eps: 0.1416, Mem.size: 900000
+Saved weights to colaboratory_models/BreakoutDeterministic-v42018-05-18 07:14:16.828452.h5
+Ep: 5020, Dur: 294, Step: 1080492, Rew: 3.00, Loss: 0.1840, Eps: 0.1390, Mem.size: 900000
+Ep: 5030, Dur: 204, Step: 1082836, Rew: 2.00, Loss: 0.1750, Eps: 0.1370, Mem.size: 900000
+Ep: 5040, Dur: 211, Step: 1085663, Rew: 2.00, Loss: 0.0794, Eps: 0.1346, Mem.size: 900000
+Ep: 5050, Dur: 255, Step: 1088385, Rew: 4.00, Loss: 0.1885, Eps: 0.1323, Mem.size: 900000
+Saved weights to colaboratory_models/BreakoutDeterministic-v42018-05-18 07:14:16.828452.h5
+Ep: 5060, Dur: 239, Step: 1091352, Rew: 3.00, Loss: 0.1638, Eps: 0.1297, Mem.size: 900000
+Ep: 5070, Dur: 194, Step: 1093948, Rew: 2.00, Loss: 0.1036, Eps: 0.1275, Mem.size: 900000
+Ep: 5080, Dur: 353, Step: 1097386, Rew: 4.00, Loss: 0.2094, Eps: 0.1246, Mem.size: 900000
+Saved weights to colaboratory_models/BreakoutDeterministic-v42018-05-18 07:14:16.828452.h5
+Ep: 5090, Dur: 330, Step: 1100411, Rew: 4.00, Loss: 0.2260, Eps: 0.1220, Mem.size: 900000
+Ep: 5100, Dur: 211, Step: 1103190, Rew: 2.00, Loss: 0.1358, Eps: 0.1197, Mem.size: 900000
+Ep: 5110, Dur: 344, Step: 1106267, Rew: 5.00, Loss: 0.2204, Eps: 0.1170, Mem.size: 900000
+Ep: 5120, Dur: 342, Step: 1109251, Rew: 5.00, Loss: 0.1856, Eps: 0.1145, Mem.size: 900000
+Saved weights to colaboratory_models/BreakoutDeterministic-v42018-05-18 07:14:16.828452.h5
+Ep: 5130, Dur: 231, Step: 1112250, Rew: 3.00, Loss: 0.1266, Eps: 0.1119, Mem.size: 900000
+Ep: 5140, Dur: 218, Step: 1115429, Rew: 3.00, Loss: 0.0944, Eps: 0.1092, Mem.size: 900000
+Ep: 5150, Dur: 277, Step: 1118446, Rew: 3.00, Loss: 0.1851, Eps: 0.1066, Mem.size: 900000
+Saved weights to colaboratory_models/BreakoutDeterministic-v42018-05-18 07:14:16.828452.h5
+Ep: 5160, Dur: 245, Step: 1121261, Rew: 3.00, Loss: 0.1067, Eps: 0.1042, Mem.size: 900000
+Ep: 5170, Dur: 251, Step: 1124345, Rew: 3.00, Loss: 0.1502, Eps: 0.1016, Mem.size: 900000
+Ep: 5180, Dur: 348, Step: 1127922, Rew: 4.00, Loss: 0.2114, Eps: 0.1000, Mem.size: 900000
+Saved weights to colaboratory_models/BreakoutDeterministic-v42018-05-18 07:14:16.828452.h5
+Ep: 5190, Dur: 285, Step: 1130752, Rew: 4.00, Loss: 0.2032, Eps: 0.1000, Mem.size: 900000
+Ep: 5200, Dur: 359, Step: 1133498, Rew: 4.00, Loss: 0.2115, Eps: 0.1000, Mem.size: 900000
+Ep: 5210, Dur: 261, Step: 1136207, Rew: 3.00, Loss: 0.1826, Eps: 0.1000, Mem.size: 900000
+Ep: 5220, Dur: 287, Step: 1139506, Rew: 4.00, Loss: 0.1888, Eps: 0.1000, Mem.size: 900000
+Saved weights to colaboratory_models/BreakoutDeterministic-v42018-05-18 07:14:16.828452.h5
+Ep: 5230, Dur: 219, Step: 1142395, Rew: 3.00, Loss: 0.1612, Eps: 0.1000, Mem.size: 900000
+Ep: 5240, Dur: 301, Step: 1145660, Rew: 4.00, Loss: 0.1546, Eps: 0.1000, Mem.size: 900000
+Ep: 5250, Dur: 274, Step: 1148510, Rew: 4.00, Loss: 0.1432, Eps: 0.1000, Mem.size: 900000
+Ep: 5260, Dur: 315, Step: 1151513, Rew: 5.00, Loss: 0.2110, Eps: 0.1000, Mem.size: 900000
+Ep: 5270, Dur: 233, Step: 1154393, Rew: 3.00, Loss: 0.1797, Eps: 0.1000, Mem.size: 900000
+Ep: 5280, Dur: 296, Step: 1157276, Rew: 4.00, Loss: 0.1849, Eps: 0.1000, Mem.size: 900000
+Saved weights to colaboratory_models/BreakoutDeterministic-v42018-05-18 07:14:16.828452.h5
+Ep: 5290, Dur: 431, Step: 1160577, Rew: 4.00, Loss: 0.3036, Eps: 0.1000, Mem.size: 900000
+Ep: 5300, Dur: 276, Step: 1163754, Rew: 3.00, Loss: 0.1422, Eps: 0.1000, Mem.size: 900000
+Ep: 5310, Dur: 239, Step: 1166806, Rew: 3.00, Loss: 0.1290, Eps: 0.1000, Mem.size: 900000
+Ep: 5320, Dur: 215, Step: 1169684, Rew: 3.00, Loss: 0.1016, Eps: 0.1000, Mem.size: 900000
+Saved weights to colaboratory_models/BreakoutDeterministic-v42018-05-18 07:14:16.828452.h5
+Ep: 5330, Dur: 256, Step: 1172525, Rew: 3.00, Loss: 0.1527, Eps: 0.1000, Mem.size: 900000
+Ep: 5340, Dur: 411, Step: 1175488, Rew: 6.00, Loss: 0.2235, Eps: 0.1000, Mem.size: 900000
+Ep: 5350, Dur: 290, Step: 1178658, Rew: 4.00, Loss: 0.1503, Eps: 0.1000, Mem.size: 900000
+Saved weights to colaboratory_models/BreakoutDeterministic-v42018-05-18 07:14:16.828452.h5
+Ep: 5360, Dur: 232, Step: 1181645, Rew: 3.00, Loss: 0.1183, Eps: 0.1000, Mem.size: 900000
+Ep: 5370, Dur: 221, Step: 1184409, Rew: 3.00, Loss: 0.1691, Eps: 0.1000, Mem.size: 900000
+Ep: 5380, Dur: 254, Step: 1187145, Rew: 4.00, Loss: 0.1251, Eps: 0.1000, Mem.size: 900000
+Ep: 5390, Dur: 305, Step: 1189838, Rew: 4.00, Loss: 0.2051, Eps: 0.1000, Mem.size: 900000
+Saved weights to colaboratory_models/BreakoutDeterministic-v42018-05-18 07:14:16.828452.h5
+Ep: 5400, Dur: 343, Step: 1193089, Rew: 3.00, Loss: 0.1885, Eps: 0.1000, Mem.size: 900000
+Ep: 5410, Dur: 395, Step: 1196080, Rew: 5.00, Loss: 0.3010, Eps: 0.1000, Mem.size: 900000
+Ep: 5420, Dur: 228, Step: 1198964, Rew: 3.00, Loss: 0.1016, Eps: 0.1000, Mem.size: 900000
+Saved weights to colaboratory_models/BreakoutDeterministic-v42018-05-18 07:14:16.828452.h5
+Ep: 5430, Dur: 262, Step: 1201742, Rew: 4.00, Loss: 0.0970, Eps: 0.1000, Mem.size: 900000
+Ep: 5440, Dur: 219, Step: 1204599, Rew: 3.00, Loss: 0.1003, Eps: 0.1000, Mem.size: 900000
+Ep: 5450, Dur: 342, Step: 1207830, Rew: 4.00, Loss: 0.1873, Eps: 0.1000, Mem.size: 900000
+Saved weights to colaboratory_models/BreakoutDeterministic-v42018-05-18 07:14:16.828452.h5
+Ep: 5460, Dur: 217, Step: 1210979, Rew: 3.00, Loss: 0.1016, Eps: 0.1000, Mem.size: 900000
+Ep: 5470, Dur: 274, Step: 1214480, Rew: 3.00, Loss: 0.1077, Eps: 0.1000, Mem.size: 900000
+Ep: 5480, Dur: 176, Step: 1217674, Rew: 1.00, Loss: 0.1085, Eps: 0.1000, Mem.size: 900000
+Saved weights to colaboratory_models/BreakoutDeterministic-v42018-05-18 07:14:16.828452.h5
+Ep: 5490, Dur: 293, Step: 1221256, Rew: 4.00, Loss: 0.1410, Eps: 0.1000, Mem.size: 900000
+Ep: 5500, Dur: 292, Step: 1224365, Rew: 3.00, Loss: 0.1985, Eps: 0.1000, Mem.size: 900000
+Ep: 5510, Dur: 329, Step: 1227342, Rew: 3.00, Loss: 0.1778, Eps: 0.1000, Mem.size: 900000
+Saved weights to colaboratory_models/BreakoutDeterministic-v42018-05-18 07:14:16.828452.h5
+Ep: 5520, Dur: 260, Step: 1230408, Rew: 4.00, Loss: 0.1210, Eps: 0.1000, Mem.size: 900000
+Ep: 5530, Dur: 352, Step: 1233902, Rew: 4.00, Loss: 0.1976, Eps: 0.1000, Mem.size: 900000
+Ep: 5540, Dur: 253, Step: 1236577, Rew: 3.00, Loss: 0.1384, Eps: 0.1000, Mem.size: 900000
+Ep: 5550, Dur: 342, Step: 1239444, Rew: 3.00, Loss: 0.1679, Eps: 0.1000, Mem.size: 900000
+Saved weights to colaboratory_models/BreakoutDeterministic-v42018-05-18 07:14:16.828452.h5
+Ep: 5560, Dur: 221, Step: 1242474, Rew: 3.00, Loss: 0.1399, Eps: 0.1000, Mem.size: 900000
+Ep: 5570, Dur: 303, Step: 1245268, Rew: 5.00, Loss: 0.1944, Eps: 0.1000, Mem.size: 900000
+Ep: 5580, Dur: 248, Step: 1248398, Rew: 4.00, Loss: 0.1352, Eps: 0.1000, Mem.size: 900000
+Saved weights to colaboratory_models/BreakoutDeterministic-v42018-05-18 07:14:16.828452.h5
+Ep: 5590, Dur: 277, Step: 1251567, Rew: 3.00, Loss: 0.0675, Eps: 0.1000, Mem.size: 900000
+Ep: 5600, Dur: 310, Step: 1254554, Rew: 4.00, Loss: 0.1652, Eps: 0.1000, Mem.size: 900000
+Ep: 5610, Dur: 334, Step: 1257614, Rew: 4.00, Loss: 0.1504, Eps: 0.1000, Mem.size: 900000
+Ep: 5620, Dur: 280, Step: 1260544, Rew: 4.00, Loss: 0.1078, Eps: 0.1000, Mem.size: 900000
+Ep: 5630, Dur: 213, Step: 1263528, Rew: 3.00, Loss: 0.1084, Eps: 0.1000, Mem.size: 900000
+Ep: 5640, Dur: 298, Step: 1266463, Rew: 5.00, Loss: 0.1312, Eps: 0.1000, Mem.size: 900000
+Ep: 5650, Dur: 238, Step: 1269697, Rew: 3.00, Loss: 0.0958, Eps: 0.1000, Mem.size: 900000
+Saved weights to colaboratory_models/BreakoutDeterministic-v42018-05-18 07:14:16.828452.h5
+Ep: 5660, Dur: 311, Step: 1272966, Rew: 4.00, Loss: 0.1712, Eps: 0.1000, Mem.size: 900000
+Ep: 5670, Dur: 323, Step: 1276361, Rew: 4.00, Loss: 0.1642, Eps: 0.1000, Mem.size: 900000
+Ep: 5680, Dur: 218, Step: 1279275, Rew: 3.00, Loss: 0.1095, Eps: 0.1000, Mem.size: 900000
+Saved weights to colaboratory_models/BreakoutDeterministic-v42018-05-18 07:14:16.828452.h5
+Ep: 5690, Dur: 428, Step: 1282377, Rew: 7.00, Loss: 0.2443, Eps: 0.1000, Mem.size: 900000
+Ep: 5700, Dur: 250, Step: 1285208, Rew: 4.00, Loss: 0.0925, Eps: 0.1000, Mem.size: 900000
+Ep: 5710, Dur: 319, Step: 1288334, Rew: 4.00, Loss: 0.1766, Eps: 0.1000, Mem.size: 900000
+Saved weights to colaboratory_models/BreakoutDeterministic-v42018-05-18 07:14:16.828452.h5
+Ep: 5720, Dur: 427, Step: 1291202, Rew: 4.00, Loss: 0.1797, Eps: 0.1000, Mem.size: 900000
+Ep: 5730, Dur: 322, Step: 1294422, Rew: 4.00, Loss: 0.1762, Eps: 0.1000, Mem.size: 900000
+Ep: 5740, Dur: 155, Step: 1297407, Rew: 1.00, Loss: 0.0871, Eps: 0.1000, Mem.size: 900000
+Saved weights to colaboratory_models/BreakoutDeterministic-v42018-05-18 07:14:16.828452.h5
+Ep: 5750, Dur: 290, Step: 1300247, Rew: 4.00, Loss: 0.1247, Eps: 0.1000, Mem.size: 900000
+Ep: 5760, Dur: 267, Step: 1303521, Rew: 3.00, Loss: 0.1717, Eps: 0.1000, Mem.size: 900000
+Ep: 5770, Dur: 219, Step: 1306748, Rew: 3.00, Loss: 0.1221, Eps: 0.1000, Mem.size: 900000
+Ep: 5780, Dur: 347, Step: 1309666, Rew: 4.00, Loss: 0.1929, Eps: 0.1000, Mem.size: 900000
+Saved weights to colaboratory_models/BreakoutDeterministic-v42018-05-18 07:14:16.828452.h5
+Ep: 5790, Dur: 366, Step: 1312454, Rew: 5.00, Loss: 0.2199, Eps: 0.1000, Mem.size: 900000
+Ep: 5800, Dur: 250, Step: 1315362, Rew: 4.00, Loss: 0.1087, Eps: 0.1000, Mem.size: 900000
+Ep: 5810, Dur: 259, Step: 1317845, Rew: 4.00, Loss: 0.1295, Eps: 0.1000, Mem.size: 900000
+Saved weights to colaboratory_models/BreakoutDeterministic-v42018-05-18 07:14:16.828452.h5
+Ep: 5820, Dur: 255, Step: 1321116, Rew: 4.00, Loss: 0.0985, Eps: 0.1000, Mem.size: 900000
+Ep: 5830, Dur: 431, Step: 1324310, Rew: 4.00, Loss: 0.1795, Eps: 0.1000, Mem.size: 900000
+Ep: 5840, Dur: 254, Step: 1326864, Rew: 4.00, Loss: 0.0898, Eps: 0.1000, Mem.size: 900000
+Ep: 5850, Dur: 221, Step: 1329692, Rew: 3.00, Loss: 0.1175, Eps: 0.1000, Mem.size: 900000
+Saved weights to colaboratory_models/BreakoutDeterministic-v42018-05-18 07:14:16.828452.h5
+Ep: 5860, Dur: 290, Step: 1332347, Rew: 4.00, Loss: 0.1145, Eps: 0.1000, Mem.size: 900000
+Ep: 5870, Dur: 263, Step: 1334935, Rew: 4.00, Loss: 0.1189, Eps: 0.1000, Mem.size: 900000
+Ep: 5880, Dur: 246, Step: 1337548, Rew: 4.00, Loss: 0.1657, Eps: 0.1000, Mem.size: 900000
+Ep: 5890, Dur: 212, Step: 1339876, Rew: 3.00, Loss: 0.1173, Eps: 0.1000, Mem.size: 900000
+Saved weights to colaboratory_models/BreakoutDeterministic-v42018-05-18 07:14:16.828452.h5
+Ep: 5900, Dur: 319, Step: 1342556, Rew: 5.00, Loss: 0.1894, Eps: 0.1000, Mem.size: 900000
+Ep: 5910, Dur: 309, Step: 1345188, Rew: 4.00, Loss: 0.1229, Eps: 0.1000, Mem.size: 900000
+Ep: 5920, Dur: 224, Step: 1347852, Rew: 3.00, Loss: 0.1290, Eps: 0.1000, Mem.size: 900000
+Saved weights to colaboratory_models/BreakoutDeterministic-v42018-05-18 07:14:16.828452.h5
+Ep: 5930, Dur: 212, Step: 1350197, Rew: 3.00, Loss: 0.0605, Eps: 0.1000, Mem.size: 900000
+Ep: 5940, Dur: 265, Step: 1352521, Rew: 4.00, Loss: 0.1083, Eps: 0.1000, Mem.size: 900000
+Ep: 5950, Dur: 210, Step: 1354917, Rew: 3.00, Loss: 0.1221, Eps: 0.1000, Mem.size: 900000
+Ep: 5960, Dur: 212, Step: 1357415, Rew: 3.00, Loss: 0.0707, Eps: 0.1000, Mem.size: 900000
+Ep: 5970, Dur: 227, Step: 1359818, Rew: 3.00, Loss: 0.0852, Eps: 0.1000, Mem.size: 900000
+Saved weights to colaboratory_models/BreakoutDeterministic-v42018-05-18 07:14:16.828452.h5
+Ep: 5980, Dur: 219, Step: 1362421, Rew: 3.00, Loss: 0.1303, Eps: 0.1000, Mem.size: 900000
+Ep: 5990, Dur: 150, Step: 1364646, Rew: 1.00, Loss: 0.0580, Eps: 0.1000, Mem.size: 900000
+Ep: 6000, Dur: 248, Step: 1367053, Rew: 4.00, Loss: 0.1151, Eps: 0.1000, Mem.size: 900000
+Ep: 6010, Dur: 212, Step: 1369417, Rew: 3.00, Loss: 0.0881, Eps: 0.1000, Mem.size: 900000
+Saved weights to colaboratory_models/BreakoutDeterministic-v42018-05-18 07:14:16.828452.h5
+Ep: 6020, Dur: 199, Step: 1371728, Rew: 2.00, Loss: 0.0744, Eps: 0.1000, Mem.size: 900000
+Ep: 6030, Dur: 258, Step: 1374107, Rew: 4.00, Loss: 0.0803, Eps: 0.1000, Mem.size: 900000
+Ep: 6040, Dur: 212, Step: 1376327, Rew: 3.00, Loss: 0.0712, Eps: 0.1000, Mem.size: 900000
+Ep: 6050, Dur: 150, Step: 1378506, Rew: 1.00, Loss: 0.0821, Eps: 0.1000, Mem.size: 900000
+Saved weights to colaboratory_models/BreakoutDeterministic-v42018-05-18 07:14:16.828452.h5
+Ep: 6060, Dur: 219, Step: 1380943, Rew: 3.00, Loss: 0.1051, Eps: 0.1000, Mem.size: 900000
+Ep: 6070, Dur: 210, Step: 1383295, Rew: 3.00, Loss: 0.1235, Eps: 0.1000, Mem.size: 900000
+Ep: 6080, Dur: 215, Step: 1385544, Rew: 3.00, Loss: 0.0816, Eps: 0.1000, Mem.size: 900000
+Ep: 6090, Dur: 212, Step: 1388001, Rew: 3.00, Loss: 0.1458, Eps: 0.1000, Mem.size: 900000
+Saved weights to colaboratory_models/BreakoutDeterministic-v42018-05-18 07:14:16.828452.h5
+Ep: 6100, Dur: 227, Step: 1390313, Rew: 3.00, Loss: 0.0917, Eps: 0.1000, Mem.size: 900000
+Ep: 6110, Dur: 213, Step: 1392693, Rew: 3.00, Loss: 0.1046, Eps: 0.1000, Mem.size: 900000
+Ep: 6120, Dur: 213, Step: 1395012, Rew: 3.00, Loss: 0.0679, Eps: 0.1000, Mem.size: 900000
+Ep: 6130, Dur: 218, Step: 1397178, Rew: 3.00, Loss: 0.1221, Eps: 0.1000, Mem.size: 900000
+Ep: 6140, Dur: 212, Step: 1399292, Rew: 3.00, Loss: 0.1127, Eps: 0.1000, Mem.size: 900000
+Ep: 6150, Dur: 181, Step: 1401549, Rew: 2.00, Loss: 0.0400, Eps: 0.1000, Mem.size: 900000
+Ep: 6160, Dur: 150, Step: 1403849, Rew: 1.00, Loss: 0.0447, Eps: 0.1000, Mem.size: 900000
+Ep: 6170, Dur: 212, Step: 1406068, Rew: 3.00, Loss: 0.0988, Eps: 0.1000, Mem.size: 900000
+Ep: 6180, Dur: 288, Step: 1408366, Rew: 5.00, Loss: 0.0969, Eps: 0.1000, Mem.size: 900000
+Ep: 6190, Dur: 151, Step: 1410440, Rew: 1.00, Loss: 0.0597, Eps: 0.1000, Mem.size: 900000
+Ep: 6200, Dur: 246, Step: 1412778, Rew: 4.00, Loss: 0.1094, Eps: 0.1000, Mem.size: 900000
+Ep: 6210, Dur: 276, Step: 1415008, Rew: 4.00, Loss: 0.0900, Eps: 0.1000, Mem.size: 900000
+Ep: 6220, Dur: 150, Step: 1417090, Rew: 1.00, Loss: 0.0412, Eps: 0.1000, Mem.size: 900000
+Ep: 6230, Dur: 182, Step: 1419118, Rew: 2.00, Loss: 0.0923, Eps: 0.1000, Mem.size: 900000
+Saved weights to colaboratory_models/BreakoutDeterministic-v42018-05-18 07:14:16.828452.h5
+Ep: 6240, Dur: 181, Step: 1421235, Rew: 2.00, Loss: 0.0658, Eps: 0.1000, Mem.size: 900000
+Ep: 6250, Dur: 150, Step: 1423334, Rew: 1.00, Loss: 0.0670, Eps: 0.1000, Mem.size: 900000
+Ep: 6260, Dur: 212, Step: 1425503, Rew: 3.00, Loss: 0.0687, Eps: 0.1000, Mem.size: 900000
+Ep: 6270, Dur: 213, Step: 1427855, Rew: 3.00, Loss: 0.0656, Eps: 0.1000, Mem.size: 900000
+Ep: 6280, Dur: 150, Step: 1429819, Rew: 1.00, Loss: 0.0765, Eps: 0.1000, Mem.size: 900000
+Saved weights to colaboratory_models/BreakoutDeterministic-v42018-05-18 07:14:16.828452.h5
+Ep: 6290, Dur: 151, Step: 1431928, Rew: 1.00, Loss: 0.0484, Eps: 0.1000, Mem.size: 900000
+Ep: 6300, Dur: 217, Step: 1434196, Rew: 3.00, Loss: 0.1213, Eps: 0.1000, Mem.size: 900000
+Ep: 6310, Dur: 213, Step: 1436612, Rew: 3.00, Loss: 0.1147, Eps: 0.1000, Mem.size: 900000
+Ep: 6320, Dur: 151, Step: 1438621, Rew: 1.00, Loss: 0.0329, Eps: 0.1000, Mem.size: 900000
+Saved weights to colaboratory_models/BreakoutDeterministic-v42018-05-18 07:14:16.828452.h5
+Ep: 6330, Dur: 182, Step: 1440949, Rew: 2.00, Loss: 0.0524, Eps: 0.1000, Mem.size: 900000
+Ep: 6340, Dur: 179, Step: 1442953, Rew: 2.00, Loss: 0.0950, Eps: 0.1000, Mem.size: 900000
+Ep: 6350, Dur: 312, Step: 1445389, Rew: 4.00, Loss: 0.1349, Eps: 0.1000, Mem.size: 900000
+Ep: 6360, Dur: 210, Step: 1447790, Rew: 3.00, Loss: 0.0799, Eps: 0.1000, Mem.size: 900000
+Ep: 6370, Dur: 283, Step: 1449974, Rew: 4.00, Loss: 0.0961, Eps: 0.1000, Mem.size: 900000
+Saved weights to colaboratory_models/BreakoutDeterministic-v42018-05-18 07:14:16.828452.h5
+Ep: 6380, Dur: 150, Step: 1452095, Rew: 1.00, Loss: 0.0500, Eps: 0.1000, Mem.size: 900000
+Ep: 6390, Dur: 258, Step: 1453975, Rew: 4.00, Loss: 0.1070, Eps: 0.1000, Mem.size: 900000
+Ep: 6400, Dur: 150, Step: 1456032, Rew: 1.00, Loss: 0.0475, Eps: 0.1000, Mem.size: 900000
+Ep: 6410, Dur: 182, Step: 1458304, Rew: 2.00, Loss: 0.0648, Eps: 0.1000, Mem.size: 900000
+Saved weights to colaboratory_models/BreakoutDeterministic-v42018-05-18 07:14:16.828452.h5
+Ep: 6420, Dur: 263, Step: 1460478, Rew: 4.00, Loss: 0.0848, Eps: 0.1000, Mem.size: 900000
+Ep: 6430, Dur: 151, Step: 1462470, Rew: 1.00, Loss: 0.0583, Eps: 0.1000, Mem.size: 900000
+Ep: 6440, Dur: 150, Step: 1464424, Rew: 1.00, Loss: 0.0385, Eps: 0.1000, Mem.size: 900000
+Ep: 6450, Dur: 212, Step: 1466823, Rew: 3.00, Loss: 0.0982, Eps: 0.1000, Mem.size: 900000
+Ep: 6460, Dur: 212, Step: 1468698, Rew: 3.00, Loss: 0.1056, Eps: 0.1000, Mem.size: 900000
+Saved weights to colaboratory_models/BreakoutDeterministic-v42018-05-18 07:14:16.828452.h5
+Ep: 6470, Dur: 150, Step: 1470785, Rew: 1.00, Loss: 0.0612, Eps: 0.1000, Mem.size: 900000
+Ep: 6480, Dur: 213, Step: 1472886, Rew: 3.00, Loss: 0.0813, Eps: 0.1000, Mem.size: 900000
+Ep: 6490, Dur: 150, Step: 1474955, Rew: 1.00, Loss: 0.0502, Eps: 0.1000, Mem.size: 900000
+Ep: 6500, Dur: 150, Step: 1477082, Rew: 1.00, Loss: 0.0573, Eps: 0.1000, Mem.size: 900000
+Ep: 6510, Dur: 246, Step: 1479361, Rew: 4.00, Loss: 0.0842, Eps: 0.1000, Mem.size: 900000
+Saved weights to colaboratory_models/BreakoutDeterministic-v42018-05-18 07:14:16.828452.h5
+Ep: 6520, Dur: 181, Step: 1481897, Rew: 2.00, Loss: 0.0564, Eps: 0.1000, Mem.size: 900000
+Ep: 6530, Dur: 212, Step: 1484379, Rew: 3.00, Loss: 0.0472, Eps: 0.1000, Mem.size: 900000
+Ep: 6540, Dur: 150, Step: 1486523, Rew: 1.00, Loss: 0.1011, Eps: 0.1000, Mem.size: 900000
+Ep: 6550, Dur: 150, Step: 1488712, Rew: 1.00, Loss: 0.0691, Eps: 0.1000, Mem.size: 900000
+Saved weights to colaboratory_models/BreakoutDeterministic-v42018-05-18 07:14:16.828452.h5
+Ep: 6560, Dur: 225, Step: 1491090, Rew: 3.00, Loss: 0.0789, Eps: 0.1000, Mem.size: 900000
+Ep: 6570, Dur: 212, Step: 1493156, Rew: 3.00, Loss: 0.0740, Eps: 0.1000, Mem.size: 900000
+Ep: 6580, Dur: 212, Step: 1495533, Rew: 3.00, Loss: 0.0700, Eps: 0.1000, Mem.size: 900000
+Ep: 6590, Dur: 181, Step: 1497888, Rew: 2.00, Loss: 0.0530, Eps: 0.1000, Mem.size: 900000
+Saved weights to colaboratory_models/BreakoutDeterministic-v42018-05-18 07:14:16.828452.h5
+Ep: 6600, Dur: 214, Step: 1500282, Rew: 3.00, Loss: 0.0735, Eps: 0.1000, Mem.size: 900000
+Ep: 6610, Dur: 212, Step: 1502921, Rew: 3.00, Loss: 0.0720, Eps: 0.1000, Mem.size: 900000
+Ep: 6620, Dur: 259, Step: 1505018, Rew: 4.00, Loss: 0.1389, Eps: 0.1000, Mem.size: 900000
+Ep: 6630, Dur: 311, Step: 1507300, Rew: 5.00, Loss: 0.1302, Eps: 0.1000, Mem.size: 900000
+Ep: 6640, Dur: 150, Step: 1509613, Rew: 1.00, Loss: 0.0680, Eps: 0.1000, Mem.size: 900000
+Saved weights to colaboratory_models/BreakoutDeterministic-v42018-05-18 07:14:16.828452.h5
+Ep: 6650, Dur: 213, Step: 1511843, Rew: 3.00, Loss: 0.0495, Eps: 0.1000, Mem.size: 900000
+Ep: 6660, Dur: 212, Step: 1514257, Rew: 3.00, Loss: 0.0622, Eps: 0.1000, Mem.size: 900000
+Ep: 6670, Dur: 181, Step: 1516546, Rew: 2.00, Loss: 0.0414, Eps: 0.1000, Mem.size: 900000
+Ep: 6680, Dur: 150, Step: 1518537, Rew: 1.00, Loss: 0.0585, Eps: 0.1000, Mem.size: 900000
+Saved weights to colaboratory_models/BreakoutDeterministic-v42018-05-18 07:14:16.828452.h5
+Ep: 6690, Dur: 212, Step: 1520785, Rew: 3.00, Loss: 0.1320, Eps: 0.1000, Mem.size: 900000
+Ep: 6700, Dur: 212, Step: 1523200, Rew: 3.00, Loss: 0.0901, Eps: 0.1000, Mem.size: 900000
+Ep: 6710, Dur: 259, Step: 1525508, Rew: 4.00, Loss: 0.0556, Eps: 0.1000, Mem.size: 900000
+Ep: 6720, Dur: 212, Step: 1527851, Rew: 3.00, Loss: 0.0661, Eps: 0.1000, Mem.size: 900000
+Saved weights to colaboratory_models/BreakoutDeterministic-v42018-05-18 07:14:16.828452.h5
+Ep: 6730, Dur: 212, Step: 1530040, Rew: 3.00, Loss: 0.0615, Eps: 0.1000, Mem.size: 900000
+Ep: 6740, Dur: 258, Step: 1532456, Rew: 4.00, Loss: 0.0853, Eps: 0.1000, Mem.size: 900000
+Ep: 6750, Dur: 181, Step: 1534829, Rew: 2.00, Loss: 0.0618, Eps: 0.1000, Mem.size: 900000
+Ep: 6760, Dur: 212, Step: 1536888, Rew: 3.00, Loss: 0.0625, Eps: 0.1000, Mem.size: 900000
+Ep: 6770, Dur: 212, Step: 1539374, Rew: 3.00, Loss: 0.0798, Eps: 0.1000, Mem.size: 900000
+Saved weights to colaboratory_models/BreakoutDeterministic-v42018-05-18 07:14:16.828452.h5
+Ep: 6780, Dur: 212, Step: 1541662, Rew: 3.00, Loss: 0.0644, Eps: 0.1000, Mem.size: 900000
+Ep: 6790, Dur: 212, Step: 1543943, Rew: 3.00, Loss: 0.0595, Eps: 0.1000, Mem.size: 900000
+Ep: 6800, Dur: 212, Step: 1546566, Rew: 3.00, Loss: 0.1123, Eps: 0.1000, Mem.size: 900000
+Ep: 6810, Dur: 263, Step: 1548875, Rew: 4.00, Loss: 0.0777, Eps: 0.1000, Mem.size: 900000
+Saved weights to colaboratory_models/BreakoutDeterministic-v42018-05-18 07:14:16.828452.h5
+Ep: 6820, Dur: 212, Step: 1551296, Rew: 3.00, Loss: 0.0813, Eps: 0.1000, Mem.size: 900000
+Ep: 6830, Dur: 248, Step: 1553888, Rew: 4.00, Loss: 0.1184, Eps: 0.1000, Mem.size: 900000
+Ep: 6840, Dur: 228, Step: 1556409, Rew: 3.00, Loss: 0.0681, Eps: 0.1000, Mem.size: 900000
+Ep: 6850, Dur: 213, Step: 1558700, Rew: 3.00, Loss: 0.1024, Eps: 0.1000, Mem.size: 900000
+Saved weights to colaboratory_models/BreakoutDeterministic-v42018-05-18 07:14:16.828452.h5
+Ep: 6860, Dur: 212, Step: 1561048, Rew: 3.00, Loss: 0.1231, Eps: 0.1000, Mem.size: 900000
+Ep: 6870, Dur: 212, Step: 1563392, Rew: 3.00, Loss: 0.0892, Eps: 0.1000, Mem.size: 900000
+Ep: 6880, Dur: 212, Step: 1565538, Rew: 3.00, Loss: 0.0555, Eps: 0.1000, Mem.size: 900000
+Ep: 6890, Dur: 316, Step: 1568122, Rew: 5.00, Loss: 0.0859, Eps: 0.1000, Mem.size: 900000
+Saved weights to colaboratory_models/BreakoutDeterministic-v42018-05-18 07:14:16.828452.h5
+Ep: 6900, Dur: 212, Step: 1570400, Rew: 3.00, Loss: 0.0746, Eps: 0.1000, Mem.size: 900000
+Ep: 6910, Dur: 212, Step: 1572807, Rew: 3.00, Loss: 0.0668, Eps: 0.1000, Mem.size: 900000
+Ep: 6920, Dur: 212, Step: 1575311, Rew: 3.00, Loss: 0.0731, Eps: 0.1000, Mem.size: 900000
+Ep: 6930, Dur: 212, Step: 1577666, Rew: 3.00, Loss: 0.0737, Eps: 0.1000, Mem.size: 900000
+Saved weights to colaboratory_models/BreakoutDeterministic-v42018-05-18 07:14:16.828452.h5
+Ep: 6940, Dur: 265, Step: 1580031, Rew: 4.00, Loss: 0.1147, Eps: 0.1000, Mem.size: 900000
+Ep: 6950, Dur: 343, Step: 1582607, Rew: 6.00, Loss: 0.0896, Eps: 0.1000, Mem.size: 900000
+Ep: 6960, Dur: 212, Step: 1584944, Rew: 3.00, Loss: 0.0849, Eps: 0.1000, Mem.size: 900000
+Ep: 6970, Dur: 212, Step: 1587205, Rew: 3.00, Loss: 0.0663, Eps: 0.1000, Mem.size: 900000
+Ep: 6980, Dur: 212, Step: 1589523, Rew: 3.00, Loss: 0.0597, Eps: 0.1000, Mem.size: 900000
+Ep: 6990, Dur: 212, Step: 1591914, Rew: 3.00, Loss: 0.0506, Eps: 0.1000, Mem.size: 900000
+Ep: 7000, Dur: 212, Step: 1594246, Rew: 3.00, Loss: 0.0654, Eps: 0.1000, Mem.size: 900000
+Ep: 7010, Dur: 212, Step: 1596549, Rew: 3.00, Loss: 0.0609, Eps: 0.1000, Mem.size: 900000
+Ep: 7020, Dur: 212, Step: 1598965, Rew: 3.00, Loss: 0.0597, Eps: 0.1000, Mem.size: 900000
+Saved weights to colaboratory_models/BreakoutDeterministic-v42018-05-18 07:14:16.828452.h5
+Ep: 7030, Dur: 287, Step: 1601200, Rew: 5.00, Loss: 0.0585, Eps: 0.1000, Mem.size: 900000
+Ep: 7040, Dur: 328, Step: 1603830, Rew: 6.00, Loss: 0.0957, Eps: 0.1000, Mem.size: 900000
+Ep: 7050, Dur: 150, Step: 1605962, Rew: 1.00, Loss: 0.0453, Eps: 0.1000, Mem.size: 900000
+Ep: 7060, Dur: 252, Step: 1608218, Rew: 4.00, Loss: 0.0775, Eps: 0.1000, Mem.size: 900000
+Saved weights to colaboratory_models/BreakoutDeterministic-v42018-05-18 07:14:16.828452.h5
+Ep: 7070, Dur: 311, Step: 1610790, Rew: 5.00, Loss: 0.0809, Eps: 0.1000, Mem.size: 900000
+Ep: 7080, Dur: 245, Step: 1613355, Rew: 4.00, Loss: 0.0463, Eps: 0.1000, Mem.size: 900000
+Ep: 7090, Dur: 213, Step: 1615727, Rew: 3.00, Loss: 0.0759, Eps: 0.1000, Mem.size: 900000
+Ep: 7100, Dur: 277, Step: 1618077, Rew: 4.00, Loss: 0.0894, Eps: 0.1000, Mem.size: 900000
+Saved weights to colaboratory_models/BreakoutDeterministic-v42018-05-18 07:14:16.828452.h5
+Ep: 7110, Dur: 217, Step: 1620433, Rew: 3.00, Loss: 0.0890, Eps: 0.1000, Mem.size: 900000
+Ep: 7120, Dur: 236, Step: 1622861, Rew: 3.00, Loss: 0.1558, Eps: 0.1000, Mem.size: 900000
+Ep: 7130, Dur: 213, Step: 1625181, Rew: 3.00, Loss: 0.0557, Eps: 0.1000, Mem.size: 900000
+Ep: 7140, Dur: 212, Step: 1627336, Rew: 3.00, Loss: 0.0570, Eps: 0.1000, Mem.size: 900000
+Ep: 7150, Dur: 212, Step: 1629715, Rew: 3.00, Loss: 0.0635, Eps: 0.1000, Mem.size: 900000
+Ep: 7160, Dur: 212, Step: 1632072, Rew: 3.00, Loss: 0.0522, Eps: 0.1000, Mem.size: 900000
+Ep: 7170, Dur: 212, Step: 1634339, Rew: 3.00, Loss: 0.0468, Eps: 0.1000, Mem.size: 900000
+Ep: 7180, Dur: 267, Step: 1636727, Rew: 4.00, Loss: 0.0795, Eps: 0.1000, Mem.size: 900000
+Ep: 7190, Dur: 230, Step: 1639136, Rew: 3.00, Loss: 0.0980, Eps: 0.1000, Mem.size: 900000
+Saved weights to colaboratory_models/BreakoutDeterministic-v42018-05-18 07:14:16.828452.h5
+Ep: 7200, Dur: 258, Step: 1641507, Rew: 4.00, Loss: 0.0821, Eps: 0.1000, Mem.size: 900000
+Ep: 7210, Dur: 212, Step: 1643902, Rew: 3.00, Loss: 0.0709, Eps: 0.1000, Mem.size: 900000
+Ep: 7220, Dur: 213, Step: 1646408, Rew: 3.00, Loss: 0.0507, Eps: 0.1000, Mem.size: 900000
+Ep: 7230, Dur: 212, Step: 1648686, Rew: 3.00, Loss: 0.0511, Eps: 0.1000, Mem.size: 900000
+Saved weights to colaboratory_models/BreakoutDeterministic-v42018-05-18 07:14:16.828452.h5
+Ep: 7240, Dur: 210, Step: 1650939, Rew: 3.00, Loss: 0.0622, Eps: 0.1000, Mem.size: 900000
+Ep: 7250, Dur: 210, Step: 1653285, Rew: 3.00, Loss: 0.0485, Eps: 0.1000, Mem.size: 900000
+Ep: 7260, Dur: 212, Step: 1655569, Rew: 3.00, Loss: 0.0477, Eps: 0.1000, Mem.size: 900000
+Ep: 7270, Dur: 213, Step: 1657707, Rew: 3.00, Loss: 0.0388, Eps: 0.1000, Mem.size: 900000
+Ep: 7280, Dur: 212, Step: 1659983, Rew: 3.00, Loss: 0.0631, Eps: 0.1000, Mem.size: 900000
+Saved weights to colaboratory_models/BreakoutDeterministic-v42018-05-18 07:14:16.828452.h5
+Ep: 7290, Dur: 258, Step: 1662384, Rew: 4.00, Loss: 0.0857, Eps: 0.1000, Mem.size: 900000
+Ep: 7300, Dur: 212, Step: 1664715, Rew: 3.00, Loss: 0.0631, Eps: 0.1000, Mem.size: 900000
+Ep: 7310, Dur: 213, Step: 1667210, Rew: 3.00, Loss: 0.0491, Eps: 0.1000, Mem.size: 900000
+Ep: 7320, Dur: 213, Step: 1669486, Rew: 3.00, Loss: 0.0718, Eps: 0.1000, Mem.size: 900000
+Ep: 7330, Dur: 249, Step: 1672091, Rew: 3.00, Loss: 0.0688, Eps: 0.1000, Mem.size: 900000
+Ep: 7340, Dur: 212, Step: 1674369, Rew: 3.00, Loss: 0.0517, Eps: 0.1000, Mem.size: 900000
+Ep: 7350, Dur: 212, Step: 1676656, Rew: 3.00, Loss: 0.0811, Eps: 0.1000, Mem.size: 900000
+Ep: 7360, Dur: 381, Step: 1679187, Rew: 7.00, Loss: 0.0803, Eps: 0.1000, Mem.size: 900000
+Saved weights to colaboratory_models/BreakoutDeterministic-v42018-05-18 07:14:16.828452.h5
+Ep: 7370, Dur: 212, Step: 1681448, Rew: 3.00, Loss: 0.0921, Eps: 0.1000, Mem.size: 900000
+Ep: 7380, Dur: 258, Step: 1683755, Rew: 4.00, Loss: 0.0678, Eps: 0.1000, Mem.size: 900000
+Ep: 7390, Dur: 212, Step: 1686418, Rew: 3.00, Loss: 0.0405, Eps: 0.1000, Mem.size: 900000
+Ep: 7400, Dur: 212, Step: 1688920, Rew: 3.00, Loss: 0.0318, Eps: 0.1000, Mem.size: 900000
+Saved weights to colaboratory_models/BreakoutDeterministic-v42018-05-18 07:14:16.828452.h5
+Ep: 7410, Dur: 212, Step: 1691263, Rew: 3.00, Loss: 0.0976, Eps: 0.1000, Mem.size: 900000
+Ep: 7420, Dur: 212, Step: 1693556, Rew: 3.00, Loss: 0.0696, Eps: 0.1000, Mem.size: 900000
+Ep: 7430, Dur: 212, Step: 1696113, Rew: 3.00, Loss: 0.0461, Eps: 0.1000, Mem.size: 900000
+Ep: 7440, Dur: 213, Step: 1698422, Rew: 3.00, Loss: 0.0499, Eps: 0.1000, Mem.size: 900000
+Ep: 7450, Dur: 212, Step: 1700656, Rew: 3.00, Loss: 0.0415, Eps: 0.1000, Mem.size: 900000
+Ep: 7460, Dur: 212, Step: 1702964, Rew: 3.00, Loss: 0.0720, Eps: 0.1000, Mem.size: 900000
+Ep: 7470, Dur: 213, Step: 1705346, Rew: 3.00, Loss: 0.0311, Eps: 0.1000, Mem.size: 900000
+Ep: 7480, Dur: 212, Step: 1707579, Rew: 3.00, Loss: 0.0451, Eps: 0.1000, Mem.size: 900000
+Ep: 7490, Dur: 212, Step: 1709903, Rew: 3.00, Loss: 0.0742, Eps: 0.1000, Mem.size: 900000
+Saved weights to colaboratory_models/BreakoutDeterministic-v42018-05-18 07:14:16.828452.h5
+Ep: 7500, Dur: 215, Step: 1712288, Rew: 3.00, Loss: 0.0857, Eps: 0.1000, Mem.size: 900000
+Ep: 7510, Dur: 212, Step: 1714457, Rew: 3.00, Loss: 0.0619, Eps: 0.1000, Mem.size: 900000
+Ep: 7520, Dur: 213, Step: 1716898, Rew: 3.00, Loss: 0.0483, Eps: 0.1000, Mem.size: 900000
+Ep: 7530, Dur: 212, Step: 1719221, Rew: 3.00, Loss: 0.0516, Eps: 0.1000, Mem.size: 900000
+Saved weights to colaboratory_models/BreakoutDeterministic-v42018-05-18 07:14:16.828452.h5
+Ep: 7540, Dur: 213, Step: 1721738, Rew: 3.00, Loss: 0.0614, Eps: 0.1000, Mem.size: 900000
+Ep: 7550, Dur: 212, Step: 1724137, Rew: 3.00, Loss: 0.0614, Eps: 0.1000, Mem.size: 900000
+Ep: 7560, Dur: 231, Step: 1726506, Rew: 3.00, Loss: 0.0651, Eps: 0.1000, Mem.size: 900000
+Ep: 7570, Dur: 212, Step: 1728852, Rew: 3.00, Loss: 0.0399, Eps: 0.1000, Mem.size: 900000
+Saved weights to colaboratory_models/BreakoutDeterministic-v42018-05-18 07:14:16.828452.h5
+Ep: 7580, Dur: 246, Step: 1731139, Rew: 4.00, Loss: 0.0768, Eps: 0.1000, Mem.size: 900000
+Ep: 7590, Dur: 212, Step: 1733459, Rew: 3.00, Loss: 0.0462, Eps: 0.1000, Mem.size: 900000
+Ep: 7600, Dur: 212, Step: 1735855, Rew: 3.00, Loss: 0.0631, Eps: 0.1000, Mem.size: 900000
+Ep: 7610, Dur: 258, Step: 1738227, Rew: 4.00, Loss: 0.0674, Eps: 0.1000, Mem.size: 900000
+Saved weights to colaboratory_models/BreakoutDeterministic-v42018-05-18 07:14:16.828452.h5
+Ep: 7620, Dur: 212, Step: 1740493, Rew: 3.00, Loss: 0.0622, Eps: 0.1000, Mem.size: 900000
+Ep: 7630, Dur: 213, Step: 1742769, Rew: 3.00, Loss: 0.0610, Eps: 0.1000, Mem.size: 900000
+Ep: 7640, Dur: 212, Step: 1745254, Rew: 3.00, Loss: 0.0446, Eps: 0.1000, Mem.size: 900000
+Ep: 7650, Dur: 213, Step: 1747600, Rew: 3.00, Loss: 0.0314, Eps: 0.1000, Mem.size: 900000
+Ep: 7660, Dur: 212, Step: 1749897, Rew: 3.00, Loss: 0.0351, Eps: 0.1000, Mem.size: 900000
+Saved weights to colaboratory_models/BreakoutDeterministic-v42018-05-18 07:14:16.828452.h5
+Ep: 7670, Dur: 212, Step: 1752241, Rew: 3.00, Loss: 0.0696, Eps: 0.1000, Mem.size: 900000
+Ep: 7680, Dur: 255, Step: 1754818, Rew: 4.00, Loss: 0.0970, Eps: 0.1000, Mem.size: 900000
+Ep: 7690, Dur: 246, Step: 1757262, Rew: 4.00, Loss: 0.0558, Eps: 0.1000, Mem.size: 900000
+Ep: 7700, Dur: 213, Step: 1759544, Rew: 3.00, Loss: 0.0571, Eps: 0.1000, Mem.size: 900000
+Saved weights to colaboratory_models/BreakoutDeterministic-v42018-05-18 07:14:16.828452.h5
+Ep: 7710, Dur: 258, Step: 1762179, Rew: 4.00, Loss: 0.0878, Eps: 0.1000, Mem.size: 900000
+Ep: 7720, Dur: 214, Step: 1764556, Rew: 3.00, Loss: 0.0491, Eps: 0.1000, Mem.size: 900000
+Ep: 7730, Dur: 212, Step: 1766749, Rew: 3.00, Loss: 0.0331, Eps: 0.1000, Mem.size: 900000
+Ep: 7740, Dur: 360, Step: 1769333, Rew: 6.00, Loss: 0.0990, Eps: 0.1000, Mem.size: 900000
+Saved weights to colaboratory_models/BreakoutDeterministic-v42018-05-18 07:14:16.828452.h5
+Ep: 7750, Dur: 259, Step: 1771617, Rew: 4.00, Loss: 0.0548, Eps: 0.1000, Mem.size: 900000
+Ep: 7760, Dur: 213, Step: 1773949, Rew: 3.00, Loss: 0.0491, Eps: 0.1000, Mem.size: 900000
+Ep: 7770, Dur: 210, Step: 1776470, Rew: 3.00, Loss: 0.0526, Eps: 0.1000, Mem.size: 900000
+Ep: 7780, Dur: 212, Step: 1778750, Rew: 3.00, Loss: 0.0346, Eps: 0.1000, Mem.size: 900000
+Saved weights to colaboratory_models/BreakoutDeterministic-v42018-05-18 07:14:16.828452.h5
+Ep: 7790, Dur: 212, Step: 1781127, Rew: 3.00, Loss: 0.0370, Eps: 0.1000, Mem.size: 900000
+Ep: 7800, Dur: 249, Step: 1783838, Rew: 4.00, Loss: 0.1212, Eps: 0.1000, Mem.size: 900000
+Ep: 7810, Dur: 213, Step: 1786236, Rew: 3.00, Loss: 0.0340, Eps: 0.1000, Mem.size: 900000
+Ep: 7820, Dur: 214, Step: 1788517, Rew: 3.00, Loss: 0.0428, Eps: 0.1000, Mem.size: 900000
+Saved weights to colaboratory_models/BreakoutDeterministic-v42018-05-18 07:14:16.828452.h5
+Ep: 7830, Dur: 212, Step: 1790884, Rew: 3.00, Loss: 0.0647, Eps: 0.1000, Mem.size: 900000
+Ep: 7840, Dur: 212, Step: 1793262, Rew: 3.00, Loss: 0.0232, Eps: 0.1000, Mem.size: 900000
+Ep: 7850, Dur: 214, Step: 1795860, Rew: 3.00, Loss: 0.0477, Eps: 0.1000, Mem.size: 900000
+Ep: 7860, Dur: 212, Step: 1798142, Rew: 3.00, Loss: 0.0423, Eps: 0.1000, Mem.size: 900000
+Saved weights to colaboratory_models/BreakoutDeterministic-v42018-05-18 07:14:16.828452.h5
+Ep: 7870, Dur: 226, Step: 1800416, Rew: 3.00, Loss: 0.0747, Eps: 0.1000, Mem.size: 900000
+Ep: 7880, Dur: 212, Step: 1802721, Rew: 3.00, Loss: 0.0328, Eps: 0.1000, Mem.size: 900000
+Ep: 7890, Dur: 212, Step: 1805234, Rew: 3.00, Loss: 0.0943, Eps: 0.1000, Mem.size: 900000
+Ep: 7900, Dur: 212, Step: 1807598, Rew: 3.00, Loss: 0.0528, Eps: 0.1000, Mem.size: 900000
+Ep: 7910, Dur: 212, Step: 1809823, Rew: 3.00, Loss: 0.0645, Eps: 0.1000, Mem.size: 900000
+Saved weights to colaboratory_models/BreakoutDeterministic-v42018-05-18 07:14:16.828452.h5
+Ep: 7920, Dur: 150, Step: 1812077, Rew: 1.00, Loss: 0.0247, Eps: 0.1000, Mem.size: 900000
+Ep: 7930, Dur: 212, Step: 1814463, Rew: 3.00, Loss: 0.0506, Eps: 0.1000, Mem.size: 900000
+Ep: 7940, Dur: 215, Step: 1816790, Rew: 3.00, Loss: 0.0660, Eps: 0.1000, Mem.size: 900000
+Ep: 7950, Dur: 212, Step: 1819192, Rew: 3.00, Loss: 0.0869, Eps: 0.1000, Mem.size: 900000
+Saved weights to colaboratory_models/BreakoutDeterministic-v42018-05-18 07:14:16.828452.h5
+Ep: 7960, Dur: 213, Step: 1821558, Rew: 3.00, Loss: 0.0284, Eps: 0.1000, Mem.size: 900000
+Ep: 7970, Dur: 213, Step: 1823987, Rew: 3.00, Loss: 0.0357, Eps: 0.1000, Mem.size: 900000
+Ep: 7980, Dur: 212, Step: 1826349, Rew: 3.00, Loss: 0.0377, Eps: 0.1000, Mem.size: 900000
+Ep: 7990, Dur: 373, Step: 1828958, Rew: 5.00, Loss: 0.0766, Eps: 0.1000, Mem.size: 900000
+Saved weights to colaboratory_models/BreakoutDeterministic-v42018-05-18 07:14:16.828452.h5
+Ep: 8000, Dur: 212, Step: 1831396, Rew: 3.00, Loss: 0.0716, Eps: 0.1000, Mem.size: 900000
+Ep: 8010, Dur: 212, Step: 1833679, Rew: 3.00, Loss: 0.0586, Eps: 0.1000, Mem.size: 900000
+Ep: 8020, Dur: 210, Step: 1836266, Rew: 3.00, Loss: 0.0468, Eps: 0.1000, Mem.size: 900000
+Ep: 8030, Dur: 213, Step: 1838629, Rew: 3.00, Loss: 0.0640, Eps: 0.1000, Mem.size: 900000
+Saved weights to colaboratory_models/BreakoutDeterministic-v42018-05-18 07:14:16.828452.h5
+Ep: 8040, Dur: 213, Step: 1840910, Rew: 3.00, Loss: 0.0299, Eps: 0.1000, Mem.size: 900000
+Ep: 8050, Dur: 210, Step: 1843153, Rew: 3.00, Loss: 0.0484, Eps: 0.1000, Mem.size: 900000
+Ep: 8060, Dur: 214, Step: 1845428, Rew: 3.00, Loss: 0.0268, Eps: 0.1000, Mem.size: 900000
+Ep: 8070, Dur: 214, Step: 1848204, Rew: 2.00, Loss: 0.0480, Eps: 0.1000, Mem.size: 900000
+Saved weights to colaboratory_models/BreakoutDeterministic-v42018-05-18 07:14:16.828452.h5
+Ep: 8080, Dur: 245, Step: 1850628, Rew: 4.00, Loss: 0.0288, Eps: 0.1000, Mem.size: 900000
+Ep: 8090, Dur: 213, Step: 1853094, Rew: 3.00, Loss: 0.0391, Eps: 0.1000, Mem.size: 900000
+Ep: 8100, Dur: 212, Step: 1855442, Rew: 3.00, Loss: 0.0558, Eps: 0.1000, Mem.size: 900000
+Ep: 8110, Dur: 380, Step: 1857938, Rew: 7.00, Loss: 0.1159, Eps: 0.1000, Mem.size: 900000
+Saved weights to colaboratory_models/BreakoutDeterministic-v42018-05-18 07:14:16.828452.h5
+Ep: 8120, Dur: 212, Step: 1860264, Rew: 3.00, Loss: 0.0987, Eps: 0.1000, Mem.size: 900000
+Ep: 8130, Dur: 212, Step: 1862604, Rew: 3.00, Loss: 0.0487, Eps: 0.1000, Mem.size: 900000
+Ep: 8140, Dur: 213, Step: 1864967, Rew: 3.00, Loss: 0.0260, Eps: 0.1000, Mem.size: 900000
+Ep: 8150, Dur: 212, Step: 1867527, Rew: 3.00, Loss: 0.0358, Eps: 0.1000, Mem.size: 900000
+Ep: 8160, Dur: 255, Step: 1869943, Rew: 4.00, Loss: 0.0648, Eps: 0.1000, Mem.size: 900000
+Saved weights to colaboratory_models/BreakoutDeterministic-v42018-05-18 07:14:16.828452.h5
+Ep: 8170, Dur: 213, Step: 1872217, Rew: 3.00, Loss: 0.0471, Eps: 0.1000, Mem.size: 900000
+Ep: 8180, Dur: 212, Step: 1874858, Rew: 3.00, Loss: 0.0660, Eps: 0.1000, Mem.size: 900000
+Ep: 8190, Dur: 212, Step: 1877583, Rew: 3.00, Loss: 0.0472, Eps: 0.1000, Mem.size: 900000
+Ep: 8200, Dur: 212, Step: 1879904, Rew: 3.00, Loss: 0.0432, Eps: 0.1000, Mem.size: 900000
+Saved weights to colaboratory_models/BreakoutDeterministic-v42018-05-18 07:14:16.828452.h5
+Ep: 8210, Dur: 212, Step: 1882376, Rew: 3.00, Loss: 0.0363, Eps: 0.1000, Mem.size: 900000
+Ep: 8220, Dur: 213, Step: 1884845, Rew: 3.00, Loss: 0.0574, Eps: 0.1000, Mem.size: 900000
+Ep: 8230, Dur: 334, Step: 1887331, Rew: 6.00, Loss: 0.0637, Eps: 0.1000, Mem.size: 900000
+Ep: 8240, Dur: 212, Step: 1889705, Rew: 3.00, Loss: 0.0662, Eps: 0.1000, Mem.size: 900000
+Saved weights to colaboratory_models/BreakoutDeterministic-v42018-05-18 07:14:16.828452.h5
+Ep: 8250, Dur: 212, Step: 1891998, Rew: 3.00, Loss: 0.0199, Eps: 0.1000, Mem.size: 900000
+Ep: 8260, Dur: 212, Step: 1894416, Rew: 3.00, Loss: 0.0524, Eps: 0.1000, Mem.size: 900000
+Ep: 8270, Dur: 213, Step: 1896744, Rew: 3.00, Loss: 0.0468, Eps: 0.1000, Mem.size: 900000
+Ep: 8280, Dur: 245, Step: 1899370, Rew: 4.00, Loss: 0.0297, Eps: 0.1000, Mem.size: 900000
+Saved weights to colaboratory_models/BreakoutDeterministic-v42018-05-18 07:14:16.828452.h5
+Ep: 8290, Dur: 212, Step: 1901707, Rew: 3.00, Loss: 0.0439, Eps: 0.1000, Mem.size: 900000
+Ep: 8300, Dur: 212, Step: 1904117, Rew: 3.00, Loss: 0.0272, Eps: 0.1000, Mem.size: 900000
+Ep: 8310, Dur: 213, Step: 1906448, Rew: 3.00, Loss: 0.0360, Eps: 0.1000, Mem.size: 900000
+Ep: 8320, Dur: 251, Step: 1908821, Rew: 4.00, Loss: 0.0636, Eps: 0.1000, Mem.size: 900000
+Saved weights to colaboratory_models/BreakoutDeterministic-v42018-05-18 07:14:16.828452.h5
+Ep: 8330, Dur: 213, Step: 1911138, Rew: 3.00, Loss: 0.0410, Eps: 0.1000, Mem.size: 900000
+Ep: 8340, Dur: 216, Step: 1913472, Rew: 3.00, Loss: 0.0322, Eps: 0.1000, Mem.size: 900000
+Ep: 8350, Dur: 212, Step: 1915759, Rew: 3.00, Loss: 0.0313, Eps: 0.1000, Mem.size: 900000
+Ep: 8360, Dur: 214, Step: 1918175, Rew: 3.00, Loss: 0.0481, Eps: 0.1000, Mem.size: 900000
+Saved weights to colaboratory_models/BreakoutDeterministic-v42018-05-18 07:14:16.828452.h5
+Ep: 8370, Dur: 213, Step: 1920789, Rew: 3.00, Loss: 0.0337, Eps: 0.1000, Mem.size: 900000
+Ep: 8380, Dur: 213, Step: 1923203, Rew: 3.00, Loss: 0.0236, Eps: 0.1000, Mem.size: 900000
+Ep: 8390, Dur: 212, Step: 1925531, Rew: 3.00, Loss: 0.0335, Eps: 0.1000, Mem.size: 900000
+Ep: 8400, Dur: 215, Step: 1928058, Rew: 3.00, Loss: 0.0679, Eps: 0.1000, Mem.size: 900000
+Saved weights to colaboratory_models/BreakoutDeterministic-v42018-05-18 07:14:16.828452.h5
+Ep: 8410, Dur: 273, Step: 1930861, Rew: 4.00, Loss: 0.0434, Eps: 0.1000, Mem.size: 900000
+Ep: 8420, Dur: 245, Step: 1933310, Rew: 4.00, Loss: 0.0557, Eps: 0.1000, Mem.size: 900000
+Ep: 8430, Dur: 214, Step: 1936208, Rew: 3.00, Loss: 0.0484, Eps: 0.1000, Mem.size: 900000
+Ep: 8440, Dur: 214, Step: 1938510, Rew: 3.00, Loss: 0.0602, Eps: 0.1000, Mem.size: 900000
+Saved weights to colaboratory_models/BreakoutDeterministic-v42018-05-18 07:14:16.828452.h5
+Ep: 8450, Dur: 212, Step: 1940937, Rew: 3.00, Loss: 0.0305, Eps: 0.1000, Mem.size: 900000
+Ep: 8460, Dur: 213, Step: 1943210, Rew: 3.00, Loss: 0.0483, Eps: 0.1000, Mem.size: 900000
+Ep: 8470, Dur: 210, Step: 1945698, Rew: 3.00, Loss: 0.0653, Eps: 0.1000, Mem.size: 900000
+Ep: 8480, Dur: 212, Step: 1947972, Rew: 3.00, Loss: 0.0368, Eps: 0.1000, Mem.size: 900000
+Saved weights to colaboratory_models/BreakoutDeterministic-v42018-05-18 07:14:16.828452.h5
+Ep: 8490, Dur: 212, Step: 1950392, Rew: 3.00, Loss: 0.0337, Eps: 0.1000, Mem.size: 900000
+Ep: 8500, Dur: 150, Step: 1952757, Rew: 1.00, Loss: 0.0240, Eps: 0.1000, Mem.size: 900000
+Ep: 8510, Dur: 212, Step: 1954994, Rew: 3.00, Loss: 0.0287, Eps: 0.1000, Mem.size: 900000
+Ep: 8520, Dur: 245, Step: 1957454, Rew: 4.00, Loss: 0.0386, Eps: 0.1000, Mem.size: 900000
+Ep: 8530, Dur: 212, Step: 1959785, Rew: 3.00, Loss: 0.0379, Eps: 0.1000, Mem.size: 900000
+Saved weights to colaboratory_models/BreakoutDeterministic-v42018-05-18 07:14:16.828452.h5
+Ep: 8540, Dur: 212, Step: 1962073, Rew: 3.00, Loss: 0.0210, Eps: 0.1000, Mem.size: 900000
+Ep: 8550, Dur: 213, Step: 1964425, Rew: 3.00, Loss: 0.0329, Eps: 0.1000, Mem.size: 900000
+Ep: 8560, Dur: 212, Step: 1966731, Rew: 3.00, Loss: 0.0694, Eps: 0.1000, Mem.size: 900000
+Ep: 8570, Dur: 290, Step: 1969222, Rew: 5.00, Loss: 0.0645, Eps: 0.1000, Mem.size: 900000
+Saved weights to colaboratory_models/BreakoutDeterministic-v42018-05-18 07:14:16.828452.h5
+Ep: 8580, Dur: 270, Step: 1971803, Rew: 4.00, Loss: 0.0456, Eps: 0.1000, Mem.size: 900000
+Ep: 8590, Dur: 212, Step: 1974182, Rew: 3.00, Loss: 0.0272, Eps: 0.1000, Mem.size: 900000
+Ep: 8600, Dur: 212, Step: 1976695, Rew: 3.00, Loss: 0.0391, Eps: 0.1000, Mem.size: 900000
+Ep: 8610, Dur: 213, Step: 1979081, Rew: 3.00, Loss: 0.0407, Eps: 0.1000, Mem.size: 900000
+Saved weights to colaboratory_models/BreakoutDeterministic-v42018-05-18 07:14:16.828452.h5
+Ep: 8620, Dur: 212, Step: 1981432, Rew: 3.00, Loss: 0.0259, Eps: 0.1000, Mem.size: 900000
+Ep: 8630, Dur: 210, Step: 1983692, Rew: 3.00, Loss: 0.0188, Eps: 0.1000, Mem.size: 900000
+Ep: 8640, Dur: 219, Step: 1985932, Rew: 3.00, Loss: 0.0401, Eps: 0.1000, Mem.size: 900000
+Ep: 8650, Dur: 259, Step: 1988495, Rew: 4.00, Loss: 0.0438, Eps: 0.1000, Mem.size: 900000
+Saved weights to colaboratory_models/BreakoutDeterministic-v42018-05-18 07:14:16.828452.h5
+Ep: 8660, Dur: 242, Step: 1991121, Rew: 4.00, Loss: 0.0382, Eps: 0.1000, Mem.size: 900000
+Ep: 8670, Dur: 214, Step: 1993411, Rew: 3.00, Loss: 0.0351, Eps: 0.1000, Mem.size: 900000
+Ep: 8680, Dur: 212, Step: 1995772, Rew: 3.00, Loss: 0.0446, Eps: 0.1000, Mem.size: 900000
+Ep: 8690, Dur: 212, Step: 1998187, Rew: 3.00, Loss: 0.0298, Eps: 0.1000, Mem.size: 900000
+Saved weights to colaboratory_models/BreakoutDeterministic-v42018-05-18 07:14:16.828452.h5
+Ep: 8700, Dur: 181, Step: 2000460, Rew: 2.00, Loss: 0.0294, Eps: 0.1000, Mem.size: 900000
+Ep: 8710, Dur: 258, Step: 2002787, Rew: 4.00, Loss: 0.0318, Eps: 0.1000, Mem.size: 900000
+Ep: 8720, Dur: 212, Step: 2005121, Rew: 3.00, Loss: 0.0425, Eps: 0.1000, Mem.size: 900000
+Ep: 8730, Dur: 362, Step: 2007748, Rew: 6.00, Loss: 0.0669, Eps: 0.1000, Mem.size: 900000
+Saved weights to colaboratory_models/BreakoutDeterministic-v42018-05-18 07:14:16.828452.h5
+Ep: 8740, Dur: 212, Step: 2010527, Rew: 3.00, Loss: 0.0286, Eps: 0.1000, Mem.size: 900000
+Ep: 8750, Dur: 212, Step: 2012916, Rew: 3.00, Loss: 0.0197, Eps: 0.1000, Mem.size: 900000
+Ep: 8760, Dur: 212, Step: 2015281, Rew: 3.00, Loss: 0.0286, Eps: 0.1000, Mem.size: 900000
+Ep: 8770, Dur: 212, Step: 2017573, Rew: 3.00, Loss: 0.0376, Eps: 0.1000, Mem.size: 900000
+Saved weights to colaboratory_models/BreakoutDeterministic-v42018-05-18 07:14:16.828452.h5
+Ep: 8780, Dur: 212, Step: 2020139, Rew: 3.00, Loss: 0.0385, Eps: 0.1000, Mem.size: 900000
+Ep: 8790, Dur: 212, Step: 2022733, Rew: 3.00, Loss: 0.0329, Eps: 0.1000, Mem.size: 900000
+Ep: 8800, Dur: 214, Step: 2025153, Rew: 3.00, Loss: 0.0399, Eps: 0.1000, Mem.size: 900000
+Ep: 8810, Dur: 212, Step: 2027421, Rew: 3.00, Loss: 0.0199, Eps: 0.1000, Mem.size: 900000
+Saved weights to colaboratory_models/BreakoutDeterministic-v42018-05-18 07:14:16.828452.h5
+Ep: 8820, Dur: 212, Step: 2030094, Rew: 3.00, Loss: 0.0269, Eps: 0.1000, Mem.size: 900000
+Ep: 8830, Dur: 212, Step: 2032491, Rew: 3.00, Loss: 0.0139, Eps: 0.1000, Mem.size: 900000
+Ep: 8840, Dur: 213, Step: 2034896, Rew: 3.00, Loss: 0.0245, Eps: 0.1000, Mem.size: 900000
+Ep: 8850, Dur: 212, Step: 2037418, Rew: 3.00, Loss: 0.0347, Eps: 0.1000, Mem.size: 900000
+Ep: 8860, Dur: 212, Step: 2039885, Rew: 3.00, Loss: 0.0309, Eps: 0.1000, Mem.size: 900000
+Saved weights to colaboratory_models/BreakoutDeterministic-v42018-05-18 07:14:16.828452.h5
+Ep: 8870, Dur: 212, Step: 2042226, Rew: 3.00, Loss: 0.0207, Eps: 0.1000, Mem.size: 900000
+Ep: 8880, Dur: 212, Step: 2044709, Rew: 3.00, Loss: 0.0368, Eps: 0.1000, Mem.size: 900000
+Ep: 8890, Dur: 259, Step: 2047208, Rew: 4.00, Loss: 0.0355, Eps: 0.1000, Mem.size: 900000
+Ep: 8900, Dur: 212, Step: 2049602, Rew: 3.00, Loss: 0.0194, Eps: 0.1000, Mem.size: 900000
+Saved weights to colaboratory_models/BreakoutDeterministic-v42018-05-18 07:14:16.828452.h5
+Ep: 8910, Dur: 258, Step: 2051982, Rew: 4.00, Loss: 0.0335, Eps: 0.1000, Mem.size: 900000
+Ep: 8920, Dur: 345, Step: 2054419, Rew: 7.00, Loss: 0.0600, Eps: 0.1000, Mem.size: 900000
+Ep: 8930, Dur: 212, Step: 2056690, Rew: 3.00, Loss: 0.0311, Eps: 0.1000, Mem.size: 900000
+Ep: 8940, Dur: 212, Step: 2059008, Rew: 3.00, Loss: 0.0192, Eps: 0.1000, Mem.size: 900000
+Saved weights to colaboratory_models/BreakoutDeterministic-v42018-05-18 07:14:16.828452.h5
+Ep: 8950, Dur: 212, Step: 2061536, Rew: 3.00, Loss: 0.0260, Eps: 0.1000, Mem.size: 900000
+Ep: 8960, Dur: 210, Step: 2063800, Rew: 3.00, Loss: 0.0415, Eps: 0.1000, Mem.size: 900000
+Ep: 8970, Dur: 438, Step: 2066724, Rew: 8.00, Loss: 0.0565, Eps: 0.1000, Mem.size: 900000
+Ep: 8980, Dur: 213, Step: 2069139, Rew: 3.00, Loss: 0.0274, Eps: 0.1000, Mem.size: 900000
+Saved weights to colaboratory_models/BreakoutDeterministic-v42018-05-18 07:14:16.828452.h5
+Ep: 8990, Dur: 407, Step: 2071826, Rew: 6.00, Loss: 0.0646, Eps: 0.1000, Mem.size: 900000
+Ep: 9000, Dur: 212, Step: 2074521, Rew: 3.00, Loss: 0.0366, Eps: 0.1000, Mem.size: 900000
+Ep: 9010, Dur: 295, Step: 2077287, Rew: 5.00, Loss: 0.0421, Eps: 0.1000, Mem.size: 900000
+Ep: 9020, Dur: 213, Step: 2079649, Rew: 3.00, Loss: 0.0335, Eps: 0.1000, Mem.size: 900000
+Saved weights to colaboratory_models/BreakoutDeterministic-v42018-05-18 07:14:16.828452.h5
+Ep: 9030, Dur: 213, Step: 2082332, Rew: 3.00, Loss: 0.0436, Eps: 0.1000, Mem.size: 900000
+Ep: 9040, Dur: 354, Step: 2085540, Rew: 3.00, Loss: 0.0713, Eps: 0.1000, Mem.size: 900000
+Ep: 9050, Dur: 318, Step: 2088112, Rew: 5.00, Loss: 0.0459, Eps: 0.1000, Mem.size: 900000
+Saved weights to colaboratory_models/BreakoutDeterministic-v42018-05-18 07:14:16.828452.h5
+Ep: 9060, Dur: 401, Step: 2091141, Rew: 8.00, Loss: 0.0612, Eps: 0.1000, Mem.size: 900000
+Ep: 9070, Dur: 214, Step: 2093578, Rew: 3.00, Loss: 0.0459, Eps: 0.1000, Mem.size: 900000
+Ep: 9080, Dur: 212, Step: 2095885, Rew: 3.00, Loss: 0.0194, Eps: 0.1000, Mem.size: 900000
+Ep: 9090, Dur: 212, Step: 2098380, Rew: 3.00, Loss: 0.0625, Eps: 0.1000, Mem.size: 900000
+Ep: 9100, Dur: 310, Step: 2100775, Rew: 5.00, Loss: 0.0421, Eps: 0.1000, Mem.size: 900000
+Ep: 9110, Dur: 327, Step: 2103488, Rew: 5.00, Loss: 0.0331, Eps: 0.1000, Mem.size: 900000
+Ep: 9120, Dur: 266, Step: 2106253, Rew: 4.00, Loss: 0.0283, Eps: 0.1000, Mem.size: 900000
+Ep: 9130, Dur: 350, Step: 2108870, Rew: 5.00, Loss: 0.0827, Eps: 0.1000, Mem.size: 900000
+Saved weights to colaboratory_models/BreakoutDeterministic-v42018-05-18 07:14:16.828452.h5
+Ep: 9140, Dur: 376, Step: 2111568, Rew: 6.00, Loss: 0.0826, Eps: 0.1000, Mem.size: 900000
+Ep: 9150, Dur: 270, Step: 2114426, Rew: 5.00, Loss: 0.0334, Eps: 0.1000, Mem.size: 900000
+Ep: 9160, Dur: 210, Step: 2116909, Rew: 3.00, Loss: 0.0348, Eps: 0.1000, Mem.size: 900000
+Ep: 9170, Dur: 213, Step: 2119754, Rew: 3.00, Loss: 0.0420, Eps: 0.1000, Mem.size: 900000
+Saved weights to colaboratory_models/BreakoutDeterministic-v42018-05-18 07:14:16.828452.h5
+Ep: 9180, Dur: 286, Step: 2122556, Rew: 5.00, Loss: 0.0549, Eps: 0.1000, Mem.size: 900000
+Ep: 9190, Dur: 221, Step: 2125379, Rew: 3.00, Loss: 0.0290, Eps: 0.1000, Mem.size: 900000
+Ep: 9200, Dur: 214, Step: 2127848, Rew: 3.00, Loss: 0.0286, Eps: 0.1000, Mem.size: 900000
+Saved weights to colaboratory_models/BreakoutDeterministic-v42018-05-18 07:14:16.828452.h5
+Ep: 9210, Dur: 213, Step: 2130392, Rew: 3.00, Loss: 0.0155, Eps: 0.1000, Mem.size: 900000
+Ep: 9220, Dur: 212, Step: 2132722, Rew: 3.00, Loss: 0.0220, Eps: 0.1000, Mem.size: 900000
+Ep: 9230, Dur: 245, Step: 2135095, Rew: 4.00, Loss: 0.0289, Eps: 0.1000, Mem.size: 900000
+Ep: 9240, Dur: 199, Step: 2137774, Rew: 2.00, Loss: 0.0308, Eps: 0.1000, Mem.size: 900000
+Saved weights to colaboratory_models/BreakoutDeterministic-v42018-05-18 07:14:16.828452.h5
+Ep: 9250, Dur: 286, Step: 2140480, Rew: 4.00, Loss: 0.0481, Eps: 0.1000, Mem.size: 900000
+Ep: 9260, Dur: 212, Step: 2142978, Rew: 3.00, Loss: 0.0255, Eps: 0.1000, Mem.size: 900000
+Ep: 9270, Dur: 213, Step: 2145357, Rew: 3.00, Loss: 0.0220, Eps: 0.1000, Mem.size: 900000
+Ep: 9280, Dur: 245, Step: 2148103, Rew: 4.00, Loss: 0.0246, Eps: 0.1000, Mem.size: 900000
+Saved weights to colaboratory_models/BreakoutDeterministic-v42018-05-18 07:14:16.828452.h5
+Ep: 9290, Dur: 355, Step: 2150949, Rew: 6.00, Loss: 0.0944, Eps: 0.1000, Mem.size: 900000
+Ep: 9300, Dur: 347, Step: 2153640, Rew: 5.00, Loss: 0.0636, Eps: 0.1000, Mem.size: 900000
+Ep: 9310, Dur: 327, Step: 2156489, Rew: 6.00, Loss: 0.0359, Eps: 0.1000, Mem.size: 900000
+Ep: 9320, Dur: 243, Step: 2159191, Rew: 4.00, Loss: 0.0427, Eps: 0.1000, Mem.size: 900000
+Saved weights to colaboratory_models/BreakoutDeterministic-v42018-05-18 07:14:16.828452.h5
+Ep: 9330, Dur: 280, Step: 2161686, Rew: 4.00, Loss: 0.0532, Eps: 0.1000, Mem.size: 900000
+Ep: 9340, Dur: 292, Step: 2164870, Rew: 4.00, Loss: 0.0446, Eps: 0.1000, Mem.size: 900000
+Ep: 9350, Dur: 261, Step: 2167569, Rew: 4.00, Loss: 0.0485, Eps: 0.1000, Mem.size: 900000
+Saved weights to colaboratory_models/BreakoutDeterministic-v42018-05-18 07:14:16.828452.h5
+Ep: 9360, Dur: 262, Step: 2170066, Rew: 4.00, Loss: 0.0375, Eps: 0.1000, Mem.size: 900000
+Ep: 9370, Dur: 349, Step: 2173095, Rew: 6.00, Loss: 0.0756, Eps: 0.1000, Mem.size: 900000
+Ep: 9380, Dur: 260, Step: 2175983, Rew: 4.00, Loss: 0.0235, Eps: 0.1000, Mem.size: 900000
+Ep: 9390, Dur: 150, Step: 2178644, Rew: 1.00, Loss: 0.0145, Eps: 0.1000, Mem.size: 900000
+Saved weights to colaboratory_models/BreakoutDeterministic-v42018-05-18 07:14:16.828452.h5
+Ep: 9400, Dur: 245, Step: 2181833, Rew: 3.00, Loss: 0.0202, Eps: 0.1000, Mem.size: 900000
+Ep: 9410, Dur: 265, Step: 2184767, Rew: 4.00, Loss: 0.0520, Eps: 0.1000, Mem.size: 900000
+Ep: 9420, Dur: 252, Step: 2187443, Rew: 4.00, Loss: 0.0402, Eps: 0.1000, Mem.size: 900000
+Saved weights to colaboratory_models/BreakoutDeterministic-v42018-05-18 07:14:16.828452.h5
+Ep: 9430, Dur: 212, Step: 2190138, Rew: 3.00, Loss: 0.0252, Eps: 0.1000, Mem.size: 900000
+Ep: 9440, Dur: 297, Step: 2192849, Rew: 5.00, Loss: 0.0746, Eps: 0.1000, Mem.size: 900000
+Ep: 9450, Dur: 302, Step: 2195548, Rew: 5.00, Loss: 0.0718, Eps: 0.1000, Mem.size: 900000
+Ep: 9460, Dur: 204, Step: 2198378, Rew: 2.00, Loss: 0.0180, Eps: 0.1000, Mem.size: 900000
+Saved weights to colaboratory_models/BreakoutDeterministic-v42018-05-18 07:14:16.828452.h5
+Ep: 9470, Dur: 236, Step: 2201057, Rew: 2.00, Loss: 0.0329, Eps: 0.1000, Mem.size: 900000
+Ep: 9480, Dur: 251, Step: 2203681, Rew: 4.00, Loss: 0.0590, Eps: 0.1000, Mem.size: 900000
+Ep: 9490, Dur: 358, Step: 2206379, Rew: 6.00, Loss: 0.0845, Eps: 0.1000, Mem.size: 900000
+Ep: 9500, Dur: 180, Step: 2209072, Rew: 2.00, Loss: 0.0264, Eps: 0.1000, Mem.size: 900000
+Saved weights to colaboratory_models/BreakoutDeterministic-v42018-05-18 07:14:16.828452.h5
+Ep: 9510, Dur: 293, Step: 2211726, Rew: 5.00, Loss: 0.0446, Eps: 0.1000, Mem.size: 900000
+Ep: 9520, Dur: 283, Step: 2214494, Rew: 5.00, Loss: 0.0446, Eps: 0.1000, Mem.size: 900000
+Ep: 9530, Dur: 212, Step: 2217071, Rew: 3.00, Loss: 0.0354, Eps: 0.1000, Mem.size: 900000
+Saved weights to colaboratory_models/BreakoutDeterministic-v42018-05-18 07:14:16.828452.h5
+Ep: 9540, Dur: 407, Step: 2220071, Rew: 6.00, Loss: 0.0585, Eps: 0.1000, Mem.size: 900000
+Ep: 9550, Dur: 297, Step: 2222538, Rew: 5.00, Loss: 0.0671, Eps: 0.1000, Mem.size: 900000
+Ep: 9560, Dur: 305, Step: 2225212, Rew: 5.00, Loss: 0.0505, Eps: 0.1000, Mem.size: 900000
+Ep: 9570, Dur: 327, Step: 2228038, Rew: 5.00, Loss: 0.0823, Eps: 0.1000, Mem.size: 900000
+Saved weights to colaboratory_models/BreakoutDeterministic-v42018-05-18 07:14:16.828452.h5
+Ep: 9580, Dur: 280, Step: 2230973, Rew: 5.00, Loss: 0.0778, Eps: 0.1000, Mem.size: 900000
+Ep: 9590, Dur: 248, Step: 2233474, Rew: 4.00, Loss: 0.0399, Eps: 0.1000, Mem.size: 900000
+Ep: 9600, Dur: 212, Step: 2236249, Rew: 3.00, Loss: 0.0324, Eps: 0.1000, Mem.size: 900000
+Ep: 9610, Dur: 247, Step: 2238951, Rew: 4.00, Loss: 0.0436, Eps: 0.1000, Mem.size: 900000
+Saved weights to colaboratory_models/BreakoutDeterministic-v42018-05-18 07:14:16.828452.h5
+Ep: 9620, Dur: 191, Step: 2241535, Rew: 2.00, Loss: 0.0356, Eps: 0.1000, Mem.size: 900000
+Ep: 9630, Dur: 290, Step: 2244435, Rew: 5.00, Loss: 0.0417, Eps: 0.1000, Mem.size: 900000
+Ep: 9640, Dur: 311, Step: 2247368, Rew: 5.00, Loss: 0.0713, Eps: 0.1000, Mem.size: 900000
+Saved weights to colaboratory_models/BreakoutDeterministic-v42018-05-18 07:14:16.828452.h5
+Ep: 9650, Dur: 275, Step: 2250108, Rew: 5.00, Loss: 0.0404, Eps: 0.1000, Mem.size: 900000
+Ep: 9660, Dur: 215, Step: 2253098, Rew: 3.00, Loss: 0.0256, Eps: 0.1000, Mem.size: 900000
+Ep: 9670, Dur: 229, Step: 2255746, Rew: 3.00, Loss: 0.0297, Eps: 0.1000, Mem.size: 900000
+Ep: 9680, Dur: 260, Step: 2258404, Rew: 4.00, Loss: 0.0398, Eps: 0.1000, Mem.size: 900000
+Ep: 9690, Dur: 150, Step: 2261241, Rew: 1.00, Loss: 0.0342, Eps: 0.1000, Mem.size: 900000
+Ep: 9700, Dur: 261, Step: 2263872, Rew: 4.00, Loss: 0.0415, Eps: 0.1000, Mem.size: 900000
+Ep: 9710, Dur: 291, Step: 2266509, Rew: 5.00, Loss: 0.0558, Eps: 0.1000, Mem.size: 900000
+Ep: 9720, Dur: 213, Step: 2269414, Rew: 3.00, Loss: 0.0458, Eps: 0.1000, Mem.size: 900000
+Saved weights to colaboratory_models/BreakoutDeterministic-v42018-05-18 07:14:16.828452.h5
+Ep: 9730, Dur: 213, Step: 2271963, Rew: 3.00, Loss: 0.0288, Eps: 0.1000, Mem.size: 900000
+Ep: 9740, Dur: 237, Step: 2274579, Rew: 3.00, Loss: 0.0302, Eps: 0.1000, Mem.size: 900000
+Ep: 9750, Dur: 150, Step: 2277037, Rew: 1.00, Loss: 0.0207, Eps: 0.1000, Mem.size: 900000
+Ep: 9760, Dur: 247, Step: 2279555, Rew: 4.00, Loss: 0.0602, Eps: 0.1000, Mem.size: 900000
+Saved weights to colaboratory_models/BreakoutDeterministic-v42018-05-18 07:14:16.828452.h5
+Ep: 9770, Dur: 212, Step: 2282048, Rew: 3.00, Loss: 0.0303, Eps: 0.1000, Mem.size: 900000
+Ep: 9780, Dur: 353, Step: 2284933, Rew: 6.00, Loss: 0.0822, Eps: 0.1000, Mem.size: 900000
+Ep: 9790, Dur: 208, Step: 2287615, Rew: 3.00, Loss: 0.0251, Eps: 0.1000, Mem.size: 900000
+Saved weights to colaboratory_models/BreakoutDeterministic-v42018-05-18 07:14:16.828452.h5
+Ep: 9800, Dur: 199, Step: 2290415, Rew: 2.00, Loss: 0.0226, Eps: 0.1000, Mem.size: 900000
+Ep: 9810, Dur: 213, Step: 2293070, Rew: 3.00, Loss: 0.0219, Eps: 0.1000, Mem.size: 900000
+Ep: 9820, Dur: 268, Step: 2295771, Rew: 2.00, Loss: 0.0397, Eps: 0.1000, Mem.size: 900000
+Ep: 9830, Dur: 346, Step: 2298621, Rew: 7.00, Loss: 0.0869, Eps: 0.1000, Mem.size: 900000
+Saved weights to colaboratory_models/BreakoutDeterministic-v42018-05-18 07:14:16.828452.h5
+Ep: 9840, Dur: 247, Step: 2301224, Rew: 4.00, Loss: 0.0368, Eps: 0.1000, Mem.size: 900000
+Ep: 9850, Dur: 324, Step: 2304218, Rew: 6.00, Loss: 0.0555, Eps: 0.1000, Mem.size: 900000
+Ep: 9860, Dur: 212, Step: 2307014, Rew: 3.00, Loss: 0.0344, Eps: 0.1000, Mem.size: 900000
+Ep: 9870, Dur: 199, Step: 2309694, Rew: 2.00, Loss: 0.0392, Eps: 0.1000, Mem.size: 900000
+Saved weights to colaboratory_models/BreakoutDeterministic-v42018-05-18 07:14:16.828452.h5
+Ep: 9880, Dur: 179, Step: 2312097, Rew: 2.00, Loss: 0.0436, Eps: 0.1000, Mem.size: 900000
+Ep: 9890, Dur: 212, Step: 2314810, Rew: 3.00, Loss: 0.0204, Eps: 0.1000, Mem.size: 900000
+Ep: 9900, Dur: 420, Step: 2317861, Rew: 8.00, Loss: 0.0759, Eps: 0.1000, Mem.size: 900000
+Saved weights to colaboratory_models/BreakoutDeterministic-v42018-05-18 07:14:16.828452.h5
+Ep: 9910, Dur: 258, Step: 2320419, Rew: 4.00, Loss: 0.0541, Eps: 0.1000, Mem.size: 900000
+Ep: 9920, Dur: 294, Step: 2323306, Rew: 5.00, Loss: 0.0327, Eps: 0.1000, Mem.size: 900000
+Ep: 9930, Dur: 245, Step: 2326331, Rew: 4.00, Loss: 0.0415, Eps: 0.1000, Mem.size: 900000
+Ep: 9940, Dur: 213, Step: 2328799, Rew: 3.00, Loss: 0.0345, Eps: 0.1000, Mem.size: 900000
+Saved weights to colaboratory_models/BreakoutDeterministic-v42018-05-18 07:14:16.828452.h5
+Ep: 9950, Dur: 312, Step: 2331601, Rew: 5.00, Loss: 0.0467, Eps: 0.1000, Mem.size: 900000
+Ep: 9960, Dur: 245, Step: 2334143, Rew: 4.00, Loss: 0.0315, Eps: 0.1000, Mem.size: 900000
+Ep: 9970, Dur: 320, Step: 2337054, Rew: 5.00, Loss: 0.0676, Eps: 0.1000, Mem.size: 900000
+Ep: 9980, Dur: 212, Step: 2339554, Rew: 3.00, Loss: 0.0381, Eps: 0.1000, Mem.size: 900000
+Saved weights to colaboratory_models/BreakoutDeterministic-v42018-05-18 07:14:16.828452.h5
+Ep: 9990, Dur: 319, Step: 2342034, Rew: 6.00, Loss: 0.0443, Eps: 0.1000, Mem.size: 900000
+Ep: 10000, Dur: 274, Step: 2344822, Rew: 5.00, Loss: 0.1071, Eps: 0.1000, Mem.size: 900000
+Ep: 10010, Dur: 210, Step: 2347326, Rew: 3.00, Loss: 0.0459, Eps: 0.1000, Mem.size: 900000
+Saved weights to colaboratory_models/BreakoutDeterministic-v42018-05-18 07:14:16.828452.h5
+Ep: 10020, Dur: 261, Step: 2350279, Rew: 4.00, Loss: 0.0416, Eps: 0.1000, Mem.size: 900000
+Ep: 10030, Dur: 212, Step: 2353029, Rew: 3.00, Loss: 0.0139, Eps: 0.1000, Mem.size: 900000
+Ep: 10040, Dur: 275, Step: 2355641, Rew: 4.00, Loss: 0.0554, Eps: 0.1000, Mem.size: 900000
+Ep: 10050, Dur: 310, Step: 2358138, Rew: 5.00, Loss: 0.0919, Eps: 0.1000, Mem.size: 900000
+Saved weights to colaboratory_models/BreakoutDeterministic-v42018-05-18 07:14:16.828452.h5
+Ep: 10060, Dur: 212, Step: 2360898, Rew: 3.00, Loss: 0.0468, Eps: 0.1000, Mem.size: 900000
+Ep: 10070, Dur: 199, Step: 2363450, Rew: 2.00, Loss: 0.0314, Eps: 0.1000, Mem.size: 900000
+Ep: 10080, Dur: 270, Step: 2366282, Rew: 5.00, Loss: 0.0386, Eps: 0.1000, Mem.size: 900000
+Ep: 10090, Dur: 213, Step: 2369069, Rew: 3.00, Loss: 0.0391, Eps: 0.1000, Mem.size: 900000
+Saved weights to colaboratory_models/BreakoutDeterministic-v42018-05-18 07:14:16.828452.h5
+Ep: 10100, Dur: 330, Step: 2371823, Rew: 5.00, Loss: 0.0568, Eps: 0.1000, Mem.size: 900000
+Ep: 10110, Dur: 375, Step: 2375019, Rew: 5.00, Loss: 0.0705, Eps: 0.1000, Mem.size: 900000
+Ep: 10120, Dur: 219, Step: 2377817, Rew: 3.00, Loss: 0.0303, Eps: 0.1000, Mem.size: 900000
+Saved weights to colaboratory_models/BreakoutDeterministic-v42018-05-18 07:14:16.828452.h5
+Ep: 10130, Dur: 182, Step: 2380465, Rew: 2.00, Loss: 0.0277, Eps: 0.1000, Mem.size: 900000
+Ep: 10140, Dur: 411, Step: 2383510, Rew: 7.00, Loss: 0.0799, Eps: 0.1000, Mem.size: 900000
+Ep: 10150, Dur: 295, Step: 2386398, Rew: 5.00, Loss: 0.0779, Eps: 0.1000, Mem.size: 900000
+Ep: 10160, Dur: 261, Step: 2388937, Rew: 4.00, Loss: 0.0663, Eps: 0.1000, Mem.size: 900000
+Saved weights to colaboratory_models/BreakoutDeterministic-v42018-05-18 07:14:16.828452.h5
+Ep: 10170, Dur: 248, Step: 2391796, Rew: 4.00, Loss: 0.0693, Eps: 0.1000, Mem.size: 900000
+Ep: 10180, Dur: 212, Step: 2394714, Rew: 3.00, Loss: 0.0528, Eps: 0.1000, Mem.size: 900000
+Ep: 10190, Dur: 276, Step: 2397370, Rew: 5.00, Loss: 0.0675, Eps: 0.1000, Mem.size: 900000
+Ep: 10200, Dur: 386, Step: 2400397, Rew: 7.00, Loss: 0.0640, Eps: 0.1000, Mem.size: 900000
+Ep: 10210, Dur: 321, Step: 2403363, Rew: 6.00, Loss: 0.0773, Eps: 0.1000, Mem.size: 900000
+Ep: 10220, Dur: 300, Step: 2406290, Rew: 5.00, Loss: 0.0570, Eps: 0.1000, Mem.size: 900000
+Ep: 10230, Dur: 244, Step: 2409107, Rew: 4.00, Loss: 0.0430, Eps: 0.1000, Mem.size: 900000
+Saved weights to colaboratory_models/BreakoutDeterministic-v42018-05-18 07:14:16.828452.h5
+Ep: 10240, Dur: 301, Step: 2411851, Rew: 5.00, Loss: 0.0515, Eps: 0.1000, Mem.size: 900000
+Ep: 10250, Dur: 212, Step: 2414911, Rew: 3.00, Loss: 0.0364, Eps: 0.1000, Mem.size: 900000
+Ep: 10260, Dur: 275, Step: 2417823, Rew: 5.00, Loss: 0.0442, Eps: 0.1000, Mem.size: 900000
+Ep: 10270, Dur: 295, Step: 2420737, Rew: 5.00, Loss: 0.0490, Eps: 0.1000, Mem.size: 900000
+Ep: 10280, Dur: 276, Step: 2423877, Rew: 5.00, Loss: 0.0405, Eps: 0.1000, Mem.size: 900000
+Ep: 10290, Dur: 294, Step: 2426795, Rew: 5.00, Loss: 0.0381, Eps: 0.1000, Mem.size: 900000
+Ep: 10300, Dur: 150, Step: 2429228, Rew: 1.00, Loss: 0.0328, Eps: 0.1000, Mem.size: 900000
+Saved weights to colaboratory_models/BreakoutDeterministic-v42018-05-18 07:14:16.828452.h5
+Ep: 10310, Dur: 212, Step: 2431956, Rew: 3.00, Loss: 0.0219, Eps: 0.1000, Mem.size: 900000
+Ep: 10320, Dur: 262, Step: 2434902, Rew: 4.00, Loss: 0.0749, Eps: 0.1000, Mem.size: 900000
+Ep: 10330, Dur: 472, Step: 2437762, Rew: 9.00, Loss: 0.1294, Eps: 0.1000, Mem.size: 900000
+Saved weights to colaboratory_models/BreakoutDeterministic-v42018-05-18 07:14:16.828452.h5
+Ep: 10340, Dur: 202, Step: 2440706, Rew: 2.00, Loss: 0.0362, Eps: 0.1000, Mem.size: 900000
+Ep: 10350, Dur: 213, Step: 2443620, Rew: 3.00, Loss: 0.0326, Eps: 0.1000, Mem.size: 900000
+Ep: 10360, Dur: 274, Step: 2446345, Rew: 4.00, Loss: 0.0407, Eps: 0.1000, Mem.size: 900000
+Ep: 10370, Dur: 244, Step: 2449080, Rew: 4.00, Loss: 0.0532, Eps: 0.1000, Mem.size: 900000
+Saved weights to colaboratory_models/BreakoutDeterministic-v42018-05-18 07:14:16.828452.h5
+Ep: 10380, Dur: 199, Step: 2451808, Rew: 2.00, Loss: 0.0494, Eps: 0.1000, Mem.size: 900000
+Ep: 10390, Dur: 325, Step: 2454677, Rew: 6.00, Loss: 0.0553, Eps: 0.1000, Mem.size: 900000
+Ep: 10400, Dur: 228, Step: 2457454, Rew: 3.00, Loss: 0.0389, Eps: 0.1000, Mem.size: 900000
+Saved weights to colaboratory_models/BreakoutDeterministic-v42018-05-18 07:14:16.828452.h5
+Ep: 10410, Dur: 400, Step: 2460217, Rew: 8.00, Loss: 0.1033, Eps: 0.1000, Mem.size: 900000
+Ep: 10420, Dur: 199, Step: 2462817, Rew: 2.00, Loss: 0.0307, Eps: 0.1000, Mem.size: 900000
+Ep: 10430, Dur: 202, Step: 2465697, Rew: 2.00, Loss: 0.0387, Eps: 0.1000, Mem.size: 900000
+Ep: 10440, Dur: 150, Step: 2468449, Rew: 1.00, Loss: 0.0302, Eps: 0.1000, Mem.size: 900000
+Saved weights to colaboratory_models/BreakoutDeterministic-v42018-05-18 07:14:16.828452.h5
+Ep: 10450, Dur: 330, Step: 2471473, Rew: 6.00, Loss: 0.0571, Eps: 0.1000, Mem.size: 900000
+Ep: 10460, Dur: 150, Step: 2474028, Rew: 1.00, Loss: 0.0346, Eps: 0.1000, Mem.size: 900000
+Ep: 10470, Dur: 213, Step: 2476505, Rew: 3.00, Loss: 0.0534, Eps: 0.1000, Mem.size: 900000
+Ep: 10480, Dur: 289, Step: 2479478, Rew: 5.00, Loss: 0.0892, Eps: 0.1000, Mem.size: 900000
+Saved weights to colaboratory_models/BreakoutDeterministic-v42018-05-18 07:14:16.828452.h5
+Ep: 10490, Dur: 292, Step: 2482484, Rew: 5.00, Loss: 0.0524, Eps: 0.1000, Mem.size: 900000
+Ep: 10500, Dur: 247, Step: 2485340, Rew: 4.00, Loss: 0.0426, Eps: 0.1000, Mem.size: 900000
+Ep: 10510, Dur: 258, Step: 2488338, Rew: 4.00, Loss: 0.0503, Eps: 0.1000, Mem.size: 900000
+Saved weights to colaboratory_models/BreakoutDeterministic-v42018-05-18 07:14:16.828452.h5
+Ep: 10520, Dur: 212, Step: 2491168, Rew: 3.00, Loss: 0.0427, Eps: 0.1000, Mem.size: 900000
+Ep: 10530, Dur: 271, Step: 2494085, Rew: 5.00, Loss: 0.0419, Eps: 0.1000, Mem.size: 900000
+Ep: 10540, Dur: 245, Step: 2497095, Rew: 4.00, Loss: 0.0449, Eps: 0.1000, Mem.size: 900000
+Saved weights to colaboratory_models/BreakoutDeterministic-v42018-05-18 07:14:16.828452.h5
+Ep: 10550, Dur: 351, Step: 2500153, Rew: 7.00, Loss: 0.0673, Eps: 0.1000, Mem.size: 900000
+Ep: 10560, Dur: 213, Step: 2503132, Rew: 3.00, Loss: 0.0411, Eps: 0.1000, Mem.size: 900000
+Ep: 10570, Dur: 290, Step: 2506488, Rew: 5.00, Loss: 0.0629, Eps: 0.1000, Mem.size: 900000
+Ep: 10580, Dur: 243, Step: 2509200, Rew: 4.00, Loss: 0.0581, Eps: 0.1000, Mem.size: 900000
+Saved weights to colaboratory_models/BreakoutDeterministic-v42018-05-18 07:14:16.828452.h5
+Ep: 10590, Dur: 201, Step: 2511978, Rew: 2.00, Loss: 0.0219, Eps: 0.1000, Mem.size: 900000
+Ep: 10600, Dur: 252, Step: 2514906, Rew: 2.00, Loss: 0.0732, Eps: 0.1000, Mem.size: 900000
+Ep: 10610, Dur: 278, Step: 2518403, Rew: 5.00, Loss: 0.0662, Eps: 0.1000, Mem.size: 900000
+Saved weights to colaboratory_models/BreakoutDeterministic-v42018-05-18 07:14:16.828452.h5
+Ep: 10620, Dur: 325, Step: 2521400, Rew: 6.00, Loss: 0.0702, Eps: 0.1000, Mem.size: 900000
+Ep: 10630, Dur: 327, Step: 2524521, Rew: 6.00, Loss: 0.0625, Eps: 0.1000, Mem.size: 900000
+Ep: 10640, Dur: 312, Step: 2527367, Rew: 5.00, Loss: 0.0629, Eps: 0.1000, Mem.size: 900000
+Saved weights to colaboratory_models/BreakoutDeterministic-v42018-05-18 07:14:16.828452.h5
+Ep: 10650, Dur: 325, Step: 2530569, Rew: 6.00, Loss: 0.0393, Eps: 0.1000, Mem.size: 900000
+Ep: 10660, Dur: 446, Step: 2533554, Rew: 7.00, Loss: 0.1257, Eps: 0.1000, Mem.size: 900000
+Ep: 10670, Dur: 298, Step: 2536478, Rew: 2.00, Loss: 0.0871, Eps: 0.1000, Mem.size: 900000
+Ep: 10680, Dur: 258, Step: 2539456, Rew: 4.00, Loss: 0.0389, Eps: 0.1000, Mem.size: 900000
+Saved weights to colaboratory_models/BreakoutDeterministic-v42018-05-18 07:14:16.828452.h5
+Ep: 10690, Dur: 200, Step: 2542040, Rew: 2.00, Loss: 0.0486, Eps: 0.1000, Mem.size: 900000
+Ep: 10700, Dur: 322, Step: 2544923, Rew: 6.00, Loss: 0.0418, Eps: 0.1000, Mem.size: 900000
+Ep: 10710, Dur: 201, Step: 2547971, Rew: 2.00, Loss: 0.0292, Eps: 0.1000, Mem.size: 900000
+Saved weights to colaboratory_models/BreakoutDeterministic-v42018-05-18 07:14:16.828452.h5
+Ep: 10720, Dur: 295, Step: 2550872, Rew: 5.00, Loss: 0.0687, Eps: 0.1000, Mem.size: 900000
+Ep: 10730, Dur: 200, Step: 2553843, Rew: 2.00, Loss: 0.0263, Eps: 0.1000, Mem.size: 900000
+Ep: 10740, Dur: 302, Step: 2556862, Rew: 5.00, Loss: 0.0727, Eps: 0.1000, Mem.size: 900000
+Ep: 10750, Dur: 202, Step: 2559787, Rew: 2.00, Loss: 0.0361, Eps: 0.1000, Mem.size: 900000
+Saved weights to colaboratory_models/BreakoutDeterministic-v42018-05-18 07:14:16.828452.h5
+Ep: 10760, Dur: 246, Step: 2562883, Rew: 4.00, Loss: 0.0596, Eps: 0.1000, Mem.size: 900000
+Ep: 10770, Dur: 554, Step: 2565891, Rew: 9.00, Loss: 0.1069, Eps: 0.1000, Mem.size: 900000
+Ep: 10780, Dur: 293, Step: 2568928, Rew: 5.00, Loss: 0.0580, Eps: 0.1000, Mem.size: 900000
+Saved weights to colaboratory_models/BreakoutDeterministic-v42018-05-18 07:14:16.828452.h5
+Ep: 10790, Dur: 313, Step: 2572015, Rew: 4.00, Loss: 0.0635, Eps: 0.1000, Mem.size: 900000
+Ep: 10800, Dur: 292, Step: 2574760, Rew: 5.00, Loss: 0.0675, Eps: 0.1000, Mem.size: 900000
+Ep: 10810, Dur: 213, Step: 2577421, Rew: 3.00, Loss: 0.0463, Eps: 0.1000, Mem.size: 900000
+Saved weights to colaboratory_models/BreakoutDeterministic-v42018-05-18 07:14:16.828452.h5
+Ep: 10820, Dur: 225, Step: 2580696, Rew: 3.00, Loss: 0.0464, Eps: 0.1000, Mem.size: 900000
+Ep: 10830, Dur: 370, Step: 2583923, Rew: 8.00, Loss: 0.0627, Eps: 0.1000, Mem.size: 900000
+Ep: 10840, Dur: 251, Step: 2586975, Rew: 4.00, Loss: 0.0463, Eps: 0.1000, Mem.size: 900000
+Ep: 10850, Dur: 245, Step: 2589777, Rew: 4.00, Loss: 0.0601, Eps: 0.1000, Mem.size: 900000
+Saved weights to colaboratory_models/BreakoutDeterministic-v42018-05-18 07:14:16.828452.h5
+Ep: 10860, Dur: 182, Step: 2592617, Rew: 2.00, Loss: 0.0484, Eps: 0.1000, Mem.size: 900000
+Ep: 10870, Dur: 280, Step: 2595530, Rew: 5.00, Loss: 0.0536, Eps: 0.1000, Mem.size: 900000
+Ep: 10880, Dur: 377, Step: 2598361, Rew: 7.00, Loss: 0.0775, Eps: 0.1000, Mem.size: 900000
+Saved weights to colaboratory_models/BreakoutDeterministic-v42018-05-18 07:14:16.828452.h5
+Ep: 10890, Dur: 150, Step: 2601129, Rew: 1.00, Loss: 0.0237, Eps: 0.1000, Mem.size: 900000
+Ep: 10900, Dur: 274, Step: 2603996, Rew: 4.00, Loss: 0.0619, Eps: 0.1000, Mem.size: 900000
+Ep: 10910, Dur: 182, Step: 2606707, Rew: 2.00, Loss: 0.0408, Eps: 0.1000, Mem.size: 900000
+Ep: 10920, Dur: 212, Step: 2609726, Rew: 3.00, Loss: 0.0481, Eps: 0.1000, Mem.size: 900000
+Ep: 10930, Dur: 229, Step: 2612376, Rew: 3.00, Loss: 0.0579, Eps: 0.1000, Mem.size: 900000
+Ep: 10940, Dur: 213, Step: 2615142, Rew: 3.00, Loss: 0.0638, Eps: 0.1000, Mem.size: 900000
+Ep: 10950, Dur: 387, Step: 2617870, Rew: 7.00, Loss: 0.0799, Eps: 0.1000, Mem.size: 900000
+Saved weights to colaboratory_models/BreakoutDeterministic-v42018-05-18 07:14:16.828452.h5
+Ep: 10960, Dur: 331, Step: 2620802, Rew: 6.00, Loss: 0.0906, Eps: 0.1000, Mem.size: 900000
+Ep: 10970, Dur: 351, Step: 2623642, Rew: 7.00, Loss: 0.0955, Eps: 0.1000, Mem.size: 900000
+Ep: 10980, Dur: 333, Step: 2626523, Rew: 6.00, Loss: 0.0846, Eps: 0.1000, Mem.size: 900000
+Ep: 10990, Dur: 263, Step: 2629311, Rew: 4.00, Loss: 0.0391, Eps: 0.1000, Mem.size: 900000
+Saved weights to colaboratory_models/BreakoutDeterministic-v42018-05-18 07:14:16.828452.h5
+Ep: 11000, Dur: 297, Step: 2631928, Rew: 5.00, Loss: 0.0667, Eps: 0.1000, Mem.size: 900000
+Ep: 11010, Dur: 275, Step: 2635140, Rew: 4.00, Loss: 0.0584, Eps: 0.1000, Mem.size: 900000
+Ep: 11020, Dur: 269, Step: 2637998, Rew: 3.00, Loss: 0.0766, Eps: 0.1000, Mem.size: 900000
+Saved weights to colaboratory_models/BreakoutDeterministic-v42018-05-18 07:14:16.828452.h5
+Ep: 11030, Dur: 199, Step: 2641156, Rew: 2.00, Loss: 0.0651, Eps: 0.1000, Mem.size: 900000
+Ep: 11040, Dur: 312, Step: 2644521, Rew: 5.00, Loss: 0.0448, Eps: 0.1000, Mem.size: 900000
+Ep: 11050, Dur: 150, Step: 2647305, Rew: 1.00, Loss: 0.0659, Eps: 0.1000, Mem.size: 900000
+Ep: 11060, Dur: 327, Step: 2650638, Rew: 6.00, Loss: 0.0847, Eps: 0.1000, Mem.size: 900000
+Ep: 11070, Dur: 181, Step: 2653450, Rew: 2.00, Loss: 0.0591, Eps: 0.1000, Mem.size: 900000
+Ep: 11080, Dur: 201, Step: 2656219, Rew: 2.00, Loss: 0.0531, Eps: 0.1000, Mem.size: 900000
+Ep: 11090, Dur: 294, Step: 2659159, Rew: 4.00, Loss: 0.0975, Eps: 0.1000, Mem.size: 900000
+Saved weights to colaboratory_models/BreakoutDeterministic-v42018-05-18 07:14:16.828452.h5
+Ep: 11100, Dur: 369, Step: 2662347, Rew: 8.00, Loss: 0.1010, Eps: 0.1000, Mem.size: 900000
+Ep: 11110, Dur: 411, Step: 2665186, Rew: 9.00, Loss: 0.0927, Eps: 0.1000, Mem.size: 900000
+Ep: 11120, Dur: 280, Step: 2667885, Rew: 5.00, Loss: 0.0389, Eps: 0.1000, Mem.size: 900000
+Saved weights to colaboratory_models/BreakoutDeterministic-v42018-05-18 07:14:16.828452.h5
+Ep: 11130, Dur: 377, Step: 2670792, Rew: 6.00, Loss: 0.0804, Eps: 0.1000, Mem.size: 900000
+Ep: 11140, Dur: 150, Step: 2673643, Rew: 1.00, Loss: 0.0371, Eps: 0.1000, Mem.size: 900000
+Ep: 11150, Dur: 260, Step: 2676522, Rew: 4.00, Loss: 0.0633, Eps: 0.1000, Mem.size: 900000
+Ep: 11160, Dur: 342, Step: 2679683, Rew: 6.00, Loss: 0.0734, Eps: 0.1000, Mem.size: 900000
+Saved weights to colaboratory_models/BreakoutDeterministic-v42018-05-18 07:14:16.828452.h5
+Ep: 11170, Dur: 326, Step: 2682324, Rew: 6.00, Loss: 0.0950, Eps: 0.1000, Mem.size: 900000
+Ep: 11180, Dur: 258, Step: 2685389, Rew: 4.00, Loss: 0.0760, Eps: 0.1000, Mem.size: 900000
+Ep: 11190, Dur: 199, Step: 2688378, Rew: 2.00, Loss: 0.0363, Eps: 0.1000, Mem.size: 900000
+Saved weights to colaboratory_models/BreakoutDeterministic-v42018-05-18 07:14:16.828452.h5
+Ep: 11200, Dur: 338, Step: 2691412, Rew: 6.00, Loss: 0.0610, Eps: 0.1000, Mem.size: 900000
+Ep: 11210, Dur: 199, Step: 2693983, Rew: 2.00, Loss: 0.0531, Eps: 0.1000, Mem.size: 900000
+Ep: 11220, Dur: 261, Step: 2697190, Rew: 4.00, Loss: 0.0672, Eps: 0.1000, Mem.size: 900000
+Ep: 11230, Dur: 246, Step: 2699739, Rew: 4.00, Loss: 0.0624, Eps: 0.1000, Mem.size: 900000
+Saved weights to colaboratory_models/BreakoutDeterministic-v42018-05-18 07:14:16.828452.h5
+Ep: 11240, Dur: 343, Step: 2702376, Rew: 6.00, Loss: 0.1109, Eps: 0.1000, Mem.size: 900000
+Ep: 11250, Dur: 326, Step: 2705153, Rew: 6.00, Loss: 0.0608, Eps: 0.1000, Mem.size: 900000
+Ep: 11260, Dur: 212, Step: 2708389, Rew: 3.00, Loss: 0.0555, Eps: 0.1000, Mem.size: 900000
+Saved weights to colaboratory_models/BreakoutDeterministic-v42018-05-18 07:14:16.828452.h5
+Ep: 11270, Dur: 227, Step: 2710969, Rew: 3.00, Loss: 0.0602, Eps: 0.1000, Mem.size: 900000
+Ep: 11280, Dur: 398, Step: 2714083, Rew: 8.00, Loss: 0.0784, Eps: 0.1000, Mem.size: 900000
+Ep: 11290, Dur: 322, Step: 2716871, Rew: 6.00, Loss: 0.0527, Eps: 0.1000, Mem.size: 900000
+Saved weights to colaboratory_models/BreakoutDeterministic-v42018-05-18 07:14:16.828452.h5
+Ep: 11300, Dur: 420, Step: 2720098, Rew: 8.00, Loss: 0.1196, Eps: 0.1000, Mem.size: 900000
+Ep: 11310, Dur: 199, Step: 2723228, Rew: 2.00, Loss: 0.0421, Eps: 0.1000, Mem.size: 900000
+Ep: 11320, Dur: 225, Step: 2725888, Rew: 3.00, Loss: 0.0638, Eps: 0.1000, Mem.size: 900000
+Ep: 11330, Dur: 246, Step: 2728731, Rew: 3.00, Loss: 0.0402, Eps: 0.1000, Mem.size: 900000
+Saved weights to colaboratory_models/BreakoutDeterministic-v42018-05-18 07:14:16.828452.h5
+Ep: 11340, Dur: 272, Step: 2731753, Rew: 4.00, Loss: 0.0423, Eps: 0.1000, Mem.size: 900000
+Ep: 11350, Dur: 228, Step: 2734702, Rew: 3.00, Loss: 0.0478, Eps: 0.1000, Mem.size: 900000
+Ep: 11360, Dur: 199, Step: 2737818, Rew: 2.00, Loss: 0.0455, Eps: 0.1000, Mem.size: 900000
+Saved weights to colaboratory_models/BreakoutDeterministic-v42018-05-18 07:14:16.828452.h5
+Ep: 11370, Dur: 394, Step: 2740886, Rew: 8.00, Loss: 0.1018, Eps: 0.1000, Mem.size: 900000
+Ep: 11380, Dur: 343, Step: 2743667, Rew: 6.00, Loss: 0.0972, Eps: 0.1000, Mem.size: 900000
+Ep: 11390, Dur: 292, Step: 2746488, Rew: 5.00, Loss: 0.0558, Eps: 0.1000, Mem.size: 900000
+Ep: 11400, Dur: 343, Step: 2749491, Rew: 6.00, Loss: 0.1301, Eps: 0.1000, Mem.size: 900000
+Saved weights to colaboratory_models/BreakoutDeterministic-v42018-05-18 07:14:16.828452.h5
+Ep: 11410, Dur: 243, Step: 2752281, Rew: 4.00, Loss: 0.0511, Eps: 0.1000, Mem.size: 900000
+Ep: 11420, Dur: 346, Step: 2755178, Rew: 6.00, Loss: 0.1001, Eps: 0.1000, Mem.size: 900000
+Ep: 11430, Dur: 286, Step: 2757977, Rew: 4.00, Loss: 0.0977, Eps: 0.1000, Mem.size: 900000
+Saved weights to colaboratory_models/BreakoutDeterministic-v42018-05-18 07:14:16.828452.h5
+Ep: 11440, Dur: 350, Step: 2761098, Rew: 6.00, Loss: 0.1015, Eps: 0.1000, Mem.size: 900000
+Ep: 11450, Dur: 289, Step: 2764126, Rew: 5.00, Loss: 0.0676, Eps: 0.1000, Mem.size: 900000
+Ep: 11460, Dur: 199, Step: 2767298, Rew: 2.00, Loss: 0.0511, Eps: 0.1000, Mem.size: 900000
+Ep: 11470, Dur: 289, Step: 2769956, Rew: 6.00, Loss: 0.0732, Eps: 0.1000, Mem.size: 900000
+Saved weights to colaboratory_models/BreakoutDeterministic-v42018-05-18 07:14:16.828452.h5
+Ep: 11480, Dur: 181, Step: 2772555, Rew: 2.00, Loss: 0.0647, Eps: 0.1000, Mem.size: 900000
+Ep: 11490, Dur: 211, Step: 2775320, Rew: 3.00, Loss: 0.0794, Eps: 0.1000, Mem.size: 900000
+Ep: 11500, Dur: 214, Step: 2778518, Rew: 3.00, Loss: 0.1107, Eps: 0.1000, Mem.size: 900000
+Saved weights to colaboratory_models/BreakoutDeterministic-v42018-05-18 07:14:16.828452.h5
+Ep: 11510, Dur: 339, Step: 2781366, Rew: 6.00, Loss: 0.1192, Eps: 0.1000, Mem.size: 900000
+Ep: 11520, Dur: 303, Step: 2784541, Rew: 5.00, Loss: 0.0572, Eps: 0.1000, Mem.size: 900000
+Ep: 11530, Dur: 123, Step: 2787244, Rew: 0.00, Loss: 0.0165, Eps: 0.1000, Mem.size: 900000
+Saved weights to colaboratory_models/BreakoutDeterministic-v42018-05-18 07:14:16.828452.h5
+Ep: 11540, Dur: 291, Step: 2790245, Rew: 5.00, Loss: 0.0785, Eps: 0.1000, Mem.size: 900000
+Ep: 11550, Dur: 353, Step: 2793028, Rew: 6.00, Loss: 0.0902, Eps: 0.1000, Mem.size: 900000
+Ep: 11560, Dur: 200, Step: 2795816, Rew: 2.00, Loss: 0.0549, Eps: 0.1000, Mem.size: 900000
+Ep: 11570, Dur: 261, Step: 2799347, Rew: 4.00, Loss: 0.0578, Eps: 0.1000, Mem.size: 900000
+Saved weights to colaboratory_models/BreakoutDeterministic-v42018-05-18 07:14:16.828452.h5
+Ep: 11580, Dur: 325, Step: 2802361, Rew: 5.00, Loss: 0.0708, Eps: 0.1000, Mem.size: 900000
+Ep: 11590, Dur: 301, Step: 2805037, Rew: 6.00, Loss: 0.0670, Eps: 0.1000, Mem.size: 900000
+Ep: 11600, Dur: 199, Step: 2807889, Rew: 2.00, Loss: 0.0489, Eps: 0.1000, Mem.size: 900000
+Saved weights to colaboratory_models/BreakoutDeterministic-v42018-05-18 07:14:16.828452.h5
+Ep: 11610, Dur: 245, Step: 2810775, Rew: 4.00, Loss: 0.0585, Eps: 0.1000, Mem.size: 900000
+Ep: 11620, Dur: 212, Step: 2814392, Rew: 3.00, Loss: 0.0550, Eps: 0.1000, Mem.size: 900000
+Ep: 11630, Dur: 203, Step: 2817142, Rew: 2.00, Loss: 0.0635, Eps: 0.1000, Mem.size: 900000
+Saved weights to colaboratory_models/BreakoutDeterministic-v42018-05-18 07:14:16.828452.h5
+Ep: 11640, Dur: 371, Step: 2820236, Rew: 7.00, Loss: 0.1070, Eps: 0.1000, Mem.size: 900000
+Ep: 11650, Dur: 215, Step: 2823077, Rew: 3.00, Loss: 0.0707, Eps: 0.1000, Mem.size: 900000
+Ep: 11660, Dur: 327, Step: 2826308, Rew: 5.00, Loss: 0.0993, Eps: 0.1000, Mem.size: 900000
+Ep: 11670, Dur: 243, Step: 2829241, Rew: 4.00, Loss: 0.0479, Eps: 0.1000, Mem.size: 900000
+Saved weights to colaboratory_models/BreakoutDeterministic-v42018-05-18 07:14:16.828452.h5
+Ep: 11680, Dur: 247, Step: 2832312, Rew: 4.00, Loss: 0.0366, Eps: 0.1000, Mem.size: 900000
+Ep: 11690, Dur: 223, Step: 2835282, Rew: 3.00, Loss: 0.0600, Eps: 0.1000, Mem.size: 900000
+Ep: 11700, Dur: 243, Step: 2837826, Rew: 4.00, Loss: 0.0608, Eps: 0.1000, Mem.size: 900000
+Saved weights to colaboratory_models/BreakoutDeterministic-v42018-05-18 07:14:16.828452.h5
+Ep: 11710, Dur: 292, Step: 2840948, Rew: 5.00, Loss: 0.0813, Eps: 0.1000, Mem.size: 900000
+Ep: 11720, Dur: 181, Step: 2843490, Rew: 2.00, Loss: 0.0512, Eps: 0.1000, Mem.size: 900000
+Ep: 11730, Dur: 248, Step: 2846627, Rew: 4.00, Loss: 0.1062, Eps: 0.1000, Mem.size: 900000
+Ep: 11740, Dur: 209, Step: 2849306, Rew: 3.00, Loss: 0.0797, Eps: 0.1000, Mem.size: 900000
+Saved weights to colaboratory_models/BreakoutDeterministic-v42018-05-18 07:14:16.828452.h5
+Ep: 11750, Dur: 265, Step: 2852117, Rew: 4.00, Loss: 0.0702, Eps: 0.1000, Mem.size: 900000
+Ep: 11760, Dur: 459, Step: 2855473, Rew: 8.00, Loss: 0.1409, Eps: 0.1000, Mem.size: 900000
+Ep: 11770, Dur: 241, Step: 2858592, Rew: 4.00, Loss: 0.1038, Eps: 0.1000, Mem.size: 900000
+Saved weights to colaboratory_models/BreakoutDeterministic-v42018-05-18 07:14:16.828452.h5
+Ep: 11780, Dur: 297, Step: 2861552, Rew: 5.00, Loss: 0.1027, Eps: 0.1000, Mem.size: 900000
+Ep: 11790, Dur: 309, Step: 2864764, Rew: 5.00, Loss: 0.0735, Eps: 0.1000, Mem.size: 900000
+Ep: 11800, Dur: 325, Step: 2867721, Rew: 5.00, Loss: 0.0991, Eps: 0.1000, Mem.size: 900000
+Saved weights to colaboratory_models/BreakoutDeterministic-v42018-05-18 07:14:16.828452.h5
+Ep: 11810, Dur: 296, Step: 2870570, Rew: 4.00, Loss: 0.0963, Eps: 0.1000, Mem.size: 900000
+Ep: 11820, Dur: 322, Step: 2873255, Rew: 6.00, Loss: 0.0721, Eps: 0.1000, Mem.size: 900000
+Ep: 11830, Dur: 230, Step: 2876258, Rew: 3.00, Loss: 0.0567, Eps: 0.1000, Mem.size: 900000
+Ep: 11840, Dur: 435, Step: 2879200, Rew: 8.00, Loss: 0.1179, Eps: 0.1000, Mem.size: 900000
+Saved weights to colaboratory_models/BreakoutDeterministic-v42018-05-18 07:14:16.828452.h5
+Ep: 11850, Dur: 268, Step: 2882196, Rew: 5.00, Loss: 0.0778, Eps: 0.1000, Mem.size: 900000
+Ep: 11860, Dur: 311, Step: 2884940, Rew: 5.00, Loss: 0.0755, Eps: 0.1000, Mem.size: 900000
+Ep: 11870, Dur: 212, Step: 2888040, Rew: 3.00, Loss: 0.0572, Eps: 0.1000, Mem.size: 900000
+Saved weights to colaboratory_models/BreakoutDeterministic-v42018-05-18 07:14:16.828452.h5
+Ep: 11880, Dur: 535, Step: 2890994, Rew: 10.00, Loss: 0.1425, Eps: 0.1000, Mem.size: 900000
+Ep: 11890, Dur: 265, Step: 2893852, Rew: 4.00, Loss: 0.0897, Eps: 0.1000, Mem.size: 900000
+Ep: 11900, Dur: 150, Step: 2896901, Rew: 1.00, Loss: 0.0384, Eps: 0.1000, Mem.size: 900000
+Ep: 11910, Dur: 261, Step: 2899724, Rew: 4.00, Loss: 0.0562, Eps: 0.1000, Mem.size: 900000
+Ep: 11920, Dur: 218, Step: 2902540, Rew: 3.00, Loss: 0.0877, Eps: 0.1000, Mem.size: 900000
+Ep: 11930, Dur: 281, Step: 2905284, Rew: 6.00, Loss: 0.0888, Eps: 0.1000, Mem.size: 900000
+Ep: 11940, Dur: 248, Step: 2907989, Rew: 3.00, Loss: 0.0856, Eps: 0.1000, Mem.size: 900000
+Saved weights to colaboratory_models/BreakoutDeterministic-v42018-05-18 07:14:16.828452.h5
+Ep: 11950, Dur: 380, Step: 2910899, Rew: 7.00, Loss: 0.1075, Eps: 0.1000, Mem.size: 900000
+Ep: 11960, Dur: 211, Step: 2913811, Rew: 3.00, Loss: 0.0523, Eps: 0.1000, Mem.size: 900000
+Ep: 11970, Dur: 213, Step: 2916268, Rew: 3.00, Loss: 0.0551, Eps: 0.1000, Mem.size: 900000
+Ep: 11980, Dur: 294, Step: 2919923, Rew: 5.00, Loss: 0.1040, Eps: 0.1000, Mem.size: 900000
+Saved weights to colaboratory_models/BreakoutDeterministic-v42018-05-18 07:14:16.828452.h5
+Ep: 11990, Dur: 122, Step: 2922920, Rew: 0.00, Loss: 0.0433, Eps: 0.1000, Mem.size: 900000
+Ep: 12000, Dur: 212, Step: 2925586, Rew: 3.00, Loss: 0.0813, Eps: 0.1000, Mem.size: 900000
+Ep: 12010, Dur: 312, Step: 2928438, Rew: 5.00, Loss: 0.0817, Eps: 0.1000, Mem.size: 900000
+Saved weights to colaboratory_models/BreakoutDeterministic-v42018-05-18 07:14:16.828452.h5
+Ep: 12020, Dur: 212, Step: 2931436, Rew: 3.00, Loss: 0.0579, Eps: 0.1000, Mem.size: 900000
+Ep: 12030, Dur: 212, Step: 2934459, Rew: 3.00, Loss: 0.0696, Eps: 0.1000, Mem.size: 900000
+Ep: 12040, Dur: 212, Step: 2937195, Rew: 3.00, Loss: 0.0477, Eps: 0.1000, Mem.size: 900000
+Ep: 12050, Dur: 236, Step: 2939940, Rew: 2.00, Loss: 0.0676, Eps: 0.1000, Mem.size: 900000
+Saved weights to colaboratory_models/BreakoutDeterministic-v42018-05-18 07:14:16.828452.h5
+Ep: 12060, Dur: 246, Step: 2942687, Rew: 4.00, Loss: 0.0825, Eps: 0.1000, Mem.size: 900000
+Ep: 12070, Dur: 244, Step: 2945229, Rew: 4.00, Loss: 0.0879, Eps: 0.1000, Mem.size: 900000
+Ep: 12080, Dur: 212, Step: 2948170, Rew: 3.00, Loss: 0.0811, Eps: 0.1000, Mem.size: 900000
+Saved weights to colaboratory_models/BreakoutDeterministic-v42018-05-18 07:14:16.828452.h5
+Ep: 12090, Dur: 180, Step: 2950945, Rew: 2.00, Loss: 0.0594, Eps: 0.1000, Mem.size: 900000
+Ep: 12100, Dur: 197, Step: 2953661, Rew: 2.00, Loss: 0.0438, Eps: 0.1000, Mem.size: 900000
+Ep: 12110, Dur: 212, Step: 2956513, Rew: 3.00, Loss: 0.0715, Eps: 0.1000, Mem.size: 900000
+Ep: 12120, Dur: 478, Step: 2959596, Rew: 7.00, Loss: 0.1431, Eps: 0.1000, Mem.size: 900000
+Saved weights to colaboratory_models/BreakoutDeterministic-v42018-05-18 07:14:16.828452.h5
+Ep: 12130, Dur: 427, Step: 2962626, Rew: 8.00, Loss: 0.1069, Eps: 0.1000, Mem.size: 900000
+Ep: 12140, Dur: 213, Step: 2965252, Rew: 3.00, Loss: 0.0678, Eps: 0.1000, Mem.size: 900000
+Ep: 12150, Dur: 243, Step: 2967916, Rew: 4.00, Loss: 0.0526, Eps: 0.1000, Mem.size: 900000
+Saved weights to colaboratory_models/BreakoutDeterministic-v42018-05-18 07:14:16.828452.h5
+Ep: 12160, Dur: 414, Step: 2970909, Rew: 8.00, Loss: 0.1387, Eps: 0.1000, Mem.size: 900000
+Ep: 12170, Dur: 151, Step: 2973524, Rew: 1.00, Loss: 0.0432, Eps: 0.1000, Mem.size: 900000
+Ep: 12180, Dur: 217, Step: 2976321, Rew: 2.00, Loss: 0.0558, Eps: 0.1000, Mem.size: 900000
+Ep: 12190, Dur: 244, Step: 2979148, Rew: 4.00, Loss: 0.0640, Eps: 0.1000, Mem.size: 900000
+Saved weights to colaboratory_models/BreakoutDeterministic-v42018-05-18 07:14:16.828452.h5
+Ep: 12200, Dur: 282, Step: 2981958, Rew: 4.00, Loss: 0.0699, Eps: 0.1000, Mem.size: 900000
+Ep: 12210, Dur: 212, Step: 2985109, Rew: 3.00, Loss: 0.0581, Eps: 0.1000, Mem.size: 900000
+Ep: 12220, Dur: 292, Step: 2987895, Rew: 5.00, Loss: 0.0704, Eps: 0.1000, Mem.size: 900000
+Saved weights to colaboratory_models/BreakoutDeterministic-v42018-05-18 07:14:16.828452.h5
+Ep: 12230, Dur: 345, Step: 2990960, Rew: 6.00, Loss: 0.1315, Eps: 0.1000, Mem.size: 900000
+Ep: 12240, Dur: 230, Step: 2993891, Rew: 3.00, Loss: 0.0485, Eps: 0.1000, Mem.size: 900000
+Ep: 12250, Dur: 455, Step: 2996804, Rew: 8.00, Loss: 0.1714, Eps: 0.1000, Mem.size: 900000
+Ep: 12260, Dur: 259, Step: 2999884, Rew: 4.00, Loss: 0.0786, Eps: 0.1000, Mem.size: 900000
+Saved weights to colaboratory_models/BreakoutDeterministic-v42018-05-18 07:14:16.828452.h5
+Ep: 12270, Dur: 412, Step: 3003267, Rew: 8.00, Loss: 0.1384, Eps: 0.1000, Mem.size: 900000
+Ep: 12280, Dur: 259, Step: 3006125, Rew: 4.00, Loss: 0.0886, Eps: 0.1000, Mem.size: 900000
+Ep: 12290, Dur: 292, Step: 3009291, Rew: 5.00, Loss: 0.0722, Eps: 0.1000, Mem.size: 900000
+Saved weights to colaboratory_models/BreakoutDeterministic-v42018-05-18 07:14:16.828452.h5
+Ep: 12300, Dur: 212, Step: 3012147, Rew: 3.00, Loss: 0.0683, Eps: 0.1000, Mem.size: 900000
+Ep: 12310, Dur: 246, Step: 3015290, Rew: 4.00, Loss: 0.0655, Eps: 0.1000, Mem.size: 900000
+Ep: 12320, Dur: 314, Step: 3018097, Rew: 5.00, Loss: 0.0820, Eps: 0.1000, Mem.size: 900000
+Saved weights to colaboratory_models/BreakoutDeterministic-v42018-05-18 07:14:16.828452.h5
+Ep: 12330, Dur: 421, Step: 3021169, Rew: 8.00, Loss: 0.1284, Eps: 0.1000, Mem.size: 900000
+Ep: 12340, Dur: 247, Step: 3024210, Rew: 4.00, Loss: 0.0878, Eps: 0.1000, Mem.size: 900000
+Ep: 12350, Dur: 212, Step: 3026909, Rew: 3.00, Loss: 0.0795, Eps: 0.1000, Mem.size: 900000
+Ep: 12360, Dur: 259, Step: 3029812, Rew: 4.00, Loss: 0.0919, Eps: 0.1000, Mem.size: 900000
+Saved weights to colaboratory_models/BreakoutDeterministic-v42018-05-18 07:14:16.828452.h5
+Ep: 12370, Dur: 261, Step: 3032486, Rew: 4.00, Loss: 0.0798, Eps: 0.1000, Mem.size: 900000
+Ep: 12380, Dur: 293, Step: 3035521, Rew: 5.00, Loss: 0.1184, Eps: 0.1000, Mem.size: 900000
+Ep: 12390, Dur: 402, Step: 3038737, Rew: 7.00, Loss: 0.1333, Eps: 0.1000, Mem.size: 900000
+Saved weights to colaboratory_models/BreakoutDeterministic-v42018-05-18 07:14:16.828452.h5
+Ep: 12400, Dur: 246, Step: 3041581, Rew: 4.00, Loss: 0.0858, Eps: 0.1000, Mem.size: 900000
+Ep: 12410, Dur: 122, Step: 3044434, Rew: 0.00, Loss: 0.0368, Eps: 0.1000, Mem.size: 900000
+Ep: 12420, Dur: 380, Step: 3047225, Rew: 7.00, Loss: 0.1143, Eps: 0.1000, Mem.size: 900000
+Saved weights to colaboratory_models/BreakoutDeterministic-v42018-05-18 07:14:16.828452.h5
+Ep: 12430, Dur: 245, Step: 3050075, Rew: 4.00, Loss: 0.0714, Eps: 0.1000, Mem.size: 900000
+Ep: 12440, Dur: 123, Step: 3052464, Rew: 0.00, Loss: 0.0369, Eps: 0.1000, Mem.size: 900000
+Ep: 12450, Dur: 181, Step: 3055371, Rew: 2.00, Loss: 0.1004, Eps: 0.1000, Mem.size: 900000
+Ep: 12460, Dur: 243, Step: 3057889, Rew: 4.00, Loss: 0.0862, Eps: 0.1000, Mem.size: 900000
+Saved weights to colaboratory_models/BreakoutDeterministic-v42018-05-18 07:14:16.828452.h5
+Ep: 12470, Dur: 346, Step: 3060516, Rew: 6.00, Loss: 0.1145, Eps: 0.1000, Mem.size: 900000
+Ep: 12480, Dur: 226, Step: 3063212, Rew: 3.00, Loss: 0.0651, Eps: 0.1000, Mem.size: 900000
+Ep: 12490, Dur: 494, Step: 3066174, Rew: 9.00, Loss: 0.1506, Eps: 0.1000, Mem.size: 900000
+Ep: 12500, Dur: 423, Step: 3069556, Rew: 8.00, Loss: 0.1326, Eps: 0.1000, Mem.size: 900000
+Saved weights to colaboratory_models/BreakoutDeterministic-v42018-05-18 07:14:16.828452.h5
+Ep: 12510, Dur: 212, Step: 3072424, Rew: 3.00, Loss: 0.0908, Eps: 0.1000, Mem.size: 900000
+Ep: 12520, Dur: 245, Step: 3075147, Rew: 4.00, Loss: 0.0726, Eps: 0.1000, Mem.size: 900000
+Ep: 12530, Dur: 330, Step: 3078179, Rew: 6.00, Loss: 0.1094, Eps: 0.1000, Mem.size: 900000
+Saved weights to colaboratory_models/BreakoutDeterministic-v42018-05-18 07:14:16.828452.h5
+Ep: 12540, Dur: 289, Step: 3081116, Rew: 5.00, Loss: 0.1225, Eps: 0.1000, Mem.size: 900000
+Ep: 12550, Dur: 299, Step: 3084097, Rew: 6.00, Loss: 0.1082, Eps: 0.1000, Mem.size: 900000
+Ep: 12560, Dur: 213, Step: 3086894, Rew: 3.00, Loss: 0.0591, Eps: 0.1000, Mem.size: 900000
+Ep: 12570, Dur: 299, Step: 3089649, Rew: 6.00, Loss: 0.0994, Eps: 0.1000, Mem.size: 900000
+Saved weights to colaboratory_models/BreakoutDeterministic-v42018-05-18 07:14:16.828452.h5
+Ep: 12580, Dur: 313, Step: 3092760, Rew: 5.00, Loss: 0.1114, Eps: 0.1000, Mem.size: 900000
+Ep: 12590, Dur: 150, Step: 3095813, Rew: 1.00, Loss: 0.0422, Eps: 0.1000, Mem.size: 900000
+Ep: 12600, Dur: 325, Step: 3098603, Rew: 6.00, Loss: 0.0853, Eps: 0.1000, Mem.size: 900000
+Saved weights to colaboratory_models/BreakoutDeterministic-v42018-05-18 07:14:16.828452.h5
+Ep: 12610, Dur: 245, Step: 3101152, Rew: 4.00, Loss: 0.0947, Eps: 0.1000, Mem.size: 900000
+Ep: 12620, Dur: 372, Step: 3104263, Rew: 7.00, Loss: 0.1023, Eps: 0.1000, Mem.size: 900000
+Ep: 12630, Dur: 246, Step: 3107108, Rew: 4.00, Loss: 0.0739, Eps: 0.1000, Mem.size: 900000
+Ep: 12640, Dur: 294, Step: 3109665, Rew: 5.00, Loss: 0.1220, Eps: 0.1000, Mem.size: 900000
+Saved weights to colaboratory_models/BreakoutDeterministic-v42018-05-18 07:14:16.828452.h5
+Ep: 12650, Dur: 290, Step: 3112536, Rew: 5.00, Loss: 0.1154, Eps: 0.1000, Mem.size: 900000
+Ep: 12660, Dur: 428, Step: 3115942, Rew: 9.00, Loss: 0.1348, Eps: 0.1000, Mem.size: 900000
+Ep: 12670, Dur: 293, Step: 3119155, Rew: 5.00, Loss: 0.1156, Eps: 0.1000, Mem.size: 900000
+Saved weights to colaboratory_models/BreakoutDeterministic-v42018-05-18 07:14:16.828452.h5
+Ep: 12680, Dur: 339, Step: 3122173, Rew: 6.00, Loss: 0.1265, Eps: 0.1000, Mem.size: 900000
+Ep: 12690, Dur: 244, Step: 3125058, Rew: 4.00, Loss: 0.0933, Eps: 0.1000, Mem.size: 900000
+Ep: 12700, Dur: 240, Step: 3127799, Rew: 4.00, Loss: 0.1050, Eps: 0.1000, Mem.size: 900000
+Saved weights to colaboratory_models/BreakoutDeterministic-v42018-05-18 07:14:16.828452.h5
+Ep: 12710, Dur: 263, Step: 3130736, Rew: 4.00, Loss: 0.0875, Eps: 0.1000, Mem.size: 900000
+Ep: 12720, Dur: 338, Step: 3134045, Rew: 6.00, Loss: 0.1315, Eps: 0.1000, Mem.size: 900000
+Ep: 12730, Dur: 212, Step: 3137329, Rew: 3.00, Loss: 0.0809, Eps: 0.1000, Mem.size: 900000
+Ep: 12740, Dur: 179, Step: 3139991, Rew: 2.00, Loss: 0.0607, Eps: 0.1000, Mem.size: 900000
+Ep: 12750, Dur: 210, Step: 3142773, Rew: 3.00, Loss: 0.0682, Eps: 0.1000, Mem.size: 900000
+Ep: 12760, Dur: 356, Step: 3145648, Rew: 6.00, Loss: 0.1162, Eps: 0.1000, Mem.size: 900000
+Ep: 12770, Dur: 264, Step: 3148481, Rew: 4.00, Loss: 0.1123, Eps: 0.1000, Mem.size: 900000
+Saved weights to colaboratory_models/BreakoutDeterministic-v42018-05-18 07:14:16.828452.h5
+Ep: 12780, Dur: 364, Step: 3151775, Rew: 7.00, Loss: 0.1449, Eps: 0.1000, Mem.size: 900000
+Ep: 12790, Dur: 334, Step: 3154730, Rew: 6.00, Loss: 0.1269, Eps: 0.1000, Mem.size: 900000
+Ep: 12800, Dur: 293, Step: 3157609, Rew: 5.00, Loss: 0.0848, Eps: 0.1000, Mem.size: 900000
+Saved weights to colaboratory_models/BreakoutDeterministic-v42018-05-18 07:14:16.828452.h5
+Ep: 12810, Dur: 391, Step: 3160986, Rew: 7.00, Loss: 0.1491, Eps: 0.1000, Mem.size: 900000
+Ep: 12820, Dur: 277, Step: 3163882, Rew: 5.00, Loss: 0.0822, Eps: 0.1000, Mem.size: 900000
+Ep: 12830, Dur: 277, Step: 3167308, Rew: 5.00, Loss: 0.1248, Eps: 0.1000, Mem.size: 900000
+Saved weights to colaboratory_models/BreakoutDeterministic-v42018-05-18 07:14:16.828452.h5
+Ep: 12840, Dur: 213, Step: 3170053, Rew: 3.00, Loss: 0.0522, Eps: 0.1000, Mem.size: 900000
+Ep: 12850, Dur: 311, Step: 3173189, Rew: 6.00, Loss: 0.1383, Eps: 0.1000, Mem.size: 900000
+Ep: 12860, Dur: 292, Step: 3176643, Rew: 5.00, Loss: 0.1199, Eps: 0.1000, Mem.size: 900000
+Ep: 12870, Dur: 360, Step: 3179922, Rew: 7.00, Loss: 0.1297, Eps: 0.1000, Mem.size: 900000
+Saved weights to colaboratory_models/BreakoutDeterministic-v42018-05-18 07:14:16.828452.h5
+Ep: 12880, Dur: 245, Step: 3182776, Rew: 4.00, Loss: 0.0610, Eps: 0.1000, Mem.size: 900000
+Ep: 12890, Dur: 367, Step: 3185867, Rew: 5.00, Loss: 0.1643, Eps: 0.1000, Mem.size: 900000
+Ep: 12900, Dur: 377, Step: 3188498, Rew: 7.00, Loss: 0.1407, Eps: 0.1000, Mem.size: 900000
+Saved weights to colaboratory_models/BreakoutDeterministic-v42018-05-18 07:14:16.828452.h5
+Ep: 12910, Dur: 294, Step: 3191527, Rew: 5.00, Loss: 0.1146, Eps: 0.1000, Mem.size: 900000
+Ep: 12920, Dur: 375, Step: 3194538, Rew: 7.00, Loss: 0.1337, Eps: 0.1000, Mem.size: 900000
+Ep: 12930, Dur: 245, Step: 3197127, Rew: 3.00, Loss: 0.0829, Eps: 0.1000, Mem.size: 900000
+Saved weights to colaboratory_models/BreakoutDeterministic-v42018-05-18 07:14:16.828452.h5
+Ep: 12940, Dur: 335, Step: 3200202, Rew: 6.00, Loss: 0.0985, Eps: 0.1000, Mem.size: 900000
+Ep: 12950, Dur: 381, Step: 3203541, Rew: 7.00, Loss: 0.1067, Eps: 0.1000, Mem.size: 900000
+Ep: 12960, Dur: 374, Step: 3206742, Rew: 7.00, Loss: 0.1505, Eps: 0.1000, Mem.size: 900000
+Ep: 12970, Dur: 514, Step: 3209785, Rew: 10.00, Loss: 0.1609, Eps: 0.1000, Mem.size: 900000
+Saved weights to colaboratory_models/BreakoutDeterministic-v42018-05-18 07:14:16.828452.h5
+Ep: 12980, Dur: 261, Step: 3212820, Rew: 4.00, Loss: 0.0771, Eps: 0.1000, Mem.size: 900000
+Ep: 12990, Dur: 213, Step: 3216278, Rew: 3.00, Loss: 0.0658, Eps: 0.1000, Mem.size: 900000
+Ep: 13000, Dur: 294, Step: 3219165, Rew: 5.00, Loss: 0.0752, Eps: 0.1000, Mem.size: 900000
+Saved weights to colaboratory_models/BreakoutDeterministic-v42018-05-18 07:14:16.828452.h5
+Ep: 13010, Dur: 288, Step: 3222038, Rew: 5.00, Loss: 0.0763, Eps: 0.1000, Mem.size: 900000
+Ep: 13020, Dur: 406, Step: 3225116, Rew: 7.00, Loss: 0.1401, Eps: 0.1000, Mem.size: 900000
+Ep: 13030, Dur: 343, Step: 3228402, Rew: 5.00, Loss: 0.1054, Eps: 0.1000, Mem.size: 900000
+Saved weights to colaboratory_models/BreakoutDeterministic-v42018-05-18 07:14:16.828452.h5
+Ep: 13040, Dur: 337, Step: 3231103, Rew: 6.00, Loss: 0.0927, Eps: 0.1000, Mem.size: 900000
+Ep: 13050, Dur: 245, Step: 3234123, Rew: 4.00, Loss: 0.0663, Eps: 0.1000, Mem.size: 900000
+Ep: 13060, Dur: 246, Step: 3236992, Rew: 4.00, Loss: 0.1350, Eps: 0.1000, Mem.size: 900000
+Ep: 13070, Dur: 213, Step: 3239972, Rew: 3.00, Loss: 0.0784, Eps: 0.1000, Mem.size: 900000
+Saved weights to colaboratory_models/BreakoutDeterministic-v42018-05-18 07:14:16.828452.h5
+Ep: 13080, Dur: 441, Step: 3243051, Rew: 6.00, Loss: 0.1483, Eps: 0.1000, Mem.size: 900000
+Ep: 13090, Dur: 257, Step: 3245858, Rew: 4.00, Loss: 0.0778, Eps: 0.1000, Mem.size: 900000
+Ep: 13100, Dur: 390, Step: 3249094, Rew: 6.00, Loss: 0.2123, Eps: 0.1000, Mem.size: 900000
+Saved weights to colaboratory_models/BreakoutDeterministic-v42018-05-18 07:14:16.828452.h5
+Ep: 13110, Dur: 357, Step: 3252106, Rew: 7.00, Loss: 0.1024, Eps: 0.1000, Mem.size: 900000
+Ep: 13120, Dur: 261, Step: 3254976, Rew: 4.00, Loss: 0.0682, Eps: 0.1000, Mem.size: 900000
+Ep: 13130, Dur: 434, Step: 3258053, Rew: 8.00, Loss: 0.1127, Eps: 0.1000, Mem.size: 900000
+Saved weights to colaboratory_models/BreakoutDeterministic-v42018-05-18 07:14:16.828452.h5
+Ep: 13140, Dur: 327, Step: 3261230, Rew: 6.00, Loss: 0.1125, Eps: 0.1000, Mem.size: 900000
+Ep: 13150, Dur: 262, Step: 3264298, Rew: 4.00, Loss: 0.1095, Eps: 0.1000, Mem.size: 900000
+Ep: 13160, Dur: 330, Step: 3267371, Rew: 6.00, Loss: 0.0793, Eps: 0.1000, Mem.size: 900000
+Saved weights to colaboratory_models/BreakoutDeterministic-v42018-05-18 07:14:16.828452.h5
+Ep: 13170, Dur: 276, Step: 3270432, Rew: 5.00, Loss: 0.0978, Eps: 0.1000, Mem.size: 900000
+Ep: 13180, Dur: 182, Step: 3273160, Rew: 2.00, Loss: 0.0482, Eps: 0.1000, Mem.size: 900000
+Ep: 13190, Dur: 295, Step: 3276061, Rew: 5.00, Loss: 0.1167, Eps: 0.1000, Mem.size: 900000
+Ep: 13200, Dur: 325, Step: 3279425, Rew: 6.00, Loss: 0.0924, Eps: 0.1000, Mem.size: 900000
+Saved weights to colaboratory_models/BreakoutDeterministic-v42018-05-18 07:14:16.828452.h5
+Ep: 13210, Dur: 277, Step: 3282656, Rew: 5.00, Loss: 0.0710, Eps: 0.1000, Mem.size: 900000
+Ep: 13220, Dur: 301, Step: 3285632, Rew: 5.00, Loss: 0.1551, Eps: 0.1000, Mem.size: 900000
+Ep: 13230, Dur: 440, Step: 3288864, Rew: 8.00, Loss: 0.1582, Eps: 0.1000, Mem.size: 900000
+Saved weights to colaboratory_models/BreakoutDeterministic-v42018-05-18 07:14:16.828452.h5
+Ep: 13240, Dur: 276, Step: 3291689, Rew: 5.00, Loss: 0.0996, Eps: 0.1000, Mem.size: 900000
+Ep: 13250, Dur: 292, Step: 3294971, Rew: 5.00, Loss: 0.0613, Eps: 0.1000, Mem.size: 900000
+Ep: 13260, Dur: 325, Step: 3297757, Rew: 6.00, Loss: 0.1061, Eps: 0.1000, Mem.size: 900000
+Saved weights to colaboratory_models/BreakoutDeterministic-v42018-05-18 07:14:16.828452.h5
+Ep: 13270, Dur: 336, Step: 3301014, Rew: 6.00, Loss: 0.1129, Eps: 0.1000, Mem.size: 900000
+Ep: 13280, Dur: 322, Step: 3304395, Rew: 6.00, Loss: 0.1248, Eps: 0.1000, Mem.size: 900000
+Ep: 13290, Dur: 316, Step: 3307787, Rew: 5.00, Loss: 0.1333, Eps: 0.1000, Mem.size: 900000
+Saved weights to colaboratory_models/BreakoutDeterministic-v42018-05-18 07:14:16.828452.h5
+Ep: 13300, Dur: 334, Step: 3310765, Rew: 6.00, Loss: 0.0973, Eps: 0.1000, Mem.size: 900000
+Ep: 13310, Dur: 315, Step: 3313584, Rew: 4.00, Loss: 0.1415, Eps: 0.1000, Mem.size: 900000
+Ep: 13320, Dur: 212, Step: 3316570, Rew: 3.00, Loss: 0.0680, Eps: 0.1000, Mem.size: 900000
+Saved weights to colaboratory_models/BreakoutDeterministic-v42018-05-18 07:14:16.828452.h5
+Ep: 13330, Dur: 259, Step: 3320008, Rew: 4.00, Loss: 0.0885, Eps: 0.1000, Mem.size: 900000
+Ep: 13340, Dur: 245, Step: 3322906, Rew: 4.00, Loss: 0.0770, Eps: 0.1000, Mem.size: 900000
+Ep: 13350, Dur: 272, Step: 3325708, Rew: 5.00, Loss: 0.0778, Eps: 0.1000, Mem.size: 900000
+Ep: 13360, Dur: 151, Step: 3328415, Rew: 1.00, Loss: 0.0926, Eps: 0.1000, Mem.size: 900000
+Saved weights to colaboratory_models/BreakoutDeterministic-v42018-05-18 07:14:16.828452.h5
+Ep: 13370, Dur: 240, Step: 3331302, Rew: 4.00, Loss: 0.1263, Eps: 0.1000, Mem.size: 900000
+Ep: 13380, Dur: 246, Step: 3334256, Rew: 4.00, Loss: 0.0620, Eps: 0.1000, Mem.size: 900000
+Ep: 13390, Dur: 277, Step: 3337366, Rew: 5.00, Loss: 0.0769, Eps: 0.1000, Mem.size: 900000
+Saved weights to colaboratory_models/BreakoutDeterministic-v42018-05-18 07:14:16.828452.h5
+Ep: 13400, Dur: 150, Step: 3340048, Rew: 1.00, Loss: 0.0432, Eps: 0.1000, Mem.size: 900000
+Ep: 13410, Dur: 213, Step: 3342823, Rew: 3.00, Loss: 0.0527, Eps: 0.1000, Mem.size: 900000
+Ep: 13420, Dur: 274, Step: 3345547, Rew: 5.00, Loss: 0.0898, Eps: 0.1000, Mem.size: 900000
+Ep: 13430, Dur: 212, Step: 3348455, Rew: 3.00, Loss: 0.0767, Eps: 0.1000, Mem.size: 900000
+Saved weights to colaboratory_models/BreakoutDeterministic-v42018-05-18 07:14:16.828452.h5
+Ep: 13440, Dur: 243, Step: 3351170, Rew: 4.00, Loss: 0.1067, Eps: 0.1000, Mem.size: 900000
+Ep: 13450, Dur: 248, Step: 3354613, Rew: 4.00, Loss: 0.0592, Eps: 0.1000, Mem.size: 900000
+Ep: 13460, Dur: 243, Step: 3357597, Rew: 4.00, Loss: 0.0680, Eps: 0.1000, Mem.size: 900000
+Saved weights to colaboratory_models/BreakoutDeterministic-v42018-05-18 07:14:16.828452.h5
+Ep: 13470, Dur: 259, Step: 3360399, Rew: 4.00, Loss: 0.0791, Eps: 0.1000, Mem.size: 900000
+Ep: 13480, Dur: 399, Step: 3363454, Rew: 8.00, Loss: 0.1409, Eps: 0.1000, Mem.size: 900000
+Ep: 13490, Dur: 327, Step: 3366176, Rew: 6.00, Loss: 0.0820, Eps: 0.1000, Mem.size: 900000
+Ep: 13500, Dur: 260, Step: 3368894, Rew: 4.00, Loss: 0.0807, Eps: 0.1000, Mem.size: 900000
+Saved weights to colaboratory_models/BreakoutDeterministic-v42018-05-18 07:14:16.828452.h5
+Ep: 13510, Dur: 303, Step: 3371998, Rew: 6.00, Loss: 0.0739, Eps: 0.1000, Mem.size: 900000
+Ep: 13520, Dur: 256, Step: 3374806, Rew: 3.00, Loss: 0.0826, Eps: 0.1000, Mem.size: 900000
+Ep: 13530, Dur: 321, Step: 3378397, Rew: 6.00, Loss: 0.0924, Eps: 0.1000, Mem.size: 900000
+Saved weights to colaboratory_models/BreakoutDeterministic-v42018-05-18 07:14:16.828452.h5
+Ep: 13540, Dur: 243, Step: 3380886, Rew: 4.00, Loss: 0.0814, Eps: 0.1000, Mem.size: 900000
+Ep: 13550, Dur: 294, Step: 3383733, Rew: 5.00, Loss: 0.0914, Eps: 0.1000, Mem.size: 900000
+Ep: 13560, Dur: 370, Step: 3386758, Rew: 8.00, Loss: 0.0974, Eps: 0.1000, Mem.size: 900000
+Ep: 13570, Dur: 313, Step: 3389792, Rew: 5.00, Loss: 0.0859, Eps: 0.1000, Mem.size: 900000
+Saved weights to colaboratory_models/BreakoutDeterministic-v42018-05-18 07:14:16.828452.h5
+Ep: 13580, Dur: 244, Step: 3392520, Rew: 4.00, Loss: 0.0949, Eps: 0.1000, Mem.size: 900000
+Ep: 13590, Dur: 391, Step: 3396094, Rew: 7.00, Loss: 0.1124, Eps: 0.1000, Mem.size: 900000
+Ep: 13600, Dur: 244, Step: 3399215, Rew: 4.00, Loss: 0.0916, Eps: 0.1000, Mem.size: 900000
+Saved weights to colaboratory_models/BreakoutDeterministic-v42018-05-18 07:14:16.828452.h5
+Ep: 13610, Dur: 371, Step: 3402276, Rew: 7.00, Loss: 0.0992, Eps: 0.1000, Mem.size: 900000
+Ep: 13620, Dur: 281, Step: 3405309, Rew: 6.00, Loss: 0.0872, Eps: 0.1000, Mem.size: 900000
+Ep: 13630, Dur: 419, Step: 3408574, Rew: 8.00, Loss: 0.1392, Eps: 0.1000, Mem.size: 900000
+Saved weights to colaboratory_models/BreakoutDeterministic-v42018-05-18 07:14:16.828452.h5
+Ep: 13640, Dur: 341, Step: 3411610, Rew: 6.00, Loss: 0.1104, Eps: 0.1000, Mem.size: 900000
+Ep: 13650, Dur: 276, Step: 3414564, Rew: 5.00, Loss: 0.1341, Eps: 0.1000, Mem.size: 900000
+Ep: 13660, Dur: 453, Step: 3417672, Rew: 8.00, Loss: 0.1353, Eps: 0.1000, Mem.size: 900000
+Ep: 13670, Dur: 273, Step: 3420858, Rew: 5.00, Loss: 0.0743, Eps: 0.1000, Mem.size: 900000
+Ep: 13680, Dur: 170, Step: 3423725, Rew: 1.00, Loss: 0.0540, Eps: 0.1000, Mem.size: 900000
+Ep: 13690, Dur: 243, Step: 3426817, Rew: 4.00, Loss: 0.0767, Eps: 0.1000, Mem.size: 900000
+Ep: 13700, Dur: 246, Step: 3429887, Rew: 4.00, Loss: 0.1226, Eps: 0.1000, Mem.size: 900000
+Saved weights to colaboratory_models/BreakoutDeterministic-v42018-05-18 07:14:16.828452.h5
+Ep: 13710, Dur: 150, Step: 3432915, Rew: 1.00, Loss: 0.0762, Eps: 0.1000, Mem.size: 900000
+Ep: 13720, Dur: 240, Step: 3435830, Rew: 4.00, Loss: 0.0926, Eps: 0.1000, Mem.size: 900000
+Ep: 13730, Dur: 363, Step: 3439046, Rew: 6.00, Loss: 0.1315, Eps: 0.1000, Mem.size: 900000
+Saved weights to colaboratory_models/BreakoutDeterministic-v42018-05-18 07:14:16.828452.h5
+Ep: 13740, Dur: 292, Step: 3442243, Rew: 5.00, Loss: 0.0845, Eps: 0.1000, Mem.size: 900000
+Ep: 13750, Dur: 353, Step: 3445652, Rew: 7.00, Loss: 0.1996, Eps: 0.1000, Mem.size: 900000
+Ep: 13760, Dur: 293, Step: 3448591, Rew: 5.00, Loss: 0.0861, Eps: 0.1000, Mem.size: 900000
+Saved weights to colaboratory_models/BreakoutDeterministic-v42018-05-18 07:14:16.828452.h5
+Ep: 13770, Dur: 246, Step: 3451670, Rew: 4.00, Loss: 0.1204, Eps: 0.1000, Mem.size: 900000
+Ep: 13780, Dur: 292, Step: 3454622, Rew: 5.00, Loss: 0.0909, Eps: 0.1000, Mem.size: 900000
+Ep: 13790, Dur: 277, Step: 3457487, Rew: 5.00, Loss: 0.0978, Eps: 0.1000, Mem.size: 900000
+Saved weights to colaboratory_models/BreakoutDeterministic-v42018-05-18 07:14:16.828452.h5
+Ep: 13800, Dur: 245, Step: 3460496, Rew: 4.00, Loss: 0.0668, Eps: 0.1000, Mem.size: 900000
+Ep: 13810, Dur: 294, Step: 3463369, Rew: 5.00, Loss: 0.0957, Eps: 0.1000, Mem.size: 900000
+Ep: 13820, Dur: 210, Step: 3466405, Rew: 2.00, Loss: 0.0662, Eps: 0.1000, Mem.size: 900000
+Ep: 13830, Dur: 213, Step: 3469754, Rew: 3.00, Loss: 0.0772, Eps: 0.1000, Mem.size: 900000
+Saved weights to colaboratory_models/BreakoutDeterministic-v42018-05-18 07:14:16.828452.h5
+Ep: 13840, Dur: 293, Step: 3472741, Rew: 5.00, Loss: 0.0969, Eps: 0.1000, Mem.size: 900000
+Ep: 13850, Dur: 294, Step: 3476127, Rew: 5.00, Loss: 0.0897, Eps: 0.1000, Mem.size: 900000
+Ep: 13860, Dur: 310, Step: 3479429, Rew: 6.00, Loss: 0.0804, Eps: 0.1000, Mem.size: 900000
+Saved weights to colaboratory_models/BreakoutDeterministic-v42018-05-18 07:14:16.828452.h5
+Ep: 13870, Dur: 186, Step: 3482152, Rew: 2.00, Loss: 0.0601, Eps: 0.1000, Mem.size: 900000
+Ep: 13880, Dur: 374, Step: 3485628, Rew: 7.00, Loss: 0.1266, Eps: 0.1000, Mem.size: 900000
+Ep: 13890, Dur: 245, Step: 3488193, Rew: 4.00, Loss: 0.0925, Eps: 0.1000, Mem.size: 900000
+Saved weights to colaboratory_models/BreakoutDeterministic-v42018-05-18 07:14:16.828452.h5
+Ep: 13900, Dur: 278, Step: 3491572, Rew: 5.00, Loss: 0.0811, Eps: 0.1000, Mem.size: 900000
+Ep: 13910, Dur: 243, Step: 3494457, Rew: 4.00, Loss: 0.0862, Eps: 0.1000, Mem.size: 900000
+Ep: 13920, Dur: 238, Step: 3497564, Rew: 4.00, Loss: 0.0666, Eps: 0.1000, Mem.size: 900000
+Saved weights to colaboratory_models/BreakoutDeterministic-v42018-05-18 07:14:16.828452.h5
+Ep: 13930, Dur: 231, Step: 3500673, Rew: 3.00, Loss: 0.0912, Eps: 0.1000, Mem.size: 900000
+Ep: 13940, Dur: 285, Step: 3504456, Rew: 5.00, Loss: 0.1089, Eps: 0.1000, Mem.size: 900000
+Ep: 13950, Dur: 433, Step: 3507751, Rew: 9.00, Loss: 0.1357, Eps: 0.1000, Mem.size: 900000
+Saved weights to colaboratory_models/BreakoutDeterministic-v42018-05-18 07:14:16.828452.h5
+Ep: 13960, Dur: 184, Step: 3510713, Rew: 2.00, Loss: 0.0828, Eps: 0.1000, Mem.size: 900000
+Ep: 13970, Dur: 373, Step: 3513703, Rew: 7.00, Loss: 0.1238, Eps: 0.1000, Mem.size: 900000
+Ep: 13980, Dur: 295, Step: 3516997, Rew: 5.00, Loss: 0.0856, Eps: 0.1000, Mem.size: 900000
+Ep: 13990, Dur: 324, Step: 3519981, Rew: 6.00, Loss: 0.1091, Eps: 0.1000, Mem.size: 900000
+Ep: 14000, Dur: 295, Step: 3523600, Rew: 5.00, Loss: 0.1381, Eps: 0.1000, Mem.size: 900000
+Ep: 14010, Dur: 232, Step: 3526919, Rew: 3.00, Loss: 0.0756, Eps: 0.1000, Mem.size: 900000
+Saved weights to colaboratory_models/BreakoutDeterministic-v42018-05-18 07:14:16.828452.h5
+Ep: 14020, Dur: 387, Step: 3530219, Rew: 8.00, Loss: 0.1304, Eps: 0.1000, Mem.size: 900000
+Ep: 14030, Dur: 246, Step: 3533563, Rew: 4.00, Loss: 0.0851, Eps: 0.1000, Mem.size: 900000
+Ep: 14040, Dur: 348, Step: 3536412, Rew: 6.00, Loss: 0.1526, Eps: 0.1000, Mem.size: 900000
+Ep: 14050, Dur: 240, Step: 3539277, Rew: 4.00, Loss: 0.1143, Eps: 0.1000, Mem.size: 900000
+Saved weights to colaboratory_models/BreakoutDeterministic-v42018-05-18 07:14:16.828452.h5
+Ep: 14060, Dur: 366, Step: 3542428, Rew: 7.00, Loss: 0.1232, Eps: 0.1000, Mem.size: 900000
+Ep: 14070, Dur: 359, Step: 3546059, Rew: 7.00, Loss: 0.1173, Eps: 0.1000, Mem.size: 900000
+Ep: 14080, Dur: 390, Step: 3549410, Rew: 7.00, Loss: 0.1375, Eps: 0.1000, Mem.size: 900000
+Saved weights to colaboratory_models/BreakoutDeterministic-v42018-05-18 07:14:16.828452.h5
+Ep: 14090, Dur: 362, Step: 3552864, Rew: 6.00, Loss: 0.1362, Eps: 0.1000, Mem.size: 900000
+Ep: 14100, Dur: 471, Step: 3556157, Rew: 10.00, Loss: 0.1205, Eps: 0.1000, Mem.size: 900000
+Ep: 14110, Dur: 277, Step: 3559830, Rew: 5.00, Loss: 0.0795, Eps: 0.1000, Mem.size: 900000
+Saved weights to colaboratory_models/BreakoutDeterministic-v42018-05-18 07:14:16.828452.h5
+Ep: 14120, Dur: 426, Step: 3562941, Rew: 8.00, Loss: 0.1483, Eps: 0.1000, Mem.size: 900000
+Ep: 14130, Dur: 293, Step: 3566473, Rew: 5.00, Loss: 0.1172, Eps: 0.1000, Mem.size: 900000
+Ep: 14140, Dur: 325, Step: 3569883, Rew: 6.00, Loss: 0.1236, Eps: 0.1000, Mem.size: 900000
+Saved weights to colaboratory_models/BreakoutDeterministic-v42018-05-18 07:14:16.828452.h5
+Ep: 14150, Dur: 319, Step: 3573013, Rew: 6.00, Loss: 0.1242, Eps: 0.1000, Mem.size: 900000
+Ep: 14160, Dur: 315, Step: 3576266, Rew: 7.00, Loss: 0.0914, Eps: 0.1000, Mem.size: 900000
+Ep: 14170, Dur: 290, Step: 3579577, Rew: 5.00, Loss: 0.1579, Eps: 0.1000, Mem.size: 900000
+Saved weights to colaboratory_models/BreakoutDeterministic-v42018-05-18 07:14:16.828452.h5
+Ep: 14180, Dur: 199, Step: 3582620, Rew: 2.00, Loss: 0.0735, Eps: 0.1000, Mem.size: 900000
+Ep: 14190, Dur: 260, Step: 3585596, Rew: 4.00, Loss: 0.0669, Eps: 0.1000, Mem.size: 900000
+Ep: 14200, Dur: 293, Step: 3588814, Rew: 5.00, Loss: 0.0870, Eps: 0.1000, Mem.size: 900000
+Saved weights to colaboratory_models/BreakoutDeterministic-v42018-05-18 07:14:16.828452.h5
+Ep: 14210, Dur: 245, Step: 3592335, Rew: 4.00, Loss: 0.1186, Eps: 0.1000, Mem.size: 900000
+Ep: 14220, Dur: 279, Step: 3595521, Rew: 4.00, Loss: 0.1032, Eps: 0.1000, Mem.size: 900000
+Ep: 14230, Dur: 278, Step: 3599035, Rew: 4.00, Loss: 0.1266, Eps: 0.1000, Mem.size: 900000
+Saved weights to colaboratory_models/BreakoutDeterministic-v42018-05-18 07:14:16.828452.h5
+Ep: 14240, Dur: 214, Step: 3602180, Rew: 3.00, Loss: 0.0588, Eps: 0.1000, Mem.size: 900000
+Ep: 14250, Dur: 341, Step: 3605453, Rew: 6.00, Loss: 0.1342, Eps: 0.1000, Mem.size: 900000
+Ep: 14260, Dur: 230, Step: 3608522, Rew: 3.00, Loss: 0.0749, Eps: 0.1000, Mem.size: 900000
+Saved weights to colaboratory_models/BreakoutDeterministic-v42018-05-18 07:14:16.828452.h5
+Ep: 14270, Dur: 263, Step: 3611435, Rew: 4.00, Loss: 0.1036, Eps: 0.1000, Mem.size: 900000
+Ep: 14280, Dur: 356, Step: 3614646, Rew: 6.00, Loss: 0.2194, Eps: 0.1000, Mem.size: 900000
+Ep: 14290, Dur: 325, Step: 3618228, Rew: 6.00, Loss: 0.1141, Eps: 0.1000, Mem.size: 900000
+Ep: 14300, Dur: 335, Step: 3621834, Rew: 6.00, Loss: 0.1180, Eps: 0.1000, Mem.size: 900000
+Ep: 14310, Dur: 280, Step: 3625004, Rew: 5.00, Loss: 0.1034, Eps: 0.1000, Mem.size: 900000
+Ep: 14320, Dur: 357, Step: 3628574, Rew: 7.00, Loss: 0.1088, Eps: 0.1000, Mem.size: 900000
+Saved weights to colaboratory_models/BreakoutDeterministic-v42018-05-18 07:14:16.828452.h5
+Ep: 14330, Dur: 323, Step: 3631680, Rew: 6.00, Loss: 0.1180, Eps: 0.1000, Mem.size: 900000
+Ep: 14340, Dur: 339, Step: 3634592, Rew: 6.00, Loss: 0.1210, Eps: 0.1000, Mem.size: 900000
+Ep: 14350, Dur: 171, Step: 3637954, Rew: 1.00, Loss: 0.0538, Eps: 0.1000, Mem.size: 900000
+Saved weights to colaboratory_models/BreakoutDeterministic-v42018-05-18 07:14:16.828452.h5
+Ep: 14360, Dur: 429, Step: 3641518, Rew: 9.00, Loss: 0.1352, Eps: 0.1000, Mem.size: 900000
+Ep: 14370, Dur: 365, Step: 3645028, Rew: 7.00, Loss: 0.1102, Eps: 0.1000, Mem.size: 900000
+Ep: 14380, Dur: 277, Step: 3648319, Rew: 5.00, Loss: 0.0741, Eps: 0.1000, Mem.size: 900000
+Saved weights to colaboratory_models/BreakoutDeterministic-v42018-05-18 07:14:16.828452.h5
+Ep: 14390, Dur: 260, Step: 3651666, Rew: 4.00, Loss: 0.0770, Eps: 0.1000, Mem.size: 900000
+Ep: 14400, Dur: 386, Step: 3655124, Rew: 8.00, Loss: 0.1147, Eps: 0.1000, Mem.size: 900000
+Ep: 14410, Dur: 326, Step: 3658557, Rew: 6.00, Loss: 0.0997, Eps: 0.1000, Mem.size: 900000
+Saved weights to colaboratory_models/BreakoutDeterministic-v42018-05-18 07:14:16.828452.h5
+Ep: 14420, Dur: 325, Step: 3662405, Rew: 6.00, Loss: 0.0897, Eps: 0.1000, Mem.size: 900000
+Ep: 14430, Dur: 262, Step: 3665665, Rew: 4.00, Loss: 0.1261, Eps: 0.1000, Mem.size: 900000
+Ep: 14440, Dur: 616, Step: 3669950, Rew: 8.00, Loss: 0.2113, Eps: 0.1000, Mem.size: 900000
+Saved weights to colaboratory_models/BreakoutDeterministic-v42018-05-18 07:14:16.828452.h5
+Ep: 14450, Dur: 320, Step: 3673032, Rew: 6.00, Loss: 0.3273, Eps: 0.1000, Mem.size: 900000
+Ep: 14460, Dur: 242, Step: 3676326, Rew: 4.00, Loss: 0.0644, Eps: 0.1000, Mem.size: 900000
+Saved weights to colaboratory_models/BreakoutDeterministic-v42018-05-18 07:14:16.828452.h5
+Ep: 14470, Dur: 359, Step: 3680024, Rew: 7.00, Loss: 0.1145, Eps: 0.1000, Mem.size: 900000
+Ep: 14480, Dur: 281, Step: 3683094, Rew: 4.00, Loss: 0.1450, Eps: 0.1000, Mem.size: 900000
+Ep: 14490, Dur: 327, Step: 3686308, Rew: 6.00, Loss: 0.0997, Eps: 0.1000, Mem.size: 900000
+Ep: 14500, Dur: 395, Step: 3689636, Rew: 8.00, Loss: 0.1077, Eps: 0.1000, Mem.size: 900000
+Saved weights to colaboratory_models/BreakoutDeterministic-v42018-05-18 07:14:16.828452.h5
+Ep: 14510, Dur: 556, Step: 3693652, Rew: 12.00, Loss: 0.1735, Eps: 0.1000, Mem.size: 900000
+Ep: 14520, Dur: 230, Step: 3696879, Rew: 3.00, Loss: 0.0677, Eps: 0.1000, Mem.size: 900000
+Saved weights to colaboratory_models/BreakoutDeterministic-v42018-05-18 07:14:16.828452.h5
+Ep: 14530, Dur: 311, Step: 3700251, Rew: 5.00, Loss: 0.0913, Eps: 0.1000, Mem.size: 900000
+Ep: 14540, Dur: 325, Step: 3703560, Rew: 6.00, Loss: 0.1260, Eps: 0.1000, Mem.size: 900000
+Ep: 14550, Dur: 496, Step: 3707363, Rew: 9.00, Loss: 0.1614, Eps: 0.1000, Mem.size: 900000
+Saved weights to colaboratory_models/BreakoutDeterministic-v42018-05-18 07:14:16.828452.h5
+Ep: 14560, Dur: 389, Step: 3710943, Rew: 8.00, Loss: 0.1155, Eps: 0.1000, Mem.size: 900000
+Ep: 14570, Dur: 326, Step: 3714624, Rew: 6.00, Loss: 0.1099, Eps: 0.1000, Mem.size: 900000
+Ep: 14580, Dur: 326, Step: 3718394, Rew: 6.00, Loss: 0.1003, Eps: 0.1000, Mem.size: 900000
+Saved weights to colaboratory_models/BreakoutDeterministic-v42018-05-18 07:14:16.828452.h5
+Ep: 14590, Dur: 260, Step: 3721919, Rew: 4.00, Loss: 0.1135, Eps: 0.1000, Mem.size: 900000
+Ep: 14600, Dur: 277, Step: 3725507, Rew: 5.00, Loss: 0.1221, Eps: 0.1000, Mem.size: 900000
+Ep: 14610, Dur: 247, Step: 3728665, Rew: 4.00, Loss: 0.0701, Eps: 0.1000, Mem.size: 900000
+Saved weights to colaboratory_models/BreakoutDeterministic-v42018-05-18 07:14:16.828452.h5
+Ep: 14620, Dur: 337, Step: 3732387, Rew: 6.00, Loss: 0.1013, Eps: 0.1000, Mem.size: 900000
+Ep: 14630, Dur: 292, Step: 3735993, Rew: 5.00, Loss: 0.0874, Eps: 0.1000, Mem.size: 900000
+Ep: 14640, Dur: 402, Step: 3739536, Rew: 8.00, Loss: 0.1214, Eps: 0.1000, Mem.size: 900000
+Saved weights to colaboratory_models/BreakoutDeterministic-v42018-05-18 07:14:16.828452.h5
+Ep: 14650, Dur: 358, Step: 3743224, Rew: 7.00, Loss: 0.1596, Eps: 0.1000, Mem.size: 900000
+Ep: 14660, Dur: 287, Step: 3746768, Rew: 5.00, Loss: 0.0992, Eps: 0.1000, Mem.size: 900000
+Saved weights to colaboratory_models/BreakoutDeterministic-v42018-05-18 07:14:16.828452.h5
+Ep: 14670, Dur: 201, Step: 3750294, Rew: 2.00, Loss: 0.0949, Eps: 0.1000, Mem.size: 900000
+Ep: 14680, Dur: 410, Step: 3754139, Rew: 6.00, Loss: 0.1323, Eps: 0.1000, Mem.size: 900000
+Ep: 14690, Dur: 472, Step: 3757529, Rew: 10.00, Loss: 0.1640, Eps: 0.1000, Mem.size: 900000
+Saved weights to colaboratory_models/BreakoutDeterministic-v42018-05-18 07:14:16.828452.h5
+Ep: 14700, Dur: 258, Step: 3760859, Rew: 4.00, Loss: 0.0980, Eps: 0.1000, Mem.size: 900000
+Ep: 14710, Dur: 352, Step: 3764714, Rew: 7.00, Loss: 0.1339, Eps: 0.1000, Mem.size: 900000
+Ep: 14720, Dur: 213, Step: 3768591, Rew: 3.00, Loss: 0.0824, Eps: 0.1000, Mem.size: 900000
+Saved weights to colaboratory_models/BreakoutDeterministic-v42018-05-18 07:14:16.828452.h5
+Ep: 14730, Dur: 372, Step: 3772100, Rew: 7.00, Loss: 0.0980, Eps: 0.1000, Mem.size: 900000
+Ep: 14740, Dur: 502, Step: 3775650, Rew: 11.00, Loss: 0.1377, Eps: 0.1000, Mem.size: 900000
+Ep: 14750, Dur: 489, Step: 3779499, Rew: 10.00, Loss: 0.1761, Eps: 0.1000, Mem.size: 900000
+Saved weights to colaboratory_models/BreakoutDeterministic-v42018-05-18 07:14:16.828452.h5
+Ep: 14760, Dur: 325, Step: 3783493, Rew: 6.00, Loss: 0.0953, Eps: 0.1000, Mem.size: 900000
+Ep: 14770, Dur: 341, Step: 3787171, Rew: 6.00, Loss: 0.1207, Eps: 0.1000, Mem.size: 900000
+Saved weights to colaboratory_models/BreakoutDeterministic-v42018-05-18 07:14:16.828452.h5
+Ep: 14780, Dur: 391, Step: 3790832, Rew: 7.00, Loss: 0.0857, Eps: 0.1000, Mem.size: 900000
+Ep: 14790, Dur: 347, Step: 3794767, Rew: 7.00, Loss: 0.0979, Eps: 0.1000, Mem.size: 900000
+Ep: 14800, Dur: 409, Step: 3798478, Rew: 8.00, Loss: 0.1163, Eps: 0.1000, Mem.size: 900000
+Saved weights to colaboratory_models/BreakoutDeterministic-v42018-05-18 07:14:16.828452.h5
+Ep: 14810, Dur: 210, Step: 3802211, Rew: 3.00, Loss: 0.0668, Eps: 0.1000, Mem.size: 900000
+Ep: 14820, Dur: 403, Step: 3806001, Rew: 8.00, Loss: 0.1224, Eps: 0.1000, Mem.size: 900000
+Saved weights to colaboratory_models/BreakoutDeterministic-v42018-05-18 07:14:16.828452.h5
+Ep: 14830, Dur: 427, Step: 3810043, Rew: 6.00, Loss: 0.1249, Eps: 0.1000, Mem.size: 900000
+Ep: 14840, Dur: 397, Step: 3813895, Rew: 8.00, Loss: 0.1084, Eps: 0.1000, Mem.size: 900000
+Ep: 14850, Dur: 302, Step: 3817020, Rew: 6.00, Loss: 0.0846, Eps: 0.1000, Mem.size: 900000
+Saved weights to colaboratory_models/BreakoutDeterministic-v42018-05-18 07:14:16.828452.h5
+Ep: 14860, Dur: 330, Step: 3820882, Rew: 6.00, Loss: 0.1243, Eps: 0.1000, Mem.size: 900000
+Ep: 14870, Dur: 357, Step: 3824268, Rew: 7.00, Loss: 0.1238, Eps: 0.1000, Mem.size: 900000
+Ep: 14880, Dur: 330, Step: 3827783, Rew: 6.00, Loss: 0.0977, Eps: 0.1000, Mem.size: 900000
+Saved weights to colaboratory_models/BreakoutDeterministic-v42018-05-18 07:14:16.828452.h5
+Ep: 14890, Dur: 294, Step: 3831667, Rew: 5.00, Loss: 0.0756, Eps: 0.1000, Mem.size: 900000
+Ep: 14900, Dur: 340, Step: 3835470, Rew: 6.00, Loss: 0.1052, Eps: 0.1000, Mem.size: 900000
+Ep: 14910, Dur: 230, Step: 3839055, Rew: 3.00, Loss: 0.0856, Eps: 0.1000, Mem.size: 900000
+Saved weights to colaboratory_models/BreakoutDeterministic-v42018-05-18 07:14:16.828452.h5
+Ep: 14920, Dur: 326, Step: 3842564, Rew: 6.00, Loss: 0.1029, Eps: 0.1000, Mem.size: 900000
+Ep: 14930, Dur: 262, Step: 3845787, Rew: 4.00, Loss: 0.0960, Eps: 0.1000, Mem.size: 900000
+Ep: 14940, Dur: 347, Step: 3849740, Rew: 5.00, Loss: 0.1406, Eps: 0.1000, Mem.size: 900000
+Saved weights to colaboratory_models/BreakoutDeterministic-v42018-05-18 07:14:16.828452.h5
+Ep: 14950, Dur: 300, Step: 3853724, Rew: 5.00, Loss: 0.0935, Eps: 0.1000, Mem.size: 900000
+Ep: 14960, Dur: 428, Step: 3857457, Rew: 9.00, Loss: 0.1177, Eps: 0.1000, Mem.size: 900000
+Saved weights to colaboratory_models/BreakoutDeterministic-v42018-05-18 07:14:16.828452.h5
+Ep: 14970, Dur: 383, Step: 3861215, Rew: 7.00, Loss: 0.0961, Eps: 0.1000, Mem.size: 900000
+Ep: 14980, Dur: 403, Step: 3864970, Rew: 7.00, Loss: 0.1391, Eps: 0.1000, Mem.size: 900000
+Ep: 14990, Dur: 417, Step: 3868777, Rew: 9.00, Loss: 0.1411, Eps: 0.1000, Mem.size: 900000
+Saved weights to colaboratory_models/BreakoutDeterministic-v42018-05-18 07:14:16.828452.h5
+Ep: 15000, Dur: 465, Step: 3872487, Rew: 9.00, Loss: 0.1402, Eps: 0.1000, Mem.size: 900000
+Ep: 15010, Dur: 375, Step: 3876234, Rew: 7.00, Loss: 0.0977, Eps: 0.1000, Mem.size: 900000
+Ep: 15020, Dur: 245, Step: 3879366, Rew: 3.00, Loss: 0.1240, Eps: 0.1000, Mem.size: 900000
+Saved weights to colaboratory_models/BreakoutDeterministic-v42018-05-18 07:14:16.828452.h5
+Ep: 15030, Dur: 378, Step: 3883476, Rew: 7.00, Loss: 0.1149, Eps: 0.1000, Mem.size: 900000
+Ep: 15040, Dur: 398, Step: 3887125, Rew: 8.00, Loss: 0.1203, Eps: 0.1000, Mem.size: 900000
+Saved weights to colaboratory_models/BreakoutDeterministic-v42018-05-18 07:14:16.828452.h5
+Ep: 15050, Dur: 325, Step: 3890074, Rew: 6.00, Loss: 0.0861, Eps: 0.1000, Mem.size: 900000
+Ep: 15060, Dur: 435, Step: 3894134, Rew: 9.00, Loss: 0.1263, Eps: 0.1000, Mem.size: 900000
+Ep: 15070, Dur: 325, Step: 3897754, Rew: 6.00, Loss: 0.0893, Eps: 0.1000, Mem.size: 900000
+Saved weights to colaboratory_models/BreakoutDeterministic-v42018-05-18 07:14:16.828452.h5
+Ep: 15080, Dur: 245, Step: 3901606, Rew: 4.00, Loss: 0.0854, Eps: 0.1000, Mem.size: 900000
+Ep: 15090, Dur: 436, Step: 3905345, Rew: 9.00, Loss: 0.1212, Eps: 0.1000, Mem.size: 900000
+Ep: 15100, Dur: 448, Step: 3909388, Rew: 8.00, Loss: 0.1469, Eps: 0.1000, Mem.size: 900000
+Saved weights to colaboratory_models/BreakoutDeterministic-v42018-05-18 07:14:16.828452.h5
+Ep: 15110, Dur: 326, Step: 3913137, Rew: 6.00, Loss: 0.1294, Eps: 0.1000, Mem.size: 900000
+Ep: 15120, Dur: 466, Step: 3917434, Rew: 9.00, Loss: 0.1255, Eps: 0.1000, Mem.size: 900000
+Saved weights to colaboratory_models/BreakoutDeterministic-v42018-05-18 07:14:16.828452.h5
+Ep: 15130, Dur: 403, Step: 3921276, Rew: 8.00, Loss: 0.0904, Eps: 0.1000, Mem.size: 900000
+Ep: 15140, Dur: 452, Step: 3925445, Rew: 9.00, Loss: 0.1299, Eps: 0.1000, Mem.size: 900000
+Ep: 15150, Dur: 374, Step: 3929358, Rew: 7.00, Loss: 0.1105, Eps: 0.1000, Mem.size: 900000
+Saved weights to colaboratory_models/BreakoutDeterministic-v42018-05-18 07:14:16.828452.h5
+Ep: 15160, Dur: 408, Step: 3932959, Rew: 8.00, Loss: 0.1269, Eps: 0.1000, Mem.size: 900000
+Ep: 15170, Dur: 277, Step: 3936712, Rew: 4.00, Loss: 0.0845, Eps: 0.1000, Mem.size: 900000
+Saved weights to colaboratory_models/BreakoutDeterministic-v42018-05-18 07:14:16.828452.h5
+Ep: 15180, Dur: 329, Step: 3940863, Rew: 6.00, Loss: 0.0953, Eps: 0.1000, Mem.size: 900000
+Ep: 15190, Dur: 358, Step: 3944995, Rew: 7.00, Loss: 0.1072, Eps: 0.1000, Mem.size: 900000
+Ep: 15200, Dur: 393, Step: 3948644, Rew: 9.00, Loss: 0.0814, Eps: 0.1000, Mem.size: 900000
+Saved weights to colaboratory_models/BreakoutDeterministic-v42018-05-18 07:14:16.828452.h5
+Ep: 15210, Dur: 449, Step: 3952483, Rew: 10.00, Loss: 0.1597, Eps: 0.1000, Mem.size: 900000
+Ep: 15220, Dur: 289, Step: 3956444, Rew: 5.00, Loss: 0.0821, Eps: 0.1000, Mem.size: 900000
+Saved weights to colaboratory_models/BreakoutDeterministic-v42018-05-18 07:14:16.828452.h5
+Ep: 15230, Dur: 212, Step: 3960148, Rew: 3.00, Loss: 0.0791, Eps: 0.1000, Mem.size: 900000
+Ep: 15240, Dur: 394, Step: 3964381, Rew: 7.00, Loss: 0.1182, Eps: 0.1000, Mem.size: 900000
+Ep: 15250, Dur: 435, Step: 3968139, Rew: 9.00, Loss: 0.1155, Eps: 0.1000, Mem.size: 900000
+Saved weights to colaboratory_models/BreakoutDeterministic-v42018-05-18 07:14:16.828452.h5
+Ep: 15260, Dur: 374, Step: 3971565, Rew: 7.00, Loss: 0.0864, Eps: 0.1000, Mem.size: 900000
+Ep: 15270, Dur: 407, Step: 3974976, Rew: 8.00, Loss: 0.1152, Eps: 0.1000, Mem.size: 900000
+Ep: 15280, Dur: 370, Step: 3978947, Rew: 7.00, Loss: 0.1031, Eps: 0.1000, Mem.size: 900000
+Saved weights to colaboratory_models/BreakoutDeterministic-v42018-05-18 07:14:16.828452.h5
+Ep: 15290, Dur: 466, Step: 3983061, Rew: 10.00, Loss: 0.1063, Eps: 0.1000, Mem.size: 900000
+Ep: 15300, Dur: 336, Step: 3986767, Rew: 6.00, Loss: 0.0893, Eps: 0.1000, Mem.size: 900000
+Ep: 15310, Dur: 326, Step: 3990721, Rew: 6.00, Loss: 0.0724, Eps: 0.1000, Mem.size: 900000
+Ep: 15320, Dur: 393, Step: 3994830, Rew: 7.00, Loss: 0.1354, Eps: 0.1000, Mem.size: 900000
+Ep: 15330, Dur: 604, Step: 3999049, Rew: 13.00, Loss: 0.1859, Eps: 0.1000, Mem.size: 900000
+Saved weights to colaboratory_models/BreakoutDeterministic-v42018-05-18 07:14:16.828452.h5
+Ep: 15340, Dur: 245, Step: 4002845, Rew: 4.00, Loss: 0.0557, Eps: 0.1000, Mem.size: 900000
+Ep: 15350, Dur: 363, Step: 4006600, Rew: 7.00, Loss: 0.1066, Eps: 0.1000, Mem.size: 900000
+Saved weights to colaboratory_models/BreakoutDeterministic-v42018-05-18 07:14:16.828452.h5
+Ep: 15360, Dur: 429, Step: 4010633, Rew: 8.00, Loss: 0.1407, Eps: 0.1000, Mem.size: 900000
+Ep: 15370, Dur: 407, Step: 4014406, Rew: 9.00, Loss: 0.1230, Eps: 0.1000, Mem.size: 900000
+Ep: 15380, Dur: 301, Step: 4018577, Rew: 3.00, Loss: 0.1033, Eps: 0.1000, Mem.size: 900000
+Saved weights to colaboratory_models/BreakoutDeterministic-v42018-05-18 07:14:16.828452.h5
+Ep: 15390, Dur: 241, Step: 4022077, Rew: 4.00, Loss: 0.0657, Eps: 0.1000, Mem.size: 900000
+Ep: 15400, Dur: 432, Step: 4025827, Rew: 8.00, Loss: 0.1087, Eps: 0.1000, Mem.size: 900000
+Ep: 15410, Dur: 339, Step: 4029562, Rew: 6.00, Loss: 0.0871, Eps: 0.1000, Mem.size: 900000
+Saved weights to colaboratory_models/BreakoutDeterministic-v42018-05-18 07:14:16.828452.h5
+Ep: 15420, Dur: 467, Step: 4033385, Rew: 10.00, Loss: 0.1434, Eps: 0.1000, Mem.size: 900000
+Ep: 15430, Dur: 517, Step: 4037360, Rew: 10.00, Loss: 0.1665, Eps: 0.1000, Mem.size: 900000
+Saved weights to colaboratory_models/BreakoutDeterministic-v42018-05-18 07:14:16.828452.h5
+Ep: 15440, Dur: 375, Step: 4041030, Rew: 7.00, Loss: 0.0812, Eps: 0.1000, Mem.size: 900000
+Ep: 15450, Dur: 484, Step: 4044828, Rew: 10.00, Loss: 0.1310, Eps: 0.1000, Mem.size: 900000
+Ep: 15460, Dur: 448, Step: 4048817, Rew: 9.00, Loss: 0.1104, Eps: 0.1000, Mem.size: 900000
+Saved weights to colaboratory_models/BreakoutDeterministic-v42018-05-18 07:14:16.828452.h5
+Ep: 15470, Dur: 442, Step: 4052748, Rew: 9.00, Loss: 0.1354, Eps: 0.1000, Mem.size: 900000
+Ep: 15480, Dur: 492, Step: 4056615, Rew: 10.00, Loss: 0.1577, Eps: 0.1000, Mem.size: 900000
+Saved weights to colaboratory_models/BreakoutDeterministic-v42018-05-18 07:14:16.828452.h5
+Ep: 15490, Dur: 262, Step: 4060543, Rew: 4.00, Loss: 0.0615, Eps: 0.1000, Mem.size: 900000
+Ep: 15500, Dur: 325, Step: 4064471, Rew: 6.00, Loss: 0.0776, Eps: 0.1000, Mem.size: 900000
+Ep: 15510, Dur: 348, Step: 4067911, Rew: 7.00, Loss: 0.1096, Eps: 0.1000, Mem.size: 900000
+Ep: 15520, Dur: 196, Step: 4071740, Rew: 2.00, Loss: 0.0745, Eps: 0.1000, Mem.size: 900000
+Ep: 15530, Dur: 347, Step: 4075633, Rew: 6.00, Loss: 0.1129, Eps: 0.1000, Mem.size: 900000
+Ep: 15540, Dur: 378, Step: 4079555, Rew: 8.00, Loss: 0.0719, Eps: 0.1000, Mem.size: 900000
+Saved weights to colaboratory_models/BreakoutDeterministic-v42018-05-18 07:14:16.828452.h5
+Ep: 15550, Dur: 555, Step: 4083858, Rew: 12.00, Loss: 0.1558, Eps: 0.1000, Mem.size: 900000
+Ep: 15560, Dur: 318, Step: 4087166, Rew: 6.00, Loss: 0.1230, Eps: 0.1000, Mem.size: 900000
+Saved weights to colaboratory_models/BreakoutDeterministic-v42018-05-18 07:14:16.828452.h5
+Ep: 15570, Dur: 361, Step: 4091514, Rew: 7.00, Loss: 0.1004, Eps: 0.1000, Mem.size: 900000
+Ep: 15580, Dur: 478, Step: 4095324, Rew: 11.00, Loss: 0.1358, Eps: 0.1000, Mem.size: 900000
+Ep: 15590, Dur: 326, Step: 4099107, Rew: 6.00, Loss: 0.0824, Eps: 0.1000, Mem.size: 900000
+Saved weights to colaboratory_models/BreakoutDeterministic-v42018-05-18 07:14:16.828452.h5
+Ep: 15600, Dur: 387, Step: 4102981, Rew: 8.00, Loss: 0.1300, Eps: 0.1000, Mem.size: 900000
+Ep: 15610, Dur: 409, Step: 4106989, Rew: 9.00, Loss: 0.1249, Eps: 0.1000, Mem.size: 900000
+Saved weights to colaboratory_models/BreakoutDeterministic-v42018-05-18 07:14:16.828452.h5
+Ep: 15620, Dur: 433, Step: 4111046, Rew: 9.00, Loss: 0.1536, Eps: 0.1000, Mem.size: 900000
+Ep: 15630, Dur: 376, Step: 4114760, Rew: 8.00, Loss: 0.0993, Eps: 0.1000, Mem.size: 900000
+Ep: 15640, Dur: 443, Step: 4118876, Rew: 9.00, Loss: 0.1223, Eps: 0.1000, Mem.size: 900000
+Saved weights to colaboratory_models/BreakoutDeterministic-v42018-05-18 07:14:16.828452.h5
+Ep: 15650, Dur: 225, Step: 4122366, Rew: 3.00, Loss: 0.0742, Eps: 0.1000, Mem.size: 900000
+Ep: 15660, Dur: 296, Step: 4126368, Rew: 4.00, Loss: 0.1566, Eps: 0.1000, Mem.size: 900000
+Ep: 15670, Dur: 332, Step: 4129894, Rew: 6.00, Loss: 0.1121, Eps: 0.1000, Mem.size: 900000
+Saved weights to colaboratory_models/BreakoutDeterministic-v42018-05-18 07:14:16.828452.h5
+Ep: 15680, Dur: 373, Step: 4133511, Rew: 7.00, Loss: 0.0782, Eps: 0.1000, Mem.size: 900000
+Ep: 15690, Dur: 445, Step: 4137560, Rew: 9.00, Loss: 0.1510, Eps: 0.1000, Mem.size: 900000
+Saved weights to colaboratory_models/BreakoutDeterministic-v42018-05-18 07:14:16.828452.h5
+Ep: 15700, Dur: 476, Step: 4141982, Rew: 9.00, Loss: 0.1313, Eps: 0.1000, Mem.size: 900000
+Ep: 15710, Dur: 318, Step: 4145687, Rew: 6.00, Loss: 0.0658, Eps: 0.1000, Mem.size: 900000
+Ep: 15720, Dur: 354, Step: 4149679, Rew: 7.00, Loss: 0.1087, Eps: 0.1000, Mem.size: 900000
+Saved weights to colaboratory_models/BreakoutDeterministic-v42018-05-18 07:14:16.828452.h5
+Ep: 15730, Dur: 277, Step: 4153660, Rew: 5.00, Loss: 0.0906, Eps: 0.1000, Mem.size: 900000
+Ep: 15740, Dur: 453, Step: 4158072, Rew: 9.00, Loss: 0.1368, Eps: 0.1000, Mem.size: 900000
+Saved weights to colaboratory_models/BreakoutDeterministic-v42018-05-18 07:14:16.828452.h5
+Ep: 15750, Dur: 402, Step: 4161548, Rew: 8.00, Loss: 0.1030, Eps: 0.1000, Mem.size: 900000
+Ep: 15760, Dur: 390, Step: 4165234, Rew: 7.00, Loss: 0.0929, Eps: 0.1000, Mem.size: 900000
+Ep: 15770, Dur: 477, Step: 4169298, Rew: 10.00, Loss: 0.1435, Eps: 0.1000, Mem.size: 900000
+Saved weights to colaboratory_models/BreakoutDeterministic-v42018-05-18 07:14:16.828452.h5
+Ep: 15780, Dur: 423, Step: 4173275, Rew: 7.00, Loss: 0.1076, Eps: 0.1000, Mem.size: 900000
+Ep: 15790, Dur: 261, Step: 4176551, Rew: 4.00, Loss: 0.0849, Eps: 0.1000, Mem.size: 900000
+Saved weights to colaboratory_models/BreakoutDeterministic-v42018-05-18 07:14:16.828452.h5
+Ep: 15800, Dur: 374, Step: 4180797, Rew: 7.00, Loss: 0.1168, Eps: 0.1000, Mem.size: 900000
+Ep: 15810, Dur: 544, Step: 4185139, Rew: 10.00, Loss: 0.1434, Eps: 0.1000, Mem.size: 900000
+Ep: 15820, Dur: 325, Step: 4189028, Rew: 6.00, Loss: 0.1079, Eps: 0.1000, Mem.size: 900000
+Saved weights to colaboratory_models/BreakoutDeterministic-v42018-05-18 07:14:16.828452.h5
+Ep: 15830, Dur: 377, Step: 4192886, Rew: 8.00, Loss: 0.1430, Eps: 0.1000, Mem.size: 900000
+Ep: 15840, Dur: 269, Step: 4196969, Rew: 5.00, Loss: 0.0951, Eps: 0.1000, Mem.size: 900000
+Saved weights to colaboratory_models/BreakoutDeterministic-v42018-05-18 07:14:16.828452.h5
+Ep: 15850, Dur: 295, Step: 4200837, Rew: 5.00, Loss: 0.0708, Eps: 0.1000, Mem.size: 900000
+Ep: 15860, Dur: 325, Step: 4204469, Rew: 6.00, Loss: 0.0738, Eps: 0.1000, Mem.size: 900000
+Ep: 15870, Dur: 430, Step: 4208683, Rew: 9.00, Loss: 0.1053, Eps: 0.1000, Mem.size: 900000
+Saved weights to colaboratory_models/BreakoutDeterministic-v42018-05-18 07:14:16.828452.h5
+Ep: 15880, Dur: 457, Step: 4212876, Rew: 10.00, Loss: 0.1344, Eps: 0.1000, Mem.size: 900000
+Ep: 15890, Dur: 524, Step: 4216748, Rew: 9.00, Loss: 0.1076, Eps: 0.1000, Mem.size: 900000
+Saved weights to colaboratory_models/BreakoutDeterministic-v42018-05-18 07:14:16.828452.h5
+Ep: 15900, Dur: 262, Step: 4220316, Rew: 4.00, Loss: 0.0677, Eps: 0.1000, Mem.size: 900000
+Ep: 15910, Dur: 452, Step: 4224300, Rew: 9.00, Loss: 0.1052, Eps: 0.1000, Mem.size: 900000
+Ep: 15920, Dur: 370, Step: 4228158, Rew: 7.00, Loss: 0.1022, Eps: 0.1000, Mem.size: 900000
+Saved weights to colaboratory_models/BreakoutDeterministic-v42018-05-18 07:14:16.828452.h5
+Ep: 15930, Dur: 332, Step: 4232335, Rew: 7.00, Loss: 0.1026, Eps: 0.1000, Mem.size: 900000
+Ep: 15940, Dur: 291, Step: 4236183, Rew: 5.00, Loss: 0.0685, Eps: 0.1000, Mem.size: 900000
+Saved weights to colaboratory_models/BreakoutDeterministic-v42018-05-18 07:14:16.828452.h5
+Ep: 15950, Dur: 489, Step: 4240005, Rew: 10.00, Loss: 0.1226, Eps: 0.1000, Mem.size: 900000
+Ep: 15960, Dur: 351, Step: 4243833, Rew: 7.00, Loss: 0.0989, Eps: 0.1000, Mem.size: 900000
+Ep: 15970, Dur: 375, Step: 4247655, Rew: 7.00, Loss: 0.1186, Eps: 0.1000, Mem.size: 900000
+Saved weights to colaboratory_models/BreakoutDeterministic-v42018-05-18 07:14:16.828452.h5
+Ep: 15980, Dur: 354, Step: 4251689, Rew: 7.00, Loss: 0.0754, Eps: 0.1000, Mem.size: 900000
+Ep: 15990, Dur: 370, Step: 4255851, Rew: 7.00, Loss: 0.1098, Eps: 0.1000, Mem.size: 900000
+Ep: 16000, Dur: 324, Step: 4259732, Rew: 6.00, Loss: 0.0945, Eps: 0.1000, Mem.size: 900000
+Saved weights to colaboratory_models/BreakoutDeterministic-v42018-05-18 07:14:16.828452.h5
+Ep: 16010, Dur: 356, Step: 4263725, Rew: 7.00, Loss: 0.0706, Eps: 0.1000, Mem.size: 900000
+Ep: 16020, Dur: 413, Step: 4267947, Rew: 7.00, Loss: 0.1332, Eps: 0.1000, Mem.size: 900000
+Saved weights to colaboratory_models/BreakoutDeterministic-v42018-05-18 07:14:16.828452.h5
+Ep: 16030, Dur: 490, Step: 4272177, Rew: 10.00, Loss: 0.1540, Eps: 0.1000, Mem.size: 900000
+Ep: 16040, Dur: 321, Step: 4276071, Rew: 6.00, Loss: 0.0860, Eps: 0.1000, Mem.size: 900000
+Ep: 16050, Dur: 352, Step: 4279770, Rew: 7.00, Loss: 0.1159, Eps: 0.1000, Mem.size: 900000
+Saved weights to colaboratory_models/BreakoutDeterministic-v42018-05-18 07:14:16.828452.h5
+Ep: 16060, Dur: 259, Step: 4283547, Rew: 4.00, Loss: 0.0743, Eps: 0.1000, Mem.size: 900000
+Ep: 16070, Dur: 289, Step: 4287006, Rew: 5.00, Loss: 0.0723, Eps: 0.1000, Mem.size: 900000
+Saved weights to colaboratory_models/BreakoutDeterministic-v42018-05-18 07:14:16.828452.h5
+Ep: 16080, Dur: 308, Step: 4290859, Rew: 5.00, Loss: 0.0867, Eps: 0.1000, Mem.size: 900000
+Ep: 16090, Dur: 321, Step: 4294676, Rew: 6.00, Loss: 0.0856, Eps: 0.1000, Mem.size: 900000
+Ep: 16100, Dur: 406, Step: 4298254, Rew: 8.00, Loss: 0.0992, Eps: 0.1000, Mem.size: 900000
+Ep: 16110, Dur: 343, Step: 4302246, Rew: 6.00, Loss: 0.0919, Eps: 0.1000, Mem.size: 900000
+Ep: 16120, Dur: 345, Step: 4305470, Rew: 7.00, Loss: 0.1075, Eps: 0.1000, Mem.size: 900000
+Ep: 16130, Dur: 339, Step: 4309309, Rew: 6.00, Loss: 0.0927, Eps: 0.1000, Mem.size: 900000
+Saved weights to colaboratory_models/BreakoutDeterministic-v42018-05-18 07:14:16.828452.h5
+Ep: 16140, Dur: 228, Step: 4312835, Rew: 3.00, Loss: 0.0894, Eps: 0.1000, Mem.size: 900000
+Ep: 16150, Dur: 213, Step: 4316138, Rew: 3.00, Loss: 0.0542, Eps: 0.1000, Mem.size: 900000
+Saved weights to colaboratory_models/BreakoutDeterministic-v42018-05-18 07:14:16.828452.h5
+Ep: 16160, Dur: 298, Step: 4320119, Rew: 6.00, Loss: 0.0813, Eps: 0.1000, Mem.size: 900000
+Ep: 16170, Dur: 395, Step: 4324189, Rew: 8.00, Loss: 0.1054, Eps: 0.1000, Mem.size: 900000
+Ep: 16180, Dur: 289, Step: 4328269, Rew: 5.00, Loss: 0.0787, Eps: 0.1000, Mem.size: 900000
+Saved weights to colaboratory_models/BreakoutDeterministic-v42018-05-18 07:14:16.828452.h5
+Ep: 16190, Dur: 246, Step: 4331774, Rew: 3.00, Loss: 0.0966, Eps: 0.1000, Mem.size: 900000
+Ep: 16200, Dur: 426, Step: 4335672, Rew: 6.00, Loss: 0.1660, Eps: 0.1000, Mem.size: 900000
+Ep: 16210, Dur: 447, Step: 4339418, Rew: 8.00, Loss: 0.0914, Eps: 0.1000, Mem.size: 900000
+Saved weights to colaboratory_models/BreakoutDeterministic-v42018-05-18 07:14:16.828452.h5
+Ep: 16220, Dur: 546, Step: 4343492, Rew: 11.00, Loss: 0.1402, Eps: 0.1000, Mem.size: 900000
+Ep: 16230, Dur: 243, Step: 4347387, Rew: 4.00, Loss: 0.0619, Eps: 0.1000, Mem.size: 900000
+Saved weights to colaboratory_models/BreakoutDeterministic-v42018-05-18 07:14:16.828452.h5
+Ep: 16240, Dur: 436, Step: 4351117, Rew: 9.00, Loss: 0.1299, Eps: 0.1000, Mem.size: 900000
+Ep: 16250, Dur: 376, Step: 4355144, Rew: 8.00, Loss: 0.0935, Eps: 0.1000, Mem.size: 900000
+Ep: 16260, Dur: 261, Step: 4358930, Rew: 4.00, Loss: 0.0588, Eps: 0.1000, Mem.size: 900000
+Saved weights to colaboratory_models/BreakoutDeterministic-v42018-05-18 07:14:16.828452.h5
+Ep: 16270, Dur: 427, Step: 4362590, Rew: 8.00, Loss: 0.1077, Eps: 0.1000, Mem.size: 900000
+Ep: 16280, Dur: 276, Step: 4366403, Rew: 5.00, Loss: 0.0804, Eps: 0.1000, Mem.size: 900000
+Saved weights to colaboratory_models/BreakoutDeterministic-v42018-05-18 07:14:16.828452.h5
+Ep: 16290, Dur: 357, Step: 4370600, Rew: 7.00, Loss: 0.0897, Eps: 0.1000, Mem.size: 900000
+Ep: 16300, Dur: 323, Step: 4374234, Rew: 6.00, Loss: 0.0673, Eps: 0.1000, Mem.size: 900000
+Ep: 16310, Dur: 338, Step: 4378546, Rew: 6.00, Loss: 0.0988, Eps: 0.1000, Mem.size: 900000
+Saved weights to colaboratory_models/BreakoutDeterministic-v42018-05-18 07:14:16.828452.h5
+Ep: 16320, Dur: 276, Step: 4382365, Rew: 5.00, Loss: 0.0758, Eps: 0.1000, Mem.size: 900000
+Ep: 16330, Dur: 424, Step: 4386165, Rew: 9.00, Loss: 0.0874, Eps: 0.1000, Mem.size: 900000
+Ep: 16340, Dur: 438, Step: 4389975, Rew: 9.00, Loss: 0.1069, Eps: 0.1000, Mem.size: 900000
+Saved weights to colaboratory_models/BreakoutDeterministic-v42018-05-18 07:14:16.828452.h5
+Ep: 16350, Dur: 291, Step: 4393963, Rew: 5.00, Loss: 0.0674, Eps: 0.1000, Mem.size: 900000
+Ep: 16360, Dur: 460, Step: 4398351, Rew: 10.00, Loss: 0.1247, Eps: 0.1000, Mem.size: 900000
+Saved weights to colaboratory_models/BreakoutDeterministic-v42018-05-18 07:14:16.828452.h5
+Ep: 16370, Dur: 215, Step: 4402471, Rew: 3.00, Loss: 0.0616, Eps: 0.1000, Mem.size: 900000
+Ep: 16380, Dur: 457, Step: 4407117, Rew: 10.00, Loss: 0.1244, Eps: 0.1000, Mem.size: 900000
+Saved weights to colaboratory_models/BreakoutDeterministic-v42018-05-18 07:14:16.828452.h5
+Ep: 16390, Dur: 597, Step: 4411070, Rew: 11.00, Loss: 0.1831, Eps: 0.1000, Mem.size: 900000
+Ep: 16400, Dur: 480, Step: 4415147, Rew: 11.00, Loss: 0.1451, Eps: 0.1000, Mem.size: 900000
+Ep: 16410, Dur: 243, Step: 4418960, Rew: 4.00, Loss: 0.0386, Eps: 0.1000, Mem.size: 900000
+Saved weights to colaboratory_models/BreakoutDeterministic-v42018-05-18 07:14:16.828452.h5
+Ep: 16420, Dur: 293, Step: 4422641, Rew: 5.00, Loss: 0.0707, Eps: 0.1000, Mem.size: 900000
+Ep: 16430, Dur: 435, Step: 4426549, Rew: 9.00, Loss: 0.1291, Eps: 0.1000, Mem.size: 900000
+Saved weights to colaboratory_models/BreakoutDeterministic-v42018-05-18 07:14:16.828452.h5
+Ep: 16440, Dur: 362, Step: 4430427, Rew: 7.00, Loss: 0.0999, Eps: 0.1000, Mem.size: 900000
+Ep: 16450, Dur: 403, Step: 4435025, Rew: 8.00, Loss: 0.0872, Eps: 0.1000, Mem.size: 900000
+Ep: 16460, Dur: 372, Step: 4438949, Rew: 7.00, Loss: 0.0953, Eps: 0.1000, Mem.size: 900000
+Saved weights to colaboratory_models/BreakoutDeterministic-v42018-05-18 07:14:16.828452.h5
+Ep: 16470, Dur: 299, Step: 4442831, Rew: 6.00, Loss: 0.0637, Eps: 0.1000, Mem.size: 900000
+Ep: 16480, Dur: 256, Step: 4446471, Rew: 4.00, Loss: 0.0828, Eps: 0.1000, Mem.size: 900000
+Saved weights to colaboratory_models/BreakoutDeterministic-v42018-05-18 07:14:16.828452.h5
+Ep: 16490, Dur: 372, Step: 4450104, Rew: 7.00, Loss: 0.0995, Eps: 0.1000, Mem.size: 900000
+Ep: 16500, Dur: 455, Step: 4454431, Rew: 9.00, Loss: 0.1002, Eps: 0.1000, Mem.size: 900000
+Ep: 16510, Dur: 358, Step: 4458113, Rew: 7.00, Loss: 0.1197, Eps: 0.1000, Mem.size: 900000
+Saved weights to colaboratory_models/BreakoutDeterministic-v42018-05-18 07:14:16.828452.h5
+Ep: 16520, Dur: 259, Step: 4461905, Rew: 4.00, Loss: 0.0582, Eps: 0.1000, Mem.size: 900000
+Ep: 16530, Dur: 432, Step: 4466149, Rew: 9.00, Loss: 0.1133, Eps: 0.1000, Mem.size: 900000
+Ep: 16540, Dur: 403, Step: 4469816, Rew: 8.00, Loss: 0.1119, Eps: 0.1000, Mem.size: 900000
+Saved weights to colaboratory_models/BreakoutDeterministic-v42018-05-18 07:14:16.828452.h5
+Ep: 16550, Dur: 300, Step: 4473694, Rew: 5.00, Loss: 0.0928, Eps: 0.1000, Mem.size: 900000
+Ep: 16560, Dur: 215, Step: 4477351, Rew: 3.00, Loss: 0.0465, Eps: 0.1000, Mem.size: 900000
+Saved weights to colaboratory_models/BreakoutDeterministic-v42018-05-18 07:14:16.828452.h5
+Ep: 16570, Dur: 533, Step: 4481388, Rew: 11.00, Loss: 0.1567, Eps: 0.1000, Mem.size: 900000
+Ep: 16580, Dur: 422, Step: 4485042, Rew: 8.00, Loss: 0.1239, Eps: 0.1000, Mem.size: 900000
+Ep: 16590, Dur: 408, Step: 4489246, Rew: 9.00, Loss: 0.0810, Eps: 0.1000, Mem.size: 900000
+Ep: 16600, Dur: 402, Step: 4492781, Rew: 8.00, Loss: 0.1001, Eps: 0.1000, Mem.size: 900000
+Ep: 16610, Dur: 388, Step: 4496708, Rew: 8.00, Loss: 0.0820, Eps: 0.1000, Mem.size: 900000
+Saved weights to colaboratory_models/BreakoutDeterministic-v42018-05-18 07:14:16.828452.h5
+Ep: 16620, Dur: 428, Step: 4500468, Rew: 9.00, Loss: 0.0798, Eps: 0.1000, Mem.size: 900000
+Ep: 16630, Dur: 334, Step: 4504337, Rew: 6.00, Loss: 0.0793, Eps: 0.1000, Mem.size: 900000
+Ep: 16640, Dur: 502, Step: 4508696, Rew: 9.00, Loss: 0.1320, Eps: 0.1000, Mem.size: 900000
+Saved weights to colaboratory_models/BreakoutDeterministic-v42018-05-18 07:14:16.828452.h5
+Ep: 16650, Dur: 326, Step: 4512591, Rew: 6.00, Loss: 0.0693, Eps: 0.1000, Mem.size: 900000
+Ep: 16660, Dur: 404, Step: 4516704, Rew: 8.00, Loss: 0.0946, Eps: 0.1000, Mem.size: 900000
+Saved weights to colaboratory_models/BreakoutDeterministic-v42018-05-18 07:14:16.828452.h5
+Ep: 16670, Dur: 258, Step: 4520486, Rew: 4.00, Loss: 0.0891, Eps: 0.1000, Mem.size: 900000
+Ep: 16680, Dur: 469, Step: 4524864, Rew: 11.00, Loss: 0.1077, Eps: 0.1000, Mem.size: 900000
+Ep: 16690, Dur: 432, Step: 4528528, Rew: 9.00, Loss: 0.1085, Eps: 0.1000, Mem.size: 900000
+Saved weights to colaboratory_models/BreakoutDeterministic-v42018-05-18 07:14:16.828452.h5
+Ep: 16700, Dur: 402, Step: 4532558, Rew: 8.00, Loss: 0.1053, Eps: 0.1000, Mem.size: 900000
+Ep: 16710, Dur: 428, Step: 4536404, Rew: 10.00, Loss: 0.0873, Eps: 0.1000, Mem.size: 900000
+Saved weights to colaboratory_models/BreakoutDeterministic-v42018-05-18 07:14:16.828452.h5
+Ep: 16720, Dur: 437, Step: 4540142, Rew: 9.00, Loss: 0.0933, Eps: 0.1000, Mem.size: 900000
+Ep: 16730, Dur: 377, Step: 4544230, Rew: 8.00, Loss: 0.0913, Eps: 0.1000, Mem.size: 900000
+Ep: 16740, Dur: 326, Step: 4548202, Rew: 6.00, Loss: 0.0928, Eps: 0.1000, Mem.size: 900000
+Saved weights to colaboratory_models/BreakoutDeterministic-v42018-05-18 07:14:16.828452.h5
+Ep: 16750, Dur: 482, Step: 4551705, Rew: 10.00, Loss: 0.1161, Eps: 0.1000, Mem.size: 900000
+Ep: 16760, Dur: 321, Step: 4555753, Rew: 6.00, Loss: 0.0875, Eps: 0.1000, Mem.size: 900000
+Ep: 16770, Dur: 425, Step: 4559543, Rew: 8.00, Loss: 0.1036, Eps: 0.1000, Mem.size: 900000
+Saved weights to colaboratory_models/BreakoutDeterministic-v42018-05-18 07:14:16.828452.h5
+Ep: 16780, Dur: 407, Step: 4563594, Rew: 9.00, Loss: 0.0803, Eps: 0.1000, Mem.size: 900000
+Ep: 16790, Dur: 298, Step: 4567431, Rew: 6.00, Loss: 0.0593, Eps: 0.1000, Mem.size: 900000
+Saved weights to colaboratory_models/BreakoutDeterministic-v42018-05-18 07:14:16.828452.h5
+Ep: 16800, Dur: 559, Step: 4571687, Rew: 12.00, Loss: 0.1677, Eps: 0.1000, Mem.size: 900000
+Ep: 16810, Dur: 407, Step: 4575334, Rew: 8.00, Loss: 0.0972, Eps: 0.1000, Mem.size: 900000
+Ep: 16820, Dur: 339, Step: 4579614, Rew: 6.00, Loss: 0.1005, Eps: 0.1000, Mem.size: 900000
+Saved weights to colaboratory_models/BreakoutDeterministic-v42018-05-18 07:14:16.828452.h5
+Ep: 16830, Dur: 371, Step: 4583756, Rew: 7.00, Loss: 0.0757, Eps: 0.1000, Mem.size: 900000
+Ep: 16840, Dur: 404, Step: 4587476, Rew: 8.00, Loss: 0.1270, Eps: 0.1000, Mem.size: 900000
+Saved weights to colaboratory_models/BreakoutDeterministic-v42018-05-18 07:14:16.828452.h5
+Ep: 16850, Dur: 408, Step: 4591279, Rew: 8.00, Loss: 0.1055, Eps: 0.1000, Mem.size: 900000
+Ep: 16860, Dur: 417, Step: 4595193, Rew: 8.00, Loss: 0.0769, Eps: 0.1000, Mem.size: 900000
+Ep: 16870, Dur: 240, Step: 4598867, Rew: 4.00, Loss: 0.0641, Eps: 0.1000, Mem.size: 900000
+Ep: 16880, Dur: 378, Step: 4602740, Rew: 8.00, Loss: 0.0955, Eps: 0.1000, Mem.size: 900000
+Ep: 16890, Dur: 421, Step: 4606597, Rew: 9.00, Loss: 0.1327, Eps: 0.1000, Mem.size: 900000
+Saved weights to colaboratory_models/BreakoutDeterministic-v42018-05-18 07:14:16.828452.h5
+Ep: 16900, Dur: 464, Step: 4610141, Rew: 9.00, Loss: 0.1005, Eps: 0.1000, Mem.size: 900000
+Ep: 16910, Dur: 365, Step: 4613778, Rew: 7.00, Loss: 0.0936, Eps: 0.1000, Mem.size: 900000
+Ep: 16920, Dur: 258, Step: 4617940, Rew: 4.00, Loss: 0.0625, Eps: 0.1000, Mem.size: 900000
+Saved weights to colaboratory_models/BreakoutDeterministic-v42018-05-18 07:14:16.828452.h5
+Ep: 16930, Dur: 495, Step: 4621246, Rew: 11.00, Loss: 0.1128, Eps: 0.1000, Mem.size: 900000
+Ep: 16940, Dur: 402, Step: 4625027, Rew: 8.00, Loss: 0.0920, Eps: 0.1000, Mem.size: 900000
+Ep: 16950, Dur: 392, Step: 4629245, Rew: 7.00, Loss: 0.0771, Eps: 0.1000, Mem.size: 900000
+Saved weights to colaboratory_models/BreakoutDeterministic-v42018-05-18 07:14:16.828452.h5
+Ep: 16960, Dur: 450, Step: 4633236, Rew: 9.00, Loss: 0.1021, Eps: 0.1000, Mem.size: 900000
+Ep: 16970, Dur: 395, Step: 4636892, Rew: 8.00, Loss: 0.0856, Eps: 0.1000, Mem.size: 900000
+Saved weights to colaboratory_models/BreakoutDeterministic-v42018-05-18 07:14:16.828452.h5
+Ep: 16980, Dur: 417, Step: 4641037, Rew: 8.00, Loss: 0.1188, Eps: 0.1000, Mem.size: 900000
+Ep: 16990, Dur: 261, Step: 4644522, Rew: 4.00, Loss: 0.0579, Eps: 0.1000, Mem.size: 900000
+Ep: 17000, Dur: 436, Step: 4648512, Rew: 9.00, Loss: 0.1224, Eps: 0.1000, Mem.size: 900000
+Saved weights to colaboratory_models/BreakoutDeterministic-v42018-05-18 07:14:16.828452.h5
+Ep: 17010, Dur: 371, Step: 4652392, Rew: 7.00, Loss: 0.1046, Eps: 0.1000, Mem.size: 900000
+Ep: 17020, Dur: 480, Step: 4656062, Rew: 11.00, Loss: 0.1256, Eps: 0.1000, Mem.size: 900000
+Ep: 17030, Dur: 491, Step: 4659629, Rew: 11.00, Loss: 0.1106, Eps: 0.1000, Mem.size: 900000
+Saved weights to colaboratory_models/BreakoutDeterministic-v42018-05-18 07:14:16.828452.h5
+Ep: 17040, Dur: 312, Step: 4664080, Rew: 5.00, Loss: 0.0814, Eps: 0.1000, Mem.size: 900000
+Ep: 17050, Dur: 274, Step: 4667696, Rew: 5.00, Loss: 0.0679, Eps: 0.1000, Mem.size: 900000
+Saved weights to colaboratory_models/BreakoutDeterministic-v42018-05-18 07:14:16.828452.h5
+Ep: 17060, Dur: 319, Step: 4671425, Rew: 6.00, Loss: 0.0684, Eps: 0.1000, Mem.size: 900000
+Ep: 17070, Dur: 483, Step: 4675509, Rew: 10.00, Loss: 0.1102, Eps: 0.1000, Mem.size: 900000
+Ep: 17080, Dur: 503, Step: 4679882, Rew: 10.00, Loss: 0.1544, Eps: 0.1000, Mem.size: 900000
+Saved weights to colaboratory_models/BreakoutDeterministic-v42018-05-18 07:14:16.828452.h5
+Ep: 17090, Dur: 404, Step: 4683992, Rew: 8.00, Loss: 0.1203, Eps: 0.1000, Mem.size: 900000
+Ep: 17100, Dur: 477, Step: 4688328, Rew: 10.00, Loss: 0.1071, Eps: 0.1000, Mem.size: 900000
+Saved weights to colaboratory_models/BreakoutDeterministic-v42018-05-18 07:14:16.828452.h5
+Ep: 17110, Dur: 397, Step: 4692606, Rew: 8.00, Loss: 0.0938, Eps: 0.1000, Mem.size: 900000
+Ep: 17120, Dur: 328, Step: 4696352, Rew: 6.00, Loss: 0.0660, Eps: 0.1000, Mem.size: 900000
+Ep: 17130, Dur: 339, Step: 4699922, Rew: 6.00, Loss: 0.0954, Eps: 0.1000, Mem.size: 900000
+Saved weights to colaboratory_models/BreakoutDeterministic-v42018-05-18 07:14:16.828452.h5
+Ep: 17140, Dur: 388, Step: 4703980, Rew: 7.00, Loss: 0.0826, Eps: 0.1000, Mem.size: 900000
+Ep: 17150, Dur: 413, Step: 4707761, Rew: 8.00, Loss: 0.0962, Eps: 0.1000, Mem.size: 900000
+Saved weights to colaboratory_models/BreakoutDeterministic-v42018-05-18 07:14:16.828452.h5
+Ep: 17160, Dur: 377, Step: 4711790, Rew: 7.00, Loss: 0.0730, Eps: 0.1000, Mem.size: 900000
+Ep: 17170, Dur: 354, Step: 4716142, Rew: 7.00, Loss: 0.0888, Eps: 0.1000, Mem.size: 900000
+Ep: 17180, Dur: 181, Step: 4719808, Rew: 2.00, Loss: 0.0419, Eps: 0.1000, Mem.size: 900000
+Saved weights to colaboratory_models/BreakoutDeterministic-v42018-05-18 07:14:16.828452.h5
+Ep: 17190, Dur: 270, Step: 4723728, Rew: 5.00, Loss: 0.0814, Eps: 0.1000, Mem.size: 900000
+Ep: 17200, Dur: 399, Step: 4727428, Rew: 9.00, Loss: 0.0812, Eps: 0.1000, Mem.size: 900000
+Saved weights to colaboratory_models/BreakoutDeterministic-v42018-05-18 07:14:16.828452.h5
+Ep: 17210, Dur: 211, Step: 4731009, Rew: 3.00, Loss: 0.0559, Eps: 0.1000, Mem.size: 900000
+Ep: 17220, Dur: 342, Step: 4734994, Rew: 6.00, Loss: 0.0839, Eps: 0.1000, Mem.size: 900000
+Ep: 17230, Dur: 472, Step: 4738584, Rew: 10.00, Loss: 0.0990, Eps: 0.1000, Mem.size: 900000
+Saved weights to colaboratory_models/BreakoutDeterministic-v42018-05-18 07:14:16.828452.h5
+Ep: 17240, Dur: 427, Step: 4742795, Rew: 9.00, Loss: 0.1066, Eps: 0.1000, Mem.size: 900000
+Ep: 17250, Dur: 430, Step: 4746609, Rew: 9.00, Loss: 0.0871, Eps: 0.1000, Mem.size: 900000
+Saved weights to colaboratory_models/BreakoutDeterministic-v42018-05-18 07:14:16.828452.h5
+Ep: 17260, Dur: 376, Step: 4750499, Rew: 8.00, Loss: 0.0985, Eps: 0.1000, Mem.size: 900000
+Ep: 17270, Dur: 404, Step: 4754583, Rew: 8.00, Loss: 0.0836, Eps: 0.1000, Mem.size: 900000
+Ep: 17280, Dur: 388, Step: 4758595, Rew: 7.00, Loss: 0.1118, Eps: 0.1000, Mem.size: 900000
+Saved weights to colaboratory_models/BreakoutDeterministic-v42018-05-18 07:14:16.828452.h5
+Ep: 17290, Dur: 380, Step: 4763100, Rew: 8.00, Loss: 0.0951, Eps: 0.1000, Mem.size: 900000
+Ep: 17300, Dur: 310, Step: 4766962, Rew: 5.00, Loss: 0.0845, Eps: 0.1000, Mem.size: 900000
+Saved weights to colaboratory_models/BreakoutDeterministic-v42018-05-18 07:14:16.828452.h5
+Ep: 17310, Dur: 276, Step: 4770595, Rew: 5.00, Loss: 0.0788, Eps: 0.1000, Mem.size: 900000
+Ep: 17320, Dur: 323, Step: 4775068, Rew: 6.00, Loss: 0.0686, Eps: 0.1000, Mem.size: 900000
+Ep: 17330, Dur: 367, Step: 4779219, Rew: 8.00, Loss: 0.0816, Eps: 0.1000, Mem.size: 900000
+Ep: 17340, Dur: 326, Step: 4783181, Rew: 6.00, Loss: 0.0932, Eps: 0.1000, Mem.size: 900000
+Ep: 17350, Dur: 455, Step: 4787162, Rew: 9.00, Loss: 0.1332, Eps: 0.1000, Mem.size: 900000
+Saved weights to colaboratory_models/BreakoutDeterministic-v42018-05-18 07:14:16.828452.h5
