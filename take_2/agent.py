@@ -297,7 +297,7 @@ class DRLAgent():
 					if self.timeStep % TRAIN_FREQUENCY == 0:
 						self.trainOnBatch()
 					if self.timeStep % SAVE_FREQUENCY == 0:
-						if(USE_TARGET_NETWORK)
+						if(USE_TARGET_NETWORK):
 							saveModelWeights(self.targetNetwork)
 						else:
 							saveModelWeights(self.qNetwork)

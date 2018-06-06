@@ -7,6 +7,9 @@ from keras.utils import to_categorical
 from keras.models import model_from_json
 from keras.callbacks import History 
 
+import scipy
+
+
 #other
 from skimage.transform import resize
 import numpy as np
@@ -30,7 +33,7 @@ COLAB=False
 SAVE_PATH=os.path.join("colaboratory_models", "colab_models") if COLAB else "."
 SAVE_NAME=GAME+str(datetime.datetime.now())
 
-LOAD_PATH="BreakoutDeterministic-v42018-05-21 19:08:28.614871.h5"
+LOAD_PATH="BreakoutDeterministic-v42018-06-04 07:48:49.733810.h5"
 
 INITIAL_REPLAY_MEMORY_SIZE=50000
 MAX_REPLAY_MEMORY_SIZE=1000000 if COLAB else 500000
@@ -40,8 +43,8 @@ MINIBATCH_SIZE=32
 
 GAMMA=0.99
 # network details:
-NET_H=105
-NET_W=80
+NET_H=84
+NET_W=84
 NET_D=4
 LEARNING_RATE = 2.5e-4
 MOMENTUM = 0.95  
@@ -93,11 +96,21 @@ def getModel(path, height, width, depth, numActions):
 	loadModelWeights(model, path)
 	return model
 
+def preprocessSingleFrameNew(img):
+	view=img
+	#view=img[::2,::2]
+	x=(view[:,:,0]*0.299 + view[:,:,1]*0.587 + view[:,:,2]*0.114)
+	p=scipy.misc.imresize(x, (84, 84)).astype(np.uint8)
+	# plt.imshow(p)
+	# plt.show()
+	return p
+
 def preprocessSingleFrame(img):
 	# Y = 0.299 R + 0.587 G + 0.114 B
 	# with double downsample
-	view = img[::2,::2]
-	return (view[:,:,0]*0.299 + view[:,:,1]*0.587 + view[:,:,2]*0.114).astype(np.uint8)
+	#view = img[::2,::2]
+	#return (view[:,:,0]*0.299 + view[:,:,1]*0.587 + view[:,:,2]*0.114).astype(np.uint8)
+	return preprocessSingleFrameNew(img)
 
 # we will use tuples!
 def getNextState(state, nextFrame):
