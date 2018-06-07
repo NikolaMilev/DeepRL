@@ -1,0 +1,6 @@
+COLAB
+imam dve mreze
+ne korisitm huber loss vec mse sa reward clipping i gradient clipping
+kraj epizode je gubitak zivota
+105x80
+target mreza se updatuje na 10000 update-ova q mreze, ne na 10000 timestepova

@@ -47,8 +47,8 @@ FINAL_EPSILON=0.1
 EPSILON_DECAY_STEPS=1000000
 GAMMA=0.99
 # network details:
-NET_H=84
-NET_W=84
+NET_H=105
+NET_W=80
 NET_D=4
 LEARNING_RATE = 2.5e-4
 MOMENTUM = 0.95  
@@ -90,7 +90,7 @@ def buildNetwork(height, width, depth, numActions):
 	out=Dense(units=numActions, activation="linear")(dense)
 	filtered_out=Multiply()([out, action_in])
 	model=Model(inputs=[state_in, action_in], outputs=filtered_out)
-	opt=RMSprop(lr=LEARNING_RATE, rho=MOMENTUM, epsilon=MIN_GRAD)
+	opt=RMSprop(lr=LEARNING_RATE, rho=MOMENTUM, epsilon=MIN_GRAD, clipvalue=1.0)
 	model.compile(loss=LOSS, optimizer=opt)
 
 	print("Built and compiled the network!")
@@ -135,9 +135,9 @@ def preprocessSingleFrameNew(img):
 def preprocessSingleFrame(img):
 	# Y = 0.299 R + 0.587 G + 0.114 B
 	# with double downsample
-	#view = img[::2,::2]
-	#return (view[:,:,0]*0.299 + view[:,:,1]*0.587 + view[:,:,2]*0.114).astype(np.uint8)
-	return preprocessSingleFrameNew(img)
+	view = img[::2,::2]
+	return (view[:,:,0]*0.299 + view[:,:,1]*0.587 + view[:,:,2]*0.114).astype(np.uint8)
+	#return preprocessSingleFrameNew(img)
 
 # we will use tuples!
 def getNextState(state, nextFrame):
