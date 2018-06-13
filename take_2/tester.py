@@ -33,7 +33,7 @@ COLAB=False
 SAVE_PATH=os.path.join("colaboratory_models", "colab_models") if COLAB else "."
 SAVE_NAME=GAME+str(datetime.datetime.now())
 
-LOAD_PATH="BreakoutDeterministic-v42018-06-04 07:48:49.733810.h5"
+LOAD_PATH="BreakoutDeterministic-v42018-06-07 22:54:59.074564.h5"
 
 INITIAL_REPLAY_MEMORY_SIZE=50000
 MAX_REPLAY_MEMORY_SIZE=1000000 if COLAB else 500000
@@ -43,8 +43,8 @@ MINIBATCH_SIZE=32
 
 GAMMA=0.99
 # network details:
-NET_H=84
-NET_W=84
+NET_H=105
+NET_W=80
 NET_D=4
 LEARNING_RATE = 2.5e-4
 MOMENTUM = 0.95  
@@ -108,9 +108,9 @@ def preprocessSingleFrameNew(img):
 def preprocessSingleFrame(img):
 	# Y = 0.299 R + 0.587 G + 0.114 B
 	# with double downsample
-	#view = img[::2,::2]
-	#return (view[:,:,0]*0.299 + view[:,:,1]*0.587 + view[:,:,2]*0.114).astype(np.uint8)
-	return preprocessSingleFrameNew(img)
+	view = img[::2,::2]
+	return (view[:,:,0]*0.299 + view[:,:,1]*0.587 + view[:,:,2]*0.114).astype(np.uint8)
+	#return preprocessSingleFrameNew(img)
 
 # we will use tuples!
 def getNextState(state, nextFrame):
