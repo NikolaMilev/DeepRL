@@ -25,7 +25,7 @@ import keras.backend as backend
 assert backend.image_data_format()=="channels_last"
 
 # for frame testing purposes only
-#import matplotlib.pyplot as plt
+import matplotlib.pyplot as plt
 
 GAME="BreakoutDeterministic-v4"
 COLAB=False
@@ -37,7 +37,7 @@ SAVE_NAME=GAME+str(datetime.datetime.now())
 NETWORK_UPDATE_FREQUENCY=10000 # in parameter updates, not in steps taken!
 
 INITIAL_REPLAY_MEMORY_SIZE=50000
-MAX_REPLAY_MEMORY_SIZE=1000000 #if COLAB else 500000 # no memory on my own machine for full 1000000 frames so I go to half of that
+MAX_REPLAY_MEMORY_SIZE=1000000 if COLAB else 500000 # no memory on my own machine for full 1000000 frames so I go to half of that
 OBSERVE_MAX=30
 NUM_EPISODES = 20000 if COLAB else 50000 # refers to the number of in-game episodes, not learning episodes
 # one learning episode is separated by loss of life 
@@ -55,7 +55,6 @@ MOMENTUM = 0.95
 MIN_GRAD = 0.01
 #LOSS=huberLoss
 
-output_path="training_output.txt"
 
 TRAIN_FREQUENCY=4
 SAVE_FREQUENCY=10000
@@ -67,13 +66,6 @@ INFO_WRITE_FREQ=10
 # I wish to keep this in one file so that I can use it from a notebook
 
 history=History()
-
-def printmsg(msg):
-	if(output_path):
-			with open(output_path, "a") as out_file:
-				out_file.write(msg+"\n")
-	else:
-		print(msg)
 
 def huberLoss(a, b, inKeras=True):
 	error = a - b
@@ -101,7 +93,7 @@ def buildNetwork(height, width, depth, numActions):
 	opt=RMSprop(lr=LEARNING_RATE, rho=MOMENTUM, epsilon=MIN_GRAD) # , clipvalue=1.0
 	model.compile(loss=LOSS, optimizer=opt)
 
-	printmsg("Built and compiled the network!")
+	print("Built and compiled the network!")
 	return model
 
 def copyModelWeights(srcModel, dstModel):
@@ -129,7 +121,7 @@ def copyModelWeights(srcModel, dstModel):
 def saveModelWeights(model):
 	savePath=os.path.join(SAVE_PATH, SAVE_NAME + ".h5")
 	model.save_weights(savePath)
-	printmsg("Saved weights to {}".format(savePath))
+	print("Saved weights to {}".format(savePath))
 
 def preprocessSingleFrameNew(img):
 	view=img
@@ -225,8 +217,7 @@ class DRLAgent():
 
 
 	def printInfo(self):
-		out = "Ep: {}, Dur: {}, Step: {}, Rew: {:.2f}, Loss: {:.4f}, Eps: {:.4f}, Mem.size: {}".format(self.episodeCount, self.episodeDuration, self.timeStep, self.episodeReward, self.episodeLoss, self.epsilon, self.experienceReplay.size())
-		printmsg(out)
+		print("Ep: {}, Dur: {}, Step: {}, Rew: {:.2f}, Loss: {:.4f}, Eps: {:.4f}, Mem.size: {}".format(self.episodeCount, self.episodeDuration, self.timeStep, self.episodeReward, self.episodeLoss, self.epsilon, self.experienceReplay.size()))
 
 	def chooseAction(self, state):
 		retval=None
@@ -265,7 +256,7 @@ class DRLAgent():
 
 		if(USE_TARGET_NETWORK and self.parameterUpdates % NETWORK_UPDATE_FREQUENCY == 0):
 			copyModelWeights(srcModel=self.qNetwork, dstModel=self.targetNetwork)
-			printmsg("Updated target network!")
+			print("Updated target network!")
 
 		
 	def learn(self, numEpisodes=NUM_EPISODES):
