@@ -60,7 +60,7 @@ MIN_GRAD = 0.01
 output_path=os.path.join(SAVE_PATH, "training_output.txt")
 
 TRAIN_FREQUENCY=4       # we train the network each TRAIN_FREQUENCY time steps
-SAVE_FREQUENCY=10000   # we save the network each SAVE_FREQUENCY 
+SAVE_FREQUENCY=25000   # we save the network each SAVE_FREQUENCY 
 PADDING="valid"
 
 INFO_WRITE_FREQ=10
@@ -366,8 +366,8 @@ class DRLAgent():
 
 				self.timeStep+=1
 				state=nextState
-			if self.timeStep % 50000 == 0:
-				printmsg("Step {}".format(self.timeStep))
+				if self.timeStep % 50000 == 0:
+					printmsg("Step {}".format(self.timeStep))
 
 
 agent=DRLAgent(GAME)
