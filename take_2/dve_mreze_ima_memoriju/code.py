@@ -25,7 +25,7 @@ import keras.backend as backend
 assert backend.image_data_format()=="channels_last"
 
 # for frame testing purposes only
-#import matplotlib.pyplot as plt
+import matplotlib.pyplot as plt
 
 GAME="BreakoutDeterministic-v4"
 COLAB=False
@@ -37,10 +37,9 @@ SAVE_NAME=GAME+str(datetime.datetime.now())
 NETWORK_UPDATE_FREQUENCY=10000 # in parameter updates, not in steps taken!
 
 INITIAL_REPLAY_MEMORY_SIZE=50000
-MAX_REPLAY_MEMORY_SIZE=1000000 #if COLAB else 500000 # no memory on my own machine for full 1000000 frames so I go to half of that
+MAX_REPLAY_MEMORY_SIZE=1000000 if COLAB else 500000 # no memory on my own machine for full 1000000 frames so I go to half of that
 OBSERVE_MAX=30
 NUM_EPISODES = 20000 if COLAB else 50000 # refers to the number of in-game episodes, not learning episodes
-TIMESTEP_LIMIT = 25000000
 # one learning episode is separated by loss of life 
 MINIBATCH_SIZE=32
 INITIAL_EPSILON=1.0
@@ -51,36 +50,22 @@ GAMMA=0.99
 NET_H=105
 NET_W=80
 NET_D=4
-# lr je 2.5e-4 u originalnom radu a 5e-5 u novom, poboljsanom
 LEARNING_RATE = 2.5e-4
 MOMENTUM = 0.95  
 MIN_GRAD = 0.01
 #LOSS=huberLoss
 
-output_path=os.path.join(SAVE_PATH, "training_output.txt")
 
-TRAIN_FREQUENCY=4       # we train the network each TRAIN_FREQUENCY time steps
-SAVE_FREQUENCY=25000   # we save the network each SAVE_FREQUENCY 
+TRAIN_FREQUENCY=4
+SAVE_FREQUENCY=10000
 PADDING="valid"
 
 INFO_WRITE_FREQ=10
 
-TEST_STEPS=10000 # timesteps to test
-TEST_FREQ=200000 # test frequency in steps 
-TEST_SET=None
-TEST_SET_SIZE=1000
-TEST_EPSILON=0.05
 # Utility functions
 # I wish to keep this in one file so that I can use it from a notebook
 
 history=History()
-
-def printmsg(msg):
-	if(output_path):
-			with open(output_path, "a") as out_file:
-				out_file.write(msg+"\n")
-	else:
-		print(msg)
 
 def huberLoss(a, b, inKeras=True):
 	error = a - b
@@ -108,7 +93,7 @@ def buildNetwork(height, width, depth, numActions):
 	opt=RMSprop(lr=LEARNING_RATE, rho=MOMENTUM, epsilon=MIN_GRAD) # , clipvalue=1.0
 	model.compile(loss=LOSS, optimizer=opt)
 
-	printmsg("Built and compiled the network!")
+	print("Built and compiled the network!")
 	return model
 
 def copyModelWeights(srcModel, dstModel):
@@ -133,10 +118,10 @@ def copyModelWeights(srcModel, dstModel):
 # 	print("Built and compiled the network!")
 # 	return model
 
-def saveModelWeights(model, name=SAVE_NAME):
-	savePath=os.path.join(SAVE_PATH, name + ".h5")
+def saveModelWeights(model):
+	savePath=os.path.join(SAVE_PATH, SAVE_NAME + ".h5")
 	model.save_weights(savePath)
-	printmsg("Saved weights to {}".format(savePath))
+	print("Saved weights to {}".format(savePath))
 
 def preprocessSingleFrameNew(img):
 	view=img
@@ -178,13 +163,9 @@ class ExperienceReplay():
 	def size(self):
 		return len(self.memory)
 	def addTuple(self, state, action, reward, nextState, terminal):
-		global TEST_SET
 		self.memory.append((state, action, reward, nextState, terminal))
-		if self.size() == INITIAL_REPLAY_MEMORY_SIZE and TEST_SET is None:
-			# we randomly select a set of TEST_SET_SIZE states
-			sample = random.sample(self.memory, TEST_SET_SIZE)
-			TEST_SET = np.array([np.stack([frame for frame in tup[0]], axis=2) for tup in sample])
-
+	def addItem(self, item):
+		self.memory.append(item)
 	def sample(self, sampleSize=MINIBATCH_SIZE):
 		return random.sample(self.memory, sampleSize)
 	def getMiniBatch(self, sampleSize=MINIBATCH_SIZE):
@@ -214,12 +195,17 @@ class DRLAgent():
 		if(USE_TARGET_NETWORK):
 			self.targetNetwork=buildNetwork(NET_H, NET_W, NET_D, self.numActions)
 			copyModelWeights(srcModel=self.qNetwork, dstModel=self.targetNetwork)
-		self.bestReward=-1.0
-
 		# actions chosen
 		self.timeStep=0
 		# episode count
 		self.episodeCount=0
+		# total episode reward
+		self.episodeReward=0.0
+		# total episode loss; has nothing to do with reward as the loss
+		# is obtained by training on random batches
+		self.episodeLoss=0.0
+		# the total episode duration in frames, including no-op frames
+		self.episodeDuration=0
 
 		# the initial epsilon (exploration) value
 		self.epsilon=INITIAL_EPSILON
@@ -231,8 +217,7 @@ class DRLAgent():
 
 
 	def printInfo(self):
-		out = "Ep: {}, Dur: {}, Step: {}, Rew: {:.2f}, Loss: {:.4f}, Eps: {:.4f}, Mem.size: {}".format(self.episodeCount, self.episodeDuration, self.timeStep, self.episodeReward, self.episodeLoss, self.epsilon, self.experienceReplay.size())
-		printmsg(out)
+		print("Ep: {}, Dur: {}, Step: {}, Rew: {:.2f}, Loss: {:.4f}, Eps: {:.4f}, Mem.size: {}".format(self.episodeCount, self.episodeDuration, self.timeStep, self.episodeReward, self.episodeLoss, self.epsilon, self.experienceReplay.size()))
 
 	def chooseAction(self, state):
 		retval=None
@@ -267,81 +252,27 @@ class DRLAgent():
 		#self.episodeLoss += self.qNetwork.train_on_batch([states, actions], y)
 
 		hist=self.qNetwork.fit([states, actions], y, batch_size=batchSize, epochs=1, verbose=0)
-		#self.episodeLoss+=np.mean(hist.history['loss'])
+		self.episodeLoss+=np.mean(hist.history['loss'])
 
-		# if self.parameterUpdates % 1000 == 0:
-		# 	printmsg("Parameter Updates: {}".format(self.parameterUpdates))
-
-		if USE_TARGET_NETWORK and (self.parameterUpdates % NETWORK_UPDATE_FREQUENCY == 0):
+		if(USE_TARGET_NETWORK and self.parameterUpdates % NETWORK_UPDATE_FREQUENCY == 0):
 			copyModelWeights(srcModel=self.qNetwork, dstModel=self.targetNetwork)
-			printmsg("Updated target network!")
-
-
-	def test(self, network, numSteps=TEST_STEPS):
-		
-		# calculate average max Q for fixed states
-		if TEST_SET is None:
-			printmsg("Test set None!")
-			return
-		qs = network.predict([TEST_SET, np.ones((len(TEST_SET),self.numActions))], batch_size=len(TEST_SET))
-		qs = np.max(qs, axis=1)
-
-		# make a new environment and test on it for average reward per episode on the target network
-		testEnv=gym.make(self.envName)
-		testTimeStep=0
-		testReward=0
-		testEpisode=0
-		numActions=testEnv.action_space.n
-		duration=0
-		for testEpisode in range(TEST_STEPS): # there will be no more than TEST_STEPS episodes, for sure!
-			#printmsg("{}".format(testTimeStep))
-			if testTimeStep >= TEST_STEPS:
-				break
-			terminal=False
-			observation=testEnv.reset() # return frame
-
-			for _ in range(random.randint(1, OBSERVE_MAX)):
-				observation, _, _, info=testEnv.step(0)
-
-			frame=preprocessSingleFrame(observation)
-			state=(frame, frame, frame, frame)
-			
-			while not terminal:
-				duration+=1
-				# choose an action
-				if np.random.rand() < TEST_EPSILON:
-					action = testEnv.action_space.sample()
-				else:
-					stackedState=np.stack(state, axis=2)
-					y=network.predict([np.expand_dims(stackedState, axis=0), np.expand_dims(np.ones(numActions), axis=0)])
-					action=np.argmax(y, axis=1)
-				# send the action to the environment
-				observation, reward, terminal, info = testEnv.step(action)
-				testReward+=reward
-				testTimeStep+=1
-				state=getNextState(state, observation)
-		testEnv.close()
-		meanQs=np.mean(qs)
-		avgReward=testReward*1.0/testEpisode
-		avgDuration=duration*1.0/testEpisode
-		printmsg("Avg Q value: {:.4f} Avg testing reward: {:.4f} Avg duration: {:.4f}".format(meanQs, avgReward, avgDuration))	
-		return (meanQs, avgReward, avgDuration)
-
+			print("Updated target network!")
 
 		
 	def learn(self, numEpisodes=NUM_EPISODES):
 		self.timeStep=0
 		for self.episodeCount in range(numEpisodes):
-
-			# we quit if training is done
-			if self.timeStep >= TIMESTEP_LIMIT:
-				break
+			self.episodeDuration=0
+			self.episodeLoss=0
+			self.episodeReward=0
+			self.episodeDuration=0
 
 			terminal=False
 			observation=self.env.reset() # return frame
 
 			for _ in range(random.randint(1, OBSERVE_MAX)):
 				observation, _, _, info=self.env.step(0)
+				self.episodeDuration += 1
 			curLives=info['ale.lives']
 			frame=preprocessSingleFrame(observation)
 			state=(frame, frame, frame, frame)
@@ -359,32 +290,29 @@ class DRLAgent():
 				curLives=newLives
 				nextState=getNextState(state, observation)
 				# I wish to see the raw reward
+				self.episodeReward+=reward
 				reward=transformReward(reward)
 				self.experienceReplay.addTuple(state, action, reward, nextState, terminalToInsert)
 				
 				if self.experienceReplay.size() >= INITIAL_REPLAY_MEMORY_SIZE:
 					if self.timeStep % TRAIN_FREQUENCY == 0:
 						self.trainOnBatch()
-						if self.parameterUpdates % SAVE_FREQUENCY == 0:
-							if(USE_TARGET_NETWORK):
-								saveModelWeights(self.targetNetwork)
-							else:
-								saveModelWeights(self.qNetwork)
-
-					if self.timeStep % TEST_FREQ == 0:
-						(meanQs, avgReward, avgDuration)=self.test(self.targetNetwork if USE_TARGET_NETWORK else self.qNetwork)
-						# saving the network that produced the best reward
-						if avgReward > self.bestReward:
-							self.bestReward=avgReward
-							saveModelWeights(model, name="best_network")
-
-
+					if self.timeStep % SAVE_FREQUENCY == 0:
+						if(USE_TARGET_NETWORK):
+							saveModelWeights(self.targetNetwork)
+						else:
+							saveModelWeights(self.qNetwork)
 
 				self.timeStep+=1
+				self.episodeDuration += 1
+				
+				
 				state=nextState
-				if self.timeStep % 50000 == 0:
-					printmsg("Step {}".format(self.timeStep))
 
+			if self.episodeCount % INFO_WRITE_FREQ == 0:
+				self.printInfo()
+				# plt.imshow(nextState[0])
+				# plt.show()
 
 agent=DRLAgent(GAME)
 agent.learn()
