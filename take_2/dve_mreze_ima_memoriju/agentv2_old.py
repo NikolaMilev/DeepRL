@@ -40,7 +40,7 @@ INITIAL_REPLAY_MEMORY_SIZE=50000
 MAX_REPLAY_MEMORY_SIZE=1000000 #if COLAB else 500000 # no memory on my own machine for full 1000000 frames so I go to half of that
 OBSERVE_MAX=30
 NUM_EPISODES = 20000 if COLAB else 50000 # refers to the number of in-game episodes, not learning episodes
-TIMESTEP_LIMIT = 25000000
+TIMESTEP_LIMIT = 11000000
 # one learning episode is separated by loss of life 
 MINIBATCH_SIZE=32
 INITIAL_EPSILON=1.0
@@ -52,7 +52,7 @@ NET_H=105
 NET_W=80
 NET_D=4
 # lr je 2.5e-4 u originalnom radu a 5e-5 u novom, poboljsanom
-LEARNING_RATE = 2.5e-4
+LEARNING_RATE = 5e-5
 MOMENTUM = 0.95  
 MIN_GRAD = 0.01
 #LOSS=huberLoss
@@ -66,7 +66,7 @@ PADDING="valid"
 INFO_WRITE_FREQ=10
 
 TEST_STEPS=10000 # timesteps to test
-TEST_FREQ=200000 # test frequency in steps 
+TEST_FREQ=50000 # test frequency in parameter updates 
 TEST_SET=None
 TEST_SET_SIZE=1000
 TEST_EPSILON=0.05
@@ -133,8 +133,8 @@ def copyModelWeights(srcModel, dstModel):
 # 	print("Built and compiled the network!")
 # 	return model
 
-def saveModelWeights(model, name=SAVE_NAME):
-	savePath=os.path.join(SAVE_PATH, name + ".h5")
+def saveModelWeights(model):
+	savePath=os.path.join(SAVE_PATH, SAVE_NAME + ".h5")
 	model.save_weights(savePath)
 	printmsg("Saved weights to {}".format(savePath))
 
@@ -214,8 +214,6 @@ class DRLAgent():
 		if(USE_TARGET_NETWORK):
 			self.targetNetwork=buildNetwork(NET_H, NET_W, NET_D, self.numActions)
 			copyModelWeights(srcModel=self.qNetwork, dstModel=self.targetNetwork)
-		self.bestReward=-1.0
-
 		# actions chosen
 		self.timeStep=0
 		# episode count
@@ -292,7 +290,6 @@ class DRLAgent():
 		testReward=0
 		testEpisode=0
 		numActions=testEnv.action_space.n
-		duration=0
 		for testEpisode in range(TEST_STEPS): # there will be no more than TEST_STEPS episodes, for sure!
 			#printmsg("{}".format(testTimeStep))
 			if testTimeStep >= TEST_STEPS:
@@ -307,7 +304,6 @@ class DRLAgent():
 			state=(frame, frame, frame, frame)
 			
 			while not terminal:
-				duration+=1
 				# choose an action
 				if np.random.rand() < TEST_EPSILON:
 					action = testEnv.action_space.sample()
@@ -321,12 +317,7 @@ class DRLAgent():
 				testTimeStep+=1
 				state=getNextState(state, observation)
 		testEnv.close()
-		meanQs=np.mean(qs)
-		avgReward=testReward*1.0/testEpisode
-		avgDuration=duration*1.0/testEpisode
-		printmsg("Avg Q value: {:.4f} Avg testing reward: {:.4f} Avg duration: {:.4f}".format(meanQs, avgReward, avgDuration))	
-		return (meanQs, avgReward, avgDuration)
-
+		printmsg("Avg Q value: {:.4f} Avg testing reward: {:.4f}".format(np.mean(qs), testReward*1.0/testEpisode))	
 
 		
 	def learn(self, numEpisodes=NUM_EPISODES):
@@ -365,20 +356,13 @@ class DRLAgent():
 				if self.experienceReplay.size() >= INITIAL_REPLAY_MEMORY_SIZE:
 					if self.timeStep % TRAIN_FREQUENCY == 0:
 						self.trainOnBatch()
+						if self.parameterUpdates % TEST_FREQ == 0:
+							self.test(self.targetNetwork if USE_TARGET_NETWORK else self.qNetwork)
 						if self.parameterUpdates % SAVE_FREQUENCY == 0:
 							if(USE_TARGET_NETWORK):
 								saveModelWeights(self.targetNetwork)
 							else:
 								saveModelWeights(self.qNetwork)
-
-					if self.timeStep % TEST_FREQ == 0:
-						(meanQs, avgReward, avgDuration)=self.test(self.targetNetwork if USE_TARGET_NETWORK else self.qNetwork)
-						# saving the network that produced the best reward
-						if avgReward > self.bestReward:
-							self.bestReward=avgReward
-							saveModelWeights(model, name="best_network")
-
-
 
 				self.timeStep+=1
 				state=nextState
