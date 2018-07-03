@@ -37,7 +37,7 @@ SAVE_NAME=GAME+str(datetime.datetime.now())
 NETWORK_UPDATE_FREQUENCY=10000 # in parameter updates, not in steps taken!
 
 INITIAL_REPLAY_MEMORY_SIZE=50000
-MAX_REPLAY_MEMORY_SIZE=500000 #if COLAB else 500000 # no memory on my own machine for full 1000000 frames so I go to half of that
+MAX_REPLAY_MEMORY_SIZE=1000000 #if COLAB else 500000 # no memory on my own machine for full 1000000 frames so I go to half of that
 OBSERVE_MAX=30
 NUM_EPISODES = 20000 if COLAB else 50000 # refers to the number of in-game episodes, not learning episodes
 TIMESTEP_LIMIT = 25000000
