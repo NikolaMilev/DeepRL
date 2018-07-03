@@ -25,7 +25,7 @@ import keras.backend as backend
 assert backend.image_data_format()=="channels_last"
 
 # for frame testing purposes only
-import matplotlib.pyplot as plt
+#import matplotlib.pyplot as plt
 
 GAME="BreakoutDeterministic-v4"
 COLAB=False
@@ -33,7 +33,7 @@ COLAB=False
 SAVE_PATH=os.path.join("colaboratory_models", "colab_models") if COLAB else "."
 SAVE_NAME=GAME+str(datetime.datetime.now())
 
-LOAD_PATH="BreakoutDeterministic-v42018-06-07 22:54:59.074564.h5"
+LOAD_PATH=os.path.join("dve_mreze_ima_memoriju", "BreakoutDeterministic-v42018-06-23 09:47:26.385282.h5")
 
 INITIAL_REPLAY_MEMORY_SIZE=50000
 MAX_REPLAY_MEMORY_SIZE=1000000 if COLAB else 500000
@@ -178,7 +178,7 @@ class DRLAgent():
 			for _ in range(random.randint(1, OBSERVE_MAX)):
 				observation, _, _, _=self.env.step(0)
 				self.episodeDuration += 1
-				self.env.render()
+				#self.env.render()
 				time.sleep(1/60.0)
 			
 			frame=preprocessSingleFrame(observation)
@@ -191,7 +191,7 @@ class DRLAgent():
 				# I wish to see the raw reward
 				self.episodeReward+=reward
 				reward=transformReward(reward)
-				self.env.render()
+				#self.env.render()
 				self.timeStep+=1
 				self.episodeDuration += 1
 				time.sleep(1/60.0)
