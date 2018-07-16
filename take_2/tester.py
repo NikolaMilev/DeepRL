@@ -23,7 +23,7 @@ import os
 # to make sure the image data is in the correct order
 import keras.backend as backend
 assert backend.image_data_format()=="channels_last"
-
+from gym import wrappers
 # for frame testing purposes only
 #import matplotlib.pyplot as plt
 
@@ -33,12 +33,12 @@ COLAB=False
 SAVE_PATH=os.path.join("colaboratory_models", "colab_models") if COLAB else "."
 SAVE_NAME=GAME+str(datetime.datetime.now())
 
-LOAD_PATH=os.path.join("dve_mreze_ima_memoriju", "BreakoutDeterministic-v42018-06-23 09:47:26.385282.h5")
+LOAD_PATH=os.path.join("dve_mreze_ima_memoriju/rezultati_25kk", "best_network.h5")
 
 INITIAL_REPLAY_MEMORY_SIZE=50000
 MAX_REPLAY_MEMORY_SIZE=1000000 if COLAB else 500000
 OBSERVE_MAX=30
-NUM_EPISODES = 10
+NUM_EPISODES = 1
 MINIBATCH_SIZE=32
 
 GAMMA=0.99
@@ -51,7 +51,8 @@ MOMENTUM = 0.95
 MIN_GRAD = 0.01
 #LOSS=huberLoss
 TRAIN_EPSILON=0
-
+RENDER=True
+VIDEO_SAVE=False
 
 PADDING="valid"
 
@@ -124,6 +125,8 @@ class DRLAgent():
 	def __init__(self, envName):
 		self.envName=envName
 		self.env=gym.make(self.envName)
+		if VIDEO_SAVE:
+			self.env=wrappers.Monitor(self.env, "video", force=True, video_callable=lambda episode_id: True)
 		self.numActions=self.env.action_space.n
 		self.qNetwork=getModel(LOAD_PATH, NET_H, NET_W, NET_D, self.numActions)
 
@@ -178,7 +181,8 @@ class DRLAgent():
 			for _ in range(random.randint(1, OBSERVE_MAX)):
 				observation, _, _, _=self.env.step(0)
 				self.episodeDuration += 1
-				#self.env.render()
+				if RENDER:
+					self.env.render()
 				time.sleep(1/60.0)
 			
 			frame=preprocessSingleFrame(observation)
@@ -191,7 +195,8 @@ class DRLAgent():
 				# I wish to see the raw reward
 				self.episodeReward+=reward
 				reward=transformReward(reward)
-				#self.env.render()
+				if RENDER:
+					self.env.render()
 				self.timeStep+=1
 				self.episodeDuration += 1
 				time.sleep(1/60.0)
