@@ -52,7 +52,7 @@ NET_H=105
 NET_W=80
 NET_D=4
 # lr je 2.5e-4 u originalnom radu a 5e-5 u novom, poboljsanom
-LEARNING_RATE = 2.5e-4
+LEARNING_RATE = 2.5e-2
 MOMENTUM = 0.95  
 MIN_GRAD = 0.01
 #LOSS=huberLoss
