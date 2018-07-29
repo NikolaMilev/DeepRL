@@ -52,7 +52,7 @@ NET_H=105
 NET_W=80
 NET_D=4
 # lr je 2.5e-4 u originalnom radu a 5e-5 u novom, poboljsanom
-LEARNING_RATE = 2.5e-2
+LEARNING_RATE = 2.5e-3
 MOMENTUM = 0.95  
 MIN_GRAD = 0.01
 #LOSS=huberLoss
@@ -68,7 +68,7 @@ INFO_WRITE_FREQ=10
 TEST_STEPS=10000 # timesteps to test
 TEST_FREQ=200000 # test frequency in steps 
 TEST_SET=None
-TEST_SET_SIZE=1000
+TEST_SET_SIZE=2000
 TEST_EPSILON=0.05
 # Utility functions
 # I wish to keep this in one file so that I can use it from a notebook
@@ -105,7 +105,7 @@ def buildNetwork(height, width, depth, numActions):
 	out=Dense(units=numActions, activation="linear")(dense)
 	filtered_out=Multiply()([out, action_in])
 	model=Model(inputs=[state_in, action_in], outputs=filtered_out)
-	opt=RMSprop(lr=LEARNING_RATE, rho=MOMENTUM, epsilon=MIN_GRAD) # , clipvalue=1.0
+	opt=RMSprop(lr=LEARNING_RATE, rho=MOMENTUM, epsilon=MIN_GRAD, clipvalue=1.0) # , clipvalue=1.0
 	model.compile(loss=LOSS, optimizer=opt)
 
 	printmsg("Built and compiled the network!")

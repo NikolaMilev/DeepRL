@@ -1,4 +1,0 @@
-Built and compiled the network!
-Avg learning reward last 100 episodes: 0.0000
-Avg learning reward last 100 episodes: 0.9600
-Avg learning reward last 100 episodes: 1.0500
