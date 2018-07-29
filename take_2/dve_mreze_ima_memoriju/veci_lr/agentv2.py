@@ -30,7 +30,7 @@ assert backend.image_data_format()=="channels_last"
 GAME="BreakoutDeterministic-v4"
 COLAB=False
 
-USE_TARGET_NETWORK=False
+USE_TARGET_NETWORK=True
 SAVE_PATH=os.path.join("colaboratory_models", "colab_models") if COLAB else "."
 SAVE_NAME=GAME+str(datetime.datetime.now())
 
@@ -68,7 +68,7 @@ INFO_WRITE_FREQ=10
 TEST_STEPS=10000 # timesteps to test
 TEST_FREQ=200000 # test frequency in steps 
 TEST_SET=None
-TEST_SET_SIZE=2000
+TEST_SET_SIZE=1000
 TEST_EPSILON=0.05
 # Utility functions
 # I wish to keep this in one file so that I can use it from a notebook
