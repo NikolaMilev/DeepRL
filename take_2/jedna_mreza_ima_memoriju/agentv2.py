@@ -40,7 +40,7 @@ INITIAL_REPLAY_MEMORY_SIZE=50000
 MAX_REPLAY_MEMORY_SIZE=1000000 #if COLAB else 500000 # no memory on my own machine for full 1000000 frames so I go to half of that
 OBSERVE_MAX=30
 NUM_EPISODES = 20000 if COLAB else 50000 # refers to the number of in-game episodes, not learning episodes
-TIMESTEP_LIMIT = 25000000
+TIMESTEP_LIMIT = 10000000
 # one learning episode is separated by loss of life 
 MINIBATCH_SIZE=32
 INITIAL_EPSILON=1.0
