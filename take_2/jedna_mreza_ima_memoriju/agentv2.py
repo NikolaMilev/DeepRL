@@ -255,10 +255,7 @@ class DRLAgent():
 		self.parameterUpdates+=1
 		states, actions, rewards, nextStates, terminals=self.experienceReplay.getMiniBatch()
 		actions=to_categorical(actions, num_classes=self.numActions)
-		if(USE_TARGET_NETWORK):
-			nextStateValues=self.targetNetwork.predict([nextStates, np.ones(actions.shape)], batch_size=batchSize)
-		else:
-			nextStateValues=self.qNetwork.predict([nextStates, np.ones(actions.shape)], batch_size=batchSize)
+		nextStateValues=self.qNetwork.predict([nextStates, np.ones(actions.shape)], batch_size=batchSize)
 		assert terminals.dtype==bool
 		nextStateValues[terminals]=0
 		# 

@@ -33,7 +33,7 @@ COLAB=False
 SAVE_PATH=os.path.join("colaboratory_models", "colab_models") if COLAB else "."
 SAVE_NAME=GAME+str(datetime.datetime.now())
 
-LOAD_PATH=os.path.join("dve_mreze_ima_memoriju/rezultati_25kk", "best_network.h5")
+LOAD_PATH=os.path.join("dve_mreze_ima_memoriju/rezultati_10kk", "best_network.h5")
 
 INITIAL_REPLAY_MEMORY_SIZE=50000
 MAX_REPLAY_MEMORY_SIZE=1000000 if COLAB else 500000

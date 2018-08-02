@@ -238,10 +238,7 @@ class DRLAgent():
 			retval=self.env.action_space.sample()
 		else:
 			stacked_state=np.stack(state, axis=2)
-			if(USE_TARGET_NETWORK):
-				y=self.targetNetwork.predict([np.expand_dims(stacked_state, axis=0), np.expand_dims(np.ones(self.numActions), axis=0)])
-			else:
-				y=self.qNetwork.predict([np.expand_dims(stacked_state, axis=0), np.expand_dims(np.ones(self.numActions), axis=0)])
+			y=self.qNetwork.predict([np.expand_dims(stacked_state, axis=0), np.expand_dims(np.ones(self.numActions), axis=0)])
 			retval=np.argmax(y, axis=1)
 		assert retval!=None
 
