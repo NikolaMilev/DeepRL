@@ -240,10 +240,7 @@ class DRLAgent():
 			retval=self.env.action_space.sample()
 		else:
 			stacked_state=np.stack(state, axis=2)
-			if(USE_TARGET_NETWORK):
-				y=self.targetNetwork.predict([np.expand_dims(stacked_state, axis=0), np.expand_dims(np.ones(self.numActions), axis=0)])
-			else:
-				y=self.qNetwork.predict([np.expand_dims(stacked_state, axis=0), np.expand_dims(np.ones(self.numActions), axis=0)])
+			y=self.qNetwork.predict([np.expand_dims(stacked_state, axis=0), np.expand_dims(np.ones(self.numActions), axis=0)])
 			retval=np.argmax(y, axis=1)
 		assert retval!=None
 
@@ -255,7 +252,10 @@ class DRLAgent():
 		self.parameterUpdates+=1
 		states, actions, rewards, nextStates, terminals=self.experienceReplay.getMiniBatch()
 		actions=to_categorical(actions, num_classes=self.numActions)
-		nextStateValues=self.qNetwork.predict([nextStates, np.ones(actions.shape)], batch_size=batchSize)
+		if(USE_TARGET_NETWORK):
+			nextStateValues=self.targetNetwork.predict([nextStates, np.ones(actions.shape)], batch_size=batchSize)
+		else:
+			nextStateValues=self.qNetwork.predict([nextStates, np.ones(actions.shape)], batch_size=batchSize)		
 		assert terminals.dtype==bool
 		nextStateValues[terminals]=0
 		# 
