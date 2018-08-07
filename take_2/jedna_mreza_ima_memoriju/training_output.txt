@@ -1,0 +1,202 @@
+Built and compiled the network!
+Avg learning reward last 100 episodes: 0.0000
+Avg learning reward last 100 episodes: 0.9600
+Avg learning reward last 100 episodes: 1.0500
+Step 50000
+Avg learning reward last 100 episodes: 1.1500
+Avg learning reward last 100 episodes: 1.0400
+Avg learning reward last 100 episodes: 1.0000
+Step 100000
+Avg learning reward last 100 episodes: 1.3600
+Avg learning reward last 100 episodes: 1.2700
+Avg learning reward last 100 episodes: 1.1200
+Saved weights to ./BreakoutDeterministic-v42018-08-06 08:10:46.277909.h5
+Step 150000
+Avg learning reward last 100 episodes: 1.2700
+Avg learning reward last 100 episodes: 1.1900
+Avg learning reward last 100 episodes: 1.0600
+Step 200000
+Avg Q value: 1.1870 Avg testing reward: 1.0806 Avg duration: 163.3710
+Saved weights to ./best_network.h5
+Avg learning reward last 100 episodes: 1.3400
+Avg learning reward last 100 episodes: 1.2400
+Saved weights to ./BreakoutDeterministic-v42018-08-06 08:10:46.277909.h5
+Step 250000
+Avg learning reward last 100 episodes: 1.4900
+Avg learning reward last 100 episodes: 1.4400
+Avg learning reward last 100 episodes: 1.3200
+Step 300000
+Avg learning reward last 100 episodes: 1.2000
+Avg learning reward last 100 episodes: 1.5900
+Avg learning reward last 100 episodes: 1.5500
+Saved weights to ./BreakoutDeterministic-v42018-08-06 08:10:46.277909.h5
+Step 350000
+Avg learning reward last 100 episodes: 1.8600
+Avg learning reward last 100 episodes: 2.1300
+Step 400000
+Avg Q value: 1.9022 Avg testing reward: 0.9701 Avg duration: 150.5522
+Avg learning reward last 100 episodes: 2.4700
+Avg learning reward last 100 episodes: 1.6400
+Avg learning reward last 100 episodes: 1.5300
+Saved weights to ./BreakoutDeterministic-v42018-08-06 08:10:46.277909.h5
+Step 450000
+Avg learning reward last 100 episodes: 1.4100
+Avg learning reward last 100 episodes: 2.3100
+Step 500000
+Avg learning reward last 100 episodes: 1.9400
+Avg learning reward last 100 episodes: 1.7500
+Avg learning reward last 100 episodes: 2.0700
+Saved weights to ./BreakoutDeterministic-v42018-08-06 08:10:46.277909.h5
+Step 550000
+Avg learning reward last 100 episodes: 2.1600
+Avg learning reward last 100 episodes: 2.4000
+Step 600000
+Avg Q value: 0.2819 Avg testing reward: 0.4167 Avg duration: 429.5833
+Avg learning reward last 100 episodes: 2.6100
+Avg learning reward last 100 episodes: 2.7800
+Saved weights to ./BreakoutDeterministic-v42018-08-06 08:10:46.277909.h5
+Step 650000
+Avg learning reward last 100 episodes: 2.6700
+Avg learning reward last 100 episodes: 2.3100
+Step 700000
+Avg learning reward last 100 episodes: 2.9800
+Avg learning reward last 100 episodes: 2.5000
+Saved weights to ./BreakoutDeterministic-v42018-08-06 08:10:46.277909.h5
+Step 750000
+Avg learning reward last 100 episodes: 3.6200
+Avg learning reward last 100 episodes: 4.4000
+Step 800000
+Avg Q value: 0.3362 Avg testing reward: 10.3571 Avg duration: 743.9286
+Saved weights to ./best_network.h5
+Avg learning reward last 100 episodes: 3.0200
+Avg learning reward last 100 episodes: 4.0400
+Saved weights to ./BreakoutDeterministic-v42018-08-06 08:10:46.277909.h5
+Step 850000
+Avg learning reward last 100 episodes: 3.9300
+Avg learning reward last 100 episodes: 3.5300
+Step 900000
+Avg learning reward last 100 episodes: 4.0800
+Avg learning reward last 100 episodes: 4.2400
+Saved weights to ./BreakoutDeterministic-v42018-08-06 08:10:46.277909.h5
+Step 950000
+Avg learning reward last 100 episodes: 4.5000
+Step 1000000
+Avg Q value: 0.4332 Avg testing reward: 10.4706 Avg duration: 618.1765
+Saved weights to ./best_network.h5
+Avg learning reward last 100 episodes: 4.8800
+Avg learning reward last 100 episodes: 5.3600
+Saved weights to ./BreakoutDeterministic-v42018-08-06 08:10:46.277909.h5
+Step 1050000
+Avg learning reward last 100 episodes: 5.5600
+Step 1100000
+Avg learning reward last 100 episodes: 5.0400
+Saved weights to ./BreakoutDeterministic-v42018-08-06 08:10:46.277909.h5
+Step 1150000
+Avg learning reward last 100 episodes: 5.7700
+Avg learning reward last 100 episodes: 6.6600
+Step 1200000
+Avg Q value: 0.4773 Avg testing reward: 10.4667 Avg duration: 693.4667
+Avg learning reward last 100 episodes: 6.5300
+Saved weights to ./BreakoutDeterministic-v42018-08-06 08:10:46.277909.h5
+Step 1250000
+Avg learning reward last 100 episodes: 5.6100
+Step 1300000
+Avg learning reward last 100 episodes: 5.9400
+Avg learning reward last 100 episodes: 5.9400
+Saved weights to ./BreakoutDeterministic-v42018-08-06 08:10:46.277909.h5
+Step 1350000
+Avg learning reward last 100 episodes: 6.2700
+Step 1400000
+Avg Q value: 0.4934 Avg testing reward: 0.1500 Avg duration: 501.7000
+Avg learning reward last 100 episodes: 5.2900
+Saved weights to ./BreakoutDeterministic-v42018-08-06 08:10:46.277909.h5
+Step 1450000
+Avg learning reward last 100 episodes: 5.2500
+Avg learning reward last 100 episodes: 5.2100
+Step 1500000
+Avg learning reward last 100 episodes: 6.5100
+Saved weights to ./BreakoutDeterministic-v42018-08-06 08:10:46.277909.h5
+Step 1550000
+Avg learning reward last 100 episodes: 5.2100
+Step 1600000
+Avg Q value: 0.5398 Avg testing reward: 0.1000 Avg duration: 528.7500
+Avg learning reward last 100 episodes: 6.1300
+Avg learning reward last 100 episodes: 5.3600
+Saved weights to ./BreakoutDeterministic-v42018-08-06 08:10:46.277909.h5
+Step 1650000
+Avg learning reward last 100 episodes: 5.9000
+Step 1700000
+Avg learning reward last 100 episodes: 5.7900
+Saved weights to ./BreakoutDeterministic-v42018-08-06 08:10:46.277909.h5
+Step 1750000
+Avg learning reward last 100 episodes: 6.1800
+Avg learning reward last 100 episodes: 5.0900
+Step 1800000
+Avg Q value: 0.5516 Avg testing reward: 10.5625 Avg duration: 645.9375
+Saved weights to ./best_network.h5
+Avg learning reward last 100 episodes: 5.9400
+Saved weights to ./BreakoutDeterministic-v42018-08-06 08:10:46.277909.h5
+Step 1850000
+Avg learning reward last 100 episodes: 5.7600
+Step 1900000
+Avg learning reward last 100 episodes: 5.6100
+Avg learning reward last 100 episodes: 4.5400
+Saved weights to ./BreakoutDeterministic-v42018-08-06 08:10:46.277909.h5
+Step 1950000
+Avg learning reward last 100 episodes: 6.3000
+Step 2000000
+Avg Q value: 0.5314 Avg testing reward: 0.5000 Avg duration: 508.5000
+Avg learning reward last 100 episodes: 5.9600
+Saved weights to ./BreakoutDeterministic-v42018-08-06 08:10:46.277909.h5
+Step 2050000
+Avg learning reward last 100 episodes: 5.6800
+Avg learning reward last 100 episodes: 6.0800
+Step 2100000
+Avg learning reward last 100 episodes: 5.8300
+Saved weights to ./BreakoutDeterministic-v42018-08-06 08:10:46.277909.h5
+Step 2150000
+Avg learning reward last 100 episodes: 6.2900
+Step 2200000
+Avg Q value: 0.5075 Avg testing reward: 11.0000 Avg duration: 770.0769
+Saved weights to ./best_network.h5
+Avg learning reward last 100 episodes: 5.7500
+Avg learning reward last 100 episodes: 5.2700
+Saved weights to ./BreakoutDeterministic-v42018-08-06 08:10:46.277909.h5
+Step 2250000
+Avg learning reward last 100 episodes: 5.2500
+Step 2300000
+Avg learning reward last 100 episodes: 5.7200
+Saved weights to ./BreakoutDeterministic-v42018-08-06 08:10:46.277909.h5
+Step 2350000
+Avg learning reward last 100 episodes: 4.7100
+Avg learning reward last 100 episodes: 5.5900
+Step 2400000
+Avg Q value: 0.5411 Avg testing reward: 10.5000 Avg duration: 753.7143
+Avg learning reward last 100 episodes: 6.5400
+Saved weights to ./BreakoutDeterministic-v42018-08-06 08:10:46.277909.h5
+Step 2450000
+Avg learning reward last 100 episodes: 5.8300
+Step 2500000
+Avg learning reward last 100 episodes: 5.8200
+Saved weights to ./BreakoutDeterministic-v42018-08-06 08:10:46.277909.h5
+Step 2550000
+Avg learning reward last 100 episodes: 5.4600
+Avg learning reward last 100 episodes: 5.1900
+Step 2600000
+Avg Q value: 0.5481 Avg testing reward: 10.5000 Avg duration: 664.2500
+Avg learning reward last 100 episodes: 6.3300
+Saved weights to ./BreakoutDeterministic-v42018-08-06 08:10:46.277909.h5
+Step 2650000
+Avg learning reward last 100 episodes: 5.7600
+Step 2700000
+Avg learning reward last 100 episodes: 5.4500
+Avg learning reward last 100 episodes: 5.0500
+Saved weights to ./BreakoutDeterministic-v42018-08-06 08:10:46.277909.h5
+Step 2750000
+Avg learning reward last 100 episodes: 5.3800
+Step 2800000
+Avg Q value: 0.4951 Avg testing reward: 0.2857 Avg duration: 477.4762
+Avg learning reward last 100 episodes: 5.5900
+Saved weights to ./BreakoutDeterministic-v42018-08-06 08:10:46.277909.h5
+Step 2850000
+Avg learning reward last 100 episodes: 6.6300
