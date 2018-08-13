@@ -1,3 +1,12 @@
+# testing metaparameters
+
+PATH_TO_NETWORK="dve_mreze_ima_memoriju/rezultati_10kk_ispravljeno"
+TRAIN_EPSILON=0
+RENDER=True
+VIDEO_SAVE=False
+VIDEO_SAVE_PATH="/home/nmilev/Desktop/openai_video"
+NN="small"
+
 #KERAS
 from keras.models import Model
 import keras.backend as kback
@@ -33,7 +42,7 @@ COLAB=False
 SAVE_PATH=os.path.join("colaboratory_models", "colab_models") if COLAB else "."
 SAVE_NAME=GAME+str(datetime.datetime.now())
 
-LOAD_PATH=os.path.join("dve_mreze_ima_memoriju/rezultati_10kk", "best_network.h5")
+LOAD_PATH=os.path.join(PATH_TO_NETWORK, "best_network.h5")
 
 INITIAL_REPLAY_MEMORY_SIZE=50000
 MAX_REPLAY_MEMORY_SIZE=1000000 if COLAB else 500000
@@ -50,11 +59,11 @@ LEARNING_RATE = 2.5e-4
 MOMENTUM = 0.95  
 MIN_GRAD = 0.01
 #LOSS=huberLoss
-TRAIN_EPSILON=0
-RENDER=True
-VIDEO_SAVE=False
+
 
 PADDING="valid"
+
+
 
 INFO_WRITE_FREQ=10
 
@@ -67,6 +76,12 @@ history=History()
 LOSS="mse"
 
 def buildNetwork(height, width, depth, numActions):
+	if NN == "big":
+		return buildNetworkBig(height, width, depth, numActions)
+	else:
+		return buildNetworkSmall(height, width, depth, numActions)
+
+def buildNetworkSmall(height, width, depth, numActions):
 	state_in=Input(shape=(height, width, depth))
 	action_in=Input(shape=(numActions, ))
 	normalizer=Lambda(lambda x: x/255.0)(state_in)
@@ -78,7 +93,25 @@ def buildNetwork(height, width, depth, numActions):
 	out=Dense(units=numActions, activation="linear")(dense)
 	filtered_out=Multiply()([out, action_in])
 	model=Model(inputs=[state_in, action_in], outputs=filtered_out)
-	opt=RMSprop(lr=LEARNING_RATE, rho=MOMENTUM, epsilon=MIN_GRAD)
+	opt=RMSprop(lr=LEARNING_RATE, rho=MOMENTUM, epsilon=MIN_GRAD, clipvalue=1.0) # , clipvalue=1.0
+	model.compile(loss=LOSS, optimizer=opt)
+
+	print("Built and compiled the network!")
+	return model
+
+def buildNetworkBig(height, width, depth, numActions):
+	state_in=Input(shape=(height, width, depth))
+	action_in=Input(shape=(numActions, ))
+	normalizer=Lambda(lambda x: x/255.0)(state_in)
+	conv1=Convolution2D(filters=32, kernel_size=(8,8), strides=(4,4), padding=PADDING, activation="relu")(normalizer)
+	conv2=Convolution2D(filters=64, kernel_size=(4,4), strides=(2,2), padding=PADDING, activation="relu")(conv1)
+	conv3=Convolution2D(filters=64, kernel_size=(3,3), strides=(1,1), padding=PADDING, activation="relu")(conv2)
+	flatten=Flatten()(conv3)
+	dense=Dense(units=512, activation="relu")(flatten)
+	out=Dense(units=numActions, activation="linear")(dense)
+	filtered_out=Multiply()([out, action_in])
+	model=Model(inputs=[state_in, action_in], outputs=filtered_out)
+	opt=RMSprop(lr=LEARNING_RATE, rho=MOMENTUM, epsilon=MIN_GRAD, clipvalue=1.0)
 	model.compile(loss=LOSS, optimizer=opt)
 
 	print("Built and compiled the network!")
@@ -126,7 +159,7 @@ class DRLAgent():
 		self.envName=envName
 		self.env=gym.make(self.envName)
 		if VIDEO_SAVE:
-			self.env=wrappers.Monitor(self.env, "video", force=True, video_callable=lambda episode_id: True)
+			self.env=wrappers.Monitor(self.env, VIDEO_SAVE_PATH, force=True, video_callable=lambda episode_id: True)
 		self.numActions=self.env.action_space.n
 		self.qNetwork=getModel(LOAD_PATH, NET_H, NET_W, NET_D, self.numActions)
 
@@ -164,10 +197,7 @@ class DRLAgent():
 		return retval
 		
 	def run(self, numEpisodes=NUM_EPISODES):
-		ws=self.qNetwork.get_weights()
-		for a in ws:
-			print("-----------------------------------")
-			print(a)
+		print(self.qNetwork.summary())
 		self.timeStep=0
 		for self.episodeCount in range(numEpisodes):
 			self.episodeDuration=0
@@ -175,22 +205,36 @@ class DRLAgent():
 			self.episodeReward=0
 			self.episodeDuration=0
 
+			terminalToInsert=False
 			terminal=False
 			observation=self.env.reset() # return frame
 
 			for _ in range(random.randint(1, OBSERVE_MAX)):
-				observation, _, _, _=self.env.step(0)
+				observation, _, _, info=self.env.step(0)
 				self.episodeDuration += 1
 				if RENDER:
 					self.env.render()
 				time.sleep(1/60.0)
-			
+			curLives=info['ale.lives']
 			frame=preprocessSingleFrame(observation)
 			state=(frame, frame, frame, frame)
 			nextState=None
 			while not terminal:
-				action=self.chooseAction(state)
-				observation, reward, terminal, _ = self.env.step(action)
+				if terminalToInsert:
+					action=1
+					print("MORTUS")
+				else:
+					action=self.chooseAction(state)
+
+				observation, reward, terminal, info = self.env.step(action)
+				newLives=info['ale.lives']
+				# I found that the loss of life means the end of an episode
+				if newLives < curLives:
+					terminalToInsert=True
+				else:
+					terminalToInsert=False
+				curLives=newLives
+				#print(type(observation))
 				nextState=getNextState(state, observation)
 				# I wish to see the raw reward
 				self.episodeReward+=reward
