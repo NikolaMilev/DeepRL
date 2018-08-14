@@ -105,7 +105,7 @@ def buildNetwork(height, width, depth, numActions):
 	out=Dense(units=numActions, activation="linear")(dense)
 	filtered_out=Multiply()([out, action_in])
 	model=Model(inputs=[state_in, action_in], outputs=filtered_out)
-	opt=RMSprop(lr=LEARNING_RATE, rho=MOMENTUM, epsilon=MIN_GRAD, clipvalue=1.0) # , clipvalue=1.0
+	opt=RMSprop(lr=LEARNING_RATE, rho=MOMENTUM, epsilon=MIN_GRAD) # , clipvalue=1.0
 	model.compile(loss=LOSS, optimizer=opt)
 
 	printmsg("Built and compiled the network!")

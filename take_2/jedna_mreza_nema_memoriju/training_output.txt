@@ -519,3 +519,6 @@ Avg learning reward last 100 episodes: 2.4800
 Avg learning reward last 100 episodes: 2.1500
 Step 7100000
 Saved weights to ./BreakoutDeterministic-v42018-08-13 16:37:27.026233.h5
+Avg learning reward last 100 episodes: 2.5900
+Avg learning reward last 100 episodes: 2.1500
+Step 7150000
