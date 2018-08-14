@@ -74,17 +74,21 @@ plt.figure()
 #plt.xticks(fontsize=20)
 ax1=plt.subplot(121)
 plt.plot(x, q)
+
 plt.xlim(xmin=0, xmax=50)
 plt.ylim(ymin=0, ymax=5)
+
 ax1.set_xlabel('Broj epoha', fontsize=18)
-ax1.set_ylabel('Rezultat', fontsize=18)
+ax1.set_ylabel('Vrednost Q funkcije', fontsize=18)
 
 
 # sp2
 ax2=plt.subplot(122)
 plt.plot(x, r)
+
 plt.xlim(xmin=0, xmax=50)
 plt.ylim(ymin=0, ymax=350)
+
 ax2.set_xlabel('Broj epoha', fontsize=18)
-ax2.set_ylabel('Q vrednost', fontsize=18)
+ax2.set_ylabel('Rezultat po epizodi', fontsize=18)
 plt.show()
