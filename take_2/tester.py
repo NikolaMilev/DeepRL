@@ -1,11 +1,11 @@
 # testing metaparameters
 
-PATH_TO_NETWORK="dve_mreze_ima_memoriju/rezultati_10kk_ispravljeno"
+PATH_TO_NETWORK="dve_velike_mreze_ima_memoriju/rezultati_10kk"
 TRAIN_EPSILON=0
 RENDER=True
-VIDEO_SAVE=False
+VIDEO_SAVE=True
 VIDEO_SAVE_PATH="/home/nmilev/Desktop/openai_video"
-NN="small"
+NN="big"
 
 #KERAS
 from keras.models import Model
@@ -214,7 +214,7 @@ class DRLAgent():
 				self.episodeDuration += 1
 				if RENDER:
 					self.env.render()
-				time.sleep(1/60.0)
+				time.sleep(1/15.0)
 			curLives=info['ale.lives']
 			frame=preprocessSingleFrame(observation)
 			state=(frame, frame, frame, frame)
